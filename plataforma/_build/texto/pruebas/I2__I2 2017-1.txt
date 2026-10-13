@@ -1,0 +1,708 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2017
+MAT1203 ⋆ ´Algebra Lineal
+Soluci´ on a la Interrogaci´ on N◦ 2
+1. Sea T : R3→ R3 dada por T (x, y, z) = (3x− y,−x + 4y− z,−y + 3z).
+a) [1 pto.] Encuentre la matriz A tal que T ( x→) = A x→ para todo x→∈ R3.
+b) [2 pts.] Calcule el determinante de A.
+c) [3 pts.] ¿Es T es invertible? Justiﬁque su respuesta y, en caso de que esta sea aﬁrmativa,
+encuentre la matriz est´ andar de su inversa.
+Soluci´ on:
+a) A =
+
+
+3 −1 0
+−1 4 −1
+0 −1 3
+
+.
+b)
+det A =
+⏐⏐⏐⏐⏐⏐ 3 −1 0−1 4 −10 −1 3 ⏐⏐⏐⏐⏐⏐ =f1↔ f2 −⏐⏐⏐⏐⏐⏐1 4 −13 −1 00 −1 3 ⏐⏐⏐⏐⏐⏐ =−f1 ⏐⏐⏐⏐⏐⏐1 −4 13 −1 00 −1 3 ⏐⏐⏐⏐⏐⏐
+=
+f2− 3f1
+⏐⏐⏐⏐⏐⏐1 −4 10 11 −30 −1 3 ⏐⏐⏐⏐⏐⏐ =f2↔ f3 ⏐⏐⏐⏐⏐⏐1 −4 10 −1 30 11 −3⏐⏐⏐⏐⏐⏐
+=
+−f2
+⏐⏐⏐⏐⏐⏐1 −4 10 1 −30 11 −3⏐⏐⏐⏐⏐⏐ =f3− 11f2 ⏐⏐⏐⏐⏐⏐1 −4 10 1 −30 0 30 ⏐⏐⏐⏐⏐⏐
+Este ´ ultimo determinante es el de una matriz triangular superior, por lo que es el producto
+de los elementos de la diagonal, o sea,
+det A =
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐1 −4 10 1 −30 0 30 ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ = 1· 1· 30 = 30.
+c) T es invertible, ya que su matriz est´ andar (A) lo es. Esto puede ser justiﬁcado apelando al
+hecho de que det A = 30⁄= 0, o bien escalonando la matriz y probando que tiene 3 pivotes.Para encontrar A−1, escalonamos
+[A|I] =
+
+
+3 −1 0 | 1 0 0
+−1 4 −1 | 0 1 0
+0 −1 3 | 0 0 1
+
+ ∼f1←→f2
+
+
+−1 4 −1 | 0 1 0
+3 −1 0 | 1 0 0
+0 −1 3 | 0 0 1
+
+
+∼
+−1·f1
+
+
+1 −4 1 | 0 −1 0
+3 −1 0 | 1 0 0
+0 −1 3 | 0 0 1
+
+ ∼f2+−3f1
+
+
+1 −4 1 | 0 −1 0
+0 11 −3 | 1 3 0
+0 −1 3 | 0 0 1
+
+
+∼
+f2←→f3
+
+
+1 −4 1 | 0 −1 0
+0 −1 3 | 0 0 1
+0 11 −3 | 1 3 0
+
+∼−1·f2
+
+
+1 −4 1 | 0 −1 0
+0 1 −3 | 0 0 −1
+0 11 −3 | 1 3 0
+
+
+∼
+f3+−11f2
+
+
+1 −4 1 | 0 −1 0
+0 1 −3 | 0 0 −1
+0 0 30 | 1 3 11
+
+
+∼
+1
+30
+·f3
+
+
+1 −4 1 | 0 −1 0
+0 1 −3 | 0 0 −1
+0 0 1 | 130 110 1130
+
+
+∼
+f2+3f3
+
+
+1 −4 1 | 0 −1 0
+|
+0 1 0 | 110 310 110
+|
+0 0 1 | 130 110 1130
+
+ ∼f1+4f2
+
+ 1 0 1 | 25 15 25|0 1 0 | 110 310 110|
+0 0 1 | 130 110 1130
+
+
+∼
+f1+−1f3
+
+ 1 0 0 | 1130 110 130|0 1 0 | 110 310 110|
+0 0 1 | 130 110 1130
+
+
+As´ ı,A−1 =
+
+
+11
+30
+1
+10
+1
+30
+1
+10
+3
+10
+1
+10
+1
+30
+1
+10
+11
+30
+
+.
+Puntaje:
+a) Se da 1 punto si la matriz est´ a enteramente correcta, 0 si no.
+b) Se dan los dos puntos si el determinante est´ a correctamente calculado. Si hay alg´ un error
+menor en el c´ alculo que lleva a una respuesta incorrecta, se da un punto.
+Comentario a los correctores: El puntaje en esta pregunta se da por calcular el determi-
+nante de la matriz hallada en (a). Si esa matriz fue escrita incorrectamente, el determinante
+que deben calcular es el que corresponde al de la matriz incorrecta, no el de la matriz que
+aparece en esta pauta.c) Por indicar correctamente que la matriz es invertible, incluyendo una justiﬁcaci´ on ade-
+cuada, 1 punto.
+Por encontrar su inversa, 2 puntos. Si hay alg´ un errormenor en el c´ alculo que lleva a
+una respuesta incorrecta, se da un punto.
+Comentario a los correctores: En esta parte, tambi´ en importa cu´ al es la matriz en-
+contrada en (a). El puntaje se da por decidir si esa matriz es invertible, y por encontrar
+su inversa.
+A lo anterior se le suma el punto base.2. Sea A =
+
+
+1 0 6
+−1 2 0
+0 5 −1
+
+
+a) Escriba A como producto de matrices elementales.
+b) Encuentre una factorizaci´ on del tipo A = LU, y ´ usela para resolverAx = b→ donde b→ =
+
+5
+−7
+−12
+
+
+Soluci´ on:
+a) Escalonando la matriz hasta reducirla a la matriz identidad, descubrimos que, llamando
+E1 =
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ , E 2 =
+
+
+1 0 0
+0 1 0
+0 −52 1
+
+ , E 3 =
+
+
+1 0 0
+0 1 0
+0 0 − 116
+
+ ,
+E4 =
+
+
+1 0 0
+0 12 0
+0 0 1
+
+ , E 5 =
+
+
+1 0 0
+0 1 −3
+0 0 1
+
+ , E 6 =
+
+
+1 0 −6
+0 1 0
+0 0 1
+
+ ,
+se tiene
+E6E5E4E3E2E1A = I
+(cada una de estas matrices elementales corresponde a una de las operaciones que llevan a
+A a su forma escalonada reducida), por lo que
+E−11 E−12 E−13 E−14 E−15 E−16 = A,
+donde
+E−11 =
+
+
+1 0 0
+−1 1 0
+0 0 1
+
+ , E −12 =
+
+
+1 0 0
+0 1 0
+0 52 1
+
+ , E −13 =
+
+
+1 0 0
+0 1 0
+0 0 −16
+
+ ,
+E−14 =
+
+
+1 0 0
+0 2 0
+0 0 1
+
+ , E −15 =
+
+
+1 0 0
+0 1 3
+0 0 1
+
+ , E −16 =
+
+
+1 0 6
+0 1 0
+0 0 1
+
+ .
+O sea:
+A =
+
+
+1 0 0
+−1 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 52 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −16
+
+
+
+
+1 0 0
+0 2 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 3
+0 0 1
+
+
+
+
+1 0 6
+0 1 0
+0 0 1
+
+ .
+Nota: Es posible realizar las operaciones elementales en un orden diferente y por lo tanto
+la factorizaci´ on que a la que se llegue puede ser distinta a la mostrada aqu´ ı.b) Observamos que las dos primeras operaciones elementales de la secuencia anterior transfor-
+man A en una matriz triangular superior:
+U = E2E1A =
+
+
+1 0 0
+0 1 0
+0 52 1
+
+
+
+
+1 0 0
+−1 1 0
+0 0 1
+
+
+
+
+1 0 6
+−1 2 0
+0 5 −1
+
+ =
+
+
+1 0 6
+0 2 6
+0 0 −16
+
+
+mientras que
+L = E−11 E−12 =
+
+
+1 0 0
+−1 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 52 1
+
+ =
+
+
+1 0 0
+−1 1 0
+0 52 1
+
+
+es tal que A = LU.
+Para resolver el sistema pedido, resolvemos primeroL y→ =
+
+
+5
+−7
+−12
+
+, o sea,
+
+
+1 0 0
+−1 1 0
+0 52 1
+
+ y→ =
+
+
+5
+−7
+−12
+
+. Sustituyendo hacia adelante, tenemos
+y1 = 5, y 2 =−7 + y1 =−7 + 5 =−2, y 3 =−12− 52 y2 =−12 + 5 =−7.
+As´ ı, para este sistema,y→ =
+
+
+y1
+y2
+y3
+
+ =
+
+
+5
+−2
+−7
+
+.
+A continuaci´ on, resolvemosU x→ = y→, o sea
+
+
+1 0 6
+0 2 6
+0 0 −16
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+y1
+y2
+y3
+
+ =
+
+
+5
+−2
+−7
+
+ .
+Vemos que:
+x3 = 716.
+2x2 + 6x3 =−2, o sea, x2 =−1− 3x3 =−1− 2116 =−3716.
+x1 + 6x3 = 5, o sea, x1 = 5− 6x3 = 5− 4216 = 5− 218 = 198 .
+As´ ı, la soluci´ on de este sistema es
+x→ =
+
+
+x1
+x2
+x3
+
+ =
+
+
+19
+8
+−3716
+7
+16
+
+ .Puntaje:
+a) Por encontrar las matrices elementales que corresponden a las operaciones elementales
+realizadas, 1,5 ptos.
+Por invertir correctamente las matrices elementales y escribir A como el producto de
+ellas, 1,5 ptos.
+b) Por encontrar correctamente la factorizaci´ onA = LU, 1 pto.
+Por encontrar y→ =
+
+
+5
+−2
+7
+
+, 0,5 ptos.
+Por plantear correctamente el sistema U x→ = y→, 0,5 puntos.
+Por encontrar x→ =
+
+
+19
+8
+−3716
+7
+16
+
+, 1 punto.
+A lo anterior se le suma el punto base.3. a) [2 pts.] Sea A una matriz de n× n tal que existe una matriz B⁄= 0 tal que AB = 0 (aqu´ ı,
+0 representa a la matriz en que todos los elementos son cero).
+Demuestre que A no es invertible.
+Soluci´ on:
+Que A no es invertible sale de las equivalencias entre invertibilidad (aﬁrmaci´ on (a)) y otras
+condiciones (aﬁrmaciones (b) – (f)) del teorema 2.8.
+As´ ı, por ejemplo, podemos demostrar queA no es invertible porque en el teorema 2.8 no se
+cumple (por ejemplo):
+d) ya que como alguna de las columnas de B es b→i⁄= 0→, la ecuaci´ onA x→ = 0→ tiene una
+soluci´ on no trivial, a saberx→ = b→i.
+f) ya que existen al menos dos vectores distintos u→ y v→ (a saber, u→ = 0→ y v→ cualquier
+columna⁄= 0→ de B) tales que A u→ = A v→ = 0→, por lo que la transformaci´ onx→↦→ A x→
+no es uno a uno.
+j) Si existiera C de n× n tal que CA = I entonces B = IB = (CA)B = C(AB) = C0 = 0,
+lo que contradice la hip´ otesis.
+b) [4 pts.] Sea A una matriz de 4× 4 cuyas columnas son, respectivamente, los vectores a→1,
+a→2, a→3 y a→4, y de la que se sabe que 2 a→1− a→2− 3 a→3 + 4a→4 = 0→.
+Use esta informacion para explicar por qu´ eA no es invertible y para encontrar una matriz
+B⁄= 0, de 4× 4 tal que AB = 0.
+Soluci´ on:
+Note que A
+
+
+2
+−1
+−3
+4
+
+ =
+
+
+0
+0
+0
+0
+
+. Esto implica que la ecuaci´ onA x→ = 0→ tiene una soluci´ on no
+trivial (lo que a su vez implica que la transformaci´ on x→↦→ A x→ no es uno a uno) lo que
+prueba que A no es invertible.
+Esto nos da la idea de tomar B =
+
+
+2 2 2 2
+−1 −1 −1 −1
+−3 −3 −3 −3
+4 4 4 4
+
+, que efectivamente satisface lo
+pedido.
+En realidad, cualquier matriz no nula en que las columnas sean m´ ultiplos de
+
+
+2
+−1
+−3
+4
+
+ tam-
+bi´ en funciona. Por ejemplo, podr´ ıamos tomarB =
+
+
+2 −2 0 20
+−1 1 0 −10
+−3 3 0 −30
+4 −4 0 40
+
+ y tambi´ en se
+satisfar´ a la condicion pedida.
+Puntaje:
+1) Por dar una justiﬁcaci´ on correcta de queA no es invertible, 2 puntos.
+Si la justiﬁcaci´ on dada es poco clara (o est´ a explicada de manera insuﬁciente), se da 1
+punto.2) Por dar una explicaci´ on de por qu´ eA no es invertible, 1 punto.
+Por dar una matriz con la propiedad pedida, 3 puntos.
+A lo anterior se le suma el punto base.4. Sea A una matriz de 5× 3 tal que existe una matriz C de 3× 5 tal que CA = I3, y sea b→∈ R5
+tal que la ecuaci´ onA x→ = b→ tiene soluci´ on.
+Demuestre que la soluci´ on de la ecuaci´ onA x→ = b→ es ´ unica.
+Soluci´ on:
+Sean x→1 y x→2 dos soluciones de la ecuaci´ on A x→ = b→. En otras palabras, x→1 y x→2 son dos
+vectores tales que A x→1 = A x→2 = b→.
+As´ ı, si pre-multiplicamos la igualdad A x→1 = A x→2 por C, obtenemos C(A x→1) = C(A x→2), o
+sea, (CA) x→1 = (CA) x→2, o lo que es lo mismo, I3 x→1 = I3 x→2, o x→1 = x→2, por lo que todas las
+soluciones de la ecuaci´ on son la misma.
+Puntaje:
+Por dar una demostraci´ on correcta (esta, u otra), 6 puntos.
+Si la demostraci´ on est´ a esencialmente buena, pero tiene algunos errores menores, 4 puntos.
+A lo anterior se le suma el punto base.5. Determine todos los valores de x∈ R que satisfacen
+⏐⏐⏐⏐⏐⏐⏐⏐ 1 x x 2 x31 2 4 81 3 9 271 4 16 64 ⏐⏐⏐⏐⏐⏐⏐⏐ = 0
+Primera Soluci´ on:
+Desarrollando el determinante, tenemos
+⏐⏐⏐⏐⏐⏐⏐⏐ 1 x x 2 x31 2 4 81 3 9 271 4 16 64 ⏐⏐⏐⏐⏐⏐⏐⏐ =−2x3 + 18x2− 52x + 48 =−2(x3− 9x2 + 26x− 24) = 0.
+As´ ı, la condici´ on pedida es equivalente ax3− 9x2 + 26x− 24 = 0.
+Las ra´ ıces de esta ecuaci´ on son exactamente 2, 3 y 4. Esto puede ser justiﬁcado, por ejemplo,
+encontrando una ra´ ız, factorizando la ecucaci´ on (y transform´ andola en una ecuaci´ on cuadr´ atica).
+¿C´ omo encontrar una ra´ ız de la ecuaci´ on?
+buscando las posibles ra´ ıces racionales de la ecuaci´ on, o
+buscando una ra´ ız al tanteo, u
+observando que al reemplazar x por uno de los valores 2, 3 o 4 el determinante resultante
+tiene dos ﬁlas iguales y por lo tanto vale cero,
+Segunda Soluci´ on:
+Otra soluci´ on posible consiste en notar que el reemplazarx por 2, 3 o 4 el determinante se anula
+(dos ﬁlas iguales), por lo que al menos estos tres valores est´ an entre los buscados.
+Sin embargo, usando este enfoque es necesario demostrar que NO HAY OTRO valor que satis-
+faga la condici´ on pedida. Una forma de justiﬁcar esto es notar que el determinante dado es un
+polinomio de grado 3, y por lo tanto NO PUEDE TENER M ´AS DE TRES RA´ICES.
+Puntaje:
+Si usan la primera soluci´ on (expresar el determinante como polinomio de grado 3 y hallar
+sus ra´ ıces):
+• Por calcular correctamente el polinomio c´ ubico que es el determinante, 2 ptos.
+• Por encontrar una ra´ ız del polinomio, 2 ptos.
+• Por encontrar las otras ra´ ıces, 2 ptos.
+Si parten indicando que x = 2, x = 3 y x = 4 son soluciones:
+• Por indicar esas soluciones (con alguna justiﬁcaci´ on correcta, t´ ıpicamente que en dichos
+casos el determinante tiene dos ﬁlas iguales), 3 puntos.
+• Por dar una justiﬁcaci´ on de que la ecuaci´ on planteada no puede tener m´ as de tres
+ra´ ıces, 3 puntos.
+A lo anterior se le suma el punto base.6. Sea A una matriz de n× n, y suponga que todas las entradas de A son enteras y det( A) = 1.
+Demuestre que todas las entradas de A−1 son enteras.
+Soluci´ on:
+Recordemos que, si det A⁄= 0, A es invertible y
+A−1 = 1det(A)
+
+
+C11 C21 . . . C n1
+C12 C22 . . . C n2
+... ... ... ...
+C1n C2n . . . C nn
+
+
+donde cada Cij es uno de los cofactores de A, o sea, el determinante de una submatriz de A.
+Como en este caso det( A) = 1,
+A−1 =
+
+
+C11 C21 . . . C n1
+C12 C22 . . . C n2
+... ... ... ...
+C1n C2n . . . C nn
+
+ .
+Adem´ as. por el hecho de que todas las entradas deA son enteras, todos los cofactores son enteros
+(ya que son sumas de productos de entradas de A), por lo que todas las entradas de A−1 son
+enteras.
+Puntaje:
+Por dar una demostraci´ on correcta (esta, u otra), 6 puntos.
+Si la demostraci´ on est´ a esencialmente buena, pero tiene algunos errores menores, 4 puntos.
+A lo anterior se le suma el punto base.7. El volumen de un tetraedro (pir´ amide de base triangular) con v´ ertices0→, v→1, v→2 y v→3 es 16 del
+volumen del paralelep´ ıpedo deﬁnido por los vectoresv→1, v→2, v→3.
+Bas´ andose en lo anterior, encuentre una f´ ormula para el volumen del tetraedro que tiene por
+v´ ertices a los vectoresv→1, v→2, v→3 y v→4,
+Soluci´ on:
+El tetraedro con v´ erticesv→1, v→2, v→3 y v→4 es el resultado de trasladar el tetraedro con v´ ertices
+0→, v→2− v→1, v→3− v→1 y v→4− v→1 seg´ un el vectorv→1, por lo que ambos tetraedros tienen el
+mismo volumen.
+As´ ı, llamandow→ 2, w→ 3 y w→ 4 respectivamente a los vectores v→2− v→1, v→3− v→1 y v→4− v→1,
+el volumen buscado es el de este ´ ultimo tetraedro, que por la informaci´ on dada al principio del
+enunciado es 1/6 del volumen del paralelep´ ıpedo deﬁnido por los vectores w→ 2, w→ 3 y w→ 4.
+A su vez, el volumen de este paralelep´ ıpedo puede ser calculado como el valor absoluto de
+cualquiera de las siguientes expresiones:
+[
+w→ 2 w→ 3 w→ 4 ] = ( w→ 2× w→ 3)· w→ 4 = det A,
+donde A es la matriz de 3× 3 que tiene por columnas a los vectores w→ 2, w→ 3 y w→ 4.
+As´ ı ﬁnalmente, el volumen buscado del tetraedro es el valor absoluto de cualquiera de las si-
+guientes expresiones:
+1
+6
+[
+w→ 2 w→ 3 w→ 4 ] = 16( w→ 2× w→ 3)· w→ 4 = 16 det A,
+Puntaje:
+Por relacionar el volumen del tetraedro indicado con el del tetraedro de v´ ertices0→, v→2− v→1,
+v→3− v→1 y v→4− v→1, 2 puntos.
+Por dar alguna f´ ormula correcta para el paralelep´ ıpedo que contiene a este ´ ultimo tetraedro,
+2 puntos.
+Por concluir con la f´ ormula pedida, 2 puntos.
+A lo anterior se le suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) Si L es una matriz triangular inferior de n× n entonces L es invertible si y solo si todos los
+elementos en la diagonal de L son⁄= 0.
+Soluci´ on:
+VERDADERO
+L es invertible si y solo si su determinante es ⁄= 0, y su determinante es igual al producto
+de los elementos de la diagonal. As´ ı,L es invertible si y solo si el producto de los elementos
+de su diagonal es⁄= 0, y esto se logra si y solo si todos esos elementos son ⁄= 0.
+b) Si A es una matriz de 3× 3 y la ecuaci´ onA x→ =
+
+
+1
+3
+−2
+
+ tiene una sola soluci´ on, entonces
+A es invertible.
+Soluci´ on:
+VERDADERO
+Si A no fuera invertible, la ecuaci´ on A x→ = 0→ tendr´ ıa inﬁnitas soluciones por lo que, si
+la ecuaci´ onA x→ =
+
+
+1
+3
+−2
+
+ tuviera al menos una soluci´ on u→, entonces tendr´ ıa inﬁnitas
+soluciones (ya que la suma de u→ con cualquier soluci´ on no nula deA x→ = 0→ tambi´ en ser´ ıa
+soluci´ on deA x→ =
+
+
+1
+3
+−2
+
+).
+c) Si A es una matriz de n×n que satisface la ecuaci´ onA2−2A+I = 0, entonces A3 = 3A−2I.
+Soluci´ on:
+VERDADERO
+Supongamos que A2− 2A + I = 0. Multiplicando a ambos lados por ( A− I), tenemos que
+(A2− 2A + I)(A− I) = A3− 3A2 + 3A− I = 0, o sea, A3 = 3A2− 3A + I. Usando el hecho
+de que, ya que A2− 2A + I = 0, A2 = 2A− I, llegamos a
+A3 = 3(2A− I)− 3A + I = 6A− 3I− 3A + I = 3A− 2I.
+Puntaje:
+En cada parte, se dan los dos puntos si se da una justiﬁcaci´ on correcta.
+A lo anterior se le suma el punto base.

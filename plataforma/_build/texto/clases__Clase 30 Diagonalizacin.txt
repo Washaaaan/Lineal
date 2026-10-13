@@ -1,0 +1,201 @@
+
+----- pagina 1 -----
+Clase 30 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 10
+----- pagina 2 -----
+Recordatorio
+Queremos multiplicar por una matriz muchas veces o elevar una
+matriz.
+Un vector propio de una matriz A de n × n es un vector x diferente
+de cero tal que Ax = λx para algún escalar λ, llamado valor propio .
+Podemos encontrar los valores propios con la ecuación
+característica det(A − λI) = 0.
+Si A y B son similares si hay una matriz invertible P tal que
+A = PBP−1.
+2 / 10
+----- pagina 3 -----
+Diagonalización
+En muchos casos, la información valor propio-vector propio contenida en
+una matriz A se presenta en una factorización útil de la forma A = PDP−1
+donde D es una matriz diagonal.
+Ejemplo: Si D =
+[ 5 0
+0 3
+]
+, calcule D2 y deduzca una fórmula para Dk.
+3 / 10
+----- pagina 4 -----
+Diagonalización
+Si A = PDP−1 para alguna P invertible con D diagonal, entonces Ak es
+también fácil de calcular.
+Ejemplo: Sea A =
+[ 7 2
+−4 1
+]
+. Encuentre una fórmula para Ak, dado que
+A = PDP−1 donde
+P =
+[ 1 1
+−1 −2
+]
+y D =
+[ 5 0
+0 3
+]
+4 / 10
+----- pagina 5 -----
+Diagonalización
+Definición: Matriz diagonalizable
+Una matriz cuadrada A es diagonalizable si A es similar a una matriz
+diagonal, es decir, si A = PDP−1 para alguna matriz P invertible y alguna
+matriz D diagonal.
+Teorema: Teorema de diagonalización
+Una matriz A de n × n es diagonalizable si y solo si A tiene n vectores
+propios linealmente independientes. En tal caso, P tiene como columnas
+los n vectores propios LI y D tiene en la diagonal los valores propios
+correspondientes.
+5 / 10
+----- pagina 6 -----
+Diagonalización
+Ejemplo: Diagonalice la siguiente matriz, si es posible.
+A =
+
+
+1 3 3
+−3 −5 −3
+3 3 1
+
+
+Es decir, encuentre una matriz P invertible y una matriz D diagonal tales
+que A = PDP−1.
+Nota: Los valores propios de A son 1 y −2 (con multiplicidad 2),
+asociados a los vectores propios v1 =
+
+
+1
+−1
+1
+
+ para λ = 1, y
+v2 =
+
+
+−1
+1
+0
+
+, v3 =
+
+
+−1
+0
+1
+
+ para λ = −2.
+6 / 10
+----- pagina 7 -----
+Diagonalización
+Ejemplo: Si es posible, diagonalice la siguiente matriz.
+A =
+
+
+2 4 3
+−4 −6 −3
+3 3 1
+
+
+Nota: Los valores propios de A son 1 y −2 (con multiplicidad 2),
+asociados a los vectores propios v1 =
+
+
+1
+−1
+1
+
+ para λ = 1, y v2 =
+
+
+−1
+1
+0
+
+
+para λ = −2.
+7 / 10
+----- pagina 8 -----
+Diagonalización
+Teorema
+Una matriz de n × n con n valores propios distintos es diagonalizable.
+Ejemplo: Determine si la siguiente matriz es diagonalizable.
+A =
+
+
+5 −8 1
+0 0 7
+0 0 −2
+
+
+8 / 10
+----- pagina 9 -----
+Diagonalización
+Teorema
+Sea A una matriz de n × n
+La dimensión de cada espacio propio es menor o igual a la
+multiplicidad del valor propio correspondiente.
+La matriz A es diagonalizable si y solo si el polinomio característico se
+factorice en factores lineales, y la dimensión de cada espacio propio
+coincida con la multiplicidad del valor propio correspondiente.
+9 / 10
+----- pagina 10 -----
+Diagonalización
+Ejemplo: Diagonalice la siguiente matriz, si es posible.
+A =
+
+
+5 0 0 0
+0 5 0 0
+1 4 −3 0
+−1 −2 0 −3
+
+
+Nota: Los valores propios de A son 5 y −3 (ambos con multiplicidad 2).
+Los vectores propios para λ = 5 son v1 =
+
+
+−8
+4
+1
+0
+
+ y v2 =
+
+
+−16
+4
+0
+1
+
+. Los
+vectores propios para λ = −3 son v3 =
+
+
+0
+0
+1
+0
+
+ y v4 =
+
+
+0
+0
+0
+1
+
+.
+10 / 10

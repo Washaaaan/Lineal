@@ -1,0 +1,628 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Primer Semestre 2023
+´Algebra Lineal - MAT1203
+Pauta de correcci´ on Interrogaci´ on 1
+1. Determine el o los valores del par´ ametro k tales que el sistema lineal de dos variables
+x + ky = 1
+kx + y = 1 tenga ´ unica soluci´ on, infinitas soluciones o no tenga soluci´ on.
+Soluci´ on Aplicamos el Teorema de Existencia y Unicidad de soluciones de sistemas
+lineales a la matriz aumentada del sistema
+
+1 k 1
+k 1 1
+
+.
+Buscamos la forma escalonada de la matriz
+
+1 k 1
+k 1 1
+
+∼
+
+1 k 1
+0 1 − k2 1 − k
+
+.
+Ac´ a hay tres subcasos: Si k = 1, la matriz queda
+
+1 1 1
+0 0 0
+
+la cual entrega infinitas
+soluciones.
+Si k = −1, entonces
+
+1 k 1
+0 1 − k2 1 − k
+
+∼
+
+1 −1 1
+0 0 2
+
+la que corresponde a una matriz
+aumentada inconsistente.
+Si k ̸= 1 y k ̸= −1, de
+
+1 k 1
+0 1 − k2 1 − k
+
+obtenemos ´ unica soluci´ on ya que las dos
+primeras columnas de la matriz contienen posiciones pivotes.
+En resumen: si k = 1 el sistema tiene infinitas, si k = −1 el sistema es inconsistente, si
+k ̸= 1 y k ̸= −1 el sistema tiene ´ unica soluci´ on.
+Puntaje
+• 1 punto por escribir la matriz aumentada del sistema.
+• 1 punto por analizar el caso k = 0 de manera separada
+• 1 punto por escolar correctamente la matriz aumentada cuando k ̸= 0.
+• 3 puntos por analizar correctamente la matriz aumentada escalonada usando el
+Teorema de Existencia y Unicidad de soluciones de sistemas lineal. (Si comete un
+error de c´ alculo aritm´ etico pero analiza correctamente, asignar solo 2 puntos. Si
+aplica incorrectamente el teorema, asignar 0 puntos.)2. (a) Determine si el vector y =
+
+
+10
+6
+−4
+
+ pertenece o no al plano generado por v1 =
+
+
+1
+2
+1
+
+ y v2 =
+
+
+2
+1
+−4
+
+. (3 pts)
+(b) Determine si los vectores {y, v1, v2} son linealmente dependientes o independientes.
+(3 pts)
+Soluci´ on
+(a) Que el vector y pertenezca al plano generado por v1 y v2 es equivalente a que el
+sistema
+
+
+1 2 10
+2 1 6
+1 −4 −4
+
+ sea consistente. Ya que
+
+
+1 2 10
+2 1 6
+1 −4 −4
+
+ ∼
+
+
+1 2 10
+0 −3 −14
+0 0 −14
+
+
+entonces el sistema es inconsistente ya que la matriz aumentada tiene un pivote en
+la ´ ultima columna de la forma escalonada. Por lo tanto, y no pertenece al plano
+generado por v1 y v2.
+(b) Los vectores v1 y v2 son LI ya que no son paralelos. Por lo analizado en el ´ ıtem
+anterior, el vector y no pertenece al plano Gen {v1, v2}, por lo que los vectores no
+son coplanares. Esto significa que {y, v1, v2} son linealmente independientes.
+Puntaje
+• 1 punto por establecer el hecho que y pertenezca al plano significa que el sistema
+correspondiente es consistente.
+• 1 punto por escalonar correctamente la matriz ampliada.
+• 1 punto por concluir correctamente en el ´ ıtem (a).
+• 2 puntos por concluir de acuerdo a su respuesta del ´ ıtem anterior (no importa que
+la conclusi´ on en el ´ ıtem (a) sea equivocada).
+• 1 punto por responder correctamente al ´ ıtem (b).3. Defina la matriz A =
+
+
+1 1
+−2 −1
+−1 −3
+
+, el vector y =
+
+
+2
+−7
+1
+
+ y la transformaci´ on lineal
+T (x) = Ax.
+(a) Determine el dominio y el codominio de T . (1 pt)
+(b) Determine si y es un vector del rango de T . (2pts)
+(c) ¿Es T una transformaci´ on sobreyectiva (sobre)? (2pts)
+(d) ¿Es T una transformaci´ on inyectiva (uno a uno)? (1pt)
+Soluci´ on
+(a) Ya que A es una matriz de 3 × 2, la transformaci´ onT tiene dominio R2 y codominio
+R3.
+(b) El vector y est´ a en el rango deT si el sistema [ A|y] es consistente, pero
+[A|y] =
+
+
+1 1 2
+−2 −1 −7
+−1 −3 4
+
+ ∼
+
+
+1 1 2
+0 1 −3
+0 0 0
+
+
+lo que implica que el sistema es consistente. Por lo tanto y ∈ rango(T ).
+(c) T no puede ser sobreyectiva porque va de R2 en R3.
+(d) T si es inyectiva porque las columnas de A son LI.
+Puntaje
+• 1 punto por determinar correctamente dominio y codominio de T .
+• 2 puntos por concluir justificadamente que y /∈ rango(T ). Alternativamente, asig-
+nar 1 punto si comete errores en c´ alculos aritm´ eticos pero concluye bien a partir
+de ´ estos.
+• 2 punto por responder justificadamente que T es sobre. Alternativamente, asig-
+nar solo 1 punto si a partir de c´ alculos aritm´ eticos err´ oneos, concluye que no es
+sobreyectiva.
+• 1 punto por responder que T si es inyectiva.4. Determine si las siguientes proposiciones son verdaderas o falsas. Para justificar que
+una afirmaci´ on es verdadera debe demostrarlo en general. En cambio, para mostrar que
+es falsa, basta mostrar un contraejemplo.
+(a) Si A es una matriz tal que A
+
+
+1
+0
+1
+
+ =
+
+1
+1
+
+y A
+
+
+1
+1
+0
+
+ =
+
+1
+2
+
+, entonces el sistema
+lineal Ax =
+
+2
+3
+
+es consistente. (3pts)
+(b) Si las columnas de una matriz B generan a R3, entonces las columnas son lineal-
+mente independientes. (3pts)
+Soluci´ on
+(a) Verdadero.
+En efecto, si A es una matriz como en el enunciado, entonces
+
+2
+3
+
+=
+
+1
+1
+
++
+
+1
+2
+
+= A
+
+
+1
+0
+1
+
+ + A
+
+
+1
+1
+0
+
+ = A
+
+
+2
+1
+1
+
+ .
+Esto implica que el sistema Ax =
+
+2
+3
+
+es consistente.
+(b) Falso.
+Las columnas de la matriz B =
+
+
+1 0 0 1
+0 1 0 1
+0 0 1 1
+
+ generan R3 pero son linealmente
+dependientes.
+Puntaje
+• 3 puntos por responder justificadamente al ´ ıtem (a). Debe escribirse una de-
+mostraci´ on general.
+• 3 puntos por responder justificadamente al ´ ıtem (b). Se acepta un contraejemplo o
+una explicaci´ on general correcta.5. Considere la transformaci´ on lineal de R2 en R2 que primero hace girar puntos en π/4
+radianes (antihorario) y despu´ es los refleja a trav´ es del eje verticalY .
+Encuentre la matriz est´ andar de dicha transformaci´ on.
+Soluci´ on El vector e1 =
+
+1
+0
+
+primero es transformado en
+√
+2/2√
+2/2
+
+y luego reflejado
+hacia el
+
+−
+√
+2/2√
+2/2
+
+. Por otro lado, el vector e2 =
+
+0
+1
+
+es rotado hacia el
+
+−
+√
+2/2√
+2/2
+
+y
+posteriormente enviado al
+√
+2/2√
+2/2
+
+.
+Por lo tanto, la matriz est´ andar de la transformaci´ on compuesta es
+A =
+T (e1) T (e2) = −√2/2 √2/2√2/2 √2/2 .
+Puntaje
+• 2 puntos por establecer que A =
+T (e1) T (e2).
+• 1,5 puntos por determinar cada columna de A (3 en total).
+• 1 punto por escribir la matriz A expl ´ ıcitamente de acuerdo a sus c´ alculos. Este
+punto es independiente que los c´ alculos anteriores est´ en correctos.6. Sea A una matriz de 2 × 4 cuyas columnas son los vectores a1, a2, a3 y a4 y cuya
+forma escalonada reducida es
+
+1 0 0 1
+0 0 1 2
+
+. Adem´ as se sabe que la suma de los vectores
+columnas de A cumple que a1 + a2 + a3 + a4 =
+
+0
+2
+
+.
+(a) Determine el conjunto soluci´ on del sistema homog´ eneoAx =
+
+0
+0
+
+. (3 pts)
+(b) Determine el conjunto soluci´ on del sistema no homog´ eneoAx =
+
+0
+2
+
+. (3 pts)
+Soluci´ on
+(a) Resolver la ecuaci´ on homog´ eneaAx = 0 es equivalente a encontrar la soluci´ on de
+1 0 0 1 0
+0 0 1 2 0
+
+. As ´ ı,x1 = −x4 x3 = −2x4, x2 y x4 son variables libres. Por lo
+tanto el conjunto soluci´ on del problema homog´ eneo consiste en todos los vectores
+de R4 de la forma
+
+x1
+x2
+x3
+x4
+
+ =
+
+
+−x4
+x2
+−2x4
+x4
+
+ = x2
+
+
+0
+1
+0
+0
+
+ + x4
+
+
+−1
+0
+−2
+1
+
+ , x 2, x4 ∈ R.
+(b) Por otro lado, a1 + a2 + a3 + a4 =
+
+0
+2
+
+implica que A
+
+
+1
+1
+1
+1
+
+ = 02. Es decir, una
+soluci´ on particular de la ecuaci´ on no homog´ enea esp =
+
+
+1
+1
+1
+1
+
+. Por lo tanto, la
+soluci´ on general deAx =
+
+0
+2
+
+son los vectores de la forma
+
+
+x1
+x2
+x3
+x4
+
+ = x2
+
+
+0
+1
+0
+0
+
+ + x4
+
+
+−1
+0
+−2
+1
+
+ +
+
+
+1
+1
+1
+1
+
+ =
+
+
+−x4 + 1
+x2 + 1
+−2x4 + 1
+x4 + 1
+
+ , x 2, x4 ∈ R.
+Puntaje
+• 1 punto por establecer la relaci´ on entre la ecuaci´ onAx = 0 y la forma escalonada
+aumentada.
+• 1 punto por determinar las variables b´ asicas y las variables libres correctamente.
+• 1 punto por determinar la soluci´ on deAx = 0.
+• 1 punto por determinar una soluci´ on particular deAx = 0.
+• 2 puntos por escribir la soluci´ on general del problema no homog´ eneo de manera
+correcta.7. Considere una matriz A de 3 × 3 tal que
+
+
+1 0 0
+0 1 0
+0 0 −1/4
+
+
+
+
+1 0 0
+0 1 0
+0 1 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ A = I
+donde I es la matriz identidad correspondiente. Sin calcular A ni A−1 expl ´ ıcitamente:
+(a) Justifique porqu´ eA debe ser una matriz invertible. (2 pt)
+(b) Escriba A−1 como producto de matrices elementales. (1 pt)
+(c) Escriba A como producto de matrices elementales. (3 pts)
+Soluci´ on
+(a) Primero notar que cada matriz a la izquierda de A es elemental. De la ecuaci´ on
+matricial, tenemos que A se transforma en la matriz identidad con tres operaciones
+elementales de fila. Esto implica que A es invertible.
+(b) Al multiplicar por A−1 a la derecha de la ecuaci´ on del enunciado, se tiene que
+
+
+1 0 0
+0 1 0
+0 0 −1/4
+
+
+
+
+1 0 0
+0 1 0
+0 1 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ = A−1.
+(c) De la ecuaci´ on matricial del enunciado, se tiene
+
+
+1 0 0
+0 1 0
+0 0 −1/4
+
+
+
+
+1 0 0
+0 1 0
+0 1 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ A = I
+=⇒
+
+
+1 0 0
+0 1 0
+0 1 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ A =
+
+
+1 0 0
+0 1 0
+0 0 −1/4
+
+
+−1
+=⇒
+
+
+1 0 0
+0 0 1
+0 1 0
+
+ A =
+
+
+1 0 0
+0 1 0
+0 1 1
+
+
+−1 
+
+1 0 0
+0 1 0
+0 0 −1/4
+
+
+−1
+=⇒ A =
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+−1 
+
+1 0 0
+0 1 0
+0 1 1
+
+
+−1 
+
+1 0 0
+0 1 0
+0 0 −1/4
+
+
+−1
+=
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+
+
+1 0 0
+0 1 0
+0 −1 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −4
+
+
+Puntaje
+• 2 puntos por dar una justificaci´ on correcta sobre la invertibilidad deA.
+• 1 punto por escribir A−1 correctamente como producto de matrices elementales.
+• 1 puntos por despejar correctamente la matriz A en el ´ ıtem (c)
+• 2 puntos por calcular cada inversa de las matrices elementales correctamente en el
+´ ıtem (c). Asignar 1 punto si comete alg´ un error de c´ alculo aritm´ etico. Asignar 0
+puntos si comete 2 o m´ as errores.

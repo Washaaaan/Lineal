@@ -1,0 +1,561 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer semestre de 2022
+MAT1203 – ´Algebra Lineal
+Soluci´ on Interrogaci´ on 1
+1. Suponga que un vector unitario u =
+
+
+u1
+u2
+u3
+
+ hace ´ angulosα = π/3, β = π/2, y γ = π/3, con los
+vectores a =
+
+
+5
+0
+0
+
+, b =
+
+
+√
+2
+1
+0
+
+, y c =
+
+
+0
+0√
+2
+
+, respectivamente.
+Encuentre los componentes del vector u.
+[Ayuda: cos( π/3) = 1 /2 y cos( π/2) = 0]
+Soluci´ on.Tenemos las ecuaciones
+cos(π/3) = u · a‖a‖ ‖u‖ , cos(π/2) = u · b‖b‖ ‖u‖ y cos( π/3) = u · c‖c‖ ‖u‖ .
+Dado que ‖a‖ = 5, ‖b‖ =
+√
+3, ‖c‖ =
+√
+2, y ‖u‖ = 1 deducimos que
+1
+2 = 5u15 , 0 =
+√
+2u1 + u2√
+3 , 12 =
+√
+2u3√
+2 .
+Vemos entonces que
+u1 = 12 , u 2 = −
+√
+2
+2 y u3 = 12 .
+Puntaje Pregunta 1.
+2 puntos por utilizar la f´ ormulas que relacionan ´ angulos entre vect ores con el producto
+punto
+2 puntos por determinar las normas de los vectores a, b, c y u.
+2 puntos por determinar las coordenadas del vector u.2. Encuentre un vector no cero ortogonal al plano que pasa por lo s puntos P (−1, 3, 1), Q(0, 5, 2),
+R(4, 3, −1) y luego determine el ´ area del tri´ anguloP QR.
+Soluci´ on.Tomemos los vectores que est´ an en la direcci´ on del plano que pasa por los tres
+puntos indicados: − →P Q = (1, 2, 1) , − →P R = (5, 0, −2) ,
+luego el vector − →P Q × − →P R = ( −4, 7, −10), es ortogonal al plano que pasa por los puntos P , Q,
+R.
+El ´ area del tri´ anguloP QR es
+A = ‖(−4, 7, −10)‖2 = √16 + 49 + 1002 = √1652 .
+Puntaje Pregunta 2.
+3 puntos por determinar un vector ortogonal al plano.
+3 puntos por determinar el ´ area del tri´ anguloP QR.3. Considere los puntos A(−1, 2, 0), B(3, −2, 2) y C(0, 3, −1). Encuentre la ecuaci´ on escalar (o
+ecuaci´ on general) del plano que pasa por el punto A y es perpendicular a la recta que pasa por
+los puntos B y C.
+Soluci´ on.Notemos en primer lugar que la direcci´ on de la recta que pasa por los p untos B y
+C es el vector − − →BC = ⟨0 − 3, 3 − (−2), −1 − 2⟩ = ⟨−3, 5, −3⟩ .
+Como el plano buscado es perpendicular a esta recta, el vector − − →BC es su vector normal. Sabiendo
+adem´ as que este plano pasa por el punto A(−1, 2, 0), su ecuaci´ on escalar es
+−3(x − (−1)) + 5(y − 2) − 3(z − 0) = 0 ⇐ ⇒ − 3(x + 1) + 5(y − 2) − 3z = 0
+⇐ ⇒ − 3x − 3 + 5y − 10 − 3z = 0
+⇐ ⇒ − 3x + 5y − 3z = 3 + 10
+⇐ ⇒ − 3x + 5y − 3z = 13.
+Puntaje Pregunta 3.
+3 puntos por determinar un vector que sea perpendicular al plano b uscado.
+3 puntos por determinar la ecuaci´ on escalar del plano.4. Considere la ecuaci´ on matricial Ax = b, donde
+A =
+
+
+1 3 2 1
+0 1 4 2
+0 3 2 5
+3 6 9 12
+2 4 6 8
+
+ , b =
+
+
+b1
+b2
+b3
+b4
+b5
+
+ y x ∈ Rm .
+Determine m para que la ecuaci´ on tenga sentido y luego determine qu´ e condicion es deben
+satisfacer las componentes del vector b para que el sistema sea consistente.
+Soluci´ on.Claramente m = 4 y escalonando la matriz ampliada se obtiene:
+[
+A b
+]
+=
+
+
+1 3 2 1 b1
+0 1 4 2 b2
+0 3 2 5 b3
+3 6 9 12 b4
+2 4 6 8 b5
+
+ ∼
+
+
+1 3 2 1 b1
+0 1 4 2 b2
+0 3 2 5 b3
+0 −3 3 9 b4 − 3b1
+0 −2 2 6 b5 − 2b1
+
+ ∼
+
+
+1 3 2 1 b1
+0 1 4 2 b2
+0 0 −10 −1 b3 − 3b2
+0 0 15 15 b4 − 3b1 + 3b2
+0 0 10 10 b5 − 2b1 + 2b2
+
+
+∼
+
+
+1 3 2 1 b1
+0 1 4 2 b2
+0 0 −10 −1 b3 − 3b2
+0 0 15 15 b4 − 3b1 + 3b2
+0 0 5 5 b5/2 − b1 + b2
+
+ ∼
+
+
+1 3 2 1 b1
+0 1 4 2 b2
+0 0 5 5 b5/2 − b1 + b2
+0 0 0 9 b3 − b2 + b5 − 2b1
+0 0 0 0 b4 − 3b5/2
+
+ .
+Por lo tanto, el sistema es consistente si 3 b5 = 2b4.
+Puntaje Pregunta 4.
+1 punto por obtener que m = 4.
+3 puntos por obtener la forma escalonada de la matriz ampliada.
+2 puntos por concluir que el sistema es consistente si 3 b5 = 2b4.5. Sea A una matriz de m × n que satisface
+A
+
+
+1
+1
+0
+
+ =
+
+
+1
+2
+0
+
+ A
+
+
+0
+0
+1
+
+ =
+
+
+−1
+0
+2
+
+ y A
+
+
+0
+1
+0
+
+ =
+
+
+0
+3
+1
+
+ .
+Determine m y n y calcule la matriz A.
+Soluci´ on.Claramente m = n = 3. Si las columnas de la matriz A son v1, v2 y v3 Entonces
+las ecuaciones dadas son equivalentes a
+v1 + v2 =
+
+
+1
+2
+0
+
+ , v3 =
+
+
+−1
+0
+2
+
+ y v2 =
+
+
+0
+3
+1
+
+ .
+Se sigue que v1 =
+
+
+1
+−1
+−1
+
+. Por lo tanto, la matriz
+A =
+[
+v1 v2 v2
+]
+=
+
+
+1 0 −1
+−1 3 0
+−1 1 2
+
+ .
+Puntaje Pregunta 5.
+1 punto por determinar los valores de m y n.
+3 puntos por traducir la informaci´ on dada a combinaciones lineales de las columnas de la
+matriz A.
+2 puntos por encontrar los vectores columnas de A.6. Si la suma de las columnas de A es el vector
+
+
+−1
+−1
+−3
+
+ y la forma escalonada reducida de A es
+
+
+1 −1 0 0
+0 0 1 8
+0 0 0 0
+
+, determine el conjunto soluci´ on de Ax =
+
+
+−1
+−1
+−3
+
+.
+Soluci´ on.Sean v1, v2, v3 y v4 las columnas de la matriz A y b =
+
+
+−1
+−1
+−3
+
+. Notemos que
+p =
+
+
+1
+1
+1
+1
+
+ es soluci´ on del sistemaAx = b. En efecto,
+Ap =
+[
+v1 v2 v3 v4
+]
+
+
+1
+1
+1
+1
+
+ = v1 + v2 + v3 + v4 =
+
+
+−1
+−1
+−3
+
+ = b .
+Por la forma escalonada reducida de la matriz A concluimos que las soluciones de la ecuaci´ on
+homog´ eneaAx = 0 son
+vh =
+
+
+x1
+x2
+x3
+x4
+
+ =
+
+
+x2
+x2
+−8x4
+x4
+
+ = x2
+
+
+1
+1
+0
+0
+
+ + x4
+
+
+0
+0
+−8
+1
+
+ .
+Por lo tanto, el conjunto soluci´ on de Ax = b es
+S = {w = p + vh | x2, x4 ∈ R} =
+
+
+
+
+
+1
+1
+1
+1
+
+ + x2
+
+
+1
+1
+0
+0
+
+ + x4
+
+
+0
+0
+−8
+1
+
+ | x2, x4 ∈ R
+
+
+ .
+Puntaje Pregunta 6.
+2 puntos por deducir que p es soluci´ on particular del sistema Ax = b.
+2 puntos por obtener las soluciones del sistema homog´ eneo Ax = 0.
+2 puntos por obtener el conjunto soluci´ on del sistema Ax = b (considerar correcto si no
+se utiliza la notaci´ on de conjunto).7. Considere los vectores
+v1 =
+
+
+1
+−3
+−5
+
+ , v2 =
+
+
+−3
+9
+15
+
+ y v3 =
+
+
+2
+−5
+h
+
+ .
+¿Para qu´ e valores deh est´ av3 en Gen {v1, v2}?
+Soluci´ on.El vector v3 est´ a en Gen{v1, v2} si y solo si la ecuaci´ on x1v1 + x2v2 = v3 tiene una
+soluci´ on. Para determinar esto reducimos por ﬁlas la matriz
+[
+v1 v2 v3
+]
+:
+
+
+1 −3 2
+−3 9 −5
+−5 15 h
+
+ ∼
+
+
+1 −3 2
+0 0 1
+0 0 h + 10
+
+
+En este punto, la segunda ecuaci´ on muestra que la ecuaci´ on vectorial original no tiene soluci´ on.
+As ´ ı quev3 no est´ a en el Gen{v1, v2} para ning´ un valor deh.
+Puntaje Pregunta 7.
+3 puntos por hallar al forma escalonado de la matriz
+[
+v1 v2 v3
+]
+.
+3 puntos por concluir que no hay valores de h.8. Encuentre la matriz A de la transformaci´ on linealT : R3 → R3 que satisface
+T
+
+
+
+
+3
+2
+0
+
+
+
+ =
+
+
+−1
+2
+−5
+
+ , T
+
+
+
+
+−1
+2
+−5
+
+
+
+ =
+
+
+0
+1
+0
+
+ y T
+
+
+
+
+0
+1
+0
+
+
+
+ =
+
+
+3
+2
+0
+
+ .
+Soluci´ on.Sean a =
+
+
+3
+2
+0
+
+, b =
+
+
+−1
+2
+−5
+
+, y c =
+
+
+0
+1
+0
+
+. Tenemos que e2 = c as ´ ı queT (e2) = a.
+Por otro lado
+b = T (a) = 3 T (e1) + 2T (e2) = 3 T (e1) + 2a
+de lo que se deduce
+T (e1) = 13
+
+
+−7
+−2
+−5
+
+ .
+Similarmente
+c = T (b) = −T (e1) + 2T (e2) − 5T (e3) = −13
+
+
+−7
+−2
+−5
+
+ + 2a − 5T (e3)
+de lo que obtenemos
+T (e3) = 115
+
+
+25
+11
+5
+
+ .
+Vemos entonces que
+A =
+[
+T (e1) T (e2) T (e3)
+]
+=
+
+
+−7/3 3 25 /15
+−2/3 2 11 /15
+−5/3 0 1 /3
+
+ .
+Puntaje Pregunta 8.
+2 puntos por calcular T (e1).
+2 puntos por calcular T (e2).
+2 puntos por calcular T (e3).

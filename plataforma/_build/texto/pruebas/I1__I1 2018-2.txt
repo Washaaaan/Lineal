@@ -1,0 +1,478 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Segundo Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 1
+1. Demuestre que si los vectores u + v y u − v son ortogonales entonces los vectores u y v tienen la
+misma norma. Justiﬁque cada paso de la demostraci´ on.
+Soluci´ on.
+Si u + v y u − v son ortogonales implica que ( u + v) · (u − v) = 0 luego
+(u + v) · (u − v) = 0
+u · u + v · u − u · v − v · v = 0
+u · u + u · v − u · v − v · v = 0
+∥u∥2 − ∥v∥2 = 0
+∥u∥ = ∥v∥
+esto equivale a decir que sus longitudes sean iguales.
+Puntaje:
+2 puntos por argumentar que el producto punto entre vectores ortogonales debe ser 0.
+2 puntos por aplicar las diferentes propiedades.
+2 puntos por concluir que las longitudes de los vectores son las mismas.2. Considere el punto P (2, 4, 6) y π el plano de ecuaci´ onx − y + 3z = 7
+a) Encuentre unas ecuaciones param´ etricas de la recta que pasa por P y es perpendicular al
+plano π.
+b) Encuentre una ecuaci´ on del plano que pasa por P y es paralelo al plano π.
+Soluci´ on.
+a) Una recta perpendicular al plano x − y + 3z = 7 tiene como direcci´ on a la normal de este
+plano n =< 1, −1, 3 >, luego como debe pasar por el punto P (2, 4, 6), unas ecuaciones pa-
+ram´ etricas de la recta son x = 2 + t, y = 4 − t, z = 6 + 3 t con t ∈ R.
+b) Un plano paralelo al plano π tiene como normal, a la normal del plano π, n =< 1, −1, 3 >,
+luego una ecuaci´ on de este es de la forma
+x − y + 3z + e = 0
+como el punto P (2, 4, 6) debe pertenecer al plano tenemos que
+2 − 4 + 3 · 6 + e = 0 → e = −16
+quedando la ecuaci´ on del plano x − y + 3z − 16 = 0.
+Puntaje:
+1 punto por determinar que la direcci´ on de la recta debe ser n =< 1, −1, 3 >.
+2 puntos por mostrar unas ecuaciones param´ etricas de la recta.
+1 punto por determinar que la normal del plano debe ser n =< 1, −1, 3 >.
+2 puntos por mostrar una ecuaci´ on del plano.3. Determine una ecuaci´ on cartesiana para el plano que consta de los puntos que son equidistantes
+(est´ an a la misma distancia) de los puntos P (2, −1, 1) y Q(3, 1, 5).
+Soluci´ on.
+a) El punto medio entre los puntos dados es M = P + Q2 = ( 52 , 0, 3) y pertenece al plano
+pedido. El vector N = − − →P M = M − P = ( 52 − 2, 0 + 1, 3 − 1) es perpendicular al plano, luego
+su ecuaci´ on cartesiana es de la forma
+1
+2 x + y + 2z = d
+reemplazando el punto
+( 5
+2 , 0, 3
+)
+resulta:
+1
+2 x + y + 2z = 12 · 52 + 6 = 294 =⇒ x + 2y + 4z = 292 .
+Puntaje:
+1 punto por determinar un punto que pertenezca al plano.
+2 puntos por determinar la normal del plano.
+3 puntos por mostrar una ecuaci´ on del plano.
+b) Si P (x, y, z) pertenece al plano pedido debe cumplir que
+√
+(x − 2)2 + (y + 1)2 + (z − 1)2 = √(x − 3)2 + (y − 1)2 + (z − 5)2
+x2 − 4x + 4 + y2 + 2y + 1 + z2 − 2z + 1 = x2 − 6x + 9 + y2 − 2y + 1 + z2 − 10z + 25
+2x + 4y + 8z = 29 =⇒ x + 2y + 4z = 292
+Puntaje:
+3 punto por mostrar la condici´ on necesaria que deben cumplir los puntos.
+3 punto por mostrar una ecuaci´ on del plano.4. Determine a, b ∈ R para que el sistema en variable x1, x2, x3 y x4
+x1 + x2 + 2x3 + x4 = 1
+x1 − 2x2 − x3 + x4 = −2
+x1 + 3x2 + x3 − 2x4 = 3
+2x1 + 4x2 + 2x3 + ax4 = b
+a) Tenga ´ unica soluci´ on.
+b) No tenga soluci´ on.
+c) Tenga inﬁnitas soluciones. En este caso hallar la soluci´ on general.
+Soluci´ on.Primero buscamos la forma escalonada de la matriz ampliada del sistema
+(A|b) =
+
+
+1 1 2 1 1
+1 −2 −1 1 −2
+1 3 1 −2 3
+2 4 2 a b
+
+ ∼
+
+
+1 1 2 1 1
+0 −3 −3 0 −3
+0 2 −1 −3 2
+0 2 −2 a − 2 b − 2
+
+
+∼
+
+
+1 1 2 1 1
+0 −1 −1 0 −1
+0 2 −1 −3 2
+0 2 −2 a − 2 b − 2
+
+ ∼
+
+
+1 1 2 1 1
+0 −1 −1 0 −1
+0 0 −3 −3 0
+0 0 −4 a − 2 b − 4
+
+
+∼
+
+
+1 1 2 1 1
+0 −1 −1 0 −1
+0 0 −1 −1 0
+0 0 −4 a − 2 b − 4
+
+ ∼
+
+
+1 1 2 1 1
+0 −1 −1 0 −1
+0 0 −1 −1 0
+0 0 0 a + 2 b − 4
+
+
+a) Se sigue que el sistema tiene una ´ unica soluci´ on si y solo si a ̸= −2.
+b) El sistema no posee soluci´ on si a + 2 = 0 y b − 4 ̸= 0.
+c) El sistema posee inﬁnitas soluciones si a + 2 = 0 y b − 4 = 0. Para estos valores, el sistema
+dado es equivalente con el sistema
+x1 + x2 + 2x3 + x4 = 1
+−x2 − x3 = −1
+−x3 − x4 = 0
+de donde se obtiene: x4 = −x3, x2 = 1 − x3 y x1 = 0. La soluci´ on general es el conjunto
+S = {(0, 1 − t, t, −t) | t ∈ R} .
+Puntaje:
+0.5 puntos por mostrar la matriz ampliada del sistema.
+1.5 puntos por mostrar una forma escalonada de la matriz ampliada.
+1 punto por encontrar la condici´ on para a).1 punto por encontrar la condici´ on para b).
+1 punto por encontrar la condici´ on para c).
+1 punto por encontrar la soluci´ on general para c).
+5. Encuentre todos los valores de h para los cuales los vectores
+
+
+1
+−2
+−4
+
+ ,
+
+
+−3
+7
+6
+
+ ,
+
+
+2
+1
+h
+
+
+son linealmente dependientes.
+Soluci´ on.
+Denote los tres vectores por a1, a2 y a3, respectivamente. Quisi´ eramos saber cu´ ando la ecuaci´ on
+vectorial
+x1a1 + x2a2 + x3a3 = 0
+tiene soluci´ on distinta de la trivial, esto ocurre si y s´ olo si la matriz ampliada del sistema de
+ecuaciones correspondiente a la ecuaci´ on vectorial, tiene menos columnas pivotes que el n´ umero
+de columnas correspondientes.
+A ∼
+
+
+1 −3 2
+−2 7 1
+−4 6 h
+
+ ∼
+
+
+1 −3 2
+0 1 5
+0 −6 h + 8
+
+ ∼
+
+
+1 −3 2
+0 1 5
+0 0 h + 38
+
+ .
+Por lo tanto esto ocurre cuando h + 38 = 0, i.e. h = −38.
+Puntaje:
+1 punto por escribir el problema como un sistema homogeneo.
+1 punto por mencionar la condici´ on necesaria y suﬁciente.
+2 puntos por calcular correctamente una forma escalonada.
+2 puntos por encontrar h.6. Considere la transformaci´ on linealT : R2 → R2 que primero reﬂeja los puntos a trav´ es de la recta
+x1 = x2 y luego los reﬂeja a trav´ es del eje vertical x2.
+a) Determine la matriz A tal que T (x) = Ax para todo x ∈ R2.
+b) Argumente por que T es invertible y determine la transformaci´ on inversa T
+−1
+( x
+y
+)
+.
+Soluci´ on.
+a) Al aplicar el primer efecto de la transformaci´ on a e1 queda el vector < 0, 1 > y al aplicar el
+segundo efecto queda como < 0, 1 > entonces T (e1) =< 0, 1 >, al aplicar el primer efecto de
+la transformaci´ on ae2 queda el vector < 1, 0 > y al aplicar el segundo efecto queda como
+< −1, 0 > entonces T (e2) =< −1, 0 >, luego
+A = (T (e1) T (e2)) =
+( 0 −1
+1 0
+)
+b) Como la matriz que representa a T posee columnas linealmente independientes esta matriz
+es invertible por lo cual la transformaci´ on T es invertible. Y
+A−1 =
+( 0 1
+−1 0
+)
+→ T
+−1
+( x
+y
+)
+= A−1
+( x
+y
+)
+=
+( 0 1
+−1 0
+) ( x
+y
+)
+=
+( y
+−x
+)
+Puntaje:
+3 puntos por encontrar la matriz de la transformaci´ on.
+1 punto por argumentar que la transformaci´ on es invertible.
+2 puntoa por determinar T
+−1
+.7. Sean π el plano cuya ecuaci´ on vectorial es
+
+
+x
+y
+z
+
+ = t1
+
+
+1
+1
+2
+
+ + t2
+
+
+1
+1
+0
+
+ con t1, t2 ∈ R y
+A =
+
+
+−1 1 0
+3 −1 2
+2 1 α
+
+. Determine para qu´ e valor de α la imagen de π bajo A,
+A(π) =
+
+
+A
+
+
+x
+y
+z
+
+ ∈ R3 |
+
+
+x
+y
+z
+
+ ∈ π
+
+
+, es una recta. Justiﬁque su respuesta.
+Soluci´ on.
+Los vectores que pertenecen al plano π son de la forma
+
+
+x
+y
+z
+
+ = t1
+
+
+1
+1
+2
+
+ + t2
+
+
+1
+1
+0
+
+
+Al multiplicar estos vectores por la matriz A
+A
+
+
+x
+y
+z
+
+ = t1A
+
+
+1
+1
+2
+
+ + t2A
+
+
+1
+1
+0
+
+ = t1
+
+
+0
+6
+3 + 2α
+
+ + t2
+
+
+0
+2
+3
+
+
+Luego
+A(π) =
+
+
+t1
+
+
+0
+6
+3 + 2α
+
+ + t2
+
+
+0
+2
+3
+
+ | t1, t2 ∈ R
+
+
+
+Para que A(π) determine una recta necesitamos que el conjunto
+
+
+
+
+
+0
+6
+3 + 2α
+
+ ,
+
+
+0
+2
+3
+
+
+
+
+ sea
+linealmente dependiente es decir que exista un k ∈ R tal que la ecuaci´ on
+
+0
+6
+3 + 2α
+
+ = k
+
+
+0
+2
+3
+
+ tenga soluci´ on, y esto se cumple solo si α = 3
+Puntaje:
+3 puntos por encontrar A(π).
+1.5 puntos por argumentar que los vectores deben del ld.
+1.5 puntos por determinar que α = 3.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. En caso de ser verdaderas dem´ ues-
+trelas y si son falsas de un contraejemplo.
+a) Si A y B son matrices de 2 × 2 entonces ( A + B)(A − B) = A2 − B2.
+b) Si {u, v} es un conjunto linealmente independiente de R2 y A una matriz de 2 × 2 tal que
+A · e1 = u, A · (e1 + e2) = v entonces A es invertible.
+c) Si A es una matriz de 3 ×5 cuya forma escalonada reducida tiene 3 posiciones pivote, entonces
+la ecuaci´ onAx = 0 tiene al menos una soluci´ on no trivial.
+Soluci´ on.
+a) Falsa.
+Tomar
+A =
+( 1 2
+−1 0
+)
+, B =
+(0 1
+1 0
+)
+.
+Luego
+A + B =
+(1 3
+0 0
+)
+, A − B =
+( 1 1
+−2 0
+)
+y
+(A + B)(A − B) =
+(−5 1
+0 0
+)
+.
+Adem´ as,
+A2 =
+(−1 2
+−1 −2
+)
+, B2 =
+(1 0
+0 1
+)
+y
+A2 − B2 =
+(−2 2
+−1 −3
+)
+.
+Esto muestra que ( A + B)(A − B) ̸= A2 − B2.
+b) Verdadero.
+Si A = [ a1 a2] tenemos que Ae1 = a1 = u y A · (e1 + e2) = a1 + a2 = v → a2 = v − u,
+demostrar que A es invertible es equivalente a demostrar que sus columnas son li, es decir
+que x1a1 + x2a2 = 0 tiene solo la soluci´ on trivial, luego
+x1a1 + x2a2 = x1 · u + x2 · (v − u) = ( x1 − x2) · u + x2 · v = 0
+como {u, v} es li tenemos que x1 − x2 = 0 y x2 = 0, por lo cual la ecuaci´ on vectorial
+x1a1 + x2a2 = 0 tiene solo la soluci´ on trivial.c) Verdadero
+La ecuaci´ on homogenea tiene soluciones no triviales si y s´ olo si tiene al menos una variable
+libre. Ya que 3 de los 5 variables son variables b´ asicas, 2 son libres. Por eso, la ecuaci´ on tiene
+una soluci´ on no trivial.
+Puntaje:
+2 puntos por dar contraejemplo en a)
+2 puntos por demostrar b).
+2 puntos por demostrar c).

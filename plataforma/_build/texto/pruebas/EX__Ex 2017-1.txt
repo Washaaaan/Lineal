@@ -1,0 +1,822 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2017
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on del Examen
+1. Sean u, v dos vectores ortogonales en Rn tales que ‖u‖ = 1,‖v‖ = √3/2. Demuestre que el
+conjunto
+B ={u− v, 3u + 2v}
+es ortogonal y encuentre las coordenadas del vector 4 u− 9v respecto del conjunto B.
+Soluci´ on:
+(u− v)· (3u + 2v) = 3u· u + 2u· v− 3u· v− 2v· v.
+Como u y v son ortogonales,||u|| = 1 y||v|| =
+√
+3/2, se tiene que
+(u− v)· (3u + 2v) = 3u· u− 2v· v = 3||u||2− 2||v||2 = 3· 1− 2· 32 = 0.
+Luego (u−v) y (3u + 2v) son ortogonales, por lo que B ={u−v, 3u + 2v} es l.i. y por lo tanto
+una base de Gen{u− v, 3u + 2v}.
+Ahora, se buscaα yβ tal queα(u−v)+β(3u+2v) = 4u−9v, por lo que (α+3β)u+(2β−α)v =
+4u− 9v.
+Resolviendo el sistema
+α + 3β = 4
+−α + 2β =−9
+⏐⏐⏐⏐⏐, se llega a que α = 7 y β =−1.
+Puntaje:
+Por expandir (u− v)· (3u + 2v), 1 punto.
+Por usar que u· v = 0, 1 punto.
+Por llegar a (u− v)· (3u + 2v) = 3||u||2− 2||v||2, 2 puntos.
+Por plantear el sistema que permite encontrar los valores de α y β, 1 punto.
+Por llegar a los valores de α y β, 1 punto.
+A lo anterior se le suma el punto base.2. a) Determine la proyecci´ on del vectorb = (1, 2, 3, 0) sobre el subespacio
+W ={(x1,x 2,x 3,x 4)∈ R4 :x1 +x2 +x4 = 0}.
+b) Calcule la distancia entre el subespacio W y el vector b.
+Primera Soluci´ on:
+a) Una forma de enfrentar este problema es considerar un vector cualquiera
+x = (x1,x 2,x 3,x 4) = (x1,x 2,x 3,−x1−x2)
+de W , y exigir que ( b− x) = (1−x1, 2−x2, 3−x3,x 1 +x2) sea⊥ a todo vector de W .
+Como todo vector p = (α,β,γ,δ )∈W puede ser escrito como
+p = (α,β,γ,δ ) = (α,β,γ, −α−β) =α(1, 0, 0,−1) +β(0, 1, 0,−1) +γ(0, 0, 1, 0),
+vemos que {(1, 0, 0,−1), (0, 1, 0,−1), (0, 0, 1, 0)} es un generador de W , por lo que basta
+exigir que ( b− x)⊥ (1, 0, 0,−1), (b− x)⊥ (0, 1, 0,−1) y ( b− x)⊥ (0, 0, 1, 0) para que
+(b− x) sea⊥ a todo vector de W .
+As´ ı, exigimos que:
+(b− x)· (1, 0, 0,−1) = (1−x1, 2−x2, 3−x3,x 1 +x2)· (1, 0, 0,−1) = 1− 2x1−x2 = 0,
+(b− x)· (0, 1, 0,−1) = (1−x1, 2−x2, 3−x3,x 1 +x2)· (0, 1, 0,−1) = 2−x1− 2x2 = 0,
+(b− x)· (0, 0, 1, 0) = (1−x1, 2−x2, 3−x3,x 1 +x2)· (0, 0, 1, 0) = 3−x3 = 0.
+Esto equivale a plantear el sistema
+2x1 + x2 = 1
+x1 + 2x2 = 2
+x3 = 3
+⏐⏐⏐⏐⏐⏐⏐, que tiene por soluci´ onx1 = 0,x2 = 1,
+x3 = 3, o sea,
+x = (x1,x 2,x 3,−x1−x2) = (0, 1, 3,−1).
+As´ ı, la proyecci´ on deb sobre W es x = (0, 1, 3,−1).
+b) La distancia entre b y W es
+||b− x|| =||(1, 2, 3, 0)− (0, 1, 3,−1)|| =||(1, 1, 0, 1)|| =
+√
+3.
+Segunda Soluci´ on:
+a) Primero necesitamos encontrar una base ortogonal para W .
+Como todo vector p = (α,β,γ,δ )∈W puede ser escrito como
+p = (α,β,γ,δ ) = (α,β,γ, −α−β) =α(1, 0, 0,−1) +β(0, 1, 0,−1) +γ(0, 0, 1, 0),
+vemos que B ={(1, 0, 0,−1), (0, 1, 0,−1), (0, 0, 1, 0)} es un generador de W . No es dif´ ıcil
+convencerse de queB es l.i., por lo que es base de W .
+Si tomamos la baseB de W
+{(1, 0, 0,−1), (0, 1, 0,−1), (0, 0, 1, 0)},encontraremos una base{w1, w2, w3} ortogonal usando el proceso de Gram-Schmidt:
+w1 = (1, 0, 0,−1)
+w2 = (0, 1, 0,−1)− (0, 1, 0,−1)· (1, 0, 0,−1)(1, 0, 0,−1)· (1, 0, 0,−1)(1, 0, 0,−1) = (−12 , 1, 0,−12 )
+w3 = (0, 0, 1, 0)− (0, 0, 1, 0)· (1, 0, 0,−1)(1, 0, 0,−1)· (1, 0, 0,−1)(1, 0, 0,−1)
+−
+(0, 0, 1, 0)· (−12 , 1, 0,−12 )
+(−12 , 1, 0,−12 )· (−12 , 1, 0,−12 )(−12 , 1, 0,−12 ) = (0, 0, 1, 0)
+Luego la proyecci´ on deb sobre W es
+b· w1
+w1· w1
+w1 + b· w2
+w2· w2
+w2 + b· w3
+w1· w3
+w3 = (0, 1, 3,−1)
+b) ´Usase el mismo m´ etodo que en la primera soluci´ on.
+Tercera Soluci´ on:
+a) Como en la soluci´ on anterior, aplicamos el proceso de Gram-Schmidt a B, obtenemos una
+base ortogonal
+B′ =
+{
+(1, 0, 0,−1),
+(
+−12, 1, 0,−12), (0, 0, 1, 0)}
+de W .
+Normalizando estos vectores, obtenemos
+U =
+{
+u1 =
+( 1√
+2, 0, 0,− 1√2), u2 =(− 1√6, 2√6, 0,− 1√6), u3 = (0, 0, 1, 0)}.
+La proyecci´ onx de b sobre W puede ser calculada como
+x = (b· u1)u1 + (b· u2)u2 + (b· u3)u3
+= 1√2u1 + 3√6u2 + 3u3 =(12, 0, 0,−12) +(−12, 1, 0,−12) + (0, 0, 3, 0) = (0, 1, 3,−1)
+b) ´Usase el mismo m´ etodo que en la primera soluci´ on.
+Cuarta Soluci´ on:
+a) Ya que los el conjunto B ={(1, 0, 0,−1), (0, 1, 0,−1), (0, 0, 1, 0)} es l.i., podemos aplicar el
+teorema 6.14, y —llamandoA a la matriz
+
+
+1 0 0
+0 1 0
+0 0 1
+−1 −1 0
+
+— obtener la soluci´ on de m´ ınimoscuadradosˆx de la ecuaci´ on
+Ax = b =
+
+
+1
+2
+3
+0
+
+,
+con lo que la proyecci´ on ortogonal deb sobre W se obtiene calculando Aˆx.
+El teorema 6.14 nos dice que la forma de encontrar ˆx es
+ˆx = (ATA)−1ATb =
+
+
+
+
+1 0 0 −1
+0 1 0 −1
+0 0 1 0
+
+
+
+
+1 0 0
+0 1 0
+0 0 1
+−1 −1 0
+
+
+
+
+−1
+
+1 0 0 −1
+0 1 0 −1
+0 0 1 0
+
+
+
+
+1
+2
+3
+0
+
+
+=
+
+
+2 1 0
+1 2 0
+0 0 1
+
+
+−1
+
+1 0 0 −1
+0 1 0 −1
+0 0 1 0
+
+
+
+
+1
+2
+3
+0
+
+ =
+
+
+2
+3 − 13 0
+− 13 23 0
+0 0 1
+
+
+
+
+1 0 0 −1
+0 1 0 −1
+0 0 1 0
+
+
+
+
+1
+2
+3
+0
+
+
+=
+
+
+2
+3 − 13 0
+− 13 23 0
+0 0 1
+
+
+
+
+1
+2
+3
+
+ =
+
+
+0
+1
+3
+
+,
+por lo que la proyecci´ on buscada es
+Aˆx =
+
+
+1 0 0
+0 1 0
+0 0 1
+−1 −1 0
+
+
+
+
+0
+1
+3
+
+ =
+
+
+0
+1
+3
+−1
+
+.
+b) ´Usase el mismo m´ etodo que en la primera soluci´ on.
+Puntaje:
+a) Por plantear alguna estrategia correcta de resoluci´ on del problema (puede ser alguna
+de las presentadas aqu´ ı, u otra distinta): 2 puntos.
+Por hacer correctamente los c´ alculos necesarios: 2 puntos.
+Por llegar a la proyecci´ on buscada: 1 punto.
+b) Por calcular correctamente la distancia buscada: 1 punto.
+A lo anterior se le suma el punto base.3. Considere la matriz
+A =
+
+
+1 −2 0
+−2 0 2
+0 2 −1
+
+.
+Determine matrices P,D con P ortogonal y D diagonal tales que A =PDP T .
+Soluci´ on:
+Lo primero es calcular el polinomio caracter´ ıstico deA:
+det(A−λI) =
+⏐⏐⏐⏐⏐⏐ 1−λ −2 0−2 −λ 20 2 −1−λ ⏐⏐⏐⏐⏐⏐ = (1−λ)⏐⏐⏐⏐−λ 22 −1−λ ⏐⏐⏐⏐ + 2⏐⏐⏐⏐−2 20 −1−λ ⏐⏐⏐⏐
+= (1−λ)(λ2 +λ− 4) + 4(λ + 1) =λ2 +λ− 4−λ3−λ2 + 4λ + 4λ + 4
+=−λ3 + 9λ =−λ(λ2− 9) =−λ(λ + 3)(λ− 3).
+As´ ı, los valores propios deA son 0, 3 y−3.
+En seguida, buscamos vectores propios para cada uno de estos valores propios:
+λ = 0: Buscamos una soluci´ on de
+
+
+1 −2 0
+−2 0 2
+0 2 −1
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.
+Para ello llevamos la matriz a su forma escalonada reducida (omitimos los c´ alculos por
+brevedad):
+A∼
+
+
+1 0 −1
+0 1 −1/2
+0 0 0
+
+,
+de donde x1 =x3, x2 = 12·x3, por lo que un vector propio es, por ejemplo,
+(x1,x 2,x 3) = (2, 1, 2).
+λ = 3: Buscamos una soluci´ on de
+
+
+−2 −2 0
+−2 −3 2
+0 2 −4
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.
+Llevando la matriz a su forma escalonada reducida, obtenemos:
+A∼
+
+
+1 0 2
+0 1 −2
+0 0 0
+
+,
+de donde x1 =−2x3, x2 = 2x3, por lo que un vector propio es, por ejemplo,
+(x1,x 2,x 3) = (−2, 2, 1).λ =−3: Buscamos una soluci´ on de
+
+
+4 −2 0
+−2 3 2
+0 2 2
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.
+Llevando la matriz a su forma escalonada reducida, obtenemos:
+A∼
+
+
+1 0 12
+0 1 1
+0 0 0
+
+,
+de donde x1 =− 12·x3, x2 =−x3, por lo que un vector propio es, por ejemplo,
+(x1,x 2,x 3) = (−1,−2, 2).
+Los vectores v1 = (2, 1, 2), v2 = (−2, 2, 1), v3 = (−1,−2, 2) forman una base ortogonal de R3,
+pero necesitamos que esta base sea ortonormal:
+ˆv1 =
+(2
+3, 13, 23), ˆv2 =(−23, 23, 13), ˆv3 =(−13,−23, 23)
+es efectivamente una base ortonormal de R3. As´ ı, la matriz
+P =
+[ ˆv1, ˆv2, ˆv3 ] =
+
+
+2
+3 −23 −13
+1
+3
+2
+3 −23
+2
+3
+1
+3
+2
+3
+
+
+es una posible matriz ortogonal como la pedida, y
+D =
+
+
+0 0 0
+0 3 0
+0 −3 0
+
+
+es una matriz diagonal tal que PDP T =A.
+Puntaje:
+Por encontrar los valores propios de A: 1 punto.
+Por encontrar un vector propio para λ = 0: 1 punto.
+Por encontrar un vector propio para λ = 3: 1 punto.
+Por encontrar un vector propio para λ =−2: 1 punto.
+Por normalizar los vectores propios: 1 punto.
+Por llegar a P y D: 1 punto.
+A lo anterior se le suma el punto base.4. Determine una base ortogonal para el espacio columna de la siguiente matriz:
+A =
+
+
+3 −5 1
+1 1 1
+−1 5 −2
+3 −7 8
+
+
+Soluci´ on:
+En principio, el espacio columna es generado por las tres columnas de A (!Obvio!).
+Debemos determinar si esas tres columnas forman o no una base, o sea, si son o no l.i.
+Esto puede ser hecho, por ejemplo, escalon´ andola. El escalonamiento arroja tres pivotes, por lo
+que efectivamente forman una base.
+Pero esta base no es ortogonal, por lo que debemos obtener una bse ortogonal para el mismo
+subespacio de R4.
+Para esto es idel usar el m´ etodo de Gram-Schmidt.
+En este caso, este m´ etodo funciona como sigue:
+a) Sean v1 = (3, 1,−1, 3), v2 = (−5, 1, 5,−7) y v3 = (1, 1,−2, 8) los tres vectores que for-
+man la base original del espacio columna. Buscamos un conjunto {w1, w2, w3} tal que
+Gen{w1, w2, w3} = Gen{v1, v2, v3}.
+b) Tomamos w1 = v1 = (3, 1,−1, 3).
+c) Tomamos w2 = v2− v2· w1
+||w1||2 w1 = (−5, 1, 5,−7)−−4020 (3, 1,−1, 3)
+= (−5, 1, 5,−7) + 2(3, 1,−1, 3) = (1, 3, 3,−1).
+d) Tomamos
+w3 = v3− v3· w1
+||w1||2 w1− v3· w2||w2||2 w2 = (1, 1,−2, 8)− 3020(3, 1,−1, 3)−−1020 (1, 3, 3,−1)
+= (1, 1,−2, 8)−
+(9
+2, 32,−32, 92) +(12, 32, 32,−12)
+= (−3, 1, 1, 3)
+As´ ı, la base buscada es
+{w1, w2, w3} ={(3, 1,−1, 3), (1, 3, 3,−1), (−3, 1, 1, 3)}.Puntaje:
+Por indicar que la forma de obtener la base ortogonal es usando Gram-Schmidt, 0,5 ptos.
+Por obtener el primer vector de la nueva base como el primero de la original, 0,5 puntos.
+Por plantear correctamente el c´ alculo que deber´ ıa dar el segundo vector de la nueva base,
+1 punto.
+Por llevar a cabo correctamente los c´ alculos que permiten obtener dicho segundo vector, 1
+punto.
+Por plantear correctamente el c´ alculo que deber´ ıa dar el tercer vector de la nueva base, 1,5
+puntos.
+Por llevar a cabo correctamente los c´ alculos que permiten obtener dicho segundo vector, 1,5
+puntos.5. Encuentre la recta y =mx +n, de m´ ınimos cuadrados, que mejor se ajusta a los puntos
+(0, 1), (1, 3), (2, 7).
+Soluci´ on:
+Usamos las coordenadas x de los datos para construir la matriz de dise˜ noX y las coordenadas
+y para construir el vector de observaciones y:
+X =
+
+
+1 0
+1 1
+1 2
+
+, y =
+
+
+1
+3
+7
+
+.
+Buscamos la soluci´ onβ de m´ ınimos cuadrados deXβ = y (donde β =
+[ β0
+β1
+]
+=
+[ n
+m
+]
+).
+Para ello planteamos las ecuaciones normales :
+X TXβ =X Ty,
+o, en otras palabras,
+[ 1 1 1
+0 1 2
+]
+
+1 0
+1 1
+1 2
+
+
+[ β0
+β1
+]
+=
+[ 1 1 1
+0 1 2
+]
+
+1
+3
+7
+
+.
+Simpliﬁcando, tenemos [ 3 3
+3 5
+][ β0
+β1
+]
+=
+[ 11
+17
+]
+.
+La soluci´ on de este sistema es
+[ β0
+β1
+]
+=
+[ 3 3
+3 5
+]−1[ 11
+17
+]
+=
+
+
+5
+6 −12
+−12 12
+
+[ 1117 ] =
+
+
+2
+3
+3
+
+.
+As´ ı,m =β1 = 3 y n =β0 = 23, por lo que la ecuaci´ on de la recta buscada es
+y = 3x + 23.
+Puntaje:
+Por plantear las ecuaciones normales X TXβ =X Ty, 2 puntos.
+Por escribir las ecuaciones normales expl´ ıcitamente como
+[ 3 3
+3 5
+][ β0
+β1
+]
+=
+[ 11
+17
+]
+,
+2 puntos.
+Por resolver el sistema y llegar a
+[ β0
+β1
+]
+=
+
+
+2
+3
+3
+
+, 1 punto.
+Por escribir la ecuaci´ on de la recta, 1 punto.
+A lo anterior se le suma el punto base6. Sea A la matriz sim´ etrica que representa a la forma cuadr´ atica,
+Q(x) =Q(x1,x 2,x 3) = 9x21 + 7x22 + 11x23− 8x1x2 + 8x1x3.
+a) Encuentre una matriz ortogonal P tal que el cambio de variable x = Py transforma la
+forma xTAx en una forma cuadr´ atrica sin productos cruzados.
+b) Escriba la forma cuadr´ atica en la nuevas variables y clasif´ ıquela.
+Soluci´ on:
+a) La matriz es A =
+
+
+9 −4 4
+−4 7 0
+4 0 11
+
+. Como se indic´ o durante la prueba, sus valores propios
+son 3, 9 y 15.
+Vectores propios correspondientes a estos valores propios son, respectivamente, (2 , 2,−1),
+(1,−2,−2) y (2,−1, 2). Estos tres vectores tienen norma 3, por lo que tras normalizarlos
+obtenemos, respectivamente,
+(2
+3, 23,−13),(13,−23,−23),(23,−13, 23).
+As´ ı, la matriz
+P =
+
+
+2
+3
+1
+3
+2
+3
+2
+3 −23 −13
+−13 −23 23
+
+
+es una matriz ortogonal tal que A = PDP T con D =
+
+
+3 0 0
+0 9 0
+0 0 15
+
+ (o, equivalentemente,
+D =P TAP ), y es la matriz ortogonal buscada.
+b) Si hacemos el cambio de variable x =Py, tenemos
+Q(x) = xTAx = (Py)TA(Py) = (yTP T )A(Py) = yT (P TAP )y
+= yTDy = yT
+
+
+3 0 0
+0 9 0
+0 0 15
+
+ y = 3y21 + 9y22 + 15y23,
+que es la forma cuadr´ atrica escrita sin productos cruzados.
+Como todos los elementos de la diagonal de D son positivos, la forma cuadr´ atica es positiva
+deﬁnida.
+Puntaje:
+a) Por encontrar vectores propios de A, 1 punto.
+Por normalizar los vectores propios, 1 punto.
+Por encontrar la matriz P , 1 punto.
+b) Por escribir la forma cuadr´ atica en las nuevas variables (sin productos cruzados), 1,5
+puntos.
+Por indicar que la forma es positiva deﬁnida (y dar una buena justiﬁcaci´ on), 1,5 puntos.
+A lo anterior se le suma el punto base7. Determine la descomposici´ on en valores singulares de la matriz,
+A =
+
+
+1 0
+1 1
+−1 1
+
+.
+Soluci´ on:
+Primero, calculamos ATA =
+[ 1 1 −1
+0 1 1
+]
+
+1 0
+1 1
+−1 1
+
+ =
+[ 3 0
+0 2
+]
+.
+Claramente, los valores propios de ATA son (en orden descendente) 3 y 2, con vectores propios
+unitarios correspondientes
+v1 =
+[ 1
+0
+]
+, v2 =
+[ 0
+1
+]
+.
+Con estos vectores como columnas formamos la matriz V =
+[ 1 0
+0 1
+]
+.
+Los valores singulares son σ1 =
+√
+3 y σ2 =
+√
+2, por lo que la matriz D =
+[√3 0
+0
+√
+2
+]
+y
+Σ =
+
+
+√
+3 0
+0
+√
+2
+0 0
+
+.
+Para encontrar las columnas de la matriz U, comenzamos con los vectores
+u1 = 1σ1Av1 = 1√3
+
+
+1 0
+1 1
+−1 1
+
+
+[ 1
+0
+]
+=
+
+
+1√
+31√
+3
+− 1√3
+
+, u2 = 1σ2Av2 = 1√2 1 01 1−1 1 [ 01 ] =
+
+
+0
+1√
+21√
+2
+
+.
+Como estos dos vectores no generan R3, debemos encontrar un tercer vector u3 que —junto con
+u1 y u2— complete una base ortonormal de R3. Una forma de obtener este tercer vector es tomar
+u3 = u1×u2 = 1√3(1, 1,−1)× 1√2(0, 1, 1) = 1√6 ((1, 1,−1)× (0, 1, 1)) = 1√6(2,−1, 1) =
+
+
+√
+2√
+3
+− 1√61√
+6
+
+.
+As´ ı,
+U =
+
+
+1√
+3 0
+√
+2√
+31√
+3
+1√
+2 − 1√6
+− 1√3 1√2 1√6
+
+con lo que
+A =UΣV T =
+
+
+1√
+3 0
+√
+2√
+31√
+3
+1√
+2 − 1√6
+− 1√3 1√2 1√6
+
+√3 00 √20 0 [ 1 00 1 ]T
+es la descomposici´ on de la matrizA en valores singulares.
+Puntaje:
+Por encontrar los valores singulares deA (lo que conlleva calcularATA y sus valores propios),
+1 punto.
+Por encontrar la matriz V , 1 punto.
+Por encontrar la matriz Σ, 1 punto.
+Por encontrar los vectores u1 y u2, 1,5 ptos.
+Por encontrar un tercer vector u3 que completa una base ortonormal de R3, 1,5 puntos.
+A lo anterior se le suma el punto base8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) Si A es una matriz de m×n, entonces el rango de ATA y el de A es el mismo.
+b) Si A es una matriz ortogonal entonces A2 es ortogonal y det(A) = 1.
+c) Si A = QR, donde R es una matriz invertible, entonces A y Q poseen el mismo espacio
+columna.
+Soluci´ on:
+a) VERDADERO.
+Ya queATA yA tienen la misma cantidad de columnas, y para cualquier matriz M se tiene
+que
+rango(M) + dim(Nul(M)) = n´ umero de columnas deM,
+para probar que rango(ATA) = rango(A) basta probar que dim(Nul(ATA)) = dim(Nul(A)).
+De hecho, probaremos que Nul(ATA)) = dim(Nul(A).
+En efecto:
+1) si x∈ Nul(A) entonces Ax = 0, por lo que ATAx = AT (Ax) = AT0 = 0, de donde
+x∈ Nul(ATA); as´ ı, Nul(A)⊆ Nul(ATA).
+2) si x∈ Nul(ATA) entonces (ATA)x = 0, por lo que xT ((ATA)x) = xT0 = 0. Pero, por
+otro lado, xT ((ATA)x) = (xTAT )(Ax) = (Ax)T (Ax), y sabemos que esto es cero si y
+solo si Ax = 0. As´ ı, six∈ Nul(A) entonces x∈ Nul(ATA), por lo que Nul( ATA)⊆
+Nul(A).
+b) FALSO.
+Considere, por ejemplo, la matriz A =
+[ 0 1
+1 0
+]
+. Esta es una matriz ortogonal, pero su
+determinante es−1.
+c) VERDADERO.
+Partamos recordando que v∈ Col(A) si y solo si existe u tal que Au = v.
+Probamos, en general, que siB,C yD son matrices,B yC dem×n,D den×n yB =CD,
+entonces Col(B)⊆ Col(C).
+En efecto: si y∈ Col(B), entonces existe x∈ Rn tal que Bx = y. Pero entonces y =Bx =
+(CD)x =C(Dx), por lo que y∈ Col(C). En otras palabras, Col(B)⊆ Col(C).
+Usando lo anterior y tomando B = A, C = Q y D = R, tenemos que Col( A)⊆ Col(Q);
+como adem´ asQ =AR−1, tomamosB =Q,C =A yD =R−1, llegamos a Col(Q)⊆ Col(A).
+Puntaje:
+En cada parte, se dan los dos puntos si se da una justiﬁcaci´ on correcta.
+En las partes (a) y (c) una buena justiﬁcaci´ on es una demostraci´ on.
+En la parte (b) una buena justiﬁcaci´ on es un contraejemplo.
+A lo anterior se le suma el punto base.

@@ -1,0 +1,517 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Segundo Semestre 2022
+´Algebra Lineal - MAT1203
+Pauta de correcci´ on Interrogaci´ on 1
+1. Encontrar, de ser posible, todos los valores de k de modo que los puntos P (1, 3, 7),
+Q(2, 0, 1) y R(−3, 1 − k, k) sean colineales, es decir, que pertenezcan a la misma recta.
+Soluci´ on Para que los puntos P , Q y R sean colineales, es suficiente que los vectores
+⃗P Qy ⃗QR sean paralelos. Dichos vectores corresponden a:
+⃗P Q= Q − P =
+
+
+2 − 1
+0 − 3
+1 − 7
+
+ =
+
+
+1
+−3
+−6
+
+
+⃗QR = R − Q =
+
+
+−3 − 2
+(1 − k) − 0
+k − 1
+
+ =
+
+
+−5
+1 − k
+k − 1
+
+
+Para que sean paralelos debe existir α ∈ R tal que ⃗P Q= α ⃗QR, es decir,
+
+
+1
+−3
+−6
+
+ = α
+
+
+−5
+1 − k
+k − 1
+
+ .
+Igualando las coordenadas tenemos que α = − 15 lo cual hace inconsistente el sistema
+−3 = − 15 (1 − k), −6 = k − 1. Por lo tanto, no existe k de manera que los puntos sean
+colineales.
+Puntaje
+• 2 puntos por establecer una condici´ on que garantice la colinealidad de los puntos
+P , Q y R.
+• 2 puntos por desarrollar dicha condici´ on de manera correcta
+• 2 puntos por concluir correctamente sobre la existencia de k independiente si de-
+sarroll´ o bien o mal los c´ alculos anteriores.2. Verifique que el tri´ angulo cuyos v´ ertices corresponden a los puntosA(3, 7, 5), B(3, 4, 8)
+y C(4, 4, 5) es is´ osceles, es decir, dos de sus lados tienen la misma longitud.
+Soluci´ on: Verificamos que al menos dos lados del tri´ angulo tienen la misma longitud:
+d(A, C) =
+p
+(3 − 4)2 + (7 − 4)2 + (5 − 5)2 = √10.
+d(B, C) =
+p
+(3 − 4)2 + (4 − 4)2 + (8 − 5)2 = √10.
+Por lo tanto el tri´ angulo es is´ osceles.
+Puntaje
+• 2 puntos por establecer que las distancias entre dos pares de puntos deben ser
+iguales.
+• 2 puntos por escribir correctamente las f´ ormulas de distancias entre puntos.
+• 2 puntos por verificar que dichas distancias son iguales a
+√
+10.
+3. Sean π1 el plano de ecuaci´ onx + y + 2z = 1, π2 el plano de ecuaci´ on−x + y = 2 y L1
+la recta que pasa por el punto P1 = (0, 1, 1) y cuya direcci´ on esd1 =
+
+
+1
+0
+0
+
+
+(a) Encuentre una ecuaci´ on vectorial de la rectaL2, que se obtiene como la intersecci´ on
+de los planos π1 y π2.
+(b) Encuentre el punto P2 de intersecci´ on de la rectaL1 y π1.
+Soluci´ on
+(a) Sea ⃗d =
+
+
+a
+b
+c
+
+ un vector director de la rectaL2. El vector ⃗d debe ser simult´ aneamente
+ortogonal a las normales ⃗ n1 =
+
+
+1
+1
+2
+
+ y ⃗ n2 =
+
+
+−1
+1
+0
+
+ de los planos π1 y π2, es decir,
+⃗d · ⃗ n1 = a + b + 2c = 0
+⃗d · ⃗ n2 = −a + b = 0lo que implica que a = b y c = −b, por lo que un vector director de la recta es
+⃗d =
+
+
+1
+1
+−1
+
+. Adem´ as, si reemplazamosx = 0 en las ecuaciones de los planos se tiene
+y = 2 y z = − 12 .
+Por lo tanto, una ecuaci´ on vectorial de la recta es
+
+
+x
+y
+z
+
+ = t
+
+
+1
+1
+−1
+
+ +
+
+
+0
+2
+− 12
+
+ , t ∈ R.
+Soluci´ on alternativa:
+La recta intersecci´ on entre dos planos puede encontrarse resolviendo el sistema
+x + y + 2z = 1, −x + y = 2.
+De la segunda ecuaci´ on tenemos que x = y − 2 y reemplazando en la primera se
+tiene (y − 2) + y + 2z = 1 lo que implica que y = 32 − z y por lo tanto x = −12 − z.
+Una ecuaci´ on vectorial de la recta es:
+
+
+x
+y
+z
+
+ =
+
+
+− 12 − z3
+2 − z
+z
+
+ =
+
+
+− 123
+2
+0
+
+ + z
+
+
+−1
+−1
+1
+
+ .
+(b) La recta L1 tiene ecuaciones param´ etricas
+x = t, y = 1, z = 1, t ∈ R.
+Reemplazando estos valores en la ecuaci´ on del planoπ1 se tiene
+t + 1 + 2 = 1 =⇒ t = −2.
+Por lo tanto, el punto de intersecci´ on esP2 = (−2, 1, 1).
+Puntaje
+• 1 punto por establecer correctamente una manera de determinar la recta inter-
+secci´ onL2, independiente que los c´ alculos no sean correctos.
+• 1 punto por realizar los c´ alculos correctos para determinar la recta de L2.
+• 1 punto por determinar una ecuaci´ on vectorial deL2 correcta.
+• 2 puntos por establecer una manera correcta de encontrar el punto P2.
+• 1 punto por encontrar el punto P2.4. Use el producto cruz para encontrar una ecuaci´ on del plano que pasa por los puntos
+P (0, −1, 1), Q(2, 0, 2) y R(1, 2, −1).
+Soluci´ on Definimos los vectores
+u = P Q= Q − P =
+
+
+2 − 0
+0 − (−1)
+2 − 1
+
+ =
+
+
+2
+1
+1
+
+
+v = P R= R − P =
+
+
+1 − 0
+2 − (−1)
+−1 − 1
+
+ =
+
+
+1
+3
+−2
+
+
+Calculamos el producto cruz:
+u × v =
+
+
+2
+1
+1
+
+ ×
+
+
+1
+3
+−2
+
+ =
+
+
+−5
+5
+5
+
+
+El vector u × v es normal al plano generado por los vectores u y v por lo que la ecuaci´ on
+del plano es de la forma −5x + 5y + 5z = d. Dicho plano contiene al punto P , por lo
+que −5(0) + 5(−1) + 5(1) = d =⇒ d = 0. En conclusi´ on, una ecuaci´ on del plano es
+−5x + 5y + 5y = 0
+o equivalentemente
+−x + y + z = 0.
+Puntaje
+• 2 puntos por identificar dos vectores paralelos al plano buscado.
+• 2 puntos por calcular correctamente el producto cruz de acuerdo a los vectores
+encontrados.
+• 2 puntos por determinar una ecuaci´ on del plano. Puede ser en forma general,
+vectorial o param´ etrica.5. Resuelva el sistema de ecuaciones lineales usando matrices, indicando si es consistente
+o no y exhiba dichas soluciones si existen.
+
+
+
+a + b + c = 2
+a − b + c = 6
+4a + 2b + c = 3
+Soluci´ on Escalonamos la matriz ampliada del sistema:
+
+
+1 1 1 2
+1 −1 1 6
+4 2 1 3
+
+ ∼
+
+
+1 1 1 2
+0 −2 0 4
+0 −2 −3 −5
+
+ ∼
+
+
+1 1 1 2
+0 −2 0 4
+0 0 −3 −9
+
+ ∼
+
+
+1 1 1 2
+0 1 0 −2
+0 0 1 3
+
+
+Ya que matriz de coeficientes tiene 3 posiciones pivotes, el sistema es consistente y tiene
+soluci´ on ´ unica. M´ as a´ un, ´ esta es: De la tercera fila tenemos quec = 3. De la segunda
+fila se tiene b = −2. De la primera fila a + b + c = 2 por lo tanto a = 1.
+Puntaje
+• 2 puntos por determinar correctamente una forma escalonada de la matriz ampli-
+ada.
+• 2 puntos por concluir acerca de la consistencia o inconsistencia del sistema, inde-
+pendiente que los c´ alculos est´ en bien hechos.
+• 2 puntos por determinar la soluci´ on del sistema de acuerdo al an´ alisis de la consis-
+tencia anterior.6. Sea A =
+a1 a2 a3 a4 una matriz de 2 × 4 cuyas columnas son los vectores a1, a2, a3
+y a4. Sabiendo que A es equivalente por filas a la matriz
+
+1 0 1 1
+0 0 1 0
+
+y que las columnas de A satisfacen
+a1 − a2 + a3 − a4 =
+
+2
+2
+
+determine el conjunto soluci´ on del sistemaAx =
+
+1
+1
+
+.
+Soluci´ on Una forma escalonada de A es
+
+1 0 1 1
+0 0 1 0
+
+, por lo que el conjunto soluci´ on
+de Ax = 0 son todos los vectores
+x =
+
+
+x1
+x2
+x3
+x4
+
+
+tales que x3 = 0 y x1 + x4 = 0. Adem´ as, se cumple que
+A
+
+
+1
+−1
+1
+−1
+
+ = 22 =⇒ A
+
+
+1
+2
+− 121
+2
+− 12
+
+ = 11 ,
+es decir,
+
+
+1
+2
+− 121
+2
+− 12
+
+ es soluci´ on del problema no homog´ eneoAx = 22. Por lo tanto, la
+soluci´ on general del sistema no homog´ eneo es
+x =
+
+
+−x4
+x2
+0
+x4
+
+ +
+
+
+1
+2
+− 121
+2
+− 12
+
+ = x4
+
+
+−1
+0
+0
+1
+
+ + x2
+
+
+0
+1
+0
+0
+
+ +
+
+
+1
+2
+− 121
+2
+− 12
+
+ , x 2, x4 ∈ R.
+Puntaje
+• 2 puntos por determinar la soluci´ on del problema homog´ eneoAx = 0.
+• 2 puntos por determinar una soluci´ on del problema no homog´ eneoAx =
+
+2
+2
+
+.
+• 2 puntos por determinar la soluci´ on general del problemaAx =
+
+2
+2
+
+, de acuerdo a
+los c´ alculos hechos anteriormente. Si no encuentra la soluci´ on general pero enuncia
+el teorema de soluci´ on de sistemas no homog´ eneos, asignar 1 punto.7. Explique con un ejemplo porqu´ e las siguientes afirmaciones son falsas:
+(a) Las columnas de una matriz A son linealmente independientes si la ecuaci´ onAx = 0
+tiene infinitas soluciones.
+(b) Si S es un conjunto linealmente dependiente, entonces cada vector de S es una
+combinaci´ on lineal de los otros vectores enS.
+(c) Si u y v son vectores linealmente independientes, entonces {u, v, w} es un conjunto
+linealmente independiente, cualquiera sea el vector w.
+Soluci´ on
+(a) La matriz A =
+
+1 2
+1 2
+
+tiene columnas LD pero el sistema Ax = 0 tiene infinitas
+soluciones.
+(b) El conjunto
+
+1
+1
+
+,
+
+2
+2
+
+,
+
+1
+0
+
+es LD pero el tercer vector no es combinaci´ on lineal
+de los dos primeros.
+(c) Aunque u y v sean linealmente independientes, el conjunto {u, v,⃗0} es LD.
+Puntaje
+• 2 puntos por justificar cada afirmaci´ on como falsa con un ejemplo adecuado. (6
+puntos en total).8. Determine si la siguiente transformaci´ on lineal deR4 a R3 es inyectiva y/o sobreyectiva:
+T
+
+
+x
+y
+z
+w
+
+ =
+
+
+x + z − w
+2x − y − w
+3x + 4y − z
+
+
+Soluci´ on La matriz est´ andar deT es A =
+
+
+1 0 1 −1
+2 −1 0 −1
+3 4 −1 0
+
+. Al escalonar la matriz A
+obtenemos
+A ∼
+
+
+1 0 1 −1
+0 −1 −2 1
+0 4 −4 3
+
+ ∼
+
+
+1 0 1 −1
+0 −1 −2 1
+0 0 −12 7
+
+
+La forma escalonada de A tiene un pivote en cada fila, por lo que las columnas de A generan
+todo R3, es decir, T es sobreyectiva. Por otro lado, las columnas de A son LD ya que
+corresponden a 4 vectores de R3. Por lo tanto, T no es inyectiva.
+Puntaje
+• 2 puntos por determinar la matriz est´ andar deT .
+• 2 puntos por justificar correctamente que T es sobreyectiva, de acuerdo a la matriz
+encontrada.
+• 2 puntos por justificar correctamente que T no es inyectiva, de acuerdo a la matriz
+encontrada.
+• Si la matriz encontrada no es la correcta, igual puede asignar puntos en el item 2 y 3
+siempre y cuando el problema no se haya trivializado.

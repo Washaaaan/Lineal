@@ -1,0 +1,92 @@
+
+----- pagina 1 -----
+Clase 20 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 8
+----- pagina 2 -----
+Recordatorio
+Buscamos un número que nos diga cuándo una matriz es invertible, y
+nos permita calcular la inversa.
+det A cumple que det A = 0 si y solo si A es invertible.
+¿Cómo calcular la inversa?
+2 / 8
+----- pagina 3 -----
+Regla de Cramer y fórmula para la inversa
+La regla de Cramer nos permite resolver sistemas Ax = b.
+Definición: Matriz Ai(b)
+Para cualquier matriz A de n × n y cualquier b en Rn, sea Ai(b) la matriz
+obtenida a partir de A al reemplazar la columna i por el vector b.
+Ai(b) =
+[
+a1 . . . b . . . an
+]
+Teorema: Regla de Cramer
+Sea A una matriz invertible de n × n. Para cualquier b en Rn, la única
+solución x de Ax = b tiene entradas dadas por:
+xi = det Ai(b)det A , i = 1, 2, . . . ,n
+3 / 8
+----- pagina 4 -----
+Regla de Cramer y fórmula para la inversa
+Ejemplo: Use la regla de Cramer para resolver el sistema:
+3x1 − 2x2 = 6
+−5x1 + 4x2 = 8
+Ejemplo: Considere el siguiente sistema, en el cual s es un parámetro no
+especificado. Determine los valores de s para los cuales el sistema tiene
+una solución única, y utilice la regla de Cramer para describir la solución.
+3sx1 − 2x2 = 4
+−6x1 + sx2 = 1
+4 / 8
+----- pagina 5 -----
+Regla de Cramer y fórmula para la inversa
+La regla de Cramer conduce a una fórmula general para la inversa de una
+matriz A de n × n.
+Definición: Adjunta de A
+La matriz de cofactores de A es la matriz formada por los cofactores Cij.
+La adjunta de A, denotada con adj A, es la transpuesta de la matriz de
+cofactores.
+adj A =
+
+
+C11 C21 . . . Cn1
+C12 C22 . . . Cn2
+... ... ...
+C1n C2n . . . Cnn
+
+
+5 / 8
+----- pagina 6 -----
+Regla de Cramer y fórmula para la inversa
+Teorema: Una fórmula para la inversa
+Sea A una matriz invertible de n × n. Así,
+A−1 = 1det A adj A
+6 / 8
+----- pagina 7 -----
+Regla de Cramer y fórmula para la inversa
+Ejemplo: Encuentre la inversa de la matriz:
+A =
+
+
+2 1 3
+1 −1 1
+1 4 −2
+
+
+Nota: Los cofactores de A son:
+C11 = −2, C12 = 3, C13 = 5
+C21 = 14, C22 = −7, C23 = −7
+C31 = 4, C32 = 1, C33 = −3
+7 / 8
+----- pagina 8 -----
+Regla de Cramer y fórmula para la inversa
+Nota numérica
+La fórmula para A−1 es útil principalmente para cálculos teóricos. Excepto
+para casos especiales, el algoritmo de reducción por filas ofrece una forma
+mucho mejor de calcular A−1.
+Para grandes matrices de n × n, la regla de Cramer es ineficiente. Para
+calcular solo un determinante se requiere tanto trabajo como resolver
+Ax = b por reducción de filas.
+8 / 8

@@ -1,0 +1,78 @@
+
+----- pagina 1 -----
+Clase 09 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 6
+----- pagina 2 -----
+Recordatorio
+Dado un SEL, podemos tomar la matriz de coeficientes A, el
+vector de resultados b y la matriz ampliada
+[
+A b
+]
+A través de operaciones de fila, reemplazamos una ecuación del
+sistema por una ecuación equivalente. No alteran el conjunto solución
+del SEL.
+El objetivo es llegar hasta formas escalonadas y escalonadas
+reducidas. ¿Cómo lo hacemos?
+2 / 6
+----- pagina 3 -----
+Formas escalonadas y reducción por filas
+Posiciones pivote
+Una posición pivote es la ubicación de un 1 principal de la forma
+escalonada reducida. Las columnas que contienen posiciones pivote se
+llaman columnas pivote .
+Ejemplo: Para la matriz
+A =
+
+
+0 −3 −6 4 9
+−1 −2 −1 3 1
+−2 −3 0 3 −1
+1 4 5 −9 −7
+
+ ,
+reduzca por filas hasta obtener una matriz en forma escalonada e
+identifique las columnas pivote.
+3 / 6
+----- pagina 4 -----
+Formas escalonadas y reducción por filas
+Algoritmo de reducción por filas (Gauss)
+1) Localizar la columna no nula más a la izquierda (columna pivote).
+2) Elegir un pivote en esa columna (intercambiar filas si es necesario).
+3) Crear ceros debajo del pivote mediante operaciones elementales.
+4) Cubrir la fila y columna del pivote y repetir sobre la submatriz inferior.
+Paso adicional: forma escalonada reducida
+5) Hacer ceros arriba de cada pivote y convertir pivotes distintos de 1 en
+1 mediante escalamiento.
+4 / 6
+----- pagina 5 -----
+Formas escalonadas y reducción por filas
+Ejemplo: Aplique el algoritmo de reducción por filas a la matriz
+
+
+0 3 −6 6 4 −5
+3 −7 8 −5 8 9
+3 −9 12 −9 6 15
+
+ ,
+y obtenga su forma escalonada y su forma escalonada reducida.
+5 / 6
+----- pagina 6 -----
+Formas escalonadas y reducción por filas
+Ejemplo: Una bióloga coloca tres cepas de bacterias (I, II y III) que
+consumen tres alimentos (A, B, C). Cada cepa consume unidades de
+alimento por día de acuerdo a:
+Cepa I Cepa II Cepa III
+Alimento A 1 1 1
+Alimento B 1 2 3
+Alimento C 1 3 5
+Cada día se colocan en la placa 1500 unidades de A, 3000 de B y 4500 de
+C.
+Determine cuántas bacterias de cada cepa pueden coexistir y consumir
+todo el alimento exactamente.
+6 / 6

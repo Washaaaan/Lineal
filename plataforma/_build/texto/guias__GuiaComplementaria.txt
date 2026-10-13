@@ -1,0 +1,3916 @@
+
+----- pagina 1 -----
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Segundo Semestre 2023
+MAT1203 - ´ALGEBRA LINEAL
+Gu ´ ıa Complementaria
+El siguiente listado de ejercicios consiste en una selecci´ on de problemas propuestos que
+complementan el trabajo en ayudant ´ ıa del curso ´Algebra Lineal. Todos los ejercicios son
+extra ´ ıdos del libro´Algebra Lineal y sus Aplicaciones del autor David Lay. Algunos de estos
+problemas tienen soluci´ on al final de dicho texto (los que en el libro tengan numeraci´ on
+impar). Para poder revisarla debe identificar la pregunta en la secci´ on Ejercicios al final de
+cada cap ´ ıtulo seg´ un el nombre indicado y luego buscarla al final del libro.
+Sistemas de ecuaciones lineales
+1. Resuelva los siguientes sistemas de ecuaciones
+a)
+x2 + 5x3 = −4
+x1 + 4x2 + 3x3 = −2
+2x1 + 7x2 + x3 = −2
+b)
+x1 − 5x2 + 4x3 = −3
+2x1 − 7x2 + 3x3 = −2
+−2x1 + x2 + 7x3 = −1
+c)
+2x1 − 6x3 = −8
+x2 + 2x3 = 3
+3x1 + 6x2 − 2x3 = −4
+2. Determine el valor o los valores de h tales que la matriz se la matriz aumentada de un
+sistemalineal consistente.
+a)
+1 h 4
+2 6 8
+
+b)
+1 h −5
+2 −8 6
+
+c)
+1 4 −2
+3 h −6
+
+d )
+−4 12 h
+2 −6 −3
+
+3. Encuentre una ecuaci´ on que incluya ag, h y k, y que permita que esta matriz aumen-
+1
+----- pagina 2 -----
+tada corresponda a un sistema consistente:
+
+
+1 −4 7 g
+0 3 −5 h
+−2 5 −9 k
+
+ .
+4. Encuentre las soluciones generales de los sistemas cuyas matrices aumentadas se pre-
+sentan a continuaci´ on:
+a)
+ 1 −3 0 −5
+−3 7 0 9
+
+b)
+ 1 −2 −1 4
+−2 4 −5 6
+
+c)
+
+
+1 0 −9 0 4
+0 1 3 0 −1
+0 0 0 0 1
+
+
+d )
+
+
+1 0 −5 0 −8 3
+0 1 4 −1 0 6
+0 0 0 0 1 0
+0 0 0 0 0 0
+
+
+5. Determine el valor o los valores de h tales que la matriz sea la matriz aumentada de
+un sistema lineal consistente.
+a)
+ 1 −1 4
+−2 3 h
+ b)
+1 −3 1
+h 6 −2
+
+6. Suponga que un sistema de ecuaciones lineales tiene una matriz aumentada de 3 × 5
+cuya quinta columna no es una columna pivote. ¿El sistema es consistente? ¿Por qu´ e?
+7. Suponga que una matriz de coeficientes de 3 × 5 para un sistema tiene tres columnas
+pivote. ¿El sistema es consistente? ¿Por qu´ e?
+Ecuaciones vectoriales y ecuaciones matriciales
+8. Determine si b es una combinaci´ on lineal dea1, a2 y a3.
+a) a1 =
+
+
+1
+−2
+0
+
+, a2 =
+
+
+0
+1
+2
+
+, a3 =
+
+
+5
+−6
+8
+
+, b =
+
+
+2
+−1
+6
+
+.
+b) a1 =
+
+
+1
+0
+1
+
+, a2 =
+
+
+2
+3
+−2
+
+, a3 =
+
+
+−6
+7
+5
+
+, b =
+
+
+11
+−5
+9
+
+.
+9. Sean a1 =
+
+
+1
+3
+−1
+
+, a2 =
+
+
+−5
+−8
+2
+
+ y b =
+
+
+3
+−5
+h
+
+. ¿Con qu´ e valor (o valores) de h se
+encuentra b en el plano generado por a1 y a2?
+2
+----- pagina 3 -----
+10. Sean v1 =
+
+
+1
+0
+−2
+
+, v2 =
+
+
+−2
+1
+7
+
+ y y =
+
+
+h
+−3
+−5
+
+. ¿Para qu´ e valor (o valores) de h se
+encuentra y en el plano generado por v1 y v2?
+11. Sean u =
+ 2
+−1
+
+y v =
+2
+1
+
+. Demuestre que
+h
+k
+
+est´ a en Gen{u, v} para todas las h y k.
+12. Sean A =
+
+
+1 0 −4
+0 3 −2
+−2 6 3
+
+ y b =
+
+
+4
+1
+−4
+
+. Denote las columnas de A por a1, a2, a3, y sea
+W = Gen{a1, a2, a3}.
+a) ¿Est´ ab en {a1, a2, a3}? ¿Cu´ antos vectores hay en{a1, a2, a3}?
+b) ¿Est´ ab en W ? ¿Cu´ antos vectores hay enW ?
+c) Demuestre que a1 est´ a enW .
+13. Sean A =
+
+
+2 0 6
+−1 8 5
+1 −2 1
+
+, b =
+
+
+10
+3
+7
+
+ y sea W el conjunto de todas las combinaciones
+lineales de las columnas de A.
+a) ¿Est´ ab en W ?
+b) Demuestre que la segunda columna de A est´ a enW .
+14. Marque cada enunciado como falso o verdadero. Justifique sus respuestas.
+a) Otra notaci´ on para el vector
+−4
+3
+
+es [−4, 3].
+b) Los puntos en el plano que corresponden a
+−2
+5
+
+y
+−5
+2
+
+est´ an sobre una recta
+que pasa por el origen.
+c) Un ejemplo de combinaci´ on lineal de los vectores v1 y v2 es el vector 12 v1.
+d ) El conjunto soluci´ on del sistema lineal cuya matriz aumentada es [ a1 a2 a3 b]
+coincide con el conjunto soluci´ on de la ecuaci´ onx1a1 + x2a2 + x3a3 = b.
+e) El conjunto Gen {u, v} siempre se visualiza como un plano que pasa por el origen.
+f ) Cuando u y v son vectores diferente de cero, Gen{u, v} solo contiene la recta que
+pasa por u y por el origen, y la recta que pasa por v y el origen.
+g) Cualquier lista de cinco n´ umeros reales es un vector en R5.
+h) Preguntar si el sistema lineal correspondiente a la matriz aumentada [ a1 a2 a3 b]
+tiene soluci´ on equivale a preguntar si el vectorb est´ a en Gen{a1, a2, a3}.
+i ) El vector v resulta cuando un vectgor u − v se suma al vector v.
+j ) No todos los pesos c1, . . . , cp en una combinaci´ on linealc1v1 + · · ·+ cpvp pueden
+ser cero.
+3
+----- pagina 4 -----
+15. Considerando A y b, escriba la matriz aumentada para el sistema lineal que corresponde
+a la ecuaci´ on matricialAx = b. Despu´ es, resuelva el sistema y escriba la soluci´ on como
+un vector.
+a) A =
+
+
+1 3 −4
+1 5 2
+−3 −7 6
+
+ y b =
+
+
+−2
+4
+12
+
+ b) A =
+
+
+1 2 −1
+−3 −4 2
+5 2 3
+
+, b =
+
+
+1
+2
+−3
+
+
+16. Sean u =
+
+
+0
+4
+4
+
+ y A =
+
+
+3 −5
+−2 6
+1 1
+
+. ¿Est´ au en el plano generado por las columnas de
+A? (V´ ease la figura). ¿Por qu´ e?
+u?
+u?
+Plano generado por
+las columnas de A
+¿Dónde está u?
+17. Sean u =
+
+
+4
+−1
+4
+
+ y A =
+
+
+2 5 −1
+0 1 −1
+1 2 0
+
+. ¿Est´ au en el subconjunto de R3 generado por
+las columnas de A? ¿Por qu´ e?
+18. Considere las siguientes matrices
+A =
+
+
+1 3 0 3
+−1 −1 −1 1
+0 −4 2 −8
+2 0 3 −1
+
+ y B =
+
+
+1 4 1 2
+0 1 3 −4
+0 2 6 7
+2 9 5 −7
+
+ .
+a) ¿Cu´ antas filas deA contienen una posici´ on pivote? ¿La ecuaci´ onAx = b tiene
+soluci´ on para cadab en R4?
+b) ¿Cada vector en R4 se puede escribir como una combinaci´ on lineal de las columnas
+de la matriz B? ¿Las columnas de B generan a R3?
+c) ¿Todo vector en R4 se puede escribir como una combinaci´ on lineal de las columnas
+de la matriz A anterior? ¿Las columnas de A generan a R4?
+d ) ¿Las columnas de B generan a R4? ¿La ecuaci´ onBx = y tiene soluci´ on para cada
+y en R4?
+19. Sean v1 =
+
+
+1
+0
+−1
+0
+
+, v2 =
+
+
+0
+−1
+0
+1
+
+, v3 =
+
+
+1
+0
+0
+−1
+
+. ¿{v1, v2, v3} genera a R4? ¿Por qu´ e?
+4
+----- pagina 5 -----
+20. Sean v1 =
+
+
+0
+0
+3
+
+, v2 =
+
+
+0
+−3
+9
+
+, v3 =
+
+
+4
+−2
+−6
+
+. ¿{v1, v2, v3} genera R3? ¿Por qu´ e?
+21. Marque cada enunciado como verdadero o falso. Justifique sus respuestas.
+a) La ecuaci´ onAx = b se reconoce como una ecuaci´ on vectorial.
+b) Un vector b es una combinaci´ on lineal de las columnas de una matrizA si y solo
+si la ecuaci´ onAx = b tiene al menos una soluci´ on.
+c) La ecuaci´ onAx = b es consistente si la matriz aumentada [A b] tiene una posici´ on
+pivote en cada fila.
+d ) La primera entrada en el producto Ax es una suma de productos.
+e) Si las columnas de una matriz A de m × n generan a Rm, entonces la ecuaci´ on
+Ax = b es consistente para cada b en Rm.
+f ) Si A es una matriz de m × n y si la ecuaci´ onAx = b es inconsistente para alguna
+b en Rm, entonces A no puede tener una posici´ on pivote en cada fila.
+g) Cada ecuaci´ on matricial Ax = b corresponde a una ecuaci´ on vectorial con el
+mismo conjunto soluci´ on.
+h) Si la ecuaci´ onAx = b es consistente, entonces b est´ a en el conjunto generado por
+las columnas de A.
+i ) Cualquier combinaci´ on lineal de vectores siempre se puede escribir en la forma
+Ax para una matriz A y un vector x adecuados.
+j ) Si la matriz coeficiente A tiene una posici´ on pivote en cada fila, entonces la ecua-
+ci´ onAx = b es inconsistente.
+k ) El conjunto soluci´ on de un sistema lineal cuya matriz aumentada es [a1 a2 a3 b]
+coincide con el conjunto soluci´ on deAx = b, si A = [a1 a2 a3].
+l ) Si A es una matriz de m×n cuyas columnas no generan a Rm, entonces la ecuaci´ on
+Ax = b es consistente para toda b en Rm.
+Soluci´ on de sistemas lineales
+22. Describa todas las soluciones de Ax = 0 en forma vectorial param´ etrica, donde A es
+equivalente por filas a la matriz dada
+a)
+1 3 −3 7
+0 1 −4 5
+
+b)
+ 3 −6 6
+−2 4 −2
+
+c)
+
+
+1 −4 −2 0 3 −5
+0 0 1 0 0 −1
+0 0 0 0 1 −4
+0 0 0 0 0 0
+
+
+d )
+
+
+1 −2 3 −6 5 0
+0 0 0 1 4 −6
+0 0 0 0 0 1
+0 0 0 0 0 0
+
+
+5
+----- pagina 6 -----
+23. Suponga que el conjunto soluci´ on de un cierto sistema de ecuaciones lineales se describe
+como x1 = 5+4x3, x2 = −2−7x3, con x3 libre. Use vectores para describir este conjunto
+como una recta en R3.
+24. Suponga que el conjunto soluci´ on de un cierto sistema de ecuaciones lineales se describe
+como x1 = 5x4, x2 = 3 − 2x4, x3 = 2 + 5x4, con x4 libre. Utilice vectores para describir
+este conjunto como una “recta” en R4.
+25. Encuentre la ecuaci´ on param´ etrica de la recta que pasa pora y es paralela a b.
+a) a =
+−2
+0
+
+, b =
+−5
+3
+
+b) a =
+ 3
+−2
+
+, b =
+−7
+6
+
+26. Obtenga una ecuaci´ on param´ etrica de la rectaM que pasa a trav´ es dep y q.
+a) p =
+ 3
+−3
+
+, q =
+4
+1
+
+.
+b) p =
+−3
+2
+
+, q =
+ 0
+−3
+
+.
+[Sugerencia. M es paralela al vector q − p. V´ ease la figura que aparece m´ as abajo].
+0
+q–p
+q
+p
+–p
+x2
+M
+x1
+27. Marque cada enunciado como verdadero o falso. Justifique sus respuestas.
+a) Una ecuacion homog´ enea es consistente.
+b) La ecuaci´ on homog´ eneaAx = 0 tiene la soluci´ on trivial si y solo si la ecuaci´ on
+tiene al menos una variable libre.
+c) La ecuaci´ onx = p + tv describe una recta que pasa por v y es paralela a p.
+d ) El conjunto soluci´ on Ax = b es el conjunto de todos los vectores de la forma
+w = p + vh donde vh es cualquier soluci´ on de la ecuaci´ onAx = 0.
+e) Un sistema homog´ eneo de ecuaciones puede ser inconsistente.
+f ) Si x es una soluci´ on no trivial deAx = 0, entonces cada entrada en x es distinta
+de cero.
+6
+----- pagina 7 -----
+g) El efecto de sumar p a un vector es mover a dicho vector en una direcci´ on paralela
+a p.
+h) La ecuaci´ onAx = b es homog´ enea si el vector cero es una soluci´ on.
+i ) Si Ax = b es consistente, entonces el conjunto soluci´ on deAx = b se obtiene por
+traslaci´ on del conjunto soluci´ on deAx = 0.
+28. Construya una matriz A de 2 × 2 tal que el conjunto soluci´ on de la ecuaci´ onAx = 0
+sea la recta en R2 que pasa a trav´ es de (4, 1) y el origen. Luego, encuentre un vector
+b en R2 tal que el conjunto soluci´ on deAx = b no sea una recta en R2 paralalela al
+conjunto soluci´ on deAx = 0. ¿Por qu´ e esto no contradice al teorema 6 de la p´ agina
+46 del libro gu ´ ıa?
+29. Suponga que A es una matriz de 3 × 3 y b es un vector en R3 tales que la ecuaci´ on
+Ax = b no tiene soluci´ on. ¿Existe un vectory en R3 tal que la ecuaci´ onAx = y tiene
+una soluci´ on ´ unica? Justifique su respuesta.
+Independencia lineal
+30. Determine si los vectores son linealmente independientes. Justifique cada respuesta.
+a)
+
+
+5
+0
+0
+
+,
+
+
+7
+2
+−6
+
+,
+
+
+9
+4
+−8
+
+
+b)
+ 2
+−3
+
+,
+−4
+6
+
+.
+31. Determine si las columnas de la matriz forman un conjunto linealmente independiente.
+Justifique sus respuestas.
+a)
+
+
+0 −3 9
+2 1 −7
+−1 4 −5
+1 −4 −2
+
+ b)
+
+
+1 4 −3 0
+−2 −7 5 1
+−4 −5 7 5
+
+
+32. Considere los vectores
+v1 =
+
+
+1
+−3
+2
+
+ , v2 =
+
+
+−3
+9
+−6
+
+ , v 3 =
+
+
+5
+−7
+h
+
+ .
+a) ¿Para qu´ e valores deh est´ av3 en Gen{v1, v2}?
+b) ¿Para qu´ e valores deh el conjunto {v1, v2, v3} es linealmente independiente?
+33. Considere los vectores
+v1 =
+
+
+1
+−3
+−5
+
+ , v2 =
+
+
+−3
+9
+15
+
+ , v 3 =
+
+
+2
+−5
+h
+
+ .
+7
+----- pagina 8 -----
+a) ¿Para qu´ e valores deh est´ av3 en Gen{v1, v2}?
+b) ¿Para qu´ e valores deh el conjunto {v1, v2, v3} es linealmente independiente?
+34. A partir de A =
+
+
+2 3 5
+−5 1 −4
+−3 −1 −4
+1 0 1
+
+, observe que la tercera columna es la suma de las dos
+primeras. Encuentre una soluci´ on no trivial deAx = 0.
+35. A partir de A =
+
+
+4 3 −5
+−2 −2 4
+−2 −3 7
+
+, observe que la primera columna menos la segunda
+columna multiplicada por 3 es igual a la tercera columna. Determine una soluci´ on no
+triavial de Ax = 0.
+36. Marque cada enunciado como verdadero o falso. Justifique cada respuesta.
+a) Si v1, . . . ,v4 est´ an enR4, y v3 = 2v1 + v2, entonces {v1, v2, v3, v4} es linealmente
+dependiente.
+b) Si v1 y v2 est´ a enR4 y v2 no es un m´ ultiplo escalar dev1, entonces {v1, v2} es
+linealmente independiente.
+c) Si v1, . . . ,v5 est´ an enR5 y v3 = 0, entonces {v1, v2, v3, v4, v5} es linealmente
+dependiente.
+d ) Si v1, v2, v3 est´ an enR3 y v3 no es combinaci´ on lineal dev1, v2, entonces {v1, v2, v3}
+es linealmente independiente.
+e) Si v1, . . . ,v4 est´ an enR4 y {v1, v2, v3} es linealmente dependiente, entonces
+{v1, v2, v3, v4} tambi´ en es linealmente dependiente.
+f ) Si {v1, . . . ,v4} es un conjunto linealmente independiente de vectores en R4, en-
+tonces {v1, v2, v3} tambi´ en es linealmente independiente.
+Transformaciones lineales
+37. Considere la transformaci´ on lineal T definida por T (x) = Ax, encuentre un vector x
+cuya imagen bajo T sea b, y analice si x es ´ unico.
+a) A =
+
+
+1 0 −3
+−3 1 6
+2 −2 −1
+
+, b =
+
+
+−2
+3
+−1
+
+.
+b) A =
+ 1 −5 −7
+−4 7 5
+
+, b =
+−2
+−2
+
+.
+38. Encuentre todos los vectores x en R4 que son mapeados en el vector cero por la trans-
+formaci´ onx 7→ Ax para la matriz
+A =
+
+
+1 −3 5 −5
+0 1 −3 5
+2 −4 4 −4
+
+
+8
+----- pagina 9 -----
+Sea b =
+
+
+−1
+1
+0
+
+. ¿b est´ a en el rango de la transformaci´ on linealx 7→ Ax? ¿Por qu´ e?
+39. Encuentre todos los vectores x en R4 que son mapeados en el vector cero por la trans-
+formaci´ onx 7→ Ax para la matriz
+A =
+
+
+3 2 10 −6
+1 0 2 −4
+1 4 10 8
+
+
+Sea b =
+
+
+−1
+3
+−1
+4
+
+. ¿b est´ a en el rango de la transformaci´ onx 7→ Ax? ¿Por qu´ e?
+40. Sean e1 =
+1
+0
+
+, e2 =
+0
+1
+
+, y1 =
+2
+5
+
+y y2 =
+−1
+6
+
+y sea T : R2 → R2 una transformaci´ on
+lineal que mapea e1 en y1, y e2 en y2. Encuentre las im´ agenes de
+ 5
+−3
+
+y
+x1
+x2
+
+.
+41. Sean x =
+x1
+x2
+
+, v1 =
+−3
+5
+
+y v2 =
+ 7
+−2
+
+y sea T : R2 → R2 una transformaci´ on lineal
+que mapea x en x1v1 + x2v2. Encuentre una matriz A tal que T (x) sea Ax para cada
+x.
+42. Sea T : Rn → Rn una transformaci´ on lineal y sea{v1, v2, v3} un conjunto linealmente
+dependiente en R4. Explique por qu´ e el conjunto{T (v1), T(v2), T(vn)} es linealmente
+dependiente.
+43. Demuestre que la transformaci´ onT definida por T (x1, x2) = (x1 − 2|x2|, x1 − 4x2) no
+es lineal.
+44. Demuestre que la transformaci´ onT definida por T (x1, x2) = (x1 −2x2, x1 −3, 2x1 −5x2)
+no es lineal.
+45. Sea T : Rn → Rm una transformaci´ on lineal. Supong que {u, v} es un conjunto li-
+nealmente independiente, pero {T (u), T(v)} es un conjunto linealmente dependiente.
+Demuestre que T (x) = 0 tiene una soluci´ on no trivial.
+46. Suponga que T es una transformaci´ on lineal. Encuentre la matriz est´ andar deT .
+a) T : R2 → R4, T (e1) = (3 , 1, 3, 1) y T (e3) = ( −5, 2, 0, 0), donde e1 = (1 , 0) y
+e2 = (0, 1).
+b) T : R2 → R2 es una transformaci´ on de trasquilado vertical que mapea e1 en
+e1 − 3e2, pero deja inalterado a e2.
+c) T : R2 → R2 hace girar a los puntos (en torno al origen) a trav´ es de un ´ angulo de
+π/2 radianes (en sentido horario).
+9
+----- pagina 10 -----
+d ) T : R2 → R2 primero hace girar puntos a trav´ es de−3π/4 radianes (en el sentido
+horario) y despu´ es los refleja a trav´ es del eje horizontalx1. [Sugerencia. Considere
+que T (e1) = (−1/
+√
+2, 1/
+√
+2).]
+e) T : R2 → R2 primero refleja los puntos a trav´ es del eje horizontal x1 y luego los
+hace girar −π/2 radianes.
+47. Llene las entradas faltantes de la matriz, suponiendo que la ecuaci´ on es v´ alida para
+todos los valores de las variables
+a)
+
+
+? ? ?
+? ? ?
+? ? ?
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+2x1 − 4x2
+x1 − x3
+−x2 + 3x3
+
+
+b)
+
+
+? ?
+? ?
+? ?
+
+
+x1
+x2
+
+=
+
+
+3x1 − 2x2
+x1 + 4x2
+x2
+
+
+48. Demuestre T es una transformaci´ on lineal encontrando una matriz que implemente el
+mapeo. Observe que x1, x2, . . .no son vectores, sino entradas en vectores.
+a) T (x1, x2, x3, x4) = (x1 + 2x2, 0, 2x2 + x4, x2 − x4)
+b) T (x1, x2, x3) = (x1 − 5x2 + 4x3, x2 − 6x3)
+49. Sea T : R2 → R2 una transformaci´ on lineal tal queT (x1, x2) = ( x1 + x2, 4x1 + 5x2).
+Encuentre x tal que T (x) = (3, 8).
+50. Sea T la transformaci´ on lineal cuya matriz est´ andar se presenta.
+a)
+
+
+5 6 −5
+8 3 −3
+2 9 5
+
+ b)
+
+
+4 −7 3 7
+6 −8 5 12
+−7 10 −8 −9
+3 −5 4 2
+
+
+Determine:
+a) Si T es un mapeo uno a uno.
+b) Si T es un mapeo sobreyectivo.
+Operaciones de matrices
+51. Sea A =
+2 −5
+3 −2
+
+, calcule 3 I2 − A y (3I2)A.
+52. Calcule A − 5I3 y (5I3)A, donde A =
+
+
+5 −1 3
+−4 3 −6
+−3 1 2
+
+
+53. Si A es una matriz de 5 × 3 y el producto AB es 5 × 7, ¿cu´ al es el tama˜ no deB?
+10
+----- pagina 11 -----
+54. ¿Cu´ antas filas tieneB si BC es una matriz de 5 × 4?
+55. Sean A =
+ 2 3
+−1 1
+
+y B =
+ 1 9
+−3 k
+
+. ¿Qu´ e valor(es) dek, si los hay, har´ an queAB =
+BA?
+56. Sean A =
+ 3 −6
+−1 2
+
+, B =
+−1 1
+3 4
+
+y C =
+−3 −5
+2 1
+
+. Compruebe que AB = AC y,
+sin embargo, B ̸= C.
+57. Si A =
+ 1 −3
+−3 5
+
+y AB =
+−3 −11
+1 17
+
+, determine la primera y segunda columnas de
+B.
+58. Considere los vectores en Rn como matrices de n × 1. Para u y v en Rn, el producto
+de matrices uT v es una matriz de 1 × 1, que se llama producto escalar, o producto
+interno, de u y v. El producto de matrices uvT es una matriz de n × n que se llama
+producto exterior de u y v.
+Sean u =
+
+
+−3
+2
+−5
+
+ y v =
+
+
+a
+b
+c
+
+. Calcule uT v, vT u, uvT y vuT .
+Inversa de una matriz
+59. Encuentre la inversa de la matriz A =
+8 6
+5 4
+
+y util ´ ıcela para resolver el sistema
+8x1 + 6x2 = 2
+5x1 + 4x2 = −1
+60. Encuentre la inversa de la matriz B =
+ 7 3
+−6 −3
+
+y util ´ ıcela para resolver el sistema
+7x1 + 3x2 = −9
+−6x1 − 3x2 = 4
+61. Sean A =
+1 2
+5 12
+
+, b1 =
+−1
+3
+
+, b2 =
+ 1
+−5
+
+, b3 =
+2
+6
+
+y b4 =
+3
+5
+
+.
+a) Determine A−1 util ´ ıcela para resolver las ecuaciones
+Ax = b1 , A x = b2 , A x = b3 , A x =?b4 .
+b) Las cuatro ecuaciones del inciso a) se pueden resolver con el mismo conjunto
+de operaciones fila, ya que la matriz de coeficientes es la misma en cada caso.
+Resuelva las cuatro ecuaciones del inciso a) mediante la reduci´ on por filas de la
+matriz aumentada [A b1 b2 b3 b4].
+62. Suponga que P es invertible y A = P BP−1. Determine B en t´ erminos deA.
+11
+----- pagina 12 -----
+63. Si A, B y C son matrices invertibles de n × n, ¿la ecuaci´ on
+C −1(A + X)B−1 = In
+tiene soluci´ on,X? Si es as ´ ı, encu´ entrela.
+64. Suponga que A, B y X so matrices de n × n con A, X y A − AX invertibles, y suponga
+que
+(A − AX)−1 = X −1B (1)
+a) Explique por qu´ eB es invertible.
+b) Despeje X en la ecuaci´ on (1). Si se necesita invertir una matriz, explique por qu´ e
+esta matriz es invertible.
+65. Use el algoritmo de reducci´ on por filas para encontrar las inversas de
+
+
+1 0 0
+1 1 0
+1 1 1
+
+ y
+
+
+1 0 0 0
+1 1 0 0
+1 1 1 0
+1 1 1 1
+
+
+Sea A la matriz de n × n correspondiente, y sea B su inversa. Infiera la forma de B, y
+despu´ es demuestre queAB = I.
+66. Repita la estrategia del ejercicio anterior para inferir la inversa de B de
+A =
+
+
+1 0 0 · · ·0
+2 2 0 · · ·0
+3 3 3 · · ·0
+... ... ... . . . ...
+n n n · · ·n
+
+
+Demuestre que AB = I.
+67. Sea A =
+
+
+−1 −7 −3
+2 15 6
+1 3 2
+
+. Encuentre la tercera columna de A−1 sin calcular las otras
+columnas.
+Caracterizaciones de matrices invertibles
+68. Una matriz triangular superior de m × n es aquella cuyas entradas debajo de
+la diagonal principal son ceros. ¿Cu´ ando es invertible una matriz triangular superior
+cuadrada?. Justifique su respuesta.
+69. Una matriz triangular inferior de m×n es aquella cuyas entradas arriba de la diago-
+nal principal son ceros. ¿Cu´ ando es invertible una matriz triangular inferior cuadrada?.
+Justifique su respuesta.
+12
+----- pagina 13 -----
+70. ¿Puede ser invertible una matriz de 4 × 4, cuando sus columnas no generan a R4? ¿Por
+qu´ e?
+71. Si una matriz A de n × n es invertible, entonces las columnas de AT son linealmente
+independientes. Explique por qu´ e.
+72. ¿Puede una matriz cuadrada con dos filas id´ enticas ser invertible? ¿Por qu´ e?
+73. Sean A y B matrices de n × n. Demuestre que si AB es invertible, tambi´ en lo esA.
+[Sugerencia. Existe una matriz W tal que ABW = I. ¿Por qu´ e?]
+74. Si A es una matriz de 5 × 5 y la ecuaci´ onAx = b es consistente para toda b en R5,
+¿es posible que, para alguna b, la ecuaci´ onAx = b tenga m´ as de una soluci´ on? ¿Por
+qu´ e?
+75. Si la ecuaci´ onCu = v tiene m´ as de una soluci´ on para algunav en Rn, ¿pueden las
+columnas de la matriz C de n × n generar a Rnn? ¿Por qu´ e?
+76. Si las matrices E y F de n × n tienen la propiedad de que EF = I, entonces E y F
+conmutan. Explique por qu´ e.
+77. Suponga que F es una matriz de n × n. Si la ecuaci´ onF x = y es inconsistente para
+alguna y en Rn, ¿qu´ e se puede decir acerca de la ecuaci´ onF x = 0? ¿Por qu´ e?
+78. Considere T : R2 → R2 una transformaci´ on lineal dada por
+a) T (x1, x2) = (−5x1 + 9x2, 4x1 − 7x2)
+b) T (x1, x2) = (2x1 − 8x2, −2x1 + 7x2)
+Demuestre que T es invertible y encuentre una f´ ormula paraT −1.
+Factorizaci´ on ALU y PALU
+79. Encuentre la matriz triangular inferior L con unos en la diagonal y una matriz trian-
+gular superior U tal que A = LU .
+a)
+ 7 −8
+−56 73
+
+b)
+1 2
+3 4
+
+c)
+ 1 2
+−0 3
+
+d )
+
+
+5 −7 −5
+20 24 −30
+−20 −24 22
+
+
+e)
+
+
+3 9 −2
+6 −3 8
+4 6 5
+
+
+f )
+
+
+1 1 −3
+1 2 4
+−3 4 3
+
+
+80. Resuelva el sistema dada usando la factorizaci´ onLU . Esto es, resuelva Ax = LU x = b.
+13
+----- pagina 14 -----
+a) A =
+−3 6
+6 −14
+
+, b =
+ 9
+10
+
+b) A =
+1 2
+0 3
+
+, b =
+−1
+4
+
+c) A =
+
+
+3 −4 4
+18 −19 17
+−27 36 −39
+
+, b =
+
+
+0
+0
+7
+
+
+d ) A =
+
+
+6 7 9
+12 15 26
+−36 −48 −101
+
+, b =
+
+
+−7
+−6
+−1
+
+
+e) A =
+
+
+1 2 −1 4
+0 −1 5 8
+2 3 1 4
+1 −1 6 4
+
+, b =
+
+
+3
+−11
+4
+−5
+
+
+f ) A =
+
+
+4 −10 −8 −8
+24 −52 −53 −43
+20 −18 −63 −28
+32 −128 −34 −91
+
+, b =
+
+
+6
+2
+−7
+−5
+
+
+81. Encuentre una matriz de permutaci´ onP y matrices triangulares inferior y superior L
+y U tales que P A= LU ; b) utilice el resultado del inciso a) para resolver el sistema
+Ax = b.
+a) A =
+0 4
+3 −1
+
+, b =
+ 8
+−10
+
+.
+b) A =
+0 2
+1 4
+
+, b =
+ 3
+−5
+
+.
+c) A =
+
+
+0 −1 2
+0 4 −3
+5 1 2
+
+, b =
+
+
+1
+0
+−2
+
+.
+d ) A =
+
+
+0 2 −4
+0 3 −1
+3 −6 3
+
+, b =
+
+
+−9
+4
+−10
+
+.
+e) A =
+
+
+0 2 3 1
+0 4 −1 5
+2 0 3 1
+1 −4 5 6
+
+, b =
+
+
+3
+−1
+2
+4
+
+.
+f ) A =
+
+
+8 10 −9 0
+48 72 −42 −17
+40 54 −41 −8
+0 0 −10 7
+
+, b =
+
+
+−9
+0
+−8
+7
+
+.
+82. Demuestre que
+
+
+−1 2 1
+1 −4 −2
+4 −8 −4
+
+ tiene m´ as de una factorizaci´ onLU .
+14
+----- pagina 15 -----
+83. Realice el mismo procedimiento con la matriz
+
+
+3 −3 2 5
+2 1 −6 0
+5 −2 −4 5
+1 −4 8 5
+
+
+84. Encuentre una factorizacion LU para cada matriz singular:
+a)
+
+
+−1 2 3
+2 1 7
+1 3 10
+
+ b)
+
+
+1 1 4 6
+2 1 0 2
+0 3 1 5
+1 3 5 13
+
+ c)
+
+
+3 −2 −1 2
+4 3 −1 −2
+−6 −13 1 10
+2 −24 2 20
+
+
+85. Encuentre una factorizaci´ onLU para cada matriz no cuadrada.
+a)
+−2 −7 −2 2
+−8 −35 −17 7
+
+b)
+
+
+2 1
+−1 4
+6 0
+
+ c)
+ 7 1 3 4
+−2 5 6 8
+
+Determinantes
+86. Calcule los determinantes mediante desarrollo por cofactores. En cada caso, seleccione
+una fila o columna que implique la menor cantidad de operaciones
+a)
+6 0 0 51 7 2 −52 0 0 08 3 1 8  b)
+3 5 −8 40 −2 3 −70 0 1 50 0 0 2  c) 4 0 −7 3 −50 0 2 0 07 3 −6 4 −85 0 5 2 −30 0 9 −1 2 
+87. Calcule los determinantes de las matrices elementales dadas.
+a)
+
+
+1 0 0
+0 1 0
+0 k 1
+
+ b)
+
+
+k 0 0
+0 1 0
+0 0 1
+
+ c)
+
+
+0 1 0
+1 0 0
+0 0 1
+
+
+88. Sea A =
+3 1
+4 2
+
+. Escriba 5 A. ¿det(5A) = 5 det(A)?
+89. Encuentre los determinantes por reducci´ on de filas a una forma escalonada
+a)
+ 1 5 −6−1 −4 4−2 −7 9  b)
+ 1 3 0 2−2 −5 7 43 5 2 11 −1 2 −3 c)  1 −1 −3 00 1 5 4−1 2 8 53 −1 −2 3 
+15
+----- pagina 16 -----
+90. Calcule los determinantes, sabiendo que
+a b cd e fg h i  = 7 .
+a)
+ a b cd e f5g 5h 5i b)
+a b cg h id e f  c)  a b c2d + a 2e + b 2f + cg h i 
+91. Use determinantes para saber si la matriz es invertible
+a)
+
+
+2 3 0
+1 3 4
+1 2 1
+
+ b)
+
+
+2 0 0 8
+1 −7 −5 0
+3 8 6 0
+0 7 5 4
+
+
+92. Utilice determinantes para saber si el conjunto de vectores es linealmente independien-
+te.
+a)
+
+
+4
+6
+−7
+
+,
+
+
+−7
+0
+2
+
+,
+
+
+−3
+−5
+6
+
+. b)
+
+
+7
+−4
+−6
+
+,
+
+
+−8
+5
+7
+
+,
+
+
+7
+0
+−5
+
+.
+93. Calcule det( B5), donde B =
+
+
+1 0 1
+1 1 2
+1 2 1
+
+.
+94. Sean A y P matrices cuadradas, con P invertible. Demuestre que det( P AP−1) =
+det(A).
+95. Sea U una matriz cuadrada tal que U T U = I. Demuestre que det( U ) = ±1.
+96. Sean A y B matrices de 3× 3, con det(A) = 4 y det(B) = −3. Con base en propiedades
+de determinantes, calcule:
+a) det( AB)
+b) det(5 A)
+c) det( BT )
+d ) det( A−1)
+e) det( A3)
+Regla de Cramer y matriz adjunta
+97. Utilice la regla de Cramer para calcular las soluciones de los sistemas
+16
+----- pagina 17 -----
+a) 4x1 + x2 = 65x1 + 2x2 = 7
+b) −5x1 + 3x2 = 93x1 − x2 = −5
+c)
+2x1 + x2 + x3 = 4
+−x1 + 2x3 = 2
+3x1 + x2 + 3x3 = −2
+98. Calcule la adjunta de la matriz dada, y utilicela para dar la inversa de la matriz
+a)
+
+
+1 1 3
+2 −2 1
+0 1 0
+
+
+b)
+
+
+3 6 7
+0 2 1
+2 3 4
+
+
+c)
+
+
+1 2 4
+0 −3 1
+0 0 3
+
+
+99. Demuestre que si A es invertible, entonces adjA es invertible, y
+(adjA)−1 = 1det(A) A .
+Aplicaciones de determinantes
+100. Encuentre el volumen del paralelep ´ ıpedo con un v´ ertice en el origen y v´ ertices adya-
+centes en (1, 0, −2), (1, 2, 4) y (7 , 1, 0).
+101. Sea S el paralelogramo determinado por los vectores b1 =
+−2
+3
+
+y b2 =
+−2
+5
+
+, y sea
+A =
+ 6 −2
+−3 2
+
+. Calcule el ´ area de la imagen deS bajo el mapeo x 7→ Ax.
+102. Sea S el paralelogramo determinado por los vectores b1 =
+ 4
+−7
+
+y b2 =
+0
+1
+
+, y sea
+A =
+7 2
+1 1
+
+. Calcule el ´ area de la imagen deS bajo el mapeo x 7→ Ax.
+103. Encuentre una f´ ormula para el ´ area del tri´ angulo cuyos v´ ertices son0, v1 y v2 en R2.
+104. Sea R el tri´ angulo con v´ ertices (x1, y1), ( x2, y2) y ( x3, y3). Demuestre que el ´ area del
+tri´ anguloA es
+A = 12 det
+
+
+x1 y1 1
+x2 y2 1
+x3 y3 1
+
+
+17
+----- pagina 18 -----
+Espacios y Subespacios Vectoriales
+105. Determine si el conjunto dado es un subespacio de Pn para un valor adecuado de n.
+Justifique sus respuestas.
+a) Todos los polinomios de la forma p(t) = at2, donde a se encuentra en R.
+b) Todos los polinomios de la forma p(t) = a + t2, donde a se encuentra en R.
+c) Todos los polinomios de grado 3 como m´ aximo, con n´ umeros enteros como coefi-
+cientes.
+d ) Todos los polinomios en Pn tales que p(0) = 0.
+106. Sea H el conjunto de todos los vectores de la forma
+
+
+−2t
+5t
+3t
+
+. Encuentre un vector v en
+R3 tal que H = Gen{v}. ¿Por qu´ e esto demuestra queH es un subespacio de R3?
+107. Sea W el conjunto de todos los vectores de la forma
+
+
+2b + 3c
+−b
+2c
+
+, donde b y c son
+arbitrarios. Encuentre los vectores u y v tales que W = Gen {u, v}. ¿Por qu´ e esto
+demuestra que W es un subespacio de R3?
+108. Sea W el conjunto de todos los vectores de la forma
+
+
+2s + 4t
+2s
+2s − 3t
+5t
+
+, donde s y t son n´ umeros
+reales. Demuestre que W es un subespacio de R4.
+109. Sea W el conjunto de los vectores de la forma indicada, donde a, b y c representan
+n´ umeros reales arbitrarios. En cada caso, encuentre un conjunto S de vectores que
+genere W o d´ e un ejemplo para demostrar queW no es un espacio vectorial.
+a)
+
+
+2a + 3b
+−1
+2a − 5b
+
+
+b)
+
+
+1
+3a − 5b
+3b + 2a
+
+
+c)
+
+
+2a − b
+3b − c
+3c − a
+3b
+
+
+110. Determine si el conjunto H de todas las matrices de la forma
+a b
+0 d
+
+es un subespacio
+de las matrices de 2 × 2.
+18
+----- pagina 19 -----
+111. Sea F una matriz fija de 3 × 2 y sea H el conjunto de todas las matrices A en M2×4
+con la propiedad de que F A= 0 (la matriz cero en M3×4). Determine si H es un
+subespacio de M2×4.
+Espacios nulos, espacios columnas y transformaciones lineales
+112. Encuentre una descripci´ on de Nul A, haciendo una lista de vectores que generan el
+espacio nulo.
+a) A =
+1 2 4 0
+0 1 3 −2
+
+b)
+
+
+1 3 −4 −3 1
+0 1 −3 1 0
+0 0 0 0 0
+
+
+113. Utilice un teorema adecuado para demostrar que el conjunto dado, W , es un espacio
+vectorial, o bien, encuentre un ejemplo espec ´ ıfico de lo contrario.
+a) W =
+
+
+
+
+
+r
+s
+t
+
+ : 3 r − 2 = 3s + t
+
+
+
+b) W =
+
+
+
+
+
+a
+b
+c
+d
+
+ : 3a + b = ca + b + 2c = 2 d
+
+
+
+c) W =
+
+
+
+
+
+3p − 5q
+4q
+p
+q + 1
+
+ : p, qreales
+
+
+
+d ) W =
+
+
+
+
+
+−s + 3t
+s − 2t
+5s − t
+
+ : s, treales
+
+
+
+114. Encuentre A tal que el conjunto dado sea Col A
+a)
+
+
+
+
+
+2s + t
+r − s + 2t
+3r + s
+2r − s − t
+
+ : r, s, treales
+
+
+
+b)
+
+
+
+
+
+b − c
+2b + 3d
+b + 3c − 3d
+c + d
+
+ : b, c, dreales
+
+
+
+115. Sea A =
+−2 4
+−1 2
+
+y w =
+2
+1
+
+. Determine si w est´ a en ColA. ¿Est´ aw en Nul A.
+116. Defina una transformaci´ on linealT : P2 → R2 mediante T (p) =
+p(0)
+p(0)
+
+. Determine los
+polinomios p1 y p2 en P2 que generan el n´ ucleo deT , y describa el rango de T .
+Conjuntos linealmente independientes y bases
+117. Determine si los vectores forman una base de R3. De los vectores que no formen una
+base, determine cu´ ales son linealmente independientes y cu´ ales generan aR3. Justifique
+sus respuestas.
+19
+----- pagina 20 -----
+a)
+
+
+1
+1
+0
+
+,
+
+
+0
+0
+0
+
+,
+
+
+0
+1
+1
+
+.
+b)
+
+
+2
+−1
+1
+
+,
+
+
+2
+−3
+2
+
+,
+
+
+−8
+5
+4
+
+
+c)
+
+
+1
+2
+−4
+
+,
+
+
+−4
+3
+6
+
+
+d )
+
+
+1
+−2
+3
+
+,
+
+
+0
+3
+−1
+
+,
+
+
+2
+−1
+5
+
+,
+
+
+0
+0
+−1
+
+.
+118. Encuentre las bases para los espacios nulos de las matrices dadas.
+a)
+
+
+1 0 −2 −2
+0 1 1 4
+3 −1 −7 3
+
+
+b)
+
+
+1 1 −2 1 5
+0 1 0 −1 −2
+0 0 −8 0 16
+
+
+119. Encuentre una base para el conjunto de vectores de R2 en la recta y = −3x.
+120. Suponga que A es equivalente por filas a B. Encuentre las bases de espacio nulo y
+espacio columna de A.
+a) A =
+
+
+−2 4 −2 −4
+2 −6 −3 1
+−3 8 2 −3
+
+, B =
+
+
+1 0 6 5
+0 2 5 3
+0 0 0 0
+
+
+b) A =
+
+
+1 2 3 −4 8
+1 2 0 2 8
+2 4 −3 10 9
+3 6 0 6 9
+
+, B =
+
+
+1 2 0 2 5
+0 0 3 −6 3
+0 0 0 0 −7
+0 0 0 0 0
+
+
+121. Sea v1 =
+
+
+4
+−3
+7
+
+, v2 =
+
+
+1
+9
+−2
+
+, v3 =
+
+
+7
+11
+6
+
+, y tambi´ en seaH = Gen {v1, v2, v3}. Es
+posible comprobar que 4 v1 + 5v2 − 3v3 = 0. Utilice esta informaci´ on para encontrar
+una base para H. Hay m´ as de una respuesta.
+122. Sea v1 =
+
+
+3
+4
+−2
+−5
+
+, v2 =
+
+
+4
+3
+2
+4
+
+ y v3 =
+
+
+2
+5
+−6
+−14
+
+. Es posible comprobar que 2v1 −v2 −v3 = 0.
+Utilice esta informaci´ on para encontrar una base paraH = Gen{v1, v2, v3}.
+20
+----- pagina 21 -----
+123. Sean V y W espacios vectoriales, sea T : V → W una transformaci´ on lineal, y sea
+{v1, . . . ,vp} un subconjunto de V .
+a) Demuestre que si {v1, . . . ,vp} es linealmente dependiente en V , entonces el con-
+junto de im´ agenes{T (v1), . . . , T(vp)} es linealmente dependiente en W .
+b) Suponga que T es una transformaci´ on uno a uno, de modo que la ecuaci´ on
+T (u) = T (v) siempre implica que u = v. Demuestre que si el conjunto de im´ age-
+nes {T (v1), . . . , T(vp)} es linealmente dependiente, entonces {v1, . . . ,vp}. es li-
+nealmente dependiente. (Este hecho muestra que una transformaci´ on lineal uno a
+uno mapea un conjunto linealmente independiente sobre un conjunto linealmente
+independiente)
+Sistemas de coordenadas
+124. Encuentre el vector x determinado por el vector de coordenadas
+
+x
+
+B y la base B.
+a) B =
+ 3
+−5
+
+,
+−4
+6
+
+,
+
+x
+
+B =
+5
+3
+
+b) B =
+
+
+
+
+
+1
+−2
+3
+
+ ,
+
+
+5
+0
+−2
+
+ ,
+
+
+4
+−3
+0
+
+
+
+
+,
+
+x
+
+B =
+
+
+1
+0
+−2
+
+
+125. Encuentre el vector de coordenadas
+
+x
+
+B de x respecto de la base B = {b1, . . . ,bn}.
+a) b1 =
+ 1
+−2
+
+, b2 =
+ 3
+−5
+
+, x =
+−1
+1
+
+.
+b) b1 =
+
+
+1
+−1
+−3
+
+, b2 =
+
+
+−3
+4
+9
+
+, b3 =
+
+
+2
+−2
+4
+
+, x =
+
+
+8
+−9
+6
+
+.
+126. Encuentre la matriz cambio de coordenadas de B =
+
+
+
+
+
+3
+0
+6
+
+ ,
+
+
+2
+2
+−4
+
+ ,
+
+
+1
+−2
+3
+
+
+
+
+ a la base
+est´ andar enRn.
+127. Utilice una matriz inversa para encontrar
+
+x
+
+B para x =
+ 2
+−5
+
+y B =
+ 1
+−2
+
+,
+−3
+5
+
+.
+128. El conjunto B = {1 + t2, t+ t2, 1 + 2t + t2} es una base para P2. Encuentre el vector
+de coordenadas de p(t) = 1 + 4t + 7t2 respecto de B.
+129. Utilice los vectores de coordenadas para probar la independencia lineal de los conjuntos
+de polinomios.
+a) 1 + 2 t3, 2 + t − 3t2, −t + 2t2 − t3.
+b) (1 − t)2, t − 2t2 + t3, (1 − t)3.
+21
+----- pagina 22 -----
+130. Utilice los vectores de coordenadas para comprobar si los siguientes conjuntos de po-
+linomios generan a P2. Justifique sus conclusiones.
+a) 1 − 3t + 5t2, −3 + 5t − 7t2, −4 + 5t − 6t2, 1 − t2.
+b) 5 t + t2, 1 − 8t − 2t2, −3 + 4t + 2t2, 2 − 3t.
+131. Sean p1(t) = 1 + t2, p2(t) = t − 3t2, p3(t) = 1 + t − 3t2.
+a) Utilice vectores de coordenadas para demostrar que estos polinomios forman una
+base para P2.
+b) Considere la base B = {p1, p2, p3} para P2. Encuentre q en P2, considerando que
+
+q
+
+B =
+
+
+−1
+1
+2
+
+.
+Dimensi´ on de un espacio vectorial
+132. Para cada subespacio encuentre una base para el subespacio y indique la dimensi´ on.D
+a)
+
+
+
+
+
+s − 2t
+s + t
+3t
+
+ : s, t∈ R
+
+
+
+b)
+
+
+
+
+
+2c
+a − b
+b − 3c
+a + 2b
+
+ : a, b, c∈ R
+
+
+
+c)
+
+
+
+
+
+p − 2q
+2p + 5r
+−2q + 2r
+−3p + 6r
+
+ : p, q, r∈ R
+
+
+
+d ) {(a, b, c) : a − 3b = c = 0, b− 2c = 0, 2b − c = 0}
+133. Encuentre la dimensi´ on del subespacio de todos los vectores en R3 cuyas entradas
+primera y tercera son iguales.
+134. Encuentre la dimensi´ on del subespacio generado por los vectores dados.
+
+
+1
+0
+2
+
+ ,
+
+
+3
+1
+1
+
+ ,
+
+
+−2
+−1
+1
+
+ ,
+
+
+5
+2
+2
+
+ .
+135. Determine las dimensiones del espacio nulo A y el espacio columna de las matrices que
+se muestran a continuaci´ on:
+a) A =
+
+
+1 −6 9 0 −2
+0 1 2 −4 5
+0 0 0 5 1
+0 0 0 0 0
+
+
+22
+----- pagina 23 -----
+b) A =
+
+
+1 2 3 0 0
+0 0 1 0 1
+0 0 0 1 0
+
+
+c) A =
+
+
+1 −1 0
+0 1 3
+0 0 1
+
+
+136. Los primeros cuatro polinomios de Hermite son 1, 2 t, −2 + 4t2, y −12t + 8t3. Estos
+polinomios surgen de forma natural en el estudio de ciertas ecuaciones diferenciales
+importantes en f ´ ısica matem´ atica.
+a) Demuestre que los primeros cuatro polinomios de Hermite forman una base de
+P3.
+b) Sea B la base de P3 que consta de los polinomios de Hermite y sea p(t) = −1 +
+8t2 + 8t3. Encuentre el vector de coordenadas de p con respecto de B.
+Rango
+137. Suponga que la matriz A es equivalente por filas a B. Sin hacer c´ alculos, liste el rango
+de A y la dimensi´ on del espacio nulo de A. Luego encuentre las bases para Col( A),
+Fila(A) y Nul( A).
+a) A =
+
+
+1 −4 9 −7
+−1 2 −4 1
+5 −6 10 7
+
+, B =
+
+
+1 0 −1 5
+0 −2 5 −6
+0 0 0 0
+
+.
+b) A =
+
+
+2 6 −6 6 3 6
+−2 −3 6 −3 0 −6
+4 9 −12 9 3 12
+−2 3 6 3 3 −6
+
+, B =
+
+
+2 6 −6 6 3 6
+0 3 0 3 3 0
+0 0 0 0 3 0
+0 0 0 0 0 0
+
+.
+138. Si una matriz A de 4 × 7 tiene rango 3, determine dim(Nul( A)), dim(Fila( A)) y el
+rango de AT .
+139. Si una matriz A de 7 × 5 tiene rango 2, determine dim(Nul( A)), dim(Fila( A)) y el
+rango de AT .
+140. Suponga que una matriz A de 4 × 7 tiene cuatro columnas pivote. ¿Es Col( A) = R4?
+¿Es Nul(A) = R3? Explique sus respuestas.
+141. Supongamos que una matriz A de 6 × 8 tiene cuatro columnas pivote. ¿Cu´ al es la
+dim(Nul(A))? ¿Es Col( A) = R4? ¿Por qu´ e?
+142. Si el espacio nulo de una matriz A de 4 × 6 es de dimensi´ on 3, ¿cu´ al es la dimensi´ on
+del espacio columna de A? ¿Es Col( A) = R3? ¿Por qu´ e?
+143. Si el espacio nulo de una matriz A de 8 × 7 es de dimensi´ on 5, ¿cu´ al es la dimensi´ on
+del espacio columna de A?
+23
+----- pagina 24 -----
+144. Si el espacio nulo de una matriz A de 8 × 5 es de dimensi´ on 3, ¿cu´ al es la dimensi´ on
+del espacio fila de A?
+145. Si el espacio nulo de una matriz A de 5 × 4 es de dimensi´ on 2, ¿cu´ al es la dimensi´ on
+del espacio fila de A?
+146. Si A es una matriz de 7 × 5, ¿cu´ al es el mayor rango posible deA? Si A es una matriz
+de 5 × 7, ¿cu´ al es el mayor rango posible deA? Explique sus respuestas.
+147. Si A es una matriz de 5 × 4, ¿cu´ al es la mayor dimensi´ on posible del espacio fila deA?
+Si A es una matriz de 4 × 5, ¿cu´ al es la m´ axima dimensi´ on posible del espacio fila de
+A? Explique sus respuestas.
+148. Si A es una matriz de 3 × 7, ¿cu´ al es la menor dimensi´ on posible de Nul(A)?
+149. Si A es una matriz de 7 × 5, ¿cu´ al es la menor dimensi´ on posible de Nul(A)?
+150. Suponga que todas las soluciones de un sistema homog´ eneo de cinco ecuaciones lineales
+con seis inc´ ognitas son m´ ultiplos de una soluci´ on diferente de cero. ¿El sistema nece-
+sariamente tendr´ a una soluci´ on para cada posible elecci´ on de las constantes en el lado
+derecho de las ecuaciones? Explique su respuesta.
+151. Suponga que un sistema no homog´ eneo de nueve ecuaciones lineales con 10 inc´ ognitas
+tiene una soluci´ on para todas las posibles constantes de los miembros derechos de
+las ecuaciones. ¿Es posible encontrar dos soluciones diferentes de cero del sistema
+homog´ eneo asociado que no sean m´ ultiplos una de la otra? Analice.
+152. Un sistema homog´ eneo de 12 ecuaciones lineales con ocho inc´ ognitas tiene dos solu-
+ciones fijas que no son m´ ultiplos una de la otra, y todas las dem´ as soluciones son
+combinaciones lineales de estas dos soluciones. ¿Puede describirse el conjunto de todas
+las soluciones con menos de 12 ecuaciones lineales homog´ eneas? Si es as ´ ı, ¿con cu´ antas?
+Analice.
+153. Un cient ´ ıfico resuelve un sistema no homog´ eneo de 10 ecuaciones lineales con 12 inc´ ogni-
+tas y encuentra que tres de las inc´ ognitas son variables libres. ¿Puede el cient ´ ıfico estar
+seguro de que, si se cambia el lado derecho de las ecuaciones, el nuevo sistema no
+homog´ eneo tendr´ a una soluci´ on? Analice.
+154. ¿Cu´ al de los subespacios Fila(A), Col(A), Nul(A), Fila(AT ), Col(AT ) y Nul(AT ) est´ an
+en Rm y cu´ ales est´ an enRn? ¿Cu´ antos subespacios distintos est´ an en esta lista?
+155. Justifique las siguientes igualdades:
+a) dim(Fila( A)) + dim(Nul(A)) = n (N´ umero de columnas deA)
+b) dim(Col( A)) + dim(Nul(AT )) = m (N´ umero de filas deA)
+156. Con base en el ejercicio anterior, explique por qu´ e la ecuaci´ onAx = b tiene una soluci´ on
+para toda b en Rm si y solo si la ecuaci´ onAT x = 0 tiene solamente la soluci´ on trivial.
+157. Suponga que A es m × n y b est´ a enRm. ¿Qu´ e tiene que ser verdad acerca del rango
+de
+
+A b
+
+y el rango A para que la ecuaci´ onAx = b sea coherente?
+24
+----- pagina 25 -----
+Cambio de base
+158. Sean B = {b1, b2} y C = {c1, c2} bases para un espacio vectorial V y suponga que
+b1 = 6c1 − 2c2 y b2 = 9c1 − 4c2.
+a) Encuentre la matriz de cambio de coordenadas de B a C.
+b) Encuentre
+
+x
+
+C para x = −3b1 + 2b2. (Utilice el inciso a).
+159. Sean U = {u1, u2} y W = {w1, w2} bases para V , y sea P una matriz cuyas columnas
+son
+
+u1
+
+W y
+
+u2
+
+W. ¿Cu´ al de las siguientes ecuaciones satisfaceP para toda x en V ?
+a)
+
+x
+
+U = P
+
+x
+
+W
+b)
+
+x
+
+W = P
+
+x
+
+U
+160. Sean A = {a1, a2, a3} y B = {b1, b2, b3} bases para un espacio vectorial V , y suponga
+que a1 = 4b1 − b2, a2 = −b1 + b2 + b3, y a3 = b2 − 2b3.
+a) Encuentre la matriz de cambio de coordenadas de A a B.
+b) Determine
+
+x
+
+B para x = 3a1 + 4a2 + a3.
+161. Sean B = {b1, b2} y C = {c1, c2} bases para R2. En cada ejercicio, encuentre la matriz
+de cambio de coordenadas de B a C y la matriz de cambio de coordenadas de C a B.
+a) b1 =
+7
+5
+
+, b2 =
+−3
+−1
+
+, c1 =
+ 1
+−5
+
+, c2 =
+−2
+2
+
+.
+b) b1 =
+4
+4
+
+, b2 =
+8
+4
+
+, c1 =
+2
+2
+
+, c2 =
+−2
+2
+
+.
+162. En P2, encuentre la matriz de cambio de coordenadas de la base B = {1 − 2t + t2, 3 −
+5t + 4t2, 2t + 3t2} a la base est´ andar deC = {1, t, t2}. Luego, encuentre el vector de
+B-coordenadas para −1 + 2t.
+Vectores propios, valores propios y espacios propios
+163. ¿Es λ = −2 un valor propio de
+3 2
+3 8
+
+? ¿Por qu´ e?
+164. ¿Es
+1
+3
+
+un vector propio de
+1 −1
+6 −4
+
+? Si lo es, encuentre el valor propio.
+165. ¿Es
+
+
+3
+−2
+1
+
+ un vector propio de
+
+
+−4 3 3
+2 − 3 −2
+−1 0 −2
+
+? En caso afirmativo, determine el
+valor propio.
+166. ¿Es λ = 4 un valor propio de
+
+
+3 0 −1
+2 3 1
+−3 4 5
+
+? Si es as ´ ı, determine un vector propio
+correspondiente.
+25
+----- pagina 26 -----
+167. Determine una base para el espacio propio asociado con cada valor propio indicado.
+a) A =
+3 0
+2 1
+
+, λ = 1, 3.
+b) A =
+ 1 −3
+−4 5
+
+, λ = −1, 7.
+c) A =
+
+
+4 0 1
+−2 1 0
+−2 0 1
+
+, λ = 1, 2, 3-
+d ) A =
+
+
+−4 0 −1
+3 0 3
+2 −2 5
+
+, λ = −5.
+168. Determine los valores propios de las matrices
+a)
+
+
+0 0 0
+0 3 4
+0 0 −2
+
+
+b)
+
+
+5 0 0
+0 0 0
+−1 0 3
+
+
+169. Sea λ un valor propio de una matriz A invertible. Demuestre que λ−1 es un valor propio
+de A−1.
+170. Demuestre que si A2 es la matriz cero, entonces el ´ unico valor propio deA es 0.
+171. Demuestre que λ es un valor propio de A si y solo si λ es un valor propio de AT .
+Ecuaci´ on Caracter ´ ıstica
+172. Encuentre el polinomio caracter ´ ıstico y los valores propios reales de las matrices dada
+a)
+2 7
+7 2
+
+b)
+−4 2
+6 7
+
+c)
+8 4
+4 8
+
+d )
+ 5 3
+−4 4
+
+173. Determine el polinomio caracter ´ ıstico de cada matriz
+a)
+
+
+4 0 −1
+0 4 −1
+1 0 2
+
+
+26
+----- pagina 27 -----
+b)
+
+
+3 0 0
+2 1 4
+1 0 4
+
+
+c)
+
+
+6 −2 0
+−2 9 0
+5 8 3
+
+
+174. Se puede demostrar que la multiplicidad algebraica de un valor propio λ es siempre
+mayor o igual que la dimensi´ on del espacio propio correspondiente a λ. Determine h
+en la matriz A de abajo, tal que el espacio propio para λ = 4 sea bidimensional:
+A =
+
+
+4 2 3 3
+0 2 h 3
+0 0 4 14
+0 0 0 2
+
+
+175. Demuestre que si A y B son similares, entonces det( A) = det(B).
+Diagonalizaci´ on
+176. Sea A = P DP−1 y calcule A4
+a) P =
+5 7
+2 3
+
+, D =
+2 0
+0 1
+
+b) P =
+1 2
+2 3
+
+, D =
+1 0
+0 3
+
+177. Use la factorizaci´ on A = P DP−1 para calcular Ak, donde k representa un entero
+positivo arbitrario
+a)
+ a 0
+2(a − b) b
+
+=
+1 0
+2 1
+ a 0
+0 b
+ 1 0
+−2 1
+
+b)
+1 −6
+2 −6
+
+=
+3 −2
+2 −1
+ −3 0
+0 −2
+ −1 2
+−2 3
+
+178. La matriz A se factoriza en la forma P DP−1. Utilice el teorema de diagonalizaci´ on
+para encontrar los valores propios de A y una base para cada espacio propio.
+a) A =
+
+
+2 −1 −1
+1 4 1
+−1 −1 2
+
+ =
+
+
+1 −1 0
+−1 1 −1
+0 −1 1
+
+
+
+
+3 0 0
+0 2 0
+0 0 3
+
+
+
+
+0 −1 −1
+−1 −1 −1
+−1 −1 0
+
+
+b) A =
+
+
+3 0 0
+−3 4 9
+0 0 3
+
+ =
+
+
+3 0 −1
+0 1 −3
+1 0 0
+
+
+
+
+3 0 0
+0 4 0
+0 0 3
+
+
+
+
+0 0 1
+−3 1 9
+−1 0 3
+
+
+179. Diagonalice las matrices, si es posible.
+27
+----- pagina 28 -----
+a)
+1 0
+6 −1
+
+b)
+2 −1
+1 4
+
+c)
+
+
+0 1 1
+2 1 2
+3 3 2
+
+
+d )
+
+
+2 2 −1
+1 3 −1
+−1 −2 2
+
+
+e)
+
+
+0 −1 −1
+1 2 1
+−1 −1 0
+
+
+f )
+
+
+2 0 0
+2 2 0
+2 2 2
+
+
+g)
+
+
+5 −3 0 9
+0 3 1 −2
+0 0 2 0
+0 0 0 2
+
+
+180. A es una matriz de 5 × 5 con dos valores propios. Un espacio propio es tridimensional
+y el otro espacio propio es bidimensional. ¿ A es diagonalizable? ¿Por qu´ e?
+181. A es una matriz de 3×3 con dos valores propios. Cada espacio propio es unidimensional.
+¿A es diagonalizable? ¿Por qu´ e?
+182. A es una matriz de 4 × 4 con tres valores propios. Un espacio propio es unidimensio-
+nal, y uno de los otros espacios propios es bidimensional. ¿Es posible que A no sea
+diagonalizable? Justifique su respuesta.
+183. A es una matriz de 7 × 7 con tres valores propios. Un espacio propio es bidimensio-
+nal, y uno de los otros espacios propios es tridimensional. ¿Es posible que A no sea
+diagonalizable? Justifique su respuesta.
+184. Demuestre que si A es diagonalizable e invertible, entonces tambi´ en lo esA−1.
+Vectores propios y transformaciones lineales
+185. Sean B = {b1, b2, b3} y D = {d1, d2} las bases de los espacios vectoriales V y W ,
+respectivamente. Sea T : V → W una transformaci´ on lineal con la propiedad
+T (b1) = 3d1 − 5d2 , T (b2) = −d1 + 6d2 , T (b3) = 4d2 .
+Determine la matriz para T respecto a B y D.
+28
+----- pagina 29 -----
+186. Sean D = {d1, d2} y B = {b1, b2} las bases para los espacios vectoriales V y W ,
+respectivamente. Sea T : V → W una transformaci´ on lineal con la propiedad
+T (d1) = 3b1 − 3b2 , T (d2) = −2b1 + 5b2 .
+Determine la matriz para T respecto a D y B.
+187. Sean E = {e1, e2, e3} la base est´ andar paraR3, B = {b1, b2, b3} una base para un
+espacio vectorial V , y T : R3 → V una transformaci´ on lineal con la propiedad
+T (x1, x2, x3) = (2x3 − x2)b1 − (2x2)b2 + (x1 + 3x3)b3 .
+a) Calcule T (e1), T (e2) y T (e3).
+b) Obtenga
+
+T (e1)
+
+B,
+
+T (e2)
+
+B y
+
+T (e3)
+
+B.
+c) Determine la matriz para T respecto a E y B.
+188. Sean B = {b1, b2, b3} una base para un espacio vectorial V y T : V → R2 una
+transformaci´ on lineal con la propiedad
+T (x1b1 + x2b2 + x3b3) =
+2x1 − 3x2 + x3
+−2x1 + 5x3
+
+Encuentre la matriz para T respecto a B y la base est´ andar paraR2.
+189. Sea T : P2 → P3 la transformaci´ on que mapea un polinomio p(t) en el polinomio
+(t + 3)p(t).
+a) Encuentre la imagen de p(t) = 3 − 2t + t2.
+b) Demuestre que T es una transformaci´ on lineal.
+c) Obtenga la matriz para T respecto a las bases {1, t, t2} y {1, t, t2, t3}.
+190. Sea T : P2 → P4 la transformaci´ on que mapea un polinomio p(t) en el polinomio
+p(t) + 2t2p(t).
+a) Determine la imagen de p(t) = 3 − 2t + t2.
+b) Demuestre que T es una transformaci´ on lineal.
+c) Encuentre la matriz para T respecto a las bases {1, t, t2} y {1, t, t2, t3, t4}.
+191. Suponga que el mapeo T : P2 → P2 definido por
+T (a0 + a1t + a2t2) = 3a0 + (5a0 − 2a1)t + (4a1 + a2)t2
+es lineal. Obtenga la representaci´ on matricial deT respecto a la base B = {1, t, t2}.
+192. Sea B = {b1, b2, b3} una base para un espacio vectorial V . Encuentre T (4b1 − 3b2)
+cuando T es una transformaci´ on lineal deV a V cuya matriz respecto a B es
+
+T
+
+B =
+
+
+0 0 1
+2 1 −2
+1 3 1
+
+
+29
+----- pagina 30 -----
+193. Defina T : P2 → R3 por T (p) =
+
+
+p(−1)
+p(0)
+p(1)
+
+.
+a) Encuentre la imagen bajo T de p(t) = 5 + 3t.
+b) Pruebe que T es una transformaci´ on lineal.
+c) Obtenga la matriz para T respecto a la base {1, t, t2} para P2 y la base est´ andar
+para R3.
+194. Defina T : P3 → R4 por T (p) =
+
+
+p(−2)
+p(3)
+p(1)
+p(0)
+
+.
+a) Demuestre que Y es una transformaci´ on lineal.
+b) Encuentre la matriz para T respecto a la base {1, t, t2, t3} para P3 y la base
+est´ andar paraR4.
+195. Determine la B-matriz para la transformaci´ onx 7→ Ax donde B = {b1, b2}.
+a) A =
+−4 −1
+6 1
+
+, b1 =
+−1
+2
+
+, b2 =
+−1
+1
+
+.
+b) A =
+−6 −2
+4 0
+
+, b1 =
+0
+1
+
+, b2 =
+−1
+2
+
+.
+196. Defina T : R2 → R2 por T (x) = Ax. Determina una base B para R2 con la propiedad
+de que
+
+T
+
+B es diagonal.
+a) A =
+ 0 1
+−3 4
+
+b) A =
+2 3
+3 2
+
+c) A =
+1 2
+3 −4
+
+d ) A =
+ 4 −2
+−1 5
+
+197. Sean A =
+ 4 1
+−1 2
+
+y B = {b1, b2} para b1 =
+ 1
+−1
+
+, b2 =
+−1
+2
+
+. Defina T : R2 → R2
+tal que T (x) = Ax.
+a) Compruebe que b1 es un vector propio de A, pero que A no es diagonalizable.
+b) Encuentre la B-matriz para T .
+Valores propios complejos
+198. Cada matriz act´ ua sobreC2. Determine los valores propios y una base para cada espacio
+propio en C2.
+30
+----- pagina 31 -----
+a)
+1 −2
+1 3
+
+b)
+3 −3
+3 3
+
+c)
+1 −2
+1 3
+
+d )
+7 −5
+1 3
+
+199. Encuentre una matriz P invertible y una matriz C de la forma
+a −b
+b a
+
+tal que la
+matriz dada tenga la forma A = P CP−1.
+a)
+3 −3
+1 1
+
+b)
+4 −2
+1 6
+
+c)
+3 −5
+2 5
+
+d )
+−3 −8
+4 5
+
+Producto interior, longitud y ortogonalidad
+200. Sean u = (u1, u2, u3). Explique por qu´ eu · u ⩾ 0. ¿Cu´ andou · u = 0?
+201. Sean u =
+
+
+2
+−5
+−1
+
+ y v =
+
+
+−7
+−4
+6
+
+. Calcule y compare u · v, ∥u∥2, ∥v∥2 y ∥u + v∥2. No
+utilice el teorema de Pit´ agoras.
+202. Comprueba la ley del paralelogramo para vectores u y v en Rn:
+∥u + v∥2 + ∥u − v∥2 = 2∥u∥2 + 2∥v∥2 .
+203. Sea v =
+a
+b
+
+. Describa el conjunto H de vectores
+x
+y
+
+que son ortogonales a v.
+204. Sean u =
+
+
+5
+−6
+7
+
+, y W el conjunto de todas las x en R3 tales que u · x = 0. ¿Qu´ e
+teorema se puede utilizar para demostrar que W es un subespacio de R3? Describa a
+W en lenguaje geom´ etrico.
+205. Suponga que un vector y que es ortogonal a los vectores u y v. Demuestre que y es
+ortogonal al vector u + v.
+31
+----- pagina 32 -----
+206. Suponga que y es ortogonal a u y v. Demuestre que y es ortogonal a cada w en
+Gen{u, v}.
+207. Sea W = Gen{v1, . . . ,vp}. Demuestre que si x es ortogonal a cada vj, para 1 ⩽ j ⩽ p,
+entonces x es ortogonal a todo vector en W .
+208. Sean W un subespacio de Rn, y W ⊥ el conjunto de todos los vectores ortogonales a
+W . Demuestre que W ⊥ es un subespacio de Rn, considerando los siguientes pasos.
+a) Tome z en W ⊥, y sea u cualquier elemento de W . Entonces z · u = 0. Tome
+cualquier escalar c y demuestre que cz es ortogonal a u. (Puesto que u era un
+elemento arbitrario de W , esto demostrar´ a quecz est´ a enW ⊥).
+b) Tome z1 y z2 en W ⊥, y sea u cualquier elemento de W . Demuestre que z1 + z2
+es ortogonal a u. ¿Qu´ e se puede concluir acerca dez1 + z2? ¿Por qu´ e?
+c) Termine la demostraci´ on de queW ⊥ es un subespacio de Rn.
+209. Demuestre que si x est´ a enW y W ⊥, entonces x = 0.
+Conjuntos ortogonales
+210. Determine qu´ e conjuntos de vectores son ortogonales
+a)
+
+
+−1
+4
+−3
+
+,
+
+
+5
+2
+1
+
+,
+
+
+3
+−4
+−7
+
+
+b)
+
+
+2
+−5
+−3
+
+,
+
+
+0
+0
+0
+
+,
+
+
+4
+−2
+6
+
+
+c)
+
+
+5
+−4
+0
+3
+
+,
+
+
+−4
+1
+−3
+8
+
+,
+
+
+3
+3
+5
+−1
+
+
+211. Demuestre que {u1, u2} o {u1, u2, u3} son una base ortogonal para R2 o R3, respecti-
+vamente. Despu´ es expresex como una combinaci´ on lineal de los vectoresu.
+a) u1 =
+3
+1
+
+, u2 =
+−2
+6
+
+y x =
+−6
+3
+
+b) u1 =
+
+
+3
+−3
+0
+
+, u2 =
+
+
+2
+2
+−1
+
+, u3 =
+
+
+1
+1
+4
+
+ y x =
+
+
+5
+−3
+1
+
+
+212. Calcule la proyecci´ on ortogonal de
+ 1
+−1
+
+sobre la recta que pasa por
+−1
+3
+
+y por el
+origen.
+32
+----- pagina 33 -----
+213. Sean y =
+2
+6
+
+y u =
+7
+1
+
+. Escriba y como la suma de un vector en Gen {u} y un vector
+ortogonal a u.
+214. Sean y =
+−3
+9
+
+y u =
+1
+2
+
+. Calcule la distancia de y a la recta que pasa por u y el
+origen.
+215. Determine cu´ ales conjuntos de vectores son ortonormales. Si un conjunto solamente es
+ortogonal, normalice los vectores para obtener un conjunto ortonormal.
+a)
+
+
+
+
+
+−2/3
+1/3
+2/3
+
+ ,
+
+
+1/3
+2/3
+0
+
+
+
+
+
+b)
+
+
+
+
+
+1/
+√
+10
+3/
+√
+20
+3/
+√
+20
+
+ ,
+
+
+3/
+√
+10
+−1/
+√
+20
+−1/
+√
+20
+
+ ,
+
+
+0
+−1/
+√
+2
+1/
+√
+2
+
+
+
+
+
+c)
+
+
+
+
+
+1/
+√
+18
+4/
+√
+18
+1/
+√
+18
+
+ ,
+
+
+1/
+√
+2
+0
+−1/
+√
+2
+
+ ,
+
+
+−2/3
+1/3
+−2/3
+
+
+
+
+
+216. Dado u ̸= 0 en Rn, sea L = Gen {u}. Demuestre que el mapeo x 7→ proyLx es una
+transformaci´ on lineal.
+217. Dado u ̸= 0 en Rn, sea L = Gen{u}. Para y en Rn, la reflexi´ on dey en L es el punto
+ReflLy definido por
+reflLy = 2 · proyLy − y .
+V´ ease la figura, que indica que reflLy es la suma de by = proyLy y by − y. Demuestre
+que el mapeo y 7→ reflL es una transformaci´ on lineal.
+La reflexión deyen una recta que pasa por el origen.
+x1
+x2 y
+u
+yˆ
+L= Gen{u}
+y y–ˆ refl L y
+y y–ˆ
+Proyecciones ortogonales
+218. Compruebe que {u1, u2} es un conjunto ortogonal, y luego encuentre la proyecci´ on
+ortogonal de y sobre Gen{u1, u2}.
+33
+----- pagina 34 -----
+a) y =
+
+
+6
+3
+−2
+
+, u1 =
+
+
+3
+4
+0
+
+, u2 =
+
+
+−4
+3
+0
+
+.
+b) y =
+
+
+6
+4
+1
+
+, u1 =
+
+
+−4
+−1
+1
+
+, u2 =
+
+
+0
+1
+1
+
+.
+219. Sea W el subespacio generado por los vectores u, y escriba y como la suma de un
+vector en W y un vector ortogonal a W .
+a) y =
+
+
+−1
+4
+3
+
+, u1 =
+
+
+1
+1
+1
+
+, u2 =
+
+
+−1
+3
+−2
+
+.
+b) y =
+
+
+3
+4
+5
+6
+
+, u1 =
+
+
+1
+1
+0
+−1
+
+, u2 =
+
+
+1
+0
+1
+1
+
+, u3 =
+
+
+0
+−1
+1
+−1
+
+.
+220. Determine el punto m´ ar cercano ay en el subespacio W generado por v1 y v2.
+a) y =
+
+
+3
+1
+5
+1
+
+, v1 =
+
+
+3
+1
+−1
+1
+
+, v2 =
+
+
+1
+−1
+1
+−1
+
+.
+b) y =
+
+
+3
+−1
+1
+13
+
+, v1 =
+
+
+1
+−2
+−1
+2
+
+, v2 =
+
+
+−4
+1
+0
+3
+
+.
+221. Calcule la mejor aproximaci´ on az con vectores de la formac1v1+c2v2 donde z =
+
+
+2
+4
+0
+−1
+
+,
+v1 =
+
+
+2
+0
+−1
+−3
+
+, v2 =
+
+
+5
+−2
+4
+2
+
+.
+222. Sean y =
+
+
+5
+−9
+5
+
+, u1 =
+
+
+−3
+−5
+1
+
+, u2 =
+
+
+−3
+2
+1
+
+. Encuentre la distancia de y al plano en R3
+generado por u1 y u2.
+223. Sean y =
+
+
+4
+8
+1
+
+, u1 =
+
+
+2/3
+1/3
+2/3
+
+, u2 =
+
+
+−2/3
+2/3
+1/3
+
+ y W = Gen{u1, u2}.
+a) Sea U =
+
+u1 u2
+
+. Calcule U T U y U UT .
+34
+----- pagina 35 -----
+b) Calcule proy W y y (U UT )y.
+Proceso de Ortogonalizaci´ on de Gram-Schmidt
+224. El conjunto dado es una base para un subespacio W . Utilice el proceso de Gram-
+Schmidt con la finalidad de obtener una base ortogonal para W .
+a)
+
+
+0
+4
+2
+
+,
+
+
+5
+6
+−7
+
+.
+b)
+
+
+3
+−4
+5
+
+,
+
+
+−3
+14
+−7
+
+.
+c)
+
+
+3
+−1
+2
+−1
+
+,
+
+
+−5
+9
+−9
+3
+
+.
+225. Obtenga una base ortonormal del subespacio generado por los vectores del ejercicio
+anterior ´ ıtem a)
+226. Obtenga una base ortonormal del subespacio generado por los vectores del ejercicio
+anterior ´ ıtem b)
+227. Determine una base ortogonal para el espacio columna de cada matriz
+a)
+
+
+−1 6 6
+3 −8 3
+1 −2 6
+1 −4 −3
+
+ b)
+
+
+1 3 5
+−1 −3 1
+0 2 3
+1 5 2
+1 5 8
+
+
+228. Sean u1, . . . ,up una base ortogonal para un subespacio W de Rn y T : Rn → Rn
+definida por T (x) = proyW x. Demuestre que T es una transformaci´ on lineal.
+Problemas de m ´ ınimos cuadrados
+229. Encuentre una soluci´ on de m ´ ınimos cuadrados deAx = b mediante a) la construcci´ on
+de las ecuaciones normales para ˆ xy b) el despeje de ˆ x.
+a) A =
+
+
+2 1
+−2 0
+2 3
+
+, b =
+
+
+−5
+8
+1
+
+. b) A =
+
+
+1 3
+1 −1
+1 1
+
+, b =
+
+
+5
+1
+0
+
+.
+230. Describa todas las soluciones de m ´ ınimos cuadradps de la ecuaci´ onAx = b.
+35
+----- pagina 36 -----
+a) A =
+
+
+1 1 0
+1 1 0
+1 0 1
+1 0 1
+
+, b =
+
+
+1
+3
+8
+2
+
+. b) A =
+
+
+1 1 0
+1 1 0
+1 1 0
+1 0 1
+1 0 1
+1 0 1
+
+, b =
+
+
+7
+2
+3
+6
+5
+4
+
+.
+231. Calcule el error de m ´ ınimos cuadrados asociado con la soluci´ on de m ´ ınimos cuadrados
+que encontr´ o en el ejercicio 1.a)
+232. Calcule el error de m ´ ınimos cuadrados asociado con la soluci´ on de m ´ ınimos cuadrados
+que encontr´ o en el ejercicio 1.b)
+233. Encuentre a) la proyecci´ on ortogonal deb sobre Col(A) y b) una soluci´ on de m ´ ınimos
+cuadrados de Ax = b.
+a) A =
+
+
+1 2
+−1 4
+1 2
+
+, b =
+
+
+3
+−1
+5
+
+ b) A =
+
+
+1 1 0
+1 0 −1
+0 1 1
+−1 1 −1
+
+, b =
+
+
+2
+5
+6
+6
+
+
+234. Sean A =
+
+
+2 1
+−3 −4
+3 2
+
+, b = 5 4 4 , u =  4−5 y v =  6−5. Determine Au y
+v, comp´ arelos conb. ¿Es posible que al menos uno de los dos entre u o v sea una
+soluci´ on de m ´ ınimos cuadrados deAx = b? (Responda sin obtener una soluci´ on de
+m ´ ınimos cuadrados).
+Aplicaciones de problemas m ´ ınimos cuadrados a modelos lineales
+235. Encuentre la ecuaci´ ony = β0 + β1x de la recta de m ´ ınimos cuadradps que mejor se
+ajuste a los puntos de datos indicados.
+a) (0 , 1), (1, 1), (2, 2) y (3 , 2).
+b) (1 , 0), (2, 1), (4, 2) y (5 , 3).
+c) ( −1, 1), (0, 1), (1, 2) y (2 , 4).
+d ) (1 , 0), (2, 1), (4, 2) y (5 , 3).
+236. Sea X la matriz de dise˜ no empleada para determinar la recta de m ´ ınimos cuadrados
+que se ajusta a los datos ( x1, y1), . . . ,(xn, yn). Demuestre que las ecuaciones normales
+tienen soluci´ on ´ unica si y solo si los datos incluyen al menos dos puntos de datos con
+diferente coordenada x.
+36
+----- pagina 37 -----
+Diagonalizaci´ on de matrices sim´ etricas
+237. Determine qu´ e matrices son ortogonales. Si alguna es ortogonal, encuentre su inversa.
+a)
+1/√2 −1/√2
+1/
+√
+2 1 /
+√
+2
+
+b)
+
+
+−1 2 2
+2 −1 2
+2 2 −1
+
+
+c)
+
+
+2/3 2 /3 1 /3
+0 1 /
+√
+5 −2/
+√
+5√
+5/3 −4/
+√
+45 −2/
+√
+45
+
+
+238. Diagonalice ortogonalmente las matrices, dando una matriz ortogonal P y una matriz
+diagonal D.
+a)
+1 5
+5 1
+
+b)
+−7 24
+24 7
+
+c)
+
+
+−2 −36 0
+−36 −23 0
+0 0 3
+
+
+d )
+
+
+7 −4 4
+−4 5 0
+4 0 9
+
+
+e)
+
+
+2 0 0 0
+0 1 0 1
+0 0 2 0
+0 1 0 1
+
+
+239. Sean A =
+
+
+3 1 1
+1 3 1
+1 1 3
+
+ y v =
+
+
+1
+1
+1
+
+. Compruebe que 2 es un valor propio de A y v un
+vector propio. Despu´ es, diagonaliceA ortogonalmente.
+Formas cuadr´ aticas
+240. Calcule la forma cuadr´ aticaxT Ax, cuando A =
+ 5 1 /3
+1/3 1
+
+y
+a) x =
+x1
+x2
+
+b) x =
+6
+1
+
+37
+----- pagina 38 -----
+c) x =
+1
+3
+
+241. Encuentre la matriz de la forma cuadr´ atica. Suponga que x est´ a enR2.
+a) 10 x21 − 6x1x2 − 3x22
+b) 5 x22 + 3x1x2
+242. Obtenga la matriz de la forma cuadr´ atica. Suponga que x est´ a enR3
+a) 8 x21 + 7x22 − 3x23 − 6x1x2 + 4x1x3 − 2x2x3
+b) 4 x1x2 + 6x1x3 − 8x2x3
+243. Sea A la matriz de la forma cuadr´ atica
+9x21 + 7x22 + 11x23 − 8x1x2 + 8x1x3
+Es posible demostrar que los valores propios de A son 3, 9 y 15. Encuentre una matriz
+ortogonal P tal que el cambio de variable x = P y transforme xT Ax en una forma
+cuadr´ atica sin productos cruzados. DetermineP y la nueva forma cuadr´ atica.
+244. Clasifique las formas cuadr´ aticas. Despu´ es realice un cambio de variable,x = P y, que
+convierta la forma cuadr´ atica en una que no incluya productos cruzados. Escriba la
+nueva forma cuadr´ atica. ConstruyaP .
+a) 3 x21 − 4x1x2 + 6x22
+b) 9 x21 − 8x1x2 + 3x22
+c) 2 x21 + 10x1x2 + 2x22
+d ) −5x21 + 4x1x2 − 2x22
+e) x21 − 6x1x2 + 9x22
+f ) 8 x21 + 6x1x2
+Descomposici´ on en valores singulares
+245. Obtenga los valores singulares de las matrices
+a)
+−5 0
+0 0
+
+b)
+√3 2
+0
+√
+3
+
+246. Encuentre una DVS para cada matriz
+a)
+−2 0
+0 −1
+
+b)
+2 3
+0 2
+
+c)
+
+
+4 −2
+2 −1
+0 0
+
+
+38
+----- pagina 39 -----
+d )
+
+
+1 1
+0 1
+−1 1
+
+
+247. Encuentre la DVS de A =
+3 2 2
+2 3 −2
+
+.
+248. Suponga que la siguiente factorizaci´ on es una DVS de una matriz A, con las entradas
+en U y V redondeadas a dos decimales.
+A =
+
+
+0,40 −0,78 0 ,47
+0,37 −0,33 0 ,87
+0,84 −0,52 0 ,16
+
+
+
+
+7,10 0 0
+0 3 ,10 0
+0 0 0
+
+
+
+
+0,30 −0,51 0 ,81
+0,76 −0,64 0 ,12
+0,58 −0,58 0 ,58
+
+
+a) ¿Cu´ al es el rango deA?
+b) Utilice esta descomposici´ on de A, sin hacer c´ alculos, y escriba una base para
+Col(A) y una base para Nul( A).
+39

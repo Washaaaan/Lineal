@@ -1,0 +1,161 @@
+
+----- pagina 1 -----
+Clase 41 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Una matriz simétrica es una matriz A tal que AT = A
+Una matriz A de n × n es diagonalizable ortogonalmente si existe
+una matriz ortogonal P (con P−1 = PT) y una matriz diagonal D
+tales que
+A = PDPT = PDP−1
+Una matriz es diagonalizable ortogonalmente si y solo si es simétrica
+¿Qué pasa con matrices no simétricas?
+2 / 11
+----- pagina 3 -----
+Teorema
+Sea A una matriz simétrica de n × n, y sea Q(x) = xTAx la forma
+cuadrática asociada. Sea m el mínimo de Q y M el máximo de Q entre los
+vectores x tal que ‖x‖. Entonces M es el mayor valor propio λ1 de A y m
+es el menor valor propio λn de A.
+El valor de Q(x) es M si x es un vector propio unitario correspondiente a
+λ1, y el valor de Q(x) es m si x es un vector propio unitario
+correspondiente a λn.
+3 / 11
+----- pagina 4 -----
+La descomposición en valores singulares
+Ejemplo: Si A =
+[ 4 11 14
+8 7 −2
+]
+, entonces la transformación lineal
+x ↦→ Ax mapea la esfera unitaria {x : ||x|| = 1} en R3 sobre una elipse en
+R2. Encuentre un vector unitario x en el que la longitud ||Ax|| sea
+máxima, y calcule esta longitud máxima.
+Nota:
+
+
+80 100 40
+100 170 140
+40 140 200
+
+ = PDPT, con
+P =
+
+
+1/3 2 /3 2 /3
+−2/3 −1/3 2 /3
+2/3 −2/3 1 /3
+
+ , y D =
+
+
+360 0 0
+0 90 0
+0 0 0
+
+
+4 / 11
+----- pagina 5 -----
+La descomposición en valores singulares
+Notas: ATA es diagonalizable ortogonalmente, y sus valores propios son
+todos no negativos.
+Definición: Valores Singulares
+Los valores singulares de A son las raíces cuadradas de los valores propios
+de ATA, denotados por σ1, . . . , σn, y se ordenan de manera decreciente:
+σ1 ≥ σ2 ≥ · · · ≥ σn ≥ 0
+Si vi es vector propio de ATA asociado a σi, entonces la longitud del
+vector Avi es el valor singular σi.
+5 / 11
+----- pagina 6 -----
+La descomposición en valores singulares
+Ejemplo: Sean
+A =
+[ 4 11 14
+8 7 −2
+]
+Encuentre los valores singulares de A.
+6 / 11
+----- pagina 7 -----
+La descomposición en valores singulares
+Teorema
+Si {v1, . . . ,vn} es una base ortonormal de Rn formada por vectores propios
+de ATA, ordenados de manera que λ1 ≥ . . . ≥ λn, de los cuales r son
+distintos de cero, entonces rango A = r y {Av1, . . .Avr es una base
+ortogonal de Col A.
+Teorema: El teorema de la matriz invertible (conclusión)
+Sea A una matriz cuadrada de n × n. Las siguientes afirmaciones son
+equivalentes:
+A es invertible.
+A tiene n valores singulares diferentes de cero.
+7 / 11
+----- pagina 8 -----
+La descomposición en valores singulares
+Una descomposición en valores singulares de A es una descomposición
+A = UΣVT, donde U y V son matrices ortogonales y Σ es de la forma
+¿Quién debería ser U, V y Σ?
+8 / 11
+----- pagina 9 -----
+La descomposición en valores singulares
+Teorema: La descomposición en valores singulares
+Sea A una matriz de m × n con rango r. Entonces existe una matriz Σ de
+m × n tal que las entradas diagonales D de r × r son los primeros r valores
+singulares de A, σ1 ≥ σ2 ≥ · · · ≥ σr > 0, y existen una matriz ortogonal U
+de m × m y una matriz ortogonal V de n × n tales que
+A = UΣVT
+Las columnas de V se llaman vectores singulares derechos de A y las
+columnas de U se llaman los vectores singulares izquierdos de A.
+9 / 11
+----- pagina 10 -----
+La descomposición en valores singulares
+Ejemplo: Use los resultados del ejemplo anterior para construir una
+descomposición en valores singulares de
+A =
+[ 4 11 14
+8 7 −2
+]
+Algoritmo para encontrar una DVS
+1) Diagonalizar ortogonalmente ATA = PDPT.
+2) Obtener V con las columnas de P y Σ a partir de los valores
+singulares no nulos ordenados.
+3) Construir las primeras r columnas de U con Av1, . . .Avr.
+4) Si faltan columnas de U, agregar vectores ortonormales.
+10 / 11
+----- pagina 11 -----
+La descomposición en valores singulares
+Ejemplo: Encuentre una descomposición en valores singulares de
+A =
+
+
+1 −1
+−2 2
+2 −2
+
+
+Nota: ATA =
+[ 9 −9
+−9 9
+]
+=
+[ 1/√2 −1/√2
+1/
+√
+2 1 /
+√
+2
+] [ 18 0
+0 0
+] [ 1/√2 −1/√2
+1/
+√
+2 1 /
+√
+2
+]T
+.
+11 / 11

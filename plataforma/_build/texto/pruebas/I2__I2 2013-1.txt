@@ -1,0 +1,316 @@
+PONTIFICIA UNIVERSIDAD CAT ´OLICA DE CHILE
+FACULTAD DE MATEM´ATICAS
+DEPARTAMENTO DE MATEM´ATICA
+I2 MAT1203 - ´Algebra Lineal
+Mayo 22, 2013
+1. a) [ 3 pts.] Represente la cuadr´ atica
+F (⃗ x) =−2x12 + 2x1x2 + 4x1x3− 2x22− 4x2x3−αx 32
+en la forma ⃗ yTD⃗ ydondeD es una matriz diagonal. Determine los valores de α
+para los cuales ella es positiva deﬁnida, negativa deﬁnida. Justiﬁque.
+b) [ 3 pts.] SeaB ={v1,v 2,v 3} una base de un espacio vectorialV yu1,u 2,u 3,u 4
+vectores en V tales que [u1]B = [−1, 1, 1]T ,[u2]B = [−2, 2, 2]T , [u3]B = [2, 0, 1]T
+y [u4]B = [5, 1, 4]T . Determine una base de H =Gen{u1,u 2,u 3,u 4} expresada
+en t´ erminos de los vectoresvi.
+Soluci´ on
+a) La forma cuadr´ atica se escribe en su forma matricial sim´ etrica como
+F (⃗ x) =⃗ xTA⃗ xdonde A =
+
+
+−2 1 2
+1 −2 −2
+2 −2 −α
+
+ 0.5 pts.
+Puesto que
+A =LDLT, donde L =
+
+
+1 0 0
+−1/2 1 0
+−1 2 /3 1
+
+D =
+
+
+−2 0 0
+0 −3/2 0
+0 0 −α + 8/3
+
+ 1.0 pts.
+con la sustituci´ on⃗ y=LT⃗ xse obtiene F (⃗ x) =⃗ yTD⃗ y[ 0.5 pts.]
+La forma cuadr´ atica es negativa deﬁnida sii todos los elementos de la diagonal
+de D son negativos sii 8 /3− α < 0 ⇔ 8/3 < α 0.5 pts. . La forma
+cuadr´ atica nunca es positiva deﬁnida pues la diagonal de D tiene elementos
+negativos [ 0.5 pts.] .
+b) Sea B la matriz cuyas columnas son los vectores coordenados de ui.
+B = [ [u1]B [u2]B [u3]B [u4]B ] =
+
+
+−1 −2 2 5
+1 2 0 1
+1 2 1 4
+
+Las estructura de dendencia/independencia lineal de las columnas de B es la
+misma que la de los vectores ui. Por lo tanto las columnas de B que son base
+de col(B) deﬁnen los vectores ui que son base de H.
+Puesto que la escalonada reducida de B (tambi´ en se puede usar una forma
+escalonada) es
+rref (B) =
+
+
+1 2 0 1
+0 0 1 3
+0 0 0 0
+
+
+tenemos que las columnas pivotes son las columnas 1 y 3 y por lo tanto las
+columnas 1 y 3 de B son base de col(B) y entonces los vectores u1 y u3 son
+base de H. Expresando estos vectores en t´ ermino de los vectores vj tenemos
+que u1 =−1v1 +v2 +v3, u3 = 2v1 +v3 son base de H.
+Criterio de Correcci´ on
+1.5 pts. por la estrategia de expresar el problema como del de de-
+terminar una base de un espacio ﬁla o columna de la matriz de vectores
+coordenados y que esta base determina una base de H
+1.0 pts. por determinar base ya sea de espacio ﬁla o columna de la
+matriz planteada.
+0.5 pts. por expresar la base en t´ erminos de lo vectoresvi.
+Si el m´ etodo es correcto y tienen alg´ un error aritm´ etico que signiﬁca que
+obtienen como base 3 vectores, la pregunta tiene 2.0 pts.2. a) [ 3 pts.] Sea A es una matriz de 3 × 3 con det(A) =−2 y B la matriz que
+se obtiene al ﬁnal del siguiente proceso:
+(i) se multiplica por la izquierda a A por A2(AT )−1,
+(ii) la matriz resultante de (i) se multiplica por el escalar 1/2,
+(iii) la matriz resultante de (ii) se invierte y luego se traspone,
+(iv) a la matriz resultante de (iii) se le aplican las siguientes operaciones ele-
+mentales: se multiplica la segunda ﬁla por 3 y la segunda columna por 1/5,
+y luego se intercambian las ﬁlas 2 y 3.
+Calcule el det(B).
+b) [ 3 pts.] Determine el determinante de la matriz B de n×n, donde
+B =
+
+
+1 2 2 ··· 2
+2 2 2 ··· 2
+2 2 3 ··· 2
+... ... ... ... ...
+2 2 2 ··· n
+
+
+(Bi,i =i y Bi,j = 2 para i⁄=j)
+Soluci´ on:
+a) (i) se multiplica por la izquierda a A porA2(AT )−1:det(A1) =de(A)∗det(A2)∗
+det(A−1) = (det(A))2 = 4 0.9 pts. (0.5 pts con un error, 0.0 pts con
+2 errores)
+(ii) la matriz resultante de (i) se multiplica por el escalar 1/2: det(A2) =
+det(A2)∗ (1|/2)3 = 1/2 0.9 pts. (todo o nada)
+(iii) la matriz resultante de (ii) se invierte y luego se traspone, det(A3) =
+1/det(A2) = 2 0.5 pts. (todo o nada)
+(iv) a la matriz resultante de (iii) se le aplican las siguientes operaciones elemen-
+tales: se multiplica la segunda ﬁla por 3 y la segunda columna por 1/5, y
+luego se intercambian las ﬁlas 2 y 3:det(B) =det(A3)∗1/5∗3∗(−1) =−6/5
+0.7 pts. (0.4 pts un error, 0.0 pts dos errores)
+b) Restando la ﬁla 1 a las ﬁlas 2 , 3,...,n se obtiene
+|B| =
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ 1 2 2 ··· 22 2 2 ··· 22 2 3 ··· 2... ... ... ... ...2 2 2 ··· n ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ =⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ 1 2 2 ··· 21 0 0 ··· 01 0 1 ··· 0... ... ... ... ...1 0 0 ··· n− 2 ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ 1.0 pts.Desarrollando por cofactores la matriz en el lado derecho obtenemos que|B| =
+(−1)|C| dondeC es una matriz de (n− 1)× (n− 1) que es triangular superior.
+B =−|C| =−
+⏐⏐⏐⏐⏐⏐⏐⏐⏐ 2 2 2 ··· 20 1 0 ··· 0... ... ... ... ...0 0 0 ··· n− 2 ⏐⏐⏐⏐⏐⏐⏐⏐⏐ 1.0 pts. (restar 0.5 por error en el signo)
+Como el determinante de una matriz triangular superior es el producto de los
+elementos de su diagonal principal, obtenemos
+|B| =−2· 1· 2··· (n− 2) =−2(n− 2)! 1.0 pts.
+Criterios generales
+Por una estrategia exitosa de hacer hartos ceros en la matriz 1.0 pts.
+Por desarrollo de casos especiales con n≥ 5 0.5 pts.
+Si intenta hartos ceros y casos especiales 1.0 pts. (igual).3. a) [ 3 pts.] Si A y su escalonada reducida B est´ an dadas por
+A =
+
+
+1 1 0 1 2 −1
+−1 −1 1 −2 −1 2
+−2 −2 1 −3 −2 4
+0 0 0 0 1 1
+1 1 1 0 4 1
+
+, B =
+
+
+1 1 0 1 0 −3
+0 0 1 −1 0 0
+0 0 0 0 1 1
+0 0 0 0 0 0
+0 0 0 0 0 0
+
+
+Determine bases para los espacios columna, ﬁla y nulo (kernel) de A.
+b) [ 3 pts.] Sea W ={p∈ P3[x] : p(2) = p(−1) = 0} subespacio de P3[x]
+(espacio de los polinomios de grado menor o igual a 3). Determine una base y
+dimensi´ on deW .
+Soluci´ on
+a) Una base del espacio columna de A son las columnas pivotes de A:Bcol(B) ={
+[[1,−1,−2, 0, 1]T, [0, 1, 1, 0, 1]T, [2,−1,−2, 1, 4]T} 1.0 pts.
+Una base del espacio ﬁla de A son las ﬁlas no nulas de la escalonada reducida:
+BF ila(A) ={[1, 1, 0, 1, 0,−3], [0, 0, 1,−1, 0, 0], [0, 0, 0, 0, 1, 1]} 1.0 pts.
+Resolvemos Ax = 0 a partir de la escalonada reducida de A. Las variables
+libres son x2,x 4,x 6. Despejando las variables b´ asicas en t´ ermino de las libres
+obtenemos
+x1 =−x2−x4 + 3x6, x 3 =x4 x5 =−x6
+Entonces
+
+
+x1
+x2
+x3
+x4
+x5
+x6
+
+ =
+
+
+−x2−x4 + 3x6
+x2
+x4
+x4
+−x6
+x6
+
+ =x2
+
+
+−1
+1
+0
+0
+0
+0
+
+ +x4
+
+
+−1
+0
+1
+1
+0
+0
+
+ +x6
+
+
+3
+0
+0
+0
+−1
+1
+
+
+Una base de nul(A) es
+Bnul(A) ={
+
+
+−1
+1
+0
+0
+0
+0
+
+,
+
+
+−1
+0
+1
+1
+0
+0
+
+,
+
+
+3
+0
+0
+0
+−1
+1
+
+}
+1.0 pts.b) Sea p(x) =a +bx +cx2 +dx3. Las condiciones implican
+p(2) = a + 2b + 4c + 8d = 0
+p(−1) = a−b +c−d = 0 1.0 pts.
+La matriz de coeﬁcientes del sistema es
+[ 1 2 4 8
+1 −1 1 −1
+]
+cuya escalonada reducida es
+[
+1 0 2 2
+0 1 1 3
+]
+Por lo tanto la soluci´ on del sistema es a =−2c− 2d, b =−c− 3d, con c,d
+variables libres. 0.5 pts. Reemplazando en el polinomio p(x) obtenemos
+que
+p(x) = a +bx +cx2 +dx3
+= ( −2c− 2d) + (−c− 3d)x +cx2 +dx3
+= c(−2−x +x2) +d(−2− 3x +x3)
+Un conjunto generador para W es entoncesB ={−2−x +x2,−2− 3x +x3}.
+Como estos dos vectores no son un m´ ultiplo del otro son li y entonces una base
+para W esB. 1.0 pts. . Como la base tiene 2 elementos dim( W ) = 2
+0.5 pts.
+4. Determine si la aﬁrmaci´ on es VERDADERA o FALSA y justiﬁque demostrando su
+respuesta.
+a) [ 1.5 pts.] El conjunto W ={(x,y,z,w )∈ R4 tales que xy = 0} es subespa-
+cio de R4.
+b) [ 1.5 pts.] Si un sistema homog´ eneo de 8 ecuaciones lineales y 9 inc´ ognitas es
+siempre consistente, entonces existen dos soluciones que no son m´ ultiplos una
+de la otra.
+c) [ 1.5 pts.] Si B tiene inversa entonces los espacios columna de AB y A son
+iguales.
+d) [ 1.5 pts.] Si A,B son matrices de n×n y AB =O, donde O es la matriz
+nula, entonces dim(Col(A)) + dim(Col(B))≤n.
+Soluci´ on1. FALSO: u = (1, 0, 0, 0),v = (0, 1, 0, 0)∈W , perou+v = (1, 1, 0, 0)⁄∈W , por lo tan-
+toW no es cerrado bajo la suma vectorial y entonces no es subespacio. 1.5 pts.
+2. Un punto clave para determinar la respuesta es como se interpreta el que dos vectores
+distintosu,v sean un m´ ultiplo uno del otro. Si se interpreta como que:
+A) u es un m´ ultiplo dev y v es un m´ ultiplo dev, entonces con esta interpretaci´ on
+ni u ni v pueden ser el vector nulo.
+B) u es un m´ ultiplo dev o v es un m´ ultiplo dev, entonces con esta interpretaci´ on
+u o v pueden ser el vector nulo (pero no ambos pues si no habr´ ıa un s´ olo vector).
+Dependiendo de la interpretaci´ on la respuesta correcta es la siguiente:
+Caso A) FALSO: El sistema A⃗ x= ⃗0 con A = [I8 ⃗0], donde I8 es la identidad de
+8× 8 tiene espacio nulo de dimensi´ on 1 y todas las soluciones no nulas son una un
+m´ ultiplo de la otra. Tambi´ en es v´ alida una demostraci´ on que supone una matriz de
+con 8 ﬁlas l.i. la que tendr´ a por teor´ ıa un espacio nulo de dimensi´ on 1 y por lo tanto
+todas las soluciones no nulas son un m´ ultiplo una de la otra.
+Caso B) VERDADERO: Si el sistema homog´ eneo es de 8x9 entoncesdim(nul(A))≥
+1 y entonces el sistema tiene una soluci´ onu⁄=⃗0. Como v =⃗0 es soluci´ on de todo
+sistema homog´ eneo tenemos queu no es un m´ ultiplo dev = ⃗0 y por lo tanto es
+verdadero.
+Otorgar 1.5 pts. tanto para el caso A) como el B)
+3. VERDADERO:
+El espacio columna deAB es el conjunto de las⃗b tal queAB⃗ x=⃗b (1) es consistente.
+El espacio columna de A es el conjunto del los ⃗b tal que A⃗ y=⃗b (2) es consistente.
+Ambos conjuntos son iguales:
+(*) 0.5 pts. (demostrar que col(AB)⊂col(A))
+⃗b∈col(AB) implica que existe ⃗ xtal que AB⃗ x=⃗b y por lo tanto A⃗ y=⃗b con
+⃗ y=B⃗ xy entonces⃗b∈col(A). Por lo tanto col(AB)⊂col(A).
+Otra manera de demostrar esto es decir que las columnas de AB son combina-
+ciones lineales de las columnas de A y por lo tanto col(AB)⊂col(A)
+(**) 1.0 pts. (demostrar que col(A)⊂col(AB))
+⃗b∈ col(A) implica que que existe ⃗ ytal que A⃗ y=⃗b. Deﬁniendo ⃗ x= B−1⃗ yse
+tiene AB⃗ x= AB(B−1⃗ y) = A⃗ y=⃗b y por lo tanto ⃗b∈ col(A). Por lo tanto
+col(A)⊂col(AB)
+Otra manera de demostrar esto es si C = AB entonces A = CB−1 y por la
+parte anterior las columnas de A son combinaciones lineales de las columnas
+de C y por lo tanto col(A)⊂col(C) =col(AB).Por (*) y (***) col(A) =col(AB)
+Otras consideraciones:
+1.0 pts. si identiﬁcan los espacios columna de AB y A como el conjunto
+los vectores⃗b para los cuales los sistemas AB⃗ x=⃗b y A⃗ y=⃗b son consistentes
+(ambos, no uno de ellos y con intenci´ on de una demostraci´ on s´ olida).
+0.5 pts. por concluir
+4. VERDADERO
+i) AB = 0 implica que col(B)⊂nul(A) 0.6 pts.
+ii) col(B)⊂nul(A) implica dim(col(B))≤dim(nul(A)) 0.3 pts.
+iii dim(col(A)+dim(nu(A)) =n implica por ii) que dim(Col(A))+dim(Col(B))≤
+n. 0.6 pts.

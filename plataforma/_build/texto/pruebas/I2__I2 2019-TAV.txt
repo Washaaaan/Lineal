@@ -1,0 +1,526 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Temporada Verano 2019
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 2
+1. a) Sea A una matriz cuadrada de 3× 3 tal que det(A) = 5. Calcule det(33A) y det(det(A)A−1).
+b) Se dice que una matriz A es ortogonal si su inversa es igual a su tranpuesta. Demuestre que
+si A es ortogonal, entonces det(A) =±1.
+Soluci´ on.
+a) Utilizando propiedades de determinantes, det(3 3A) = 39 det(A) = 39· 5.
+Para el otro determinante, utilizando propiedades se tiene que
+det(det(A)A−1) = 53 det(A−1) = 53· 15 = 25.
+b) Como At =A−1 entonces det(At) = det(A−1). De este modo, utilizando propiedades se tiene
+que
+det(A) = 1det(A).
+Por lo tanto, (det(A))2 = 1, por lo que el determinante de A es 1 o -1.
+Puntaje:
+En la parte a) asignar 1 punto por sacar el escalar del determinante de forma adecuada. Para
+el segundo determinante, asignar 1 punto por sacar el escalar del determinante de forma
+adecuada y 1 punto por utilizar que det( A−1) = 1/ det(A).
+En la parte b) asignar 2 puntos por llegar a la conclusi´ on de que (det( A))2 = 1. Asignar 1
+punto por concluir lo pedido.2. a) Sea A =
+
+
+2 −1 1 −6 8
+1 −2 −4 3 −2
+−7 8 10 3 −10
+4 −5 −7 0 4
+
+. Encuentre las bases para Col(A), Fil (A) y Nul(A).
+b) Si {u,v,w} es un conjunto linealmente independiente de vectores en R5 y
+A = [u v w u +v +w].
+Encuentre las bases para Col(A) y Nul(A).
+Soluci´ on.
+a) A =
+
+
+2 −1 1 −6 8
+1 −2 −4 3 −2
+−7 8 10 3 −10
+4 −5 −7 0 4
+
+∼ A =
+
+
+1 −2 −4 3 −2
+0 3 9 −12 12
+0 0 0 0 0
+0 0 0 0 0
+
+. Luego una base para
+Col(A) es
+
+
+
+
+
+2
+1
+−7
+4
+
+,
+
+
+−1
+−2
+8
+−5
+
+
+
+
+ una base paraFil (A) es
+
+
+
+
+
+2
+−1
+1
+−6
+8
+
+,
+
+
+1
+−2
+−4
+3
+−2
+
+
+
+
+ (tambien
+es muy probable que respondan
+
+
+
+
+
+1
+−2
+−4
+3
+−2
+
+,
+
+
+0
+3
+9
+−12
+12
+
+
+
+
+)y para encontrar una base para el
+Nul(A) debemos solucionar el sistema homogeneo asociado a A
+
+
+1 −2 −4 3 −2
+0 3 9 −12 12
+0 0 0 0 0
+0 0 0 0 0
+
+→x− 2y− 4z + 3t− 2w = 0 ∧ 3y + 9z− 12t + 12w = 0
+→x =−2z + 5t− 6w ∧ y =−3z + 4t− 4w
+luego una base para Nul(A) es
+
+
+
+
+
+−2
+−3
+1
+0
+0
+
+,
+
+
+5
+4
+0
+1
+0
+
+,
+
+
+−6
+−4
+0
+0
+1
+
+
+
+
+b) Sabemos que Col(A) es generado por todas las columnas de A, luego es evidente que la
+ultimo columna es una combinaci´ on de las otras tres las cuales por hipotesis forman un
+conjunto linealmente independiente, luego una base para Col(A) es {u,v,w}. Ahora como
+dim(Col(A)) +dim(Nul(A)) = 4 tenemos que dim(Nul(A)) = 1 y
+[u v w u +v +w]·
+
+
+1
+1
+1
+−1
+
+ =
+
+
+0
+0
+0
+0
+0
+
+,
+luego una base para Nul(A) es
+
+
+
+
+
+1
+1
+1
+−1
+
+
+
+
+
+Puntaje:
+1 pto por determinar una base para Col(A).
+1 pto por determinar una base para Fil (A).
+1 pto por determinar una base para Nul(A).
+1 pto por determinar una base para Col(A).
+1 pto por argumentar que dim(Nul(A)) = 1.
+1 pto por determinar una base para Nul(A).3. Sea T :M2×2→P2(R) una transformaci´ on lineal tal que,T
+[ a b
+c d
+]
+=a + (b +c)x +dx2
+a) [2]ptos Demuestre que T (A) =T
+(
+A
+T
+)
+b) [4]ptos Determine una base para el n´ ucleo deT .
+Soluci´ on.
+a)
+T (A) =T
+[ a b
+c d
+]
+=a + (b +c)x +dx2
+y
+T (AT ) =T
+[ a c
+b d
+]
+=a + (c +b)x +dx2
+por lo cual T (A) =T (AT ).
+b) Nul(T ) =
+{[ a b
+c d
+]
+|T
+[ a b
+c d
+]
+=a + (b +c)x +dx2 = 0
+}
+=
+{[ a b
+c d
+]
+|a = 0,−b =c, d= 0
+}
+=
+{[ 0 b
+−b 0
+]}
+luego una base para Nul(T ) es
+{[ 0 1
+−1 0
+]}
+Puntaje:
+2 ptos por demostar a).
+1 pto por describir el Nul(T ).
+2 ptos por determinar una base para Nul(T ).4. Si A2 =
+
+
+12 7 −3
+24 −14 6
+−3 6 −3
+
+
+a) Demuestre que A es invertible.
+b) Encuentre por el m´ etodo de cramer la segunda componente del vector x tal que
+A2x =
+
+
+16
+16
+0
+
+
+Soluci´ on.
+a) Como el det(A2) = 144→det(A2)⁄= 0 y por lo tanto A2 es invertible.
+b) Como el det(A2)⁄= 0 podemos aplicar el m´ etodo de cramer luego
+x2 =
+⏐⏐⏐⏐⏐⏐ 12 16 −324 16 6−3 0 −3 ⏐⏐⏐⏐⏐⏐
+⏐⏐⏐⏐⏐⏐ 12 7 −324 −14 6−3 6 −3 ⏐⏐⏐⏐⏐⏐ = 144144 = 1
+Puntaje:
+1 punto por argumentar que si det(A)⁄= 0 entonces A es invertible.
+1 punto por argumentar que det(A3) = (det(A))3
+1 punto por encontrar que det(A) = 12
+1 punto por mostrar la forma que debe tener x2, aplicando el m´ etodo de cramer.
+2 ptos por encontar correctamente x2. (si ocupa otro m´ etodo 0 puntos)5. Sea P =
+
+
+1 2 −1
+−3 −5 0
+4 6 1
+
+ y sea B = {z1,z 2,z 3} tal que z1 =
+
+
+−2
+2
+3
+
+, z2 =
+
+
+−8
+5
+2
+
+ y
+z3 =
+
+
+−7
+2
+6
+
+. Encuentre una base D ={w1,w 2,w 3} de R3 tal que P es la matriz de cambio de
+coordenadas de B a D.
+Soluci´ on.
+Las columnas deP corresponden a los vectores D-coordenados de la base B, de modo que se tienen
+las siguientes ecuaciones para determinar la base requerida:
+
+
+−2
+2
+3
+
+ = w1− 3w2 + 4w3
+
+
+−8
+5
+2
+
+ = 2 w1− 5w2 + 6w3
+
+
+−7
+2
+6
+
+ = −w1 +w3,
+lo cual matricialmente puede representarse como
+
+
+−2 −8 −7
+2 5 2
+3 2 6
+
+ = [w1 w2 w3]
+
+
+1 2 −1
+−3 −5 0
+4 6 1
+
+,
+de modo que la base D viene dada por la matriz
+[w1 w2 w3] =
+
+
+−2 −8 −7
+2 5 2
+3 2 6
+
+·
+
+
+1 2 −1
+−3 −5 0
+4 6 1
+
+
+−1
+=
+
+
+−2 −8 −7
+2 5 2
+3 2 6
+
+·
+
+
+5 8 5
+−3 −5 −3
+−2 −2 −1
+
+
+=
+
+
+28 38 21
+−9 −13 −7
+−3 2 3
+
+.Puntaje:
+2 puntos por interpretar las columnas de la matriz P correctamente.
+2 puntos por plantear un sistema de ecuaciones para calcular w1, w2 y w3
+1 punto por calcular la inversa de la matriz P .
+1 punto por los resolver el sistema y obtener la base solicitada.6. Sea W un subconjunto de R3 deﬁnido por:
+W ={⃗ w= (x,y,z )∈ R3 : ⃗ w× (−2, 1, 2) = 0}.
+Demuestre queW es un subespacio vectorial de R3. Luego encuentre una base para este subespacio
+y calcule su dimensi´ on.
+Soluci´ on.Debemos demostrar lo siguiente para que W sea un subespacio de R3:
+a) (0, 0, 0)∈ W pues, de hecho, el vector nulo tiene producto cruz igual a cero con cualquier
+vector.
+b) Como el producto cruz es lineal, dados w1,w2 enW , (w1 +w2)×(−2, 1, 2) =w1×(−2, 1, 2)+
+w2×(−2, 1, 2), lo cual es igual a cero, pues ambos vectores est´ an enW , de modo que la suma
+es cerrada en W .
+c) Nuevamente, por la linealidad del producto cruz, dado w∈W y λ∈ R, (λw)× (−2, 1, 2) =
+λ(w× (−2, 1, 2)) = 0, por lo que λw∈W .
+Otra alternativa para demostrar que W es subespacio vectorial, es darse cuenta que todos los
+elementos en W son vectores paralelos a (−2, 1, 2), de modo que W =Gen{(−2, 1, 2)}.
+Por ´ ultimo, todos los vectores que tienen producto cruz cero con el vector (−2, 1, 2) son vectores
+paralelos a este, es decir, los vectores en W son de la forma α(−2, 1, 2) con α∈ R, de modo que
+una base para W es{(−2, 1, 2)} y dim(W ) = 1.
+Puntaje:
+3 puntos por demostrar queW es subespacio: 1 punto por demostrar que contiene al (0, 0, 0),
+y 2 puntos por demostrar que W es cerrado bajo la suma y ponderaci´ on por escalar.
+2 puntos por encontrar una base para el subespacio.
+1 punto por encontrar su dimensi´ on.7. Sea C =
+
+
+1 0 0
+1 1 a
+1 0 3
+
+. Demuestre que existe un ´ unico valor de a∈ R tal que la matriz C es
+diagonalizable. Luego, para este valor de a, encuentre una matriz P invertible y una matriz D
+diagonal tal que C =PDP −1.
+Soluci´ on.Para encontrar los valores propios de C calculamos det(C−λI), para lo cual elegimos
+la segunda columna de tal matriz, quedando (1 −λ)(1−λ)(3−λ) = 0. Es claro que para λ = 3
+existe un vector propio, por lo que evaluemos con λ = 1:
+(C−I) =
+
+
+0 0 0
+1 0 a
+1 0 2
+
+
+Debemos resolver el sistema (C−I) = 0, el cual, para a⁄= 2 entrega un generador para el espacio
+propio asociado al valor propio 1, por lo que a = 2, pues sabemos que A es diagonalizable si y solo
+si para todos los valores propios la multiplicidad aritm´ etica es igual a la dimensi´ on del espacio
+propio asociado.
+Para este valor, el sistema entrega x + 2z = 0, por lo que x =−2z, de modo que ( x,y,z ) =
+(−2z,y,z ) =z(−2, 0, 1) +y(0, 1, 0). As´ ı,E1 =Gen{(−2, 0, 1), (0, 1, 0)}.
+Por ´ ultimo, paraλ = 3, se obtiene x = 0, −2y + 2z = 0, por lo que y = z. Por lo tanto,
+E1 =Gen{(0, 1, 1)}.
+Por ´ ultimo, las matricesP y D vienen dadas por los vectores propios y valores propios respecti-
+vamente:
+P =
+
+
+−2 0 0
+0 1 1
+1 0 1
+
+
+D =
+
+
+1 0 0
+0 1 0
+0 0 3
+
+
+Puntaje:
+2 puntos por justiﬁcar adecuadamente que para a = 2 C es diagonalizable.
+1 puntos por encontrar sus valores propios.
+1 punto por encontrar sus vectores propios.
+1 punto por construir la matriz P y 1 punto por construir la matriz D.8. (V o F)
+a) Si A es una matriz de m×n tal que la ecuaci´ onAx = b tiene soluci´ on para todab∈ Rm
+entonces la ecuaci´ onA
+T
+x = 0 tiene solamente la soluci´ on trivial.
+Soluci´ on.verdadero
+Si la ecuaci´ onAx =b tiene soluci´ on para todab∈ Rm quiere decir que Col(A) = Rm lo que
+implica dim(Col(A)) =m como
+dim(Col(A)) =dim(Fil (A)) =dim(Col(AT )) =m
+y
+dim(Col(AT )) +dim(Nul(AT )) =m
+luegodim(Nul(AT )) = 0 lo que implica que la ecuaci´ onATx = 0 tiene solamente la soluci´ on
+trivial
+b) El conjunto H ={A∈Mn×n|det(A) = 0} es un subespacio de Mn×n.
+Soluci´ on.falso
+Por ejemplo, A =
+[ 1 0
+0 0
+]
+y B =
+[ 0 0
+0 1
+]
+son dos matrices que tienen determinante nulo,
+pero A +B =I tiene determinante 1, por lo que la suma no es cerrada.
+c) Dada la matriz A =
+
+
+4 2 3 3
+0 2 h 3
+0 0 4 14
+0 0 0 2
+
+, existe alg´ unh∈ R de modo que el espacio propio
+asociado al valor propio λ = 4 de A sea bidimensional.
+Soluci´ on.verdadero
+El espacio propio asociado al valor propio 4 est´ a dado por la soluci´ on del sistema homog´ eneo
+(A− 4I)v = 0, de lo que se obtiene:
+−2x4 = 0
+14x4 = 0
+−2x2 +hx3 + 3x4 = 0
+2x2 + 3x3 + 3x4 = 0 .
+De las primeras dos ecuaciones, x4 = 0, por lo que las otras dos ecuaciones quedan:
+−2x2 +hx3 = 0
+2x2 + 3x3 = 0 .Por ´ ultimo, para que haya soluci´ on de este sistema,h =−3, de modo que la soluci´ on ser´ a
+v = (x1,x 2,−2/3x2, 0), de lo cual se obtendr´ an dos vectores generadores para tal espacio.
+Puntaje:
+2 puntos por justiﬁcar que a) es verdadera.
+2 puntos por justiﬁcar (ya sea en palabras o alg´ un contraejemplo) que b) es falsa.
+2 puntos por justiﬁcar que c) es verdadera.

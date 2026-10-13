@@ -1,0 +1,113 @@
+
+----- pagina 1 -----
+Clase 22 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Los vectores en Rn podían sumarse y multiplicarse por escalar.
+Las matrices también pueden sumarse y multiplicarse por escalar.
+¿Qué otros objetos pueden sumarse y multiplicar por escalar?
+¿Cuánta estructura de Rn se puede trabajar con esos objetos?
+2 / 11
+----- pagina 3 -----
+Espacios y subespacios vectoriales
+Definición: Espacio Vectorial
+Un espacio vectorial V es un conjunto de objetos (llamados vectores) con
+una suma y multiplicación escalar que cumplen que:
+1 La suma de u y v, denotada con u + v, está en V.
+2 u + v = v + u.
+3 (u + v) + w = u + (v + w).
+4 Hay un vector cero ( 0) en V tal que u + 0 = u.
+5 Para cada u en V, existe un vector −u en V tal que u + (−u) = 0.
+6 El múltiplo escalar de u por c, denotado con cu, está en V.
+7 c(u + v) = cu + cv.
+8 (c + d)u = cu + du.
+9 c(du) = ( cd)u.
+10 1u = u.
+3 / 11
+----- pagina 4 -----
+Espacios y subespacios vectoriales
+Ejemplos:
+Rn, el espacio de vectores de n coordenadas.
+S, el espacio de todas las secuencias doblemente infinitas de números:
+{yk} = (. . . ,y−2, y−1, y0, y1, y2, . . .)
+Pn, el conjunto de polinomios de grado a lo más n.
+Mn×m(R), el espacio de matrices reales de tamaño n × m.
+{f : R → R}, el espacio de funciones con dominio real.
+4 / 11
+----- pagina 5 -----
+Espacios y subespacios vectoriales
+NO Ejemplos:
+El espacio de polinomios de grado n.
+El conjunto M de todas las matrices reales.
+5 / 11
+----- pagina 6 -----
+Espacios y subespacios vectoriales
+Propiedades
+Para cada u en V y escalar c:
+0u = 0
+c0 = 0
+−u = (−1)u
+6 / 11
+----- pagina 7 -----
+Espacios y subespacios vectoriales
+Definición: Subespacio
+Un subespacio de un espacio vectorial V es un subconjunto H de V que es
+también espacio vectorial, con la misma suma y multiplicación por escalar.
+Para que H ⊆ V sea subespacio vectorial, debe cumplir las siguientes tres
+propiedades:
+El vector cero de V está en H.
+H es cerrado bajo la suma de vectores. Es decir, para cada u y v en
+H, la suma u + v está en H.
+H es cerrado bajo la multiplicación por escalares. Es decir, para cada
+u en H y cada escalar c, el vector cu está en H.
+Ejemplo: El plano XY dentro de R3.
+7 / 11
+----- pagina 8 -----
+Espacios y subespacios vectoriales
+Ejemplo: {0} y V son subespacios de V.
+Ejemplo: Sea P el conjunto de todos los polinomios con coeficientes
+reales. Pn es un subespacio de P.
+Ejemplo: Sea el conjunto
+H =
+
+
+
+
+
+s
+t
+0
+
+ : s y t son reales
+
+
+
+Demuestre que H es un subespacio de R3.
+8 / 11
+----- pagina 9 -----
+Espacios y subespacios vectoriales
+Ejemplo: Determine si un plano en R3 que no pasa por el origen es un
+subespacio de R3. Del mismo modo, determine si una recta en R2 que no
+pasa por el origen es un subespacio de R2.
+9 / 11
+----- pagina 10 -----
+Espacios y subespacios vectoriales
+Se llama Gen {v1, . . . ,vp} al subespacio generado por {v1, . . . ,vp}.
+Teorema
+Si v1, . . . ,vp están en un espacio vectorial V, entonces Gen {v1, . . . ,vp} es
+un subespacio de V.
+Ejemplo: Si p(t) = t2 − 3t y q(t) = t + 1, ¿está s(t) = t2 + 4t + 1 en
+Gen({p, q})?
+10 / 11
+----- pagina 11 -----
+Espacios y subespacios vectoriales
+Ejemplo: Sea H el conjunto de todos los vectores de la forma
+(a − 3b, b − a, a, b), donde a y b son escalares arbitrarios. Demuestre que
+H es un subespacio de R4.
+11 / 11

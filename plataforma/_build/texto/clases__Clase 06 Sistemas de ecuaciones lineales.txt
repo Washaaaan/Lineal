@@ -1,0 +1,172 @@
+
+----- pagina 1 -----
+Clase 06 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Una ecuación lineal corresponde a una recta en R2, un plano en R3 o
+un hiperplano en Rn.
+Resolver un Sistema de ecuaciones lineales corresponde a
+intersectar estos planos, rectas, etc.
+Las operaciones que hacemos cambian los planos, pero no sus
+intersecciones,
+2 / 11
+----- pagina 3 -----
+Sistemas de ecuaciones lineales
+Definición (Ecuación lineal)
+Una ecuación lineal en n variables x1, . . . ,xn es una igualdad de la forma
+a1x1 + a2x2 + · · · + anxn = b,
+donde los coeficientes ai y el término independiente b son números reales.
+Ejemplo: −3x + y − 2z = 9 es una ecuación lineal.
+Ejemplo: 3x2 + xy − √z + 2x = 1 no es una ecuación lineal.
+3 / 11
+----- pagina 4 -----
+Sistemas de ecuaciones lineales
+Ejemplo: ¿Qué figura describen las siguientes ecuaciones en R1, R2 y R3?
+−3x = 9
+−3x + y = 9
+−3x + y − 2z = 9
+−3x1 + x2 − 2x3 + 5x5 + . . . + 3x8 = 9
+4 / 11
+----- pagina 5 -----
+Sistemas de ecuaciones lineales
+Ecuaciones homogéneas y no homogéneas
+Una ecuación lineal es:
+homogénea si b = 0,
+no homogénea si b ̸= 0.
+Geométricamente:
+homogénea → hiperplano que pasa por el origen;
+no homogénea → hiperplano desplazado.
+5 / 11
+----- pagina 6 -----
+Sistemas de ecuaciones lineales
+Definición (Sistema de ecuaciones lineales)
+Un sistema lineal es una colección de ecuaciones lineales que comparten
+las mismas variables:
+
+
+
+a11x1 + a12x2 + · · · + a1nxn = b1
+...
+am1x1 + am2x2 + · · · + amnxn = bm
+Buscamos números (x1, . . . ,xn) que satisfagan todas las ecuaciones al
+mismo tiempo .
+6 / 11
+----- pagina 7 -----
+Sistemas de ecuaciones lineales
+Interpretación lógica
+Una solución de un SEL es un vector
+s = ⟨s1, . . . ,sn⟩
+que satisface cada ecuación simultáneamente.
+Conjunto solución
+El conjunto solución del SEL son todos los vectores que resuelven el SEL.
+7 / 11
+----- pagina 8 -----
+Sistemas de ecuaciones lineales
+Ejemplo: Revisemos el sistema visto en la clase anterior:
+{
+3x − 2y + z = 1
+x + y − 3z = 2
+Su intersección es una recta:
+
+
+x
+y
+z
+
+ =
+
+
+1
+1
+0
+
+ + t
+
+
+1
+2
+1
+
+ .
+Observe que para cualquier t ∈ R, resulta una solución del sistema.
+8 / 11
+----- pagina 9 -----
+Sistemas de ecuaciones lineales
+Número de soluciones de un SEL
+Un sistema lineal puede tener:
+1 ninguna solución (inconsistente),
+2 exactamente una solución,
+3 infinitas soluciones.
+Esto coincide con el comportamiento geométrico: punto único, ningún
+punto, o una recta/plano/hiperplano.
+9 / 11
+----- pagina 10 -----
+Sistemas de ecuaciones lineales
+Ejemplo: Determine cuáles de los siguientes SEL corresponden a las
+posiciones relativas ilustradas:
+(I)
+{
+x + y + z = 1
+2x − 3y + 4z = 1
+(II)
+{
+2x − 3y + 4z = 1
+4x − 6y + 8z = 2
+(III)
+{
+x + y + z = 1
+−x − y − z = −2
+10 / 11
+----- pagina 11 -----
+Sistemas de ecuaciones lineales
+Ejemplo: Determine cuáles de los siguientes SEL corresponden a las
+posiciones relativas ilustradas:
+(I)
+
+
+
+x + y + z = 1
+2x − 3y + 4z = 1
+2x − 3y + 4z = 2
+(II)
+
+
+
+x + y + z = 1
+2x − 3y + 4z = 1
+10x + 25y + 4z = 1
+(III)
+
+
+
+x + y + z = 1
+2x − 3y + 4z = 1
+3x + 5y − z = 2
+(IV)
+
+
+
+x + y + z = 1
+2x − 3y + 4z = 1
+2x − 3y + 4z = 2
+(V)
+
+
+
+x + y + z = 1
+2x − 3y + 4z = 1
+10x + 25y + 4z = 1
+(VI)
+
+
+
+x + y + z = 1
+−x − y − z = −2
+x + y + z = 3
+11 / 11

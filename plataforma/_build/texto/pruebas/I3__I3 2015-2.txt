@@ -1,0 +1,624 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2015
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on a la Interrogaci´ on N◦ 3
+1. [Problema 4.4.28 del texto]
+Use vectores de coordenadas para probar la independencia lineal del conjunto de polinomios
+{1− 2t2−t3,t + 2t3, 1 +t− 2t2}.
+Primera Soluci´ on:
+Los vectores de coordenaas de estos polinomios (con respecto a la base {1,t,t 2,t 3} de P2) son,
+respectivamente, (1, 0,−2,−1), (0, 1, 0, 2) y (1, 1,−2, 0).
+Tomando estos vectores como las columnas de A, y escalonando A, llegamos a
+
+
+1 0 1
+0 1 1
+−2 0 −2
+−1 2 0
+
+∼
+
+
+1 0 1
+0 1 1
+0 0 0
+0 2 1
+
+∼
+
+
+1 0 1
+0 1 1
+0 2 1
+0 0 0
+
+∼
+
+
+1 0 1
+0 1 1
+0 0 −1
+0 0 0
+
+∼
+
+
+1 0 1
+0 1 1
+0 0 1
+0 0 0
+
+
+Claramente, las columnas de A son l.i., por lo que los vectores de coordenadas originales son l.i.,
+lo que a su vez implica que los polinomios son l.i.
+Segunda Soluci´ on:
+Los vectores de coordenaas de estos polinomios (con respecto a la base {1,t,t 2,t 3} de P2) son,
+respectivamente, (1, 0,−2,−1), (0, 1, 0, 2) y (1, 1,−2, 0).
+Tomando estos vectores como las ﬁlas de A, y escalonando A, llegamos a
+
+
+1 0 −2 −1
+0 1 0 2
+1 1 −2 0
+
+∼
+
+
+1 0 −2 −1
+0 1 0 2
+0 1 0 1
+
+∼
+
+
+1 0 −2 −1
+0 1 0 2
+0 0 0 −1
+
+∼
+
+
+1 0 −2 −1
+0 1 0 2
+0 0 0 1
+
+
+Claramente, las ﬁlas de A son l.i., por lo que los vectores de coordenadas originales son l.i., lo
+que a su vez implica que los polinomios son l.i.
+Puntaje:
+Por determinar los vectores de coordenadas correspondientes a los polinomios dados, 1
+punto.
+Por formar una matriz que tenga como ﬁlas (o columnas) a dichos vectores, 1,5 puntos.
+Por escalonar correctamente la matriz, 1,5 puntos.
+Por mostrar que esta tiene 3 ﬁlas (o 3 columnas) independientes, 1 punto.
+Por concluir (o mencionar de antemano) que la independencia de las ﬁlas implica la inde-
+pendencia de los vectores, y por lo tanto de los polinomios, 1 punto.
+A lo anterior se suma el punto base.Tercera Soluci´ on:
+Los vectores de coordenaas de estos polinomios (con respecto a la base {1,t,t 2,t 3} de P2) son,
+respectivamente, (1, 0,−2,−1), (0, 1, 0, 2) y (1, 1,−2, 0).
+Planteamos la ecuaci´ on
+x1(1, 0,−2,−1) +x2(0, 1, 0, 2) +x3(1, 1,−2, 0) = (0, 0, 0, 0),
+o equivalentemente
+x1 +x3 = 0
+x2 +x3 = 0
+2x1 −2x3 = 0
+−x1 +2x2 = 0
+⏐⏐⏐⏐⏐⏐⏐⏐
+Para demostrar que los tres vectores son l.i. debemos probar que el sistema solo tiene la soluci´ on
+trivial, o sea, tiene soluci´ on ´ unica. Pero esto es equivalente a que no haya variables libres. Esto
+se hace escalonando la matriz (la misma que en la primera soluci´ on).
+Puntaje:
+Por determinar los vectores de coordenadas correspondientes a los polinomios dados, 1
+punto.
+Por plantear la ecuaci´ on correspondiente a una combinaci´ on lineal nula de los vectores, 1
+punto.
+Por planter el sistema equivalente a la ecuaci´ on anterior, 0,5 puntos.
+Por escalonar la matriz y mostrar que esta tiene 3 columnas pivote, 1,5 puntos.
+Por mencionar que esto signiﬁca que el sistema tiene soluci´ on ´ unica, 1 punto.
+Por concluir (o mencionar de antemano) que la unicidad de la soluci´ on implica la indepen-
+dencia de los vectores, y por lo tanto de los polinomios, 1 punto.
+A lo anterior se suma el punto base.2. [Problema 4.6.2 del texto]
+La matriz A =
+
+
+1 3 4 −1 2
+2 6 6 0 −3
+3 9 3 6 −3
+3 9 0 9 0
+
+ es equivalente por ﬁlas a B =
+
+
+1 3 4 −1 2
+0 0 1 −1 1
+0 0 0 0 −8
+0 0 0 0 0
+
+.
+Sin calcular ninguna base, determine las dimensiones de Nul A, ColA, ColAT y NulAT .
+Soluci´ on:
+La matriz R es una matriz escalonada equivalente por ﬁlas a A, de donde determinamos que en
+A hay 3 columnas pivote (la 1 a, la 3 a y la 5 a), por lo que dim ColA = 3.
+La dimensi´ on de NulA es la cantidad de variables libres de la ecuaci´ onAx = 0, la que en este
+caso es 2 (x2 y x4).
+Por estarR escalonada, sus ﬁlas no nulas forman una base del espacio ﬁla de B, que es el mismo
+que el espacio ﬁla de A, y que es igual al espacio Col AT .
+As´ ı, dim ColAT = 3.
+Finalmente, dim NulAT es el n´ umero de variables libres en la ecuaci´ onATx = 0, la que en
+este caso es 1 (ya que dim Col AT = 3, AT tiene 3 columnas pivote y por lo tanto 1 columna
+correspondiente a una variable libre).
+Puntaje:
+Para cada uno de los espacios dados:
+Por una buena justiﬁcaci´ on, 1 punto.
+(si la justiﬁcaci´ on es poco convincente, se dan 0,5 puntos por ella).
+Por dar correctamente la dimensi´ on del espacio, 0,5 puntosSi hay al menos un intento
+de justificaci´on.
+La dimensi´ on correcta del espacio, sin ninguna justiﬁcaci´ on, recibe 0 puntos.
+A lo anterior se suma el punto base.3. [Problema 5.3.18 del texto]
+Diagonalice la matriz 
+
+2 0 −2
+1 3 2
+0 0 3
+
+
+Soluci´ on:
+El polinomio caracter´ ıstico deA es
+det(A−λI) =
+⏐⏐⏐⏐⏐⏐2−λ 0 −21 3 −λ 20 0 3 −λ⏐⏐⏐⏐⏐⏐ = (3−λ)⏐⏐⏐⏐2−λ 01 3 −λ⏐⏐⏐⏐ = (2−λ)(3−λ)2.
+As´ ı, los valores propios deA son 3 (con multiplicidad 2) y 2 (con multiplicidad 1).
+Para determinar los vectores propios, debemos encontrar las soluciones de ( A− 2I)x = 0 y
+(A− 3I)x = 0.
+Para λ = 2, calculamos A− 2I =
+
+
+0 0 −2
+1 1 2
+0 0 1
+
+, la que tras ser escalonada queda
+
+
+1 1 2
+0 0 1
+0 0 0
+
+, y
+vemos que la soluci´ on de (A−2I)x = 0 esx3 = 0,x1 =−x2−2x3 =−x2, por lo que la dimensi´ on
+del espacio propio correspondiente al valor propio λ = 2 es 1, ya que hay solo una variable libre,
+a saber x2. Asignando el valor 1 a dicha variable libre obtenemos el vector propio (−1, 1, 0), por
+lo que una base de dicho espacio propio es {(−1, 1, 0)}.
+Para λ = 3, calculamos A− 3I =
+
+
+−1 0 −2
+1 0 2
+0 0 0
+
+, la que tras ser escalonada queda
+
+
+1 0 2
+0 0 0
+0 0 0
+
+,
+de donde la soluci´ on de (A− 3I)x = 0 esx1 =−2x3, por lo que la dimensi´ on del espacio propio
+correspondiente al valor propio λ = 3 es 2, ya que hay dos variables libres. Para determinar
+una base de dicho espacio propio, asignamos los valores (1 , 0) y (0, 1) a (x2,x 3), obteniendo los
+vectores (0, 1, 0) y (−2, 0, 1).
+Con los vectores propios como columnas (agrupadas por valor propio) generamos la matriz P :
+P =
+
+
+−1 0 −2
+1 1 0
+0 0 1
+
+.
+La matrizD es la matriz que en la diagonal tiene los valores propios, en el orden correspondiente
+a los vectores propios que son columnas de A:
+D =
+
+
+2 0 0
+0 3 0
+0 0 3
+
+.
+As´ ı,
+A =PDP−1 =
+
+
+−1 0 −2
+1 1 0
+0 0 1
+
+
+
+
+2 0 0
+0 3 0
+0 0 3
+
+
+
+
+−1 0 −2
+1 1 0
+0 0 1
+
+
+−1
+.Puntaje:
+Por calcular el polinomio caracter´ ıstico deA: 1 punto.
+Por determinar los valores propios de A: 0,5 puntos.
+Por encontrar un vector propio correspondiente a λ = 2: 1 punto.
+Por encontrar dos vectores propios independientes, correspondientes a λ = 3: 2 puntos.
+Por escribir la matriz P : 1 punto.
+Por escribir A como PDP−1: 0,5 puntos.
+A lo anterior se suma el punto base.
+Note que No es necesario calcular P−1.4. [Problema 5.2.18 del texto]
+La matriz A =
+
+
+4 2 3 3
+0 2 h 3
+0 0 4 14
+0 0 0 2
+
+ tiene como valor propio a λ = 4, con multiplicidad algebraica 2.
+Determine el valor que debe tener h para que el espacio propio para λ = 4 tenga dimensi´ on 2.
+Soluci´ on:
+El espacio propio para un valor propio λ de una matriz de n×n es Nul(A−λI), y su dimensi´ on
+es n− dim Col(A−λI). En este caso, λ = 4, y
+A−λI =A− 4I =
+
+
+0 2 3 3
+0 −2 h 3
+0 0 0 14
+0 0 0 −2
+
+
+Para que dim Nul(A− 4I) = 2 necesitamos que 4− dim Col(A− 4I) = 2, o sea, que dim Col(A−
+4I) = 2.
+Escalonando A− 4I, obtenemos
+A− 4I =
+
+
+0 2 3 3
+0 −2 h 3
+0 0 0 14
+0 0 0 −2
+
+∼
+
+
+0 2 3 3
+0 0 h + 3 6
+0 0 0 14
+0 0 0 −2
+
+∼
+
+
+0 2 3 3
+0 0 h + 3 6
+0 0 0 1
+0 0 0 −2
+
+
+Si h =−3, A− 4I∼
+
+
+0 2 3 3
+0 0 0 6
+0 0 0 1
+0 0 0 −2
+
+∼
+
+
+0 2 3 3
+0 0 0 1
+0 0 0 1
+0 0 0 −2
+
+∼
+
+
+0 2 3 3
+0 0 0 1
+0 0 0 0
+0 0 0 0
+
+ donde la segunda y
+tercera columnas son linealmente dependientes, por lo que dim Col( A− 4I) = 2.
+Por otro lado, si h + 3⁄= 0, A− 4I =
+
+
+0 2 3 3
+0 0 h + 3 6
+0 0 0 1
+0 0 0 −2
+
+∼
+
+
+0 2 3 3
+0 0 h + 3 6
+0 0 0 1
+0 0 0 0
+
+ donde hay tres
+columnas independientes (la segunda, la tercera y la cuarta), y por lo tanto dim Col(A−4I) = 3.
+As´ ı, el valor buscado esh =−3.
+Puntaje:
+Por escribir la matriz A− 4I, 1 punto.
+Por mencionar que se requiere que dim Col(A−4I) = 2 (o, equivalentemente, que dim Fil(A−
+4I) = 2), 1 punto.
+Por escalonar correctamente A− 4I, 2 puntos.
+Por concluir que si h =−3 la matriz tiene dos ﬁlas (o dos columnas) l.i., que es lo que se
+desea, 1 punto.
+Por mencionar que ning´ un valor deh⁄=−3 cumple lo deseado, 1 punto.
+A lo anterior se suma el punto base.5. [Problema 5.4.20 del texto]
+SeanA yB dos matrices cuadradas. Demuestre que si A es similar a B entoncesA2 es similar a
+B2.
+Soluci´ on:
+Si A es similar a B, entonces existe una matriz invertible P tal que A =PBP−1, por lo que
+A2 = ( PBP−1)2 = (PBP−1)(PBP−1) =PB (P−1P )BP−1)
+= ( PB )I(BP−1) = (PB )(BP−1) =PB 2P−1,
+de donde A2 es similar a B2.
+Puntaje:
+Por indicar que A∼B signiﬁca que existe P invertible tal que A =PBP−1, 2 puntos.
+Por escribir A2 como producto PBP−1PBP−1, 2 puntos.
+Por simpliﬁcar lo anterior y llegar a B2, 2 puntos.
+A lo anterior se suma el punto base.6. [Problema 5.5.3 del texto]
+Considere la matriz A =
+[ 5 1
+−8 1
+]
+, actuando sobre C2. Determine los valores propios de A y una
+base (en C2) para cada espacio propio.
+Soluci´ on:
+Para determinar los valores propios de A, debemos resolver la ecuaci´ on
+⏐⏐⏐⏐5−λ 1−8 1 −λ⏐⏐⏐⏐ = 0, o
+sea, λ2− 6λ + 13 = 0, de donde los valores propios son λ1 = 3 + 2i y λ2 = 3− 2i.
+Para encontrar los vectores propios, debemos encontrar soluciones no triviales de los sistemas de
+ecuaciones
+[5− (3 + 2i) 1
+−8 1 − (3 + 2i)
+][x1
+x2
+]
+=
+[0
+0
+]
+y
+[5− (3− 2i) 1
+−8 1 − (3− 2i)
+][x1
+x2
+]
+=
+[0
+0
+]
+o sea [2− 2i 1
+−8 −2− 2i
+][x1
+x2
+]
+=
+[0
+0
+]
+y
+[2 + 2i 1
+−8 −2 + 2i
+][x1
+x2
+]
+=
+[0
+0
+]
+Escalonando las matrices, obtenemos
+[2− 2i 1
+−8 −2− 2i
+]
+∼
+f1↔f2
+[ −8 −2− 2i
+2− 2i 1
+]
+∼
+f1←−18·f1
+[ 1 14 + 14i
+2− 2i 1
+]
+∼
+f2←f2+(−2+2i)·f1
+[1 14 + 14i
+0 0
+]
+[2 + 2i 1
+−8 −2 + 2i
+]
+∼
+f1↔f2
+[ −8 −2 + 2i
+2 + 2i 1
+]
+∼
+f1←−18·f1
+[ 1 14− 14i
+2 + 2i 1
+]
+∼
+f2←f2+(−2−2i)·f1
+[1 14− 14i
+0 0
+]
+Las soluciones de estos sistemas son, respectivamente, x1 =−
+( 1
+4 + 14i)x2, x1 =−( 14− 14i)x2.
+As´ ı, una soluci´ on no trivial de cada uno es, respectivamente,
+[x1
+x2
+]
+=
+[− 14− 14i
+1
+]
+y
+[x1
+x2
+]
+=
+[− 14 + 14i
+1
+]
+Estos dos son vectores propios, correspondientes a cada uno de los valores propios de la matriz,
+o sea, dos bases de los espacios propios son
+B3+2i =
+{[− 14− 14i
+1
+]}
+, B3−2i =
+{[− 14 + 14i
+1
+]}
+.
+Ampliﬁcando estos vectores por−4 (para eliminar las fracciones) se encuentran las bases
+B′3+2i =
+{[1 +i
+−4
+]}
+, B′3−2i =
+{[1−i
+−4
+]}
+.
+Puntaje:
+Por calcular el polinomio caracter´ ıstico deA, 1 punto.
+Por encontrar los valores propios de A, 1 punto.
+Por encontrar el vector propio correspondiente a λ = 3 + 2i, 1,5 puntos.
+Por encontrar el vector propio correspondiente a λ = 3− 2i, 1,5 puntos.
+Por indicar que cada vector propio forma por s´ ı solo la base de su espacio propio, 1 punto.
+A lo anterior se suma el punto base.7. En P2, siB ={−x, 1 +x2,x +x2} y P =
+
+
+1 1 1
+0 1 1
+2 0 1
+
+ es tal que para todo p∈ P2, P [p]B = [p]C,
+determine la baseC.
+Ayuda:
+
+
+1 1 1
+0 1 1
+2 0 1
+
+
+−1
+=
+
+
+1 −1 0
+2 −1 −1
+−2 2 1
+
+.
+Soluci´ on:
+Representemos porE a la base can´ onica{1,t,t 2}. Buscamos las coordenadas de los vectores de
+C en la baseE, o sea, PE←C = [[c1]E [c2]E [c3]E].
+Ya que para todo p∈ P2 se tiene P [p]B = [p]C, la matriz P es PC←B = [[b1]C [b2]C [b3]C]. As´ ı,
+P−1 = PB←C = [[c1]B [c2]B [c3]B],
+por lo que PE←C = PE←B PB←C = PE←B P−1 =
+
+
+0 1 0
+−1 0 1
+0 1 1
+
+
+
+
+1 −1 0
+2 −1 −1
+−2 2 1
+
+ =
+
+
+2 −1 −1
+−3 3 1
+0 1 0
+
+.
+As´ ı, los elementos de la baseC tienen por vectores de coordenadas (en la baseE) respectivamente
+a
+
+
+2
+−3
+0
+
+,
+
+
+−1
+3
+1
+
+ y
+
+
+−1
+1
+0
+
+, o sea,
+C =
+{
+−3x + 2,x 2 + 3x− 1,x− 1}.
+Puntaje:
+Por identiﬁcar P como PC←B, 1 punto.
+Por indicar que P−1 es PB←C, 1 punto.
+Por indicar que la matriz que tiene los vectores (can´ onicos) de coordenadas de los elementos
+deC es PE←C, 1 punto.
+Por calcular PE←C como PE←B PB←C, 2 puntos.
+Por dar en forma expl´ ıcita los vectores deC, 1 punto.
+A lo anterior se suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) [Problema 4.5.29c del texto]
+Si V es un espacio de dimensi´ onp, entonces existe un conjunto linealmente independiente
+de p + 1 vectores de V que genera V .
+b) [Problema 5.1.21b del texto]
+Una matriz A es no invertible si y solo si 0 es un valor propio de A.
+Soluci´ on:
+a) Falso. Si V es un espacio de dimensi´ onp, entonces todo conjunto l.i. de p vectores es una
+base de V , por lo que genera V .
+Si hubiera un conjunto l.i.S dep + 1 vectores enV , eliminando cualquier vector —digamos
+u— de S, se obtiene un conjunto S−{ u} de p vectores que es l.i. y —por lo anterior—
+genera V .
+En particular, u puede ser expresado como combinaci´ on lineal de los elementos deS−{u},
+y por lo tanto el conjuntoS = (S−{u})∪{u} es linealmente dependiente, lo que contradice
+la hip´ otesis de queS es l.i.
+b) Verdadero. Si A es no invertible, entonces existe v⁄= 0 tal que Av = 0 = 0v, por lo que
+v es un vector propio de A con valor propio 0.
+Rec´ ıprocamente, siv es un vector propio de A con valor propio 0 entonces Av = 0v = 0,
+por lo que A no es invertible.
+Puntaje:
+a) Por indicar (o dar a entender) alguno de los signiﬁcados de dim V =p (que toda base
+tiene dimensi´ onp, o que todo conjunto de p vectores l.i. genera V , etc.) 1 punto.
+Por usar ese signiﬁcado de dim V =p para probar lo pedido, 2 puntos.
+b) Por cada direcci´ on de la demostraci´ on, 1,5 puntos.
+A lo anterior se suma el punto base.

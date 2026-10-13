@@ -1,0 +1,5813 @@
+
+----- pagina 1 -----
+ Copyright © 2012 Pear
+ 
+ 
+2.1 SOLUTIONS 
+Notes: The definition here of a matri x
+calculations. (The dual fact about the r o
+vectors here are usually written as c o
+reinforce the definition of AB. 
+Exercises 23 and 24 are used in the 
+23–25 are mentioned in a footnote in S e
+can provide a transition to Section 2.2. O
+Exercises 27 and 28 are optional, bu
+also appear in Exercises 31–34 of Sectio
+Section 7.1. Exercises 29–33 provide goo
+ 1. 201 42( 2 ) 452 8 1A −−⎡⎤ ⎡−= − = ⎢⎥ ⎢ −−⎣⎦ ⎣
+   751 42 143 8BA −−⎡⎤ ⎡−= + ⎢⎥ ⎢ −− −⎣⎦ ⎣
+  The product AC is not defined becau
+rows of C. 12 3521 1 4CD ⎡⎤ ⎡⎤= ⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+computation, the row-column rule i
+ 2. 201 7533 452 14AB −−⎡⎤ ⎡+= + ⎢⎥ ⎢ −−⎣⎦ ⎣
+  The expression 2 C – 3E is not defin
+  35 7 5 1 3141 4 3 1DB −⎡⎤ ⎡ ⎤ ⎡==⎢⎥ ⎢ ⎥ ⎢−− − −⎣⎦ ⎣ ⎦ ⎣
+The product EC is not defined becau
+rows of C.
+rson Education, Inc. Publishing as Addison-Wesley. 
+ 
+ 
+x product AB gives the proper view of AB  for near l
+ows of A  and the rows of AB is seldom needed, ma i
+olumns.) I assign Exercise 13 and most of Exercis e
+proof of the Invertible Matrix Theorem, in Section 2 .
+ection 2.2. A class discussion of the solutions of Exe r
+Or, these exercises could be assigned after starting Sec
+ut they are mentioned in Example 4 of Section 2.4. O u
+on 4.6 and in the spectral decomposition of a symmetr
+d training for mathematics majors.  
+02
+104
+⎤
+⎥− ⎦ . Next, use B – 2A = B + (–2A): 
+02 353
+1 04 767
+−⎤⎡ ⎤=⎥⎢ ⎥−− −⎦⎣ ⎦  
+use the number of columns of A does not match the nu
+13 2 ( 1 ) 15 24 1 1 3
+23 1 (1 ) 25 14 7 6
+⋅+ − ⋅+⋅⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥−⋅ + − −⋅ +⋅ − −⎣⎦ ⎣ ⎦ . For men
+s probably easier to use than the definition. 
+12 2 1 0 1 5 1 32 3 1 5 2
+3 4 35 1 22 9 71 77
++− − + −⎤⎡ ⎤⎡==⎥⎢ ⎥⎢−+ − − − − −⎦⎣ ⎦⎣
+ned because 2C has 2 columns and –3E has only 1 colu
+3 7 5 1 3 (5 ) 5 (4 ) 3 1 5 (3 ) 2 6 3
+1 7 4 1 1 (5 ) 4 (4 ) 1 1 4 (3 ) 3 1
+⋅+⋅ − + − ⋅ + − − ⎤⎡=⎥⎢⋅+⋅ −− + − − ⋅ + − − − ⎦⎣
+use the number of columns of E does not match the nu
+87 
+ly all matrix 
+inly because 
+es 17–22 to 
+.3. Exercises  
+rcises 23–25 
+ction 2.2. 
+uter products 
+ric matrix, in 
+umber of 
+tal 
+2⎤
+⎥⎦  
+umn.  
+51 2
+11 3
+− ⎤
+⎥− ⎦  
+umber of 
+
+----- pagina 2 -----
+88 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3. 2
+3 0 2 5 32 0( 5 ) 1 53 03 3 2 0 33 ( 2 ) 35IA −− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤−= − = =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− − − −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+   22
+25 61 5(3 ) 3( ) 3 32 9 6IA I A −−⎡⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ , or  
+   2
+302 5 3 2 03 ( 5 ) 0 6 1 5(3 ) 03 3 2 0 3 30 3 ( 2 ) 9 6IA −⋅ + − + −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤== =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −+ ⋅ + − −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+ 4. 3
+513 5 0 0 013
+5 4360 5 0 426
+312 0 0 5 313
+AI
+−−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥−= − − − = −−−⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥−− −⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+   33
+513 2 551 5
+(5 ) 5( ) 5 5 4 3 6 20 15 30
+312 1 551 0
+IA I A A
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥== = − − = − − ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+, or 
+   3
+500 5 1 3
+(5 ) 0 5 0 4 3 6
+005 3 1 2
+IA
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+   
+5 500 5 ( 1 )00 5 300 2 5 5 1 5
+05 ( 4 )0 05 30 05 ( 6 )0 2 0 1 5 3 0
+005 ( 3 ) 005 1 005 2 1 5 5 1 0
+⋅++ − ++ ⋅++ −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥= +−+ + ⋅ + +−+ = − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥++ − ++⋅ ++⋅ −⎣⎦ ⎣ ⎦
+ 
+ 5 . a . 12
+13 1 0 13 1 14224 0 , 24 82353 2 6 53 1 9AA −− −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤ −⎡⎤ ⎡⎤⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥== == ⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ −⎣⎦ ⎣⎦⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦bb  
+  [] 12
+10 11
+08
+26 19
+AB A A
+−⎡⎤
+⎢⎥== ⎢⎥
+⎢⎥ −⎣⎦
+bb  
+b. 
+1 3 1 4 3( 2) 1( 2) 3 3 10 11422 4 2 4 4( 2) 2( 2) 4 3 0 8235 3 5 4 3( 2) 5( 2) 3 3 26 19−− ⋅ + − − − + ⋅ −⎡⎤ ⎡ ⎤ ⎡ ⎤−⎡⎤⎢⎥ ⎢ ⎥ ⎢ ⎥=⋅ + − − + ⋅ =⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦⎢⎥ ⎢ ⎥ ⎢ ⎥−⋅ − − − − ⋅ −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 6 . a . 12
+43 5 43 2 21435 1 2 , 35 2 23201 3 01 2AA −− −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥=− = =− =− ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦bb  
+  [] 12
+52 2
+12 22
+32
+AB A A
+−⎡⎤
+⎢⎥== − ⎢⎥
+⎢⎥ −⎣⎦
+bb  
+----- pagina 3 -----
+2.1  Solutions   89  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. 
+43 4 1 3 34 4 3 ( 2 ) 52 2143 5 3 1 5 3 3 4 5( 2) 12 223201 0 1 1 30 4 1 ( 2 ) 3 2−⋅ − ⋅ ⋅ − − −⎡⎤ ⎡ ⎤ ⎡ ⎤⎡⎤⎢⎥ ⎢ ⎥ ⎢ ⎥− =−⋅+ ⋅ −⋅ + − = −⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦⎢⎥ ⎢ ⎥ ⎢ ⎥⋅+⋅ ⋅ + − −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 7. Since A has 3 columns, B must match with 3 rows. Otherwise, AB is undefined. Since AB has 7 
+columns, so does B. Thus, B is 3×7. 
+ 8. The number of rows of B  matches the number of rows of BC, so B has 5 rows. 
+ 9. 23 1 9 7 1 8 3 ,11 3 4 9 kAB kk −+⎡⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥−− − − +⎣⎦ ⎣ ⎦ ⎣ ⎦  while 19 2 3 7 1 231 1 69BA kk k −⎡ ⎤⎡ ⎤ ⎡ ⎤==⎢ ⎥⎢ ⎥ ⎢ ⎥−− − − − +⎣ ⎦⎣ ⎦ ⎣ ⎦ . 
+  Then AB = BA if and only if 18 + 3k = 12 and –4 = –6 – k, which happens if and only if k = –2. 
+ 10. 3 6 1 1 21 21 3 6 3 5 21 21 ,1 2 3 4 77 1 2 2 1 77AB AC −− − − −−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤== = =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+ 11. 
+123 500 5 6 6
+2 4 5 0 3 0 10 12 10
+356 002 1 5 1 5 1 2
+AD
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥==⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  
+500 123 5 1 0 1 5
+030 245 6 1 2 1 5
+0 0 23 5 6 61 01 2
+DA
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥==⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  Right-multiplication (that is, multiplication on the right) by the diagonal matrix D multiplies each 
+column of A by the corresponding diagonal entry of D. Left-multiplication by D multiplies each row 
+of A by the corresponding diagonal entry of D. To make AB = BA, one can take B to be a multiple of 
+I3. For instance, if B = 4I3, then AB and BA are both the same as 4A. 
+ 12. Consider B = [ b1   b2]. To make AB = 0 , one needs A b1 = 0 and A b2 = 0. By inspection of A, a 
+suitable 
+ b1 is 2 ,1⎡⎤⎢⎥⎣⎦  or any multiple of 21⎡⎤⎢⎥⎣⎦ . Example: 26 .13B ⎡ ⎤= ⎢ ⎥⎣ ⎦  
+ 13. Use the definition of AB written in reverse order: [Ab1  ⋅ ⋅ ⋅  Abp] = A[b1  ⋅ ⋅ ⋅  bp]. Thus  
+   [ Qr1  ⋅ ⋅ ⋅  Qrp] = QR, when R = [r1  ⋅ ⋅ ⋅  rp]. 
+ 14. By definition, UQ = U[q1  ⋅ ⋅ ⋅  q4] = [Uq1  ⋅ ⋅ ⋅  Uq4]. From Example 6 of Section 1.8, the vectorUq1 
+lists the total costs (material, labor, and overhead) corresponding to the amounts of products B andC 
+specified in the vector q1. That is, the first column of UQ lists the total costs for materials, labor, and 
+overhead used to manufacture products B and C during the first quarter of the year. Columns 2, 3,and 
+4 of UQ list the total amounts spent to manufacture B and C during the 2nd, 3rd, and 4th quarters, 
+respectively. 
+  
+----- pagina 4 -----
+90 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 15. a . False. See the definition of AB. 
+b. False. The roles of A and B should be reversed in the second half of the statement. See the box 
+after Example 3. 
+c. True. See Theorem 2(b), read right to left. 
+d. True. See Theorem 3(b), read right to left. 
+e. False. The phrase “in the same order” should be “in the reverse order.” See the box after Theorem 
+3. 
+ 16. a . True.  See the box after Example 4. 
+b. False.  AB must be a 3×3 matrix, but the formula given here implies that it is a 3×1 matrix.  The 
+plus signs should just be spaces (between columns).  This is a common mistake. 
+c. True.  Apply Theorem 3(d) to A2=AA 
+d. False. The left-to-right order of (ABC)T, is CTBTAT.  The order cannot be changed in general. 
+e. True. This general statement follows from Theorem 3(b). 
+ 17. Since [] 12
+31 1 ,11 7 AB A A−−⎡⎤ ==⎢⎥⎣⎦ bb  the first column of B satisfies the equation 1 .6A −⎡⎤= ⎢⎥⎣⎦x  Row 
+reduction:[] 1
+133 1 0 3~~ 351 0 1 2AA −−⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦b . So b1 = 3 .2⎡ ⎤⎢ ⎥⎣ ⎦  Similarly, 
+[] 2
+131 1 1 0 1~~ 351 7 0 1 4AA −−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦b  and b2 = 1 .4⎡ ⎤⎢ ⎥⎣ ⎦  
+Note: An alternative solution of Exercise 17 is to row reduce [ A   Ab1   Ab2] with one sequence of row 
+operations. This observation can prepare the way for the inversion algorithm in Section 2.2. 
+ 18. The third column of AB is also all zeros because Ab3 = A0 = 0 
+ 19. (A solution is in the text). Write B = [b1  b2  b3]. By definition, the third column of AB is Ab3. By 
+hypothesis, b3 = b1 + b2. So Ab3 = A(b1 + b2) = Ab1 + Ab2, by a property of matrix-vector 
+multiplication. Thus, the third column of AB is the sum of the first two columns of AB. 
+ 
+ 20. The first two columns of AB are Ab1 and Ab2. They are equal since b1 and b2 are equal. 
+ 21. Let bp be the last column of B. By hypothesis, the last column of AB is zero. Thus, Abp = 0. 
+However, bp is not the zero vector, because B has no column of zeros. Thus, the equation Abp = 0 is a 
+linear dependence relation among the columns of A, and so the columns of A are linearly dependent. 
+Note: The text answer for Exercise 21 is, “The columns of A are linearly dependent. Why?” The Study 
+Guide supplies the argument above, in case a student needs help.  
+ 22. If the columns of B are linearly dependent, then there exists a nonzero vector x such that Bx = 0. 
+From this, A(Bx) = A0 and (AB)x = 0 (by associativity). Since x is nonzero, the columns of AB must 
+be linearly dependent. 
+ 23. If x satisfies Ax = 0, then CAx = C0 = 0 and so Inx = 0 and x = 0. This shows that the equation Ax = 0 
+has no free variables. So every variable is a basic variable and every column of A is a pivot column. 
+(A variation of this argument could be made using linear independence and Exercise 30 in Section 
+1.7.) Since each pivot is in a different row, A must have at least as many rows as columns.  
+----- pagina 5 -----
+2.1  Solutions   91  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 24. Write I3 =[e1   e2   e3] and D = [d1   d2   d3]. By definition of AD, the equation AD = I3 is equivalent 
+|to the three equations Ad1 = e1, Ad2 = e2, and Ad3 = e3. Each of these equations has at least one 
+solution because the columns of A span R3. (See Theorem 4 in Section 1.4.) Select one solution of 
+each equation and use them for the columns of D. Then AD = I3. 
+ 25. By Exercise 23, the equation CA = In implies that (number of rows in A) > (number of columns), that 
+is, m > n. By Exercise 24, the equation AD = Im implies that (number of rows in A) < (number of 
+columns), that is, m < n. Thus m = n. To prove the second statement, observe that CAD = (CA)D = 
+InD = D, and also CAD = C(AD) = CIm = C. Thus C = D. A shorter calculation is 
+   C =C I n = C(AD) = (CA)D = In D= D 
+ 26. Take any b in Rm. By hypothesis, ADb = Imb = b. Rewrite this equation as A(Db) = b. Thus, the 
+vector x = Db satisfies Ax = b. This proves that the equation Ax = b has a solution for each b in Rm.  
+By Theorem 4 in Section 1.4, A has a pivot position in each row. Since each pivot is in a different 
+column, A must have at least as many columns as rows. 
+ 27. The product uTv is a 1×1 matrix, which usually is identified with a real number and is written 
+without the matrix brackets. 
+   [] 32 5 3 2 5T
+a
+ba b c
+c
+⎡⎤
+⎢⎥=− − = − + − ⎢⎥
+⎢⎥⎣⎦
+uv , []
+3
+23 2 5
+5
+T abc a b c
+−⎡⎤
+⎢⎥== − + − ⎢⎥
+⎢⎥−⎣⎦
+vu  
+   []
+33 3 3
+22 2 2
+55 5 5
+T
+abc
+abc a b c
+abc
+−− − −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦
+uv  
+   []
+32 5
+32 5 3 2 5
+32 5
+T
+aa a a
+bb b b
+cc c c
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− − = − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+vu  
+ 28. Since the inner product uTv is a real number, it equals its transpose. That is, 
+  u Tv = (uTv)T = vT (uT)T = vTu, by Theorem 3(d) regarding the transpose of a product of matrices and 
+by Theorem 3(a). The outer product uvT is an n×n matrix. By Theorem 3, (uvT)T = (vT)TuT = vuT. 
+ 29. The ( i, j)-entry of A(B + C) equals the (i, j)-entry of AB + AC, because 
+   
+11 1
+()
+nn n
+ik kj kj ik kj ik kj
+kk k
+ab c a b a c
+== =
++= +∑∑ ∑  
+  The ( i, j)-entry of (B + C)A equals the (i, j)-entry of BA + CA, because 
+   
+11 1
+()
+nn n
+ik ik kj ik kj ik kj
+kk k
+bc a b a c a
+== =
++= +∑∑ ∑  
+ 30. The ( i, j))-entries of r(AB), (rA)B, and A(rB) are all equal, because 
+   
+11 1
+() ()
+nn n
+ik kj ik kj ik kj
+kk k
+ra b r a b a r b
+== =
+==∑∑ ∑  
+ 31. Use the definition of the product ImA and the fact that Imx = x for x in Rm. 
+----- pagina 6 -----
+92 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   I mA = Im[a1   ⋅ ⋅ ⋅   an] = [Ima1   ⋅ ⋅ ⋅   Iman] = [a1   ⋅ ⋅ ⋅   an] = A 
+ 32. Let ej and aj denote the jth columns of In and A, respectively. By definition, the jth column of AIn is 
+Aej, which is simply aj because ej has 1 in the jth position and zeros elsewhere. Thus corresponding 
+columns of AIn and A are equal. Hence AIn = A. 
+ 33. The ( i, j)-entry of (AB)T is the ( j, i)-entry of AB, which is 
+   11ji j n n iab ab+⋅⋅⋅+  
+  The entries in row i of BT are b1i, … , bni, because they come from column i of B. Likewise, the 
+entries in column j of AT are aj1, …, ajn, because they come from row j of A. Thus the (i, j)-entry in 
+BTAT is 11ji j n n iab ab++" , as above. 
+ 34. Use Theorem 3(d), treating x as an n×1 matrix: (ABx)T = xT(AB)T = xTBTAT. 
+ 35. [ M]  The answer here depends on the choice of matrix program. For MATLAB, use the  help 
+command to read about zeros, ones, eye, and diag. For other programs see the 
+appendices in the Study Guide . (The TI calculators have fewer single commands that produce 
+special matrices.) 
+ 36. [ M]  The answer depends on the choice of matrix program. In MATLAB, the command 
+rand(5,6) creates a 5×6 matrix with random entries uniformly distributed between 0 and 1. The 
+command 
+   round(19*(rand(4,4)–.5)) 
+  creates a random 4×4 matrix with integer entries between –9 and 9. The same result is produced by 
+the command randomint in the Laydata4 Toolbox on text website. For other matrix programs 
+see the appendices in the Study Guide.  
+ 37.  [M] The equality AB = BA is very likely to be false for 4×4 matrices selected at random. 
+ 38. [ M] (A + I)(A – I) – (A2 – I) = 0 for all 5×5 matrices. However, (A + B)(A – B) – A2 – B2 is the zero 
+matrix only in the special cases when AB = BA. In general, 
+   ( A + B)(A – B) = A(A – B) + B(A – B) = AA – AB + BA – BB. 
+ 39. [ M]  The equality (AT+BT)=(A+B)T  and (AB)T=BTATshould always be true, whereas (AB)T = ATBT is 
+very likely to be false for 4×4 matrices selected at random. 
+ 40. [ M]  The matrix S “shifts” the entries in a vector (a, b, c, d, e) to yield (b, c, d, e, 0). The entries in S2 
+result from applying S to the columns of S, and similarly for S3 , and so on. This explains the patterns 
+of entries in the powers of S:
+----- pagina 7 -----
+2.2  Solutions   93  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   234
+00100 00010 00001
+00010 00001 00000
+,,00001 00000 00000
+00000 00000 00000
+00000 00000 00000
+SSS
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥===
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+ 
+  S 5  is the 5×5 zero matrix. S6  is also the 5×5 zero matrix. 
+ 41. [ M]  51 0
+.3339 .3349 .3312 .333341 .333344 .333315
+.3349 .3351 .3300 , .333344 .333350 .333306
+.3312 .3300 .3388 .333315 .333306 .333379
+AA
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  The entries in A20 all agree with .3333333333 to 8 or 9 decimal places. The entries in A30 all agree 
+with .33333333333333 to at least 14 decimal places. The matrices appear to approach the matrix 
+1/3 1/3 1/3
+1/3 1/3 1/3
+1/3 1/3 1/3
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+. Further exploration of this behavior appears in Sections 4.9 and 5.2. 
+  Note : The MATLAB box in the Study Guide introduces basic matrix notation and operations, 
+including the commands that create special matrices needed in Exercises 35, 36 and elsewhere. The 
+Study Guide appendices treat the corresponding information for the other matrix programs. 
+2.2 SOLUTIONS 
+Notes: The text includes the matrix inversion algorithm at the end of the section because this topic is 
+popular. Students like it because it is a simple mechanical procedure. However, I no longer cover it in my 
+classes because technology is readily available to invert a matrix whenever needed, and class time is 
+better spent on more useful topics such as partitioned matrices. The final subsection is independent of the 
+inversion algorithm and is needed for Exercises 35 and 36. 
+Key Exercises: 8, 11–24, 35. (Actually, Exercise 8 is  only helpful for some exercises in this section. 
+Section 2.3 has a stronger result.) Exercises 23 and 24 are used in the proof of the Invertible Matrix 
+Theorem (IMT) in Section 2.3, along with Exercises 23 and 24 in Section 2.1. I recommend letting 
+students work on two or more of these four exercises before proceeding to Section 2.3. In this way 
+students participate in the proof of the IMT rather than simply watch an instructor carry out the proof. 
+Also, this activity will help students understand why the theorem is true. 
+ 1. 
+186 4 6 2 31
+54 5 8 5 / 2 432 30
+− −−⎡⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥ ⎢ ⎥ −−−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 2. 
+132 5 2 52 1
+85 8 3 8 3 15 16
+− −−⎡⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥ ⎢ ⎥ −−−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 3. 
+173 33 33 1 111  or 63 67 67 27 / 321 ( 18) 3− −− −−⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ == −⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−− −− −− −⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+----- pagina 8 -----
+94 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 4. 
+()
+124 6 4 6 4 3 / 2111   or  46 4 2 4 2 1 1 / 212 16 4−−− − −⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ ==⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−− − − −− −⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+ 5. The system is equivalent to Ax = b, where 86 2  and =54 1A ⎡ ⎤⎡ ⎤= ⎢ ⎥⎢ ⎥ −⎣ ⎦⎣ ⎦ b , and the solution is  
+   x  = A–1b = 23 2 7 .5/2 4 1 9−⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦  Thus x1 = 7 and x2 = –9. 
+ 6. The system is equivalent to Ax = b, where 73 9  and 63 4A −⎡ ⎤⎡ ⎤==⎢ ⎥⎢ ⎥−−⎣ ⎦⎣ ⎦ b , and the solution is x = A–1b. 
+To compute this by hand, the arithmetic is simplified by keeping the fraction 1/det(A) in front of the 
+matrix for A–1. (The Study Guide comments on this in its discussion of Exercise 7.) From Exercise 3, 
+   x  = A–1b = 33 9 1 5 511 674 2 6 2 6 / 333−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤−= − =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ . Thus x1 = −5 and x2 = 26/3. 
+ 7 . a . 
+112 1 2 2 1 2 2 6 111   or  5 12 5 1 5 1 2.5 .511 2 2 5 2− −− −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− −⋅− ⋅⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  x  = A–1b1 = 12 2 1 18 911 51 3 8 422 −− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ . Similar calculations give 
+  111234 11 6 13,,525AAA−−− ⎡⎤ ⎡⎤ ⎡⎤===⎢⎥ ⎢⎥ ⎢⎥−−−⎣⎦ ⎣⎦ ⎣⎦bbb . 
+b. [ A   b1   b2   b3   b4] = 12 1 12351 2 3 5 6 5−⎡⎤⎢⎥ −⎣⎦  
+  12 1 1 2 3 12 1 1 2 3~~ 0 281 041 0 0 1 4525−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−− − − − −⎣⎦ ⎣ ⎦  
+  10 91 1 61 3~ 0 14525 −⎡⎤⎢⎥ −−−⎣⎦  
+  The solutions are 91 1 6 1 3,,,  a n d  ,452 5−⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥−− −⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦  the same as in part (a). 
+Note: The Study Guide also discusses the number of arithmetic calculations for this Exercise 7, stating 
+that when A is large, the method used in (b) is much faster than using A–1. 
+ 8. Left-multiply each side of A = PBP–1 by P–1:  
+   P–1A = P–1PBP–1,     P–1A = IBP–1,     P–1A = BP–1 
+  Then right-multiply each side of the result by P: 
+   P–1AP = BP–1P,     P–1AP = BI,     P–1AP = B 
+  Parentheses are routinely suppressed because of the associative property of matrix multiplication. 
+ 9 . a . True, by definition of invertible.   
+----- pagina 9 -----
+2.2  Solutions   95  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  b . False. See Theorem 6(b). 
+c. False. If 1100A ⎡⎤= ⎢⎥⎣⎦ , then ab – cd = 1 – 0 ≠ 0, but Theorem 4 shows that this matrix is not 
+invertible, because ad – bc = 0. 
+d. True. This follows from Theorem 5, which also says that the solution of Ax = b is unique, for 
+each b. 
+e. True, by the box just before Example 6. 
+10. a . False. The last part of Theorem 7 is misstated here. 
+  b . True, by Theorem 6(a). 
+  c.  False.  The product matrix is invertible, but the product of inverses should be in the reverse order.  
+  See Theorem 6(b). 
+d. True.  See the subsection “Another View of Matrix Inversion”.  
+e.   True, by Theorem 7. 
+11. (The proof can be modeled after the proof of Theorem 5.) The n×p matrix B is given (but is 
+arbitrary). Since A is invertible, the matrix A–1B satisfies AX = B, because A(A–1B) = A A–1B = IB = 
+B. To show this solution is unique, let X be any solution of AX = B. Then, left-multiplication of each 
+side by A–1 shows that X must be A–1B: 
+   A –1 (AX) = A–1B,     IX = A–1B,     and     X = A–1B. 
+ 
+12.  Left-multiply each side of the equation AD = I by A–1 to obtain  
+   A –1AD = A–1I, ID = A–1, and D = A–1. 
+  Parentheses are routinely suppressed because of the associative property of matrix multiplication. 
+13. Left-multiply each side of the equation AB = AC by A–1 to obtain 
+   A –1AB = A–1AC,     IB = IC,     and     B = C. 
+  This conclusion does not always follow when A is singular. Exercise 10 of Section 2.1 provides a 
+counterexample. 
+14. Right-multiply each side of the equation ( B – C)D = 0 by D–1 to obtain 
+   ( B – C)DD–1 = 0D–1,     (B – C)I = 0,     B – C = 0,     and    B = C. 
+15. If you assign this exercise, consider giving the following Hint: Use elementary matrices and imitate 
+the proof of Theorem 7. The solution in the Instructor’s Edition follows this hint. Here is another 
+solution, based on the idea at the end of Section 2.2. 
+  Write B = [b1  ⋅ ⋅ ⋅  bp] and X = [u1  ⋅ ⋅ ⋅  up]. By definition of matrix multiplication, 
+  AX = [Au1  ⋅ ⋅ ⋅  Aup]. Thus, the equation AX = B is equivalent to the p systems: 
+   A u1 = b1,   …  Aup = bp 
+  Since A is the coefficient matrix in each system, these systems may be solved simultaneously, 
+placing the augmented columns of these systems next to A to form [A   b1  ⋅ ⋅ ⋅  bp] = [A   B]. Since A 
+is invertible, the solutions u1, …, up are uniquely determined, and [A   b1  ⋅ ⋅ ⋅  bp] must row reduce to 
+[I   u1  ⋅ ⋅ ⋅  up] = [I   X]. By Exercise 11, X is the unique solution A–1B of AX = B. 
+----- pagina 10 -----
+96 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+16. Let C = AB. Then CB–1 = ABB–1, so CB–1 = AI = A. This shows that A is the product of invertible 
+matrices and hence is invertible, by Theorem 6. 
+Note: The Study Guide warns against using the formula ( AB) –1 = B –1A–1 here, because this formula can 
+be used only when both A and B are already known to be invertible. 
+17. The box following Theorem 6 suggests what the inverse of ABC should be, namely, C–1B–1A–1. To 
+verify that this is correct, compute: 
+   ( ABC) C–1B–1A–1 = ABCC–1B–1A–1 = ABIB–1A–1 = ABB–1A–1 = AIA–1 = AA–1 = I 
+  and 
+   C –1B–1A–1 (ABC) = C–1B–1A–1ABC = C–1B–1IBC = C–1B–1BC = C–1IC = C–1C = I 
+ 
+18. Right-multiply each side of AB = BC by B–1:  
+   ABB–1 = BCB–1,     AI  = BCB–1,     A = BCB–1. 
+19. Unlike Exercise 18, this exercise asks two things, “Does a solution exist and what is it?” First, find 
+what the solution must be, if it exists. That is, suppose X satisfies the equation C–1(A + X)B–1 = I. 
+Left-multiply each side by C, and then right-multiply each side by B: 
+   CC–1(A + X)B–1 = CI,     I(A + X)B–1 = C,     (A + X)B–1B = CB,     (A + X)I = CB 
+  Expand the left side and then subtract A from both sides:  
+   AI + XI = CB,     A + X = CB,     X = CB – A 
+  If a solution exists, it must be CB – A. To show that CB – A really is a solution, substitute it for X: 
+   C–1[A + (CB – A)]B–1 = C–1[CB]B–1 = C–1CBB–1 = II = I. 
+Note: The Study Guide suggests that students ask their instructor about how many details to include in 
+their proofs. After some practice with algebra, an expression such as CC –1(A + X)B–1 could be simplified 
+directly to (A + X)B–1 without first replacing CC–1 by I. However, you may wish this detail to be included 
+in the homework for this section. 
+20. a . Left-multiply both sides of (A – AX)–1 = X–1B by X to see that B is invertible because it is the 
+product of invertible matrices. 
+b. Invert both sides of the original equation and use Theorem 6 about the inverse of a product 
+(which applies because X–1 and B are invertible): 
+   A  – AX = (X–1B)–1 = B–1(X–1)–1 = B–1X 
+  Then A = AX + B–1X = (A + B–1)X. The product (A + B–1)X is invertible because A is invertible. 
+Since X is known to be invertible, so is the other factor, A + B–1, by Exercise 16 or by an 
+argument similar to part (a). Finally, 
+   ( A + B–1)–1A = (A + B–1)–1(A + B–1)X = X 
+Note: This exercise is difficult. The algebra is not trivial, and at this point in the course, most students 
+will not recognize the need to verify that a matrix is invertible. 
+21. Suppose A is invertible. By Theorem 5, the equation Ax = 0 has only one solution, namely, the zero 
+solution. This means that the columns of A are linearly independent, by a remark in Section 1.7. 
+22. Suppose A is invertible. By Theorem 5, the equation Ax = b has a solution (in fact, a unique solution) 
+for each b. By Theorem 4 in Section 1.4, the columns of A span Rn. 
+----- pagina 11 -----
+2.2  Solutions   97  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+23. Suppose A is n×n and the equation Ax = 0 has only the trivial solution. Then there are no free 
+variables in this equation, and so A has n pivot columns. Since A is square and the n pivot positions 
+must be in different rows, the pivots in an echelon form of A must be on the main diagonal. Hence A 
+is row equivalent to the n×n identity matrix. 
+24. If the equation Ax = b has a solution for each b in Rn, then A has a pivot position in each row, by 
+Theorem 4 in Section 1.4. Since A is square, the pivots must be on the diagonal of A. It follows that A 
+is row equivalent to In. By Theorem 7, A is invertible. 
+25. Suppose 
+ab
+A
+cd
+= ⎡⎤⎢⎥⎣⎦  and ad – bc = 0. If a = b = 0, then examine 1200 0 0xxcd ⎡⎤⎡ ⎤⎡ ⎤ =⎢⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣⎦  This has the 
+solution x1 = dc⎡⎤⎢⎥−⎣⎦ . This solution is nonzero, except when a = b = c = d. In that case, however, A is 
+the zero matrix, and Ax = 0 for every vector x. Finally, if a and b are not both zero, set x2 = 
+b
+a
+−⎡⎤
+⎢⎥⎣⎦ . 
+Then 2
+0
+0
+ab b a b b a
+A
+cd a c b d a
+−− +
+== =
+−+
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦x , because –cb + da = 0. Thus, x2 is a nontrivial solution 
+of Ax = 0. So, in all cases, the equation Ax = 0 has more than one solution. This is impossible when A 
+is invertible (by Theorem 5), so A is not invertible. 
+26. 00d b a b da bcca c d c b a d−−⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥−− +⎣⎦ ⎣ ⎦ ⎣ ⎦ . Divide both sides by ad – bc to get CA = I. 
+   00a b d b ad bccd c a c b d a −−⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥ −− +⎣⎦ ⎣ ⎦ ⎣ ⎦ .  
+  Divide both sides by ad – bc. The right side is I. The left side is AC, because  
+   11 ab d b ab d bcd c a cd c aad bc ad bc −−⎡ ⎤ ⎡⎤ ⎡ ⎤⎡⎤ =⎢ ⎥ ⎢⎥ ⎢ ⎥⎢⎥−−−− ⎣ ⎦ ⎣⎦ ⎣ ⎦⎣⎦  = AC 
+ 27. a . Interchange A and B in equation (1) after Example 6 in Section 2.1: rowi (BA) = rowi (B)⋅A. Then 
+replace B by the identity matrix: rowi (A) = rowi (IA) = rowi (I)⋅A. 
+b. Using part (a), when rows 1 and 2 of A are interchanged, write the result as 
+   
+22 2
+11 1
+33 3
+row ( ) row ( ) row ( )
+row ( ) row ( ) row ( )
+row ( ) row ( ) row ( )
+AI A I
+AI A I A E A
+AI A I
+⋅⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⋅ = =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⋅⎣⎦ ⎣ ⎦ ⎣ ⎦
+ (*) 
+  Here, E is obtained by interchanging rows 1 and 2 of I. The second equality in (*) is a 
+consequence of the fact that rowi (EA) = rowi (E)⋅A. 
+c. Using part (a), when row 3 of A is multiplied by 5, write the result as 
+   
+11 1
+22 2
+33 3
+row ( ) row ( ) row ( )
+row ( ) row ( ) row ( )
+5r o w( ) 5r o w() 5r o w()
+AI A I
+AI A I A E A
+AI A I
+⋅⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⋅ = =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⋅⋅ ⋅ ⋅⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+Here, E is obtained by multiplying row 3 of I by 5. 
+----- pagina 12 -----
+98 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+28. When row 2 of A is replaced by row2(A) – 3⋅row1(A), write the result as 
+   
+11
+212 1
+33
+row ( ) row ( )
+row ( ) 3 row ( ) row ( ) 3 row ( )
+row ( ) row ( )
+AI A
+A A IA IA
+AI A
+⋅⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⋅ = ⋅ −⋅ ⋅⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⋅⎣⎦ ⎣ ⎦
+ 
+   
+11
+21 21
+33
+row ( ) row ( )
+[row ( ) 3 row ( )] row ( ) 3 row ( )
+row ( ) row ( )
+IA I
+II A II A E A
+IA I
+⋅⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− ⋅ ⋅ = − ⋅ =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⋅⎣⎦ ⎣ ⎦
+ 
+  Here, E is obtained by replacing row2(I) by row2(I) – 3⋅row1(I). 
+29. 1 3 10 1 3 10 10 3 1 10 3 1[] ~ ~ ~ 4 901 0 3 41 03 4 1 01 4 / 3 1 / 3AI −− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤= ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+   A –1 = 314/3 1/3−⎡⎤⎢⎥−⎣⎦  
+30. 36 1 0 121 / 30 1 2 1 / 3 0[] ~ ~ 47 0 1 47 0 1 0 1 4 / 3 1AI ⎡⎤ ⎡ ⎤ ⎡ ⎤= ⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+   11 2 1/3 0 1 0 7/3 2 7/3 2~~ .0 1 4/3 1 0 1 4/3 1 4/3 1 A−−−⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+31. 
+102 1 0 0 102 1 0 0
+[] 3 1 4 0 1 0 ~ 0 1 2 3 1 0
+2 3 4001 0 3 8 2 0 1
+AI
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦
+ 
+   
+10 2100 100 831
+~0 1 2 3 1 0~0 1 0 1 0 4 1
+00 2731 00273 1
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+   1
+100 8 3 1 8 3 1
+~0 1 0 1 0 4 1 . 1 0 4 1
+0 0 1 7/2 3/2 1/2 7/2 3/2 1/2
+A−
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+32. 
+1211 0 0 121 1 0 0
+[] 4 7 3 0 1 0 ~ 0 1 1 4 1 0
+264 0 0 1 022 2 0 1
+AI
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+ 
+   
+12 1 1 0 0
+~0 1 1 4 1 0
+00 0 1 0 2 1
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+. The matrix A is not invertible. 
+----- pagina 13 -----
+2.2  Solutions   99  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+33. Let B = 
+100 0
+11 0 0
+01 1
+00 1 1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥ −
+⎢⎥
+⎢⎥
+⎢⎥ −⎣⎦
+"
+#% % #
+"
+, and for j = 1, …, n, let aj, bj, and ej denote the jth columns of A, B,  
+and I, respectively. Note that for j = 1, …, n – 1, aj – aj+1 = ej (because aj and aj+1 have the same 
+entries except for the jth row), bj = ej – ej+1 and an = bn = en. 
+  To show that AB = I, it suffices to show that Abj = ej for each j. For j = 1, …, n – 1, 
+   A bj = A(ej – ej+1) = Aej – Aej+1 = aj – aj+1 = ej 
+  and Abn = Aen = an = en. Next, observe that aj = ej + ⋅ ⋅ ⋅ + en for each j. Thus, 
+  B aj = B(ej + ⋅ ⋅ ⋅ + en) = bj + ⋅ ⋅ ⋅ + bn 
+         =  (ej – ej+1) + (ej+1 – ej+2) + ⋅ ⋅ ⋅ + (en–1 – en) + en = ej 
+  This proves that BA = I. Combined with the first part, this proves that B = A–1. 
+Note: Students who do this problem and then do the corresponding exercise in Section 2.4 will appreciate 
+the Invertible Matrix Theorem, partitioned matrix notation, and the power of a proof by induction. 
+34. Let 
+  A  = 
+100 0 1 0 0 0
+220 0 1 1 / 2 0
+, and 33 3 0 0 1 / 2 1 / 3
+00 1 / ( 1 ) 1 /
+B
+nn n n n n
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥= −
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+""
+#% # #% % #
+"
+ 
+  and for j = 1, …, n, let aj, bj, and ej denote the jth columns of A, B, and I, respectively. Note that for  
+j = 1, …, n–1, aj = jej +(j+1)ej+1 ⋅ ⋅ ⋅ +n en, an = n en, bj = 1
+1 () jj
+j
++−ee , and 1 .nn n=be  
+  To show that AB = I, it suffices to show that Abj = ej for each j. For j = 1, …, n–1, 
+   A bj = A 1
+1 () jj
+j +
+⎛⎞ −⎜⎟⎝⎠ ee  = 11 () jjj +−aa   
+     = ()jj 1 j 1 j j
+11 ( 1 e)  –  ( ( 1 ) e) . nnjj n j n jjj ++⎡⎤ ++ ++ + ++ = =⎣⎦ ee e e e ……  
+  Also, Abn = 11 nn nA nn⎛⎞ ==⎜⎟⎝⎠ ea e . 
+  Moreover,  
+   ()jj 1 11B ( 1 )jn j j nBj Bj n Bj j n ++=+ + + + = + + + +ae e e b b b ……  
+           = j j+1 j+1 j+2 1 j() ( ) ( ) . nn n−−+−+ +− + =ee e e e e e e …   
+  which proves that BA = I . Combined with the first part, this proves that B = A–1. 
+Note: If you assign Exercise 34, you may wish to s upply a hint using the notation from Exercise 33: 
+Express each column of A in terms of the columns e1, …, en of the identity matrix. Do the same for B. 
+----- pagina 14 -----
+100 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+35. Row reduce [ A   e3]: 
+  
+1 7 3 0 1 7 3 0 17 30 103 0 100 3
+2 1 5 6 0~0 1 0 0~0 1 0 0~0 1 0 0~0 1 0 0
+1 3 2 1 0 4 11 00 11 001 1 001 1
+−−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− − − −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+    
+  Answer: The third column of A–1 is 
+3
+0.
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+ 
+36. [M]   Write B = [A   F], where F consists of the last two columns of I3, and row reduce:  
+  B = 
+25 9 27 0 0
+536 185 537 1 0
+154 52 143 0 1
+−− −⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+1 0 0 .1126 .1559
+~ 0 1 0 .5611 1.0077
+0 0 1 .0828 .1915
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥ −⎣⎦
+ 
+  The last two columns of A –1 are 
+.1126 .1559
+~ .5611 1.0077
+.0828 .1915
+−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥ −⎣⎦
+ 
+37. There are many possibilities for C, but C = 11 111 0 −⎡ ⎤⎢ ⎥−⎣ ⎦  is the only one whose entries are 1, –1, 
+and 0. With only three possibilities for each entry, the construction of C can be done by trial and 
+error. This is probably faster than setting up a system of 4 equations in 6 unknowns. The fact that A 
+cannot be invertible follows from Exercise 25 in Section 2.1, because A is not square. 
+38. Write AD = A[d1   d2] = [Ad1   Ad2]. The structure of A shows that D =
+11
+01
+00
+00
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+and D =
+10
+11
+11
+01
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+are 
+two possibilities.  There are 9 possible answers.  However, there is no 4×2 matrix C such that CA = 
+I4. If this were true, then CAx would equal x for all x in R4. This cannot happen because the columns 
+of A are linearly dependent and so Ax = 0 for some nonzero vector x. For such an x,  
+CAx = C(0) = 0. An alternate justification would be to cite Exercise 23 or 25 in Section 2.1. 
+39. y  = Df = 
+.011 .003 .001 40 .62
+.003 .009 .003 50 .66
+.001 .003 .011 30 .52
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+. The deflections are .62 in., .66 in., and .52 in. at points 
+1, 2, and 3, respectively. 
+40. [M]  The stiffness matrix is D–1. Use an “inverse” command to produce
+----- pagina 15 -----
+2.3  Solutions   101  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   D –1 =
+310
+100 14 13 013
+−⎡⎤
+⎢⎥−−⎢⎥
+⎢⎥ −⎣⎦
+ 
+  To find the forces (in pounds) required to prod uce a deflection of .04 cm at point 3, most students 
+will use technology to solve Df = (0, 0, .04) and obtain (0, –4/3, 4).  
+  Here is another method, based on the idea suggested in Exercise 42. The first column of D–1 lists the 
+forces required to produce a deflection of 1 in. at point 1 (with zero deflection at the other points). 
+Since  the transformation y 6 D–1y is linear, the forces required to produce a deflection of .04 cm at 
+point 3 is given by .04 times the third column of D–1, namely (.04)(100/3) times (0, –1, 3), or (0, –
+4/3, 4) pounds. 
+41. To determine the forces that produce deflections of .07, .12, .16, and .12 cm at the four points on the 
+beam, use technology to solve Df = y, where y = (.07, .12, .16, .12). The forces at the four points are 
+.95, 6.19, 11.43, and 3.81 newtons, respectively. 
+42. [M]   To determine the forces that produce a deflection of .22 cm at the second point on the beam, use 
+technology to solve Df = y, where y = (0, .22, 0, 0). The forces at the four points are –10.476, 
+31.429, 
+   –10.476, and 0 newtons, respectively (to three significant digits). These forces are .22 times the 
+entries in the second column of D–1. Reason: The transformation 1D−yy6  is linear, so the forces 
+required to produce a deflection of .22 cm at the second point are .22 times the forces required to 
+produce a deflection of 1 cm at the second point. These forces are listed in the second column of D–1. 
+  Another possible discussion: The solution of Dx = (0, 1, 0, 0) is the second column of D–1.  
+Multiply both sides of this equation by .22 to obtain D(.22x) = (0, .22, 0, 0). So .22x is the solution  
+of Df = (0, .22, 0, 0). (The argument uses linearity, but students may not mention this.) 
+Note: The Study Guide  suggests using  gauss, swap, bgauss, and scale to reduce [ A    I] 
+because  I prefer to postpone the use of ref (or rref) u ntil later. If you wish to introduce ref now, 
+see the Study Guide’s technology notes for Sections 2.8 or 4.3. (Recall that Sections 2.8 and 2.9 are only 
+covered when an instructor plans to skip Chapter 4 and get quickly to eigenvalues.) 
+2.3 SOLUTIONS 
+Notes: This section ties together most of the concepts studied thus far. With strong encouragement from 
+an instructor, most students can use this opportunity to review and reflect upon what they have learned, 
+and form a solid foundation for future work. Students who fail to do this now usually struggle throughout 
+the rest of the course. Section 2.3 can be used in at least three different ways.  
+(1) Stop after Example 1 and assign exercises only from among the Practice Problems and Exercises 
+1 to 28. I do this when teaching “Course 3” described in the text's “Notes to the Instructor. ” If you did not 
+cover Theorem 12 in Section 1.9, omit statements (f) and (i) from the Invertible Matrix Theorem. 
+(2) Include the subsection “Invertible Linear Transformations” in Section 2.3, if you covered Section 
+1.9. I do this when teaching “Course 1” because our mathematics and computer science majors take this 
+class. Exercises 29–40 support this material. 
+(3) Skip the linear transformation material here, but discusses the condition number  and the 
+Numerical Notes. Assign exercises from among 1–28 and 41–45, and perhaps add a computer project on 
+----- pagina 16 -----
+102 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+the condition number. (See the projects on our web site.) I do this when teaching “Course 2” for our 
+engineers. 
+The abbreviation IMT (here and in the Study Guide) denotes the Invertible Matrix Theorem (Theorem 
+8). 
+ 1. The columns of the matrix 5736⎡⎤⎢⎥−−⎣⎦  are not multiples, so they are linearly independent. By (e) in 
+the IMT, the matrix is invertible. Also, the matrix is invertible by Theorem 4 in Section 2.2 because 
+the determinant is nonzero. 
+ 2. The fact that the columns of 4263−⎡⎤⎢⎥ −⎣⎦  are multiples of each other is one way to show that this matrix 
+is not invertible.  Another is to check the determinant.  In this case it is easily seen to be zero. By 
+Theorem 4 in Section 2.2, the matrix is not invertible. 
+ 3. Row reduction to echelon form is trivial because there is really no need for arithmetic calculations: 
+300 300 500
+340 ~ 040 ~ 040
+853 053 003
+⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥−− − −⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ −−−⎣ ⎦ ⎣⎦ ⎣⎦
+ The 3×3 matrix has 3 pivot positions and hence is 
+invertible, by (c) of the IMT. [Another explanation could be given using the transposed matrix. But 
+see the note below that follows the solution of Exercise 14.] 
+ 4. The matrix 
+51 4
+000
+149
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ cannot row reduce to the identity matrix since it already contains a row of 
+zeros.  Hence the matrix is not invertible (or singular) by (b) in the IMT. 
+ 5. The matrix 
+30 3
+20 4
+40 7
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+ obviously has linearly dependent columns (because one column is zero), 
+and so the matrix is not invertible (or singular) by (e) in the IMT. 
+ 6. 
+136 13 6 136 13 6
+043 ~ 04 3 ~ 043 ~ 04 3
+360 031 8 016 002 1
+−− − − −− − −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The matrix is invertible because it is  row equivalent to the identity matrix. 
+ 7. 
+13 01 13 0 1 13 0 1
+35 83 04 8 0 04 8 0~~26 32 00 3 0 00 3 0
+01 21 01 2 1 00 0 1
+−− −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The 4×4 matrix has four pivot positions and so is invertible by (c) of the IMT. 
+----- pagina 17 -----
+2.3  Solutions   103  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 8. The 4×4 matrix 
+347 4
+01 4 6
+002 8
+000 1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+ is invertible because it has four pivot positions, by (c) of the IMT. 
+ 9 . [M]  Using technology,  
+4037 1 0 0 0
+6999 0 1 0 0 ~7 5 10 19 0 0 1 0
+124 1 0 0 0 1
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+. 
+  The 4×4 matrix is invertible because it has four pivot positions, by (c) of the IMT. 
+10. [M]  
+531 7 9 5 3 1 7 9
+6 4 2 8 8 0 .4 .8 .4 18.8
+~753 1 0 9 0 . 81 . 6 . 2 3 . 6
+9 6 4 9 5 0 .6 2.2 21.6 21.2
+8521 1 4 0 . 2 . 4 . 2 1 0 . 4
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥ −− − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+   
+531 7 9 531 7 9
+0 .4 .8 .4 18.8 0 .4 .8 .4 18.8
+~~ 000 1 3 4 001 2 1 7
+001 2 1 7 000 1 3 4
+000 0 1 000 0 1
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −− −−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −
+⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −−⎣⎦ ⎣⎦
+ 
+  The 5×5 matrix is invertible because it has five pivot positions, by (c) of the IMT. 
+11. a . True, by the IMT. If statement (d) of the IMT is true, then so is statement (b). 
+b. True. If statement (h) of the IMT is true, then so is statement (e). 
+c. False. Statement (g) of the IMT is true only for invertible matrices. 
+d. True, by the IMT. If the equation Ax = 0 has a nontrivial solution, then statement (d) of the IMT 
+is false. In this case, all the lettered statements in the IMT are false, including statement (c), 
+which means that A must have fewer than n pivot positions. 
+e. True, by the IMT. If A T is not invertible, then statement (1) of the IMT is false, and hence 
+statement (a) must also be false. 
+12. a . True. If statement (k) of the IMT is true, then so is statement ( j). Use the first box after the IMT. 
+b. False.  Notice that (i) if the IMT uses the work onto rather than the word into. 
+c.  True. If statement (e) of the IMT is true, then so is statement (h). 
+d. False. Since (g) if the IMT is true, so is (f). 
+ e. False, by the IMT. The fact that there is a b in n such that the equation Ax = b is consistent, does 
+not imply that statement (g) of the IMT is true, and hence there could be more than one solution. 
+Note: The solutions below for Exercises 13–30 refer mostly to the IMT. In many cases, however, part or 
+all of an acceptable solution could also be based on various results that were used to establish the IMT. 
+----- pagina 18 -----
+104 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+13. If a square upper triangular n×n matrix has nonzero diagonal entries, then because it is already in 
+echelon form, the matrix is row equivalent to In and hence is invertible, by the IMT. Conversely, if 
+the matrix is invertible, it has n pivots on the diagonal and hence the diagonal entries are nonzero. 
+14. If A is lower triangular with nonzero entries on the diagonal, then these n diagonal entries can be 
+used as pivots to produce zeros below the diagonal. Thus A has n pivots and so is invertible, by the 
+IMT. If one of the diagonal entries in A is zero, A will have fewer than n pivots and hence be 
+singular. 
+Notes: For Exercise 14, another correct analysis of the case when A has nonzero diagonal entries is to 
+apply the IMT (or Exercise 13) to AT. Then use Theorem 6 in Section 2.2 to conclude that since AT is 
+invertible so is its transpose, A. You might mention this idea in class, but I recommend that you not spend 
+much time discussing AT and problems related to it, in order to keep from making this section too lengthy. 
+(The transpose is treated infrequently in the text until Chapter 6.) 
+If you do plan to ask a test question that involves AT and the IMT, then you should give the students 
+some extra homework that develops skill using AT. For instance, in Exercise 14 replace “columns” by 
+“rows.”  Also, you could ask students to explain why an n×n  matrix with linearly independent columns 
+must also have linearly independent rows. 
+15. Part (h) of the IMT shows that a 4×4 matrix cannot be invertible when its columns do not span R4. 
+16. If A is invertible, so is AT, by (l) of the IMT.  By (e) of the IMT applied to AT, the columns of AT are 
+linearly independent. 
+ 
+17.  If A has two identical columns then its columns are linearly dependent. Part (e) of the IMT shows that  
+A cannot be invertible. 
+18. If A contains two identical rows, then it cannot be row reduced to the identity because subtracting 
+one row from the other creates a row of zeros.  By (b) of the IMT, such a matrix cannot be invertible.  
+19. By (e) of the IMT, D is invertible. Thus the equation Dx = b has a solution for each b in R7, by (g) of  
+the IMT. Even better, the equation Dx = b has a unique solution for each b in R7, by Theorem 5 in 
+Section 2.2. (See the paragraph following the proof of the IMT.) 
+20. By (g) of the IMT, A is invertible. Hence, each equation Ax = b has a unique solution, by Theorem 5 
+in Section 2.2. This fact was pointed out in the paragraph following the proof of the IMT. 
+21. The matrix C cannot be invertible, by Theorem 5 in Section 2.2 or by the box following the IMT. So 
+(h) of the IMT is false and the columns of C do not span Rn. 
+22. By the box following the IMT, E and F are invertible and are inverses. So FE = I = EF, and so E and 
+F commute. 
+23.  Statement (g) of the IMT is false for F, so statement (d) is false, too. That is, the equation Fx = 0 has 
+a nontrivial solution. 
+24.  Statement (b) of the IMT is false for G, so statements (e) and (h) are also false. That is, the columns 
+of G are linearly dependent and the columns do not span Rn. 
+25. Suppose that A is square and AB = I. Then A is invertible, by the (k) of the IMT. Left-multiplying 
+each side of the equation AB = I by A–1, one has  
+   A –1AB = A–1I,     IB = A–1,     and B = A–1. 
+----- pagina 19 -----
+2.3  Solutions   105  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  By Theorem 6 in Section 2.2, the matrix B (which is A–1) is invertible, and its inverse is (A–1)–1,  
+which is A. 
+26. If the columns of A are linearly independent, then since A is square, A is invertible, by the IMT. So 
+A2, which is the product of invertible matrices, is invertible. By the IMT, the columns of A2 span Rn. 
+27. Let W be the inverse of AB. Then ABW = I and A(BW) = I. Since A is square, A is invertible, by (k) of 
+the IMT. 
+Note: The Study Guide for Exercise 27 emphasizes here that the equation A(BW) = I,  by itself, does not 
+show that A is invertible. Students are referred to Exercise 38 in Section 2.2 for a counterexample. 
+Although there is an overall assumption that matrices in  this section are square, I insist that my students 
+mention this fact when using the IMT. Even so, at the end of the course, I still sometimes find a student 
+who thinks that an equation AB = I implies that A is invertible. 
+28. Let W be the inverse of AB. Then WAB = I and (WA)B = I. By (j) of the IMT applied to B in place of 
+A, the matrix B is invertible. 
+29. Since the transformation Axx6  is  one-to-one, statement (f) of the IMT is true. Then (i) is also true  
+and the transformation Axx6  does map Rn onto Rn. Also, A is invertible, which implies that the 
+transformation Axx6  is invertible, by Theorem 9. 
+30. Since the transformation Axx6  is not one-to-one, statement (f) of the IMT is false. Then (i) is also 
+false and the transformation Axx6  does not map Rn onto Rn. Also, A is not invertible, which 
+implies that the transformation Axx6  is not invertible, by Theorem 9. 
+31. Since the equation Ax = b has a solution for each b, the matrix A has a pivot in each row (Theorem 4 
+in Section 1.4). Since A is square, A has a pivot in each column, and so there are no free variables in 
+the equation Ax = b, which shows that the solution is unique. 
+Note: The preceding argument shows that the (square) shape of A plays a crucial role. A less revealing 
+proof is to use the “pivot in each row” and the IMT to conclude that A is invertible. Then Theorem 5 in 
+Section 2.2 shows that the solution of Ax = b is unique. 
+32. If Ax = 0 has only the trivial solution, then A must have a pivot in each of its n columns. Since A is 
+square (and this is the key point), there must be a pivot in each row of A. By Theorem 4 in Section 
+1.4, the equation Ax = b has a solution for each b in Rn. 
+   Another argument: Statement (d) of the IMT is true, so A is invertible. By Theorem 5 in Section 
+2.2, the equation Ax = b has a (unique) solution for each b in Rn. 
+33. (Solution in Study Guide) The standard matrix of T is 59 ,47A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  which is invertible because 
+det A ≠ 0. By Theorem 9, the transformation T is invertible and the standard matrix of T–1 is A–1. 
+From the formula for a 2×2 inverse, 1 79 .45A− ⎡ ⎤= ⎢ ⎥⎣ ⎦  So  
+   ()11 12 1 2 1 2
+2
+79(, ) 7 9, 4 545 xTx x x x x x x− ⎡⎤⎡⎤== + + ⎢⎥⎢⎥⎣⎦ ⎣ ⎦  
+----- pagina 20 -----
+106 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+34. The standard matrix of T is 28 ,27A −⎡⎤= ⎢⎥−⎣⎦  which is invertible because det A = -2 ≠ 0. By Theorem 
+9, T is invertible, and 1()T − x  = Bx, where 1 781 222BA − ⎡ ⎤== − ⎢ ⎥⎣ ⎦ . Thus 
+   11 12 1 2 1 2
+2
+7817(, ) 4, 2222 xTx x x x xx x− ⎡⎤⎡⎤ ⎛⎞=− = − − − − ⎜⎟⎢⎥⎢⎥ ⎝⎠⎣⎦ ⎣⎦  
+35. (Solution in Study Guide) To show that T is one-to-one, suppose that T(u) = T(v) for some vectors u 
+and v in Rn. Then S(T(u)) = S(T(v)), where S is the inverse of T. By Equation (1), u = S(T(u)) and 
+S(T(v)) = v, so u = v. Thus T is one-to-one. To show that T is onto, suppose y represents an arbitrary 
+vector in Rn and define x = S(y). Then, using Equation (2), T(x) = T(S(y)) = y, which shows that T 
+maps Rn onto Rn. 
+  Second proof: By Theorem 9, the standard matrix A of T is invertible. By the IMT, the columns of A 
+are linearly independent and span Rn. By Theorem 12 in Section 1.9, T is one-to-one and maps Rn 
+onto Rn. 
+36. Let A be the standard matrix of T. By hypothesis, T is not a one-to-one mapping. So, by Theorem 12 
+in Section 1.9, the standard matrix A of T has linearly dependent columns. Since A is square, the 
+columns of A do not span Rn. By Theorem 12, again, T cannot map Rn onto Rn.  
+37. Let A and B be the standard matrices of T and U, respectively. Then AB is the standard matrix of the 
+mapping (( ) )TUxx6 , because of the way matrix multiplication is defined (in Section 2.1). By 
+hypothesis, this mapping is the identity mapping, so AB = I. Since A and B are square, they are 
+invertible, by the IMT, and B = A–1. Thus, BA = I. This means that the mapping (() )UTxx6 is the 
+identity mapping, i.e., U(T(x)) = x for all x in Rn. 
+38.  Given any v in Rn, we may write v = T(x) for some x, because T is an onto mapping. Then, the 
+assumed properties of S and U show that S(v) = S(T(x)) = x and U(v) = U(T(x)) = x. So S(v) and U(v) 
+are equal for each v. That is, S and U are the same function from Rn into Rn. 
+ 
+39. If T maps Rn onto Rn, then the columns of its standard matrix A span Rn, by Theorem 12 in Section 
+1.9. By the IMT, A is invertible. Hence, by Theorem 9 in Section 2.3, T is invertible, and A–1 is the 
+standard matrix of T–1. Since A–1 is also invertible, by the IMT, its columns are linearly independent 
+and span Rn. Applying Theorem 12 in Section 1.9 to the transformation T–1, we conclude that T–1 is a 
+one-to-one mapping of Rn onto Rn.  
+40. Given u, v in n, let x = S(u) and y = S(v). Then T(x)=T(S(u)) = u and T(y) = T(S(v)) = v, by  
+equation (2). Hence 
+  
+() ( ( ) ( ) )
+( ( ))      Because islinear
+      By equation (1)
+() ()
+SS T T
+ST T
+SS
++= +
+=+
+=+
+=+
+uv x y
+xy
+xy
+uv
+ 
+  So, S preserves sums. For any scalar r, 
+----- pagina 21 -----
+2.3  Solutions   107  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+( ) ( ( )) ( ( )) Because is linear
+Byequation (1)
+()
+Sr Sr T STr T
+r
+rS
+==
+=
+=
+ux x
+x
+u
+ 
+  So S preserves scalar multiples. Thus S is a linear transformation. 
+41. [M]   a. The exact solution of (3) is x1 = 3.94 and x2 = .49. The exact solution of (4) is x1 = 2.90 and  
+ x2 = 2.00. 
+b. When the solution of (4) is used as an approximation for the solution in (3) , the error in using the 
+value of 2.90 for x1 is about 26%, and the error in using 2.0 for x2 is about 308%. 
+c. The condition number of the coefficient matrix is 3363. The percentage change in the solution 
+from (3) to (4) is about 7700 times the percentage change in the right side of the equation. This is 
+the same order of magnitude as the condition number. The condition number gives a rough 
+measure of how sensitive the solution of Ax = b can be to changes in b. Further information about 
+the condition number is given at the end of Chapter 6 and in Chapter 7. 
+Note: See the Study Guide ’s MATLAB box, or a technology appendix, for information on condition 
+number. Only the TI-83+ and TI-89 lack a command for this. 
+42. [M]   MATLAB gives cond(A) ≈  10, which is approximately 101. If you make several trials with 
+MATLAB, which records 16 digits accurately, you should find that x and x1 agree to at least 14 or 15 
+significant digits. So about 1 significant digit is lost. Here is the result of one experiment. The 
+vectors were all computed to the maximum 16 decimal places but are here displayed with only four 
+decimal places: 
+   
+.9501
+.2311rand(4,1) .6068
+.4860
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+x , b = Ax = 
+1.4219
+6.2149
+20.7973
+1.4535
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+. The MATLAB solution is x1 = A\b = 
+.9501
+.2311
+.6068
+.4860
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+. 
+  However, x – x1 = 
+.2220
+.2220
+0
+.1665
+−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+×10–15. The computed solution x1 is accurate to about  
+14 decimal places. 
+43. [M]  MATLAB gives cond(A) = 69,000. Since this has magnitude between 104 and 105, the 
+estimated accuracy of a solution of Ax = b should be to about four or five decimal places less than 
+the 16 decimal places that MATLAB usually computes accurately. That is, one should expect the 
+solution to be accurate to only about 11 or 12 decimal places. Here is the result of one experiment. 
+The vectors were all computed to the maximum 16 decimal places but are here displayed with only 
+four decimal places: 
+   x  = rand(5,1) = 
+.8214
+.4447
+.6154
+.7919
+.9218
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+, b = Ax = 
+19.8965
+6.8991
+26.0354
+0.7861
+22.4242
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+. The MATLAB solution is x1 = A\b =
+.8214
+.4447
+.6154
+.7919
+.9218
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+. 
+----- pagina 22 -----
+108 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  However, x – x1 = 11
+1679
+.3578
+10.1775
+.0084
+.0002
+−
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥ ×−
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+. The computed solution x1 is accurate to about 11 decimal 
+places. 
+44. [M]   Solve Ax = (0, 0, 0, 0, 1). MATLAB shows that 5cond( ) 4.8 10 .A ≈×  Since MATLAB 
+computes numbers accurately to 16 decimal places, the entries in the computed value of x should be 
+accurate to at least 11 digits. The exact solution is (630, –12600, 56700, –88200, 44100). 
+45. [M]   Some versions of MATLAB issue a warning when asked to invert a Hilbert matrix of order 12 
+or larger using floating-point arithmetic. The product AA–1 should have several off-diagonal entries 
+that are far from being zero. If not, try a larger matrix. 
+Note: All matrix programs supported by the Study Guide have data for Exercise 45, but only MATLAB 
+and Maple have a single command to create a Hilbert matrix.  
+Notes: The Study Guide for Section 2.3 organizes the statements of the Invertible Matrix Theorem in a 
+table that imbeds these ideas in a broader discussion of rectangular matrices. The statements are arranged 
+in three columns: statements that are logically equivalent for any m×n matrix and are related to existence 
+concepts, those that are equivalent only for any n×n matrix, and those that are equivalent for any n×p 
+matrix and are related to uniqueness concepts. Four statements are included that are not in the text’s 
+official list of statements, to give more symmetry to the three columns. You may or may not wish to 
+comment on them.  
+I believe that students cannot fully understand the concepts in the IMT if they do not know the correct 
+wording of each statement. (Of course, this knowledge is not sufficient for understanding.) The Study  
+Guide’s Section 2.3 has an example of the type of question I often put on an exam at this point in the 
+course. The section concludes with a discussion of reviewing and reflecting, as important steps to a 
+mastery of linear algebra. 
+ 
+2.4 SOLUTIONS 
+Notes: Partitioned matrices arise in theoretical discussions in essentially every field that makes use of 
+matrices. The Study Guide mentions some examples (with references).  
+Every student should be exposed to some of the ideas in this section. If time is short, you might omit 
+Example 4 and Theorem 10, and replace Example 5 by a problem similar to one in Exercises 1–10. (A 
+sample replacement is given at the end of these solutions.) Then select homework from Exercises 1–13, 
+15, and 21–24.  
+The exercises just mentioned provide a good environment for practicing matrix manipulation. Also, 
+students will be reminded that an equation of the form AB = I does not by itself make A or B invertible. 
+(The matrices must be square and the IMT is required.)
+----- pagina 23 -----
+2.4  Solutions   109  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 1. Apply the row-column rule as if the matrix entries were numbers, but for each product always write 
+the entry of the left block-matrix on the left.  
+   00 0IA B I A C I B D A BE I C D EA IC EB ID EA C EB D++⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ++ + +⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+ 2. Apply the row-column rule as if the matrix entries were numbers, but for each product always write 
+the entry of the left block-matrix on the left. 
+   00 0 00 0EP Q E P R E Q S E P E QFRS P F R Q F S F RF S++⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ++⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 3. Apply the row-column rule as if the matrix entries were numbers, but for each product always write 
+the entry of the left block-matrix on the left. 
+   00 0  00 0IAB A I C B I D CDIC D I A C I B D A B ++⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥++⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+ 4. Apply the row-column rule as if the matrix entries were numbers, but for each product always write 
+the entry of the left block-matrix on the left. 
+   00 0 IW X I W Y I X Z W XE I Y Z EW IY EX IZ EW Y EX Z++⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− + − + − + − +⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 5. Compute the left side of the equation: 
+   0000 0 0ABI A IB X A B YCX Y C I X C Y ++⎡⎤ ⎡ ⎤ ⎡ ⎤=⎢⎥ ⎢ ⎥ ⎢ ⎥++⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  Set this equal to the right side of the equation: 
+   00    so that   00 0 0AB X B Y I AB X B Y ICZ C Z++ = =⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ==⎣⎦ ⎣ ⎦  
+  Since the (2, 1) blocks are equal, Z = C. Since the (1, 2) blocks are equal, BY = I. To proceed further, 
+assume that B and Y are square. Then the equation BY =I implies that B is invertible, by the IMT, and  
+Y = B–1. (See the boxed remark that follows the IMT.) Finally, from the equality of the (1, 1) blocks, 
+   BX = –A ,    B–1BX = B–1(–A),   and   X = –B–1A. 
+  The order of the factors for X is crucial. 
+Note: For simplicity, statements (j) and (k) in the Invertible Matrix Theorem involve square matrices 
+C and D. Actually, if A is n×n and if C is any matrix such that AC is the n×n identity matrix, then C must 
+be n×n, too. (For AC to be defined, C  must have n rows, and the equation AC  = I  implies that C has n 
+columns.)  Similarly, DA = I  implies that D is n×n. Rather than discuss this in class, I expect that in 
+Exercises 5–8, when students see an equation such as BY = I, they will decide that both B and Y should be 
+square in order to use the IMT. 
+ 6. Compute the left side of the equation: 
+   00 0 0 0 0 0XA X A B X CX AYZ B C Y A Z B Y Z C Y A Z B Z C++⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ++ +⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  Set this equal to the right side of the equation: 
+----- pagina 24 -----
+110 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   00 0 0   so that   00XA I XA IYA ZB ZC I YA ZB ZC I==⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥++ = =⎣⎦ ⎣ ⎦  
+  To use the equality of the (1, 1) blocks, assume that A and X are square. By the IMT, the equation  
+  XA =I implies that A is invertible and X = A–1. (See the boxed remark that follows the IMT.) 
+Similarly, if C and Z are assumed to be square, then the equation ZC = I implies that C is invertible, 
+by the IMT, and Z = C–1. Finally, use the (2, 1) blocks and right-multiplication by A–1: 
+   YA  = –ZB = –C–1B,    YAA–1 = (–C–1B)A–1,   and   Y = –C–1BA–1 
+  The order of the factors for Y is crucial. 
+ 7. Compute the left side of the equation: 
+   0 0 00 000000 0 AZXX A B XZ IY I YA IB YZ IIBI⎡⎤ ++ ++⎡⎤ ⎡ ⎤⎢⎥ =⎢⎥ ⎢ ⎥⎢⎥ ++ ++⎣⎦ ⎣ ⎦⎢⎥⎣⎦  
+  Set this equal to the right side of the equation: 
+   00   so that   00XA XZ I XA I XZYA B YZ I I YA B YZ I I ==⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥++ + = + =⎣⎦ ⎣ ⎦  
+  To use the equality of the (1, 1) blocks, assume that A and X are square. By the IMT, the equation XA 
+=I implies that A is invertible and X = A–1. (See the boxed remark that follows the IMT) Also, X is  
+invertible. Since XZ = 0, X–1 XZ = X–1 0 = 0, so Z must be 0. Finally, from the equality of the (2, 1) 
+blocks, YA = –B. Right-multiplication by A–1 shows that YAA–1 = –BA–1 and Y = –BA–1. The order of 
+the factors for Y is crucial. 
+ 8. Compute the left side of the equation: 
+   0000 0 0 0 0 0 0ABXY Z A XB A YB A ZB III X I Y I Z I I +++⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥ ++ +⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  Set this equal to the right side of the equation: 
+   0000 0 0AX AY AZ B I II+⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+  To use the equality of the (1, 1) blocks, assume that A and X are square. By the IMT, the equation XA 
+=I implies that A is invertible and X = A–1. (See the boxed remark that follows the IMT. Since AY = 
+0, from the equality of the (1, 2) blocks, left-multiplication by A–1 gives A–1AY = A–10 = 0, so Y = 0. 
+Finally, from the (1, 3) blocks, AZ = –B. Left-multiplication by A–1 gives A–1AZ = A–1(–B), and Z = – 
+A–1B. The order of the factors for Z is crucial. 
+Note: The Study Guide tells students, “Problems such as 5–10 make good exam questions. Remember to 
+mention the IMT when appropriate, and remember that matrix multiplication is generally not 
+commutative.” When a problem statement includes a condition that a matrix is square, I expect my 
+students to mention this fact when they apply the IMT. 
+  
+----- pagina 25 -----
+2.4  Solutions   111  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. Compute the left side of the equation: 
+   
+11 12 11 21 31 12 22 32
+21 21 22 21 11 21 31 21 12 22 32
+31 31 32 31 11 21 31 31 12 22 32
+00 0 0 0 0
+00 0
+00 0
+IB B I B B B I B B B
+AI BB A B I B BA B I B B
+AI B B A B B I B A B B I B
+++ ++⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=+ + + +⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥++ ++⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Set this equal to the right side of the equation: 
+   
+11 12 11 12
+21 11 21 21 12 22 22
+31 11 31 31 12 32 32
+0
+0
+BB C C
+AB B AB B C
+AB B AB B C
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ++ =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ++⎣⎦ ⎣ ⎦
+ 
+   so that 
+11 11 12 12
+21 11 21 21 12 22 22
+31 11 31 31 12 32 32
+0
+0
+BC BC
+AB B AB B C
+AB B AB B C
+==
++= +=
++= +=
+ 
+  Since the (2,1) blocks are equal, 21 11 21 21 11 210a n d .AB B AB B+= = −  Since B11 is invertible, right 
+multiplication by 1111 21 21 11gives .BA B B−− =−  Likewise since the (3,1) blocks are equal, 
+31 11 31 31 11 310a n d .AB B AB B+= = −  Since B11 is invertible, right multiplication by 
+11
+11 31 31 11gives .BA B B−− =−  Finally, from the (2,2) entries, 
+11
+21 12 22 22 21 21 11 22 21 11 12 22. S i n c e , .AB B C A BB C BB B B −−+ = =− =− +  
+ 10. Since the two matrices are inverses, 
+   
+00 00 0 0
+00 0 0
+00
+II I
+AI PI I
+BDIQRI I
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ =⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+Compute the left side of the equation: 
+   
+00 00 0 0 0 0 0 0 0 0 0
+0 0 0000 0 0
+00 0
+II I I P Q I I R I I
+AI PI A I I P Q A I I R A I I
+BDIQRI B ID P I QB D II RB D I I
+++ + + + +⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ =+ + + + + +⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ++ + + + +⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  Set this equal to the right side of the equation: 
+   
+00 0 0
+00 0
+00
+II
+AP I I
+BD PQ DR I I
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ +=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥++ +⎣⎦ ⎣ ⎦
+  
+   so that 
+00 00
+00 0
+00
+II
+AP I I
+BD PQ DR I I
+== =
++= = =
+++ = + = =
+ 
+  Since the (2,1) blocks are equal, 0a n dAP P A+= = − . Likewise since the (3, 2) blocks are equal, 
+0a n d .DR R D+= = −  Finally, from the (3,1) entries, 0a n d .B DP Q Q B DP++ = = − −  
+Since , ( )PA QB D A B D A=− =− − − =− + . 
+ 11. a . True. See the subsection Addition and Scalar Multiplication . 
+b. False. See the paragraph before Example 3. 
+----- pagina 26 -----
+112 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. a . False.  The both AB and BA are defined.   
+b. False. The RT and QT also need to be switched. 
+13.  You are asked to establish an if and only if statement. First, supose that A is invertible,  
+  and let 1 DEA FG− ⎡⎤= ⎢⎥⎣⎦ . Then 
+   0000BD E B D B E ICFG C FC G I⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  Since B is square, the equation BD = I implies that B is invertible, by the IMT. Similarly, CG = I 
+implies that C is invertible. Also, the equation BE = 0 imples that 1E B−= 0 = 0. Similarly F = 0. 
+Thus 
+   
+1 1
+1
+1
+00
+0 0
+BD E BA CE G C
+− −
+−
+−
+⎡⎤⎡⎤ ⎡ ⎤== = ⎢⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎢⎥⎣⎦   (*) 
+  This proves that A is invertible only if B and C are invertible. For the “if ” part of the statement, 
+suppose that B and C are invertible. Then (*) provides a likely candidate for 1A−  which can be used 
+to show that A is invertible. Compute: 
+   
+11
+11
+00 0 0
+00 00
+BB B B I
+CI CC C
+−−
+−−
+⎡⎤ ⎡ ⎤⎡⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+  Since A is square, this calculation and the IMT imply that A is invertible. (Don’t forget this final 
+sentence. Without it, the argument is incomplete.) Instead of that sentence, you could add the 
+equation: 
+   
+11
+11
+00 0 0
+0000
+BB B B I
+CICC C
+−−
+−−
+⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+ 14. You are asked to establish an if and only if statement. First suppose that A is invertible. Example 5 
+shows that A11 and A22 are invertible. This proves that A is invertible only if A11 A22 are invertible. For 
+the if part of this statement, suppose that A11 and A22 are invertible. Then the formula in Example 5 
+provides a likely candidate for 1A−  which can be used to show that A is invertible . Compute: 
+   
+11 1 111 1
+11 11 12 11 11 12 22 12 2211 12 11 11 12 22
+1 11 1122 22 11 12 22 22 2222 11
+11 1
+11 11 12 22 12 22
+11
+12 22 12 22
+0( )
+0 00 0 ( )0
+()
+0
+0
+AA A A A A A A AAA AA A A
+A AA A A AA AA
+IA A A A A A
+I
+IA AA A
+I
+−− − −−− −
+− −− −−
+−− −
+−−
+⎡ ⎤+− +⎡⎤⎡⎤ − ⎢ ⎥=⎢⎥⎢⎥ +− +⎢ ⎥⎢⎥⎣⎦ ⎣⎦ ⎣ ⎦
+⎡⎤ −+= ⎢⎥
+⎣⎦
+⎡⎤ −+= ⎢
+⎣
+0
+0
+I
+I
+⎡⎤=⎥ ⎢⎥⎣⎦⎦
+ 
+  Since A is square, this calculation and the IMT imply that A is invertible. 
+ 15. The column-row expansions of G k and Gk+1 are: 
+   
+11 ...col ( ) row ( ) col ( ) row ( )
+T
+kk k
+TT
+k k kk kk
+GX X
+XX X X
+=
+=+ +
+ 
+----- pagina 27 -----
+2.4  Solutions   113  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  and 
+   
+11 1
+11 11 1 1 11 11
+11 1 1 1
+11 1
+...col ( ) row ( ) col ( ) row ( ) col ( ) row ( )
+...col ( ) row ( ) col ( ) row ( ) col ( ) row ( )
+col ( ) row ( )
+T
+kk k
+TT T
+k k kk kk k k k k
+TT T
+k k kk kk k k k k
+T
+kk k k k
+GX X
+XX X X X X
+XX X X X X
+GX X
+++ +
+++ + + + + + +
+++ +
+++ +
+=
+=+ + +
+=+ + +
+=+
+ 
+  since the first k columns of Xk+1 are identical to the first k columns of Xk. Thus to update Gk to 
+produce Gk+1, the matrix colk+1 (Xk+1) rowk+1 () TkX should be added to Gk. 
+16. Compute the right side of the equation: 
+   
+11 111111
+11 1111
+000
+00 0
+AA YAI A IY IY
+XA XA Y SXA SXI S I I
+⎡ ⎤⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ == ⎢ ⎥⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ +⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+  Set this equal to the left side of the equation: 
+   
+11 1111 11 11 12 11 12
+11 2111 11 21 22 11 22
+ so that   
+AAAA Y A A A Y A
+XA AXA XA Y S A A XA Y S A
+= =⎡⎤ ⎡ ⎤=⎢⎥ ⎢ ⎥ =++ =⎣⎦ ⎣ ⎦   
+  Since the (1, 2) blocks are equal, 11 12 .AY A =  Since A11 is invertible, left multiplication by 111A− gives  
+Y = 111 12 .AA−  Likewise since the (2,1) blocks are equal, X A11 = A21. Since A11 is invertible, right 
+multiplication by 111A− gives that 121 11 .XA A −=  One can check that the matrix S as given in the exercise 
+satisfies the equation 11 22XA Y S A+= with the calculated values of X and Y given above. 
+ 17. Suppose that A and A11 are invertible. First note that  
+   00 0 0II IXI XI I⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  and 
+   0 00 0IYI Y III I −⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  Since the matrices 0  and  0II YXI I⎡⎤⎡ ⎤⎢⎥⎢ ⎥⎣⎦⎣ ⎦  
+are square, they are both invertible by the IMT. Equation (7) may be left multipled by  
+1
+0I
+XI
+−
+⎡⎤
+⎢⎥⎣⎦  and right multipled by 
+1
+0
+IY
+I
+−
+⎡⎤
+⎢⎥⎣⎦ to find  
+   
+11
+11 00
+00
+AII Y ASX I I
+−−
+⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  Thus by Theorem 6, the matrix 11 00A S⎡⎤⎢⎥⎣⎦ is invertible as the product of invertible matrices. Finally, 
+Exercise 13 above may be used to show that S is invertible. 
+  
+----- pagina 28 -----
+114 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 18. Since [] 0 ,WX= x  
+   
+0
+0
+00 0 0
+ [ ]
+TT T
+T
+TT T
+XX X XWW X
+X
+⎡⎤ ⎡ ⎤
+==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+xx
+xx x x
+ 
+  By applying the formula for S from Exercise 15, S may be computed: 
+   
+1
+00 0 0
+1
+00
+00
+()
+(( ) )
+TT T T
+TT T
+m
+T
+SX X X X
+IX X X X
+M
+−
+−
+=−
+=−
+=
+xx x x
+xx
+xx
+ 
+ 19. The matrix equation (8) in the text is equivalent to  
+   ()  a n d  nAs I B C−+ = + =xu 0 x u y  
+  Rewrite the first equation as () . nAs I B−= − xu When nAs I− is invertible, 
+   11() ( ) ()nnAs I B As I B−−=− − = − −xuu  
+  Substitute this formula for x into the second equation above:    
+   11(( ) )  s o t h a t  ( )nm nC A sI B I C A sI B−−−− + = − − =uu y u u y,  
+  Thus 1(( ) ) .mnIC A s IB −=− −yu If 1() ( ) , mnWs I CA s I B −=− − then ().Ws=yu  The matrix W(s) is 
+the Schur complement of the matrix nAs I− in the system matrix in equation (8) 
+ 20. The matrix in question is  
+   n
+m
+AB Cs I B
+CI
+−−⎡⎤
+⎢⎥ −⎣⎦  
+  By applying the formula for S from Exercise 16, S may be computed: 
+   
+1
+1
+() ( )
+()
+mn
+mn
+SI C A B Cs I B
+IC A B C s IB
+−
+−
+=− − − −
+=+ − −
+ 
+ 21. a . 2 210 0010 10 1 021 21 0 1 22 0( 1 )A ++⎡⎤⎡⎤ ⎡⎤ ⎡ ⎤== = ⎢⎥⎢⎥ ⎢⎥ ⎢ ⎥−− −+ −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦  
+b. 
+2
+2
+2
+00 0 0 0 0
+00( )
+AA A IM IA IA I AA A⎡⎤ ++⎡⎤ ⎡⎤ ⎡ ⎤== = ⎢⎥⎢⎥ ⎢⎥ ⎢ ⎥−− −+ −⎣⎦ ⎣⎦ ⎣ ⎦⎢⎥⎣⎦  
+ 22. Let C be any nonzero 2×2 matrix. Define 
+2
+2
+2
+00
+00
+0
+I
+MI
+CI
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+. Then 
+   
+22 2 2
+2
+22 2 2
+22 2 2
+00 00 0 0 0 0
+00 00 0 0 0 0
+00 0 0 0
+II I I
+MI I I I
+CI CI C C I I
+⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥== =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+----- pagina 29 -----
+2.4  Solutions   115  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 23. The product of two 1×1 “lower triangular” matrices is “lower triangular.” Suppose that for n = k, the 
+product of two k×k lower triangular matrices is lower triangular, and consider any (k+1)× (k+1) 
+matrices A1 and B1. Partition these matrices as 
+   11 ,
+TTabAB
+AB
+⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+00
+vw
+ 
+  where A and B are k×k matrices, v and w are in Rk, and a and b are scalars. Since A1 and B1 are lower 
+triangular, so are A and B. Then 
+   11
+TT TTT T
+T
+ab a Bab a bAB
+AB b A A B bA A B
+⎡⎤⎡⎤ ⎡ ⎤ ⎡ ⎤++== = ⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ +++⎢⎥⎣⎦ ⎣ ⎦ ⎣ ⎦⎣⎦ 0w 0 000 0vw v wvw v 0  
+  Since A and B are k×k, AB is lower triangular. The form of A1B1 shows that it, too, is lower 
+triangular. Thus the statement about lower triangular matrices is true for n = k +1 if it is true for n = 
+k. By the principle of induction, the statement is true for all n > 1. 
+ 
+Note: Exercise 23 is good for mathematics and computer science students. The solution of Exercise 23 in 
+the Study Guide  shows students how to use the principle of induction. The Study Guide  also has an 
+appendix on “The Principle of Induction,” at the end of Section 2.4. The text presents more applications 
+of induction in Section 3.2 and in the Supplementary Exercises for Chapter 3.  
+ 24. Let 
+100 0 1 0 0 0
+110 0 1 1 0 0
+,111 0 0 1 1 0
+111 1 0 11
+nnAB
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥== −
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+""
+#% # % %
+""
+. 
+  By direct computation A2B2 = I2. Assume that for n = k, the matrix AkBk is Ik, and write 
+   11
+11    and   TTkk
+kk
+AB
+AB
+++
+⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+00
+vw
+ 
+  where v and w are in Rk , vT = [1  1  ⋅ ⋅ ⋅  1], and wT = [–1  0  ⋅ ⋅ ⋅  0]. Then  
+   11 1
+111 1 TT TTT T k
+kk kT
+kk k kk k
+BAB I
+AB I AA B
+++ +
+⎡⎤⎡⎤ ⎡ ⎤ ⎡ ⎤ ++== = = ⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ++⎢⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦ 0w 0 000 0vw 0vw v 0  
+  The (2,1)-entry is 0 because v equals the first column of Ak., and Akw is –1 times the first column of 
+Ak. By the principle of induction, AnBn = In for all n > 2. Since An and Bn are square, the IMT shows 
+that these matrices are invertible, and 1.nnBA −=  
+Note: An induction proof can also be given using partitions with the form shown below. The details are 
+slightly more complicated. 
+   11    and   11
+kk
+kk TT
+AB
+AB++
+⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+00
+vw
+ 
+----- pagina 30 -----
+2.3  Solutions   101  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   D –1 =
+310
+100 14 13 013
+−⎡⎤
+⎢⎥−−⎢⎥
+⎢⎥ −⎣⎦
+ 
+  To find the forces (in pounds) required to prod uce a deflection of .04 cm at point 3, most students 
+will use technology to solve Df = (0, 0, .04) and obtain (0, –4/3, 4).  
+  Here is another method, based on the idea suggested in Exercise 42. The first column of D–1 lists the 
+forces required to produce a deflection of 1 in. at point 1 (with zero deflection at the other points). 
+Since  the transformation y 6 D–1y is linear, the forces required to produce a deflection of .04 cm at 
+point 3 is given by .04 times the third column of D–1, namely (.04)(100/3) times (0, –1, 3), or (0, –
+4/3, 4) pounds. 
+41. To determine the forces that produce deflections of .07, .12, .16, and .12 cm at the four points on the 
+beam, use technology to solve Df = y, where y = (.07, .12, .16, .12). The forces at the four points are 
+.95, 6.19, 11.43, and 3.81 newtons, respectively. 
+42. [M]   To determine the forces that produce a deflection of .22 cm at the second point on the beam, use 
+technology to solve Df = y, where y = (0, .22, 0, 0). The forces at the four points are –10.476, 
+31.429, 
+   –10.476, and 0 newtons, respectively (to three significant digits). These forces are .22 times the 
+entries in the second column of D–1. Reason: The transformation 1D−yy6  is linear, so the forces 
+required to produce a deflection of .22 cm at the second point are .22 times the forces required to 
+produce a deflection of 1 cm at the second point. These forces are listed in the second column of D–1. 
+  Another possible discussion: The solution of Dx = (0, 1, 0, 0) is the second column of D–1.  
+Multiply both sides of this equation by .22 to obtain D(.22x) = (0, .22, 0, 0). So .22x is the solution  
+of Df = (0, .22, 0, 0). (The argument uses linearity, but students may not mention this.) 
+Note: The Study Guide  suggests using  gauss, swap, bgauss, and scale to reduce [ A    I] 
+because  I prefer to postpone the use of ref (or rref) un til later. If you wish to introduce ref now, 
+see the Study Guide’s technology notes for Sections 2.8 or 4.3. (Recall that Sections 2.8 and 2.9 are only 
+covered when an instructor plans to skip Chapter 4 and get quickly to eigenvalues.) 
+2.3 SOLUTIONS 
+Notes: This section ties together most of the concepts studied thus far. With strong encouragement from 
+an instructor, most students can use this opportunity to review and reflect upon what they have learned, 
+and form a solid foundation for future work. Students who fail to do this now usually struggle throughout 
+the rest of the course. Section 2.3 can be used in at least three different ways.  
+(1) Stop after Example 1 and assign exercises only from among the Practice Problems and Exercises 
+1 to 28. I do this when teaching “Course 3” described in the text's “Notes to the Instructor. ” If you did not 
+cover Theorem 12 in Section 1.9, omit statements (f) and (i) from the Invertible Matrix Theorem. 
+(2) Include the subsection “Invertible Linear Transformations” in Section 2.3, if you covered Section 
+1.9. I do this when teaching “Course 1” because our mathematics and computer science majors take this 
+class. Exercises 29–40 support this material. 
+(3) Skip the linear transformation material here, but discusses the condition number  and the 
+Numerical Notes. Assign exercises from among 1–28 and 41–45, and perhaps add a computer project on 
+----- pagina 31 -----
+2.4  Solutions   117  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+     For [ j=10, j<=19, j++, 
+     A [[ i,j ]] = B [[ i-4, j-9 ]] ] ]; Colon suppresses 
+output. 
+c. To create 00 TAB A⎡⎤= ⎢⎥⎣⎦  with MATLAB, build B out of four blocks: 
+   B = [A zeros(20,20); zeros(30,30) A’]; 
+  Another method: first enter  B = A ; and then enlarge B with the command 
+   B(21:50, 31:50) = A’; 
+  This places AT in the (2, 2) block of the larger B and fills in the (1, 2) and (2, 1) blocks with zeros.  
+  For Maple: 
+   B := matrix(50,50,0): 
+   copyinto(A, B, 1, 1): 
+   copyinto( transpose(A), B, 21, 31): 
+  For Mathematica: 
+  B = BlockMatrix[ {{A, ZeroMatrix[20,20]}, ZeroMatrix[30,30], 
+Transpose[A]}} ] 
+ 27. a . [M]  Construct A from four blocks, say C11, C12, C21, and C22, for example with C11 a 30×30 
+matrix and C22 a 20×20 matrix. 
+  MATLAB: C11 = A(1:30, 1:30) + B(1:30, 1:30) 
+   C12 = A(1:30, 31:50) + B(1:30, 31:50) 
+   C21 = A(31:50, 1:30)+ B(31:50, 1:30) 
+   C22 = A(31:50, 31:50) + B(31:50, 31:50) 
+   C = [C11 C12; C21 C22] 
+  The commands in Maple and Mathematica are analogous, but with different syntax. The first 
+commands are: 
+  Maple: C11 := submatrix(A, 1..30, 1..30) + submatrix(B, 1..30, 
+1..30) 
+  Mathematica:  C11 := Take[ A, {1,30), {1,30} ] + Take[B, {1,30), {1,30} 
+] 
+b. The algebra needed comes from block matrix multiplication: 
+   11 12 11 12 11 11 12 21 11 12 12 22
+21 22 21 22 21 11 22 21 21 12 22 22
+AA BB A B A B A B A BAB AA BB A B A BA B A B ++⎡⎤ ⎡⎤ ⎡ ⎤==⎢⎥ ⎢⎥ ⎢ ⎥ ++⎣⎦ ⎣⎦ ⎣ ⎦  
+Partition both A and B, for example with 30×30 (1, 1) blocks and 20×20 (2, 2) blocks. The four 
+necessary submatrix computations use syntax analogous to that shown for (a). 
+c. The algebra needed comes from the block matrix equation 11 1 1
+21 22 2 2
+0A
+AA
+⎡ ⎤⎡ ⎤ ⎡ ⎤ =⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦xbxb , where x1 
+and b1 are in R20 and x2 and b2 are in R30. Then A1 1x1 = b1, which can be solved to produce x1. 
+Once x1 is found, rewrite the equation A21x1 + A22x2 = b2 as A22x2 = c, where c = b2 – A21x1, and 
+solve A22x2 = c for x2. 
+Notes: The following may be used in place of Example 5:
+----- pagina 32 -----
+2.4  Solutions   118  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Example 5 : Use equation (*) to find formulas for X, Y, and Z in terms of A, B, and C. Mention any 
+assumptions you make in order to produce the formulas. 
+   00 0XI IYZA B CI⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦       ( * )  
+  Solution : 
+  This matrix equation provides four equations that can be used to find X, Y, and Z: 
+   X  + 0 = I, 0 = 0 
+   YI  + ZA = C,  Y 0 + ZB = I (Note the order of the factors.) 
+  The first equation says that X = I. To solve the fourth equation, ZB = I, assume that B and Z are 
+square. In this case, the equation ZB = I implies that B and Z are invertible, by the IMT. (Actually, it 
+suffices to assume either that B is square or that Z is square.) Then, right-multiply each side of ZB = I 
+to get ZBB–1 = IB–1 and Z = B–1. Finally, the third equation is Y + ZA = C. So, Y + B–1A = C, and Y = 
+C – B–1A. 
+  The following counterexample shows that Z need not be square for the equation (*) above to be true. 
+   
+100 010 00 0 1000 01 0001 00 0 01 00 112512 13 1 65 10 111334 10 1 3601 1124⎡⎤⎡⎤ ⎡ ⎤ ⎢⎥⎢⎥ ⎢ ⎥ ⎢⎥⎢⎥ ⎢ ⎥ ⎢⎥ =⎢⎥ ⎢ ⎥ ⎢⎥ −−⎢⎥ ⎢ ⎥ ⎢⎥−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎢⎥ −⎣⎦  
+  Note that Z is not determined by A, B, and C, when B is not square. For instance, another Z that 
+works in this counterexample is 35 012 0Z ⎡⎤= ⎢⎥−−⎣⎦ . 
+2.5 SOLUTIONS 
+Notes: Modern algorithms in numerical linear algebra are often described using matrix factorizations. 
+For practical work, this section is more important than Sections 4.7 and 5.4, even though matrix 
+factorizations are explained nicely in terms of change of bases. Computational exercises in this section 
+emphasize the use of the LU factorization to solve linear systems. The LU factorization is performed 
+using the algorithm explained in the paragraphs before Example 2, and performed in Example 2. The text 
+discusses how to build L when no interchanges are needed to reduce the given matrix to U. An appendix 
+in the Study Guide discusses how to build L  in permuted unit lower triangular form when row 
+interchanges are needed. Other factorizations are introduced in Exercises 22–26. 
+ 1. 
+10 0 372 7
+1 1 0 , 0 2 1 , 5 . First, solve .
+25 1 001 2
+LU L
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− = − − = =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+by b  
+  
+10 07 10 07
+[] 1 1 05 ~ 01 02
+25 12 05 1 1 6
+L
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+b .   The only arithmetic is in column 4 
+----- pagina 33 -----
+2.5  Solutions   119  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+100 7 7
+ 01 0 2 ,  s o  2 .
+001 6 6
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥∼− = −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+y  
+  Next, solve Ux = y, using back-substitution (with matrix notation). 
+  
+3727 3727 37 01 9
+[ ] 02120212 02 0 8
+0016001600 1 6
+U
+−−− −−− − −⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥= − − −  ∼ − − −  ∼ − −⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ −− −⎣⎦ ⎣⎦ ⎣⎦
+y  
+          
+3 70 1 9 300 9 100 3
+~ 0 10 4 0 10 4 0 10 4
+0 01 6 001 6 001 6
+−−⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥  ∼  ∼ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ −−−⎣ ⎦ ⎣⎦ ⎣⎦
+, So x = 
+3
+4.
+6
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+  To confirm this result, row reduce the matrix [ A b]: 
+  
+3727 3727 3727
+[ ] 351502120212
+64020 1 04 1 60016
+A
+−−− −−− −−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥= −  ∼ − − −  ∼ − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+b  
+  From this point the row reduction follows that of [ U   y] above, yielding the same result. 
+ 
+ 2. 
+1 0 0 264 2
+21 0 ,  0 4 8 ,  4
+0 1 1 002 6
+LU
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− = − =−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦
+b . First, solve Ly = b: 
+  
+100 2 1002
+[] 2 1 0 40 1 0 0  ,
+011 6 001 6
+L
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− −  ∼  ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+b  so 
+2
+0.
+6
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+y  
+  Next solve Ux = y, using back-substitution (with matrix notation): 
+  
+264 2 26 0 1 4
+[ ] 048 0 04 0 2 4
+002 6 00 13
+U
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=−  ∼  −  ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −−⎣⎦ ⎣⎦
+y  
+  
+200 2 2 100 1 1
+01 0 6 01 0 6 ,
+001 3 001 3
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥∼ − ∼ −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −−⎣⎦ ⎣⎦
+ so 
+11
+6.
+3
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+x      
+  To confirm this result, row reduce the matrix [ A   b]: 
+  
+26 42 264 2
+[ ] 48 04 048 0
+04 66 002 6
+A
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− −  ∼  −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+b  
+  From this point the row reduction follows that of [ U  y] above, yielding the same result. 
+ 3. 
+10 0 2 4 2 6
+2 1 0,  0 3 6,  0
+31 1 00 1 6
+LU
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− = − =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦
+b . First, solve Ly = b: 
+----- pagina 34 -----
+120 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+1 006 1 00 6 100 6
+[ ] 21 0 0 01 01 2 0 1 0 1 2  ,
+31 1 6 01 11 2 0 0 1 0
+L
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− ∼ ∼⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+b   so 
+6
+12 .
+0
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+y  
+  Next solve Ux = y, using back-substitution (with matrix notation): 
+  
+2 4 26 2 4 06 2 0 0 1 0 1 0 0 5
+[ ] 0 3 6 1 2 0 3 0 1 2 0 1 0 4 0 1 0 4
+0 0 10 0 0 10 0 0 1 0 0 0 1 0
+U
+−− −−⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥=− ∼− ∼ − ∼ −⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+y    , 
+  so 
+5
+ 4.
+0
+−⎡⎤
+⎢⎥=− ⎢⎥
+⎢⎥⎣⎦
+x   
+ 4 . 
+10 0 112 0
+11 0 , 021 , 5
+35 1 006 7
+LU
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥== − − = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+b . First, solve Ly = b: 
+  
+10 00 10 00 1 0 0 0
+[] 11 0 501 050 1 0 5  ,
+3 5 17 05 17 0 0 11 8
+L
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=− ∼− ∼−⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦ ⎣⎦
+b  so 
+0
+5 .
+18
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥−⎣⎦
+y  
+  Next solve Ux = y, using back-substitution (with matrix notation): 
+  
+112 0 11 20 11 06
+[ ] 021 5   0215   02 02
+0061 8001300 13
+U
+−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− − − ∼− − − ∼− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+y  
+  
+11 06 1 0 05
+01 010 1 01  ,
+00 13 0 0 13
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥∼∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ so x =
+5
+1
+3
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+ 5. 
+10 00 1 2 2 3 1
+31 00 0 3 6 0 6 ,,   .1 01 0 0024 0
+3 42 1 0001 3
+LU
+−−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥== =⎢⎥ ⎢ ⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+b  First solve Ly = b: 
+   
+10 00 1 10 00 1
+31 006 01 003[] 10 100 00 10 1
+34 21 3 04 21 6
+L
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥=∼⎢⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+b  
+   
+10 00 1 1000 1
+01 00 3 01 00 3 ,00 10 1 0010 1
+00 21 6 0001 4
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥∼∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+ so 
+1
+3 .1
+4
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+y  
+  Next solve Ux = y, using back-substitution (with matrix notation): 
+----- pagina 35 -----
+2.5  Solutions   121  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+12231 122 01 1 122 0 1 1
+03603 036 0 3 036 0 3[] 00241002 01 7 001 0 1 7 / 2
+00014 000 1 4 000 1 4
+U
+−−− −− − −− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−−⎢⎥ ⎢ ⎥ ⎢ ⎥=∼ ∼⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+y  
+  
+1 200 6 1 200 6 1000 3 8
+0 300 4 8 0 100 1 6 0100 1 6
+00 1 0 1 7 / 2 00 1 0 1 7 / 2 0 0 1 0 1 7 / 2
+0 001 4 0 001 4 0001 4
+−−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−−⎢⎥ ⎢⎥ ⎢ ⎥∼∼ ∼∼⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣⎦ ⎣ ⎦
+,   so x =
+38
+16
+17 / 2
+4−
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+. 
+ 6. 
+100 0 1 320 1
+21 0 0 0 30 1 2 2 ,  , .331 0 0 02 0 1
+541 1 0 001 2
+LU
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥== =⎢⎥ ⎢ ⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+b  First, solve Ly = b: 
+   
+100 0 1 100 0 1 1 00 0 1
+2 1 00 2 0 1 00 0 01 00 0[] 331 01031 04 0 01 04
+5 4 11 2 0 4 11 7 00 11 7
+L
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥=∼ ∼⎢⎥ ⎢ ⎥ ⎢ ⎥−− −− −
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦ ⎣ ⎦
+b  
+    
+1000 1
+01 00 0 ,0010 4
+0001 3
+⎡⎤
+⎢⎥
+⎢⎥∼ ⎢⎥ −
+⎢⎥
+⎣⎦
+ so 
+1
+0 .4
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+y  Next solve Ux = y, using back-substitution (with 
+matrix notation): 
+   
+13 2 0 1 13 20 1 1300 3
+03 0 1 2 0 03 00 3 6 0300 3 6[] 00 2 0 4 00 20 4 0010 2
+00 0 1 3 00 01 3 0001 3
+U
+−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−−⎢⎥ ⎢⎥ ⎢ ⎥=∼∼⎢⎥ ⎢⎥ ⎢ ⎥−− −−
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎣⎦ ⎣⎦ ⎣ ⎦
+y  
+   
+1000 3 3
+01 00 1 2
+0010 2
+0001 3
+⎡⎤
+⎢⎥ −⎢⎥∼ ⎢⎥
+⎢⎥
+⎣⎦
+, so x 
+33
+12
+2
+3
+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+. 
+  
+----- pagina 36 -----
+122 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 7. Place the first pivot column of 2534⎡⎤⎢⎥−−⎣⎦  into L, after dividing the column by 2 (the pivot), then add  
+3/2 times row 1 to row 2, yielding U. 
+   252 5 ~34 0 7 / 2AU ⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦  
+   2  3 [7/2]⎡⎤⎢⎥−⎣⎦  
+   27 / 2÷÷  
+   11 0 , 3/2 1 3/2 1L⎡⎤ ⎡⎤ =⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦  
+ 8. Row reduce A to echelon form using only row replacement operations. Then follow the algorithm in 
+Example 2 to find L. 
+   64 6412 5 0 3AU ⎡⎤ ⎡ ⎤=∼  =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+   
+[]
+6  312⎡⎤⎢⎥ −⎣⎦  
+   
+63
+11 0 , 21 21 L
+÷÷ −
+⎡⎤⎡⎤ =⎢⎥⎢⎥⎣⎦⎣⎦
+ 
+ 9. 
+31 2 312 312
+90 4 032 ~ 032
+991 4 068 004
+AU
+⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥=− − ∼ =⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦
+ 
+   
+[]
+3
+9 3  94 6
+⎡⎤
+⎢⎥− ⎡⎤⎢⎥ ⎢⎥⎢⎥⎣⎦ ⎣⎦  
+      ÷3         ÷ 3       ÷ 4 
+    
+----- pagina 37 -----
+2.5  Solutions   123  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+11 0 0
+31 ,  31 0
+32 1 32 1
+L
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−= −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+ 10. 
+5 0 4 5 0 4 504
+1 0 25 ~ 0 23 ~ 0 2 3
+10 10 16 0 10 24 0 0 9
+AU
+−−−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥=− =⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  
+[]
+5
+10 2
+10 9 10
+529
+11 0 0
+21 ,  21 0
+251 251
+L
+−⎡⎤
+⎢⎥ ⎡⎤⎢⎥ ⎢⎥⎢⎥⎣⎦ ⎣⎦
+÷− ÷ ÷
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−= −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+ 
+ 11. 
+37 2 3 7 2 3 7 2
+61 94 050 050
+3 23 055 005
+AU
+⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥= ∼∼=⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥−−⎣ ⎦ ⎣⎦ ⎣⎦
+ 
+    
+   
+3
+6 5 3  5 [5]
+355
+11 0 0
+21 ,  21 0
+11 1 11 1
+L
+⎡⎤
+⎢⎥ ⎡⎤⎢⎥ ⎢⎥⎢⎥−⎣⎦ ⎣⎦
+÷÷÷
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+ 12. Row reduce A to echelon form using only row replacement operations. Then follow the algorithm in 
+Example 2 to find L. Use the last column of I3 to make L unit lower triangular. 
+----- pagina 38 -----
+124 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+23 2 232 2 3 2
+41 39 0 7 5 07 5
+6 5 4 0 14 10 0 0 0
+2
+4 7
+6 14
+27
+11 0 0
+21 ,  210
+321 321
+AU
+L
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=∼ ∼ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦
+⎡⎤
+⎢⎥ ⎡⎤⎢⎥ ⎢⎥⎢⎥−⎣⎦ ⎣⎦
+÷÷
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ =⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+ 
+ 13. 
+13 53 1 353 1353
+15 84 0 231 0231 No more pivots!42 57 01 0 1 55 0000
+24 75 0 231 0000
+U
+−− −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥ ∼∼ =⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  
+4
+1
+1 2  4 10
+Use the last two columns of to make  unit lower triangular.2 2 IL
+⎡⎤
+⎢⎥− −⎡⎤⎢⎥ ⎢⎥⎢⎥ −⎢⎥⎢⎥ ⎢⎥−⎣⎦ ⎣⎦  
+  
+1– 2
+1 1 000
+11 11 0 0 , 45 1 45 1 0
+21 0 1 21 0 1
+L
+÷÷
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−−⎢⎥ ⎢⎥ =⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−− −−⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+ 14. 
+1315 13 1 5 1 3 1 5
+52 0 6 3 1 0 51 6 0516
+2 1 1 4 0 51 6 0000
+1 7 1 7 01 021 2 0000
+AU
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥=∼ ∼ =⎢⎥ ⎢ ⎥ ⎢ ⎥−−−−
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+----- pagina 39 -----
+2.5  Solutions   125  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+4
+1
+55
+52
+Use the last two columns of to make  unit lower triangular.101 IL
+⎡⎤
+⎢⎥ ⎡⎤⎢⎥ ⎢⎥⎢⎥− ⎢⎥⎢⎥ ⎢⎥− ⎣⎦⎣⎦  
+   
+15
+11 0 0 0
+51 51 00 , 211 211 0
+1201 120 1
+L
+÷÷
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ =⎢⎥ ⎢⎥−−
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+ 
+ 15. 
+20 5 2 205 2 2052
+6 3 1 3 30 3 2 30 3 2 3
+4 9 16 17 0 9 6 13 0 0 0 4
+AU
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− − − ∼ ∼ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+[]
+2
+6 3
+44 9
+234
+11 0 0
+31 ,  310
+231 23 1
+L
+⎡⎤
+⎢⎥− ⎡⎤⎢⎥ ⎢⎥⎢⎥ ⎣⎦⎣⎦
+÷÷÷
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−= −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+ 16. 
+23 4 23 4 23 4
+48 7 02 1 02 1
+~~651 4 04 2 00 0
+691 2 00 0 00 0
+861 9 06 3 00 0
+AU
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥== −
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+5
+2
+4 2
+ 6 4
+6 0
+8 6 Use the last three columns of to make  unit lower triangular.IL
+⎡⎤
+⎢⎥− ⎡⎤⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎢⎥ ⎢⎥−⎢⎥ ⎢⎥⎢⎥⎣⎦ ⎣⎦  
+----- pagina 40 -----
+126 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+22
+1 10000
+21 21 000
+, 321 321 0 0
+3001 3001 0
+43001 43001
+L
+÷÷
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ =
+⎢⎥ ⎢⎥−−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+ 17. 
+1 0 0 264
+21 0 ,  0 4 8
+0 1 1 002
+LU
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− = −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ To find L–1, use the method of Section 2.2; that is, row  
+reduce [L   I ]: 
+  1
+100 100 100 1 00
+[ ] 21 001 0 01 0 2 1 0 [ ] ,
+011 001 001 2 11
+LI IL −
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− ∼ =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+   
+so 1
+10 0
+21 0
+21 1
+L−
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−−⎣⎦
+. Likewise to find U –1, row reduce []UI : 
+  
+264 1 0 0 260 1 0 2
+[ ] 048 0 1 0 040 0 1 4
+0 0 2001 0 0 2001
+UI
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=− ∼−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −−⎣⎦ ⎣⎦
+ 
+  1
+2001 3 / 2 4 1001 / 2 3 / 4 2
+01 00 1 / 4 1 01 0 0 1 / 4 1[ ] ,
+0010 0 1 / 2 001 0 0 1 / 2
+IU −
+−− −−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥∼− − ∼ − − =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+  1
+1/ 2 3/4 2
+so 0 1 / 4 1 . Thus
+00 1 / 2
+U −
+−−⎡⎤
+⎢⎥=− −⎢⎥
+⎢⎥ −⎣⎦
+ 
+   11 1
+1/2 3/4 2 1 0 0 3 5/4 2
+0 1/4 1 2 1 0 3/2 3/4 1
+0 0 1/2 2 1 1 1 1/2 1/ 2
+AU L−− −
+−− −⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== − − = − ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥−− − −⎣ ⎦⎣ ⎦ ⎣ ⎦
+ 
+ 18. 1
+10 0 2 4 2
+2 1 0 , 0 3 6 Tofind , row reduce[ ]:
+31 1 00 1
+LU L L I−
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− = −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+     []
+10 0 1 0 0 10 0 1 0 0
+2 100 10 ~ 0 10 2 10
+31 1 0 0 1 01 13 0 1
+LI
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −− −⎣⎦ ⎣⎦
+ 
+----- pagina 41 -----
+2.5  Solutions   127  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  1
+100 100
+~0 1 0 2 1 0 ,
+001 111
+IL −
+⎡⎤
+⎢⎥ ⎡⎤= ⎣⎦⎢⎥
+⎢⎥ −⎣⎦
+1
+100
+so 2 1 0 .
+111
+L−
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+  1Likewise tofind ,U − []row reduce :UI  
+   []
+24 2 1 0 0 24 0 1 02 24 0 1 02
+03 6 0 1 0 ~ 03 0 0 16 ~ 01 0 01 / 32
+00 1 0 0 1 00 1 0 01 00 1 0 01
+UI
+−− − − −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  
+2001 4 / 36 1001 / 2 2 / 33
+~0 1 0 0 1 / 3 2~0 1 0 0 1 / 3 2
+0010 01 001 0 01
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+1[] ,IU −=  
+  1
+1/ 2 2/3 3
+so 0 1 / 3 2 . Thus
+00 1
+U −
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ 11 1
+1/ 2 2/3 3 1 0 0 23/6 7/3 3
+0 1/3 2 2 1 0 8/3 5/3 2
+00 1 1 1 1 1 1 1
+AU L−− −
+−−⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== − = −⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥−−⎣ ⎦⎣ ⎦ ⎣ ⎦
+ 
+ 19. Let A be a lower-triangular n × n matrix with nonzero entries on the diagonal, and consider the 
+augmented matrix [A  I ]. 
+a. The (1, 1)-entry can be scaled to 1 and the entries below it can be changed to 0 by adding 
+multiples of row 1 to the rows below. This affects only the first column of A and the first column 
+of I. So the (2, 2)-entry in the new matrix is still nonzero and now is the only nonzero entry of 
+row 2 in the first  n columns (because A was lower triangular).  The (2, 2)-entry can be scaled to 
+1, the entries below it can be changed to 0 by adding multiples of row 2 to the rows below. This 
+affects only columns 2 and n + 2 of the augmented matrix. Now the (3, 3) entry in A is the only 
+nonzero entry of the third row in the first n columns, so it can be scaled to 1 and then used as a 
+pivot to zero out entries below it. Continuing in this way, A is eventually reduced to I, by scaling 
+each row with a pivot and then using only row operations that add multiples of the pivot row to 
+rows below. 
+b. The row operations just described only add rows to rows below, so the I on the right in [A I] 
+changes into a lower triangular matrix. By Theorem 7 in Section 2.2, that matrix is A–1. 
+ 20. Let A = LU be an LU factorization for A. Since L is unit lower triangular, it is invertible by Exercise 
+19. Thus by the Invertible Matrix Theroem, L may be row reduced to I. But L is unit lower triangular, 
+so it can be row reduced to I by adding suitable multiples of a row to the rows below it, beginning 
+with the top row. Note that all of the described row operations done to L are row-replacement 
+operations. If elementary matrices E1, E2, … Ep implement these row-replacement operations, then 
+   21 21... ( ... )ppEE E AEE E L U I U U== =  
+  This shows that A may be row reduced to U using only row-replacement operations. 
+  
+  
+----- pagina 42 -----
+128 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+21. (Solution in Study Guide.) Suppose A = BC, with B invertible. Then there exist elementary matrices  
+E1, …, Ep corresponding to row operations that reduce B to I, in the sense that Ep … E1B = I. 
+Applying the same sequence of row operations to A amounts to left-multiplying A by the product Ep 
+… E1. By associativity of matrix multiplication. 
+   11... ...ppEE A EE B C I C C== =  
+  so the same sequence of row operations reduces A to C. 
+ 22. First find an LU factorization for A. Row reduce A to echelon form using only row replacement 
+operations: 
+   
+2423 2423 2423
+6958 0311 0311
+~~2739 0316 0005
+4221 0627 0005
+6334 093 1 3 000 1 0
+A
+−− −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥= −− −−
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+2423
+0311
+~ 0005
+0000
+0000
+U
+−−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥ =
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  then follow the algorithm in Example 2 to find L. Use the last two columns of I5 to make L unit lower 
+triangular. 
+   
+2
+63
+523
+546
+1069
+23 5
+1 1 0 000
+31 31 0 0 0
+,111 111 0 0
+221 1 221 1 0
+332 0 1 332 0 1
+L
+⎡⎤
+⎢⎥ ⎡⎤⎢⎥ ⎢⎥⎢⎥ − ⎡⎤⎢⎥⎢⎥ ⎢⎥⎢⎥ −⎢⎥ ⎢⎥⎢⎥⎢⎥ ⎢⎥−− ⎣⎦⎣⎦ ⎣⎦
+÷÷ ÷
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥=−−
+⎢⎥ ⎢⎥−−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−− −−⎣⎦ ⎣⎦
+ 
+  Now notice that the bottom two rows of U contain only zeros. If one uses the row-column method to 
+find LU, the entries in the final two columns of L will not be used, since these entries will be 
+multiplied by zeros from the bottom two rows of U. So let B be the first three columns of L and let C 
+be the top three rows of U. That is, 
+----- pagina 43 -----
+2.5  Solutions   129  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+100
+242331 0
+,0 3 1 1111
+0005221
+332
+BC
+⎡⎤
+⎢⎥ −−⎡⎤⎢⎥ ⎢⎥⎢⎥== − − ⎢⎥⎢⎥ ⎢⎥− ⎣⎦⎢⎥
+⎢⎥−−⎣⎦
+ 
+  Then B and C have the desired sizes and BC = LU = A. We can generalize this process to the case 
+where A is m × n, A = LU, and U has only three non-zero rows: let B be the first three columns of L 
+and let C be the top three rows of U. 
+ 23. a . Express each row of D as the transpose of a column vector. Then use the multiplication rule for 
+partitioned matrices to write 
+   []
+1
+2
+141234 1 2 2 3 4 3
+3
+4
+T
+T
+TTT T
+T
+T
+AC D
+⎡⎤
+⎢⎥
+⎢⎥== = + + + ⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+d
+dc c c c c d cd cd cd
+d
+d
+ 
+  which is the sum of four outer products. 
+b. Since A has 400 × 100 = 40000 entries, C has 400 × 4 = 1600 entries and D has 4 × 100 = 400 
+entries, to store C and D together requires only 2000 entries, which is 5% of the amount of entries 
+needed to store A directly. 
+ 24. Since Q is square and QTQ = I, Q is invertible by the Invertible Matrix Theorem and Q–1 = QT. Thus 
+A is the product of invertible matrices and hence is invertible. Thus by Theorem 5, the equation  
+  Ax = b has a unique solution for all b. From Ax = b, we have QRx = b, QTQRx = QTb, Rx = QTb, and 
+finally x = R–1QTb. A good algorithm for finding x is to compute QTb and then row reduce the matrix 
+[ R  QTb ]. See Exercise 11 in Section 2.2 for details on why this process works. The reduction is fast 
+in this case because R is a triangular matrix. 
+ 25. A  = UDV T . Since U and V T  are square, the equations U T U = I and V T V = I imply that U and V T  
+are invertible, by the IMT, and hence U–1  = UT  and (VT)–1 = V. Since the diagonal entries 1,, nσσ…  
+in D are nonzero, D is invertible, with the inverse of D being the diagonal matrix with 111 ,, nσσ−− … on 
+the diagonal. Thus A is a product of invertible matrices. By Theorem 6, A is invertible and A–1 = 
+(UDV T ) –1 = (VT)–1D–1U–1 = VD–1UT. 
+ 26. If A = PDP–1, where P is an invertible 3 × 3 matrix and D is the diagonal matrix 
+   
+200
+030
+001
+D
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+  then 
+   21 1 1 1 1 2 1() () ( )A PDP PDP PD P P DP PDIDP PD P−− − − − −== = =  
+  and since 
+   2
+200200 400
+030 030 090
+001 001 001
+D
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥==⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+, 21
+400
+090
+001
+AP P −
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+----- pagina 44 -----
+130 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Likewise, A3 = PD3P –1, so 
+   
+3
+33 1 1
+3
+20 0 80 0
+03 0 02 70
+00 100 1
+AP P P P −−
+⎡⎤ ⎡⎤⎢⎥ ⎢⎥== ⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎣⎦⎢⎥⎣⎦  
+  In general, Ak = PDkP–1, so 
+   1
+20 0
+03 0
+00 1
+k
+kkAP P −
+⎡⎤
+⎢⎥
+= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+ 27. First consider using a series circuit with resistance R1 followed by a shunt circuit with resistance R2 
+for the network. The transfer matrix for this network is 
+   11
+22 1 2 2
+10 1 1
+1/ 1 1/ ( )/ 01
+RR
+R RR R R
+−−⎡⎤ ⎡ ⎤ ⎡⎤ =⎢⎥ ⎢ ⎥ ⎢⎥−− + ⎣⎦⎣⎦ ⎣ ⎦  
+  For an input of 12 volts and 6 amps to produce an output of 9 volts and 4 amps, the transfer matrix 
+must satisfy 
+   11
+21 2 2 12 2
+11 2 612 9
+1/ ( )/ ( 12 6 6 )/ 64
+RR
+RR R R R R R
+−−⎡⎤ ⎡⎤⎡⎤ ⎡ ⎤==⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥−+ − + + ⎣⎦ ⎣ ⎦⎣⎦ ⎣⎦  
+  Equate the top entries and obtain 11 2 ohm.R =  Substitute this value in the bottom entry and solve to 
+obtain 92 2 ohms.R =  The ladder network is 
+ 
+  Next consider using a shunt circuit with resistance R1 followed by a series circuit with resistance R2 
+for the network. The transfer matrix for this network is 
+   12 1 22
+11
+10 ( ) /1
+1/ 1 1/ 101
+R RR RR
+RR
++−− ⎡⎤ ⎡ ⎤⎡⎤ =⎢⎥ ⎢ ⎥⎢⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  For an input of 12 volts and 6 amps to produce an output of 9 volts and 4 amps, the transfer matrix 
+must satisfy 
+   12 1 2 1 2 1 2
+11
+( ) / (12 12 ) / 612 9
+1/ 1 12/ 664
+RRR R R RR R
+RR
++− +−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥−− +⎣⎦ ⎣ ⎦⎣⎦ ⎣ ⎦  
+  Equate the bottom entries and obtain R1 = 6 ohms. Substitute this value in the top entry and solve to 
+obtain 32 4 ohms.R =  The ladder network is  
+a. i2i1 i2 i3
+v3v2v1
+1/2 ohm 9/2
+ohms
+----- pagina 45 -----
+2.5  Solutions   131  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 
+ 28. The three shunt circuits have transfer matrices 
+   
+312
+1010 10 ,, a n d 1/ 11/ 1 1/ 1 RRR ⎡⎤⎡⎤ ⎡ ⎤ ⎢⎥⎢⎥ ⎢ ⎥ −−−⎣⎦ ⎣ ⎦ ⎣⎦  
+  respectively. To find the transfer matrix for the series of circuits, multiply these matrices 
+   
+31 2 321
+10 1 010 10
+1/ 1 ( 1/ 1/ 1/ ) 11/ 1 1/ 1RR R RRR
+⎡⎤ ⎡ ⎤⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−− + +−−⎣⎦ ⎣ ⎦⎣⎦ ⎣ ⎦  
+  Thus the resulting network is itself a shunt circuit with resistance 123
+12 13 23
+RRR
+R RR RR R++  
+ 29. a . The first circuit is a series circuit with resistance R1 ohms, so its transfer matrix is 1101 R−⎡⎤⎢⎥⎣⎦ .  
+The second circuit is a shunt circuit with resistance R2 ohms, so its transfer matrix is 
+2
+10 .1/ 1R⎡⎤⎢⎥−⎣⎦ The third circuit is a series circuit with resistance R3 ohms so its transfer matrix is 
+31
+01
+R−⎡⎤
+⎢⎥⎣⎦ .The transfer matrix of the network is the product of these matrices, in right-to-left 
+order: 
+   32 1 3 1 3231
+22 1 2
+10 1 / /11
+1/ 1 1/ 1 /01 01
+R RR R R R RRR
+RR R R
++− − −−− ⎡⎤ ⎡ ⎤⎡⎤ ⎡ ⎤ ==⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ −− +⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦  
+b. To find a ladder network with a structure like that in part (a) and with the given transfer matrix A, 
+we must find resistances R1, R2, and R3 such that 
+   32 13 1 32
+21 2
+1/ /31 2
+1/ 1 /1/3 5/3
+R RR R R R RA RR R+− − −− ⎡⎤⎡⎤== ⎢⎥⎢⎥ −+−⎣⎦ ⎣⎦  
+  From the (2, 1) entries, R2 = 3 ohms. The (1, 1) entries now give 321/3 ,RR+=  which may be 
+solved to obtain R3 = 6 ohms. Likewise the (2, 2) entries gives 121/5 / 3 ,RR+=  which also may 
+be solved to obtain R1 = 2 ohms. Thus the matrix A may be factored as 
+   31
+2
+1011
+1/ 101 01
+R RA R−− ⎡⎤⎡⎤ ⎡ ⎤= ⎢⎥⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣⎦  
+   16 1 0 1201 1 / 3 1 01−−⎡⎤ ⎡ ⎤ ⎡⎤= ⎢⎥ ⎢ ⎥ ⎢⎥ −⎣⎦ ⎣ ⎦ ⎣⎦  
+ 30. Answers may vary. For example, 
+3 1 21 61010 1 2
+1/3 5/3 0 1 1/6 1 1/6 1 0 1
+−− −⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ =⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−− −⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+b. i2i1 i2 i3
+3/4 ohm
+v3v2v1 6ohms
+----- pagina 46 -----
+132 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The network corresponding to this factorization cons ists of a series circuit, followed by two shunts, 
+followed by another series circuit.  The resistances would be R1=2, R2=6, R3=6, R4=6. 
+      
+Note: The Study Guide’s MATLAB box for Section 2.5 suggests that for most LU factorizations in this 
+section, students can use the  gauss command repeatedly to produce U , and use paper and mental 
+arithmetic to write down the columns of L  as the row reduction to U  proceeds. This is because for 
+Exercises 7–16 the pivots are integers and other entries are simple fractions. However, for Exercises 31 
+and 32 this is not reasonable, and students are expected to solve an elementary programming problem. 
+(The Study Guide provides no hints.) 
+ 31. [M]   Store the matrix A in a temporary matrix B and create L initially as the 8×8 identity matrix. The 
+following sequence of MATLAB commands fills in the entries of L below the diagonal, one column 
+at a time, until the first seven columns are filled. (The eighth column is the final column of the 
+identity matrix.) 
+   L(2:8, 1) = B(2:8, 1)/B(1, 1) 
+   B = gauss(B, 1) 
+   L(3:8, 2) = B(3:8, 2)/B(2, 2) 
+   B = gauss(B, 2) 
+   # 
+   L(8:8, 7) = B(8:8, 7)/B(7, 7) 
+   U = gauss(B,7) 
+  Of course, some students may realize that a loop will speed up the process. The  for..end syntax 
+is illustrated in the MATLAB box for Section 5.6. Here is a MATLAB program that includes the 
+initial setup of B and L: 
+   B = A 
+   L = eye(8) 
+   for j=1:7 
+     L(j+1:8, j) = B(j+1:8, j)/B(j, j) 
+     B = gauss(B,  j) 
+   end 
+   U = B 
+  a . To four decimal places, the results of the LU decomposition are 
+   
+1 000000 0
+. 2 5 100000 0
+.25 .0667 1 0 0 0 0 0
+0 .2667 .2857 1 0 0 0 0
+0 0 .2679 .0833 1 0 0 0
+0 0 0 .2917 .2921 1 0 0
+0 0 0 0 .2697 .0861 1 0
+0 0 0 0 0 .2948 .2931 1
+L
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥−−
+⎢⎥ −−⎢⎥= ⎢⎥ −−⎢⎥ −−⎢⎥
+⎢⎥ −−⎢⎥
+−−⎢⎥⎣⎦
+ 
+----- pagina 47 -----
+2.5  Solutions   133  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+41 1 0 0 0 0 0
+03 . 7 5 . 2 5 1 0 0 0 0
+0 0 3.7333 1.0667 1 0 0 0
+0 0 0 3.4286 .2857 1 0 0
+0 0 0 0 3.7083 1.0833 1 0
+0 0 0 0 0 3.3919 .2921 1
+0 0 0 0 0 0 3.7052 1.0861
+0 0 0 0 0 0 0 3.3868
+U
+−−⎡⎤
+⎢⎥ −−⎢⎥
+⎢⎥ −−
+⎢⎥ −−⎢⎥= ⎢⎥ −−⎢⎥ −−⎢⎥
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+ 
+b. The result of solving Ly = b and then Ux = y is 
+   x  = (27.1292, 19.2344, 29.2823, 19.8086, 30.1914, 20.7177, 30.7656, 22.8708) 
+c. 1
+.2953 .0866 .0945 .0509 .0318 .0227 .0010 .0082
+.0866 .2953 .0509 .0945 .0227 .0318 .0082 .0100
+.0945 .0509 .3271 .1093 .1045 .0591 .0318 .0227
+.0509 .0945 .1093 .3271 .0591 .1045 .0227 .0318
+.0318 .0227 .1045 .0591 .3271 .1093 .0945 .A− = 0509
+.0227 .0318 .0591 .1045 .1093 .3271 .0509 .0945
+.0010 .0082 .0318 .0227 .0945 .0509 .2953 .0866
+.0082 .0100 .0227 .0318 .0509 .0945 .0866 .2953
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+ 32. [M]
+3100
+1310
+0131
+0013
+A
+−⎡⎤
+⎢⎥−−⎢⎥= ⎢⎥ −−
+⎢⎥ −⎣⎦
+. The commands shown for Exercise 31, but modified for 4×4 matrices, 
+produce 
+   
+1
+3
+3
+8
+8
+21
+10 0 0
+10 0
+01 0
+00 1
+L
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥ −
+⎢⎥ −⎢⎥⎣⎦
+ 
+   
+8
+3
+21
+8
+55
+21
+31 00
+01 0
+00 1
+00 0
+U
+−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥ −
+⎢⎥⎢⎥⎣⎦
+ 
+----- pagina 48 -----
+2.4  Solutions   134  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. Let sk+1 be the solution of Lsk+1 = tk for k = 0, 1, 2, …. Then tk+1 is the solution of Utk+1 = sk+1  
+for k = 0, 1, 2, …. The results are 
+   1122
+10.0000 7.0000 7.0000 5.0000
+18.3333 11.0000 13.3333 8.0000,, , ,21.8750 11.0000 16.0000 8.0000
+18.3333 7.0000 13.0952 5.0000
+⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥====⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+stst  
+   33 4 4
+5.0000 3.6000 3.6000 2.6000
+9.6667 5.8000 7.0000 4.2000,,,.11.6250 5.8000 8.4250 4.2000
+9.4286 3.6000 6.8095 2.6000
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥= ===⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+st s t  
+2.6 SOLUTIONS 
+Notes: This section is independent of Section 1.10. The material here makes a good backdrop for the 
+series expansion of ( I–C)–1 because this formula is actually used in some practical economic work. 
+Exercise 8 gives an interpretation to entries of an inverse matrix that could be stated without the economic 
+context. 
+ 1. The answer to this exercise will depend upon the order in which the student chooses to list the 
+sectors. The important fact to remember is that each column is the unit consumption vector for the 
+appropriate sector. If we order the sectors manufacturing, agriculture, and services, then the 
+consumption matrix is 
+   
+.10 .60 .60
+.30 .20 0
+.30 .10 .10
+C
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+  The intermediate demands created by the production vector x are given by Cx. Thus in this case the 
+intermediate demand is 
+   
+.10 .60 .60 0 60
+.30 .20 .00 100 20
+.30 .10 .10 0 10
+C
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+x  
+ 2. Solve the equation x = Cx + d for d: 
+   
+11 1 2 3
+22 1 2
+33 1 2 3
+.10 .60 .60 .9 .6 .6 0
+.30 .20 .00 .3 .8 20
+.30 .10 .10 .3 .1 .9 0
+xx x x x
+Cx x x x
+xx x x x
+−−⎡⎤ ⎡⎤⎡ ⎤⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥=− = − = − + =⎢⎥ ⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥ −−+⎣⎦ ⎣ ⎦⎣⎦ ⎣⎦⎣ ⎦
+dx x  
+  This system of equations has the augmented matrix 
+   
+.90 .60 .60 0 1 0 0 37.03
+.30 .80 .00 20 ~ 0 1 0 38.89
+.30 .10 .90 0 0 0 1 16.67
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+, so x = 
+37.03
+38.89
+16.67
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+ 
+----- pagina 49 -----
+2.6  Solutions   135  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3. Solving as in Exercise 2: 
+   
+11 1 2 3
+22 1 2
+33 1 2 3
+.10 .60 .60 .9 .6 .6 20
+.30 .20 .00 .3 .8 0
+.30 .10 .10 .3 .1 .9 0
+xx x x x
+xx x x
+xx x x x
+−−⎡⎤ ⎡⎤⎡ ⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥=− = − = − + =⎢⎥ ⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥ −−+⎣⎦ ⎣ ⎦⎣⎦ ⎣⎦⎣ ⎦
+dx x C  
+  This system of equations has the augmented matrix 
+   
+.90 .60 .60 20 1 0 0 44.44
+.30 .80 .00 0 ~ 0 1 0 16.67
+.30 .10 .90 0 0 0 1 16.67
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+, so x =
+44.44
+16.67
+16.67
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+ 4. Solving as in Exercise 2: 
+   
+11 1 2 3
+22 1 2
+33 1 2 3
+.10 .60 .60 .9 .6 .6 20
+.30 .20 .00 .3 .8 20
+.30 .10 .10 .3 .1 .9 0
+xx x x x
+Cx x x x
+xx x x x
+−−⎡⎤ ⎡⎤⎡ ⎤⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥=− = − = − + =⎢⎥ ⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥ −−+⎣⎦ ⎣ ⎦⎣⎦ ⎣⎦⎣ ⎦
+dx x  
+  This system of equations has the augmented matrix 
+   
+.90 .60 .60 20 1 0 0 81.48
+.30 .80 .00 20 ~ 0 1 0 55.56
+.30 .10 .90 0 0 0 1 33.33
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+, so x =
+81.48
+55.56
+33.33
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+Note: Exercises 2–4 may be used by students to discover the linearity of the Leontief model. 
+ 5. 
+1
+1 1 . 55 01 . 6 1 5 01 1 0() .6 .8 30 1.2 2 30 120IC
+−
+− −⎡ ⎤ ⎡⎤⎡ ⎤ ⎡⎤⎡ ⎤=− = = = ⎢ ⎥ ⎢⎥⎢ ⎥ ⎢⎥⎢ ⎥−⎣ ⎦ ⎣⎦⎣ ⎦ ⎣⎦⎣ ⎦xd  
+ 6. 
+1
+1 .8 .5 16 .9 .5 16 48.571() .6 .9 12 .6 .8 12 45.71(.72 .30)IC
+−
+− −⎡ ⎤⎡⎤ ⎡ ⎤ ⎡⎤⎡ ⎤=− = = = ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢⎥⎢ ⎥− −⎣ ⎦⎣⎦ ⎣ ⎦ ⎣⎦⎣ ⎦xd  
+ 7 . a . From Exercise 5, 
+   1 1.6 1() 1.2 2IC − ⎡ ⎤−= ⎢ ⎥⎣ ⎦  
+  so 
+   111 1.6 1 1 1.6() 1.2 2 0 1.2IC − ⎡⎤ ⎡ ⎤ ⎡ ⎤=− = = ⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦xd  
+  which is the first column of 1() .IC −−  
+b.  122 1.6 1 51 111.6() 1.2 2 30 121.2IC − ⎡⎤ ⎡ ⎤ ⎡ ⎤=− = = ⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦xd  
+c. From Exercise 5, the production x corressponding to 50 110is .30 120⎡ ⎤⎡ ⎤==⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦dx  
+  Note that 21 .=+dd d  Thus 
+----- pagina 50 -----
+136 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1
+22
+1
+1
+11
+1
+1
+()
+() ( )
+() ()
+IC
+IC
+IC IC
+−
+−
+−−
+=−
+=− +
+=− +−
+=+
+xd
+dd
+dd
+xx
+ 
+ 8 . a . Given () a n d () ,IC IC−= − =xd x d ΔΔ  
+   () ( ) () ()IC IC IC−+ = − + − = +xx x x ddΔΔ Δ  
+  Thus +xx Δ  is the production level corresponding to a demand of .+dd Δ  
+b. Since 1()IC −=−xdΔΔ  and dΔ  is the first column of I, xΔ  will be the first column of 
+1()IC −−.  
+ 9. In this case 
+   
+.8 .2 .0
+.3 .9 .3
+.1 .0 .8
+IC
+−⎡⎤
+⎢⎥−= − −⎢⎥
+⎢⎥−⎣⎦
+ 
+  Row reduce []IC− d  to find 
+   
+.8 .2 .0 40.0 1 0 0 82.8
+.3 .9 .3 60.0 ~ 0 1 0 131.0
+.1 .0 .8 80.0 0 0 1 110.3
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+  So  x = (82.8, 131.0, 110.3). 
+ 10. From Exercise 8, the ( i, j) entry in (I – C)–1 corresponds to the effect on production of sector i when 
+the final demand for the output of sector j increases by one unit. Since these entries are all positive, 
+an increase in the final demand for any sector will cause the production of all sectors to increase. 
+Thus an increase in the demand for any sector will lead to an increase in the demand for all sectors. 
+ 11. (Solution in study Guide) Following the hint in the text, compute pTx in two ways. First, take the 
+transpose of both sides of the price equation, p = C Tp + v, to obtain 
+   (v ) ( )TT TT T T T TCC C=+ = + = +pp p v p v  
+  and right-multiply by x to get 
+   ()TT TT T CC=+=+px p v x p x v x  
+  Another way to compute pTx starts with the production equation x = Cx + d. Left multiply by pT to 
+get 
+   ()TT T T CC=+ = +px p x d p x pd  
+  The two expression for pTx show that 
+   TT TTCC += +px v x px p d  
+  so vTx = pTd. The Study Guide also provides a slightly different solution. 
+  
+----- pagina 51 -----
+2.6  Solutions   137  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. Since 
+   211 ... ( ... )mmm mDI C C C I C I C C I C D ++ =+ + + + =+ + + + =+  
+   1mD +  may be found iteratively by 1 .mmDI C D+ =+  
+ 13. [M]  The matrix I – C is 
+   
+0.8412 0.0064 0.0025 0.0304 0.0014 0.0083 0.1594
+0.0057 0.7355 0.0436 0.0099 0.0083 0.0201 0.3413
+0.0264 0.1506 0.6443 0.0139 0.0142 0.0070 0.0236
+0.3299 0.0565 0.0495 0.6364 0.0204 0.0483 0.0649
+0.0089
+−−−−−−
+−− − − − −
+−− −−−−
+−−− −−−
+−− 0.0081 0.0333 0.0295 0.6588 0.0237 0.0020
+0.1190 0.0901 0.0996 0.1260 0.1722 0.7632 0.3369
+0.0063 0.0126 0.0196 0.0098 0.0064 0.0132 0.9988
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥ −− −−⎢⎥−−−−− −⎢⎥
+⎢⎥−−−−−−⎣⎦
+ 
+  so the augmented matrix []IC− d  may be row reduced to find 
+   
+0.8412 0.0064 0.0025 0.0304 0.0014 0.0083 0.1594 74000
+0.0057 0.7355 0.0436 0.0099 0.0083 0.0201 0.3413 56000
+0.0264 0.1506 0.6443 0.0139 0.0142 0.0070 0.0236 10500
+0.3299 0.0565 0.0495 0.6364 0.0204 0.0483
+−−−−−−
+−− − − − −
+−− −−−−
+−−− −− 0.0649 25000
+0.0089 0.0081 0.0333 0.0295 0.6588 0.0237 0.0020 17500
+0.1190 0.0901 0.0996 0.1260 0.1722 0.7632 0.3369 196000
+0.0063 0.0126 0.0196 0.0098 0.0064 0.0132 0.9988 5000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−−−− −−⎢ ⎥−− −−− −⎢ ⎥
+⎢ ⎥−−−−−−⎣ ⎦
+ 
+    
+1 0 0 0 0 0 0 99576
+0 1 0 0 0 0 0 97703
+0 0 1 0 0 0 0 51231
+~ 00010001 31570
+0000100 4 9 4 8 8
+0 0 0 0 0 1 0 329554
+0000001 1 3 8 3 5
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  so x = (99576, 97703, 51231, 131570, 49488, 329554, 13835). Since the entries in d seem to be 
+accurate to the nearest thousand, a more realistic answer would be x = (100000, 98000, 51000, 
+132000, 49000, 330000, 14000). 
+ 14. [M]  The augmented matrix []IC− d  in this case may be row reduced to find 
+   
+0.8412 0.0064 0.0025 0.0304 0.0014 0.0083 0.1594 99640
+0.0057 0.7355 0.0436 0.0099 0.0083 0.0201 0.3413 75548
+0.0264 0.1506 0.6443 0.0139 0.0142 0.0070 0.0236 14444
+0.3299 0.0565 0.0495 0.6364 0.0204 0.0483
+−−−−−−
+−− − − − −
+−− −−−−
+−−− −− 0.0649 33501
+0.0089 0.0081 0.0333 0.0295 0.6588 0.0237 0.0020 23527
+0.1190 0.0901 0.0996 0.1260 0.1722 0.7632 0.3369 263985
+0.0063 0.0126 0.0196 0.0098 0.0064 0.0132 0.9988 6526
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−−−− −−⎢ ⎥−−−−− −⎢ ⎥
+⎢ ⎥−−−−−−⎣ ⎦
+ 
+----- pagina 52 -----
+138 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+    
+10000001 34034
+0 1 0 0 0 0 0 131687
+0 0 1 0 0 0 0 69472
+~ 00010001 76912
+0 0 0 0 1 0 0 66596
+0 0 0 0 0 1 0 443773
+0 0 0 0 0 0 1 18431
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  so x = (134034, 131687, 69472, 176912, 66596, 443773, 18431). To the nearest thousand, x = 
+(134000, 132000, 69000, 177000, 67000, 444000, 18000). 
+ 15. [M]  Here are the iterations rounded to the nearest tenth:  
+   
+(0)
+(1)
+(2)
+(3)
+(74000.0, 56000.0, 10500.0, 25000.0, 17500.0, 196000.0, 5000.0)
+(89344.2, 77730.5, 26708.1, 72334.7, 30325.6, 265158.2, 9327.8)
+(94681.2, 87714.5, 37577.3, 100520.5, 38598.0, 296563.8, 11480.0)
+(97091.
+=
+=
+=
+=
+x
+x
+x
+x
+(4)
+(5)
+(6)
+9, 92573.1, 43867.8, 115457.0, 43491.0, 312319.0, 12598.8)
+(98291.6, 95033.2, 47314.5, 123202.5, 46247.0, 320502.4, 13185.5)
+(98907.2, 96305.3, 49160.6, 127213.7, 47756.4, 324796.1, 13493.8)
+(99226.6, 96969.
+=
+=
+=
+x
+x
+x
+(7)
+(8)
+(9)
+6, 50139.6, 129296.7, 48569.3, 327053.8, 13655.9)
+(99393.1, 97317.8, 50656.4, 130381.6, 49002.8, 328240.9, 13741.1)
+(99480.0, 97500.7, 50928.7, 130948.0, 49232.5, 328864.7, 13785.9)
+(99525.5, 97596.8, 51071.
+=
+=
+=
+x
+x
+x
+(10)
+(11)
+(12)
+9, 131244.1, 49353.8, 329192.3, 13809.4)
+(99549.4, 97647.2, 51147.2, 131399.2, 49417.7, 329364.4, 13821.7)
+(99561.9, 97673.7, 51186.8, 131480.4, 49451.3, 329454.7, 13828.2)
+(99568.4, 97687.6, 51207.5, 131
+=
+=
+=
+x
+x
+x 523.0, 49469.0, 329502.1, 13831.6)
+ 
+  so x(12) is the first vector whose entries are accurate to the nearest thousand. The calculation of x(12) 
+takes about 1260 flops, while the row reduction above takes about 550 flops. If C is larger than 
+20 20,×  then fewer flops are required to compute x(12) by iteration than by row reduction. The 
+advantage of the iterative method increases with the size of C. The matrix C also becomes more 
+sparse for larger models, so fewer iterations are needed for good accuracy. 
+2.7 SOLUTIONS 
+Notes: The content of this section seems to have universal appeal with students. It also provides practice 
+with composition of linear transformations. The case study for Chapter 2 concerns computer graphics – 
+see this case study (available as a project on the website) for more examples of computer graphics in 
+action. The Study Guide encourages the student to examine the book by Foley referenced in the text. This 
+section could form the beginning of an independent  study on computer graphics with an interested 
+student.
+----- pagina 53 -----
+2.7  Solutions   139  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 1. Refer to Example 5. The representation in homogenous coordinates can be written as a partitioned 
+matrix of the form ,
+1T
+A⎡⎤
+⎢⎥
+⎣⎦
+0
+0
+ where A is the matrix of the linear transformation. Since in this case 
+1. 2 5 ,01A ⎡⎤= ⎢⎥⎣⎦  the representation of the transformation with respect to homogenous coordinates is 
+   
+1. 2 50
+01 0
+00 1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦  
+Note: The Study Guide shows the student why the action of 
+1T
+A⎡ ⎤
+⎢ ⎥
+⎣ ⎦
+0
+0
+ on the vector x1⎡⎤⎢⎥⎣⎦  corresponds to 
+the action of A on x. 
+ 2. The matrix of the transformation is 1001A −⎡ ⎤= ⎢ ⎥⎣ ⎦ , so the transformed data matrix is  
+   1 0 4 2 5 42501 023 0 2 3AD −− − −⎡⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 3. Following Examples 4–6, 
+   
+01 0 1 0 2 011
+10 0 0 1 1 102
+00 1 0 0 1 001
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+ 4. 
+1/ 2 0 0 1 0 1 1/2 0 1/ 2
+03 / 2001 4 03 / 2 6
+00 1 0 0 1 00 1
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+ 5. 
+2/2 2/2 0 2/2 2/2 010 0
+2 / 22 / 2 0 0 1 0 2 / 22 / 2 0
+00 1 0 0 100 1
+⎡⎤ ⎡⎤ − ⎡⎤⎢⎥ ⎢⎥ ⎢⎥ −= −⎢⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢⎥ ⎢⎥⎣⎦⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+ 6. 
+2/2 2/2 0 2/2 2/2 010 0
+0 1 0 2/2 2/2 0 2/2 2/2 0
+00 1 0 0 1 0 0 1
+⎡⎤ ⎡ ⎤−−⎡⎤ ⎢⎥ ⎢ ⎥⎢⎥ −= − −⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥ ⎢ ⎥⎢⎥⎣⎦ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+ 7. A 60 ° rotation about the origin is given in homogeneous coordinates by the matrix 
+1/2 3 /2 0
+3/2 1 /2 0
+00 1
+⎡⎤ −
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+. To rotate about the point (6, 8), first translate by (–6, –8), then rotate about 
+----- pagina 54 -----
+140 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+the origin, then translate back by (6, 8) (see the Practice Problem in this section). A 60° rotation 
+about (6, 8) is thus is given in homogeneous coordinates by the matrix 
+   
+1/2 3/2 0 1/2 3/2 3 4 3106 10 6
+0 1 8 3/2 1 /2 0 0 1 8 3/2 1 /2 4 3 3
+001 0 01 00 1 0 0 1
+⎡⎤ ⎡ ⎤ −− +−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ −= −⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+ 8. A 45 ° rotation about the origin is given in homogeneous coordinates by the matrix 
+2/2 2/2 0
+2/2 2/2 0
+00 1
+⎡⎤ −
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+. To rotate about the point (3, 7), first translate by (–3, –7), then rotate about 
+the origin, then translate back by (3, 7) (see the Practice Problem in this section). A 45° rotation 
+about (3, 7) is thus is given in homogeneous coordinates by the matrix 
+   
+2/2 2/2 0 2/2 2/2 3 2 2103 10 3
+0 1 7 2/2 2/2 0 0 1 7 2/2 2/2 7 5 2
+001 0 01 00 1 0 0 1
+⎡⎤ ⎡ ⎤ −− +−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ −= −⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+ 9. To produce each entry in BD two multiplications are necessary. Since BD is a 2 100×  matrix, it will 
+take 2 2 100 400×× = multiplications to compute BD. By the same reasoning it will take 22 1 0 0×× =  
+400 multiplications to compute A(BD). Thus to compute A(BD) from the beginning will take  
+  400 + 400 = 800 multiplications. 
+   To compute the 22×  matrix AB it will take 2228××=  multiplications, and to compute 
+(AB)D it will take 2 2 100 400×× =  multiplications. Thus to compute (AB)D from the beginning will 
+take 8 + 400 = 408 multiplications. 
+   For computer graphics calculations that require applying multiple transformations to data 
+matrices, it is thus more efficient to compute the product of the transformation matrices before 
+applying the result to the data matrix. 
+10. Let the transformation matrices in homogeneous coordinates for the dilation, rotation, and translation 
+be called respectively D, and R, and T. Then for some value of s, ϕ, h, and k, 
+   
+00 c o s s i n 0 10
+00 , s i n c o s 0 , 0 1
+001 0 0 1 001
+sh
+Ds R T k
+ϕϕ
+ϕϕ
+−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥== =⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  Compute the products of these matrices: 
+   
+cos sin 0 cos sin 0
+sin cos 0 , sin cos 0
+00 1 00 1
+ss ss
+D R ss R D ss
+ϕϕ ϕϕ
+ϕϕ ϕϕ
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+   
+00
+0, 0
+00 1 001
+ss h sh
+DT s sk TD s k
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+----- pagina 55 -----
+2.7  Solutions   141  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+cos sin cos sin cos sin
+sin cos sin cos , sin cos
+00 1 00 1
+hk h
+RTh k TRk
+ϕϕϕ ϕ ϕϕ
+ϕϕ ϕϕ ϕϕ
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=+ =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Since DR = RD, DT ≠ TD and RT ≠ TR, D and R commute, D and T do not commute and R and T do 
+not commute. 
+11. To simplify A2 A1  completely, the following trigonometric identities will be needed: 
+1. sincostan cos cos sin ϕϕϕϕ ϕ ϕ−= − = −  
+2. 
+22sin 1 sin cos1
+cos cos cos cossec tan sin sin cosϕϕ ϕϕϕ ϕ ϕϕϕ ϕ ϕ ϕ−−= − = = =  
+  Using these identities, 
+   21
+sec tan 0 1 0 0
+01 0 s i n c o s 0
+00 1 0 0 1
+AA
+ϕϕ
+ϕϕ
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+   
+sec tan sin tan cos 0
+sin cos 0
+00 1
+ϕϕ ϕ ϕ ϕ
+ϕϕ
+−−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+   
+cos sin 0
+sin cos 0
+00 1
+ϕϕ
+ϕϕ
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+  which is the transformation matrix in homogeneous coordinates for a rotation in 2. 
+12. To simplify this product completely, the following trigonometric identity will be needed: 
+   1c o s s i ntan / 2 sin 1 cosϕϕϕ ϕϕ−== +  
+  This identity has two important consequences: 
+   1c o s1 (tan / 2)(sin ) 1 sin cos sin ϕϕϕ ϕ ϕ ϕ−−= − =  
+   sin(cos )( tan / 2) tan / 2 (cos 1) tan / 2 (cos 1) sin 1c o sϕϕ ϕ ϕϕ ϕϕ ϕ ϕ− − =− + =− + =− +  
+  The product may be computed and simplified using these results: 
+   
+1 tan / 2 0 1 0 0 1 tan / 2 0
+010 s i n 1 0 010
+001 0 0 1 001
+ϕϕ
+ϕ
+−−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+   
+1 (tan / 2)(sin ) tan / 2 0 1 tan / 2 0
+sin 1 0 0 1 0
+00 1 0 0 1
+ϕϕ ϕ ϕ
+ϕ
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+----- pagina 56 -----
+142 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+cos tan / 2 0 1 tan / 2 0
+sin 1 0 0 1 0
+0 01 001
+ϕϕ ϕ
+ϕ
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+   
+cos (cos )( tan / 2) tan / 2 0
+sin (sin )(tan / 2) 1 0
+00 1
+ϕϕ ϕ ϕ
+ϕϕ ϕ
+−−⎡⎤
+⎢⎥=− +⎢⎥
+⎢⎥⎣⎦
+ 
+   
+cos sin 0
+sin cos 0
+00 1
+ϕϕ
+ϕϕ
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+  which is the transformation matrix in homogeneous coordinates for a rotation in 2. 
+ 13. Consider first applying the linear transformation on 2 whose matrix is A, then applying a translation 
+by the vector p to the result. The matrix representation in homogeneous coordinates of the linear 
+transformation is ,
+1T
+A⎡⎤
+⎢⎥
+⎣⎦
+0
+0
+ while the matrix representation in homogeneous coordinates of the 
+translation is .
+1T
+I⎡⎤
+⎢⎥
+⎣⎦
+p
+0
+ Applying these transformations in order leads to a transformation whose 
+matrix representation in homogeneous coordinates is 
+   
+11 1TT T
+IA A⎡⎤ ⎡⎤ ⎡⎤ =⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣⎦
+p0 p
+00 0
+ 
+  which is the desired matrix. 
+14. The matrix for the transformation in Exercise 7 was found to be 
+   
+1/2 3 /2 3 4 3
+3/2 1 /2 4 3 3
+00 1
+⎡⎤ −+
+⎢⎥
+−⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  This matrix is of the form ,
+1T
+A⎡⎤
+⎢⎥
+⎣⎦
+p
+0
+where 
+   1/2 3 / 2 34 3,
+3/2 1 /2 43 3
+A
+⎡⎤ ⎡⎤− +==⎢⎥ ⎢⎥
+−⎢⎥ ⎢⎥⎣⎦⎣⎦
+p  
+  By Exercise 13, this matrix may be written as 
+   
+11TT
+IA⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦
+p0
+00
+ 
+  that is, the composition of a linear transformation on 2 and a translation. The matrix A is the matrix 
+of a rotation of 60◦  about the origin in 2. Thus the transformation in Exercise 7 is the composition of 
+a rotation about the origin and a translation by 34 3 .
+43 3
+⎡ ⎤+= ⎢ ⎥
+−⎢ ⎥⎣ ⎦
+p  
+----- pagina 57 -----
+2.7  Solutions   143  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+15. Since 111 1248 2 4(,,, )( , , ,) ,XYZH =− −  the corresponding point in 3 has coordinates 
+   
+111
+824
+11 1
+24 24 24
+( , , ) , , , , (12, 6, 3)XY Zxyz HHH ⎛⎞ − −⎛⎞== = − − ⎜⎟⎜⎟ ⎜⎟⎝⎠ ⎝⎠  
+16. The homogeneous coordinates (1, –2, −3, 4) represent the point 
+   ( 1 /4 , 2/4 , 3/4 ) ( 1 /4 , 1 /2 , 3/4 )−−= − −  
+  while the homogeneous coordinates (10, –20,− 30, 40) represent the point 
+   (10 / 40, 20 / 40, 30 / 40) (1/ 4, 1/ 2, 3 / 4)−−= − −  
+  so the two sets of homogeneous coordinates represent the same point in 3. 
+17. Follow Example 7a by first constructing that 33×  matrix for this rotation. The vector e1 is not 
+changed by this rotation. The vector e2 is rotated 60° toward the positive z-axis, ending up at the 
+point (0, cos 60°, sin 60°) = ( 0 ,1/2 , 3/2 ) . The vector e3 is rotated 60° toward the negative y-axis, 
+stopping at the point  
+(0, cos 150°, sin 150°) = ( 0 , 3/2 ,1/2 ) .−  The matrix A for this rotation is thus 
+   
+10 0
+01 / 2 3 / 2
+03 / 2 1 / 2
+A
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ 
+  so in homogeneous coordinates the transformation is represented by the matrix 
+   
+10 0 0
+01 / 2 3 / 2 0
+1 03 / 2 1 / 2 0
+00 0 1
+T
+A
+⎡⎤
+⎢⎥⎡⎤ −⎢⎥=⎢⎥ ⎢⎥⎣⎦ ⎢⎥
+⎢⎥⎣⎦
+0
+0
+ 
+18. First construct the 33×  matrix for the rotation. The vector e1 is rotated 30° toward the negative y-
+axis, ending up at the point (cos(–30)°, sin (–30)°, 0) = ( 3/2 , 1/2 ,0 ) .−  The vector e2 is rotated 30° 
+toward the positive x-axis, ending up at the point (cos 60°, sin 60°, 0) =(1/ 2, 3 / 2, 0).  The vector e3 
+is not changed by the rotation. The matrix A for the rotation is thus 
+   
+3/2 1 /2 0
+1/2 3 /2 0
+00 1
+A
+⎡⎤
+⎢⎥
+=−⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  so in homogeneous coordinates the rotation is represented by the matrix 
+   
+3 / 2 1 / 200
+1 / 2 3 / 200
+1 00 1 0
+00 0 1
+T
+A
+⎡⎤
+⎢⎥⎡⎤ −⎢⎥=⎢⎥ ⎢⎥⎣⎦ ⎢⎥
+⎢⎥⎣⎦
+0
+0
+ 
+  Following Example 7b, in homogeneous coordinates the translation by the vector (5, –2, 1) is 
+represented by the matrix 
+----- pagina 58 -----
+144 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+100 5
+01 0 2
+001 1
+000 1
+⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+  Thus the complete transformation is represented in homogeneous coordinates by the matrix 
+   
+1 0 0 5 3 / 21 / 2 0 0 3 / 21 / 2 0 5
+01 0 2 1/2 3 /2 0 0 1/2 3 /2 0 2
+001 1 00 1 0 00 1 1
+000 1 00 0 1 00 0 1
+⎡ ⎤⎡ ⎤⎡⎤ ⎢ ⎥⎢ ⎥⎢⎥ − −− −⎢ ⎥⎢ ⎥⎢⎥ =⎢ ⎥⎢ ⎥⎢⎥ ⎢ ⎥⎢ ⎥⎢⎥⎢⎥ ⎢ ⎥⎢ ⎥⎣⎦ ⎣ ⎦⎣ ⎦  
+ 19. Referring to the material preceding Example 8 in the text, we find that the matrix P that performs a 
+perspective projection with center of projection (0, 0, 10) is 
+   
+10 00
+01 00
+00 00
+00 . 11
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥ −⎢⎥⎣⎦
+ 
+  The homogeneous coordinates of the vertices of the triangle may be written as (4.2, 1.2, 4, 1), (6, 4, 
+2, 1), and (2, 2, 6, 1), so the data matrix for S is 
+   
+4.2 6 2
+1.2 4 2
+426
+111
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+  and the data matrix for the transformed triangle is 
+   
+1 0 0 0 4.2 6 2 4.2 6 2
+0 1 0 0 1.2 4 2 1.2 4 2
+00 00 426 0 0 0
+0 0 .1 1 1 1 1 .6 .8 .4
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Finally, the columns of this matrix may be converted from homogeneous coordinates by dividing by 
+the final coordinate: 
+   
+( 4 . 2 ,1 . 2 ,0 ,. 6 ) ( 4 . 2/. 6 ,1 . 2/. 6 ,0/. 6 ) ( 7 ,2 ,0 )
+(6, 4, 0, .8)      (6/.8, 4/.8, 0/.8) = (7.5, 5, 0) 
+(2, 2, 0, .4) (2 / .4, 2 / .4, 0 / .4) (5, 5, 0)
+→=
+→
+→=
+ 
+  So the coordinates of the vertices of the transformed triangle are (7, 2, 0), (7.5, 5, 0), and (5, 5, 0). 
+20. As in the previous exercise, the matrix P that performs the perspective projection is 
+   
+10 00
+01 00
+00 00
+00 . 11
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥ −⎢⎥⎣⎦
+----- pagina 59 -----
+                                                                                                                                        2.8  •  Solutions      145
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The homogeneous coordinates of the vertices of the triangle may be written as (7, 3, –5, 1), (12, 8, 2, 
+1), and (1, 2, 1, 1), so the data matrix for S is 
+   
+71 2 1
+38 2
+52 1
+11 1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−
+⎢⎥
+⎣⎦
+ 
+and the data matrix for the transformed triangle is 
+   
+10 00 71 2 1 71 2 1
+01 00 3 82 3 82
+00 00 5 21 0 0 0
+0 0 .1 1 1 1 1 1.5 .8 .9
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Finally, the columns of this matrix may be converted from homogeneous coordinates by dividing by 
+the final coordinate: 
+   
+(7, 3, 0, 1.5) (7 / 1.5,3 /1.5,0 /1.5) (4.67,2,0)
+(12, 8, 0, .8) (12 / .8,8 / .8, 0 / .8) (15,10, 0)
+(1, 2, 0, .9) (1/ .9, 2 / .9, 0 / .9) (1.11, 2.22, 0)
+→=
+→=
+→=
+ 
+  So the coordinates of the vertices of the transformed triangle are (4.67, 2, 0), (15, 10, 0),  
+  and (1.11, 2.22, 0). 
+21. [M]  Solve the given equation for the vector (R, G, B), giving 
+   
+1
+.61 .29 .15 2.2586 1.0395 .3473
+.35 .59 .063 1.3495 2.3441 .0696
+.04 .12 .787 .0910 .3046 1.2777
+R XX
+GY Y
+BZ Z
+−
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥== −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+22. [M]  Solve the given equation for the vector (R, G, B), giving 
+   
+1
+.299 .587 .114 1.0031 .9548 .6179
+.596 .275 .321 .9968 .2707 .6448
+.212 .528 .311 1.0085 1.1105 1.6996
+R YY
+GI I
+BQ Q
+−
+⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥=− − = −−⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥−−⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+2.8 SOLUTIONS 
+Notes: Cover this section only if you plan to skip most or all of Chapter 4. This section and the next 
+cover everything you need from Sections 4.1–4.6 to discuss the topics in Section 4.9 and Chapters 5–7 
+(except for the general inner product spaces in Sections 6.7 and 6.8). Students may use Section 4.2 for 
+review, particularly the Table near the end of the section. (The final subsection on linear transformations 
+should be omitted.) Example 6 and the associated exercises are critical for work with eigenspaces in 
+Chapters 5 and 7. Exercises 31–36 review the Invertible Matrix Theorem. New statements will be added 
+to this theorem in Section 2.9. 
+Key Exercises: 5–20 and 23–26. 
+----- pagina 60 -----
+146 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 1 . The set is closed under sums but not under multiplication  
+by a negative scalar. A counterexample to the subspace  
+condition is shown at the right. 
+Note: Most students prefer to give a geometric counterexample, but some may choose an algebraic calcu-
+lation. The four exercises here should help students develop an understanding of subspaces, but they may 
+be insufficient if you want students to be able to analyze an unfamiliar set on an exam. Developing that 
+skill seems more appropriate for classes covering Sections 4.1–4.6. 
+2.The set is closed under scalar multiples but not sums. 
+For example, the sum of the vectors in H shown 
+here is not in H. 
+ 3 . No. The set is not closed under sums or scalar multiples.   See the diagram. 
+ 
+ 4 . No. The set is closed under sums, but not under multiplication by a 
+negative scalar. 
+  
+u
+(–1)u
+
+----- pagina 61 -----
+2.8  Solutions   147  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5 .  The vector w is in the subspace generated by v1 and v2 if and only if the vector equation x1v1 + x2v2 
+= w is consistent. The row operations below show that w is in the subspace generated by v1 and v2. 
+   12
+123 12 3 123
+[ ] ~ 333 ~ 036 ~ 036
+47 1 0 012 000
+−− −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+vvw  
+ 6 . The vector u is in the subspace generated by {v1, v2, v3} if and only if the vector equation x1v1 + x2v2 
++ x3v3 = u is consistent. The row operations below show that u is not in the subspace generated by 
+{v1, v2, v3}. 
+   123
+1 4 5 1 1 451 1 4 51
+3437 081 21 0 012 1[] ~ ~ ~ 2561 03 4 1 08 1 21 0
+3752 051 0 5 034 1
+−− −⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−−−− − −⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥−− − −
+⎢ ⎥⎢ ⎥⎢ ⎥−− −−⎣ ⎦⎣ ⎦⎣ ⎦
+vv vu  
+   
+14 5 1 14 5 1 145 1
+01 2 1 01 2 1 01 2 1
+00 4 2 00 1 1 001 1
+00 2 2 00 4 2 000 6
+−− −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ −− − −
+⎢⎥ ⎢⎥ ⎢ ⎥ −− − −⎣⎦ ⎣⎦ ⎣ ⎦
+∼∼∼  
+Note: For a quiz, you could use w = (9, –7, 11, 12), which is in Span{v1, v2, v3}. 
+ 7 . a. There are three vectors: v1, v2, and v3 in the set {v1, v2, v3}. 
+b. There are infinitely many vectors in Span{v1, v2, v3} = Col A. 
+c. Deciding whether p is in Col A requires calculation: 
+   
+234 6 23 46 23 4 6
+[ ] ~ 8861 0 ~ 041 0 1 4 ~ 041 0 1 4
+6771 1 02 57 00 0 0
+A
+− − −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥− − −− −−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+p  
+  The equation Ax = p has a solution, so p is in Col A. 
+ 8 . 
+2206 2206 2206
+[]0 3 5 1 ~ 0 3 5 1 ~ 0 3 5 1
+635 1 7 0351 0000
+A
+−− − −− − −− −⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=− − −⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ −−⎣⎦ ⎣⎦ ⎣⎦
+p  
+  Yes, the augmented matrix [ A   p] corresponds to a consistent system, so p is in Col A. 
+ 9 . To determine whether p is in Nul A, simply compute Ap. Using A and p as in Exercise 7,  
+   A p = 
+234 6 2
+886 1 0 6 2 .
+6771 1 2 9
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ Since Ap ≠ 0, p is not in Nul A. 
+  
+----- pagina 62 -----
+148 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+10. To determine whether u is in Nul A, simply compute Au. Using A as in Exercise 7 and u = (–5, 5, 3), 
+   A u = 
+220 5 0
+035 5 0 .
+635 3 0
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −=⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ Yes, u is in Nul A. 
+11. p = 4 and q = 3. Nul A is a subspace of R4 because solutions of Ax = 0 must have 4 entries, to match 
+the columns of A. Col A is a subspace of R3 because each column vector has 3 entries. 
+12. p = 3 and q = 5. Nul A is a subspace of R3 because solutions of Ax = 0 must have 3 entries, to match 
+the columns of A. Col A is a subspace of R5 because each column vector has 5 entries. 
+13. To produce a vector in Col A, select any column of A. For Nul A, solve the equation Ax = 0. (Include 
+an augmented column of zeros, to avoid errors.) 
+   
+3 2 1 50 3 2 1 50 321 50
+9417 0 ~ 0248 0 ~ 0 2 48 0
+9251 0 048 1 6 0 0 0 00 0
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+321 50 10 1 10
+~0 1 2 4 0~0 1 2 4 0 ,
+000 00 00 0 00
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+      
+13 4
+234
+0
+240
+00
+xx x
+xxx
+−+=
++−=
+=
+ 
+  The general solution is x1 = x3 – x4, and x2 = –2x3 + 4x4, with x3 and x4 free. The general solution in 
+parametric vector form is not needed. All that is required here is one nonzero vector. So choose any 
+values for x3 and x4 (not both zero). For instance, set x3 = 1 and x4 = 0 to obtain the vector (1, –2, 1, 
+0) in Nul A. 
+Note: Section 2.8 of Study Guide introduces the ref command (or rref, depending on the technol-
+ogy), which produces the reduced echelon form of a matrix. This will greatly speed up homework for 
+students who have a matrix program available.  
+14. To produce a vector in Col A, select any column of A. For Nul A, solve the equation Ax = 0: 
+   
+1 230 10 1 / 30123 0 12 3 0
+01 5 / 3 0 015 / 3045 7 0 035 0
+00 0 0~~ ~ 00 0 051 0 0 09 1 5 0
+00 0 0 00 0 027 1 1 0 035 0
+00 0 0 00 0 033 4 0 035 0
+⎡⎤ −⎡ ⎤⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ −− ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−− ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦⎣⎦
+ 
+  The general solution is x1 = (1/3)x3 and x2 = (–5/3) x3, with x3 free. The general solution in parametric 
+vector form is not needed. All that is required here is one nonzero vector. So choose any nonzero 
+value of x3. For instance, set x3 = 3 to obtain the vector (1, –5, 3) in Nul A. 
+15. Yes. Let A be the matrix whose columns are the vectors given. Then A is invertible because its 
+determinant is nonzero, and so its columns form a basis for R2, by the Invertible Matrix Theorem (or 
+by Example 5). (Other reasons for the invertibility of A could be given.) 
+16. No. One vector is a multiple of the other, so they are linearly dependent and hence cannot be a basis 
+for any subspace. 
+----- pagina 63 -----
+2.8  Solutions   149  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+17. Yes. Place the three vectors into a 3×3 matrix A and determine whether A is invertible: 
+   
+05 6 24 2
+00 3 ~05 6
+24 2 00 3
+A
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥= ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−⎣⎦ ⎣⎦
+ 
+  The matrix A has three pivots, so A is invertible by the IMT and its columns form a basis for R3 (as 
+pointed out in Example 5). 
+18. No. Place the three vectors into a 3×3 matrix A  and determine whether A is invertible: 
+   
+135 135 135
+111 ~ 044 ~ 044
+3 2 4 0 11 11 0 0 0
+A
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥= − −− −−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The matrix A has two pivots, so A is not invertible by the IMT and its columns do not form a basis 
+for R3 (as pointed out in Example 5). 
+19. No. The vectors cannot be a basis for R3 because they only span a plan in R3. Or, point out that the 
+columns of the matrix 
+36
+82
+15
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ cannot possibly span R3 because the matrix cannot have a pivot in 
+every row. So the columns are not a basis for R3.  
+Note: The Study Guide warns students not to say that the two vectors here are a basis for R2. 
+20. No. The vectors are linearly dependent because there are more vectors in the set than entries in each 
+vector. (Theorem 8 in Section 1.7.) So the vectors cannot be a basis for any subspace. 
+21. a. False. See the definition at the beginning of the section. The critical phrases “for each” are 
+missing. 
+b. True. See the paragraph before Example 4. 
+c. False. See Theorem 12. The null space is a subspace of R n, not Rm. 
+d. True. See Example 5. 
+e. True. See the first part of the solution of Example 8. 
+22. a. False. See the definition at the beginning of the section. The condition about the zero vector is 
+only one of the conditions for a subspace. 
+b. False.  See the warning that follows Theorem 13. 
+c. True. See Example 3. 
+d. False. Since y need not be in H, it is not gauranteed by the definition of a subspace that x+y will 
+be in H.   
+e. False.  See the paragraph after Example 4. 
+----- pagina 64 -----
+150 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+23. (Solution in Study Guide) 
+459 2 126 5
+651 1 2 ~ 015 6
+348 3 000 0
+A
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦
+. The echelon form identifies 
+columns 1 and 2 as the pivot columns. A basis for Col A uses columns 1 and 2 of A: 
+45
+6,5
+34
+⎡⎤⎡⎤
+⎢⎥⎢⎥
+⎢⎥⎢⎥
+⎢⎥⎢⎥⎣⎦⎣⎦
+. This 
+is not the only choice, but it is the “standard” choice. A wrong choice is to select columns 1 and 2 of 
+the echelon form. These columns have zero in the third entry and could not possibly generate the 
+columns displayed in A. 
+  For Nul A, obtain the reduced (and augmented) echelon form for Ax = 0:  
+   
+10 4 70
+01 5 60
+00 0 00
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+. This corresponds to:   
+13 4
+234
+470
+560
+00
+xx x
+xxx
+−+=
++−=
+=
+.  
+  Solve for the basic variables and write the solution of Ax = 0 in parametric vector form: 
+   
+13 4
+23 4
+34
+33
+44
+47 47
+56 5 6
+10
+01
+xx x
+xx x xxxx
+xx
+− −⎡⎤⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥−+ −⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥== +⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎢⎥⎢ ⎥ ⎣⎦ ⎣⎦⎣⎦⎣ ⎦
+. Basis for Nul A: 
+47
+56,10
+01
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+ 
+Notes: (1) A basis is a set of vectors. For simplicity, the answers here and in the text list the vectors 
+without enclosing the list inside set brackets. This style is also easier for students. I am careful, 
+however, to distinguish between a matrix and the set or list whose elements are the columns of the 
+matrix. 
+(2) Recall from Chapter 1 that students are encour aged to use the augmented matrix when solving Ax 
+= 0, to avoid the common error of misinterpreting the reduced echelon form of A as itself the augmented 
+matrix for a nonhomogeneous system. 
+(3) Because the concept of a basis is just being introduced, I insist that my students write the 
+parametric vector form of the solution of Ax = 0. They see how the basis vectors span the solution space 
+and are obviously linearly independent. A shortcut, which some instructors might introduce later in the 
+course, is only to solve for the basic variables and to produce each basis vector one at a time. Namely, set 
+all free variables equal to zero except for one free va riable, and set that variable equal to a suitable 
+nonzero number. 
+24. 
+36 90 12 5 4
+24 72 ~ 00 3 6
+36 66 00 0 0
+A
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+. Basis for Col A: 
+39
+2,7
+36
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+. 
+  For Nul A, obtain the reduced (and augmented) echelon form for Ax = 0: 
+    
+   
+12 0 6 0
+00 1 2 0
+00 0 0 0
+−−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+. This corresponds to:   
+12 4
+34
+26 0
+20
+00
+xx x
+xx
+−− =
++=
+=
+.  
+  Solve for the basic variables and write the solution of Ax = 0 in parametric vector form: 
+----- pagina 65 -----
+2.8  Solutions   151  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+12 4
+22
+24
+34
+44
+26 26
+10
+2 02
+01
+xx x
+xx xxxx
+xx
+− −⎡⎤⎡ ⎤ ⎡⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥== +⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥− −
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦⎣⎦⎣ ⎦
+. Basis for Nul A: 
+26
+10,02
+01
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥−
+⎢ ⎥⎢ ⎥
+⎣ ⎦⎣ ⎦
+ 
+25. 
+148 3 7 1480 5
+127 3 4 0250 1 ~229 5 5 00014
+369 5 2 0000 0
+A
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+. Basis for Col A: 
+14 3
+12 3,,22 5
+36 5
+−⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥−
+⎢ ⎥⎢ ⎥⎢ ⎥ −⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦
+. 
+  For Nul A, obtain the reduced (and augmented) echelon form for Ax = 0:  
+   
+10 20 70
+01 2 . 50 . 50[] ~ 00 01 40
+00 00 00
+A
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+0 .      
+13 5
+23 5
+45
+27 0
+2.5 .5 0
+40
+00
+xx x
+xx x
+xx
+−+ =
++− =
++=
+=
+.  
+  
+13 5
+23 5
+3533
+45
+55
+27 27
+2.5 .5 2.5 .5
+Thesolution of 0in parametric vector form : . 10
+4 04
+01
+xx x
+xx x
+Ax x xx
+xx
+xx
+− −⎡⎤⎡ ⎤ ⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥−+ −⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥== = +
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥− −⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣⎦⎣ ⎦
+x
+uv
+ 
+  Basis for Nul A: {u, v}. 
+Note: The solution above illustrates how students could write a solution on an exam, when time is 
+precious, namely, describe the basis by giving names to appropriate vectors found in the calculations. 
+26. 
+313 18 31 306
+313 02 02 604 ~039 14 00 012
+639 26 00 000
+A
+−− − − −⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥= ⎢⎥ ⎢⎥−− −
+⎢⎥ ⎢⎥−⎣⎦ ⎣⎦
+. Basis for Col A: 
+311
+310,,031
+632
+−−⎡⎤⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥⎢ ⎥ −
+⎢⎥⎢ ⎥⎢ ⎥ −⎣⎦⎣ ⎦⎣ ⎦
+.  
+  For Nul A, 
+   []
+10004 / 30
+01 30 20~ 0001 20
+0000 00
+A
+⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥ −
+⎢⎥
+⎣⎦
+0 .      
+15
+23 5
+45
+4/3 0
+32 0
+20
+00
+xx
+xx x
+xx
++=
++− =
+−=
+=
+    
+  The solution of A x = 0 in parametric vector form: 
+----- pagina 66 -----
+152 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+15
+23 5
+33 3 5
+45
+55
+4/3 04 / 3
+32 32
+10
+2 02
+01
+xx
+xx x
+xx x x
+xx
+xx
+− −⎡⎤⎡ ⎤ ⎡⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥−+ −⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥== +
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎣⎦⎣ ⎦
+u v
+. Basis for Nul A: {u, v}. 
+27. Construct a nonzero 3×3 matrix A and construct b to be almost any convenient linear combination of 
+the columns of A. 
+28. The easiest construction is to write a 3×3 matrix in echelon form that has only 2 pivots, and let b be 
+any vector in R3 whose third entry is nonzero. 
+29. (Solution in Study Guide) A simple construction is to write any nonzero 3×3 matrix whose columns 
+are obviously linearly dependent, and then make b a vector of weights from a linear dependence 
+relation among the columns. For instance, if the first two columns of A are equal, then b could be (1, 
+–1, 0). 
+30. Since Col A is the set of all linear combinations of a1, … , ap, the set {a1, … , ap} spans Col A. 
+Because {a1, … , ap} is also linearly independent, it is a basis for Col A. (There is no need to discuss 
+pivot columns and Theorem 13, though a proof could be given using this information.) 
+31. If Col F ≠ R5, then the columns of F do not span R5. Since F is square, the IMT shows that F is not 
+invertible and the equation Fx = 0 has a nontrivial solution. That is, Nul F contains a nonzero vector. 
+Another way to describe this is to write Nul F ≠ {0}. 
+32. If Col B = R7, then the columns of B span R7. Since B is square, the IMT shows that B is invertible 
+and the equation Bx = b has a solution for each b in R7. Also, each solution is unique, by Theorem 5 
+in Section 2.2. 
+33. If Nul C = {0}, then the equation Cx = 0 has only the trivial solution. Since C is square, the IMT 
+shows that C is invertible and the equation Cx = b has a solution for each b in R6. Also, each solution 
+is unique, by Theorem 5 in Section 2.2.  
+34.  If the columns of A form a basis, they are linearly independent. This means that A cannot have more 
+columns than rows. Since the columns also span Rm, A must have a pivot in each row, which means 
+that A cannot have more rows than columns. As a result, A must be a square matrix. 
+35. If Nul B contains nonzero vectors, then the equation Bx = 0 has nontrivial solutions. Since B is 
+square, the IMT shows that B is not invertible and the columns of B do not span R5. So Col B is a 
+subspace of R5, but Col B ≠ R5. 
+36.  If the columns of C are linearly independent, then the equation Cx = 0 has only the trivial (zero) 
+solution. That is, Nul C = {0}. 
+37. [M] Use the command that produces the reduced echelon form in one step (ref or rref depending  
+on the program). See the Section 2.8 in the Study Guide for details. By Theorem 13, the pivot 
+columns of A form a basis for Col A. 
+----- pagina 67 -----
+2.8  Solutions   153  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+3501 3 1 0 2 . 54 . 5 3 . 5
+7 9 4 9 11 0 1 1.5 2.5 1.5 ~5725 7 0 0 0 0 0
+3734 0 0 0 0 0 0
+A
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−− −⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ Basis for Col A: 
+35
+79,57
+37
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−
+⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+  
+  For Nul A, obtain the solution of Ax = 0 in parametric vector form: 
+   13 4 5
+2345
+2 . 54 . 53 . 50
+1 . 52 . 51 . 50
+xx x x
+xxxx
++−+=
++−+=  
+  Solution: 
+13 4 5
+23 4 5
+34 5
+2.5 4.5 3.5
+1.5 2.5 1.5
+, , and  are free
+xx x x
+xx x x
+xx x
+=− + −⎧
+⎪ =− + −⎨
+⎪⎩
+ 
+   
+13 4 5
+23 4 5
+34 533
+44
+55
+2.5 4.5 3.5 2.5 4.5 3.5
+1.5 2.5 1.5 1.5 2.5 1.5
+100
+010
+001
+x xxx
+xx x x
+xx xxx
+xx
+xx
+−+ − −−⎡⎤⎡ ⎤ ⎡ ⎤⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎢ ⎥−+ − −−⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎢ ⎥== = + +
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦⎣⎦⎣ ⎦
+x  = x3u + x4v + x5w 
+  By the argument in Example 6, a basis for Nul A is {u, v, w}. 
+38. [M] 
+53268 1 01 0 0
+41387 0 11 0 0 ~51 45 1 9 0 0 0 1 0
+75285 0 00 0 1
+A
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−−⎣⎦ ⎣ ⎦
+.  
+  The pivot columns of A form a basis for Col A: 
+53 68
+41 8 7,, ,51 5 1 9
+75 8 5
+−−⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥ −−⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥−−⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦
+.  
+  For Nul A, solve Ax = 0:  
+13
+23
+4
+5
+0
+0
+0
+0
+xx
+xx
+x
+x
++=
+−=
+=
+=
+  
+  Solution: 
+13
+23
+3
+4
+5
+is free
+0
+0
+xx
+xx
+x
+x
+x
+=−⎧
+⎪ =⎪
+⎪
+⎪ =⎨
+⎪ =⎪
+⎪
+⎪
+⎩
+ 
+----- pagina 68 -----
+154 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1
+2
+33
+4
+5
+1
+1
+1
+0
+0
+x
+x
+xx
+x
+x
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥==
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦⎣⎦
+x  = x3 u  
+  By the method of Example 6, a basis for Nul A  is {u}. 
+Note: The Study Guide for Section 2.8 gives directions for stude nts to construct a review sheet for the 
+concept of a subspace and the two main types of subspaces, Col A and Nul A, and a review sheet for the 
+concept of a basis. I encourage you to consider making this an assignment for your class. 
+2.9 SOLUTIONS 
+Notes: This section contains the ideas from Sections 4.4–4.6 that are needed for later work in Chapters 
+5–7. If you have time, you can enrich the geometric content of “coordinate systems” by discussing crystal 
+lattices (Example 3 and Exercises 35 and 36 in Section 4.4.) Some students might profit from reading 
+Examples 1–3 from Section 4.4 and Examples 2, 4, and 5 from Section 4.6. Section 4.5 is probably not a 
+good reference for students who have not considered general vector spaces. 
+Coordinate vectors are important mainly to give an intuitive and geometric feeling for the 
+isomorphism between a k-dimensional subspace and Rk. If you plan to omit Sections 5.4, 5.6, 5.7 and 7.2, 
+you can safely omit Exercises 1–8 here.  
+Exercises 1–16 may be assigned after students have read as far as Example 2. Exercises 19 and 20 use 
+the Rank Theorem, but they can also be assigned before the Rank Theorem is discussed.  
+The Rank Theorem in this section omits the nontrivial fact about Row A which is included in the 
+Rank Theorem of Section 4.6, but that is used only in Section 7.4. The row space itself can be introduced 
+in Section 6.2, for use in Chapter 6 and Section 7.4. 
+Exercises 9–16 include important review of techniques taught in Section 2.8 (and in Sections 1.2 and 
+2.5). They make good test questions because they require little arithmetic. My students need the practice 
+here. Nearly every time I teach the course and start Chapter 5, I find that at least one or two students 
+cannot find a basis for a two-dimensional eigenspace! 
+ 1 . If [ x]B = 32⎡⎤⎢⎥⎣⎦ , then x is formed from b1 and b2 using  
+weights 3 and 2: 
+   x  = 3b1 + 2b2 = 12 732 11 1⎡ ⎤⎡ ⎤ ⎡ ⎤+=⎢ ⎥⎢ ⎥ ⎢ ⎥−⎣ ⎦⎣ ⎦ ⎣ ⎦   
+ 2 . If [ x]B = 12−⎡⎤⎢⎥⎣⎦ , then x is formed from b1 and b2 using weights –1 and 2:  
+   x  = (–1)b1 + 2b2 = 33 9(1 ) 2 12 3−⎡⎤ ⎡ ⎤⎡ ⎤−+ =⎢⎥ ⎢ ⎥⎢ ⎥⎣⎦ ⎣ ⎦⎣ ⎦  
+ 
+b2
+2b2
+b1
+2b1
+3b1
+x
+x1
+x2
+----- pagina 69 -----
+Copyright © 2012 Pear
+ 3 . To find c1 and c2 that satisfy x = c1b
+12
+21 0 1[] ~ 35 7 0− −⎡⎤ ⎡= ⎢⎥ ⎢−⎣⎦ ⎣bb x
+suggested by Exercise 1 and solve u
+[x]B = 1
+2
+1 .2cc⎡⎤ ⎡⎤=⎢⎥ ⎢⎥⎣⎦⎣⎦  
+ 4 . As in Exercise 3, 12
+1[] 5⎡= ⎢−⎣bb x
+   and [x]B = 1
+2
+3 .2cc −⎡⎤ ⎡⎤=⎢⎥ ⎢⎥−⎣⎦⎣⎦  
+ 5 . 12
+122 1
+[] 4 7 9 ~ 0
+357 0
+−⎡⎤ ⎡
+⎢⎥ ⎢=−⎢⎥ ⎢
+⎢⎥ ⎢−−⎣⎦ ⎣
+bb x
+ 6. 12
+375 1
+[] 2 3 0 ~ 0
+452 0
+−⎡⎤ ⎡
+⎢⎥ ⎢=−⎢⎥ ⎢
+⎢⎥ ⎢−−⎣⎦ ⎣
+bb x
+ 7 . Fig. 1 suggests that w = 2b1 – b2 an
+  [ w]B = 21⎡⎤⎢⎥−⎣⎦  and [x]B = 1.5.5⎡⎤⎢⎥⎣⎦ . To c
+   12
+3 11.5 .5 1.5 .5 0 2−⎡ ⎤⎡+= + ⎢ ⎥⎢⎣ ⎦⎣bb
+   Figure 1 
+Note: Figures 1 and 2 display what Sect
+ 8 . Fig. 2 suggests that x = b1 + b2, y = 
+  [ x]B = 11⎡⎤⎢⎥⎣⎦ , [y]B = 1/31⎡⎤⎢⎥ −⎣⎦ , and [z]B 
+b 2
+b1
+x
+w
+0
+2.9  Sol u
+rson Education, Inc. Publishing as Addison-Wesley. 
+b1 + c2b2, row reduce the augmented matrix: 
+1/2 0 1 0 1~7/2 7 0 1 2− ⎤⎡ ⎤⎥⎢ ⎥⎦⎣ ⎦ . Or, one can write a matrix eq
+using the matrix inverse. In either case, 
+21 1 2 1 1 0 3~~39 0 71 4 01 2−− − ⎤⎡ ⎤⎡ ⎤⎥⎢ ⎥⎢ ⎥ −−⎦⎣ ⎦⎣ ⎦ ,  
+22 1 0 4
+11 ~ 0 1 1
+11 0 0 0
+− ⎤⎡ ⎤
+⎥⎢ ⎥
+⎥⎢ ⎥
+⎥⎢ ⎥−− ⎦⎣ ⎦
+. [x]B = 1
+2
+4 .1cc⎡⎤ ⎡⎤=⎢⎥ ⎢⎥⎣⎦⎣⎦  
+15 1 0 3
+12 ~ 0 1 2
+1 3/3 2 6/3 0 0 0
+⎤⎡ ⎤
+⎥⎢ ⎥
+⎥⎢ ⎥
+⎥⎢ ⎥⎦⎣ ⎦
+,  [ x]B = 1
+2
+c
+c
+⎡⎤ ⎡=⎢⎥ ⎢⎣⎣⎦
+nd x = 1.5b1 + .5b2, in which case, 
+confirm [x]B, compute 
+1 4
+2 1
+⎤⎡ ⎤==⎥⎢ ⎥⎦⎣ ⎦ x  
+Figure 2 
+tion 4.4 calls B-graph paper.  
+1/3b1 - b2, and z = –4/3 b1 +2b2. If so, then 
+= 4/3 2−⎡⎤⎢⎥⎣⎦ . To confirm [y]B and [z]B, compute 
+ 
+utions   155  
+uation as 
+3 .2⎡ ⎤⎥⎣ ⎦  
+----- pagina 70 -----
+156 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  12
+02 2(1 / 3) (1 / 3) 32 1 −⎡⎤ ⎡ ⎤ ⎡ ⎤−= − = = ⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦bb y  and 12 02 4(4 / 3 ) 2 4 / 3 2 32 0⎡⎤ ⎡⎤ ⎡ ⎤−+ = − + = = ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦bb z . 
+ 9 . The information 
+132 6 1 3 3 2
+39 1 5 0 05 7 ~26 19 0 0 0 5
+51 5 0 1 4 00 0 0
+A
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥ −⎢ ⎥⎢ ⎥= ⎢ ⎥⎢ ⎥−
+⎢ ⎥⎢ ⎥
+⎣ ⎦⎣ ⎦
+ is enough to see that columns 1, 3, and 4 
+of A form a basis for Col A: 
+12 6
+315,,.219
+50 1 4
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+  
+  Columns 1, 2 and 4, of the echelon form certainly cannot span Col A since those vectors all have zero 
+in their fourth entries. For Nul A, use the reduced echelon form, augmented with a zero column to 
+insure that the equation Ax = 0 is kept in mind:  
+  
+13 0 0 0
+00 1 0 0
+00 0 1 0
+00 0 0 0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+.      
+12
+3
+4
+2
+30
+0
+0
+ is the free variable
+xx
+x
+x
+x
++=
+=
+= ,      x = 
+1 2
+2 2
+2
+3
+4
+33
+1 .00
+00
+x x
+x x xx
+x
+−−⎡⎤ ⎡ ⎤⎡ ⎤
+⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥ ⎢ ⎥⎢ ⎥==⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥ ⎢ ⎥⎢ ⎥
+⎣ ⎦⎣ ⎦⎣⎦
+ So 
+3
+1
+0
+0
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+ is 
+  a basis for Nul A. From this information, dim Col A = 3 (because A has three pivot columns) and dim 
+Nul A = 1 (because the equation Ax = 0 has only one free variable). 
+10. The information
+12 154 121 2 0
+211 56 01 1 0 3 ~20216 000 1 0
+31 415 00 0 0 1
+A
+−− −−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−⎢ ⎥⎢ ⎥= ⎢ ⎥⎢ ⎥−−−
+⎢ ⎥⎢ ⎥
+⎣ ⎦⎣ ⎦
+ shows that columns 1, 2,4  
+and 5 of A form a basis for Col A: 
+12 5 4
+21 5 6,, ,20 16
+31 1 5
+−⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥−⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥−−
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦
+. For Nul A, 
+  []
+10 1 000
+011 000~ 000 100
+000 010
+A
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+0 .      
+13
+23
+4
+5
+3
+0
+0
+0
+0
+is a free variable
+xx
+xx
+x
+x
+x
++=
++=
+=
+=
+ 
+   
+1 3
+2 3
+33 3
+4
+5
+1
+1
+.1
+00
+00
+x x
+x x
+xx x
+x
+x
+−−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−−⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥== =
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎣⎦
+x  Basis for Nul A: 
+1
+1
+1
+0
+0
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+----- pagina 71 -----
+2.9  Solutions   157  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  From this, dim Col A = 4 and dim Nul A = 1. 
+11. The information 
+2452 3 1 25 14
+3683 5 0 05 05 ~0090 9 0 00 00
+36731 0 0 00 00
+A
+−− − −⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥= ⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥−−−−−⎣ ⎦⎣ ⎦
+ shows that columns 1and 
+3 of A form a basis for Col A: 
+25
+38,.09
+37
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+  
+For Nul A, []
+12 01 1 0
+00 1 0 1 0~. 0 00000
+0 00000
+A
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+0   
+12 4 5
+35
+24 5
+20
+0
+,  and  are free variables
+xx x x
+xx
+xx x
+++ + =
++=  
+  
+12 4 5
+22
+35 2 4 5
+44
+55
+2 211
+100
+.001
+01 0
+001
+x xxx
+xx
+xx x x x
+xx
+xx
+−− − −−−⎡⎤⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥== − = + + −
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦⎣⎦⎣ ⎦
+x  Basis for Nul A: 
+211
+100
+,,.001
+01 0
+00 1
+−−−⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥ −
+⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦
+ 
+  From this, dim Col A = 2 and dim Nul A = 3. 
+12. The information 
+1 2 446 1 2 8 4 6
+51 9 2 1 0 0 234 1 ~46 91 21 5 0 050 5
+3 4 589 00 0 0 0
+A
+−−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥= ⎢ ⎥⎢ ⎥−−
+⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦
+ shows that columns 1, 2,  
+and 3 of A form a basis for Col A: 
+12 4
+51 9,, .46 9
+34 5
+−⎡⎤⎡⎤⎡ ⎤
+⎢⎥⎢⎥⎢ ⎥ −⎢⎥⎢⎥⎢ ⎥
+⎢⎥⎢⎥⎢ ⎥ −
+⎢⎥⎢⎥⎢ ⎥ −⎣⎦⎣⎦⎣ ⎦
+ For Nul A 
+  []
+10 0 0 0 0
+01 0 2 1 0~. 00 1 0 1 0
+00 0 0 0 0
+A
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥ −
+⎢⎥
+⎣⎦
+0       
+1
+24 5
+35
+45
+0
+20
+0
+and  are free variables
+x
+xx x
+xx
+xx
+=
+++ =
+−=  
+  
+1
+24 5
+35 4 5
+44
+55
+0 00
+2 21
+.01
+10
+01
+x
+xx x
+xx x x
+xx
+xx
+⎡⎤⎡ ⎤ ⎡⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥−− −−⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥== = +
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎣⎦⎣ ⎦
+x  Basis for Nul A: 
+00
+21
+,.01
+10
+01
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+ 
+----- pagina 72 -----
+158 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  From this, dim Col A = 3 and dim Nul A = 2. 
+13. The four vectors span the column space H of a matrix that can be reduced to echelon form: 
+  
+13 24 13 24 13 24 13 24
+3915 00 57 00 57 00 57~~ ~2643 00 05 00 05 00 05
+4 1 227 00 1 09 00 05 00 00
+− − − − −− −−⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−− − − −⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−−
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−−⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦
+ 
+  Columns 1, 3, and 4 of the original matrix form a basis for H, so dim H = 3. 
+Note: Either Exercise 13 or 14 should be assigned because there are always one or two students who 
+confuse Col A with Nul A. Or, they wrongly connect “set of linear combinations” with “parametric vector 
+form” (of the general solution of Ax = 0). 
+14. The five vectors span the column space H of a matrix that can be reduced to echelon form: 
+  
+12013 1201 3 1 201 3
+13 147 0 113 4 0113 4 ~~21376 03391 2 00041 0
+3 4 2 7 9 0 2 2 10 18 0 0 0 0 0
+−− −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−− − − −− − −− −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−− − − −
+⎢⎥ ⎢⎥ ⎢ ⎥−− − −−⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  Columns 1,2  and 4 of the original matrix form a basis for H, so dim H = 3.  
+15. Col A = R4, because A has a pivot in each row and so the columns of A span R4. Nul A cannot equal 
+R2, because Nul A is a subspace of R6. It is true, however, that Nul A is two-dimensional. Reason: the 
+equation Ax = 0 has two free variables, because A has six columns and only four of them are pivot 
+columns. 
+16. Col A cannot be R3 because the columns of A have four entries. (In fact, Col A is a 3-dimensional 
+subspace of R4, because the 3 pivot columns of A form a basis for Col A.) Since A has 7 columns and 
+3 pivot columns, the equation Ax = 0 has 4 free variables. So, dim Nul A = 4. 
+17. a. True. This is the definition of a B-coordinate vector. 
+b. False. Dimension is defined only for a subspace. A line must be through the origin in Rn to be a 
+subspace of Rn. 
+c. True. The sentence before Example 3 concludes that the number of pivot columns of A is the rank 
+of A, which is the dimension of Col A by definition. 
+d. True. This is equivalent to the Rank Theorem because rank A is the dimension of Col A. 
+e. True, by the Basis Theorem. In this case, the spanning set is automatically a linearly independent 
+set. 
+18. a. True. This fact is justified in the second paragraph of this section. 
+b.  False. The dimension of Nul A is the number of free variables in the equation Ax = 0.  
+See Example 2. 
+c. True, by the definition of rank. 
+d. True. See the second paragraph after Fig. 1. 
+e. True, by the Basis Theorem. In this case, the linearly independent set is automatically a spanning 
+set. 
+----- pagina 73 -----
+2.9  Solutions   159  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+19. The fact that the solution space of Ax = 0 has a basis of three vectors means that dim Nul A = 3. 
+Since a 5×7 matrix A has 7 columns, the Rank Theorem shows that rank A = 7 – dim Nul A = 4.  
+Note: One can solve Exercises 19–22 without explicit reference to the Rank Theorem. For instance, in 
+Exercise 19, if the null space of a matrix A is three-dimensional, then the equation Ax = 0 has three free 
+variables, and three of the columns of A are nonpivot columns. Since a 5×7 matrix has seven columns, A 
+must have four pivot columns (which form a basis of Col A). So rank A = dim Col A = 4. 
+20. A 6×8 matrix A has 8 columns. By the Rank Theorem, rank A = 8 – dim Nul A. Since the null space 
+is three-dimensional, rank A = 5. 
+21. A 9×8 matrix has 8 columns. By the Rank Theorem, dim Nul A = 8 – rank A. Since the rank is seven, 
+dim Nul A = 1. That is, the dimension of the solution space of Ax = 0 is one. 
+22.  Suppose that the subspace H = Span{v1, …, v5} is four-dimensional. If {v1, …, v5} were linearly 
+independent, it would be a basis for H. This is impossible, by the statement just before the definition 
+of dimension in Section 2.9, which essentially says that every basis of a p-dimensional subspace 
+consists of p vectors. Thus, {v1, …, v5} must be linearly dependent. 
+23. A 3×5 matrix A with a two-dimensional column space has two pivot columns. The remaining three 
+columns will correspond to free variables in the equation Ax = 0. So the desired construction is 
+possible. There are ten possible locations for the two pivot columns, one of which is 
+****
+0* * *
+000 0 0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+
+ . A simple construction is to take two vectors in R3 that are obviously not 
+linearly dependent, and put three copies of these two vectors in any order. The resulting matrix will 
+obviously have a two-dimensional column space. There is no need to worry about whether Nul A has 
+the correct dimension, since this is guaranteed by the Rank Theorem: dim Nul A = 5 – rank A. 
+24. A rank 1 matrix has a one-dimensional column space. Every column is a multiple of some fixed 
+vector. To construct a 3×4 matrix, choose any nonzero vector in R3, and use it for one column. 
+Choose any multiples of the vector for the other tthree columns. 
+25. The p columns of A span Col A by definition. If dim Col A = p, then the spanning set of p columns is 
+automatically a basis for Col A, by the Basis Theorem. In particular, the columns are linearly 
+independent. 
+26. If columns a1, a3, a4, a5, and a7 of A are linearly independent and if dim Col A = 5, then {a1, a3, a4,a5, 
+a7} is a linearly independent set in a 5-dimensional column space. By the Basis Theorem, this set of 
+five vectors is a basis for the column space. 
+27. a. Start with B = [b1   ⋅ ⋅ ⋅   bp] and A = [a1   ⋅ ⋅ ⋅   aq], where q > p. For j = 1, …, q, the vector aj is 
+in W. Since the columns of B span W, the vector aj is in the column space of B. That is, aj = Bcj 
+for some vector cj of weights. Note that cj is in Rp because B has p columns. 
+b. Let C = [c1   ⋅ ⋅ ⋅   cq]. Then C is a p×q matrix because each of the q columns is in Rp.  
+By hypothesis, q is larger than p, so C has more columns than rows. By a theorem, the columns of 
+C are linearly dependent and there exists a nonzero vector u in Rq such that Cu = 0. 
+c. From part (a) and the definition of matrix multiplication 
+   A = [a1   ⋅ ⋅ ⋅   aq] = [Bc1   ⋅ ⋅ ⋅   Bcq] = BC 
+----- pagina 74 -----
+160 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  From part (b), Au = (BC)u = B(Cu) = B0 = 0. Since u is nonzero, the columns of A are linearly 
+dependent. 
+28. If A contained more vectors than B, then A would be linearly dependent, by Exercise 27, because B  
+spans W. Repeat the argument with B and A interchanged to conclude that B cannot contain more  
+vectors than A. 
+29. [M]  Apply the matrix command ref or rref to the matrix [v1   v2   x]:  
+   
+15 14 16 1 0 2
+51 00 0 11 ~12 13 11 0 0 0
+71 73 0 00
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  The equation c1v1 + c2v2 = x is consistent, so x is in the subspace H. Then c1 = 2 and c2 = -1.  Thus, 
+the β -coordinate of x is (2, -1). 
+30. [M] Apply the matrix command ref or rref to the matrix [v1   v2   v3   x]: 
+   
+68 91 1 1 0 0 2
+304 2 0 1 01 ~97 8 1 7 0 0 1 1
+4 3 3 8 000 0
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  The first three columns of [ v1   v2   v3   x] are pivot columns, so v1, v2 and v3 are linearly independent. 
+Thus v1, v2 and v3 form a basis B for the subspace H which they span. View [v1   v2   v3   x] as an 
+augmented matrix for c1v1 + c2v2 + c3v3 = x. The reduced echelon form shows that x is in H and          
+[x]B = 
+2
+1.
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+Notes: The Study Guide for Section 2.9 contains a complete list of the statements in the Invertible Matrix 
+Theorem that have been given so far. The format is the same as that used in Section 2.3, with three 
+columns statements that are logically equivalent for any m×n matrix and are related to existence concepts, 
+those that are equivalent only for any n×n matrix, and those that are equivalent for any n×p matrix and 
+are related to uniqueness concepts. Four statements are included that are not in the text’s official list of 
+statements, to give more symmetry to the three columns. 
+The Study Guide  section also contains directions for making a review sheet for “dimension” and 
+“rank
+----- pagina 75 -----
+Chapter 2  Supplementary Exercises   161  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Chapter 2 SUPPLEMENTARY EXERCISES 
+ 1. a. True. If A and B are m×n matrices, then BT has as many rows as A has columns, so ABT is 
+defined. Also, ATB is defined because AT has m columns and B has m rows. 
+b. False. B must have 2 columns. A has as many columns as B has rows. 
+c. True. The ith row of A has the form (0, …, di, …, 0). So the ith row of AB is (0, …, di, …, 0)B, 
+which is di times the ith row of B. 
+d. False. Take the zero matrix for B. Or, construct a matrix B such that the equation Bx = 0 has 
+nontrivial solutions, and construct C and D so that C ≠ D and the columns of C – D satisfy the 
+equation Bx = 0. Then B(C – D) = 0 and BC = BD. 
+e. False. Counterexample: A = 1000⎡⎤⎢⎥⎣⎦  and C = 0001⎡ ⎤⎢ ⎥⎣ ⎦ .  
+f. False. ( A + B)(A – B) = A2 – AB + BA – B2. This equals A2 – B2 if and only if A commutes with B. 
+g. True. An n×n replacement matrix has n + 1 nonzero entries. The n×n scale and interchange 
+matrices have n nonzero entries. 
+h. True. The transpose of an elementary matrix is an elementary matrix of the same type. 
+i. True. An n×n elementary matrix is obtained by a row operation on In. 
+j. False. Elementary matrices are invertible, so a product of such matrices is invertible. But not 
+every square matrix is invertible. 
+k. True. If A is 3×3 with three pivot positions, then A is row equivalent to I3. 
+l. False. A must be square in order to conclude from the equation AB = I that A is invertible. 
+m. False. AB is invertible, but (AB)–1 = B–1A–1, and this product is not always equal to A–1B–1. 
+n. True. Given AB = BA, left-multiply by A–1 to get B = A–1BA, and then right-multiply by A–1 to 
+obtain BA–1 = A–1B. 
+o. False. The correct equation is ( rA)–1 = r–1A–1, because  
+  ( rA)(r–1A–1) = (rr–1)(AA–1) = 1⋅I = I. 
+p. True. If the equation Ax = 
+1
+0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ has a unique solution, then there are no free variables in this 
+equation, which means that A must have three pivot positions (since A is 3×3). By the Invertible 
+Matrix Theorem, A is invertible. 
+ 2 . C = (C–1 )–1 = 75 7 / 2 5 / 21 64 3 22 −−⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥−−− ⎣⎦ ⎣ ⎦  
+ 3 . 2
+000 000 000 000
+100 , 100 100 000
+010 010 010 100
+AA
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥== =⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  32
+000 000 000
+100 000 000
+010 100 000
+AA A
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=⋅ = = ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+ 
+----- pagina 76 -----
+162 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Next, 22 22 2 3 3( ) () ()I A I AA I AA A I AA I AA AA A I A− + += + + −+ += + + − − − = − .  
+  Since A3 = 0, 2() ( )IA IAA I−+ + = . 
+ 4. From Exercise 3, the inverse of I – A is probably I + A + A2 +  ⋅ ⋅ ⋅  + An–1. To verify this, compute 
+   11 1 1( ) () () nn n n nI A I AA I AA A I AA I A A I A−− − −− + ++ = + ++ − + ++ = − = −"" "  
+  If An = 0, then the matrix B = I + A + A2 +  ⋅ ⋅ ⋅  + An–1 satisfies (I – A)B = I. Since I – A and B are 
+square, they are invertible by the Invertible Matrix Theorem, and B is the inverse of I – A. 
+ 5 . A2 = 2A – I. Multiply by A: A3 = 2A2 – A. Substitute A2 = 2A – I: A3 = 2(2A – I) – A = 3A – 2I. 
+Multiply by A again: A4 = A(3A – 2I) = 3A2 – 2A. Substitute the identity A2 = 2A – I again: 
+  Finally, A4 = 3(2A – I) – 2A = 4A – 3I. 
+ 6 . Let 10 0 1  and  .01 1 0AB ⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  By direct computation, A2 = I, B2 = I, and AB = 0110⎡⎤⎢⎥−⎣⎦  = – 
+BA. 
+ 7 . (Partial answer in Study Guide) Since A–1B is the solution of AX = B, row reduction of [A   B] to 
+[I   X] will produce X = A–1B. See Exercise 15 in Section 2.2.  
+   []
+1 3 83 5 13835 13835
+2 4 1 1 1 5~0 2 5 7 5~0 1 3 6 1
+12 5 34 0 1 3 6 1 0 2 5 7 5
+AB
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+1 3 8 3 5 1 3 0 37 29 1 0 0 10 1
+~0 1 3 6 1~0 1 0 9 1 0~0 1 0 9 1 0
+001 5 3 001 5 3 001 5 3
+−−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥−⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−− −− −−⎣⎦ ⎣⎦ ⎣⎦
+ 
+  Thus, A–1B = 
+10 1
+91 0
+53
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−−⎣⎦
+. 
+ 8 . By definition of matrix multiplication, the matrix A satisfies 
+   12 1337 11A ⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+  Right-multiply both sides by the inverse of 1237⎡ ⎤⎢ ⎥⎣ ⎦ . The left side becomes A. Thus, 
+   13 7 2 2 111 3 1 4 1A −−⎡⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 9 . Given 54 7 3  and 23 2 1AB B⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ , notice that ABB–1 = A. Since det B = 7 – 6 =1,  
+   11 13 5 413 3 1 3 and ( )27 2 3 27 8 2 7BA AB B−− −− −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤== = =⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−− − −⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦  
+----- pagina 77 -----
+2.9  Solutions   163  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Note: Variants of this question make simple exam questions. 
+10. Since A is invertible, so is AT, by the Invertible Matrix Theorem. Then ATA is the product of 
+invertible matrices and so is invertible. Thus, the formula (ATA)–1AT makes sense. By Theorem 6 in 
+Section 2.2, 
+   ( ATA)–1⋅AT = A–1(AT)–1AT = A–1I = A–1 
+  An alternative calculation: ( ATA)–1AT⋅A = (ATA)–1(ATA) = I. Since A is invertible, this equation shows 
+that its inverse is (ATA)–1AT. 
+11. a. For i = 1,…, n, p(xi) = c0 + c1xi + ⋅ ⋅ ⋅ + 11 ni ncx −−  = 
+0
+1
+row ( ) row ( )
+n
+ii
+c
+VV
+c −
+⎡⎤
+⎢⎥⋅=⎢⎥
+⎢⎥⎣⎦
+c# . 
+  By a property of matrix multiplication, shown after Example 6 in Section 2.1, and the fact that c 
+was chosen to satisfy Vc= y, 
+   row ( ) row ( )  row ( ) iiii VV y== =ccy  
+  Thus, p(xi) = yi. To summarize, the entries in Vc are the values of the polynomial p(x) at x1, …, xn. 
+b. Suppose x1, …, xn are distinct, and suppose Vc = 0 for some vector c. Then the entries in c are the 
+coefficients of a polynomial whose value is zero at the distinct points x1, ..., xn. However, a 
+nonzero polynomial of degree n – 1 cannot have n zeros, so the polynomial must be identically 
+zero. That is, the entries in c must all be zero. This shows that the columns of V are linearly 
+independent. 
+c. (Solution in Study Guide) When x1, …, xn are distinct, the columns of V are linearly independent,  
+by (b). By the Invertible Matrix Theorem, V is invertible and its columns span Rn. So, for every  
+y = (y1, …, yn) in Rn, there is a vector c such that Vc = y. Let p be the polynomial whose 
+coefficients are listed in c. Then, by (a), p is an interpolating polynomial for (x1, y1), …, (xn, yn). 
+12. If A = LU, then col1(A) = L⋅col1(U). Since col1(U) has a zero in every entry except possibly the first, 
+L⋅col1(U) is a linear combination of the columns of L in which all weights except possibly the first 
+are zero. So col1(A) is a multiple of col1(L). 
+   Similarly, col 2(A) = L⋅col2(U), which is a linear combination of the columns of L using the first 
+two entries in col2(U) as weights, because the other entries in col2(U) are zero. Thus col2(A) is a 
+linear combination of the first two columns of L. 
+13. a. P2 = (uuT)(uuT) = u(uTu)uT = u(1)uT = P, because u satisfies uTu = 1. 
+b. PT = (uuT)T = uTTuT = uuT = P 
+c. Q2 = (I – 2P)(I – 2P) = I – I(2P) – 2PI + 2P(2P) 
+    = I – 4P + 4P2 = I, because of part (a). 
+14. Given 
+0
+0
+1
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u , define P and Q as in Exercise 13 by  
+----- pagina 78 -----
+164 CHAPTER 2  Matrix Algebra  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+ 
+[]
+0 000 100 000 10 0
+0 001 000 , 2 010 2 000 01 0
+1 001 001 001 00 1
+TPQ I P
+⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥== = = − = − =⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ −⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+uu  
+  If 
+1
+5
+3
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+x , then
+000 1 0 1 0 01 1
+0 0 0 5 0     and 0 1 0 5 5
+001 3 3 0 0 1 3 3
+PQ
+⎡ ⎤ ⎡ ⎤⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎡⎤
+⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢⎥=== =⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢⎥
+⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢⎥ −−⎣ ⎦ ⎣ ⎦⎣ ⎦ ⎣ ⎦ ⎣ ⎦⎣⎦
+xx . 
+15. Left-multiplication by an elementary matrix produces an elementary row operation: 
+   12 13 2 1~~ ~BE BE E BE E E BC =  
+  so B is row equivalent to C. Since row operations are reversible, C is row equivalent to B. 
+(Alternatively, show C being changed into B by row operations using the inverse of the Ei .) 
+16. Since A is not invertible, there is a nonzero vector v in Rn such that Av = 0. Place n copies of v into 
+an n×n matrix B. Then AB = A[v  ⋅ ⋅ ⋅  v] = [Av  ⋅ ⋅ ⋅  Av] = 0. 
+17. Let A be a 6×4 matrix and B a 4×6 matrix. Since B has more columns than rows, its six columns are 
+linearly dependent and there is a nonzero x such that Bx = 0. Thus ABx = A0 = 0. This shows that the 
+matrix AB is not invertible, by the IMT. (Basically the same argument was used to solve Exercise 22 
+in Section 2.1.) 
+Note: (In the Study Guide) It is possible that BA is invertible. For example, let C be an invertible 4×4 
+matrix and construct 1 and [ 0].0CAB C −⎡⎤==⎢⎥⎣⎦  Then BA = I4, which is invertible. 
+18. By hypothesis, A is 5×3, C is 3×5, and CA = I3. Suppose x satisfies Ax = b. Then CAx = Cb. Since  
+CA = I, x must be Cb. This shows that Cb is the only solution of Ax = b. 
+19. [M]  Let 
+.4 .2 .3
+.3 .6 .3
+.3 .2 .4
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+. Then 2
+.31 .26 .30
+.39 .48 .39
+.30 .26 .31
+A
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+. Instead of computing A3 next, speed up 
+the calculations by computing 
+   42 2 84 4
+.2875 .2834 .2874 .2857 .2857 .2857
+.4251 .4332 .4251 , .4285 .4286 .4285
+.2874 .2834 .2875 .2857 .2857 .2857
+AA A AA A
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥== ==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+  To four decimal places, as k increases, 
+   
+.2857 .2857 .2857
+.4286 .4286 .4286
+.2857 .2857 .2857
+kA
+⎡⎤
+⎢⎥→ ⎢⎥
+⎢⎥⎣⎦
+, or, in rational format, 
+2/7 2/7 2/7
+3/7 3/7 3/7
+2/7 2/7 2/7
+kA
+⎡ ⎤
+⎢ ⎥→ ⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+  If 2
+0. 2. 3 . 2 9. 1 8. 1 8
+.1 .6 .3 , then .33 .44 .33
+.9 .2 .4 .38 .38 .49
+BB
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+,  
+----- pagina 79 -----
+2.9  Solutions   165  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   48
+.2119 .1998 .1998 .2024 .2022 .2022
+.3663 .3784 .3663 , .3707 .3709 .3707
+.4218 .4218 .4339 .4269 .4269 .4271
+BB
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+  To four decimal places, as k increases,  
+   
+.2022 .2022 .2022
+.3708 .3708 .3708
+.4270 .4270 .4270
+kB
+⎡⎤
+⎢⎥→ ⎢⎥
+⎢⎥⎣⎦
+, or, in rational format, 
+18/89 18/89 18/89
+33/89 33/89 33/89
+38/89 38/89 38/89
+kB
+⎡ ⎤
+⎢ ⎥→ ⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+20. [M]   The 4×4 matrix A4 is the 4×4 matrix of ones, minus the 4×4 identity matrix. The MATLAB 
+command is A4 = ones(4) – eye(4). For the inverse, use inv(A4). 
+   144
+0 1 1 1 2 / 31 / 31 / 31 / 3
+10 11 1 / 3 2 / 3 1 / 3 1 / 3,1 1 0 1 1 / 31 / 32 / 31 / 3
+1110 1 / 3 1 / 3 1 / 3 2 / 3
+AA −
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+   155
+01111 3 / 4 1 / 4 1 / 4 1 / 4 1 / 4
+1 0 1 1 1 1/ 4 3/4 1/4 1/4 1/4
+,1 1 0 1 1 1/ 4 1/4 3/4 1/4 1/4
+1 1 1 0 1 1 / 41 / 41 / 43 / 41 / 4
+1 1 1 1 0 1/ 4 1/4 1/4 1/4 3/4
+AA −
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥== −
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+   166
+0 1 1 1 1 1 4 / 51 / 51 / 51 / 51 / 51 / 5
+1 0 1 1 1 1 1/5 4/5 1/5 1/5 1/5 1/5
+1 1 0 1 1 1 1 / 51 / 54 / 51 / 51 / 51 / 5,1 1 1 0 1 1 1/5 1/5 1/5 4/5 1/5 1/5
+1 1 1 1 0 1 1 / 51 / 51 / 51 / 54 / 51 / 5
+1 1 1 1 1 0 1/5 1/5 1/5 1/5 1/5 4/5
+AA −
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −==⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  The construction of A6 and the appearance of its inverse suggest that the inverse is related to I6. In 
+fact, 166AI− +  is 1/5 times the 6×6 matrix of ones. Let J denotes the n×n matrix of ones. The 
+conjecture is: 
+   A n = J – In    and    1 1 1nnAJ I n− =⋅ −−  
+  Proof : (Not required) Observe that J 2 = nJ and An J = (J – I) J = J 2 – J = (n – 1) J. Now compute 
+   An((n – 1)–1J – I) = (n – 1)–1A n J  – An = J – (J – I) = I 
+  Since An is square, An is invertible and its inverse is (n – 1)–1J – I. 
+ 
+----- pagina 80 -----
+ 
+ 

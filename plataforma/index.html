@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MAT1203 · Álgebra Lineal — Plataforma de estudio</title>
+  <link rel="stylesheet" href="assets/vendor/katex.min.css" />
+  <link rel="stylesheet" href="assets/css/estilos.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <div class="logo">A</div>
+        <div>
+          <h1>MAT1203 · Álgebra Lineal</h1>
+          <small>Plataforma local de estudio</small>
+        </div>
+      </div>
+      <div class="searchbox">
+        <input id="search" type="search" placeholder="Buscar tema, clase, concepto..." autocomplete="off" />
+      </div>
+      <div class="progress-wrap">
+        <div class="progress-bar"><i id="pbar"></i></div>
+        <div class="progress-label"><span>Progreso</span><span id="plabel">0 / 0</span></div>
+      </div>
+      <div id="search-results"></div>
+      <nav id="sidebar-list"></nav>
+    </aside>
+
+    <main class="main">
+      <div class="topbar">
+        <button class="iconbtn mobile-toggle" id="mobile-toggle">☰</button>
+        <button class="iconbtn" id="home-btn">🏠 Inicio</button>
+        <div class="crumb" id="crumb">Inicio</div>
+        <button class="iconbtn" id="reset-btn" title="Borrar progreso">♻️</button>
+        <button class="iconbtn" id="theme-toggle">🌙 Oscuro</button>
+      </div>
+      <div class="content" id="content"></div>
+    </main>
+  </div>
+
+  <script src="assets/vendor/katex.min.js"></script>
+  <script src="assets/vendor/auto-render.min.js"></script>
+  <script src="assets/vendor/plotly.min.js"></script>
+  <script src="assets/js/content.js"></script>
+  <script src="assets/js/progress.js"></script>
+  <script src="assets/js/graphs.js"></script>
+  <script src="assets/js/quiz.js"></script>
+  <script src="assets/js/app.js"></script>
+
+  <script>
+    // Carga ordenada de módulos y secciones (compatible con file://)
+    var CONTENT = [
+      "content/manifest.js",
+      "content/m01/m01_s01.js",
+      "content/m01/m01_s02.js",
+      "content/m01/m01_s03.js",
+      "content/m01/m01_s04.js",
+      "content/m01/m01_s05.js",
+      "content/m02/m02_s01.js",
+      "content/m02/m02_s02.js",
+      "content/m02/m02_s03.js",
+      "content/m02/m02_s04.js",
+      "content/m02/m02_s05.js",
+      "content/m02/m02_s06.js",
+      "content/m03/m03_s01.js",
+      "content/m03/m03_s02.js",
+      "content/m03/m03_s03.js",
+      "content/m04/m04_s01.js",
+      "content/m04/m04_s02.js",
+      "content/m04/m04_s03.js",
+      "content/m04/m04_s04.js",
+      "content/m04/m04_s05.js",
+      "content/m04/m04_s06.js",
+      "content/m04/m04_s07.js",
+      "content/m05/m05_s01.js",
+      "content/m05/m05_s02.js",
+      "content/m05/m05_s03.js",
+      "content/m05/m05_s04.js",
+      "content/m05/m05_s05.js",
+      "content/m05/m05_s06.js",
+      "content/m06/m06_s01.js",
+      "content/m06/m06_s02.js",
+      "content/m06/m06_s03.js",
+      "content/m06/m06_s04.js",
+      "content/m06/m06_s05.js",
+      "content/m07/m07_s01.js",
+      "content/m07/m07_s02.js",
+      "content/m07/m07_s03.js",
+      "content/m07/m07_s04.js",
+      "content/m07/m07_s05.js",
+      "content/m07/m07_s06.js",
+      "content/m08/m08_s01.js",
+      "content/m08/m08_s02.js",
+      "content/m08/m08_s03.js",
+      "content/banco/banco_pruebas.js"
+    ];
+    for (var i = 0; i < CONTENT.length; i++) {
+      document.write('<script src="' + CONTENT[i] + '"><\/script>');
+    }
+  </script>
+</body>
+</html>

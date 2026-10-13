@@ -1,0 +1,71 @@
+
+----- pagina 1 -----
+Clase 40 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 6
+----- pagina 2 -----
+Recordatorio
+Una forma cuadrática es una expresión de la forma Q(x) = xTAx,
+donde A es una matriz simétrica de n × n.
+Para cualquier forma cuadrática xTAx, existe un cambio de variable
+ortogonal, x = Py, que la transforma en una forma cuadrática sin
+términos de producto cruzado.
+Una forma cuadrática Q es:
+Positiva definida si Q(x) > 0 para todo x ̸= 0.
+Negativa definida si Q(x) < 0 para todo x ̸= 0.
+Indefinida si Q(x) asume valores tanto positivos como negativos.
+Una matriz simétrica A recibe el nombre de positiva definida,
+negativa definida o indefinida según la clasificación de la forma
+Q(x) = xTAx, y depende del signo de sus valores propios.
+2 / 6
+----- pagina 3 -----
+Factorización de Cholesky
+Definición: Factorización de Cholesky
+Una factorización de Cholesky es una factorización A = RTR, con R
+triangular superior invertible y con entradas positivas en la diagonal.
+¿Cómo debe ser A para poder tener factorización de Cholesky? ¿Cómo es
+la forma cuadrática xTAx?
+3 / 6
+----- pagina 4 -----
+Factorización de Cholesky
+Teorema
+Una matriz A tiene factorización de Cholesky si y solo si es simétrica y
+definida positiva.
+Sugerencia: A partir de A = PDPT, encuentre una matriz B con
+columnas linealmente independientes tal que A = BTB. Luego factorice
+B = QR.
+4 / 6
+----- pagina 5 -----
+Factorización de Cholesky
+¿Cómo encontrar la factorización de Cholesky?
+Opción 1: Escribir las coordenadas de R y despejar.
+Ejemplo: Encuentre, de ser posible, la factorización de Cholesky de
+A =
+
+
+6 −2 −1
+−2 6 −1
+−1 −1 5
+
+
+5 / 6
+----- pagina 6 -----
+Factorización de Cholesky
+Opción 2:
+1) Encontrar la forma escalonada de A sin intercambiar filas ni
+multiplicar una fila por una constante.
+2) Luego dividir cada fila por la raíz de los elementos de la diagonal.
+Ejemplo: Encuentre la factorización de Cholesky de
+A =
+
+
+4 8 −4
+8 17 −5
+−4 −5 17
+
+
+6 / 6

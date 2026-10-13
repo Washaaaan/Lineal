@@ -1,0 +1,127 @@
+
+----- pagina 1 -----
+Clase 27 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 8
+----- pagina 2 -----
+Recordatorio
+Dado un subespacio H, una base de H es un conjunto B LI que
+genera H.
+Dada una base B de un e.v. V, podemos representar cada vector x
+como un vector de coordenadas [x]B.
+Todas las bases de un e.v. V tienen el mismo tamaño, llamado la
+dimensión de V.
+Si tenemos dos bases distintas, ¿cómo pasar de las coordenadas de
+una base a la otra?
+2 / 8
+----- pagina 3 -----
+Cambio de base
+Ejemplo: Considere dos bases B = {b1, b2} y C = {c1, c2} de un espacio
+vectorial V, de manera que
+b1 = 4c1 + c2 y b2 = −6c1 + c2
+Suponga que x = 3b1 + b2. Encuentre [x]C.
+3 / 8
+----- pagina 4 -----
+Cambio de base
+Teorema
+Sean B = {b1, . . . ,bn} y C = {c1, . . . ,cn} bases de un espacio vectorial V.
+Entonces, existe una única matriz PC←B de n × n tal que
+[x]C = PC←B [x]B
+Las columnas de PC←B son los vectores de C-coordenadas de los vectores
+en la base B. Es decir,
+PC←B =
+[
+[b1]C [b2]C . . . [bn]C
+]
+La matriz PC←B se denomina matriz de cambio de coordenadas de B a C.
+4 / 8
+----- pagina 5 -----
+Cambio de base
+5 / 8
+----- pagina 6 -----
+Cambio de base
+Puesto que PC←B es invertible, se tiene que (PC←B )−1 es la matriz que
+convierte las C-coordenadas en B-coordenadas.
+Cambio de base en Rn
+(PC←B )−1 = PB←C
+Ejemplo: Sean
+b1 =
+[ −9
+1
+]
+, b2 =
+[ −5
+−1
+]
+, c1 =
+[ 1
+−4
+]
+, c2 =
+[ 3
+−5
+]
+Considere las bases de R2 dadas por B = {b1, b2} y C = {c1, c2}.
+Encuentre la matriz de cambio de coordenadas de B a C.
+Nota: La matriz aumentada [c1c2|b1b2] es equivalente por fila a[ 1 0 6 4
+0 1 −5 −3
+]
+.
+6 / 8
+----- pagina 7 -----
+Cambio de base
+Ejemplo: Sea b1 =
+[ 1
+−3
+]
+, b2 =
+[ −2
+4
+]
+, c1 =
+[ −7
+9
+]
+, c2 =
+[ −5
+7
+]
+, y
+considere las bases para R2 dadas por B = {b1, b2} y C = {c1, c2}.
+Determine la matriz de cambio de coordenadas de C a B.
+Encuentre la matriz de cambio de coordenadas de B a C.
+Nota: La matriz aumentada [b1b2|c1c2] es equivalente por fila a[ 1 0 5 3
+0 1 6 4
+]
+.
+7 / 8
+----- pagina 8 -----
+Cambio de base
+Cuando una base B para Rn está fija, el vector de coordenadas de B a la
+base estándar es fácil de calcular.
+Definición: Matriz de cambio de coordenadas
+Sea PB =
+[
+b1 b2 . . . bn
+]
+. Entonces PB es la matriz de cambio de
+coordenadas de B a la base estándar en Rn.
+Ejemplo: Sean b1 =
+[ 2
+1
+]
+, b2 =
+[ −1
+1
+]
+, x =
+[ 4
+5
+]
+y B = {b1, b2}.
+Determine el vector de coordenadas [x]B de x respecto de B.
+8 / 8

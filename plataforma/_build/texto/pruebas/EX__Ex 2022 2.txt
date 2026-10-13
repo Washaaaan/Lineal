@@ -1,0 +1,634 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Segundo Semestre 2022
+´Algebra Lineal - MAT1203
+PAUTA Examen
+1. Sea A =
+
+
+1 1 2
+α 0 0
+0 0 1
+
+ y b =
+
+
+1
+1
+−1
+
+.
+(a) Determine el o los valores de α que hacen que el sistema Ax = b sea consistente y
+encuentre la o las soluciones del sistema (escritas en funci´ on del par´ ametroα).
+(b) Para el o los valores de α que hacen el sistema Ax = b inconsistente, determine la
+o las soluciones de m ´ ınimos cuadrados deAx = b.
+Soluci´ on
+(a) Si α ̸= 0, la forma escalonada reducida de la matriz ampliada del sistema Ax = b
+es 
+
+1 0 0 1/α
+0 1 0 3 − 1/α
+0 0 1 −1
+
+
+por lo que es consistente con ´ unica soluci´ on igual a
+
+
+x1
+x2
+x3
+
+ =
+
+
+1/α
+3 − 1/α
+−1
+
+.
+En cambio si α = 0, la matriz ampliada es
+
+
+1 1 2 1
+0 0 0 1
+0 0 1 −1
+
+
+lo que corresponde a un sistema inconsistente.
+(b) Con α = 0 la matriz quedaA =
+
+
+1 1 2
+0 0 0
+0 0 1
+
+. Su transpuesta es AT =
+
+
+1 0 0
+1 0 0
+2 0 1
+
+.
+Las soluciones de m ´ ınimos cuadrados son las soluciones de la ecuaci´ on matricial
+AT Ax = AT b, donde AT A =
+
+
+1 1 2
+1 1 2
+2 2 5
+
+ y AT b =
+
+
+1
+1
+1
+
+. La forma escalonadareducida de ( AT A|AT b) es 
+
+1 1 0 3
+0 0 0 0
+0 0 1 −1
+
+
+por lo que las soluciones est´ an dadas por
+
+
+x
+y
+z
+
+ =
+
+
+3 − y
+y
+−1
+
+ =
+
+
+3
+0
+−1
+
+ + y
+
+
+−1
+1
+0
+
+ , y ∈ R.
+Puntaje
+(a) – 1 punto por justificar que el sistema Ax = b es consistente si α ̸= 0.
+– 1 punto por determinar la soluci´ on del sistema en el caso α ̸= 0.
+– 1 punto por justificar que el sistema es inconsistente si α = 0.
+(b) – 1 punto por plantear el sistemaAT Ax = AT b o alternativamenteAx = proyCol(A)(y).
+No es necesario haber hecho los c´ alculos.
+– 1 punto por establecer expl ´ ıcitamente el sistema a resolver.
+– 1 punto por calcular las soluciones correctas de m ´ ınimos cuadrados.
+2. Sea V el espacio vectorial de matrices de 2 × 2 con entradas reales,
+V =
+
+a b
+c d
+
+: a, b, c, d∈ R
+
+.
+(a) Demuestre que la transformaci´ onT : V → R2, definida por T
+
+a b
+c d
+
+=
+
+a
+b + c
+
+es lineal.
+(b) Encuentre una base de V , calcule dim( V ) y determine si T es inyectiva y/o so-
+breyectiva.
+Soluci´ on
+(a) Sea A1 =
+
+a1 b1
+c1 d1
+
+y A2 =
+
+a2 b2
+c2 d2
+
+dos matrices de V . Se tiene:
+T (A1 + A2) = T
+
+a1 b1
+c1 d1
+
++
+
+a2 b2
+c2 d2
+
+= T
+
+a1 + a2 b1 + b2
+c1 + c2 d1 + d2
+
+=
+
+a1 + a2
+b1 + b2 + c1 + c2
+
+=
+
+a1
+b1 + c1
+
++
+
+a2
+b2 + c2
+
+= T
+
+a1 b1
+c1 d1
+
++ T
+
+a1 b1
+c1 d1
+
+= T (A1) + T (A2).Por otro lado, para A =
+
+a b
+c d
+
+y α ∈ R se tiene
+T (αA) = T
+
+α
+
+a b
+c d
+
+= T
+
+αa αb
+αc αd
+
+=
+
+αa
+αb + αc
+
+= α
+
+a
+b + c
+
+= αT (A)
+Esto demuestra que T es una transformaci´ on lineal.
+(b) Una base para V es B =
+
+1 0
+0 0
+
+,
+
+0 1
+0 0
+
+,
+
+0 0
+1 0
+
+,
+
+0 0
+0 1
+
+. Como B
+tiene 4 elementos, la dimensi´ on deV es 4. Ya que la dimensi´ on de R2 es 2, T no
+puede ser inyectiva. Por otro lado, para un elemento arbitrario de R2 se cumple
+
+a
+b
+
+= T
+
+a 0
+b 0
+
+por lo que T es sobreyectiva.
+Puntaje
+(a) – 1 punto por establecer, impl ´ ıcita o expl ´ ıcitamente, la definici´ on de transfor-
+maci´ on lineal.
+– 1 punto por demostrar correctamente la propiedad de la suma.
+– 1 punto por demostrar correctamente la propiedad de la multiplicaci´ on escalar.
+(b) – 0, 5 puntos por determinar una base de W .
+– 0, 5 puntos por determinar la dimensi´ on deW .
+– 1 punto por justificar que T no es inyectiva.
+– 1 punto por justificar que T es sobreyectiva.
+3. Considere en R3 el plano W = Gen
+
+
+
+
+
+1
+2
+0
+
+ ,
+
+
+2
+3
+1
+
+
+
+
+.
+(a) Determine una base ortonormal de W .
+(b) Encuentre el vector de W m´ as cercano al vectory =
+
+
+1
+0
+1
+
+
+Soluci´ on(a) Siguiendo el proceso de ortogonalizaci´ on de Gram-Schmidt, definimos
+u =
+
+
+1
+2
+0
+
+
+v =
+
+
+2
+3
+1
+
+ −
+
+
+1
+2
+0
+
+ ·
+
+
+2
+3
+1
+
+
+ 120 2
+
+
+1
+2
+0
+
+ =
+
+
+2
+3
+1
+
+ − 85
+
+
+1
+2
+0
+
+ =
+
+
+2/5
+−1/5
+1
+
+
+La norma de u es
+||u|| =
+√
+1 + 4 =
+√
+5.
+La norma de v es
+||v|| =
+r
+4
+25 + 125 + 1 =
+√
+30
+5 .
+Por lo tanto, una base ortonormal de W es
+
+
+
+
+
+1/√5
+2/√5
+0
+
+ ,
+
+
+2/√30
+−1/√30
+5/√30
+
+
+
+
+ .
+(b) El vector de W m´ as cercano al vectory es z = proyW (y). Como los vectores de W
+est´ an normalizados, entonces:
+proyW (y) =
+
+y ·
+
+
+1/√5
+2/√5
+0
+
+
+
+
+
+
+1/√5
+2/√5
+0
+
+ +
+
+y ·
+
+
+2/√30
+−1/√30
+5/√30
+
+
+
+
+
+
+2/√30
+−1/√30
+5/√30
+
+
+= 1√5
+
+
+1/√5
+2/√5
+0
+
+ + 7√30
+
+
+2/√30
+−1/√30
+5/√30
+
+
+=
+
+
+2/3
+1/6
+7/6
+
+ = 16
+
+
+4
+1
+7
+
+ .
+Puntaje
+(a) – 1 punto por establecer, impl ´ ıcita o expl ´ ıcitamente, una manera de encontrar
+una base ortogonal.
+– 1 puntos por calcular una base ortogonal de W .
+– 1 punto por determinar una base ortonormal de W .
+(b) – 1 punto por establecer, impl ´ ıcita o expl ´ ıcitamente, que el vector buscado es
+proyW (y).
+– 1 punto por escribir expl ´ ıcitamente c´ omo calcular proyW (y).
+– 1 punto por determinar correctamente el vector buscado.4. Considere la forma cuadr´ aticaQ(x1, x2) = 5x21 − 4x1x2 + 5x22.
+(a) Encuentre la matriz sim´ etricaA asociada a la forma cuadr´ aticaQ y luego diago-
+nalice A ortogonalmente, es decir, descomp´ ongala en la formaA = P DPT .
+(b) Defina un cambio de variables y reescriba la forma cuadr´ atica Q sin productos
+cruzados con respecto de las nuevas variables y explique porqu´ e Q es definida
+positiva.
+Soluci´ on
+(a) Primero notamos que
+Q(x1, x2) =
+
+x1
+x2
+T  5 −2
+−2 5
+ 
+x1
+x2
+
+.
+La matriz buscada es A =
+
+5 −2
+−2 5
+
+. Para diagnolizar ortogonalmente primero
+buscamos valores propios:
+det(A − λI) =
+ 5 − λ −2−2 5 − λ  = (5 − λ)2 − 4 = (3 − λ)(7 − λ)
+por lo que los valores propios de A son λ = 3 y λ = 7. Adem´ as,v =
+
+v1
+v2
+
+es
+vector propio de A asociado a λ = 3 si y s´ olo si
+
+5 − 3 −2
+−2 5 − 3
+ 
+v1
+v2
+
+=
+
+0
+0
+
+⇔ v1 = v2.
+Por otro lado, u =
+
+u1
+u2
+
+es vector propio de A asociado a λ = 7 si y s´ olo si
+
+5 − 7 −2
+−2 5 − 7
+ 
+u1
+u2
+
+=
+
+0
+0
+
+⇔ u1 = −u2.
+Por lo tanto, una base ortogonal de vectores propios es
+
+1
+1
+
+,
+
+1
+−1
+
+. Luego
+de normalizar dicha base, si definimos P =
+
+1/√2 1/√2
+1/√2 −1/√2
+
+y D =
+
+3 0
+0 7
+
+emtonces se cumple que A = P DPT .
+(b) Sea
+
+y1
+y2
+
+= P
+
+x1
+x2
+
+. Se tiene que
+Q(x1, x2) =
+
+x1
+x2
+T
+A
+
+x1
+x2
+
+=
+
+x1
+x2
+T
+P DPT
+
+x1
+x2
+
+=
+
+P
+
+x1
+x2
+T
+D
+
+P
+
+x1
+x2
+
+=
+
+y1
+y2
+T  3 0
+0 7
+ 
+y1
+y2
+
+= 3y21 + 7y22 = Q(y1, y2).Como Q(y1, y2) = 3y21 + 7y22 es mayor o igual a 0, entonces Q es definida positiva.
+(Alternativamente, como A tiene valores propios positivos, entonces Q es definida
+positiva).
+Puntaje
+(a) – 1 punto por determinar la matriz A.
+– 0, 5 puntos por determinar cada columna de una matriz P (1 punto en total).
+– 0, 5 puntos por determinar cada columna de una matriz D (1 punto en total).
+(b) – 1 punto por definir el cambio de variables.
+– 1 punto por reescribir Q sin productos cruzados.
+– 1 punto por justificar porqu´ eQ es definida positiva.

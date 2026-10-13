@@ -1,0 +1,296 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Primer Semestre 2014
+MAT1203 - Algebra Lineal
+Interrogaci´ on 2 - Lunes 5 de mayo - Soluci´ on
+1. a) Sea A una matriz tal que A
+[
+1
+2
+]
+=
+[
+1
+3
+]
+y A
+[
+3
+5
+]
+=
+[
+1
+9
+]
+. Calcule la inversa
+de A.
+Soluci´ on:
+Del enunciado se tiene que A ·
+[
+1 3
+2 5
+]
+=
+[
+1 1
+3 9
+]
+.
+Entonces A ·
+[
+1 3
+2 5
+]
+·
+[
+1 1
+3 9
+]−1
+= I.
+Luego la inversa de A es
+[
+1 3
+2 5
+]
+·
+[
+1 1
+3 9
+]−1
+= (1/6)
+[
+0 2
+3 3
+]
+.
+b) Sea A una matriz de n × n tal que A3 = 2I. Demuestre que A − I es una matriz
+invertible.
+Soluci´ on:
+Se tiene que A3 − I 3 = (A − I)(A2 + A + I), pero A3 = 2I, entonces
+2I − I = I = (A − I)(A2 + A + I).
+Por lo tanto ( A − I) es invertible y su inversa es ( A2 + A + I).
+12. Sea A =
+[ 1 1 0
+1 2 0
+0 1 −3
+]
+.
+a) Escriba A como producto de matrices elementales.
+Soluci´ on:
+Para obtener la I como forma escalonada reducida de A se multiplica A por
+las matrices elementales que representan las operaciones elementales descritas
+en la siguiente igualdad:
+[
+F1 → F1 − F2
+]
+·
+[
+F3 → (−1/3)F3
+]
+·
+[
+F3 → F3 − F2
+]
+·
+[
+F2 → F2 − F1
+]
+A = I
+Es decir:
+A =
+[
+F2 → F2 − F1
+]−1[
+F3 → F3 − F2
+]−1[
+F3 → (−1/3)F3
+]−1[
+F1 → F1 − F2
+]−1
+Calculando las operaciones queda:
+A =
+[
+F2 → F2 + F1
+][
+F3 → F3 + F2
+][
+F3 → (−3)F3
+][
+F1 → F1 + F2
+]
+.
+Calculando las matrices queda:
+A =
+[ 1 0 0
+1 1 0
+0 0 1
+] [ 1 0 0
+0 1 0
+0 1 1
+] [ 1 0 0
+0 1 0
+0 0 −3
+] [ 1 1 0
+0 1 0
+0 0 1
+]
+.
+2b) Usando la descomposici´ onA = LU encuentre la segunda columna de la inversa
+de A.
+Soluci´ on:
+La descomposici´ on quedaA =
+[ 1 0 0
+1 1 0
+0 1 1
+]
+·
+[ 1 1 0
+0 1 0
+0 0 −3
+]
+.
+El sistema que hay que resolver es Ax = e2.
+Se tiene que LU x = e2 con U x = y.
+Primero se resuelve Ly = e2:
+[ 1 0 0
+1 1 0
+0 1 1
+] [ y1
+y2
+y3
+]
+=
+[ 0
+1
+0
+]
+.
+Se tiene y1 = 0, y2 = 1, y3 = −1.
+Segundo se resuelve U x = y:
+[ 1 1 0
+0 1 0
+0 0 −3
+] [ x1
+x2
+x3
+]
+=
+[ 0
+1
+−1
+]
+.
+Se tiene x3 = 1/3, x2 = 1, x1 = −1.
+Nota: Si se encuentra la segunda columna de la inversa de cualquier manera
+distinta a la forma anterior, el puntaje es 0.
+33. Sea A una matriz sim´ etrica tal queqA
+[ x1
+x2
+x3
+]
+= x21+5x22+7x23+2x1x2+2x1x3−6x2x3.
+a) Determine una matriz R tal que A = RtR.
+Soluci´ on:
+La matriz A queda descrita como A =
+[ 1 1 1
+1 5 −3
+1 −3 7
+]
+.
+Primero se busca la descomposici´ on A = LU =
+[ 1 0 0
+1 1 0
+1 −1 1
+]
+·
+[ 1 1 1
+0 4 −4
+0 0 2
+]
+.
+Segundo se busca la descomposici´ on:
+A = LDLt =
+[ 1 0 0
+1 1 0
+1 −1 1
+]
+·
+[ 1 0 0
+0 4 0
+0 0 2
+]
+·
+[ 1 1 1
+0 1 −1
+0 0 1
+]
+.
+Finalmente tomando D =
+√
+D
+2
+=
+[ 1 0 0
+0 2 0
+0 0
+√
+2
+]2
+se tiene A = RtR con:
+R =
+√
+DLt =
+[ 1 1 1
+0 2 −2
+0 0
+√
+2
+]
+.
+b) Use la descomposici´ on de Cholesky para escribirqA como una suma ponderada
+de cuadrados.
+Soluci´ on:
+De la parte a) se tiene que:
+qA
+[ x1
+x2
+x3
+]
+= (x1 + x2 + x3)2 + 4(x2 − x3)2 + 2(x3)2.
+44. a) Sea T una matriz de n × n, I la matriz identidad de n × n y O la matriz nula de
+n × n. Si |T | = 5, calcule el determinante de la siguiente matriz M de 2n × 2n:
+M =
+[
+−T T 2
+2I O
+]
+.
+Soluci´ on:
+Haciendo las operaciones F1 ↔ Fn+1, F2 ↔ Fn+2, · · ·, Fn ↔ F2n queda:
+|M | = (−1)n 2I O−T T 2 .
+Utilizando cofactores en las primeras n ﬁlas queda:
+|M | = (−1)n · (2)n · |T 2| = (−1)n · (2)n · |T |2 = (−1)n · (2)n · (5)2.
+b) Sea b ∈ R. Determine todos los valores de b para los cuales la siguiente matriz
+B es positiva deﬁnida:
+B =
+[ 1 b 1
+b 1 b − 1
+1 b − 1 4
+]
+.
+Soluci´ on:
+Los determinantes de las submatrices principales deben ser todos positivos,
+entonces:
+|B1| = 1 > 0 se cumple.
+|B2| = 1 − b2 > 0, entonces b pertenece al intervalo ( −1, 1).
+|B3| = |B| = 2 − 3b2 > 0, entonces b pertenece al intervalo ( −√2/3, √2/3).
+Por lo tanto b pertenece al intervalo ( −
+√
+2/3,
+√
+2/3).
+Nota: Si en la respuesta aparece solamente el c´ alculo del determinante de B,
+el puntaje es 0.
+5

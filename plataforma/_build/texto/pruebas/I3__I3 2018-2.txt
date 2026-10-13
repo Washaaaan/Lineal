@@ -1,0 +1,439 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Segundo Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 3
+1. Sea P2 el espacio de los polinomios de grado menor o igual a 2 con coeﬁcientes reales. Determine
+la matriz cambio de base P
+B←C
+, donde C = {1, t, t2} y B = {1 − 3t2, 2 + t − 5t2, 1 + 2 t}. Luego
+determine [ −1 + 2t2]B.
+Soluci´ on.
+P
+B←C
+=
+[
+[1]B [t]B [t2]B] = ( P
+C←B
+)−1 =
+
+
+1 2 1
+0 1 2
+−3 −5 0
+
+
+−1
+=
+
+
+10 −5 3
+−6 3 −2
+3 −1 1
+
+
+As ´ ı
+[−1 + 2t2]B =
+
+
+10 −5 3
+−6 3 −2
+3 −1 1
+
+
+
+
+−1
+0
+2
+
+ =
+
+
+−4
+2
+−1
+
+
+Puntaje:
+1 pto por describir P
+B←C
+= [[1] B [t]B [t2]B] o P
+B←C
+= ( P
+C←B
+)−1.
+1 pto por determinar correctamente cada columna de P
+B←C
+(3ptos).
+2 ptos por determinar correctamente [ −1 + 2t2]B.2. Determine si existen valores de a y b reales con b ̸= 0, tal que la matriz A =
+
+
+a b 0 0
+0 a 0 0
+0 0 a 0
+0 0 0 a
+
+ sea
+diagonalizable.
+Soluci´ on.
+Como la matriz A es triangular superio se sigue que los valores propios de A son los elementos de
+su diagonal, es decir PA(λ) = ( a − λ)4 y luego A tiene un valor propio λ = a con multiplicidad
+algebraica 4. Ahora bien, el espacio propio asociado a λ = a es
+Eλ =
+
+
+
+
+
+x1
+x2
+x3
+x4
+
+ | x2 = 0
+
+
+ = Gen {e1, e3, e4} .
+La multiplicidad geom´ etrica deλ es distinta de la multiplicada algebraica por lo tanto la matriz
+dada no es diagonalizable cualesquiera sean los valores a y b con b ̸= 0. Tambi´ en se puede argu-
+mentar que no existe una base de vectores propios de A para R4.
+Puntaje:
+0.5 pto por determinar correctamente el polinomio caractaristico de A.
+0.5 pto por determinar que λ = a es el ´ unico valor propio de A.
+2 ptos por determinar correctamente el espacio de vectores propios asociados al valor propio
+a.
+3 ptos por argumentar que no existen valores para que la matriz A sea diagonalizable.3. Determinar si A =
+
+
+−1 4 −2
+−3 4 0
+−3 1 3
+
+ es diagonalizable. En tal caso encontrar una matriz P invertible
+y una matriz D diagonal, tal que A = P DP−1.
+Soluci´ on.
+El polinomio caracter ´ ıstico deA es:
+PA(λ) = |A − λI| =
+−1 − λ 4 −2−3 4 − λ 0−3 1 3 − λ = (−λ + 3)(λ − 2)(λ − 1)
+Los valores propios de A son λ1 = 1, λ2 = 2 y λ3 = 3. Como son tres valores propios distintos y
+A es una matriz de 3 × 3 la matriz A es diagonalizable. Los espacios propios son
+Eλ1 = Gen
+
+
+
+
+
+1
+1
+1
+
+
+
+
+ Eλ2 = Gen
+
+
+
+
+
+2
+3
+3
+
+
+
+
+ Eλ3 = Gen
+
+
+
+
+
+1
+3
+4
+
+
+
+
+
+Entonces B =
+
+
+
+
+
+1
+1
+1
+
+ ,
+
+
+2
+3
+3
+
+ ,
+
+
+1
+3
+4
+
+
+
+
+ es una base de R3 formada por vectores propios. Se sigue que
+la matriz P =
+
+
+1 2 1
+1 3 3
+1 3 4
+
+ es la matriz invertible y D =
+
+
+1 0 0
+0 2 0
+0 0 3
+
+ la matriz diagonal tal que
+A = P DP−1.
+Puntaje:
+1 pto por determinar correctamente el polinomio caracteristico de A.
+0.5 pto por determinar los 3 valores propios de A.
+1 ptos por determinar correctamente cada espacio de vectores propios asociados. (3 ptos)
+0.5 ptos por argumentar la matriz A es diagonalizable.(si solo encuentran la diagonalizaci´ on
+tambien se asigna este puntaje).
+0.5 por determinar correctamente P . (recordar que las columnas pueden estar en otro orden
+o ser un ponderado de ellas).
+0.5 por determinar correctamente D. (recordar que las columnas pueden estar en otro orden
+correspondiente al orden de P ).4. Sea P2 el espacio de los polinomios de grado menor o igual a 2 con coeﬁcientes reales y T : P2 → R3
+la transformaci´ on lineal deﬁnida por
+T (p) =
+
+
+p(−1)
+p(0)
+p(1)
+
+ .
+Obtenga la matriz para T respecto a la bases C = {1, t, t2} de P2 y B = {e1, e2, e3} de R3.
+Soluci´ on.
+Para obtener la matriz para T en las bases dadas, calculamos
+T [1] =
+
+
+1
+1
+1
+
+ , T [t] =
+
+
+−1
+0
+1
+
+ , T [t2] =
+
+
+1
+0
+1
+
+ .
+Entonces, la matriz para T es
+[T ] =
+
+
+1 −1 1
+1 0 0
+1 1 1
+
+ .
+Puntaje:
+1 pts por calcular la transformaci´ on de cada de los elementos de la base. (3 ptos)
+3 ptos por escribir la matriz correctamente.5. Sea A =
+[ 3 −3
+1 1
+]
+. Encuentre una matriz P de 2 × 2 y una matriz C de la forma
+[ a −b
+b a
+]
+tal
+que A = P CP−1.
+Soluci´ on.
+El polinomio caracter ´ ıstico paraA es
+p(λ) = det[ A − λI] = λ2 − 4λ + 6 = ( λ − 2)2 + 2,
+as ´ ı queA tiene valores propios complejos λ = 2 ±
+√
+2i. Un vector propio complejo v, asociado con
+λ = 2 −
+√
+2i pertenece a Nul( A − λI), donde
+A − (2 −
+√
+2i)I =
+[ 1 + √2i −3
+1 −1 +
+√
+2i
+]
+.
+Entonces podemos tomar v =
+[ 1 − √2i
+1
+]
+. De esta informaci´ on construimos las matrices P y C:
+P = [Re v, Im v] =
+[ 1 −√2
+1 0
+]
+, C =
+[ 2 −√2√
+2 2
+]
+.
+Puntaje:
+1 pto para calcular el polinomio caracteristico y los valores propios;
+2 pts para calcular un vector propio asociado v;
+1 pto por escribir C;
+2 pts por calcular la partes real y imaginera de v y producir P .6. Sean ⃗ u, ⃗ vdos vectores en Rn, no nulos y ortogonales. Se sabe que si ⃗ w∈ Gen{⃗ u, ⃗ v} entonces
+⃗ w= α⃗ u+ β⃗ v. Demuestre que
+α = ⃗ w· ⃗ u∥⃗ u∥2 y β = ⃗ w· ⃗ v∥⃗ v∥2 .
+Soluci´ on.
+Como ⃗ w= α⃗ u+ β⃗ ventonces podemos concluir que
+⃗ w· ⃗ u = α(⃗ u· ⃗ u) + β(⃗ v· ⃗ u),
+⃗ w· ⃗ v = α(⃗ u· ⃗ v) + β(⃗ v· ⃗ v).
+Como ⃗ u, ⃗ vson ortogonales, de lo anterior concluimos que
+⃗ w· ⃗ u = α(⃗ u· ⃗ u),
+⃗ w· ⃗ v = β(⃗ v· ⃗ v),
+de donde se obtiene que
+α = ⃗ w· ⃗ u∥⃗ u∥2 y β = ⃗ w· ⃗ v∥⃗ v∥2 .
+Puntaje:
+1 pto por determinar que ⃗ w· ⃗ u= α(⃗ u· ⃗ u).
+1 pto por determinar que ⃗ w· ⃗ v= β(⃗ v· ⃗ v).
+2 ptos por concluir que α = ⃗ w·⃗ u∥⃗ u∥2 .
+2 ptos por concluir que β = ⃗ w·⃗ v∥⃗ v∥2 .7. Sea W un subespacio vectorial de Rn y W⊥ el ortogonal de W . Sea ⃗ z1 ∈ W un vector unitario,
+⃗ z2 ∈ W⊥ un vector no nulo e ⃗ y= ⃗ z1 + ⃗ z2. Calcular P royW {⃗ y}.
+Soluci´ on.
+Versi´ on 1
+Sea {⃗ z1, ⃗ w1, . . . , ⃗ ws} una base ortonormal (si toman una base solo ortogonal al hacer la proyecci´ on
+deben tomar los vectores ⃗ wi
+∥ ⃗ wi∥ ) de W . Note que esta base contiene a ⃗ z1. La proyecci´ on de⃗ ysobre
+W se calcula seg´ un
+P royW {⃗ y} = (⃗ y· ⃗ z1)⃗ z1 + (⃗ y· ⃗ w1) ⃗ w1 + · · · + (⃗ y· ⃗ ws) ⃗ ws.
+Como
+⃗ y· ⃗ z1 = ⃗ z1 · ⃗ z1 + ⃗ z2 · ⃗ z1 = 1,
+⃗ y· ⃗ w1 = ⃗ z1 · ⃗ w1 + ⃗ z2 · ⃗ w1 = 0,
+...
+⃗ y· ⃗ ws = ⃗ z1 · ⃗ ws + ⃗ z2 · ⃗ ws = 0,
+entonces
+P royW {⃗ y} = ⃗ z1.
+Puntaje:
+2 pto por determinar que P royW {⃗ y} = (⃗ y·⃗ z1)⃗ z1+(⃗ y· ⃗ w1) ⃗ w1+· · ·+(⃗ y· ⃗ ws) ⃗ ws con {⃗ z1, ⃗ w1, . . . , ⃗ ws}
+una base ortonormal de W .
+1 pto por determinar que ⃗ y· ⃗ z1 = 1.
+1 pto por determinar que ⃗ y· ⃗ wi = 0.
+2 ptos por concluir que P royW {⃗ y} = ⃗ z1.Versi´ on 2
+Por el teorema de la descomposici´ on ortogonal si y ∈ Rn existe una ´ unica forma de descomponerlo
+como
+y = y1 + y2 donde y1 = P royW (y) ∈ W y y2 ∈ W⊥
+luego como y = z1 + z2 y z2 ∈ W⊥ tenemos que P royW (y) = z1
+Puntaje:
+3 ptos argumentar existe una ´ unica forma de descomponerlo como
+y = y1 + y2 donde y1 = P royW (y) ∈ W y y2 ∈ W⊥
+3 ptos por concluir que P royW (y) = z1
+Versi´ on 3
+Sea { ⃗ w1, . . . , ⃗ ws} una base ortonormal de W , luego si U = [w1 · · · ws] la
+P royW y = U Uty = U Utz1 + U Utz2 = P royW z1 + P royW z2
+como z1 ∈ W la P royW z1 = z1 por otro lado P royW z2 = U Utz2 = U (U tz2) = U⃗0 = ⃗0 ya que
+z2 ⊥ wi para todo i = 1...s. As ´ ı concluimos queP royW y = z1.
+Puntaje:
+1 pto por argumentar P royW y = U Uty.
+1 pto por argumentar que P royW y = P royW z1 + P royW z2
+1.5 ptos por decir que P royW z1 = z1
+1.5 ptos por argumentar que P royW z2 = ⃗0
+1 pto por concluir que P royW (y) = z18. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. En caso de ser verdaderas dem´ ues-
+trelas y si son falsas de un contraejemplo.
+a) Toda matriz A de 3 × 3 cuyo polinomio caracter ´ ıstico esPA(λ) = λ2(λ − 1) es diagonalizable.
+b) La dimensi´ on del subespacioS = Gen
+{[ 1 −2
+0 1
+]
+,
+[ 2 −2
+0 0
+]
+,
+[ −1 0
+0 1
+]}
+es 2.
+c) Si A es diagonalizable y B es similar a A, entonces B tambi´ en es diagonalizable.
+Soluci´ on.
+a) Falso.
+Tome A =
+
+
+0 1 0
+0 0 0
+0 0 1
+
+.
+b) Verdadero.
+Si tomamos el conjunto B =
+{[ 1 −2
+0 1
+]
+,
+[ 2 −2
+0 0
+]
+,
+[ −1 0
+0 1
+]}
+es claro que genera a S,
+ahora para analizar su dependencia escribimos las matrices en las coordenadas de la base
+estandar de M2×2, tenemos que
+
+
+1 2 −1
+−2 −2 0
+0 0 0
+1 0 1
+
+ ∼
+
+
+1 2 −1
+0 2 −2
+0 0 0
+0 0 0
+
+ por lo cual concluimos
+que una base para S es B1 =
+{[ 1 −2
+0 1
+]
+,
+[ 2 −2
+0 0
+]}
+que posee solo 2 elementos, luego la
+dimensi´ on deS es 2.
+c) Verdadero.
+Si A es diagonalizable entonces existen matrices P invertible y D diagonal tal que
+A = P DP−1, si B es similar a A entonces existe una matriz P1 invertible tal que B = P−11 AP1,
+luego
+B = P−11 P DP−1P1 = (P−11 P )D(P−11 P )−1
+luego B es diagonalizable.
+Puntaje:
+2 pto por cada item correctamente respondiddo.

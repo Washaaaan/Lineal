@@ -1,0 +1,460 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Primer semestre 2025
+Interrogaci´ on 2 - MAT1203
+1. a) Sean A y B matrices invertibles del mismo tama˜ no. Resuelva la ecuaci´ on matricial
+A−1XB T = A−1(B2)T
+y simplifique la soluci´ on.
+Soluci´ on:
+Observe que si a la ecuaci´ on
+A−1XB T = A−1(B2)T
+la multipolicamos a ambos lados por A para eliminar A−1 obtenemos que
+AA−1XB T = AA−1(B2)T
+simplificando se tiene que
+XB T = (B2)T
+Adem´ as sabemos que (B2)T = BT BT , por lo tanto:
+XB T = BT BT
+Como B es invertible tenemos que BT es invertible, por lo que multiplicamos ambos lados
+por (BT )−1 a la derecha obteniendo la igualdad
+XB T (BT )−1 = BT BT (BT )−1
+Al simplificar obtenemos que
+X = BT .
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 1 pto Despejar correctamente XB T .
+C2 1 pto Usar correctamente las propiedades de la traspuesta.
+C3 1 pto Resolver la ecuaci´ on.b) Sean A y B matrices de 5 × 5 tales que det( A) = −2 y tal que det(2( A−1)3BT ) = 60,
+calcule det(B−1).
+Soluci´ on:
+Sabemos que det( AB) = det(A) · det(B), que det( kA) = kn det(A) para una constante k
+y una matriz A de tama˜ non × n y que det( A) = det( AT ). Como A y B son matrices
+5 × 5, obtenemos que
+det(2(A−1)3BT ) = det(2I5 · (A−1)3 · BT )
+Donde I5 es la matriz identidad de tama˜ no 5× 5, luego que det(2 I5) = 2 5 = 32, de esta
+forma obtendremos que
+det(2(A−1)3BT ) = det(2I5) · det((A−1)3) · det(BT ) = 32 · det((A−1)3) · det(B)
+Sabemos tambi´ en det(A−1) = det(A)−1 Entonces:
+det((A−1)3) = (det(A−1))3 =
+ 1
+det(A)
+3
+Dado que det( A) = −2, tenemos:
+det((A−1)3) =
+ 1
+−2
+3
+= − 18
+Sustituyendo en la expresi´ on original obtenemos que
+32 ·
+
+− 18  · det(B) = 60
+luego
+det(B) = 60−4 = −15
+por lo que:
+det(B−1) = − 115
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C4 0.5 pto Usar correctamente la propiedad det( AB) = det(A) det(B).
+C5 0.5 pto Usar correctamente la propiedad det( kA) = kn det(A).
+C6 0.5 pto Usar correctamente la propiedad det( A) = det(AT ).
+C7 0.5 pto Usar correctamente la propiedad det( A−1) = 1/ det(A).
+C8 1 pto Concluir el valor pedido.2. Sea P el paralelep ´ ıpedo con un v´ ertice en el origen y v´ ertices adyacentes en los puntos (1, 4, 0),
+(−2, −5, 2) y ( −1, 2, −1).
+a) Calcule el volumen de P.
+Soluci´ on:
+Considere los vectores:
+⃗ v1 = (1, 4, 0), ⃗ v2 = (−2, −5, 2), ⃗ v3 = (−1, 2, −1)
+El volumen del paralelep ´ ıpedo es el valor absoluto del determinante formado por los tres
+vectores como columnas:
+V =
+det 1 −2 −14 −5 20 2 −1
+Calculamos el determinante:
+det = 1 ·
+−5 22 −1 − (−2) · 4 20 −1 + (−1) · 4 −50 2 
+= 1(−5 · −1 − 2 · 2) + 2(4 · −1 − 0 · 2) + (−1)(4 · 2 − 0 · −5)
+= 1(5 − 4) + 2(−4) + (−1)(8) = 1 − 8 − 8 = −15
+V = | −15| = 15
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 1 pto Por plantear correctamente la matriz
+a la que se le calcular´ a el determinante.
+C2 1 pto Calcular correctamente el determinante.
+C3 1 pto Por determinar que el volumen es 15.
+b) Si T : R3 → R3 es la transformaci´ on lineal definida porT (x, y, z) = (x+2y, x+y+z, x−z).
+Determine el volumen de la imagen de P .
+Soluci´ on:
+La matriz asociada a T es:
+A =
+
+
+1 2 0
+1 1 1
+1 0 −1
+
+
+Calculamos su determinante:det(A) = 1 ·
+1 10 −1 − 2 · 1 11 −1 + 0 · 1 11 0 
+= 1(−1 − 0) − 2(−1 − 1) + 0 = −1 + 4 = 3
+El volumen de la imagen es:
+Volumen imagen = | det(A)| ·Volumen original = 3 · 15 = 45
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C4 1 pto Por la matriz asociada a la transformaci´ on.
+C5 1 pto Calcular correctamente el determinante de la matriz.
+C6 1 pto Por determinar que el volumen es 45.
+3. Sea T la transformaci´ on lineal deR3 a R3 definida por:
+T
+
+
+
+
+x
+y
+z
+
+
+
+ =
+
+
+2x + 3y
+x + y + z
+x − 2z
+
+
+a) Encuentre la matriz de la transformaci´ on.
+Soluci´ on:
+Para encontrar la matriz asociada a T , aplicamos T a los vectores can´ onicos:
+T
+
+
+
+
+1
+0
+0
+
+
+
+ =
+
+
+2
+1
+1
+
+ , T
+
+
+
+
+0
+1
+0
+
+
+
+ =
+
+
+3
+1
+0
+
+ , T
+
+
+
+
+0
+0
+1
+
+
+
+ =
+
+
+0
+1
+−2
+
+
+Entonces, la matriz asociada a T es:
+A =
+
+
+2 3 0
+1 1 1
+1 0 −2
+
+
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 0.5 pto Determinar la imagen de e1.
+C2 0.5 pto Determinar la imagen de e2.
+C3 0.5 pto Determinar la imagen de e3.
+C4 0.5 pto Determinar la matriz.b) Demuestre que T es invertible.
+Soluci´ on:
+Para que T sea invertible, su matriz asociada A debe ser invertible, es decir, debe tener
+determinante distinto de cero:
+det(A) =
+2 3 01 1 11 0 −2 = 2 1 10 −2 − 3 1 11 −2 + 0 1 11 0 
+= 2(−2 − 0) − 3(−2 − 1) = −4 + 9 = 5
+Como det( A) = 5 ̸= 0, la matriz es invertible y, por lo tanto, T es invertible. Criterio
+de evaluaci´ on.
+Criterio Puntaje Indicador
+C5 1 pto Por calcular el determinante.
+C6 1pto Por concluir que es invertible.
+c) Encuentre una f´ ormula paraT −1.
+Soluci´ on:
+Para encontrar la f´ ormula deT −1 invertimos la matriz A, lo haremos aplicando el m´ etodo
+de Gauss-Jordan , comenzamos con la matriz aumentada [ A | I]:
+
+
+2 3 0 1 0 0
+1 1 1 0 1 0
+1 0 −2 0 0 1
+
+
+F1 → 12 F1 ⇒
+
+
+1 32 0 12 0 0
+1 1 1 0 1 0
+1 0 −2 0 0 1
+
+
+RF → F2 − F1, F 3 → F3 − F1 ⇒
+
+
+1 32 0 12 0 0
+0 − 12 1 − 12 1 0
+0 − 32 −2 − 12 0 1
+
+
+F2 → −2F2 ⇒
+
+
+1 32 0 12 0 0
+0 1 −2 1 −2 0
+0 − 32 −2 − 12 0 1
+
+
+F1 → F1 − 32 F2, F 3 → F3 + 32 F2 ⇒
+
+
+1 0 3 −1 3 0
+0 1 −2 1 −2 0
+0 0 −5 1 −3 1
+
+
+F3 → −15 F3 ⇒
+
+
+1 0 3 −1 3 0
+0 1 −2 1 −2 0
+0 0 1 − 15 35 − 15
+
+F1 → F1 − 3F3, F 2 → F2 + 2F3 ⇒
+
+
+1 0 0 − 25 65 35
+0 1 0 35 − 45 − 25
+0 0 1 − 15 35 − 15
+
+
+por lo tanto
+A−1 = 15
+
+
+−2 6 3
+3 −4 −2
+−1 3 −1
+
+
+As ´ ı que la f´ ormula es
+T −1
+
+
+
+
+x
+y
+z
+
+
+
+ = 15
+
+
+−2x + 6y + 3z
+3x − 4y − 2z
+−x + 3y − z
+
+ .
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C7 1 pto Por determinar la inversa de la matriz.
+C8 1pto Por encontrar la f´ ormula conociendo la matriz inversa.
+4. Sea H =
+
+A =
+a11 a12
+a21 a22
+
+∈ M2×2 : A
+ 1 2
+0 1
+
+=
+ 1 2
+0 1
+
+A
+
+.
+a) Demuestre que H es un subespacio de M2×2.
+Soluci´ on
+Veamos que:
+– H es cerrado bajo suma: Si A, B∈ H, entonces
+(A + B)
+1 2
+0 1
+
+= A
+1 2
+0 1
+
++ B
+1 2
+0 1
+
+=
+1 2
+0 1
+
+A +
+1 2
+0 1
+
+B =
+1 2
+0 1
+
+(A + B),
+por lo tanto, A + B ∈ H.
+– H es cerrado bajo multiplicaci´ on escalar:Si A ∈ H y α ∈ R, entonces
+(αA)
+1 2
+0 1
+
+= α
+
+A
+1 2
+0 1
+
+= α
+1 2
+0 1
+
+A
+
+=
+1 2
+0 1
+
+(αA),
+por lo tanto, αA ∈ H.
+– H contiene al neutro: La matriz cero cumple que0 0
+0 0
+
+·
+1 2
+0 1
+
+=
+1 2
+0 1
+
+·
+0 0
+0 0
+
+=
+0 0
+0 0
+
+, por lo tanto
+0 0
+0 0
+
+∈ H.
+As ´ ı,H es un subespacio vectorial de M2×2.
+Criterio de evaluaci´ on.Criterio Puntaje Indicador
+C1 1 pto Por determinar que H es cerrado bajo la suma.
+C2 1pto Por determinar que H es cerrado bajo la ponderaci´ on escalar.
+C3 1pto Por determinar que el neutro est´ a enH.
+b) Determine una base para H.
+Soluci´ on:
+Sea
+A =
+a b
+c d
+
+, A∈ H si y solo si
+a b
+c d
+ 1 2
+0 1
+
+=
+1 2
+0 1
+ a b
+c d
+
+lo que equivale a que a 2a + b
+c 2c + d
+
+=
+a + 2c b + 2d
+c d
+
+.
+obteniendo el sistema
+(
+a = a + 2c ⇒ 2c = 0 ⇒ c = 0
+2a + b = b + 2d ⇒ 2a = 2d ⇒ a = d
+Entonces las matrices A ∈ H son de la forma:
+A =
+a b
+0 a
+
+= a
+1 0
+0 1
+
++ b
+0 1
+0 0
+
+.
+Por lo tanto, una base para H es:
+1 0
+0 1
+
+,
+0 1
+0 0
+
+ya que geenran H y son l.i.
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C4 0.5 pto Plantear las condiciones sobre las entradas
+de una matriz que pertenece a H.
+C5 1 pto Por resolver el sistema asociado a las condiciones.
+C6 1 pto Determinar generadores.
+C7 0.5 pto establecer que estos geenradores forman base ya que son l.i..

@@ -1,0 +1,447 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on a laInterrogaci´ on N◦ 3
+1. Sea A una matriz de m×n.
+a) [2 pts.] Demuestre que dim(Col(A)) + dim(Nul(AT )) =m.
+b) [4 pts.] Demuestre que la ecuaci´ onA x→ = b→ tiene soluci´ on para todo vectorb→∈ Rm si
+y solo si la ecuaci´ onAT x→ = 0→ tiene solamente la soluci´ on trivial.
+Nota: Aqu´ ı puede usar la parte (a) aunque no la haya demostrado.
+Soluci´ on:
+a) Claramente, dim(Col(A)) + dim(Nul(AT )) = dim(Fila(AT )) + dim(Nul(AT )).
+Por el teorema del rango, sabemos que dim(Fila( AT )) = dim(Col( AT )) = rango( AT ), y
+tambi´ en que rango(AT ) + dim(Nul(AT )) =m (el n´ umero de columnas deAT ).
+As´ ı, dim(Col(A)) + dim(Nul(AT )) =m.
+b) Si la ecuaci´ onA x→ = b→ tiene soluci´ on para todo vectorb→∈ Rm, entonces todo vector de
+Rm es combinaci´ on lineal de las columnas de A, por lo que Col( A) = Rm y por lo tanto
+dim(Col(A)) =m.
+Pero entonces, por la parte (a), dim(Nul( AT )) = 0, de donde Nul(AT ) ={ 0→}, por lo que
+la ecuaci´ onAT x→ = 0→ tiene solamente la soluci´ on trivial.
+Rec´ ıprocamente, si la ecuaci´ onAT x→ = 0→ tiene solamente la soluci´ on trivial, entonces
+Nul(AT ) ={ 0→}, de donde dim(Nul(AT )) = 0.
+Pero entonces, por la parte (a), dim(Col( A)) = m, por lo que Col( A) = Rm. As´ ı, todo
+vector de Rm es combinaci´ on lineal de las columnas deA, por lo que la ecuaci´ onA x→ = b→
+tiene soluci´ on para todo vectorb→∈ Rm.
+Nota: En realidad esta demostraci´ on puede ser hecha en un si y solo si, sin recurrir a dos
+argumentos separados:
+La ecuaci´ onAT x→ = 0→ tiene solamente la soluci´ on trivial si y solo si Nul(AT ) ={ 0→}, de
+donde dim(Nul(AT )) = 0, lo que —por la parte (a)— es equivalente a dim(Col( A)) = m,
+que a su vez es equivalente a Col(A) = Rm.
+Pero esto ´ ultimo es equivalente a que todo vector de Rm sea combinaci´ on lineal de las
+columnas de A, lo que ﬁnalmente es lo mismo que decir que la ecuaci´ on A x→ = b→ tiene
+soluci´ on para todo vectorb→∈ Rm.Tambi´ en podemos escribir esto como
+La ecuaci´ onAT x→ = 0→ tiene
+solamente la soluci´ on trivial⇐⇒ Nul(AT ) ={ 0→}
+⇐⇒ dim(Nul(AT )) = 0
+⇐⇒ dim(Col(A)) =m
+⇐⇒ Col(A) = Rm
+⇐⇒ todo vector de Rm es combinaci´ on
+lineal de las columnas de A
+⇐⇒ la ecuaci´ onA x→ = b→ tiene soluci´ on para todob→∈ Rm.
+Puntaje:
+a) Por llegar a que dim(Col(A)) = rango(AT ), 1 punto.
+Por ocupar el teorema del rango para argumentar que rango(AT )+dim(Nul(AT )) =m,
+1 punto.
+b) Si hacen todo en un solo “si y solo si”, 0,8 puntos por mencionar y justiﬁcar cada una de
+las equivalencias mostradas m´ as arriba (excepto por la primera, que no recibe puntaje).
+Si lo hacen en dos partes separadas, 2 puntos por cada parte (dando 0,4 puntos cada
+condicional correspondiente a las equivalencias de arriba, salvo por las correspondientes a
+la primera equivalencia de m´ as arriba.
+A lo anterior se le suma el punto base.2. Sean P =
+[ 2 3
+−1 1
+]
+, v→1 =
+[ 1
+3
+]
+, v→2 =
+[ 2
+1
+]
+.
+Encuentre una base
+{
+u→1, u→2} para R2 tal que P es la matriz de cambio de coordenadas de{
+u→1, u→2} a la base { v→1, v→2}.
+Ayuda: Preg´ untese qu´ e representan las columnas dePC←B
+Soluci´ on:
+SeanB =
+{
+u→1, u→2} yC ={ v→1, v→2}.
+La matriz P = PC←B =[ [ u→1 ]C [ u→2 ]C ].
+Pero dado cualquier u→∈ R2, se tiene [ u→ ]C =P−1C u→, donde PC =[ v→1 v→2 ] =[ 1 23 1 ].
+As´ ı,P = PC←B = [ [ u→1 ]C [ u→2 ]C ] = [ P−1C u→1 P−1C u→2 ] = P−1C [ u→1 u→2 ] = P−1C PB,
+por lo que PB =PCP =
+[ 1 2
+3 1
+][ 2 3
+−1 1
+]
+=
+[ 0 5
+5 10
+]
+.
+Puntaje:
+Por mencionar que P =P−1C PB, 2 puntos.
+Por despejar PB en lo anterior, 2 puntos.
+Por calcular correctamente PB =PCP , 2 puntos.
+A lo anterior se le suma el punto base.3. Sean V yW dos espacios vectoriales de dimensi´ on ﬁnita,T :V→W una transformaci´ on lineal,
+y H un subespacio de V .
+Demuestre que la dimensi´ on deT (H) ={T (v) : v∈H} (que es subespacio de W ) es menor o
+igual a la dimensi´ on deH. No es necesario que demuestre que T(H) es subespacio de W .
+Soluci´ on:
+Sea n la dimensi´ on deH. Distinguiremos dos casos: n = 0, o n> 0.
+Si n = 0, H ={0}, por lo que T (H) ={T (0)} ={0}, de donde dim(T (H)) = 0 = dim(H).
+Si n> 0, seaB ={v1, v2,..., vn} una base de H.
+ComoB genera H,{T (v1),T (v2),...,T (vn)} genera T (H).
+Si{T (v1),T (v2),...,T (vn)} es l.i., entonces {T (v1),T (v2),...,T (vn)} es una base de T (H),
+por lo que dim(T (H)) =n = dim(H).
+Si, por el contrario, {T (v1),T (v2),...,T (vn)} es l.d., entonces {T (v1),T (v2),...,T (vn)} con-
+tiene un subconjunto l.i. (con k <n vectores) que genera (y por lo tanto es base de) T (H).
+Pero en este caso dim(T (H)) =k <n = dim(H).
+Puntaje:
+En cualquiera de las soluciones (u otras correctas que se les ocurran a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada, 1,5 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+Los 0,5 puntos restantes se dan si manejan correctamente el caso de que H ={0} (donde
+dimH = 0).
+Esto puede ser hecho expl´ ıcitamente (como en la soluci´ on mostrada) o con una demostraci´ on
+m´ as general, donde el casoH ={0} sea uno m´ as.
+A lo anterior se le suma el punto base.4. Sea A una matriz invertible, y sea λ un valor propio de A. Demuestre que λ⁄= 0 y que 1λ es un
+valor propio de A−1.
+Ayuda: Suponga que x→⁄= 0→ satisface A x→ =λ x→.
+Soluci´ on:
+Sea a λ un valor propio de A, y sea x→⁄= 0→ un vector propio de A correspondiente al valor
+propio λ (o sea, A x→ =λ x→).
+Siλ = 0, entonces la ecuaci´ onA u→ = 0→ tiene una soluci´ on no trivial, lo que es imposible ya que
+A es invertible.
+Adem´ as,A−1 x→ = A−1
+( 1
+λ (λ x→)
+)
+= 1λA−1(λ x→) = 1λA−1(A x→) = 1λ (A−1(A x→)) = 1λ x→, por
+lo que 1λ es valor propio de A−1 (con vector propio x→).
+Puntaje:
+Por demostrar que λ⁄= 0, 2 puntos.
+Por darse cuenta de que un vector propio deA correspondiente al valor propioλ es tambi´ en
+vector propio de A−1, 2 puntos.
+Por mostrar que el valor propio de A−1 correspondiente al vector propio reci´ en mencionado
+es 1λ, 2 puntos.
+A lo anterior se le suma el punto base.5. Diagonalice la matriz
+A =
+
+
+3 1 1
+1 3 1
+1 1 3
+
+,
+sabiendo que λ = 5 es un valor propio de A.
+Soluci´ on:
+El polinomio caracter´ ıstico deA es
+det(A−λI) =
+⏐⏐⏐⏐⏐⏐ 3−λ 1 11 3 −λ 11 1 3 −λ ⏐⏐⏐⏐⏐⏐ = 20− 24λ + 9λ2−λ3 = (5−λ)(2−λ)2.
+As´ ı,λ = 2 (con multiplicidad 2) y λ = 5 (con multiplicidad 1) son los valores propios de A.
+Para saber si A es o no diagonalizable, debemos veriﬁcar si la dimensi´ on de cada espacio propio
+es igual a la multiplicidad algebraica del valor propio correspondiente.
+Como la multiplicidad del valor propio λ = 5 es 1, la ´ unica posibilidad de queA no sea diago-
+nalizable es que la dimensi´ on del espacio propio correspondiente aλ = 2 sea 1.
+As´ ı, buscamos los vectores propios correspondientes aλ = 2. Para ello, resolvemos la ecuaci´ on
+A x→ = 2 x→ o —equivalentemente— (A− 2I) x→ = 0→, lo que es lo mismo que
+
+
+1 1 1
+1 1 1
+1 1 1
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.
+La matriz ampliada escalonada reducida por ﬁlas es
+
+
+1 1 1 0
+0 0 0 0
+0 0 0 0
+
+, por lo que el sistema queda
+equivalente ax1 =−x2−x3.
+As´ ı, una base para este espacio propio est´ a dado por las elecciones (x2,x 3) = (1, 0) y (x2,x 3) =
+(0, 1), que corresponde a los vectores propios ( −1, 1, 0) y (−1, 0, 1). As´ ı, la dimensi´ on de este
+espacio propio es 2, por lo que la matriz A es diagonalizable.
+Para el valor propio λ = 5, debemos resolver el sistema
+
+
+−2 1 1
+1 −2 1
+1 1 −2
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.
+La matriz ampliada escalonada reducida por ﬁlas es
+
+
+1 0 −1 0
+0 1 −1 0
+0 0 0 0
+
+, por lo que el sistema
+queda equivalente a x1 =x2 =x3.
+As´ ı, un vector propio correspondiente aλ = 5 es (1, 1, 1).
+De todo lo anterior llegamos a que la matriz A puede ser diagonalizada como sigue:
+A =
+
+
+−1 −1 1
+1 0 1
+0 1 1
+
+
+
+
+2 0 0
+0 2 0
+0 0 5
+
+
+
+
+−1 −1 1
+1 0 1
+0 1 1
+
+
+−1
+.Puntaje:
+Por calcular y factorizar correctamente el polinomio caracter´ ıstico: 1 punto.
+Por indicar que la condici´ on para queA sea diagonalizable es que la dimensi´ on del espacio
+propio correspondiente a λ = 2 sea 2 (o, equivalentemente, que haya dos vectores propios
+l.i. correspondientes a λ = 2): 1 punto.
+Por encontrar dos vectores propios l.i. correspondientes a λ = 2 (que no necesariamente
+deben ser los aqu´ ı mostrados): 2 puntos (1 por cada vector).
+Por encontrar un vector propio correspondiente a λ = 5: 1 punto.
+Por escribir A correctamente en la forma A =PDP−1: 1 punto.
+A lo anterior se le suma el punto base.6. Sea A =
+[ 5 −6
+2 −2
+]
+, y deﬁna T : R2→ R2 por T ( x→) =A x→.
+Encuentre una base B para R2 con la propiedad de que la matriz de T en la base B (lo que el
+texto llama laB-matriz para T ) es una matriz diagonal.
+Soluci´ on:
+Buscamos una base de R2 formada por vectores propios de A. El polinomio caracter´ ıstico deA
+es
+det(A−λI) =
+⏐⏐⏐⏐ 5−λ −62 −2−λ ⏐⏐⏐⏐ = (λ− 5)(λ + 2) + 12 =λ2− 3λ + 2 = (λ− 2)(λ− 1).
+As´ ı. los valores propios son 1 y 2, por lo que buscamos vectores propios correspondientes a estos
+valores propios:
+Paraλ = 1, [ 4 −6
+2 −3
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+tiene por soluci´ on
+[ x1
+x2
+]
+=
+[ 3
+2
+]
+.
+Paraλ = 2, [ 3 −6
+2 −4
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+tiene por soluci´ on
+[ x1
+x2
+]
+=
+[ 2
+1
+]
+.
+As´ ı, una posible base que cumple con las condiciones pedidas es B =
+{[ 3
+2
+]
+,
+[ 2
+1
+]}
+(y en
+realidad cualquier base formada por ponderados de estos vectores).
+Puntaje:
+Por calcular y factorizar correctamente el polinomio caracter´ ıstico: 1 punto.
+Por encontrar un vector propio correspondiente a λ = 2: 2 puntos.
+Por encontrar un vector propio correspondiente a λ = 1: 2 puntos.
+Por escribir la base encontrada (no es necesario diagonalizar la matriz): 1 punto.
+A lo anterior se le suma el punto base.7. La matriz
+[ 1 −2
+1 3
+]
+act´ ua sobreC2. Determine los valores propios y una base para cada espacio
+propio en C2.
+Soluci´ on:
+El polinomio caracter´ ıstico deA es
+det(A−λI) =
+⏐⏐⏐⏐ 1−λ −21 3 −λ ⏐⏐⏐⏐ = (λ− 1)(λ− 3) + 2 =λ2− 4λ + 5 = (λ− (2 +i))(λ− (2−i)).
+As´ ı. los valores propios son 2 +i y 2−i, por lo que buscamos vectores propios correspondientes
+a estos valores propios:
+Paraλ = 2 +i, [−1−i −2
+1 1 −i
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+tiene por soluci´ on
+[ x1
+x2
+]
+=
+[ 1−i
+−1
+]
+.
+Paraλ = 2−i, [−1 +i −2
+1 1 + i
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+tiene por soluci´ on
+[ x1
+x2
+]
+=
+[ 1 +i
+−1
+]
+.
+As´ ı, las bases de los espacios propios son:
+Paraλ = 2 +i,
+{[ 1−i
+−1
+]}
+.
+Paraλ = 2−i,
+{[ 1 +i
+−1
+]}
+.
+Puntaje:
+Por calcular y factorizar correctamente el polinomio caracter´ ıstico: 2 puntos.
+Por encontrar un vector propio correspondiente a λ = 2 +i (y por ende la base del espacio
+propio respectivo): 2 puntos.
+Por encontrar un vector propio correspondiente a λ = 2−i (y por ende la base del espacio
+propio respectivo): 2 puntos.
+A lo anterior se le suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) La suma de dos vectores propios de una matriz A tambi´ en es vector propio de esta.
+b) Toda matriz de n×n con n vectores propios linealmente independientes es invertible.
+c) Si A es diagonalizable, entonces A tiene n valores propios distintos.
+Soluci´ on:
+a) FALSO
+Considere la matriz A =
+[ 1 0
+0 2
+]
+.
+Claramente, los vectores u→ =
+[ 1
+0
+]
+y v→ =
+[ 0
+2
+]
+son vectores propios de A (con valores
+propios 1 y 2 respectivamente).
+Sin embargo, u→ + v→ =
+[ 1
+2
+]
+no es vector propio de A, ya que
+A( u→ + v→) =
+[ 1 0
+0 2
+][ 1
+2
+]
+=
+[ 1
+4
+]
+que no es m´ ultiplo deu→ + v→.
+b) FALSO
+Sea 0 n la matriz de n×n con cero en todas sus entradas, y sea
+{
+v→1,..., v→n} una base
+cualquiera de Rn. Estosn vectores son linealmente independientes, y todos ellos son vectores
+propios de la matriz 0 n, con valor propio 0.
+Pero claramente la matriz 0 n no es invertible.
+Nota: en lugar de un contraejemplo “gen´ erico” de n×n, puede darse un contraejemplo
+concreto, v.g., los vectores (1, 3) y (−2, 5) (que forman un conjunto l.i.) son vectores propios
+de la matriz A =
+[ 0 0
+0 0
+]
+, que no es invertible.
+c) FALSO
+La matriz identidad In que es claramente diagonalizable (y de hecho es diagonal) tiene solo
+un valor propio (λ = 1).
+Nota: Aqu´ ı tambi´ en puede darse un contraejemplo concreto, por ejemploI2 =
+[ 1 0
+0 1
+]
+que es diagonalizable y para la que todo vector⁄= 0→ es vector propio con valor propioλ = 1.
+Puntaje:
+En cada parte, por dar un buen contraejemplo (espec´ ıﬁco o gen´ erico, como los mostrados m´ as
+arriba), 2 puntos.
+A lo anterior se le suma el punto base.

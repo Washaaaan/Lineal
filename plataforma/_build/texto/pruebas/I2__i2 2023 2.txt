@@ -1,0 +1,660 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Segundo Semestre 2023
+´Algebra Lineal - MAT1203
+Interrogaci´ on 2
+1. Sea A =
+
+
+2 0 0
+4 3 0
+6 2 1
+
+
+(a) Escriba A−1 como un producto de matrices elementales.
+(b) Escriba A como un producto de matrices elementales.
+Soluci´ on
+(a)
+
+
+2 0 0 1 0 0
+4 3 0 0 1 0
+6 2 1 0 0 1
+
+
+1
+2 f1
+− →
+
+
+1 0 0 12 0 0
+4 3 0 0 1 0
+6 2 1 0 0 1
+
+ −6f1+f3− →
+−4f1+f2
+
+
+1 0 0 1/2 0 0
+0 3 0 −2 1 0
+0 2 1 −3 0 1
+
+
+1
+3 f2
+− →
+
+
+1 0 0 1/2 0 0
+0 1 0 −2/3 1/3 0
+0 2 1 −3 0 1
+
+ −2f2+f3− →
+
+
+1 0 0 1/2 0 0
+0 1 0 −2/3 1/3 0
+0 0 1 −5/3 −2/3 1
+
+
+Por lo tanto
+A−1 = E (−2f2 + f3) E
+ 1
+3 f1
+
+E (−4f1 + f2) E (−6f1 + f3) E
+ 1
+2 f1
+
+=
+
+
+1 0 0
+0 1 0
+0 −2 1
+
+
+
+
+1 0 0
+0 1/3 0
+0 0 1
+
+
+
+
+1 0 0
+−4 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+−6 0 1
+
+
+
+
+1/2 0 0
+0 1 0
+0 0 1
+
+
+=
+
+
+1/2 0 0
+−2/3 13 0
+−5/3 − 23 1
+
+
+(b) De acuerdo con el resultado anterior se tiene que
+A =
+
+
+1
+2 0 0
+0 1 0
+0 0 1
+
+
+−1 
+
+1 0 0
+0 1 0
+−6 0 1
+
+
+−1 
+
+1 0 0
+−4 1 0
+0 0 1
+
+
+−1 
+
+1 0 0
+0 13 0
+0 0 1
+
+
+−1 
+
+1 0 0
+0 1 0
+0 −2 1
+
+
+−1=
+
+
+2 0 0
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+6 0 1
+
+
+
+
+1 0 0
+4 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 3 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 2 1
+
+
+Puntaje
+(a) • 1,5 puntos por ejecutar una manera de obtener las matrices elementales para
+A−1, independiente si comete errores aritm´ eticos b´ asicos o cambia de orden las
+matrices elementales.
+• 1,5 puntos por escribir A−1 como producto de elementales correctas en el orden
+correcto.
+(b) • 1,5 puntos por ejecutar una manera de obtener las matrices elementales para
+A, independiente si comete errores aritm´ eticos b´ asicos o cambia de orden las
+matrices elementales.
+• 1,5 puntos por escribir A como producto de elementales correctas en el orden
+correcto.
+2. Sea A =
+
+
+1 −1 0 1
+1 2 2 3
+0 1 −1 2
+
+.
+(a) Calcular la descomposici´ onLU de la matriz A.
+(b) Usando lo anterior, calcular una matriz B escalonada y una matriz C triangular
+inferior tales que B = CA.
+Soluci´ on :
+(a)
+A =
+
+
+1 −1 0 1
+1 2 2 3
+0 1 −1 2
+
+ f2−f1→
+
+
+1 −1 0 1
+1 2 2 3
+0 1 −1 2
+
+ f3− 13 f2→
+
+
+1 −1 0 1
+0 3 2 2
+0 0 −5/3 4/3
+
+ .
+Por lo tanto 
+
+1 0 0
+−1 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 −1/3 1
+
+ A =
+
+
+1 −1 0 1
+0 3 2 2
+0 0 −5/3 4/3
+
+
+⇒ A =
+
+
+1 0 0
+0 1 0
+0 1/3 1
+
+
+
+
+1 0 0
+1 1 0
+0 0 1
+
+
+
+
+1 −1 0 1
+0 3 2 2
+0 0 −5/3 4/3
+
+
+⇒ A =
+
+
+1 0 0
+1 1 0
+0 1/3 1
+
+
+
+
+1 −1 0 1
+0 3 2 2
+0 0 −5/3 4/3
+
+ = LU.(b) Ya que A = LU entonces L−1A = U . Definiendo C = L−1 y B = U entonces
+CA = B donde C =
+
+
+1 0 0
+−1 1 0
+0 −1/3 1
+
+.
+Puntaje
+(a) • 1 punto por seguir un procedimiento para obtener adecuadamente la descom-
+posici´ onLU .
+• 1 puntos por determinar una matriz L correcta.
+• 1 puntos por determinar una matriz U correcta.
+(b) • 1 punto por definir correctamente la matriz C
+• 1 punto por escribir expl ´ ıcitamente cu´ al es la matrizC
+• 1 punto definir correctamente la matriz B.
+3. Demuestre, usando las propiedades vistas en clases o la definici´ on por cofactores, que
+ 1 x x 21 y y 21 z z 2  = (y − x)(z − x)(z − y)
+Soluci´ on Haciendo operaciones elementales se tiene:
+
+
+1 x x 2
+1 y y 2
+1 z z 2
+
+ f3−f2− →
+
+
+1 x x 2
+1 y y 2
+0 z − y z 2 − y2
+
+ f2−f1− →
+
+
+1 x x 2
+0 y − x y 2 − x2
+0 z − y z 2 − y2
+
+ .
+Por lo tanto, calculando el determinante por cofactores con la primera columna:
+ 1 x x 21 y y 21 z z 2  =  y − x y 2 − x2z − y z 2 − y2  = (y − x)(z − y)  1 y + x1 z + y  = (y − x)(z − y)(z − x).
+Soluci´ on
+• 2 puntos si presenta una demostraci´ on coherente y adecuada, aunque tenga errores
+o est´ e incompleta.
+• 2 puntos por aplicar correctamente propiedades de terminantes o definici´ on de
+determinante por cofactores.
+• 2 puntos por demostrar lo pedido correctamente, sin errores.
+• 0 puntos si demuestra usando contenidos no vistos en clases.4. Utilice el m´ etodo de Cramer para encontrar ´ unicamente la segunda columna de laA−1
+donde
+A =
+
+
+2 4 6
+4 5 6
+3 1 −2
+
+
+Soluci´ on Sea el vector x =
+
+
+x1
+x2
+x3
+
+ la segunda columna de A−1. Esto es, x = A−1e2,
+donde e2 es el vector can´ onicoe2 =
+
+
+0
+1
+0
+
+. Es decir, basta resolver el sistema Ax = e2
+para determinar el vector buscado.
+La regla de Cramer nos asegura que
+x1 = |A1(e2)||A| , x 2 = |A2(e2)||A| , x3 = |A3(e2)||A| .
+As ´ ı:
+|A| =
+ 2 4 64 5 63 1 −2  =  −2 −1 04 5 63 1 −2  = (−2)  0 −1 0−6 5 61 1 −2  =  −6 61 −2  = 6.
+|A1(e2)| =
+ 0 4 61 5 60 1 −2  = (−1)  4 61 −2  = 14.
+|A2(e2)| =
+ 2 0 64 1 63 0 −2  = (1)  2 63 −2  = −22
+|A3(e2)| =
+ 2 4 04 5 13 1 0  = (−1)  2 43 1  = 10
+Por lo tanto, x =
+
+
+14/6
+−22/6
+10/6
+
+.
+Puntaje
+• 2 puntos por establecer la regla de Cramer.
+• 2 puntos por resolver el sistema usando la regla de Cramer (independiente que
+tenga errores en los determinantes)
+• 2 puntos por encontrar el vector x correcto.
+• 0 puntos si no utiliza la regla de Cramer.5. Considere el paralelep ´ ıpedoS que tiene un v´ ertice en el origen y v´ ertices adyacentes en
+(1, 0, 2), (−1, 2, 4), (−1, 1, 0), y la transformaci´ on lineal
+T
+
+
+x1
+x2
+x3
+
+ =
+
+
+αx1 + x2
+x1 + x2
+x1 + x2 + x3
+
+ .
+Encuentre el o los valor(es) de α tal que el volumen del paralelep ´ ıpedoT (S) sea 4 .
+Soluci´ on El volumen del paralelep ´ ıpedoT (S) cumple que
+Volumen de T (S) = | det(A)| ·(Volumen de S)
+donde A es la matriz est´ andar deT . As ´ ı: det(A) =
+ α 1 01 1 01 1 1  =  α 11 1  = α − 1.
+Adem´ as,
+Volumen de S =
+det  1 −1 −10 2 12 4 0  = det  1 −1 10 2 10 6 2  = det  1 −1 10 2 10 0 1  = 2
+Por lo tanto
+4 = |α − 1| ·(2) ⇔ α = −1 o α = 3.
+Puntaje
+• 2 puntos por establecer el hecho que Vol( T (S)) = | det(A)|Vol(S).
+• 1 punto por encontrar la matriz A.
+• 0.5 puntos por encontrar |A|.
+• 1 puntos por plantear c´ omo calcular el volumen deS.
+• 0.5 puntos por encontrar Vol( S).
+• 0.5 puntos por encontrar cada valor correcto de α (1 punto en total).
+6. Decida si S es un subespacio del espacio vectorial V y justifique su respuesta:
+(a) S = {A ∈ V | AT = A} con V = Matrices reales de n × n.
+(b) S = {(x, y, z, w) | x + y + z + w + 1 = 0} con V = R4.Soluci´ on
+(a) • Si A = 0 (matriz nula) de n × n, entonces AT = A, por lo tanto A ∈ S.
+• Si A y B pertenecen a S, entonces (A + B)T = AT + BT = A + B. Por lo tanto,
+A + B ∈ S.
+• Si A ∈ S y α ∈ R, entonces (αA)T = αAT = αA por lo que αA ∈ S.
+Esto implica que S es un subespacio vectorial.
+(b) S no es un subespacio vectorial de R4 ya que el vector (0 , 0, 0, 0) no pertenece a S
+puesto que no cumple con la condici´ onx + y + z + w + 1 = 0.
+Puntaje
+(a) • 1 punto por enunciar las tres propiedades a verificar para que S sea subespacio.
+• 2 puntos por determinar de manera correcta queS cumple con tales condiciones.
+(b) • 1 punto por decidir queS no es subespacio entregando alg´ un argumento. aunque
+sea incompleto.
+• 2 puntos por demostrar de manera correcta que S no es un subespacio vectorial.
+7. Considere la matriz A y los vectores u, v siguientes:
+A =
+
+
+2 4 −2 1
+−2 −5 7 3
+3 7 −8 6
+
+ , u =
+
+
+3
+−2
+−1
+0
+
+ , v =
+
+
+3
+−1
+3
+
+ .
+(a) Determine si u pertenece a Nul A.
+(b) Determine si v pertenece a Col A.
+Soluci´ on
+(a) u ∈ Nul(A) si y s´ olo siAu = 0.
+Au =
+
+
+2 4 −2 1
+−2 −5 7 3
+3 7 −8 6
+
+
+
+
+3
+−2
+−1
+0
+
+ =
+
+
+0
+−3
+3
+
+ .
+Por lo tanto, u /∈ Nul(A).
+(b) v ∈ Col(A) si y s´ olo siAx = v es consistente. La forma escalonada de A es:
+A =
+
+
+2 4 −2 1
+−2 −5 7 3
+3 7 −8 6
+
+ ∼
+
+
+2 4 −2 1
+0 −1 5 4
+0 0 0 17/2
+
+ .
+Como cada fila de la forma escalonada de A tiene un pivote, el sistema Ax = v
+tiene soluci´ on. Por lo tanto,v ∈ Col(A).Puntaje
+(a) • 1 punto por entregar un argumento que determine si u pertenece o no a Nul(A),
+independiente que sea o no correcto.
+• 2 puntos por argumentar correctamente que u /∈ Nul(A).
+(b) • 1 punto por entregar un argumento que determine si v pertenece o no a Col(A),
+independiente que sea o no correcto.
+• 2 puntos por argumentar correctamente que v ∈ Col(A).
+8. Defina una transformaci´ on linealT : P2 → R3 mediante T (p) =
+
+
+p(0)
+p(1)
+p(0)
+
+.
+(a) Determine una base para el n´ ucleo deT .
+(b) Determine una base para el rango de T .
+Soluci´ on
+(a) Sea p(x) = ax2 + bx + c ∈ P2.
+p ∈ Nul(T ) ⇔
+
+
+c
+a + b + c
+c
+
+ =
+
+
+0
+0
+0
+
+ ⇔ a = −b y c = 0.
+Por lo tanto,
+Nul(T ) = {ax2 + bx + c|a = −b, c= 0} = {a(x2 − x)|a ∈ R} = Gen{x2 − x},
+esto es, una base para Nul( T ) es {x2 − x}.
+(b) Sea x =
+
+
+α
+β
+γ
+
+ ∈ R3.
+x ∈ Ran(T ) ⇔ Existe p ∈ P2 tal que T (p) = x
+⇔ Existe p(x) = ax2 + bx + c tal que
+
+
+p(0)
+p(1)
+p(0)
+
+ =
+
+
+α
+β
+γ
+
+
+⇔ Existe p(x) = ax2 + bx + c tal que
+
+
+c
+a + b + c
+c
+
+ =
+
+
+α
+β
+γ
+
+
+⇔ α = c = γ y a + b + c = β.Es decir, tenemos que α = γ y β ∈ R. Por lo tanto,
+x ∈ Ran(T ) ⇔ x =
+
+
+α
+β
+α
+
+ = α
+
+
+1
+0
+1
+
+ + β
+
+
+0
+1
+0
+
+ ,
+por lo tanto,
+
+
+
+
+
+1
+0
+1
+
+ ,
+
+
+0
+1
+0
+
+
+
+
+ genera Ran( T ) y adem´ as son linealmente independi-
+entes por que no son dos vectores paralelos. En conclusi´ on,
+
+
+
+
+
+1
+0
+1
+
+ ,
+
+
+0
+1
+0
+
+
+
+
+ es una
+base del espacio buscado.
+Puntaje
+(a) • 1 punto por establecer correctamente la definici´ on de n´ ucleo deT .
+• 1 punto si determina condiciones para los coeficientes de un polinomio en el
+n´ ucleo deT .
+• 1 puntos por encontrar una base de Nul( T ) de acuerdo a las condiciones deter-
+minadas anteriormente.
+(b) • 1 punto por establecer correctamente la definici´ on de rango deT .
+• 1 punto por encontrar generadores de Ran( T ).
+• 1 punto por argumentar que dichos generadores son linealmente independientes.

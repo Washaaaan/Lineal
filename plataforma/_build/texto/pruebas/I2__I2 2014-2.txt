@@ -1,0 +1,70 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+I2 MAT1203 - Algebra Lineal
+Octubre 9, 2014
+1. Dada P =
+
+
+0 0 1
+1 0 0
+0 1 0
+
+, L =
+
+
+1 0 0
+1 1 0
+0 1 1
+
+ y U =
+
+
+2 1 0
+0 −2 4
+0 0 1
+
+ tales que P A =
+LU. Sin encontrar A, AT ni calcular inversas, determine solamente y nada m´ as que
+a) [ 3 pts.] La primera ﬁla de A−1
+b) [ 3 pts.] El elemento (2,2) de A−1
+2. a) [ 3 pts.] Encuentre los valores del par´ ametro α para los cuales la matriz
+sim´ etrica
+A =
+
+
+3 α α
+α 3 1
+α 1 1
+
+
+es positiva deﬁnida
+b) [ 3 pts.] Sea A una matriz de n × n, sim´ etrica y semideﬁnida negativa y sea
+B una matriz de k × n con columnas linealmente independientes. Demuestre
+que C = −3A + BT B es sim´ etrica deﬁnida positiva.
+3. a) [ 3 pts.] Sea A = [u v w ] una matriz de 3 × 3 con columnas u, v, w ∈ R3.
+Si B = [4u + w v − 3u 5w] y det(A) = π, determine det(B).
+b) [ 3 pts.] Para la matriz tridiagonal sim´ etrica de n × n
+A =
+
+
+−2 1
+1 −2 1
+1 −2 1
+. . . . . . . . .
+. . . . . . . . .
+1 −2 1
+1 −2
+
+ Ai,i = −2 si i = jAi,j = 1 si |i − j| = 1Ai,j = 0 si |i − j| > 1
+determine la factorizaci´ on A = LU y clasiﬁque la forma cuadr´ atica F (x) =
+xT Ax.
+4. Determine si la aﬁrmaci´ on es VERDADERA o F ALSA y justiﬁque su r espuesta (El
+indicar correctamente si es V o F sin una demostraci´ on no tiene pun tos)
+a) [ 1.5 pts.] Si det(A) = 0 entonces al menos uno de sus cofactores debe ser
+igual a cero.
+b) [ 1.5 pts.] Si A es sim´ etrica invertible entonces A2 es sim´ etrica deﬁnida
+positiva.
+c) [ 1.5 pts.] Si la matriz de cofactores de A no tiene inversa entonces A no
+tiene inversa.
+d ) [ 1.5 pts.] Si B es 4 × 5 entonces det(BT B) = 0

@@ -1,0 +1,438 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Primer semestre 2025
+Pauta Interrogaci´ on 1 - MAT1203
+1. a) Sean u, v y w vectores en Rn. Demuestre que si el conjunto {u, v, w} es linealmente
+independiente entonces el conjunto {u + v, u − 3v, w + 2u} tambi´ en lo es.
+Una soluci´ on de la pregunta
+Si α(u + v) +β(u − 3v) +γ(w + 2u) = 0 debemos demostrar que α = β = γ = 0, para eso
+observamos que
+α(u + v) + β(u − 3v) + γ(w + 2u) = (α + β + 2γ)u + (α − 3β)v + γw = 0
+por hip´ otesis tenemos que{u, v, w} es linealmente independiente por lo tanto
+α + β + 2γ = α − 3β = γ = 0
+al resolver el sistema vemos que tiene soluci´ on ´ unicaα = β = γ = 0, demostrando as ´ ı que
+el conjunto {u + v, u− 3v, w+ 2u} es linealmente independiente.
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 1 pto Plantear la condici´ on de independencia lineal.
+C2 1 pto Establecer el sistema en t´ erminos deα, βy γ
+C3 0.5 pto Resolver el sistema
+C4 0.5 pto Concluir la demostraci´ on
+b) Determine una ecuaci´ on cartesiana para el plano de ecuaci´ on vectorial
+
+
+t
+
+
+1
+2
+0
+
+ + s
+
+
+2
+1
+3
+
+ +
+
+
+2
+1
+3
+
+ ; t, s∈ R
+
+
+ .
+Una soluci´ on de la pregunta
+Queremos encontrar una ecuaci´ on normal para el plano dado por la ecuaci´ on vectorial
+
+
+t
+
+
+1
+2
+0
+
+ + s
+
+
+2
+1
+3
+
+ +
+
+
+2
+1
+3
+
+ , t, s ∈ R
+
+
+ .La ecuaci´ on vectorial nos dice que un punto gen´ erico en el plano es de la forma
+
+
+x
+y
+z
+
+ =
+
+
+t + 2s + 2
+2t + s + 1
+3s + 3
+
+ .
+Descomponiendo en ecuaciones escalares obtenemos que
+x = t + 2s + 2, y = 2t + s + 1, z = 3s + 3.
+Despejando t de la primera ecuaci´ on tenemos que:
+t = x − 2s − 2.
+Al sustituir esto en la ecuaci´ on dey obtenemos que
+y = 2(x − 2s − 2) + s + 1
+luego,
+y = 2x − 4s − 4 + s + 1 = 2x − 3s − 3.
+Ahora, si despejamos el par´ ametros de la ecuaci´ on dez, se tiene que
+s = z − 33
+por lo tanto
+y = 2x − 3
+ z − 3
+3
+
+− 3
+simplificando vemos que
+y = 2x − (z − 3) − 3
+y = 2x − z
+2x − y − z = 0.
+De lo anterior tenemos que una ecuaci´ on normal del plano es
+2x − y − z = 0.
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C5 1 pto Describe las ecuaciones param´ etricas de un punto en el plano
+C6 1 pto Establece las relaciones de los par´ amtros
+C7 1 pto Determina una ecuaci´ on normal del plano.2. Sean n ∈ Rn un vector no nulo y s ∈ R fijos. Sea H el hiperplano definido por su ecuaci´ on
+normal H = {x ∈ Rn : x · n = s}.
+a) Encuentre el valor t ∈ R tal que y = tn pertenezca a H.
+Una soluci´ on de la pregunta
+Se tiene que y = tn pertenece a H si y solo si y · n = s. Pero y · n = tn · n = t∥n∥2.
+Igualando y despejando se obtiene t = s/∥n∥2.
+Criterio Puntaje Indicador
+C1 1 pto Plantear la condici´ on de pertenencia.
+C2 1 pto Determinar el valor de t α, βy γ
+b) Verifique que para cualquier x ∈ H el vector z = (x − y), con y dado por el inciso anterior,
+es ortogonal a n y por lo tanto es ortogonal a y.
+Una soluci´ on de la pregunta
+Como x e y pertenecesn a H entonces x · n = y · n = s. Luego
+z · n = (x − y) · n = x · n − y · n = s − s = 0
+y z es ortogonal a n. Tambi´ enz es ortogonal a cualquier escalarizaci´ on den, en particular
+z es ortogonal a y = tn.
+Criterio Puntaje Indicador
+C3 1 pto Plantear la condici´ on de perpendicular
+C4 1 pto Demostar lo pedido
+c) Demuestre que ∥y∥ ≤ ∥x∥ para cualquier x ∈ H (es decir, demuestre que y es el vector
+en H m´ as cercano al origen). Indicaci´ on: Ocupe Pit´ agoras.
+Una soluci´ on de la pregunta
+Sea x ∈ H. Tenemos que x = (x − y) + y = z + y, y sabemos que z e y son ortogonales.
+Por Pit´ agoras
+∥x∥2 = ∥z∥2 + ∥y∥2 ≥ ∥y∥2,
+con lo que concluimos ∥y∥ ≤ ∥x∥ para cualquier x ∈ H.Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C5 1 pto Plantear la relaci´ on entre x e y.
+C6 1 pto Conlcuir la desigualdad
+3. Dado el sistema en variables x, yy z
+
+
+
+x − az = 2,
+2x + ay + az = 5,
+−x + ay + (5a − 1)z = −a
+para un escalar a.
+a) ¿Para qu´ e valores dea el sistema no tiene soluci´ on?
+b) ¿Para qu´ e valores dea el conjunto soluci´ on del sistema es una recta?
+c) Encuentre una ecuaci´ on vectorial de la recta soluci´ on del inciso b).
+Una soluci´ on de la pregunta
+Escribimos el sistema lineal como la matriz ampliada
+
+
+1 0 −a 2
+2 a a 5
+−1 a 5a − 1 −a
+
+
+Con el m´ etodo de Gauss, se obtiene
+
+
+1 0 −a 2
+0 a 3a 1
+0 a 4a − 1 2 − a
+
+
+y 
+
+1 0 −a 2
+0 a 3a 1
+0 0 a − 1 1 − a
+
+
+En el caso de a = 0, la segunda fila es
+
+0 0 0 1
+
+y se concluye que no existe ninguna
+soluci´ on.
+En el caso de a = 1, la matriz ampliada es
+
+
+1 0 −1 2
+0 1 3 1
+0 0 0 0
+
+y se concluye que z es una variable libre y que el conjunto soluci´ on est´ a dado porx = 2 + z y
+y = 1 − 3z. La recta que corresponde al conjunto soluci´ on est´ a dado por
+
+x
+y
+z
+
+ =
+
+
+2
+1
+0
+
+ + t
+
+
+1
+−3
+1
+
+
+para t ∈ R.
+Adem´ as observamos que sia ̸= 0 y a ̸= 1 entonces el sistema tiene soluci´ on ´ unica y por tanto
+el ´ unico caso que la soluci´ on es una recta es el descrito anteriormente.
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 1 pto Plantear la matriz asociada al sistema.
+C2 1 pto Escalonar la matriz
+C3 1 pto Por estudiar caso a=0
+C4 1 pto Por estudiar caso a=1
+C5 1 pto Por estudiar los otros casos
+C6 1 pto Por dar la recta soluci´ on
+4. Sea T la transformaci´ on lineal deR3 a R3 tal que
+T
+
+
+
+
+1
+0
+0
+
+
+
+ =
+
+
+2
+7
+1
+
+ , T
+
+
+
+
+1
+2
+0
+
+
+
+ =
+
+
+6
+5
+1
+
+ , T
+
+
+
+
+1
+1
+1
+
+
+
+ =
+
+
+6
+3
+2
+
+
+a) Determine la matriz de la transformaci´ on.
+Criterio de evaluaci´ on.
+Observe que la matriz de la transformaci´ on es A = [ T (e1) T (e2) T (e3)], del enunciado
+tenemos que T (e1) =
+
+
+2
+7
+1
+
+, adem´ as
+T
+
+
+
+
+1
+2
+0
+
+
+
+ − T (e1) = 2T (e2) =
+
+
+4
+−2
+0
+
+
+por lo tanto T (e2) =
+
+
+2
+−1
+0
+
+ y T (e3) = T
+
+
+
+
+1
+1
+1
+
+
+
+ − T (e2) − T (e1) =
+
+
+2
+−3
+1
+
+ de esta manera
+tenemos que la matriz es 
+
+2 2 2
+7 −1 −3
+1 0 1
+
+ .Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 1 pto Calcular T (e2).
+C2 1 pto Calcular T (e3)
+C3 1 pto Determinar la matriz
+b) Determine la imagen bajo T del plano de ecuaci´ on 3x + 2y − z = 2.
+Una soluci´ on de la pregunta
+Un punto gen´ erico del plano es de la format
+
+
+1
+0
+3
+
+ + s
+
+
+0
+1
+2
+
+ +
+
+
+0
+0
+−2
+
+, por lo tanto un punto
+gen´ erico de la imagen es de la forma
+tT
+
+
+
+
+1
+0
+3
+
+
+
+ + sT
+
+
+
+
+0
+1
+2
+
+
+
+ + T
+
+
+
+
+0
+0
+−2
+
+
+
+
+que corresponde al plano de ecuaci´ on vectorial
+t
+
+
+8
+−2
+4
+
+ + s
+
+
+6
+−7
+2
+
+ +
+
+
+−4
+6
+−2
+
+
+Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C4 1 pto Determinar la imagen de los generadores del plano.
+C5 1 pto Determinar la forma gen´ erica de un punto en la imagen
+C6 1 pto Determinar una ecuaci´ on del plano imagen

@@ -1,0 +1,493 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 1
+1. El hex´ agono regular de la ﬁgura est´ a inscrito en una circunferencia de radio 1, por lo cual
+− − →OH =( 10 ) y − →OP =( 12√3
+2
+)
+a) Encontrar α y β tal que − →RT = α( 10 ) + β( 12√3
+2
+)
+.
+b) Demuestre que − − →HP + − →P Q + − →QR + − →RT + − →T S + − →SH = 0
+Soluci´ on.
+a) Notamos que − →RT = − − →P H = − − →OH − − →OP =( 10 ) −( 12√3
+2
+)
+. Luego α = 1 y β = −1.
+b) Notamos que − − →HP = −− →RT , − →P Q = −− →T S, − →QR = −− →SH . Luego
+− − →HP + − →P Q + − →QR + − →RT + − →T S + − →SH = −− →RT + −− →T S + −− →SH + − →RT + − →T S + − →SH = 0
+Puntaje:
+1.5 pts por encontrar α.
+1.5 pts por encontrar β.
+0.5 por determinar que − − →HP = −− →RT
+0.5 por determinar que − →P Q = −− →T S
+0.5 por determinar que − →QR = −− →SH
+1.5 por concluir que − − →HP + − →P Q + − →QR + − →RT + − →T S + − →SH = 02. a) Encuentre el producto punto de dos vectores u, v tales que ∥u∥ = 3 , ∥v∥ = 5 y el ´ angulo
+formado entre ellos es π3 .
+b) Dados u y v ∈ R3, tal que u es un vector unitario y v es un vector ortogonal a u. Demuestre
+(justiﬁcando cada paso) que
+u × (u − (u × v)) = v
+Ayuda: si a, b y c ∈ R3, a × (b × c) = ( a · c)b − (a · b)c.
+Soluci´ on.
+a) De lo visto en clases u · v = ∥u∥∥v∥ cos θ donde θ es el ´ angulo formado por los dos vectores,
+luego u · v = 15 cos π3 = 152 .
+b) Aplicando las propiedades de producto cruz y producto punto:
+u × (u − (u × v)) = ( u × u) − (u × (u × v)) el producto cruz es distributivo
+0 − (u × (u × v)) el producto cruz de vectores paralelos es 0
+(u · v)u − (u · u)v aplicando la ayuda
+0 − (u · u)v vectores perpendiculares su producto punto es 0
+∥u∥2v propiedad del producto punto
+v el vector u es unitario
+Puntaje:
+2 pto por enunciar que u · v = ∥u∥∥v∥ cos θ
+1 pts por evaluar la formula con los datos dados.
+0.5 pts por cada paso justiﬁcado del item b)(0.3 si aplica el paso sin justiﬁcar)3. Encuentre la ecuaci´ on del plano que pasa por el punto P0 = (1, −1, 1) y que contiene a la recta
+de ecuaciones x = t,y = t2 y z = t3 .
+Soluci´ on.
+(una soluci´ on) Como dicho plano contiene a la recta, entonces contiene a cualquiera dos
+puntos de ella, en particular P1 = (0 , 0, 0) y P2 = (6 , 3, 2). Luego un vector ortogonal al
+plano est´ a dado por el producto cruz entre los vectoresP1P0 =
+
+
+1
+−1
+1
+
+ y P1P2 =
+
+
+6
+3
+2
+
+ ,
+el cual resulta
+n =
+
+
+−5
+4
+9
+
+. Por lo tanto la ecuaci´ on del plano est´ a dada por
+
+
+
+
+x
+y
+z
+
+ −
+
+
+0
+0
+0
+
+
+
+ ·
+
+
+−5
+4
+9
+
+ = 0 → −5x + 4y + 9z = 0.
+(otra soluci´ on) Como dicho plano contiene a la recta, entonces el vector director de la
+recta d es paralelo al plano y cualquier punto de la recta pertenece al plano, en particular
+P1 = (0, 0, 0). Luego un vector ortogonal al plano est´ a dado por el producto cruz entre los
+vectores P1P0 =
+
+
+1
+−1
+1
+
+ y d =
+
+
+1
+1
+2
+1
+3
+
+ , el cual resulta n =
+
+
+− 56
+2
+3
+3
+2
+
+. Por lo tanto la
+ecuaci´ on del plano est´ a dada por
+
+
+
+
+x
+y
+z
+
+ −
+
+
+0
+0
+0
+
+
+
+ ·
+
+
+− 56
+2
+3
+3
+2
+
+ = 0 → − 56 x + 23 y + 32z = 0.
+Puntaje:
+3 ptos por determinar la normal del plano.(1.5 pts si hay un error de calculos)
+3 ptos por determinar la ecuaci´ on del plano.(1.5 pts si hay un error de calculos)4. Sea T : R3 − →R3 dada por T
+
+
+x1
+x2
+x3
+
+ =
+
+
+2x1 + x2 − 2x3
+x1 + x2 − 2x3
+−x1 + x3
+
+ .
+a) Determine la matriz A tal que T (x) = Ax para todo x ∈ R3.
+b) Encuentre la transformaci´ on inversa deT si es que existe.
+Soluci´ on.
+a) La matriz A =
+
+
+2 1 −2
+1 1 −2
+−1 0 1
+
+
+b) Para encontrar la transformaci´ on inversa, encontraremos primero la matriz inversa de
+A.Trabajamos con A aumentada con la matriz identidad
+
+
+2 1 −2 1 0 0
+1 1 −2 0 1 0
+−1 0 1 0 0 1
+
+ →
+
+
+1 0 0 1 −1 0
+0 1 0 1 0 2
+0 0 1 1 −1 1
+
+
+Luego A posee inversa y es A−1 =
+
+
+1 −1 0
+1 0 2
+1 −1 1
+
+
+As ´ ı la transformaci´ on inversa esta dada porT −1
+
+
+x1
+x2
+x3
+
+ =
+
+
+x1 − x2
+x1 + 2x3
+x1 − x2 + x3
+
+ .
+Puntaje:
+1 pto por determinar cada columna de A.
+2 ptos por determinar la inversa de A (1 punto si hay un error numerico)
+1 pto por determinar la transformaci´ on inversa.Continua en la siguiente p´ agina.
+5. Considere el siguiente sistema de ecuaciones en variables x, y, z y w
+x + y + az + w = 0
+y + z + aw = 2
+ax + y + az + aw = 0
+x + y + z + (a2 − 1)w = a
+Determine todos los valores de a ∈ R para los que:
+a) El sistema no tiene soluci´ on.
+b) El sistema tiene soluci´ on ´ unica.
+c) El sistema tiene inﬁnitas soluciones.
+Soluci´ on.
+Observe que la matriz ampliada asociada al sistema es:
+
+
+1 1 a 1 | 0
+0 1 1 a | 2
+a 1 a a | 0
+1 1 1 ( a2 − 1) | a
+
+
+Al intentar escalonar la matriz obtenemos:
+
+
+1 1 a 1 | 0
+0 1 1 a | 2
+0 1 − a a − a2 0 | 0
+0 0 1 − a (a2 − 2) | a
+
+
+Observe que si a = 1 entonces la matriz queda
+
+
+1 1 1 1 | 0
+0 1 1 1 | 2
+0 0 0 0 | 0
+0 0 0 −1 | 1
+
+
+Que corresponde a la matriz ampliada de un sistema con inﬁnitas soluciones.
+Si a ̸= 1 entonces la tercera ﬁla podemos dividirla por 1 − a obteniendo la matriz
+
+
+1 1 a 1 | 0
+0 1 1 a | 2
+0 1 a 0 | 0
+0 0 1 − a (a2 − 2) | a
+
+Si realizamos la operaci´ onF3 → F3 − F2 obtenemos
+
+1 1 a 1 | 0
+0 1 1 a | 2
+0 0 a − 1 −a | − 2
+0 0 1 − a (a2 − 2) | a
+
+
+Ahora haciendo F4 → F4 + F3 queda la matriz
+
+1 1 a 1 | 0
+0 1 1 a | 2
+0 0 a − 1 −a | − 2
+0 0 0 ( a − 2)(a + 1) | a − 2
+
+
+Como estamos en el caso a ̸= 1 la matriz anterior tendr´ a cuatro pivotes, que corresponde a un
+sistema con soluci´ on ´ unica, si y s´ olo sia ̸= 2 y a ̸= −1.
+Si a = 2 la matriz queda 
+
+1 1 2 1 | 0
+0 1 1 2 | 2
+0 0 1 −2 | − 2
+0 0 0 0 | 0
+
+
+que representa un sistema con inﬁnitas soluciones.
+Si a = −1 la matriz queda 
+
+1 1 −1 1 | 0
+0 1 1 −1 | 2
+0 0 −2 1 | − 2
+0 0 0 0 | − 3
+
+
+que corresponde a un sistema inconsistente.
+En resumen:
+a) el sistema no tiene soluci´ on si y s´ olo sia = −1
+b) el sistema tiene soluci´ on ´ unica si y solo sia ̸= −1, a ̸= 1, a ̸= 2
+c) el sistema tiene inﬁnitas soluciones si y solo si a = 1 o a = 2
+Puntaje:
+0.5 pto por mostrar la matriz ampliada
+2 ptos llegar a la matriz escalonada
+1 pto por concluir que el sistema no tiene soluci´ on si y s´ olo si a = −1
+1.5 ptos por concluir que el sistema tiene soluci´ on ´ unica si y solo si a ̸= −1, a ̸= 1, a ̸= 2
+(0.5 por cada condici´ on)
+1 pto por concluir que el sistema tiene inﬁnitas soluciones si y solo si a = 1 o a = 2 (0.5
+por cada condici´ on)6. Sea A =
+
+
+1 0 3 2
+−1 1 −3 −2
+2 3 4 2
+−3 −1 −3 0
+
+
+a) Sea W el conjunto de todas las combinaciones lineales de las columnas de A. Determine
+si el vector b =
+
+
+3
+−3
+4
+0
+
+ ∈ W .
+b) Utilice tantas columnas de A como sea posible para construir una matriz B tal que la
+ecuaci´ onBx = 0 s´ olo tenga la soluci´ on trivial.
+Soluci´ on.
+a) Sean v1, v2, v3, v4 las columnas de A, luego para que b pertenezca a W , el vector b debe ser
+una combinaci´ on lineal de los vectoresv1, v2, v3, v4, lo que implica que la ecuaci´ on vectorial
+x1v1 + x2v2 + x3v3 + x4v4 = b
+debe tener soluci´ on. Una forma de solucionar esta ecuaci´ on esta dada por
+(v1 v2 v3 v4 | b) =
+
+
+1 0 3 2 3
+−1 1 −3 −2 −3
+2 3 4 2 4
+−3 −1 −3 0 0
+
+ ∼
+
+
+1 0 3 2 3
+0 1 0 0 0
+0 0 −2 −2 −2
+0 0 0 0 3
+
+
+Como nos encontramos con una ﬁla
+(
+0 0 0 0 3
+)
+implica que la ecuaci´ on vectorial
+no tiene soluci´ on, luegob no es combinaci´ on lineal de las columnas de W , es decir, b /∈ W
+b) Para que el sistema Bx = 0 tenga ´ unicamente la soluci´ on trivial las columnas de la matriz
+B deben ser linealmente independientes, luego para construir B debemos encontrar la
+mayor cantidad de columnas linealmente independientes de A, una forma de encontralas
+es
+(v1 v2 v3 v4) =
+
+
+1 0 3 2
+−1 1 −3 −2
+2 3 4 2
+−3 −1 −3 0
+
+ ∼
+
+
+1 0 3 2
+0 1 0 0
+0 0 −2 −2
+0 0 0 0
+
+
+Como las primeras 3 columnas de A que conforman un conjunto linelmente independiente,
+tenemos que B = [v1 v2 v3] y as ´ ı la ecuaci´ onBx = 0 tiene ´ unicamente la soluci´ on trivial.Puntaje:
+1 pto por plantear la ecuaci´ on vectorial que se debe intentar solucionar, puede plantear
+directamente la matriz ampliada.
+1 pto por determinar que la ecuaci´ on no tiene soluci´ on.
+1 pto por justiﬁcadamente determinar que b /∈ W
+1 pto por argumentar que debe escoger las columnas linealmente independientes de A.
+1 pto por encontrar justiﬁcadamente las columnas linealmente independientes de A.
+1 pto por encontrar B.7. Sea T : R7 → R9 una transformaci´ on lineal. Suponga que el conjunto {u, v} es linealmente
+independiente en R7 pero {T (u), T (v)} es linealmente dependiente. Demuestre que la ecuaci´ on
+T (x) = 0 admite soluciones no triviales.
+Soluci´ on.
+Como el conjunto {T (u), T (v)} es linealmente dependiente, existen α, β ∈ R, no ambos cero,
+tales que
+αT (u) + βT (v) = 0 ,
+de aqu ´ ı se tiene que, usando la linealidad de la transformaci´ onT
+T (αu + βv) = 0 .
+Por otro lado como {u, v} es un conjunto linealmente independiente y α, β ̸= 0 el vector αu+βv
+no es el vector cero. Luego se concluye que αu + βv es una soluci´ on no trivial de T (x) = 0.
+Puntaje:
+2 ptos por argumentar que existen α, β ∈ R, no ambos cero, tales que αT (u) + βT (v) = 0
+2 ptos por usar las propiedades de la transformaci´ on lineal.
+2 ptos por argumentar que el vector encontrado es distinto de cero.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. En caso de ser verdaderas
+demuestrelas y si son falsas de un contraejemplo.
+a) Si {v1, v2, v3} es un conjunto linealmente dependiente de vectores en R3 entonces el con-
+junto {v1, v2} tambi´ en es linealmente dependiente.
+b) Si A es una matriz de 3 ×3 entonces la imagen del plano x+y+z = 0 bajo la transformaci´ on
+T (x) = Ax es un plano.
+c) Si A2×2 = (aij), B 2×3 = (bij), AB = C = (cij) tal que
+aij = (−2)i+j, b ij = (−3)i−j,
+entonces c23 = −569 .
+Soluci´ on.
+a) Falso. Un contraejemplo puede ser
+
+
+
+
+
+1
+0
+0
+
+ ,
+
+
+0
+1
+0
+
+ ,
+
+
+0
+0
+0
+
+
+
+
+ claramente este conjunto
+es linealmente dependiente ya que contiene al vector cero, pero el conjunto
+
+
+
+
+
+1
+0
+0
+
+ ,
+
+
+0
+1
+0
+
+
+
+
+
+es linealmente independiente.
+b) Falso. Un contraejemplo es tomar la matriz cero que la imagen de cualquier conjunto bajo
+esta matriz es el 0.
+c) Verdadero. c23 es la entrada de la matriz C formado por el producto punto de la segunda
+ﬁla de la matriz A y la tercera columna de la matriz B.
+( −8
+16
+)
+·
+( 1
+9
+− 13
+)
+= −8 · 19 + 16 · − 13 = − 569
+Puntaje:
+2 ptos por mostrar un contraejemplo en a)
+2 ptos por mostrar un contraejemplo en b)
+1 pto por argumentar que c23 es la entrada de la matriz C formado por el producto punto
+de la segunda ﬁla de la matriz A y la tercera columna de la matriz B.
+1 pto por concluir el valor de c23

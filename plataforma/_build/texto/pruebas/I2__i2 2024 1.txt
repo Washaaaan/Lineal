@@ -1,0 +1,239 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Primer semestre 2024
+Pauta Interrogaci´ on 2 - MAT1203
+1. Sean
+P =
+
+
+0 1 0
+0 0 1
+1 0 0
+
+ , L=
+
+
+1 0 0
+0 1 0
+2 −1 1
+
+ , U=
+
+
+1 1 1
+0 −1 1
+0 0 2
+
+
+y A la matriz definida por P A= LU , use esta factorizaci´ on para resolver el sistemaAx = e2.
+Soluci´ on:
+Al multiplicar la ecuaci´ onAx = e2 por P obtenemos el sistema equivalente P Ax= P e2 = e1
+que corresponde al sistema LU x= e1, para resolver este realizamos el cambio de variable
+y = U xobtenemos el sistema Ly = e1 cuya matriz ampliada es:
+
+
+1 0 0 | 1
+0 1 0 | 0
+2 −1 1 | 0
+
+
+y cuya soluci´ on esy =
+
+
+1
+0
+−2
+
+.
+Ahora, necesitamos volver a la variable original, para esto resolvemos el sistema U x=
+
+
+1
+0
+−2
+
+
+cuya matriz ampliada es 
+
+1 1 1 | 1
+0 −1 1 | 0
+0 0 2 | −2
+
+
+obteniendo como soluci´ onx =
+
+
+3
+−1
+−1
+
+.
+Distribuci´ on de puntajes:
+• (1 punto) por plantear el sistema P Ax= e1
+• (1 punto) por realizar el cambio de variable U x= y.
+• (2 puntos) por resolver Ly = e1.
+• (2 puntos) por resolver U x= y0.2. Sea A una matriz tal que
+A5 =
+
+
+3 0 s
+1 −1 1
+1 1 1
+
+
+a) Calcule el determinante de A5.
+Soluci´ on:
+Al desarrollar el determinante por cofactores tenemos que
+det(A5) = 3det
+ −1 1
+1 1
+
++ sdet
+ 1 −1
+1 1
+
+= 2s − 6.
+b) ¿Para qu´ e valores des ∈ R la traspuesta de la matriz A, es decir AT , es invertible?
+Soluci´ on:
+Sabemos que A es invertible si y s´ olo siAT es invertible, por lo tanto necesitamos deter-
+minar para qu´ e valores des la matriz A es invertible. Por otra parte A es invertible si y
+s´ olo si det(A) ̸= 0. Como det( A) = 5
+p
+det(A5), tenemos que AT es invertible si y s´ olo si
+2s − 6 ̸= 0 es decir si s ̸= 3.
+Distribuci´ on de puntajes:
+• (2 puntos) por determinar el determinante de A5.
+• (1 punto) por saber que es equivalente determinar que A sea invertible.
+• (1 puntos) por saber que para que el determinante de A debe ser distinto de cero.
+• (1 puntos)por determinar que |A| ̸= 0 si y solo si |A5| ̸= 0
+• (1 puntos)por determinar los valores de s.3. Considere el sistema en variables x, y, zy t
+2x + y = 0
+x + 2y + z = 0
+y + 2z + t = 0
+z + 2t = 5
+Resuelva el sistema usando la regla de Cramer.
+Soluci´ on:
+Sea A =
+
+
+2 1 0 0
+1 2 1 0
+0 1 2 1
+0 0 1 2
+
+ la matriz asociada al sistema y b =
+
+
+0
+0
+0
+5
+
+. Al usar la regla de Cramer
+para resolver el sistema A⃗ x= b, obtenemos que
+x = |A1(b)||A| , y= |A2(b)||A| , z= |A3(b)||A| , t= |A4(b)||A|
+Usando cofactores para calcular el determinante de A obtenemos
+|A| = 2
+ 2 1 01 2 10 1 2  −  1 1 00 2 10 1 2 
+= 2
+
+2
+ 2 11 2  −  1 10 2  −  2 11 2  +  0 10 2 
+= 5 .
+Realizando los c´ alculos tenemos que
+|A1(b)| = −5, |A2(b)| = 10, |A3(b)| = −15 y |A4(b)| = 20
+por lo tanto la soluci´ on es
+
+
+−1
+2
+−3
+4
+
+.
+Distribuci´ on de puntajes:
+• (1 puntos) por determinar el determinante de A.
+• (1 punto) por determinar |A1(b)|.
+• (1 punto) por determinar |A2(b)|.
+• (1 punto) por determinar |A3(b)|.
+• (1 punto) por determinar |A4(b)|.• (1 punto) por determinar la soluci´ on.
+4. Considere el espacio P2 es espacio de polinomios de grado menor o igual a dos y sea
+E = {p(x) ∈ P2 : p(1) = p(2)}.
+a) Demuestre que E es subespacio de P2.
+Soluci´ on:
+Observe que:
+i) El polinomio nulo pertenece a E ya que en 1 y 2 valen cero.
+ii) Suponga que p y q ∈ E, entonces (p + q)(1) = p(1) + q(1) = p(2) + q(2) = (p + q)(2)
+por lo tanto ( p + q) ∈ E.
+iii) Suponga que p ∈ E y α ∈ R, entonces ( αp)(1) = αp(1) = αp(2) = ( αp)(2), por lo
+tanto (αp) ∈ E
+De i), ii) y iii) tenemos que E es subespacio de P2.
+b) Encuentre una base para E.
+Soluci´ on:
+observe que p(x) = ax2 + bx + c ∈ E si y s´ olo sip(1) = a + b + c = p(2) = 4a + 2b + c, es
+decir si b = −3a, por lo tanto para que un polinomio pertenezca a E debe ser de la forma
+p(x) = ax2 − 3ax + c = a(x2 − 3x) + c,
+por lo tanto ( x2 − 3x) y 1 generan E y como son l.i. tenemos que forman una base para
+E.
+Distribuci´ on de puntajes:
+• (1 puntos) por justificar que el polinomio nulo pertenece a E.
+• (1 punto) por demostrar que E es cerrado bajo la suma.
+• (1 punto) por demostrar que E es cerrado bajo la ponderaci´ on escalar.
+NOTA: Lo anterior se puede reemplazar mostrando que E es un generado.
+• (1 punto) por caracterizar E.
+• (1 punto) por encontrar generadores.
+• (1 punto) por decir que los generadores son l.i.5. Considere la transformaci´ onT : R3 − →R2 definida por
+T
+
+
+
+
+x
+y
+z
+
+
+
+ =
+
+
+3x + y
+y − z
+
+
+Encuentre el espacio nulo de T y determine si la transformaci´ on es uno a uno.
+Soluci´ on:
+El espacio nulo de T corresponde los vectores
+
+
+x
+y
+z
+
+ ∈ R3 tales que
+
+
+3x + y
+y − z
+
+ = ⃗0, es decir
+Nul
+ 3 1 0
+0 1 −1
+
+= Gen
+*
+
+−1
+3
+3
+
+
++
+.
+Como el espacio nulo de T no es trivial tenemos que T no es uno a uno.
+Distribuci´ on de puntajes:
+• (2 puntos) por conocer como se define el espacio nulo de una transformaci´ on.
+• (2 punto) por escribir el espacio nulo como conjunto generado.
+• (2 puntos) por decir, justificadamente, que la transformaci´ on no es uno a uno.

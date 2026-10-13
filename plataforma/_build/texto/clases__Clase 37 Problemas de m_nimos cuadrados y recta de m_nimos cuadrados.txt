@@ -1,0 +1,263 @@
+
+----- pagina 1 -----
+Clase 37 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 14
+----- pagina 2 -----
+Recordatorio
+Si W es un subespacio vectorial de Rn y y ∈ Rn es la proyección
+ortogonal de y sobre W.
+Eso significa descomponer y = ˆy + z, donde ˆy ∈ W y z ∈ W⊥.
+Para encontrar proy W(y) necesitamos una base ortogonal de W.
+Podemos encontrar una con el proceso de Gram-Schmidt.
+Las proyecciones nos permiten encontrar soluciones aproximadas de
+sistemas Ax = b sin solución.
+2 / 14
+----- pagina 3 -----
+Problemas de mínimos cuadrados
+Definición: Solución de mínimos cuadrados
+Si A es una matriz de m × n y b está en Rm, una solución de mínimos
+cuadrados de Ax = b es una ˆx en Rn tal que
+||b − Aˆx|| ≤ || b − Ax||
+para toda x en Rn.
+El término ”mínimos cuadrados” proviene del hecho de que ||b − Ax|| es la
+raíz cuadrada de una suma de cuadrados.
+3 / 14
+----- pagina 4 -----
+Problemas de mínimos cuadrados
+Geométricamente, la solución de mínimos cuadrados corresponde al punto
+en el espacio columna de A que está más cerca de b.
+4 / 14
+----- pagina 5 -----
+Problemas de mínimos cuadrados
+Primera estrategia:
+Encontramos ˆb, la proyección de b sobre Col A.
+Resolvemos Aˆx = ˆb.
+Ejemplo: Encuentre una solución de mínimos cuadrados del sistema
+inconsistente Ax = b para
+A =
+
+
+1 −6
+1 −2
+1 1
+1 7
+
+ , b =
+
+
+−1
+2
+1
+6
+
+
+Problema: Necesitamos una base ortogonal de Col A.
+5 / 14
+----- pagina 6 -----
+Problemas de mínimos cuadrados
+Segunda estrategia:
+Teorema
+El conjunto de soluciones de mínimos cuadrados de Ax = b coincide con el
+conjunto de soluciones de la ecuación:
+ATAx = ATb
+Ejemplo: Encuentre una solución de mínimos cuadrados del sistema
+inconsistente Ax = b para
+A =
+
+
+4 0
+0 2
+1 1
+
+ , b =
+
+
+2
+0
+11
+
+
+Nota: La matriz
+[ 17 1 19
+1 5 11
+]
+es equivalente por filas a
+[ 1 0 1
+0 1 2
+]
+.
+6 / 14
+----- pagina 7 -----
+Problemas de mínimos cuadrados
+Segunda estrategia:
+Error de mínimos cuadrados
+El error de mínimos cuadrados del sistema Ax = b es la distancia
+||b − Aˆx||
+Ejemplo: Calcule el error de mínimos cuadrados para el ejemplo anterior.
+7 / 14
+----- pagina 8 -----
+Problemas de mínimos cuadrados
+Ejemplo: Encuentre una solución de mínimos cuadrados del sistema
+inconsistente Ax = b para
+A =
+
+
+1 1 0 0
+1 1 0 0
+1 0 1 0
+1 0 1 0
+1 0 0 1
+1 0 0 1
+
+ , b =
+
+
+−3
+−1
+0
+2
+5
+1
+
+
+Nota:
+
+
+6 2 2 2 4
+2 2 0 0 −4
+2 0 2 0 2
+2 0 0 2 6
+
+ ∼
+
+
+1 0 0 1 3
+0 1 0 −1 −5
+0 0 1 −2 −2
+0 0 0 0 0
+
+.
+8 / 14
+----- pagina 9 -----
+Problemas de mínimos cuadrados
+Teorema
+Sea A una matriz de m × n. Las siguientes afirmaciones son lógicamente
+equivalentes:
+1 La ecuación Ax = b tiene una solución de mínimos cuadrados única
+para cada b en Rm.
+2 Las columnas de A son linealmente independientes.
+3 La matriz ATA es invertible.
+Cuando estas afirmaciones son verdaderas, la solución de mínimos
+cuadrados ˆx está dada por
+ˆx = (ATA)−1ATb
+9 / 14
+----- pagina 10 -----
+Problemas de mínimos cuadrados
+Tercera estrategia (solo en caso de solución única):
+Teorema
+Sea A una matriz con columnas LI con factorización QR A = QR.
+Entonces, la solución de mínimos cuadrados de Ax = b es
+ˆx = R−1QTb
+Usualmente, es más sencillo resolver Rx = QTb.
+Ejemplo: Encuentre la solución de mínimos cuadrados de Ax = b para
+A =
+
+
+1 3 5
+1 1 0
+1 1 2
+1 3 3
+
+ y b =
+
+
+3
+5
+7
+−3
+
+
+10 / 14
+----- pagina 11 -----
+Problemas de mínimos cuadrados
+Nota: A = 12
+
+
+1 1 1
+1 −1 −1
+1 −1 1
+1 1 −1
+
+
+
+
+2 4 5
+0 2 3
+0 0 2
+
+
+Nota:
+
+
+2 4 5 6
+0 2 3 −6
+0 0 2 4
+
+ ∼
+
+
+1 0 0 10
+0 1 0 −6
+0 0 1 2
+
+
+11 / 14
+----- pagina 12 -----
+Recta de mínimos cuadrados
+Una aplicación común de los mínimos cuadrados es ajustar una recta
+y = β0 + β1x a un conjunto de puntos (x1, y1), . . . ,(xn, yn).
+12 / 14
+----- pagina 13 -----
+Recta de mínimos cuadrados
+Esto conduce a un sistema sobredeterminado Xβ = y, donde:
+X =
+
+
+1 x1
+1 x2
+... ...
+1 xn
+
+ , β = [ β0β1 ] , y =
+
+
+y1
+y2
+...
+yn
+
+
+Definición: Recta de mínimos cuadrados
+La recta de mínimos cuadrados es la recta y = β0 + β1x que minimiza la
+suma de los cuadrados de los residuos (las distancias verticales entre los
+puntos de datos y la recta).
+13 / 14
+----- pagina 14 -----
+Recta de mínimos cuadrados
+Ejemplo: Encuentre la ecuación de la recta de mínimos cuadrados que
+mejor se ajusta a los puntos de datos:
+(2, 1), (5, 2), (7, 3), (8, 3)
+Nota: La matriz aumentada del sistema
+[
+XTX|XTy] es [ 4 22 922 142 57 ],
+la cual es equivalente por fila a
+[ 1 0 2/7
+0 1 5/14
+]
+.
+14 / 14

@@ -1,0 +1,79 @@
+
+----- pagina 1 -----
+Clase 21 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 8
+----- pagina 2 -----
+Recordatorio
+Buscamos un número que nos diga cuándo una matriz es invertible, y
+nos permita calcular la inversa.
+det A cumple que det A = 0 si y solo si A es invertible.
+Se puede resolver el sistema Ax = b con la regla de Cramer, e invertir
+la matriz con la fórmula
+A−1 = 1det A adj(A)
+donde adj A es la transpuesta de la matriz de coeficientes.
+2 / 8
+----- pagina 3 -----
+Determinantes como área o volumen
+El determinante se puede entender geométricamente
+Teorema
+Si A es una matriz de 2 × 2, el área del paralelogramo definido por las
+columnas de A es | det A|.Si A es una matriz de 3 × 3, el volumen del
+paralelepípedo definido por las columnas de A es | det A|.
+3 / 8
+----- pagina 4 -----
+Determinantes como área o volumen
+Ejemplo: Calcule el área del paralelogramo definido por los puntos
+(−2, −2), (0, 3), (4, −1) y (6, 4).
+4 / 8
+----- pagina 5 -----
+Determinantes como área o volumen
+Los determinantes se pueden usar para describir una importante propiedad
+geométrica de transformaciones lineales en el plano y en R3.
+Si T es una transformación lineal y S es un conjunto en el dominio de T,
+entonces T(S) denota el conjunto de imágenes de puntos en S. Nos
+interesa conocer cómo se compara el área (o volumen) de T(S) con el área
+(o volumen) del conjunto original S.
+5 / 8
+----- pagina 6 -----
+Determinantes como área o volumen
+Teorema
+Sea T : R2 → R2 una transformación lineal determinada por una matriz A
+de 2 × 2. Si S es un paralelogramo en R2, entonces:
+{área de T(S)} = | det A| · {área de S}
+Si T : R3 → R3 está determinada por una matriz A de 3 × 3, y si S es un
+paralelepípedo en R3, entonces:
+{volumen de T(S)} = | det A| · {volumen de S}
+El teorema anterior es válido aún cuando la región S no es un
+paralelogramo.
+6 / 8
+----- pagina 7 -----
+Determinantes como área o volumen
+Ejemplo: Sea S el paralelogramo definido por los vectores a =
+[1
+3
+]
+y
+b =
+[5
+5
+]
+, y sea A =
+[ 1 −0, 1
+0 2
+]
+. Calcule el área de la imagen de S bajo
+la transformación
+T(x) = Ax
+7 / 8
+----- pagina 8 -----
+Determinantes como área o volumen
+Ejemplo: Sean a y b números positivos. Encuentre el área de la región E
+acotada por la elipse cuya ecuación es:
+x21
+a2 + x22b2 = 1
+8 / 8

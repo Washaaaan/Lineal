@@ -1,0 +1,587 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 2
+1. Dada la matriz A =
+
+
+0 1 −1
+2 1 4
+1 0 0
+
+ . Escriba A como producto de matrices elementales.
+Soluci´ on.Al escalonar la matriz
+
+
+0 1 −1
+2 1 4
+1 0 0
+
+ ∼
+
+
+1 0 0
+2 1 4
+0 1 −1
+
+ ∼
+
+
+1 0 0
+0 1 4
+0 1 −1
+
+ ∼
+
+
+1 0 0
+0 1 4
+0 0 −5
+
+ ∼
+
+
+1 0 0
+0 1 4
+0 0 1
+
+ ∼
+
+
+1 0 0
+0 1 0
+0 0 1
+
+
+Notamos que
+
+
+1 0 0
+0 1 −4
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 − 15
+
+
+
+
+1 0 0
+0 1 0
+0 −1 1
+
+
+
+
+1 0 0
+−2 1 0
+0 0 1
+
+
+
+
+0 0 1
+0 1 0
+1 0 0
+
+ A =
+
+
+1 0 0
+0 1 0
+0 0 1
+
+
+Luego
+A =
+
+
+0 0 1
+0 1 0
+1 0 0
+
+
+
+
+1 0 0
+2 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 1 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −5
+
+
+
+
+1 0 0
+0 1 4
+0 0 1
+
+
+Puntaje:
+3 ptos por determinar la factorizaci´ on en matrices elementales de A−1 (se descuenta 1 pto
+por cada error)
+3 ptos por determinar la factorizaci´ on en matrices elementales de A (se descuenta 1 pto
+por cada error)2. Considere las matrices
+P =
+
+
+0 0 1
+1 0 0
+0 1 0
+
+ L =
+
+
+1 0 0
+0 1 0
+3 −1 1
+
+ U =
+
+
+1 1 1
+0 −3 −1
+0 0 4
+
+
+Sea A matriz de 3 × 3 deﬁnida por P A = LU . Sin encontrar expl ´ ıcitamenteA y A−1, resuelva
+el sistema Ax =
+
+
+0
+0
+1
+
+.
+Soluci´ on.Notemos que resolver el sistema Ax =
+
+
+0
+0
+1
+
+ es equivalente a resolver el sistema
+Ax =
+
+
+0
+0
+1
+
+ → P Ax = P
+
+
+0
+0
+1
+
+ → LU x =
+
+
+1
+0
+0
+
+
+el cual resolveremos
+Ly =
+
+
+1
+0
+0
+
+ ∧ U x = y
+entonces 
+
+1 0 0
+0 1 0
+3 −1 1
+
+ y =
+
+
+1
+0
+0
+
+ → y =
+
+
+1
+0
+−3
+
+
+luego 
+
+1 1 1
+0 −3 −1
+0 0 4
+
+ x =
+
+
+1
+0
+−3
+
+ → x =
+
+
+3
+2
+1
+4
+−3
+4
+
+
+Puntaje:
+1 pto por plantear el sistema LU x = P b
+1 pto por plantear la soluci´ on del sistema como Ly = P b ∧ U x = y
+2 ptos por determinar y (se descuenta 1 pto por cada error)
+2 ptos por determinar x (se descuenta 1 pto por cada error)3. Sea A una matriz tal que
+A3 =
+
+
+2 0 2
+−1 1 2
+2 −1 −1
+
+
+a) Calcule el determinante de la matriz A3 mediante desarrollo por cofactores.
+b) Demuestre que A no es invertible.
+Soluci´ on.
+a) det (A3) = det
+
+
+2 0 2
+−1 1 2
+2 −1 −1
+
+ = 2 det
+( 1 2
+−1 −1
+)
++2 det
+( −1 1
+2 −1
+)
+= 2+ −2 = 0
+b) Como el det( A3) = det( A)3 → det(A)3 = 0 → det(A) = 0 y por teorema visto en clase
+sabemos que toda matriz con determinante 0 es una matriz no invertible.
+Puntaje:
+1 pto por plantear el determinante mediante desarrollo por cofactores
+2 ptos por calcularlo correctamente el determinante mediante desarrollo por cofactores (se
+descuenta 1 pto por cada error)
+1 punto por argumentar que det( A3) = det( A)3.
+2 ptos por argumentar que det( A) = 0 implica matriz no invertible.4. Sea A de 4 × 4 tal que det( A) = 3.
+a) Calcule det(2 A) + det
+( 1
+2 A−1)
+b) Calcule el det(Adj( A))
+Soluci´ on.
+a) Aplicando las propiedades de determinantes
+det(2A) + det
+( 1
+2 A−1) = 2 4 det(A) + det ( 12 A−1)
+= 2 4 det(A) + ( 12 )4 det (A−1)
+= 2 4 det(A) + ( 12 )4 1det (A)
+= 16 · 3 + 116 13
+b) Sabemos que A−1 = 1det(A) Adj(A), luego
+det(A−1) = det
+( 1
+det(A) Adj(A)
+)
+→ 1det(A) = 1det(A)4 det(Adj(A)) → det(A)3 = det(Adj(A))
+Entonces det(Adj( A)) = 27
+Puntaje:
+1 pto por determinar que det(2 A) = 2 4 det(A).
+1 pto por determinar que det
+( 1
+2 A−1) = ( 12 )4 det (A−1)
+1 pto por determinar que det ( A−1) = 1det (A)
+1 pto por enunciar que A−1 = 1det(A) Adj(A)
+1 pto por demostrar que det( A)3 = det(Adj(A))
+1 pto por concluir que det(Adj( A)) = 275. Sea S el paralelep ´ ıpedo que tiene un v´ ertice en el origen y v´ ertices adyacentes en
+(1, 0, −2), (1, 2, 4), (−1, 1, 0)
+a) Encuentre el volumen de S.
+b) Sea T (x) = Ax una transformaci´ on lineal con A matriz tal que det( A) = −3. Determine
+el volumen del paralelep ´ ıpedoT (S).
+Soluci´ on.
+a) El volumen de S esta dado por el valor absoluto del determinante de la matriz cuyas
+columnas son los vectores que forman el paralep ´ ıpedo.
+det  1 1 −10 2 1−2 4 0  = | − 10| = 10
+b) El volumen de T (S) esta dado por el valor absoltuto del, determinante de la matriz de
+transformacion de T por el determinante de la matriz cuyas columnas son los vectores que
+forman el paralep ´ ıpedoS. Es decir
+det(A) · det  1 1 10 2 1−2 4 0  = |−3 · −10| = 30
+Puntaje:
+1 pto por ocupar que el volumen de S esta dado por el valor absoluto del determinante
+de la matriz cuyas columnas son los vectores que forman el paralep ´ ıpedo
+2 ptos por concluir que el volumen 10 u3 (se descuenta 1 pto por cada error)
+1 pto por ocupar que el volumen de T (S) esta dado por el valor absoltuto del, determinante
+de la matriz de transformacion de T por el determinante de la matriz cuyas columnas son
+los vectores que forman el paralep ´ ıpedoS
+2 ptos por concluir que el volumen 30 u3 (se descuenta 1 pto por cada error)
+Contin´ ua en la siguiente p´ agina.6. Dado el siguiente sistema de ecuaciones lineales
+x +2y +z +3t = 0 ,
+y −z −t = 1 ,
+2y +z = 1 ,
+3y −2z +t = 0 .
+Justiﬁque porque se puede ocupar la Regla de Cramer para solucionar este sistema y ´ usela para
+encontrar el valor de z tal que el vector
+
+
+x
+y
+z
+t
+
+ sea soluci´ on de este.
+Soluci´ on.
+La forma matricial de este sistema esta dado por
+
+
+1 2 1 3
+0 1 −1 −1
+0 2 1 0
+0 3 −2 1
+
+
+
+
+x
+y
+z
+t
+
+ =
+
+
+0
+1
+1
+0
+
+
+Como el det
+
+
+1 2 1 3
+0 1 −1 −1
+0 2 1 0
+0 3 −2 1
+
+ = 10 ̸= 0, este sistema tiene soluci´ on ´ unica. Luego aplicando
+la regla de cramer el valor de z tal que el vector
+
+
+x
+y
+z
+t
+
+ sea soluci´ on de este sistema esta dado
+por
+z =
+det
+
+
+1 2 0 3
+0 1 1 −1
+0 2 1 0
+0 3 0 1
+
+
+det
+
+
+1 2 1 3
+0 1 −1 −1
+1 2 1 0
+0 3 −2 1
+
+
+= 210
+Puntaje:
+1 pto por argumentar que el sistema tiene soluci´ on ya que el determinate de la matriz es
+distinto de cero.
+1 pto por calcular el determinante de la matriz A.1.5 pto por enunciar que z = det(A(b))det(A) .
+1.5 pto por calcular det( A(b)).
+1 ptos por encontrar z correctamente.7. Dada la transformaci´ on linealT : R3 − →R2 deﬁnida por T
+
+
+x
+y
+z
+
+ =
+( 3x + y + z
+x − y
+)
+.
+Encuentre el espacio nulo de esta transformaci´ on y determine si T es inyectiva. Justiﬁque su
+respuesta.
+Soluci´ on.
+Para determinar el respectivo espacio nulo debemos resolver, T
+
+
+x
+y
+z
+
+ =
+( 0
+0
+)
+, es decir,
+resolver el sistema homog´ eneo
+3x + y + z = 0
+x − y = 0
+Cuya soluci´ on se puede escribir como x = y, z = −4x o bien
+Si
+
+
+x
+y
+z
+
+ ∈ N ul(T ) entonces
+
+
+x
+y
+z
+
+ = x
+
+
+1
+1
+−4
+
+ , x ∈ R.
+De donde se tiene que
+N ul(T ) = Gen
+
+
+
+
+
+1
+1
+−4
+
+
+
+
+ .
+En particular la transformaci´ onT es no inyectiva, ya que N ul(T ) ̸= {0}.
+Puntaje:
+1 pto por argumentar que el espacio nulo consta de los vectores tal que T
+
+
+x
+y
+z
+
+ =
+( 0
+0
+)
+.
+1 pto por argumentar que el espacio nulo consta de los vectores que satisfacen el sistema
+homog´ eneo.
+2 ptos por mostrar el espacio nulo correctamente. (se descuenta un punto 1 punto por
+error)
+2 ptos por concluir que la transformaci´ on no es inyectiva.(sino justiﬁca no se le asigna
+puntaje).8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. Justiﬁque sus respuestas.
+a) Si T : P2 − →R2 esta deﬁnida por T (p(x)) =
+( p(1)
+2p(1)
+)
+entonces la imagen del polinomio
+p(x) = 3 x2 + 1 bajo la transformaci´ on T es el vector
+( 1
+2
+)
+b) Si AT = A−1 , entonces det( A) es 1 ´ o−1.
+c) Si W es la uni´ on del primer y tercer cuadrantres en el plano XY , es decir
+W =
+{( x
+y
+)
+∈ R2 | x · y ≥ 0
+}
+entonces W es un subespacio de R2.
+Soluci´ on.
+a) Falsa, ya que
+T (p(x)) =
+( p(1)
+2p(1)
+)
+=
+( 4
+8
+)
+.
+b) Verdadera, ya que, de los datos del problema se tiene que
+AT A = I,
+luego aplicando determinante,
+det(AtA) = det(I),
+de donde, usando el hecho que det(A) = det(AT ), se concluye que
+(det(A))2 = 1
+y por lo tanto det(A) = ±1.
+c) Falsa, ya que si consideramos
+u =
+( −1
+−3
+)
+, v =
+( 7
+1
+)
+,
+se tiene que u, v ∈ W sin embargo para el vector
+u + v =
+( 6
+−2
+)
+se veriﬁca que x · y = 6 · −2 = −12 < 0.
+Puntaje:
+2 ptos por mostrar que T
+( p(1)
+2p(1)
+)
+̸=
+( 1
+2
+)
+(0,5 por calcular T
+( p(1)
+2p(1)
+)
+).
+2 ptos por demostrar b)
+2 ptos por argumentar (contradiciendo alguna propiedad de subespacio) que c) es
+falsa.

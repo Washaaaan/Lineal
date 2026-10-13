@@ -1,0 +1,748 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on a la Interrogaci´ on N◦ 2
+1. Sea A =
+
+
+1 3 5
+−2 4 0
+2 0 4
+
+. Calcule la factorizaci´ onA =LU de la matriz A, y use dicha
+factorizaci´ on para encontrar, si existen, todas las soluciones de los sistemas
+Ax =
+
+
+1
+−2
+2
+
+ y Ax =
+
+
+1
+2
+0
+
+.
+Soluci´ on:
+Para factorizar A =LU, escalonamos A:
+A =
+
+
+1 3 5
+−2 4 0
+2 0 4
+
+
+∼
+f2+2f1
+f3−2f1
+
+
+1 3 5
+0 10 10
+0 −6 −6
+
+ ∼f3+ 35 f2
+
+
+1 3 5
+0 10 10
+0 0 0
+
+
+que es triangular superior ( U). La matriz L se obtiene, por ejemplo, tomando las
+inversas de las matrices elementales que corresponden a las operaciones empleadas en
+el escalonamiento:
+L =
+
+
+1 0 0
+0 1 0
+0 3 /5 1
+
+
+−1
+
+1 0 0
+0 1 0
+−2 0 1
+
+
+−1
+
+1 0 0
+2 1 0
+0 0 1
+
+
+−1
+=
+
+
+1 0 0
+−2 1 0
+2 −3/5 1
+
+,
+Para los sistemas dados, tenemos:
+Ax =
+
+
+1
+−2
+2
+
+:
+Resolvemos primero Ly =
+
+
+1
+−2
+2
+
+. Sustituyendo hacia atr´ as, tenemos
+y1 = 1, y 2 =−2 + 2y1 = 0, y 3 = 2− 2y1 + 35y2 = 2− 2 + 05 = 0.
+As´ ı, para este sistema,y =
+
+
+y1
+y2
+y3
+
+ =
+
+
+1
+0
+0
+
+.A continuaci´ on, resolvemosUx = y, o sea
+
+
+1 3 5
+0 10 10
+0 0 0
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+y1
+y2
+y3
+
+ =
+
+
+1
+0
+0
+
+.
+Vemos que:
+• x3 es variable libre.
+• 10x2 + 10x3 = 0, o sea, x2 =−x3.
+• x1 + 3x2 + 5x3 = 1, o sea, x1 = 1− 3x2− 5x3 = 1 + 3x3− 5x3 = 1− 2x3.
+As´ ı, la soluci´ on de este sistema es
+x =
+
+
+x1
+x2
+x3
+
+ =
+
+
+1− 2x3
+−x3
+x3
+
+.
+Ax =
+
+
+1
+2
+0
+
+:
+Resolvemos primero Ly =
+
+
+1
+2
+0
+
+. Sustituyendo hacia atr´ as, tenemos
+y1 = 1, y 2 = 2 + 2y1 = 4, y 3 = 0− 2y1 + 35y2 =−2 + 125 = 2/5.
+As´ ı, para este sistema,y =
+
+
+y1
+y2
+y3
+
+ =
+
+
+1
+4
+2/5
+
+.
+A continuaci´ on, resolvemosUx = y, o sea
+
+
+1 3 5
+0 10 10
+0 0 0
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+y1
+y2
+y3
+
+ =
+
+
+1
+4
+2/5
+
+.
+Este sistema evidentemente no tiene soluci´ on, ya que la tercera ﬁla de su matriz
+de coeﬁcientes est´ a formada solo por ceros, y en la tercera ﬁla del lado derecho
+hay un 2/5⁄= 0.
+Otra forma de ver esto es que para que este sistema sea consistente el lado
+derecho debe ser combinaci´ on lineal de las columnas deA, lo que en este caso es
+imposible porque cualquier combinaci´ on lineal de las columnas deA debe tener
+0 en la tercera coordenada.Puntaje:
+Por encontrar correctamente la factorizaci´ onA =LU, 1 pto.
+En el primer sistema:
+• Por encontrar y =
+
+
+1
+0
+0
+
+, 1 punto.
+• Por plantear correctamente el sistema Ux = y, 0,5 puntos.
+• Por encontrar x =
+
+
+1− 2x3
+−x3
+x3
+
+, 1 punto.
+En el segundo sistema:
+• Por encontrar y =
+
+
+1
+4
+2/5
+
+, 1 punto.
+• Por plantear correctamente el sistema Ux = y, 0,5 puntos.
+• Por descubrir que el sistema no tiene soluci´ on, 1 punto.
+A lo anterior se le suma el punto base.
+Nota:
+Si al calcular la factorizaci´ on llegan aA =LU conL triangular inferior yU triangular
+superior, pero L no tiene solo 1s en la diagonal , reciben solo medio punto por la
+factorizaci´ on (y el resto se corrige “en su m´ erito” a partir de ah´ ı).2. Sea P el paralelep´ ıpedo con un v´ ertice en el origen y v´ ertices adyacentes en (1, 4, 0),
+(−2,−5, 2) y (−1, 2,−1).
+a) Calcule el volumen de P .
+Soluci´ on:
+Los vectores que forman las aristas deP son paralelos a los vectoresv1 = (1, 4, 0),
+v2(−2,−5, 2) y v3 = (−1, 2,−1), por lo que el volumen de P se puede calcular
+mediante el determinante
+⏐⏐⏐⏐⏐⏐1 −2 −14 −5 20 2 −1⏐⏐⏐⏐⏐⏐ =−15.
+Como el volumen no es negativo, nos interesa el valor absoluto del determinante,
+vale decir, el volumen buscado es 15.
+b) Se deﬁne T : R3→ R3 como la transformaci´ on lineal deﬁnida porT (x,y,z ) =
+(x +y,y +z,x−z).
+Calcule el volumen de T (P ).
+Primera Soluci´ on:
+Una primera idea es calcular directamente los vectores T (v1), T (v2) y T (v3),
+que son los vectores que forman las aristas de P . Como la matriz de T es
+A =
+
+
+1 1 0
+0 1 1
+1 0 −1
+
+,
+estos vectores son las columnas de
+A
+
+
+1 −2 −1
+4 −5 2
+0 2 −1
+
+ =
+
+
+1 1 0
+0 1 1
+1 0 −1
+
+
+
+
+1 −2 −1
+4 −5 2
+0 2 −1
+
+ =
+
+
+5 −7 1
+4 −3 1
+1 −4 0
+
+,
+por lo que el volumen de T (P ) est´ a dado por el valor absoluto de
+⏐⏐⏐⏐⏐⏐−5 −7 14 −3 11 −4 0 ⏐⏐⏐⏐⏐⏐ = 0.
+Segunda Soluci´ on:
+Otra posibilidad es calcular el determinante del producto de las matrices
+
+
+1 1 0
+0 1 1
+1 0 −1
+
+
+
+
+1 −2 −1
+4 −5 2
+0 2 −1
+
+sin realmente multiplicarlas , usando el hecho de que det(AB) = detA· detB.
+Como en este caso det A =
+⏐⏐⏐⏐⏐⏐1 1 00 1 11 0 −1⏐⏐⏐⏐⏐⏐ = 0, tenemos que el volumen de T (P ) es
+el valor absoluto de
+⏐⏐⏐⏐⏐⏐1 1 00 1 11 0 −1⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐1 −2 −14 −5 20 2 −1⏐⏐⏐⏐⏐⏐ = 0· (−15) = 0,
+o sea, 0.
+Puntaje:
+a) Por plantear que el volumen lo da el determinante, 1 punto.
+Por calcular correctamente el determinante, 1,5 puntos.
+Por tomar el valor absoluto del determinante, 0,5 puntos.
+b) Por plantear alguna forma correcta de calcular el volumen pedido, 1 pun-
+to.
+Por llegar correctamente al volumen pedido, 2 puntos.
+A lo anterior se le suma el punto base.3. Sea A una matriz de n×n deﬁnida por
+ai,j =
+{
+3 si i≤j,
+1 si i>j.
+Calcule detA.
+Soluci´ on:
+A =
+
+
+3 3 3 3 ... 3 3
+1 3 3 3 ... 3 3
+1 1 3 3 ... 3 3
+1 1 1 3 ... 3 3
+... ... ... ... ... ... ...
+1 1 1 1 ... 3 3
+1 1 1 1 ... 1 3
+
+ =f1←f1/3 3·
+
+
+1 1 1 1 ... 1 1
+1 3 3 3 ... 3 3
+1 1 3 3 ... 3 3
+1 1 1 3 ... 3 3
+... ... ... ... ... ... ...
+1 1 1 1 ... 3 3
+1 1 1 1 ... 1 3
+
+
+=
+f2←f2−f1
+f3←f3−f1
+f4←f4−f1
+...
+fn←fn−f1
+3·
+
+
+1 1 1 1 ... 1 1
+0 2 2 2 ... 2 2
+0 0 2 2 ... 2 2
+0 0 0 2 ... 2 2
+... ... ... ... ... ... ...
+0 0 0 0 ... 2 2
+0 0 0 0 ... 0 2
+
+ = 3· 2n−1
+ya que la ´ ultima matriz es triangular (y por lo tanto su determinante es el producto
+de los elementos de su diagonal).
+Puntaje:
+Por transformar A en una matriz triangular mediante operaciones elementales:
+4 puntos.
+Por calcular el determinante de la matriz original a partir del de la matriz
+triangular: 2 puntos.
+Se da puntaje parcial (1 punto) por errores menores en este c´ alculo (por ejemplo,
+dan como resultado 2 n−1 (se olvidan del 3) o 3· 2n (cuentan una ﬁla m´ as).
+A lo anterior se suma el punto base.4. Sea A una matriz de 4× 4, tal que det A =α⁄= 0.
+a) Calcule det(5A) + det(3A−1) en t´ erminos deα.
+b) Se sabe que det(Adj A)) = 8. Calcule α = detA.
+Soluci´ on:
+a) Como A es de 4× 4, 5A tiene 4 ﬁlas multiplicadas por 5, lo que resulta en un
+aumento neto de 5 4 veces en el valor del determinante (y, en general, det(cA) =
+c4 detA).
+As´ ı, det(5A) = 54 detA = 54α = 625α.
+Por su parte, det(A−1) = 1α, por lo que det(3A−1) = 34 det(A−1) = 34α = 81α .
+det(5A) + det(3A−1) = 54α + 34
+α = 625α + 81α.
+b) Sabemos que A AdjA = (det A)I, por lo que det( A AdjA) = (det A)4. Como
+det(A AdjA) = detA det(AdjA), tenemos que
+detA det(AdjA) = (detA)4.
+Como detA =α⁄= 0, podemos simpliﬁcar por det A, obteniendo
+det(AdjA) = (detA)3 =α3.
+Del hecho de que det(Adj A)) = 8 se deduce que α3 = 8, o sea, α = 2.
+Puntaje:
+a) Por calcular correctamente det(5A), 1,5 puntos.
+Por calcular correctamente det(3A01), 1,5 puntos.
+b) Por llegar a que det(Adj A) = (detA)3, 2 puntos.
+Por llegar a que α = 2, 1 punto.
+A lo anterior se le suma el punto base.Nota: En los siguientes problemas, Pn denota al espacio vectorial formado por todos los
+polinomios de grado≤n.
+5. Sea V = P3, y sea W ={p(x)∈V :p(1) =p(0) = 0}.
+a) Demuestre que W es subespacio de V .
+Primera Soluci´ on:
+Debemos demostrar que:
+1) 0∈W .
+2) W es cerrado bajo suma.
+3) W es cerrado bajo ponderaci´ on por un escalar.
+En efecto:
+1) El elemento 0 en el espacio P3 es el polinomio constante 0, o sea, el polinomio
+p(x) tal que p(x) = 0 para todo x∈ R. Como claramente este polinomio
+satisface p(0) =p(1) = 0, se tiene p(x)∈W , o sea, 0∈W .
+2) Sean q(x),r (x) dos polinomios en W . Por estar estos polinomios en P3, se
+tiene que q(x) =ax3 +bx2 +cx +d yr(x) =ex3 +fx 2 +gx +h conq(0) =
+q(1) =r(0) =r(1) = 0, o sea, d =h = 0 y a +b +c +d =e +f +g +h = 0.
+Pero entonces el polinomio suma de q(x) y r(x) es el polinomio
+s(x) =q(x) +r(x) = ( ax3 +bx2 +cx +d) + (ex3 +fx 2 +gx +h)
+= ( a +e)x3 + (b +f)x2 + (c +g)x + (d +h),
+que satisface s(0) =d +h = 0,
+s(1) = (a+e)+(b+f)+(c+g)+(d+h) = (a+b+c+d)+(e+f+g+h) = 0+0 = 0,
+por lo que s(x) =q(x) +r(x)∈W .
+3) Sea t∈ R un escalar cualquiera, y sea p(x)∈W . En otras palabras,
+p(x) =ax3 +bx2 +cx +d yp(0) =p(1) = 0, o sea, d = 0 ya +b +c +d = 0.
+Entoncestp(x) es el polinomio q(x) tal que
+q(x) =t(ax3 +bx2 +cx +d) = (ta)x3 + (tb)x2 + (tc)x + (td),
+yq(0) =td =t·0 = 0 yq(1) = (ta)+(tb)+(tc)+(td) =t(a+b+c+d) = 0,
+por lo que q(x) =tp(x)∈W
+Puntaje:
+Por demostrar que 0∈W , 0,5 puntos.
+Por demostrar que W es cerrado bajo suma, 1,5 puntos.Por demostrar que W es cerrado bajo ponderaci´ on por un escalar, 1 punto.
+Se puede dar puntaje parcial (0,5 puntos o 1 punto) en las demostraciones de
+clausura si est´ an parcialmente correctas.
+Segunda Soluci´ on:
+Todo polinomio de P3 que satisface p(1) = p(0) = 0 debe ser divisible por
+x(x− 1). Ya que este polinomio tiene grado 2, todo polinomio de W debe ser de
+la forma p(x)·x(x− 1) para alg´ un polinomiop(x) de grado≤ 1.
+As´ ı,W ={(ax +b)x(x− 1) :a,b∈ R}.
+Tomando los pares de valores (a,b ) = (1, 0) y (a,b ) = (0, 1) obtenemos los poli-
+nomios{x·x(x− 1), 1·x(x− 1)} ={x2(x− 1),x (x− 1)} ={x3−x2,x 2−x}.
+Como{x, 1} genera todos los polinomios de grado≤ 1,{x3−x2,x 2−x} genera
+todos los polinomios de W .
+As´ ı,W es el conjunto generado por los polinomios x3−x2 y x2−x, por lo que
+—Teorema 1, secci´ on 4.1—W es un subespacio de V .
+Puntaje:
+Por encontrar un conjunto que genera W , 1 punto.
+Por justiﬁcar que efectivamente dicho conjunto es un generador, 1 punto.
+Por invocar el teorema que asegura que todo conjunto generado es un subes-
+pacio, 1 punto.
+b) Determine una base de W .
+Primera Soluci´ on:
+Los elementos de W son polinomios de la forma ax3 +bx2 +cx +d tales que
+p(0) =p(1) = 0, o sea, tales que d = 0 y a +b +c +d = 0.
+Considerando estas dos igualdades como ecuaciones (con inc´ ognitasa,B,c yd)
+resolvemos el sistema de ecuaciones y llegamos —por ejemplo— a
+d = 0, a =−b−c,
+dondeb yc son variables independientes, a es variable dependiente y d = 0 est´ a
+ﬁja.
+As´ ı, los polinomios deW pueden ser considerados como vectores (a,b,c,d ) donde
+a =−b−c y d = 0, o sea, de la forma (−b−c,b,c, 0).
+Un conjunto de vectores que genera el subespacio de R4 formado por los vectores
+que satisfacen esta condici´ on es{(1,−1, 0, 0), (1, 0,−1, 0)}. Que este conjunto es
+l.i. es f´ acil de comprobar1, por lo que este conjunto es base del mencionado
+subespacio; traduciendo esto de vuelta a polinomios encontramos que una base
+de W est´ a dada por {
+x3−x2,x 3−x}.
+Puntaje:
+1Ver la segunda soluci´ on propuesta para este problema, donde se hace esta misma demostraci´ on direc-
+tamente con los polinomios.Por plantear alguna forma correcta de encontrar una base de W , 1 punto.
+Por encontrar una base de W , 1,5 puntos.
+Por justiﬁcar adecuadamente que el conjunto dado es efectivamente una
+base, 0,5 puntos.
+Segunda Soluci´ on:
+Siguiendo la idea de la segunda soluci´ on de (a), si hemos expresadoW como el
+conjunto generado por algunos vectores de V (y que por ende es subespacio de
+V ), bastar´ a hacer alguna de las dos tareas siguientes para obtener una base de
+W :
+demostrar que el conjunto generador hallado es l.i. (y por lo tanto ´ el mismo
+es una base), o bien
+eliminar uno por uno del generador aquellos vectores (polinomios) que son
+combinaci´ on lineal de los elementos que no han sido eliminados.
+En nuestro caso, hacemos lo primero: supongamos que s y t son dos n´ umeros
+reales cualesquiera, y que p(x) =s(x3−x) +t(x3−x2) es el polinomio nulo.
+Entonces p(u) = 0 para todo u ∈ R, en particular, p(2) = 0 y p(3) = 0.
+Escribiendo estas dos condiciones como un sistema de ecuaciones, tenemos:
+6s + 4 t = 0
+24s + 18t = 0
+⏐⏐⏐⏐⏐
+de donde claramente s =t = 0, vale decir, los polinomios x3−x y x3−x2 son
+l.i.
+Puntaje:
+Bajo el supuesto de que encontraron un generador en la primera parte del ejer-
+cicio, el puntaje se asigna como sigue:
+Por argumentar (puede incluso ser en forma impl´ ıcita) que basta probar que
+el generador encontrado (o un subconjunto propio que tambi´ en genereW )
+es l.i. para tener una base, 1 punto.
+Por explicitar el conjunto que se aﬁrma es base: 1,5 puntos.
+Por justiﬁcar adecuadamente que el conjunto dado es efectivamente una
+base (o sea, por probar que es l.i.), 0,5 puntos.
+A lo anterior se le suma el punto base.6. Sea T : P2→ R2 dada por
+T (p) =
+[ p(0)
+p(1)
+]
+.
+a) Demuestre que T es una transformaci´ on lineal.
+Primera Soluci´ on:
+Debemos probar que, si a∈ R, p, q∈ P2, entonces:
+T (p + q) =T (p) +T (q).
+T (ap) =aT (p).
+En efecto:
+Como (p + q)(0) = p(0) + q(0) y (p + q)(1) = p(1) + q(1), tenemos
+T (p+q) =
+[ (p + q)(0)
+(p + q)(1)
+]
+=
+[ p(0) + q(0)
+p(1) + q(1)
+]
+=
+[ p(0)
+p(1)
+]
++
+[ q(0)
+q(1)
+]
+=T (p)+T (q).
+Como (ap)(0) =ap(0) y (ap)(1) =ap(1), tenemos
+T (ap) =
+[ (ap)(0)
+(ap)(1)
+]
+=
+[ ap(0)
+ap(1)
+]
+=a
+[ p(0)
+p(1)
+]
+=aT (p).
+Segunda Soluci´ on:
+Otra posible forma de demostrar esto es probar que, si a,b ∈ R y p, q∈ P2,
+entonces:
+T (ap +bq) =aT (p) +bT (q).
+En efecto:
+T (ap +bq) =
+[ (ap +bq)(0)
+(ap +bq)(1)
+]
+=
+[ ap(0) +bq(0)
+ap(1) +bq(1)
+]
+=
+[ ap(0)
+ap(1)
+]
++
+[ bq(0)
+bq(1)
+]
+= a
+[ p(0)
+p(1)
+]
++b
+[ q(0)
+q(1)
+]
+=aT (p) +bT (q).
+Puntaje:
+Por plantear alguna forma correcta de demostrar lo pedido, 1 punto.
+Por realizar correctamente la demostraci´ on, 2 puntos.
+Si se cometen errores algebraicos menores se descuenta 1 punto.
+b) Encuentre una base del n´ ucleo deT .
+Soluci´ on:
+Como todos ya nos dimos cuenta, esta pregunta es la misma que 5b, por lo que la
+soluci´ on y la distribuci´ on de puntaje siguen las mismas gu´ ıas.
+Al puntaje total obtenido en la pregunta se le suma el punto base.7. Sean p1(t) = 1−t2, p2(t) = 1 +t, p3(t) = 1 +t +t2. Se sabe que{p1(t), p2(t), p3(t)}
+es una base de P2.
+a) Exprese los polinomios f(t) = 3− 5t + 2t2 y g(t) = 1− 3t como combinaciones
+lineales de{p1(t), p2(t), p3(t)} (en otras palabras, encuentre las coordenadas de
+f(t) y g(t) en la base{p1(t), p2(t), p3(t)}).
+b) Use los vectores de coordenadas encontrados en la parte anterior para determinar
+si el conjunto{p1(t), f(t), g(t)} es l.i. o l.d.
+Soluci´ on:
+a) Buscmamos a,b,c,d,e,f ∈ R tales que
+f(t) = 3−5t+2t2 =ap1(t)+bp2(t)+cp3(t), g(t) = 1−3t =dp1(t)+ep2(t)+fp3(t).
+As´ ı,
+a(1−t2)+b(1+t)+c(1+t+t2) = 3−5t+2t2, d (1−t2)+e(1+t)+f(1+t+t2) = 1−3t,
+o sea,
+a+b+c+(b+c)t+(c−a)t2 = 3−5t+2t2 y d+e+f+(e+f)t+(f−d)t2 = 1−3t.
+As´ ı, planteamos los sistemas de ecuaciones
+a +b +c = 3
+b +c =−5
+−a +c = 2
+⏐⏐⏐⏐⏐⏐⏐ y d +e +f = 1e +f =−3−d +f = 0 ⏐⏐⏐⏐⏐⏐⏐,
+que tienen por soluciones a = 8,b =−15,c = 10 y d = 4,e =−7,f = 4, por
+lo que, en la base {p1(t), p2(t), p3(t)}, las coordenadas de f(t) son (8,−15, 10)
+y las de g(t) son (4,−7, 4).
+b) En la base {p1(t), p2(t), p3(t)}, las coordenadas de p1(t) son (1, 0, 0), por lo que
+la dependencia o independencia lineal pedida es equivalente a la dependencia
+o independencia lineal de los vectores (1 , 0, 0), (8,−15, 10) y (4,−7, 4), lo que
+a su vez es equivalente a que la matriz A =
+
+
+1 0 0
+8 −15 10
+4 −7 4
+
+ tenga 3 ﬁlas (o
+columnas) pivote.
+Como al escalonar esta matriz obtenemos
+
+
+1 0 0
+8 −15 10
+4 −7 4
+
+∼
+
+
+1 0 0
+0 −15 10
+0 −7 4
+
+∼
+
+
+1 0 0
+0 1 −2/3
+0 −7 4
+
+∼
+
+
+1 0 0
+0 1 −2/3
+0 0 −2/3
+
+
+por lo que la matriz tiene 3 ﬁlas l.i., por lo que el conjunto de vectores{p1(t), f(t), g(t)}
+es l.i.Puntaje:
+a) Para cada uno de los polinomios f(t) y g(t):
+Por plantear correctamente un sistema que permita calcular las coordenadas
+del polinomio: 0,5 puntos.
+Por resolver correctamente el sistema: 0,5 puntos.
+Por obtener correctamente los ponderadores de la combinaci´ on lineal busca-
+da (o sea, por dar las coordenadas del polinomio en la base{p1(t), p2(t), p3(t)}):
+0,5 puntos.
+b) Por plantear alguna forma correcta de enfrentar el problema (cantidad de
+ﬁlas independientes de una matriz, soluciones no triviales de alg´ un sistema,
+etc.): 1 punto.
+Por aplicar correctamente la forma planteada en el punto anterior: 1,5 pun-
+tos.
+Por responder correctamente la pregunta, diciendo que el conjunto{p1(t), f(t), g(t)}
+es l.i., 0,5 puntos.
+A lo anterior se le suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su
+respuesta (el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene
+puntos):
+a) El subconjunto de R2
+E =
+{
+(x1,x 2)∈ R2 : 9x21 + 2x22≤ 4}
+es un subespacio vectorial de R2.
+b) Si A es una matriz de n×n tal que A2 =A, entonces Col(A)∩ Nul(A) ={0}.
+c) Si n es impar y A es una matriz de n×n que satisface AT =−A entonces
+NulA⁄={0}.
+Soluci´ on:
+a) Falso.
+El par (0, 1) pertenece a E (ya que 9· 02 + 2· 12 = 2≤ 4, pero 2(0, 1) = (0, 2)
+no (9· 02 + 2· 22 = 8> 4).
+As´ ı,E no es cerrado bajo ponderaci´ on.
+Otra forma de demostrar que E no es subespacio vectorial de R2 es probar que
+no es cerrado bajo suma. Para ello, debemos exhibir dos pares ordenados que
+pertenecen a E pero cuya suma no.
+Por ejemplo, considerando (1/2, 0) y (0, 1) vemos que 9·
+( 1
+2
+)2
++ 2· 02 = 94≤ 4 y
+9· 02 + 2· 12 = 2≤ 4, por lo que tanto (1/2, 0) como (0, 1) pertenecen a E. Pero
+su suma es (1/2, 1), y como 9·
+( 1
+2
+)2
++ 2· 12 = 174 > 4, (1/2, 1)⁄∈E.
+b) Verdadero.
+Sea y∈ Col(A)∩ Nul(A).
+Por estar y∈ Col(A), existe x∈ Rn tal que Ax = y. Como A2 = A, Ay =
+A(Ax) =A2x =Ax = y.
+Pero y∈ Nul(A), por lo que y =Ay = 0, de donde el ´ unico posible valor dey
+es 0, lo que signiﬁca que Col(A)∩ Nul(A) ={0}.
+c) Verdadero.
+Por serA den×n, det(−A) = (−1)n detA, Como n es impar, (−1)n =−1, por
+lo que det(AT ) = det(−A) =− det(A).
+Por otra parte, sabemos que det( AT ) = det A, por lo que det A =− detA, de
+donde detA = 0.
+Pero entonces A no es invertible, porlo que Nul A⁄={0}.Puntaje:
+a) Por exhibir un vector ( a,b )∈ R2 y un escalar α tal que (a,b )∈ E pero
+α(a,b )⁄∈E, o dos vectores (a,b ), (c,d )∈ R2 tales que (a,b ), (c,d )∈E pero
+(a +c,b +d)⁄∈E, 1,5 puntos.
+Por concluir (basado en lo anterior) queE no es espacio vectorial, 0,5 puntos.
+b) Por probar que y∈ Col(A)→Ay = y, 1 punto.
+Por probar que y∈ Col(A)∩ Nul(A)→ y = 0, 1 punto.
+c) Por llegar a que A no es invertible, 1,5 puntos.
+Por concluir que NulA⁄={0}, 0,5 puntos.
+A lo anterior se le suma el punto base.

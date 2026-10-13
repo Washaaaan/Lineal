@@ -1,0 +1,388 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Primer Semestre 2014
+MAT1203 - Algebra Lineal
+Interrogaci´ on 3 - Lunes 2 de Junio - Soluci´ on
+1. a) Sea V = P2(R) el espacio vectorial de los polinomios con coeﬁcientes reales de
+grado menor o igual a 2. Demuestre que el conjunto
+U = {p(x) ∈ V tal que p(1) + p(0) = p(−1)}
+es un subespacio de V y encuentre una base de U .
+Soluci´ on:
+Para demostrar que U es un subespacio se prueba que es no vac ´ ıo, cerrado bajo
+la suma y cerrado bajo la multiplicaci´ on por escalar. (Otra manera es probar
+que es un conjunto generado).
+No vac ´ ıo: sip(x) = 0 entonces p(1) + p(0) = 0 + 0 = 0 = p(−1), luego p(x) = 0
+pertenece a U .
+Suma: si p, q ∈ U , entonces
+(p + q)(1) + (p + q)(0) = p(1) + q(1) + p(0) + q(0)
+= p(1) + p(0) + q(1) + q(0)
+= p(−1) + q(−1)
+= ( p + q)(−1).
+Multiplicaci´ on por escalar: sip ∈ U y α ∈ R, entonces
+(αp)(1) + (αp)(0) = αp(1) + αp(0)
+= α(p(1) + p(0))
+= αp(−1)
+= ( αp)(−1).
+Por otro lado a + bx + cx2 ∈ U si y s´ olo sia + b + c + a = a − b + c si y s´ olo si
+a = −2b.
+Entonces los polinomios en U son de la forma −2b + bx + cx2 para b.c ∈ R.
+Luego U = Gen{x − 2, x2}.
+El conjunto {x − 2, x2} es una base de U pues es L.I.:
+[ −2 0
+1 0
+0 1
+]
+∼
+[ 1 0
+0 1
+0 0
+]
+1b) Sean B1 = {1 + x, 1 − x, 1 + x2} y B2 bases de P2(R) tales que para todo
+p ∈ P2(R) [ 1 0 −1
+1 1 0
+0 1 2
+]
+[ p ]B1 = [ p ]B2.
+Determine los polinomios que forman la base B2.
+Soluci´ on:
+Sea B2 = {q1(x), q2(x), q3(x)}.
+Una manera es calcular la inversa de la matriz cambio de base:
+[ 1 0 −1 1 0 0
+1 1 0 0 1 0
+0 1 2 0 0 1
+]
+∼
+[ 1 0 0 2 −1 1
+0 1 0 −2 2 −1
+0 0 1 1 −1 1
+]
+.
+Entonces reinterpretando, en la base B2 queda:
+q1(x) = 2(1 + x) − 2(1 − x) + (1 + x2) = 1 + 4 x + x2.
+q2(x) = −(1 + x) + 2(1 − x) − (1 + x2) = −3x − x2.
+q3(x) = (1 + x) − (1 − x) + (1 + x2) = 1 + 2 x + x2.
+Otra manera es interpretar la matriz cambio de base dada. Entonces:
+1 + x = q1(x) + q2(x), 1 − x = q2(x) + q3(x) y 1 + x2 = −q1(x) + 2q3(x).
+Despejando se obtiene lo mismo que antes.
+22. Sea L : P2(R) → R2 una transformaci´ on lineal tal que
+L(1 + x) =
+[
+1
+1
+]
+, L(1 + x + x2) =
+[
+1
+−1
+]
+y L(1 + 2x) =
+[
+1
+2
+]
+.
+a) Determine L(a + bx + cx2) para todo a, b, c ∈ R.
+Soluci´ on:
+Usando que L es lineal se tiene que L(1) =
+[
+1
+0
+]
+, L(x) =
+[
+0
+1
+]
+y L(x2) =
+[
+0
+−2
+]
+.
+Entonces L(a + bx + cx2) = aL(1) + bL(x) + cL(x2) =
+[
+a
+b − 2c
+]
+.
+b) Determine la matriz que representa a L con respecto a las bases {1, x, x + x2}
+y
+{[
+1
+1
+]
+,
+[
+1
+2
+]}
+.
+Soluci´ on:
+Usando lo anterior se tiene que:
+L(1) =
+[
+1
+0
+]
+= 2
+[
+1
+1
+]
+−
+[
+1
+2
+]
+.
+L(x) =
+[
+0
+1
+]
+= −
+[
+1
+1
+]
++
+[
+1
+2
+]
+.
+L(x + x2) =
+[
+0
+−1
+]
+=
+[
+1
+1
+]
+−
+[
+1
+2
+]
+.
+Por lo tanto la matriz pedida es
+[
+2 −1 1
+−1 1 −1
+]
+.
+33. Sea P3(R) es el espacio vectorial de los polinomios con coeﬁcientes reales de grado
+menor o igual a 3, y 
+
+1 1 1 1
+0 1 0 0
+0 1 2 0
+0 1 0 0
+
+ ,
+la matriz que representa la transformaci´ on lineal T : P3(R) → P3(R) con respecto a
+las bases B1 en dominio y B2 en recorrido, dadas por:
+B1 = {1, 1 + x, 1 + x2, 1 − x3} y B2 = {1, 2x, 3x2, 4x3}.
+a) Encuentre una base de Ker (N´ ucleo) de T y una base de Im (Rango) de T .
+Soluci´ on:
+Al escalonar la matriz queda:
+
+
+1 1 1 1
+0 1 0 0
+0 1 2 0
+0 1 0 0
+
+ ∼
+
+
+1 0 0 1
+0 1 0 0
+0 0 1 0
+0 0 0 0
+
+.
+El Ker de la matriz est´ a generado por
+
+
+1
+0
+0
+−1
+
+.
+Luego el Ker de la transformaci´ on est´ a generado por 1− (1 − x3) = x3.
+La Im de la matriz est´ a generada por
+
+
+1
+0
+0
+0
+
+ ,
+
+
+1
+1
+1
+1
+
+ ,
+
+
+1
+0
+2
+0
+
+.
+Luego la Im de la transformaci´ on est´ a generada por 1, 1+2 x+3x2 +4x3, 1+6 x2.
+4b) Determine todos los polinomios no nulos p en P3(R) tales que T (p) = 6 p.
+Soluci´ on:
+Considerando la matriz que representa a la tranformaci´ on lineal se busca a
+p(x) = a + bx + cx2 + dx3 tal que
+
+
+1 1 1 1
+0 1 0 0
+0 1 2 0
+0 1 0 0
+
+ · [p]B1 = 6[p]B2.
+Se tiene que [ p]B1 =
+
+
+a − b − c + d
+b
+c
+−d
+
+ y [ p]B2 =
+
+
+a
+b/2
+c/3
+d/4
+
+.
+Resolviendo queda a = b = d = 0.
+Entonces p(x) debe ser un m´ ultiplo no nulo del polinomio x2.
+Otra manera es que al interpretar la matriz dada se tiene que:
+T (1) = 1, T (1 + x) = 1 + 2 x + 3x2 + 4x3, T (1 + x2) = 1 + 6 x2 y T (1 − x3) = 1.
+Entonces T (1) = 1, T (x) = 2 x + 3x2 + 4x3, T (x2) = 6 x2 y T (x3) = 0.
+La matriz que representa a T con respecto a las bases can´ onicas es
+
+
+1 0 0 0
+0 2 0 0
+0 3 6 0
+0 4 0 0
+
+.
+Como es triangular inferior los valores propios son 1, 2, 6 y 0. Se busca entonces
+el espacio propio E6 el cual est´ a generado por el polinomio x2, y se toma un
+m´ ultiplo no nulo de ´ el.
+54. a) Diagonalice la siguiente matriz M =
+[ 1 0 0
+1 1 2
+1 0 3
+]
+y encuentre una matriz N tal
+que N 3 = M .
+Soluci´ on:
+Los valores propios de la matriz son 1 y 3.
+E1 = Ker
+[ 0 0 0
+1 0 2
+1 0 2
+]
+= Gen
+{[ 2
+0
+−1
+]
+,
+[ 0
+1
+0
+]}
+.
+E3 = Ker
+[ −2 0 0
+1 −2 2
+1 0 0
+]
+= Gen
+{[ 0
+1
+1
+]}
+.
+Luego la diagonalizaci´ on est´ a dada porM = P DP −1 con P =
+[ 2 0 0
+0 1 1
+−1 0 1
+]
+y
+D =
+[ 1 0 0
+0 1 0
+0 0 3
+]
+.
+Si se considera a R =
+[ 1 0 0
+0 1 0
+0 0
+3√3
+]
+se tiene que:
+M = P DP −1 = P R3P −1 = (P RP −1)3, luego basta tomar N = P RP −1.
+b) Sea A una matriz de 2 × 2 de rango 1 tal que A
+[
+1
+2
+]
+=
+[
+2
+4
+]
+. ¿ Es A diago-
+nalizable? Justiﬁque.
+Soluci´ on:
+Del enunciado se tiene que A
+[
+1
+2
+]
+= 2
+[
+1
+2
+]
+.
+Dado que A es de rango 1, entonces existe u ̸= ⃗0 tal que Au = ⃗0 = 0 · u.
+Como u y
+[
+1
+2
+]
+son vectores propios asociados a valores propios distintos, en-
+tonces son dos vectores linealmente independientes.
+Luego al existir una base de vectores propios de A se tiene que A es diagonaliz-
+able. (Tambi´ en basta con decir que comoA tiene dos valores propios distintos,
+entonces es diagonalizable.)
+6c) Sea A matriz de 5 × 5 tal que At = −A y q el polinomio dado por q(x) =
+2 − x2 + 4x3. Demuestre que 2 es valor propio de la matriz q(A).
+Soluci´ on:
+Como At = −A, entonces |At| = −|A|, pero |At| = |A|, entonces |A| = 0.
+Entonces existe u ̸= ⃗0 tal que Au = 0 · u.
+Luego q(A) · u = (2I − A2 + 4A3)u = 2u − ⃗0 + ⃗0 = 2 u.
+Por lo tanto 2 es un valor propio de q(A).
+7

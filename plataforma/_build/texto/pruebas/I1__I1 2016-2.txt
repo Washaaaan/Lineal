@@ -1,0 +1,765 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on a laInterrogaci´ on N◦ 1
+1. Encuentre un punto y una direcci´ on de la recta dada por la intersecci´ on de los planos de ecua-
+cionesx1 +x2 +x3 = 2 y x1−x2 = 3, y ´ uselos para encontrar las ecuaciones sim´ etricas de dicha
+recta.
+Primera Soluci´ on:
+Para encontrar un punto en la intersecci´ on de los dos planos, reemplazamos una de las variables
+(por ejemplo x3) por un valor arbitrario, por ejemplo x3 = 0, y resolvemos el sistema resultante:
+x1 +x2 = 2
+x1−x2 = 3
+Como la soluci´ on de este sistema esx1 = 5/2,x2 =−1/2, un punto en la intersecci´ on de los dos
+planos es (x1,x 2,x 3) = (5/2,−1/2, 0).
+Para encontrar una direcci´ on de la recta, nos basta encontrar otro punto, lo que puede ser hecho
+reemplazando x3 por otro valor, por ejemplo, x3 = 1, que lleva al sistema
+x1 +x2 = 1
+x1−x2 = 3
+que tiene por soluci´ onx1 = 2, x2 =−1, lo que nos da el punto ( x1,x 2,x 3) = (2,−1, 1).
+As´ ı, ﬁnalmente, la direcci´ on de la recta est´ a dada por el vector (5/2,−1/2, 0)− (2,−1, 1) =
+(1/2, 1/2,−1), o equivalentemente, por el vector d→ = (1, 1,−2).
+Del punto y la direcci´ on obtenemos las ecuaciones sim´ etricas de la recta:
+x− 2
+1 = y + 11 = 1−z2 .
+Segunda Soluci´ on:
+Tambi´ en es posible resolver el sistema en general (escalonando la matriz, llegando a la soluci´ on
+general
+x1 = 52− x32
+x2 = −12− x32
+Aqu´ ı, de nuevo, podemos encontrar dos puntos dando ax3 valores arbitrarios, por ejemplo,x3 = 1
+yx3 =−1, que dan respectivamente los puntos (x1,x 2,x 3) = (2,−1, 1) y (x1,x 2,x 3) = (3, 0,−1).
+Y una direcci´ on est´ a dada por
+d→ = (3, 0,−1)− (2,−1, 1) = (1, 1,−2).Tercera Soluci´ on:
+Una forma alternativa de encontrar la direcci´ on de la recta buscada es tomando el producto cruz
+de los vectores normales a los planos.
+En otras palabras:
+d→ = (1, 1, 1)× (1,−1, 0) = (1, 1,−2).2. Exprese param´ etricamente las soluciones del sistema de ecuaciones
+2x1 + 4x2 + 2x3 = 6
+x1 + 3x2 + 2x3 = 4
+3x1 + 7x2 + 4x3 = 10
+Soluci´ on:
+La matriz ampliada del sistema es 
+
+2 4 2 6
+1 3 2 4
+3 7 4 10
+
+.
+Escalonando la matriz, la llevamos a su forma escalona reducida por ﬁlas:
+
+
+2 4 2 6
+1 3 2 4
+3 7 4 10
+
+ ∼
+
+
+1 3 2 4
+2 4 2 6
+3 7 4 10
+
+∼
+
+
+1 3 2 4
+0 −2 −2 −2
+0 0 0 0
+
+∼
+
+
+1 3 2 4
+0 1 1 1
+0 0 0 0
+
+∼
+
+
+1 0 −1 1
+0 1 1 1
+0 0 0 0
+
+.
+Esta ´ ultima matriz nos permite expresar el sistema como
+x1 = 1 +x3
+x2 = 1−x3
+⏐⏐⏐⏐⏐
+Tomandox3 como par´ ametro, la soluci´ on queda
+x1 = 1 +x3, ,x 2 = 1−x3, x 3 =x3.3. Sea
+{
+u→, v→, w→} un conjunto linealmente independiente. Demuestre que { u→ + v→, u→− v→} es
+un conjunto linealmente independiente.
+Soluci´ on:
+Supongamos que
+{
+u→, v→, w→} es linealmente independiente.
+Sea (α,β ) una soluci´ on de la ecuaci´ on vectorialα( u→ + v→) +β( u→− v→) = 0→.
+Pero entonces (α +β) u→ + (α−β) v→ = 0→, por lo que la combinaci´ on lineal (α +β) u→ + (α−
+β) + 0× v→ = 0→, por lo que, ya que { u→, v→, w→} es linealmente independiente, debe tenerse
+(α +β) u→ + (α−β) = 0, de donde α =β = 0, por lo que { u→, v→} es linealmente independiente.4. Sea T una transformaci´ on lineal tal que
+T
+[
+2
+1
+]
+=
+
+
+1
+0
+1
+0
+
+ y T
+[
+3
+1
+]
+=
+
+
+0
+1
+0
+1
+
+.
+Determine la matriz que representa a T .
+Soluci´ on:
+Buscamos la matriz
+[
+T
+[ 1
+0
+]
+... T
+[ 0
+1
+] ]
+.
+Para ello debemos encontrar T
+[ 1
+0
+]
+y T
+[ 0
+1
+]
+, y para esto necesitamos expresar
+[ 1
+0
+]
+y
+[ 0
+1
+]
+como combinaciones lineales de
+[ 2
+1
+]
+y
+[ 3
+1
+]
+. En otras palabras, buscamos α,β,γ yδ tales que
+[ 1
+0
+]
+=α
+[ 2
+1
+]
++β
+[ 3
+1
+]
+y
+[ 0
+1
+]
+=γ
+[ 2
+1
+]
++δ
+[ 3
+1
+]
+.
+O sea, debemos resolver los sistemas
+2α + 3β = 1
+α + β = 0
+⏐⏐⏐⏐⏐ y 2γ + 3δ = 0γ + δ = 1⏐⏐⏐⏐⏐
+Resolviendo los sistemas, llegamos a α =−1, β = 1, γ = 3, δ =−2. O sea:
+[ 1
+0
+]
+=
+[ 3
+1
+]
+−
+[ 2
+1
+]
+y
+[ 0
+1
+]
+= 3
+[ 2
+1
+]
+− 2
+[ 3
+1
+]
+.
+As´ ı, comoT es una transformaci´ on lineal,
+T
+[ 1
+0
+]
+=T
+[ 3
+1
+]
+−T
+[ 2
+1
+]
+=
+
+
+0
+1
+0
+1
+
+−
+
+
+1
+0
+1
+0
+
+ =
+
+
+−1
+1
+−1
+1
+
+
+y
+T
+[ 0
+1
+]
+= 3T
+[ 2
+1
+]
+− 2T
+[ 3
+1
+]
+= 3
+
+
+1
+0
+1
+0
+
+− 2
+
+
+0
+1
+0
+1
+
+ =
+
+
+3
+−2
+3
+−2
+
+,
+por lo que la matriz buscada es
+[
+T
+[ 1
+0
+]
+... T
+[ 0
+1
+] ]
+=
+
+
+−1 3
+1 −2
+−1 3
+1 −2
+
+5. La red de la ﬁgura representa el ﬂujo del tr´ ansito (en veh´ ıculos por hora) en varias calles de un
+solo sentido en el centro de una ciudad, en un momento t´ ıpico.
+52 CAPÍTULO 1 Ecuaciones lineales en álgebra lineal
+Flujo de redes 
+Los sistemas de ecuaciones lineales se originan naturalmente cuando científicos, ingenie-
+ros o economistas estudian el flujo de alguna cantidad a través de una red. Por ejemplo, 
+los planificadores urbanos y los ingenieros de tráfico monitorizan el patrón de flujo de 
+tránsito en una rejilla de las calles de la ciudad. Los ingenieros eléctricos calculan el flujo 
+de corriente a través de circuitos eléctricos. Y los economistas analizan la distribución de 
+productos del fabricante al consumidor a través de una red de mayoristas y minoristas. Para 
+muchas redes, los sistemas de ecuaciones implican cientos o incluso miles de variables y 
+ecuaciones.
+Una red consiste en un conjunto de puntos llamados uniones, o nodos, con líneas o arcos 
+llamados ramas, que conectan algunos o todos los nodos. Se indica la dirección y el sentido 
+de flujo en cada rama, y la cantidad de flujo (o tasa) se denota con una variable.
+La suposición básica en el flujo de red es que el flujo total en la red es igual al flujo 
+total de salida de la red, y que el flujo total en un nodo es igual al flujo total de salida en 
+dicho nodo. Por ejemplo, la figura 1 muestra 30 unidades que fluyen por una rama hacia 
+una unión; x 1 y x 2 denotan los flujos de salida del nodo a través de otras ramas. Como el 
+flujo se “conserva” en cada unión, entonces x 1 /H11001 x2 /H11005 30. En forma similar, el flujo en cada 
+nodo se describe mediante una ecuación lineal. El problema de análisis de redes es deter-
+minar el flujo en cada rama cuando se tiene información parcial (como el flujo de entrada 
+y salida de la red). 
+EJEMPLO 2  La red de la figura 2 representa el flujo del tránsito (en vehículos por hora) 
+en varias calles de un solo sentido en el centro de Baltimore en un día común, poco después 
+del mediodía. Determine el patrón de flujo general para la red.
+WEB
+Intersección Flujo de entrada Flujo de salida
+A 300 /H11001 500 /H11005 x1 /H11001 x2
+B x2 /H11001 x4 /H11005 300 /H11001 x3
+C 100 /H11001 400 /H11005 x4 /H11001 x5
+D x1 /H11001 x5 /H11005 600
+30
+x1
+x2
+FIGURA 1 
+Una unión, también llamada nodo.
+300
+300
+400
+600
+500
+A
+B
+D
+C
+x1
+x4
+x2 x5
+x3 100
+Calvert St. South St.
+Lombard St.
+Pratt St.
+N
+FIGURA 2 Calles de Baltimore.
+SOLUCIÓN Escriba las ecuaciones que describen el flujo, y después encuentre la solución 
+general del sistema. Marque las intersecciones de las calles (nodos) y los flujos desconocidos 
+en las ramas, como se indica en la figura 2. En cada intersección, iguale el flujo de entrada 
+al de salida.   
+Determine el patr´ on de ﬂujo general para la red, dejandox5 como variable independiente. ¿Puede
+x5 tomar un valor > 500? Justiﬁque.
+Soluci´ on:
+En cada intersecci´ on (A,B,C,D) el ﬂujo total que entra debe ser igual al ﬂujo que sale, por lo
+que:
+A: x1 +x2 = 800.
+B: x2 +x4 = 300 +x3.
+C: x4 +x5 = 500.
+D: x1 +x5 = 600.
+As´ ı, debemos resolver el sistema
+x1 +x2 = 800
+x2−x3 +x4 = 300
+x4 +x5 = 500
+x1 +x5 = 600
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐Al escalonar su matriz ampliada, obtenemos
+
+
+1 1 0 0 0 800
+0 1 −1 1 0 300
+0 0 0 1 1 500
+1 0 0 0 1 600
+
+ ∼
+
+
+1 1 0 0 0 800
+0 1 −1 1 0 300
+0 0 0 1 1 500
+0 −1 0 0 1 −200
+
+∼
+
+
+1 1 0 0 0 800
+0 1 −1 1 0 300
+0 0 0 1 1 500
+0 0 −1 1 1 100
+
+
+∼
+
+
+1 1 0 0 0 800
+0 1 −1 1 0 300
+0 0 −1 1 1 100
+0 0 0 1 1 500
+
+∼
+
+
+1 1 0 0 0 800
+0 1 −1 1 0 300
+0 0 1 −1 −1 −100
+0 0 0 1 1 500
+
+
+∼
+
+
+1 0 1 −1 0 500
+0 1 −1 1 0 300
+0 0 1 −1 −1 −100
+0 0 0 1 1 500
+
+∼
+
+
+1 0 0 0 1 600
+0 1 0 0 −1 200
+0 0 1 −1 −1 −100
+0 0 0 1 1 500
+
+
+∼
+
+
+1 0 0 0 1 600
+0 1 0 0 −1 200
+0 0 1 0 0 400
+0 0 0 1 1 500
+
+
+de donde
+x1 = 600−x5
+x2 = 200 +x5
+x3 = 400
+x4 = 500−x5
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐
+lo que expresa los ﬂujos x1, x2, x3 y x4 en t´ erminos dex5.
+Finalmente,x5 no puede ser > 500 porque en ese caso x4 ser´ ıa negativo, lo que es imposible (un
+ﬂujo vehicular nunca es negativo).6. Suponga que AD =Im (la matriz identidad de m×m).
+a) Demuestre que para toda b→ en Rm, la ecuaci´ onA x→ = b→ tiene una soluci´ on.
+Ayuda: Calcule AD b→.
+b) Explique por qu´ eA no puede tener m´ as ﬁlas que columnas.
+Soluci´ on:
+a) Sea b→ en Rm cualquiera. Usando la ayuda, tenemos por una parte que AD b→ = (AD) b→ =
+Im b→ = b→. Por otra parte, AD b→ = A(D b→), por lo que tomando x→ = D b→ se tiene
+A x→ = b→ como se pide.
+b) Supongamos que A tiene m´ as ﬁlas que columnas. Entonces como al escalonar A en cada
+columna hay a lo m´ as un pivote, es imposible que haya un pivote en cada ﬁla. As´ ı, al
+escalonar A necesariamente encontraremos al menos una ﬁla formada por puros ceros.
+Pero entonces es posible encontrar un vector b→ que haga que la matriz ampliada del sistema
+A x→ = b→ tenga un pivote m´ as queA, lo que hace que el sistema sea inconsistente.
+Esto contradice lo demostrado en la parte (a).7. Sea T =
+[ 1 2 −1
+2 4 −2
+]
+. Determine la imagen del plano de ecuaci´ onx1 +x3 = 1 por T .
+Soluci´ on:
+El plano tiene ecuaci´ on param´ etrica (tomando como par´ ametrosx2 y x3) (x1,x 2,x 3) = (1 −
+x3,x 2,x 3), por lo que los puntos P0(1, 0, 0) (correspondiente a x2 = x3 = 0), P1(1, 1, 0) (co-
+rrespondiente a x2 = 1, x3 = 0) y P2(0, 0, 1) (correspondiente a x2 = 0, x3 = 1) est´ an en el
+plano.
+De esta forma, dos vectores directores del plano sond→1 =−→P0P1= (0, 1, 0) y d→2 =−→P0P2= (−1, 0, 1),
+por lo que todo punto del P (x1,x 2,x 3) del plano puede ser escrito como
+p→ = p→0 +α d→1 +β d→2.
+As´ ı, dadoP (x1,x 2,x 3) en el plano,
+T p→ =T p→0 +αT d→1 +βT d→2.
+Como
+T p→0 =
+[ 1 2 −1
+2 4 −2
+]
+
+1
+0
+0
+
+ =
+[ 1
+2
+]
+,
+T d→1 = [ 1 2 −12 4 −2 ] 010  =[ 24 ],
+T d→2 = [ 1 2 −12 4 −2 ]−101  =[−2−4 ],
+tenemos que T p→ =
+[ 1
+2
+]
++α
+[ 2
+4
+]
++β
+[−2
+−4
+]
+=
+[ 1 + 2α− 2β
+2 + 4α− 4β
+]
+= (1 + 2α− 2β)
+[ 1
+2
+]
+. En
+otras palabras, la imagen del plano es el conjunto de los ponderados del vector
+[ 1
+2
+]
+, vale decir,
+la recta que pasa por el origen y tiene direcci´ on dada por el vector
+[ 1
+2
+]
+.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) Si A es una matriz de 3× 4, entonces A no es inyectiva.
+Soluci´ on:
+VERDADERO.
+Si A es de 3× 4, entonces la ecuaci´ on vectorialA x→ = 0→ tiene inﬁnitas soluciones, ya que
+—al escalonar A— al menos una de sus columnas no puede contener un pivote, por lo que
+el sistema tiene al menos una variable libre.
+b) Dadas dos matrices cuadradas A y B, entonces (A +B)2 = A2 + 2AB +B2 si y solo si
+AB =BA.
+Primera Soluci´ on:
+VERDADERO.
+Demostraci´ on.Supongamos primero que (A +B)2 =A2 + 2AB +B2. EntoncesA2 +AB +
+BA +B2 = A2 + 2AB +B2, por lo que —cancelando los t´ erminos que aparecen a ambos
+lados— llegamos a BA =AB.
+Por otra parte, si AB =BA entonces
+(A +B)2 =A2 +AB +BA +B2 =A2 +AB +AB +B2 =A2 + 2AB +B2.
+Segunda Soluci´ on:
+Otra forma de demostrar que la aﬁrmaci´ on es verdadera es simplemente partir de una de
+las igualdades dadas e irla reemplazando por aﬁrmaciones equivalentes:
+(A +B)2 =A2 + 2AB +B2 ⇐⇒ A2 +AB +BA +B2 =A2 + 2AB +B2
+⇐⇒ AB +BA = 2AB ⇐⇒ BA =AB.
+c) Si A
+
+
+1
+−1
+2
+
+ =
+
+
+1
+2
+3
+
+ y A
+
+
+2
+0
+2
+
+ =
+
+
+2
+4
+6
+
+
+entonces la ecuaci´ onA x→ =
+
+
+3
+6
+9
+
+ tiene inﬁnitas soluciones.
+Primera Soluci´ on:
+VERDADERO.
+Sea t∈ R.As´ ı,
+A
+
+2t
+
+
+1
+−1
+2
+
+ + (1−t)
+
+
+2
+0
+2
+
+
+
+ = 2 tA
+
+
+1
+−1
+2
+
+ + (1−t)A
+
+
+2
+0
+2
+
+
+= 2 t
+
+
+1
+2
+3
+
+ + (1−t)
+
+
+2
+4
+6
+
+
+=
+
+
+2t + 2(1−t)
+4t + 4(1−t)
+6t + 6(1−t)
+
+ =
+
+
+2
+4
+6
+
+,
+lo que muestra que hay una cantidad inﬁnita de soluciones.q
+Segunda Soluci´ on:
+Vemos queA
+
+
+3
+−3
+6
+
+ =A
+
+3
+
+
+1
+−1
+2
+
+
+
+ = 3A
+
+
+
+
+1
+−1
+2
+
+
+
+ = 3
+
+
+1
+2
+3
+
+ =
+
+
+3
+6
+9
+
+, y
+A
+
+
+3
+0
+3
+
+ =A
+
+3
+2
+
+
+2
+0
+2
+
+
+
+ = 32·A
+
+
+
+
+2
+0
+2
+
+
+
+ = 32·
+
+
+2
+4
+6
+
+ =
+
+
+3
+6
+9
+
+,
+por lo que la ecuaci´ on A x→ =
+
+
+3
+6
+9
+
+ tiene al menos dos soluciones distintas. Pero una
+ecuaci´ on vectorial (o un sistema de ecuaciones) puede tener cero, una o inﬁnitas soluciones.
+Ya que este sistema tiene al menos dos soluciones, debe tener inﬁnitas.

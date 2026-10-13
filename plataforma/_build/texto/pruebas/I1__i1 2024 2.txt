@@ -1,0 +1,444 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Segundo semestre 2024
+Pauta Interrogación 1 - MAT1203
+1. Sean u, v y w vectores en Rn.
+(a) Demuestre que si u, v y w son vectores no nulos, de igual norma y tales que el ángulo
+formado por u y v es el mismo que el ángulo formado por w y v entonces u − w y v son
+perpendiculares.
+Solución:
+Recordamos que si θ es el ángulo formado por los vectores x e y, entonces
+cos(θ) = x · y||x|| ||y|| ,
+entonces del enunciado tenemos que
+u · v
+||u|| ||v|| = w · v||w|| ||v|| ,
+como ||u|| = ||v|| = ||w||, tenemos que u · v = w · v, lo que equivale a que (u − w) · v = 0,
+es decir que (v-w) es ortogonal a v.
+(b) Demuestre que si x está en el conjunto generado por los vectores {u, v, w} entonces x
+está en el conjunto generado por los vectores {u − v, u + v, w}.
+Solución:
+Observe que u= 12 (u − v)+ 12 (u + v)+0w, que v= − 12 (u − v)+ 12 (u + v)+0w , por lo
+tanto si x está en el generado por los vectores {u, v, w}, es decir, si x = αu + βv + γw
+entonces
+x = α
+( 1
+2 (u − v) + 12 (u + v) + 0w) + β (− 12 (u − v) + 12 (u + v) + 0w) + γw
+es decir, si x está en el conjunto generado por los vectores {u, v, w} entonces x está en el
+conjunto generado por los vectores {u − v, u + v, w}.
+Distribución de puntajes:
+• (1 punto) Por conocer la fórmula del ángulo entre vectores.
+• (1 punto) Por escribir al relación dada en el enunciado.
+• (1 punto) Por desarrollar y concluir.• (1 punto) Por evidenciar que conoce la definición de conjunto generado escribiendo un
+vector como combinación lineal de los otros.
+• (1 punto) Por escribir los vectores del segundo como combinación lineal de los primeros o
+justificar este hecho.
+• (1 punto) Por concluir correctamente.
+2. Considere las rectas L1 :
+
+
+
+
+
+1
+−1
+2
+
+ + t
+
+
+0
+3
+1
+
+
+
+
+ y L2 :
+
+
+
+
+
+0
+2
+−1
+
+ + s
+
+
+−1
+0
+−4
+
+
+
+
+
+(a) Determine la intersección entre L1 y L2.
+Solución:
+Para determinar la intersección entre las rectas dadas debemos encontrar s, t ∈ R tales
+que
+1 = −s, −1 + 3t = 2 , 2 + t = −1 − 4s
+observe que las tres ecuaciones se satisfacen con s = −1 y t = 1, de esta manera el punto
+de intersección es (1, 2, 3).
+(b) Determine una ecuación general del plano que contiene a L1 y L2.
+Solución:
+Del punto anterior tenemos que la ecuación vectorial del plano que contiene a ambas
+rectas es:
+Π :
+
+
+
+
+
+1
+2
+3
+
+ + t
+
+
+0
+3
+1
+
+ + s
+
+
+−1
+0
+−4
+
+
+
+
+
+cuya ecuación paramétrica corresponde a
+x = 1 − s, y = 2 + 3 t, z = 3 + t − 4s
+despejando los parámetros en las primera dos ecuaciones tenemos que s = 1−x, t = y − 23 ,
+reemplazando esto en la tercera ecuación obtenemos z = 3 + y − 23 − 4(1 − x) obteniendola ecuación general que está dada por
+12x + y − 3z = 5.
+Distribución de puntajes:
+• (1 punto) Por escribir correctamente las condiciones para encontrar la intersección.
+• (1 punto) Por determinar el punto de intersección.
+• (2 punto) Por describir el plano o vectorialmente o de forma paramétrica.
+• (1 punto) Por encontrar las relaciones entre los parámetros.
+• (1 punto) ¨Por determinar una ecuación general.3. Suponga que el sistema Ax= 0 tiene como solución el conjunto
+
+
+t
+
+
+1
+2
+0
+−1
+
+ + s
+
+
+2
+−1
+3
+0
+
+ ; t, s ∈ R
+
+
+
+(a) ¿Es
+
+
+−1
+3
+−6
+−1
+
+ solución del sistema Ax= 0?
+(b) ¿Existe un vector c de modo que el sistema Ax = c tenga como solución el conjunto
+
+
+
+
+
+−1
+3
+−6
+−1
+
+ + t
+
+
+1
+2
+0
+−1
+
+ + s
+
+
+2
+−1
+3
+0
+
+ ; t, s ∈ R
+
+
+?
+Solución:
+Observe que el vector
+
+
+−1
+3
+−6
+−1
+
+ solución del sistema Ax = 0 si y solo si existen s y t ∈ R
+tales que 
+
+
+t + 2s = −1
+2t − s = 3
+3s = −6
+−t = −1
+de las últimas dos ecuaciones tenemos que t = 1 y s = −2, pero con estos valores no se
+satisfacen las primeras dos ecuaciones, por lo tanto el vector no es solución de Ax = 0.
+Para la segunda pregunta basta tomar c=A
+
+
+−1
+3
+−6
+−1
+
+, ya que si
+x =
+
+
+−1
+3
+−6
+−1
+
+ + t
+
+
+1
+2
+0
+−1
+
+ + s
+
+
+2
+−1
+3
+0
+
+ ,
+tendremos que
+Ax = A
+
+
+−1
+3
+−6
+−1
+
+ + A
+
+t
+
+
+1
+2
+0
+−1
+
+ + s
+
+
+2
+−1
+3
+0
+
+
+
+ = A
+
+
+−1
+3
+−6
+−1
+
+ + 0 = c.Distribución de puntajes:
+• (1 punto) Por determinar el sistema que debe resolver para determinar si es solución o
+no.
+• (1 punto) Por concluir que no es solución.
+• (2 punto) Por encontrar el valor de C.
+• (2 punto) Por justificar el valor de C.
+4. Considere el sistema de ecuaciones en las variables x, y, z
+
+
+
+x + y + az = 1
+x + ay + z = 1
+ax + y + z = 1
+(a) Determine para qué valores del parámetro a ∈ R el sistema tiene solución.
+(b) Determine, si es posible, para qué valores a la solución de este sistema es una recta.
+Solución:
+Escalonando la matriz ampliada asociada al sistema, tenemos que
+
+
+1 1 a 1
+1 a 1 1
+a 1 1 1
+
+
+F2 → F2 − F1 ∼
+
+
+1 1 a 1
+0 ( a − 1) (1 − a) 0
+a 1 1 1
+
+
+F3 → F3 − aF1 ∼
+
+
+1 1 a 1
+0 ( a − 1) (1 − a) 0
+0 (1 − a) (1 − a2) (1 − a)
+
+
+F3 → F3 + F2 ∼
+
+
+1 1 a 1
+0 ( a − 1) (1 − a) 0
+0 0 (1 − a)(a + 2) (1 − a)
+
+
+Observe que si a = 1 la matriz queda
+
+
+1 1 1 1
+0 0 0 0
+0 0 0 0
+
+
+lo que correspondería a un sistema consistente con dos variables libres, es decir, un sistema
+cuya solución es un plano en R3.
+Si a ̸= 1 podemos seguir escalonando, obteniendo que
+
+1 1 a 1
+0 ( a − 1) (1 − a) 0
+0 0 (1 − a)(a + 2) (1 − a)
+
+
+F2 → 1(a − 1) F2 ∼
+
+
+1 1 a 1
+0 1 −1 0
+0 0 (1 − a)(a + 2) (1 − a)
+
+
+F3 → 1(1 − a) F3 ∼
+
+
+1 1 a 1
+0 1 −1 0
+0 0 ( a + 2) 1
+
+
+Por lo tanto, si a = −2, la matriz queda
+
+
+1 1 −2 1
+0 1 −1 0
+0 0 0 1
+
+
+lo que corresponde a un sistema inconsistente.
+Ahora, si a ̸= 1 y a ̸= −2, tenemos que una FER de la matriz es
+
+
+1 1 −2 1
+0 1 −1 0
+0 0 1 1a + 2
+
+
+lo que corresponde a un sistema con solución única.
+De lo anterior podemos concluir que el sistema tiene solución si y solo si a ̸= −2, y que no
+existe valor de a de modo que la solución sea una recta. Distribución de puntajes:
+• (1 punto) Por plantear la matriz ampliada correctamente.
+• (1 punto) Por escalonar la matriz.
+• (1 punto) Por estudiar el caso a = 1
+• (1 punto) Por estudiar el caso a ̸= 1 y a ̸= −2
+• (1 punto) Por estudiar caso a = −2.
+• (1 punto) Por responder, justificadamente que no es posible tener por solución una recta.5. Determine cuáles de los sistemas de ecuaciones lineales que aparecen en la columna de la
+izquierda, podrían corresponder a las posiciones relativas de planos ilustradas en la columna
+de la derecha. Justifique su respuesta en cada caso.
+Solución:
+Dado que las dos primeras ecuaciones de los tres sistemas son las mismas, podemos construir
+una matriz ampliada que contenga a todas las ecuaciones y escalonarla para realizar el análisis.
+
+
+1 1 −1 3
+1 −1 −1 1
+2 1 −2 0
+1 2 −1 4
+1 2 1 1
+
+ ∼
+
+
+1 1 −1 3
+0 1 0 1
+0 0 0 1
+0 0 0 0
+0 0 1 −3/2
+
+
+Así, tenemos formas escalonadas de cada uno de los sistemas anteriores:
+A =
+
+
+1 1 −1 3
+0 1 0 1
+0 0 0 1
+
+ B =
+
+
+1 1 −1 3
+0 1 0 1
+0 0 0 0
+
+ C =
+
+
+1 1 −1 3
+0 1 0 1
+0 0 1 −3/2
+
+
+Como se puede ver, el sistema A no tiene solución, porque su tercera ecuación se transforma
+en una contradicción. Esta situación corresponde al gráfico III, donde no hay intersección de
+los tres planos.
+Para el sistema B hay dos variables principales y una libre, por lo que el sistema tiene infinitas
+soluciones, que se representan por una recta. Esta situación se describe en el gráfico I.En el sistema C todas las variables son principales, la solución del sistema es única y corresponde
+a un punto, como se describe en el gráfico II.
+Distribución de puntajes:
+• (0.5 punto) Por plantear la matriz (o las matrices por separados).
+• (1 punto) Por escalonar (o resolver).
+• (1.5 punto) Por justificar para identificar A con III.
+• (1.5 punto) Por justificar para identificar B con I.
+• (1.5 punto) Por justificar para identificar C con II.

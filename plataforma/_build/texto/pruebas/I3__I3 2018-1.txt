@@ -1,0 +1,420 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 3
+1. Sean B =
+(1 −1
+0 0
+)
+y C = {X ∈ M2(R)| BX = 0}. Determine una base y la dimensi´ on C.
+Soluci´ on.
+C = {X ∈ M2(R)| BX = 0} =
+{(a b
+c d
+)
+|
+(1 −1
+0 0
+) (a b
+c d
+)
+= 0
+}
+{(a b
+c d
+)
+|a − c = 0 y b − d = 0
+}
+{(a b
+c d
+)
+|a = c y b = d
+}
+{(a c
+a c
+)}
+{
+a
+(1 0
+1 0
+)
++ c
+(0 1
+0 1
+)}
+Gen
+{(1 0
+1 0
+)
+,
+(0 1
+0 1
+)}
+Como
+(1 0
+1 0
+)
+y
+(0 1
+0 1
+)
+son linealmente independiente, entonces una base para C es
+{(1 0
+1 0
+)
+,
+(0 1
+0 1
+)}
+y luego su dimensi´ on es 2.
+Puntaje:
+2 ptos por describir al conjunto C como el generado de matrices.
+1 pto por argumentar que las matrices de la base deben ser li y lo son.
+1 pto por dterminar una base para C.
+2 ptos por determinar la dimensi´ on de C2. Sea A =
+
+
+2 0 −2
+1 3 2
+0 0 3
+
+. Determine una matriz P invertible y una matriz D diagonal tal que
+A = P DP −1.
+Soluci´ on.
+Primero calculamos el polinomio caracter ´ ıstico de A
+|A − λI| =
+ 2 − λ 0 −21 3 − λ 20 0 3 − λ  = (3 − λ)2(2 − λ)
+Luego los valores propios de de A son λ1 = 3 y λ2 = 2. Ahora calculamos el espacio de vectores
+propios asociado a λ1 = 3, para esto calculamos la nulidad de la matriz A − 3I
+A − 3I =
+
+
+−1 0 −2
+1 0 2
+0 0 0
+
+ ∼
+
+
+−1 0 −2
+0 0 0
+0 0 0
+
+ → N ul(A − 3I) = Gen
+
+
+
+
+
+−2
+0
+1
+
+ ,
+
+
+0
+1
+0
+
+
+
+
+
+Con esto podemos aﬁrmar que la matriz es diagonalizable, ya que la dimensi´ on de cada espacio
+de vectores propios coincide con la multiplicidad algebraica de cada valor propio asociado.
+Ahora calculamos el espacio de vectores propios asociado a λ1 = 3, para esto calculamos la
+nulidad de la matriz A − 2I
+A − 2I =
+
+
+0 0 −2
+1 1 2
+0 0 1
+
+ ∼
+
+
+1 1 2
+0 0 1
+0 0 0
+
+ → N ul(A − 2I) = Gen
+
+
+
+
+
+1
+−1
+0
+
+ ,
+
+
+
+Luego A = P DP −1 donde P =
+
+
+−2 0 1
+0 1 −1
+1 0 0
+
+ y D =
+
+
+3 0 0
+0 3 0
+0 0 2
+
+.
+Puntaje:
+0.5 ptos por calcular correctamente el polinomio caracter ´ ıstico de A.
+0.5 ptos por calcular correctamente cada valor propio de A. (total 1pto)
+1.5 ptos por calcular coorectamente el espacio de vectores propios asociado a 3.
+1 pto por calcular coorectamente el espacio de vectores propios asociado a 2.
+1.5 ptos por mostrar la matriz P .
+0.5 ptos por mostrar la matriz D.3. Sea T : P2 → P2 una transformaci´ on lineal cuya matriz de transformaci´ on respecto a la base
+B = {1, t, t2}, esta dada por
+[T ]B =
+
+
+1 −1 1
+0 2 −1
+−1 3 −2
+
+
+Determine T (t2 + 1) y el espacio Nulo de T .
+Soluci´ on.
+Para determinar T (t2 + 1), primero debemos calcular [ t2 + 1]B =
+
+
+1
+0
+1
+
+, luego calculamos
+[T ]B [t2 + 1]B = [T (t2 + 1)]B
+
+
+1 −1 1
+0 2 −1
+−1 3 −2
+
+
+
+
+1
+0
+1
+
+ =
+
+
+2
+−1
+−3
+
+
+Asi T (t2 + 1) = 2 − t − 3t2.
+Para determinar el espacio Nulo de T primero debemos calcular el espacio Nulo de [ T ]B
+
+
+1 −1 1
+0 2 −1
+−1 3 −2
+
+ ∼
+
+
+1 −1 1
+0 2 −1
+0 0 0
+
+
+Luego el espacio Nulo de [T ]B es Gen
+
+
+
+
+
+−1
+1
+2
+
+
+
+
+, asi el espacio Nulo de T es Gen {−1 + t − 2t2}
+Puntaje:
+0.5 ptos por calcular [ t2 + 1]B =
+
+
+1
+0
+1
+
+.
+1 ptos por calcular [ T (t2 + 1)]B.
+1.5 ptos por calcular T (t2 + 1).
+1.5 ptos por calcular el espacio Nulo de [ T ]B
+1.5 ptos por calcular Nulo de T4. Sea A =
+( 1 −2
+1 3
+)
+a) [4 ptos] Encuentre una matriz P invertible y una matriz C de la forma
+( a −b
+b a
+)
+tal
+que la matriz A tenga la forma A = P CP −1.
+b) [2 ptos] La transformaci´ onT (x) = Cx es la composici´ on de una rotaci´ on y de un escala-
+miento. Si ϕ el ´ angulo de la rotaci´ on, determine tan(ϕ) y el factor de escala r.
+Soluci´ on.
+a) Primero calculamos los valores propios de la matriz
+ 1 − λ −21 3 − λ  = λ2 − 4λ + 5 = 0 → λ = 2 ± i
+Ahora calculamos un vector propio asociado a λ = 2 − i
+( −1 + i −2
+1 1 + i
+)
+∼
+( −1 + i −2
+0 0
+)
+→
+( 2
+i − 1
+)
+Asi P =
+( 2 0
+−1 1
+)
+y C =
+( 2 −1
+1 2
+)
+b) Como la matriz A es similar a la matriz C tienen los mismos valores propios. Luego ϕ es
+el argumento de λ = 2 + i es decir tan( ϕ) = 12 y r = ∥λ∥ = √22 + 12 = √5
+Puntaje:
+1 pto por calcular los valores propios de la matriz A.
+1 pto por calcular un vector propio de la matriz A.
+1 pto por calcular la matriz P .(existen muchas matrices que cumplen lo pedido y se
+encuentran de la misma forma que en la pauta)
+1 pto por calcular la matriz C.
+1 pto por encontrar tan( ϕ).
+1 pto por encontrar r.5. Determine todos los valores de h en R para los que la matriz A =
+
+
+2 0 0
+1 1 1
+h 1 1
+
+
+es diagonalizable.
+Soluci´ on.
+Calculamos los valores propios de A
+ 2 − λ 0 01 1 − λ 1h 1 1 − λ  = −λ(2 − λ)2 → λ1 = 0 y λ2 = 2
+Como λ2 = 2 es una ra ´ ız del polinomio caracteristico con multiplicidad 2 para que el la matriz
+A sea diagonalizable necesitamos que el espacio propio asociado a λ2 = 2 tenga dimensi´ on 2.
+Para calcular la dimensi´ on del espacio de vectores propios de λ2 = 2, necesitamos calcular la
+nulidad de la matriz
+A − 2I =
+
+
+0 0 0
+1 −1 1
+h 1 −1
+
+
+Para que la nulidad de esta matriz sea 2 necesitamos que h = −1 y bajo esta condici´ on A es
+diagonalizable.
+Puntaje:
+0.5 ptos por calcular correctamente el polinomio caracter ´ ıstico de A.
+0.5 ptos por calcular correctamente cada valor propio de A. (total 1pto)
+1.5 por argumentar para que la matriz A sea diagonalizable se necesita que el espacio
+propio asociado a λ2 = 2 tenga dimensi´ on 2.
+1 por buscar la dimensi´ on del espacio nulo de A − 2I.
+2 ptos por determinar que h = −1
+Contin´ ua en la siguiente p´ agina.6. Sea A una matriz de 3 × 3 tal que el polinomio caracter ´ ıstico de la matriz A es
+PA(λ) = λ2(λ − 3) y la dimensi´ on del Col(A) es 1.
+a) [4 ptos] Demuestre que A es diagonalizable.
+b) [2 ptos] Determine si A es similar a la matriz B = T −1
+
+
+0 0 0
+0 0 0
+0 0 3
+
+ T . Justiﬁque su
+respuesta.
+Soluci´ on.
+a) Como el polinomio caracteristica de la matriz A es PA(λ) = λ2(λ − 3) los valores propios
+de A son λ1 = 0 y λ2 = 3.
+Como la dimensi´ on del Col(A) es 1 y dim(Col(A)) + dim(N ul(A)) = 3 tenemos que la
+dimensi´ on del espacio Nulo de A es 2. As ´ ı la dimensi´ on del espacio de vectores propios
+asociados al valor propio 0 es 2.
+Luego la matriz A es diagonalizable ya que existe una base para R3 de vectores propios.
+b) Del inciso anterior tenemos que existe P y D tal que A = P −1DP donde D =
+
+
+0 0 0
+0 0 0
+0 0 3
+
+.
+As ´ ıA = P −1DP → D = P AP −1 y B = T −1DT → D = T BT −1 luego
+P AP −1 = T BT −1 → B = T −1P AP −1T = (P −1T )−1 A (P −1T )
+Luego A es similar a B
+Puntaje:
+0.5 pto por argumentar que 0 es valor propio de A.
+1 pto por argumentar que la dimensi´ on del espacio Nulo es 2.
+1 ptos por argumentar que el espacio nulo de A es el espacio de vectores propios asociados
+a 0.
+1.5 ptos por concluir y argumentar que la matriz A es diagonalizable.
+1 pto por argumentar que la matriz D es similar a A.
+1 pto por mostrar (encontrando la matriz P −1T ) que A es similar a B.7. Demuestre que si A es invertible y similar a B, entonces B es invertible y A−1 es similar a B−1.
+Soluci´ on.
+Si A es similar a B implica que existe una matriz P invertible tal que B = P −1AP luego B se
+escribe como producto de matrices invertibles lo que implica que B es invertible.
+As ´ ı tambien
+B = P −1AP → B−1 = (P −1AP )−1 = P −1A−1 (P −1)−1 = P −1A−1P
+La que demuestra que A−1 es similar a B−1.
+Puntaje:
+1 pto por determinar que B = P −1AP .
+1 pto por argumentar que B es invertible.
+4 ptos por demostrar que A−1 es similar a B−1.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. Justiﬁque sus respuestas.
+a) El conjunto {1 − 3t + 5t2, −1 + 5t − 6t2, 2t − t2} es una base para P2.
+b) Si cada vector ej en la base est´ andar paraRn es un vector propio de A, entonces A es una
+matriz diagonal.
+c) Sea W un sub-espacio de Rn.Si x est´ a enW y W ⊥, entonces x = 0.
+Soluci´ on.
+a) Falso. El conjunto {1 − 3t + 5t2, −1 + 5t − 6t2, 2t − t2} es ld ya que si trabajamos con los
+vectores coordenados de este conjunto en la base B = {1, t, t2}.
+
+
+1 −1 0
+−3 5 2
+5 −6 −1
+
+ ∼
+
+
+1 −1 0
+0 1 1
+0 0 0
+
+
+notamos que estos vectores coordenados son ld, as ´ ı el conjunto{1 − 3t + 5t2, −1 + 5t − 6t2, 2t − t2}
+es ld, por lo cual no puede ser una base de P2. (Tambien se puede argumemtar encontrando
+una combinaci´ on lineal de los polinomios con coeﬁcientes distintos de cero que nos de el
+polinomio 0).
+b) Verdadero. Si cada vector ej en la base est´ andar paraRn es un vector propio de A implica
+que Aej = λjej donde Aej es la columna j-esima de A y λjej es un vector que tiene puros
+ceros excepto el la j-esima componente, luego A es una matriz diagonal.
+c) Verdadero. Recordemos que si u ∈ W y v ∈ W ⊥ cumplen que u · v = 0 y que ∥u∥2 = u · u,
+por lo que si x ∈ W y x ∈ W ⊥ entonces ∥x∥ = 0 y por deﬁnici´ on de norma, necesariamente
+x = 0.
+Puntaje:
+2 ptos por cada item contestado correctamente y justiﬁcado.

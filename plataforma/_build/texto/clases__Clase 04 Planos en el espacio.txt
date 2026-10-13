@@ -1,0 +1,145 @@
+
+----- pagina 1 -----
+Clase 04 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 13
+----- pagina 2 -----
+Rcordatorio
+El producto punto entre u =
+
+
+u1
+...
+un
+
+ y v =
+
+
+v1
+...
+vn
+
+ define por
+u · v = u1v1 + · · · + unvn.
+La ecuación vectorial de una recta en Rn es x = p + td.
+2 / 13
+----- pagina 3 -----
+Planos en el espacio
+En el espacio, la ecuación normal determina un plano.
+3 / 13
+----- pagina 4 -----
+Planos en el espacio
+Planos en R3
+Un plano en R3 se determina mediante un vector posición p y un vector
+normal n ̸= 0. La forma normal es:
+n · (x − p) = 0 ⇐ ⇒ n · x = n · p.
+Forma general
+ax + by + cz = d,
+donde n = ⟨a, b, c⟩.
+4 / 13
+----- pagina 5 -----
+Planos en R3
+Ejemplo: Encuentre las formas normal y general del plano que contiene el
+punto
+P = (6, 0, 1)
+y tiene normal
+n = ⟨1, 2, 3⟩.
+5 / 13
+----- pagina 6 -----
+Planos en R3
+Para la ecuación vectorial, necesitamos dos vectores directores
+6 / 13
+----- pagina 7 -----
+Planos en R3
+Forma vectorial del plano en R3
+Si p determina un punto el plano y u, v son vectores directores no
+paralelos, entonces
+x = p + su + tv.
+Las ecuaciones de cada componente son las ecuaciones paramétricas del
+plano.
+7 / 13
+----- pagina 8 -----
+Planos en R3
+Ejemplo: Encuentre las ecuaciones vectoriales y paramétricas para el
+plano del ejemplo anterior, usando dos puntos adicionales en el plano para
+construir vectores directores.
+8 / 13
+----- pagina 9 -----
+Planos en R3
+Ejemplo: Determine la ecuación de un hiperplano en R3 cuya ecuación
+vectorial es
+x = t
+
+
+1
+2
+−1
+
+ + s
+
+
+1
+1
+0
+
+ , t, s ∈ R.
+9 / 13
+----- pagina 10 -----
+Planos en R3
+Ángulo entre planos
+Dos planos distintos son paralelos si y solo si sus vectores normales
+son paralelos.
+El ángulo entre dos planos se define como el ángulo entre sus vectores
+normales.
+10 / 13
+----- pagina 11 -----
+Planos en R3
+Comentarios:
+La intersección de dos planos no paralelos corresponde a una recta.
+Esto corresponde a un sistema con dos ecuaciones generales.
+Un parámetro genera una recta, dos parámetros generan un plano.
+Más parámetros generan superficies de mayor dimensión.
+Una ecuación en R2 corresponde a una recta, pero en R3 corresponde
+a un plano. En dimensiones mayores, llamamos hiperplano al lugar
+geométrico correspondiente a una ecuación lineal .
+Dos ecuaciones en R3 corresponden a una recta. Normalmente, en
+Rn,
+N◦ de parámetros + N◦ de ecuaciones = n.
+11 / 13
+----- pagina 12 -----
+Rectas y planos — Resumen R2
+Objeto Forma Ecuación / Descripción
+Recta en R2
+Forma normal n · (x − p) = 0
+Ecuación general ax + by = c
+Paramétricas
+{
+x = p1 + td1
+y = p2 + td2
+Forma vectorial x = p + td
+12 / 13
+----- pagina 13 -----
+Rectas y planos — Resumen R3
+Objeto Forma Ecuación / Descripción
+Recta en R3
+Forma vectorial x = p + td
+Paramétricas
+
+
+
+x = p1 + td1
+y = p2 + td2
+z = p3 + td3
+General
+{
+a1x + b1y + c1z = d1
+a2x + b2y + c2z = d2
+Plano en R3
+Forma normal n · (x − p) = 0
+General ax + by + cz = d
+Paramétrica x = p + su + tv
+13 / 13

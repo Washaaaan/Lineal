@@ -1,0 +1,569 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Segundo Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 2
+1. Sea
+A =
+
+
+1 1 1 1 1
+1 2 2 2 2
+0 1 2 2 2
+0 0 1 2 2
+0 0 0 1 2
+
+
+Encuentre una factorizaci´ on del tipo A = LU y ´ uselapara determinar la segunda columna de
+A−1.(Sin calcular A−1)
+Soluci´ on.
+Una factorizaci´ on A=LU paraA est´ a dada por
+A =
+
+
+1 0 0 0 0
+1 1 0 0 0
+0 1 1 0 0
+0 0 1 1 0
+0 0 0 1 1
+
+
+
+
+1 1 1 1 1
+0 1 1 1 1
+0 0 1 1 1
+0 0 0 1 1
+0 0 0 0 1
+
+
+Para determinar la segunda columna de la inversa debemos resolver el sistema Ax = e2, para esto
+usaremos la factorizaci´ on anterior haciendo y = U x y resolviendo primero el sistema
+Ly = e2
+obteniendo que y =
+
+
+0
+1
+−1
+1
+−1
+
+ si ahora resolvemos el sistema U x =
+
+
+0
+1
+−1
+1
+−1
+
+ obtenemos que
+x =
+
+
+−1
+2
+−2
+2
+−1
+
+ que corresponde a la segunda columna de la inversa de la matriz A.Puntaje:
+1.5 pts por encontrar L correctamente.
+1.5 pts por encontrar U correctamente.
+1 pto por argumentar que se debe resolver el sistema Ax = e2.
+1 pto por resolver correctamente el sistema Ly = e2.
+1 pto por resolver correctamente el sistema U x = y.
+2. Determine que condici´ on debe cumplir α para que la matriz
+A =
+
+
+3 0 −7 4 α
+0 0 2 0 0
+−8 4 −5 3 −5
+5 0 5 2 7
+0 0 3 −1 −1
+
+
+sea invertible.
+Soluci´ on.Expandimos el determinante usando su segunda ﬁla:
+det A = 2(−1)2+3
+ 3 0 4 α−8 4 3 −55 0 2 70 0 −1 −1  .
+Para calcular el determinante 4 × 4 que aparece arr ´ ıba usamos su segunda columna:
+det A = −2 · 4(−1)2+2
+ 3 4 α5 2 70 −1 −1  .
+Finalmente, para calcular el determinate 3 × 3 podemos usar su primera columna
+det A = −8
+(
+3
+ 2 7−1 −1  − 5  4 α−1 −1 ) = −8(3 · 5 − 5 · ( − 4 + α)) = −8(35 − 5α).
+Luego para que una matriz sea invertible el determinante de esta debe ser distinto de cero. Entonces
+−8
+(
+35 − 5α
+)
+̸= 0 → α ̸= 7
+Puntaje:
+1 pts por cada etapa del calculo del determinante (3 × 1 pts).
+1.5 pts por argumentar que el determinante debe ser distinto de cero para que la matriz sea
+invertible.
+1.5 pts por encontrar que α ̸= 5 con la argumentaci´ on previa.3. Sea A una matriz de 3 × 3 tal que Adj( A) =
+
+
+0 −1 0
+−1 1 2
+0 −1 −9
+
+ y det(A) > 0.
+a) Ocupando la identidad A · Ad j(A) = det(A) · I3, encuentre el valor del det(A).
+b) Determine si el sistema Ax =
+
+
+0
+−3
+0
+
+ tiene soluci´ on y si es que la tiene encu´ entrela.
+Soluci´ on.
+a) Como
+A · Ad j(A) = det(A)I → det(A) · det(Ad j(A)) = det(A)3 → det(Ad j(A)) = det(A)2
+y
+det(Ad j(A)) =
+ 0 −1 0−1 1 20 −1 −9  =  −1 20 −9  = 9
+Tenemos que det(A)2 = 9 como det(A) > 0, concluimos que det(A) = 3
+b) Como det(A) ̸= 0, A es una matriz invertible y el sistema Ax =
+
+
+0
+−3
+0
+
+ tiene soluci´ on de
+la forma x = A−1
+
+
+0
+−3
+0
+
+, donde
+A−1 = 1det(A) Ad j(A) = 13
+
+
+0 −1 0
+−1 1 2
+0 −1 −9
+
+
+luego la soluci´ on es
+x = 13
+
+
+0 −1 0
+−1 1 2
+0 −1 −9
+
+
+
+
+0
+−3
+0
+
+ =
+
+
+1
+−1
+1
+
+
+Puntaje:
+1 pto por demostrar que det(Ad j(A)) = det(A)2.
+1 pto por encontrar det(Ad j(A)).
+1 pto por encontrar det(A).
+0.5 pto por justiﬁcar que el sistema tiene soluci´ on.
+1 pto por determinar A−1 o si determina A
+1.5 pto por determinar correctamente la soluci´ on del sistema.4. Sea F una matriz ﬁja de 2 × 3, y sea H el conjunto de todas las matrices A de 3 × 2 con la
+propiedad de que F A = 0 (la matriz cero de 2 × 2).
+a) Demuestre que H es un subespacio de M3×2.
+b) Si F =
+( 1 1 1
+0 0 1
+)
+, determine una base para H.
+Contin´ ua en la siguiente p´ agina.
+Soluci´ on.
+a) Observemos que:
+i) Si A = 0, tenemos que F A = 0 para cualquier matriz F , por lo tanto 0 ∈ H.
+ii) Suponga que A y B pertenecen a H, entonces F (A + B) = F A + F B = 0 + 0 = 0,
+entonces A + B ∈ H.
+iii) Si A ∈ H y α ∈ R, entonces F (αA) = α(F A) = α0 = 0, luego αA ∈ H.
+De i), ii) y iii) tenemos que H es un subespacio de las matrices de orden 3 × 2.
+b) Si F =
+( 1 1 1
+0 0 1
+)
+entonces A =
+
+
+a b
+c d
+e f
+
+ pertenece a H si y s´ olo si
+F A =
+( a + c + e b + d + f
+e f
+)
+=
+( 0 0
+0 0
+)
+en otras palabras, si y s´ olo si
+A =
+
+
+a b
+−a −b
+0 0
+
+
+por lo tanto H = Gen
+
+
+
+
+
+1 0
+−1 0
+0 0
+
+ ,
+
+
+0 1
+0 −1
+0 0
+
+
+
+
+ y el conjunto B =
+
+
+
+
+
+1 0
+−1 0
+0 0
+
+ ,
+
+
+0 1
+0 −1
+0 0
+
+
+
+
+
+es linealmente independiente, luego es una base para H.
+Puntaje:
+1 pto por demostrar cada propiedad que debe cumplir un subespacio.
+1 pto por mostrar las condiciones que deben cumplir los coeﬁcientes de una matriz que
+pertenezca a H.
+1.5 pto por encontrar un conjunto que genere a H.
+0.5 ptos por mostrar una base de H(argumentando que los vectores son li)5. Sea T : P2 → R3 la funci´ on deﬁnida por
+T (a + bx + cx2) =
+
+
+a + b − 2c
+a − b + 6c
+b − 4c
+
+
+encuentre el n´ ucleo de esta transformaci´ on lineal.
+Soluci´ on.Para encontrar el n´ ucleo deT debemos resolver el sistema de ecuaciones
+T (a + bx + cx2) =
+
+
+a + b − 2c
+a − b + 6c
+b − 4c
+
+ =
+
+
+0
+0
+0
+
+ .
+La matriz ampliada del sistema anterior es
+
+
+1 1 −2 0
+1 −1 6 0
+0 1 −4 0
+
+ .
+Al escalonar esta matriz se obtiene la matriz
+
+
+1 0 2 0
+0 1 −4 0
+0 0 0 0
+
+
+lo que muestra que bajo las condiciones que a = −2c y b = 4c el polinomio a + bx + cx2 pertenece
+al n´ ucleo deT .
+Luego el n´ ucleo deT es el conjunto
+{
+a + bx + cx2 | a = −2c, b = 4c} = {−2c + (4c)x + cx2 | c ∈ R} = Gen {−2 + 4x + x2} .
+Y as ´ ı una base para el n´ ucleo deT es {−2 + 4x + x2}
+Puntaje:
+1 pto por argumentar que los polinomios que pertenecen al n´ ucleo de T son los que al aplicar
+la transformaci´ on, su imagen es el vector ⃗0 ∈ R3.
+2 pts por determinar las condiciones que satisfacen los coeﬁcientes de los polinomios que
+pertenecen al n´ ucleo deT .
+3 pts por mostrar un base para el n´ ucleo de T .6. Sean {v1, v2, v3} un conjunto de vectores en R3 linealmente independientes y A una matriz de
+3 × 4 de la forma A = [ v1 v1 + 2v2 v2 v3 − v1]. Determine una base para Col(A) y una base
+para N ul(A).
+Soluci´ on.
+El espacio Col(A) = Gen {v1, v 1 + 2v2, v 2, v 3 − v1} = Gen {v1, v2, v3} luego como {v1, v2, v3} un
+conjunto de vectores linealmente independientes que generan a Col(A) es una base para este es-
+pacio.
+N ul(A) =
+
+
+
+
+
+x1
+x2
+x3
+x4
+
+ | [v1 v1 + 2v2 v2 v3 − v1] ·
+
+
+x1
+x2
+x3
+x4
+
+ =
+
+
+0
+0
+0
+
+
+
+
+
+=
+
+
+
+
+
+x1
+x2
+x3
+x4
+
+ | x1 · v1 + x2(v1 + 2v2) + x3 · v2 + x4 · (v3 − v1) = ⃗0
+
+
+
+=
+
+
+
+
+
+x1
+x2
+x3
+x4
+
+ | (x1 + x2 − x4) · v1 + (2x2 + x3)v2 + x4 · v3 = ⃗0
+
+
+
+Como {v1, v2, v3} un conjunto de vectores en R3 linealmente independientes
+=
+
+
+
+
+
+x1
+x2
+x3
+x4
+
+ | x1 + x2 − x4 = 0, 2x2 + x3 = 0, x4 = 0
+
+
+ =
+
+
+
+
+
+−x2
+x2
+−2x2
+0
+
+
+
+
+ = Gen
+
+
+
+
+
+−1
+1
+−2
+0
+
+
+
+
+
+As ´ ı una base paraN ul(A) es
+
+
+
+
+
+−1
+1
+−2
+0
+
+
+
+
+
+Puntaje:
+1 pto por mostrar y argumentar que vectores generan el Col(A).
+1 pto por mostrar y argumentar que vectores de los escogidos son linealmente independientes.
+1 pto por mostrar y argumentar una base para Col(A).
+1 pto por describir N ul(A) o al menos un vector que pertenezca a N ul(A).
+1 pto por mostrar y argumentar que vectores generan el N ul(A).
+1 pto por mostrar y argumentar una base para N ul(A). (0.5 ptos si la muestran sin argu-
+mentar.)7. Sea A una matriz de 2 × 2 que se reduce mediante remplazos (sumar un m´ ultiplo de una ﬁla a
+otra) e intercambios de ﬁla a la matriz escalonada
+U =
+( 3 10
+0 −1
+)
+Calcule det( B), donde B es la matriz 4 × 4
+B =
+( A −2A
+0 −A
+)
+.
+Soluci´ on.
+Aplicando las mismas operaciones de ﬁla en reducir A a U a las primeras 2 ﬁlas de B y despu´ es
+a las segundas 2, obtenemos la matriz
+B ∼ V =
+( U −2U
+0 −U
+)
+,
+la cual ya est´ a en forma escalonada. Para llegar a esta forma escalonada de B se utilizaron rem-
+plazos (sumar un m´ ultiplo de una ﬁla a otra) que no alteran el determinante de B e intercambios
+de ﬁla, que multiplican por -1 el determinante cada vez que se intercambia una ﬁla. Digamos que
+en el proceso de transformar A en U se usan r intercambios de ﬁla. Entonces, en reducir B a V
+hemos usado 2 r intercambios de ﬁla. Ahora sabemos que
+det B = (−1)2r × det(V )
+Luego como V es una matriz triangular superior su determinante es el producto de sus pivotes.
+det B = (−1)2r × Producto de pivotes en V
+Ya que los pivotes en V constan de los pivotes en U y los pivotes en −U , tenemos que
+Producto de pivotes en V =
+(
+3 · (−1) · (−3) · 1
+)
+= 9.
+Concluimos
+det B = (−1)2r9 = 9 .
+Puntaje:
+1 pts por reducir B a V .
+1 pto por argumentar que remplazos de ﬁlas no alteran el determinante de B.
+1 pto por argumentar que por cada intercambios de ﬁla se multiplica por -1 el determinante
+de B.
+1 pto por ocupar que el determinante de matrices triangulares es el producto de sus pivotes.
+1 pto por analizar el n´ umero de intercambios de ﬁla.
+1 pts por concluir el valor del determinante de B argumentando lo anterior.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. En caso de ser verdaderas dem´ ues-
+trelas y si son falsas de un contraejemplo.
+a) Si A y B son matrices sim´ etricas entoncesAB es una matriz sim´ etrica.
+b) Si A es una matriz cuadrada de n × n, invertible , tal que A−1 = 14 At entonces det(A) = ±2n.
+c) Si S es el paralelogramo determinado por los vectores
+( 1
+2
+)
+,
+( 3
+−2
+)
+y A =
+( 6 −2
+−3 2
+)
+entonces el ´ area de la imagen de S bajo el mapeo T : x → Ax es 48 .
+Soluci´ on.
+a) Falso.
+Si A =
+( 1 −1
+−1 0
+)
+y B =
+( 0 −1
+−1 0
+)
+entonces
+AB =
+( 1 −1
+0 1
+)
+̸= (AB)t =
+( 1 0
+−1 1
+)
+b) Verdadero.
+Usando las propiedades de los determinantes nos da
+|A−1| =
+ 14 At = 14n |At| = 14n |A| .
+Hemos obtenido que |A−1| = 14n |A| lo cual es equivalente a
+1
+|A| = 14n |A| =⇒ |A|2 = 4 n =⇒ |A| = ±2n .
+c) Verdadero.
+El ´ area se transforma bajo x → Ax as ´ ı:
+´Area(T (S)) = | det A| ´Area(S).
+Calculamos que det A = 6 y nos queda calcular s´ olo el ´ area del paralelogramoS determi-
+nado por los vectores
+( 1
+2
+)
+,
+( 3
+−2
+)
+cuya ´ area es el valor absoluto de
+ 1 32 −2  = −8.
+Entonces,
+´Area(T (S)) = 6 · 8 = 48 .
+Puntaje:
+2 ptos por contestar correctamente cada item.

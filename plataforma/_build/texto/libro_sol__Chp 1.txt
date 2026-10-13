@@ -1,0 +1,6697 @@
+
+----- pagina 1 -----
+ 
+ Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 1 
+ 
+  
+ 
+1.1 SOLUTIONS  
+Notes: The key exercises are 7 (or 11 or 12), 19–22, and 25. For brevity, the symbols R1, R2,…, stand 
+for row 1 (or equation 1), row 2 (or equation 2), and so on. Additional notes are at the end of the section. 
+ 1. 12
+12
+57
+27 5
+xx
+xx
++=
+−− = −   157275⎡ ⎤⎢ ⎥−−−⎣ ⎦  
+  Replace R2 by R2 + (2)R1 and obtain: 12
+2
+57
+39
+xx
+x
++=
+=  157039⎡ ⎤⎢ ⎥⎣ ⎦  
+  Scale R2 by 1/3: 12
+2
+57
+3
+xx
+x
++=
+=  157013⎡ ⎤⎢ ⎥⎣ ⎦  
+  Replace R1 by R1 + (–5)R2:  1
+2
+8
+3
+x
+x
+=−
+=  10 801 3 −⎡ ⎤⎢ ⎥⎣ ⎦  
+  The solution is ( x1, x2) = (–8, 3), or simply (–8, 3). 
+ 2. 12
+12
+36 3
+57 1 0
+xx
+xx
++= −
++=   36 3571 0 −⎡ ⎤⎢ ⎥⎣ ⎦  
+  Scale R1 by 1/3 and obtain:  12
+12
+21
+57 1 0
+xx
+xx
++= −
++=  12 1571 0 −⎡ ⎤⎢ ⎥⎣ ⎦  
+  Replace R2 by R2 + (–5)R1: 12
+2
+21
+31 5
+xx
+x
++= −
+−=  12103 1 5 −⎡ ⎤⎢ ⎥−⎣ ⎦  
+  Scale R2 by –1/3:  12
+2
+21
+5
+xx
+x
++= −
+=−  12 101 5 −⎡ ⎤⎢ ⎥−⎣ ⎦  
+  Replace R1 by R1 + (–2)R2: 1
+2
+9
+5
+x
+x
+=
+=−  10 901 5⎡ ⎤⎢ ⎥−⎣ ⎦  
+  The solution is ( x1, x2) = (9, –5), or simply (9, –5). 
+
+----- pagina 2 -----
+2 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3. The point of intersection satisfies the system of two linear equations: 
+   12
+12
+24
+1
+xx
+xx
++=
+−=   12 411 1⎡⎤⎢⎥ −⎣⎦  
+  Replace R2 by R2 + (–1)R1 and obtain: 12
+2
+24
+33
+xx
+x
++=
+−= −  124033⎡ ⎤⎢ ⎥−−⎣ ⎦  
+  Scale R2 by –1/3: 12
+2
+24
+1
+xx
+x
++=
+=  124011⎡ ⎤⎢ ⎥⎣ ⎦  
+  Replace R1 by R1 + (–2)R2: 1
+2
+2
+1
+x
+x
+=
+=  102011⎡ ⎤⎢ ⎥⎣ ⎦  
+  The point of intersection is ( x1, x2) = (2, 1). 
+ 4. The point of intersection satisfies the system of two linear equations: 
+   12
+12
+21 3
+32 1
+xx
+xx
++= −
+−=   121 332 1 −⎡⎤⎢⎥ −⎣⎦  
+  Replace R2 by R2 + (–3)R1 and obtain:   12
+2
+21 3
+84 0
+xx
+x
++= −
+−=  121 3084 0 −⎡ ⎤⎢ ⎥−⎣ ⎦  
+  Scale R2 by –1/8:  12
+2
+21 3
+5
+xx
+x
++= −
+=−  12 1 301 5 −⎡ ⎤⎢ ⎥−⎣ ⎦  
+  Replace R1 by R1 + (–2)R2: 1
+2
+3
+5
+x
+x
+=−
+=−  10 301 5 −⎡ ⎤⎢ ⎥−⎣ ⎦  
+  The point of intersection is ( x1, x2) = (–3, –5). 
+ 5. The system is already in “triangular” form. The fourth equation is x4 = –5, and the other equations do 
+not contain the variable x4. The next two steps should be to use the variable x3 in the third equation to 
+eliminate that variable from the first two equations. In matrix notation, that means to replace R2 by 
+its sum with –4 times R3, and then replace R1 by its sum with 3 times R3. 
+ 6. One more step will put the system in triangular form. Replace R4 by its sum with –4 times R3, which 
+produces 
+1640 1
+02704
+00123
+0007 1 4
+−−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥ −
+⎢⎥ −⎣⎦
+. After that, the next step is to scale the fourth row by –1/7. 
+ 7. Ordinarily, the next step would be to interchange R3 and R4, to put a 1 in the third row and third 
+column. But in this case, the third row of the augmented matrix corresponds to the equation 0 x1 + 0 
+x2 + 0 x3 = 1, or simply, 0 = 1. A system containing this condition has no solution. Further row 
+operations are unnecessary once an equation such as 0 = 1 is evident.  The solution set is empty. 
+----- pagina 3 -----
+1.1  Solutions   3  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 8. The standard row operations are: 
+   
+1 5400 1 5400 1 5400 1 5400
+0 1 0 1 00 1 0 1 00 1 0 0 00 1 0 0 0~~~0 0300 0 0300 0 0300 0 0100
+0 0020 0 0010 0 0010 0 0010
+1 5000 10000
+0 1000 01000~~ 00 1 0 0 0 0 1 0 0
+0 0010 00010
+−−−−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢
+⎢⎥ ⎢
+⎣⎦ ⎣ ⎦
+⎥
+⎥
+ 
+  The solution set contains one solution: (0, 0, 0, 0). 
+ 9. The system has already been reduced to triangular form. Begin by replacing R3 by R3 + (3)R4: 
+   
+11005 110 05
+01207 012 07 ~00 132 00 1 0 1 4
+000 14 000 14
+−− − −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −− − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+ 
+  Next, replace R2 by R2 + (2)R3. Finally, replace R1 by R1 + R2: 
+   
+1 100 5 10001 6
+01 0 0 2 1 0 1 0 0 2 1~~ 00 1 0 1 4 0 0 1 0 1 4
+00 0 14 0 0 0 1 4
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+ 
+  The solution set contains one solution: (16, 21, 14, 4). 
+ 10. The system has already been reduced to triangular form. Use the 1 in the fourth row to change the 3 
+and –2 above it to zeros. That is, replace R2 by R2 + (-3)R4 and replace R1 by R1 + (2)R4. For the 
+final step, replace R1 by R1 + (-3)R2. 
+   
+130 2 7 1300 1 1 1000 4 7
+01 0 3 6 01 00 1 2 01 00 1 2~~001 0 2 0010 2 0010 2
+000 1 2 0001 2 0001 2
+−− − −⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ −−−⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  The solution set contains one solution: (–47, 12, 2, –2). 
+11. First, swap R1 and R2. Then replace R3 by R3 + (–2)R1. Finally, replace R3 by R3 + (1)R2. 
+   
+0 1 54 1 4 32 1 432 1 4 32
+143 2 ~ 0 15 4 ~ 0 1 5 4 ~ 0 15 4
+2 7 12 2 7 12 0152 0 0 02
+−− −−⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ −− −−⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ −− − − −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  The system is inconsistent, because the last row would require that 0 = –2 if there were a solution.  
+The solution set is empty. 
+ 
+----- pagina 4 -----
+4 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. Replace R2 by R2 + (–2)R1 and replace R3 by R3 + (2)R1. Finally, replace R3 by R3 + (3)R2. 
+   
+15 43 1543 1543
+27 32 ~ 0354 ~ 0354
+21 7109 1 5 7 0 00 5
+−− − − − −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−− − −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  The system is inconsistent, because the last row would require that 0 = 5 if there were a solution.  
+The solution set is empty. 
+ 13. 
+10 3 8 10 3 8 10 3 8 10 3 8
+2 297 ~ 0 2 1 59 ~ 0 152 ~ 0 152
+01 5 2 01 5 2 021 5 9 00 5 5
+−−−−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −−−⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −−−−⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  
+10 3 8 100 5
+~0 1 5 2~0 1 0 3
+00 1 1 001 1
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+. The solution is (5, 3, –1). 
+ 14. 
+20 6 8 10 3 4 10 3 4 10 3 4
+0 123 ~ 0 123 ~ 0 1 23 ~ 0 1 2 3
+3 624 3 624 0 678 0 051 0
+−− −− −− − −⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−− −− −−⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  
+10 3 4 10 3 4 100 2
+~0 1 2 3~0 1 0 1~0 1 0 1 .
+00 1 2 00 1 2 001 2
+−− −−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−−⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+ The solution is (2, –1, 2). 
+15. First, replace R3 by R3 + (1)R1, then replace R4 by R4 + (1)R2, and finally replace R4 by R4 + (–
+1)R3.  
+  
+1 6 005 1 6 005 1 6 005 1 6 00 5
+01 4 1 0 01 4 1 0 01 4 1 0 01 4 1 0~~~1 61 5 3001 5 8001 5 8001 58
+015 4 0 015 4 0 001 5 0 000 08
+−−−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥−−−−⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥−
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦
+ 
+  The system is inconsistent, because the last row would require that 0 = –8 if there were a solution. 
+16. First replace R4 by R4 + (3/2)R1 and replace R4 by R4 + (–2/3)R2. (One could also scale R1 and R2 
+before adding to R4, but the arithmetic is rather easy keeping R1 and R2 unchanged.) Finally, replace 
+R4 by R4 + (–1)R3.
+2 0 041 0 2 0 041 0 2 0 041 0 2 0 041 0
+0 3 30 0 0 3 30 0 0 3 30 0 0 3 30 0~~~0 0 14 1 0 0 14 1 0 0 14 1 0 0 14 1
+3 2 31 5 0 2 351 0 0 0 151 0 0 0 09 9
+−− −− −− −−⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥−−−−
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥−− − − − − −⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The system is now in triangular form and has a solution. In fact, using the argument from Example 2, 
+one can see that the solution is unique. 
+  
+----- pagina 5 -----
+1.1  Solutions   5  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+17. Row reduce the augmented matrix corresponding to the given system of three equations:  
+ 
+231 231 231
+650 ~ 043 ~ 043
+257 088 002
+−−−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ −−⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The third equation, 0 = 2, shows that the system is inconsistent, so the three lines have no point in 
+common. 
+18. Row reduce the augmented matrix corresponding to the given system of three equations: 
+   
+24 4 4 2 4 4 4 24 4 4
+01 2 2 ~ 0 1 2 2 ~ 01 2 2
+2 300 0144 0 066
+⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ −− −− −−⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ −−− −−⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  The system is consistent, and using the argument from Example 2, there is only one solution. So the 
+three planes have only one point in common.  
+19. 14 1 4 ~368 06 3 4hh h⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦  Write c for 6 – 3h. If c = 0, that is, if h = 2, then the system has no 
+solution, because 0 cannot equal –4. Otherwise, when h ≠ 2, the system has a solution. 
+20. 15 1 5 ~286 08 21 6hh h−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦  Write c for 82 . h−−  If c = 0, that is, if h = –4, then the system 
+has no solution, because 0 cannot equal 16. Otherwise, when h ≠ –4, the system has a solution. 
+21. 14 2 1 4 2 ~36 0 1 2 0hh −−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦  Write c for 12h − . Then the second equation cx2 = 0 has a solution 
+for every value of c. So the system is consistent for all h. 
+22. 
+41 241 2 ~263 00 3 2hh h−⎡⎤−⎡⎤ ⎢⎥⎢⎥ ⎢⎥−− −+⎣⎦ ⎣⎦  The system is consistent if and only if 3 2h−+  = 0, that is, if 
+and only if h = 6. 
+23. a. True. See the remarks following the box titled Elementary Row Operations. 
+b. False. A 5 × 6 matrix has five rows. 
+c. False. The description applies to a single solution. The solution set consists of all possible 
+solutions. Only in special cases does the solution set consist of exactly one solution. Mark a 
+statement True only if the statement is always true. 
+d. True. See the box before Example 2. 
+24. a . False. The definition of row equivalent requires that there exist a sequence of row operations that 
+transforms one matrix into the other. 
+ b .  True. See the box preceding the subsection titled Existence and Uniqueness Questions. 
+c. False.  The definition of equivalent systems is in the second paragraph after equation (2). 
+d. True. By definition, a consistent system has at least one solution. 
+----- pagina 6 -----
+6 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+25. 
+147 147 147
+035 ~ 035 ~ 035
+259 035 2 000 2
+gg g
+hh h
+kk gk g h
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − + + +⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Let b denote the number k + 2g + h. Then the third equation represented by the augmented matrix 
+above is 0 = b. This equation is possible if and only if b is zero. So the original system has a solution 
+if and only if k + 2g + h = 0.  
+26. Row reduce the augmented matrix for the given system: 
+   2 4 1 2 /2 1 2 /2~~ 02 ( / 2 )ff fcd g cd g d cg c f⎡⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  This shows that d – 2c must be nonzero, since f and g are arbitary.  Otherwise, for some choices of f 
+and g  the second row would correspond to an equation of the form 0 = b, where b is nonzero.  Thus 
+d ≠ 2c. 
+27. Row reduce the augmented matrix for the given system. Scale the first row by 1/ a, which is possible 
+since a is nonzero. Then replace R2 by R2 + (–c)R1. 
+   1/ / 1 / /~~ 0( / )( / )abf b af a b a f acd g c d g d c b a g c f a⎡⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  The quantity d – c(b/a) must be nonzero, in order for the system to be consistent when the quantity  
+g – c( f /a) is nonzero (which can certainly happen). The condition that d – c(b/a) ≠ 0 can also be 
+written as ad – bc ≠ 0, or ad ≠ bc. 
+28. A basic principle of this section is that row operations do not affect the solution set of a linear 
+system. Begin with a simple augmented matrix for which the solution is obviously (3, –2, –1), and 
+then perform any elementary row operations to produce other augmented matrices. Here are three 
+examples. The fact that they are all row equivalent proves that they all have the solution set (3, –2, –
+1). 
+   
+100 3 100 3 100 3
+01 0 2 ~ 21 0 4 ~ 21 04
+001 1 001 1 2015
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+29. Swap R1 and R3; swap R1 and R3. 
+30. Multiply R3 by –1/5; multiply R3 by –5. 
+31. Replace R3 by R3 + (–4)R1; replace R3 by R3 + (4)R1. 
+32. Replace R3 by R3 + (–4)R2; replace R3 by R3 + (4)R2. 
+33. The first equation was given. The others are: 
+   21 3 2 1 3(2 0 4 0) / 4 ,o r 4 6 0TT T T T T= +++ − − =  
+   34 2 3 4 2( 40 30)/4, or 4 70TT T T T T=+ + + − − =  
+   41 3 4 1 3(10 30) / 4, or 4 40TT T T T T=+ + + − − =  
+----- pagina 7 -----
+1.1  Solutions   7  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Rearranging, 
+   
+12 4
+123
+234
+13 4
+43 0
+46 0
+47 0
+44 0
+TT T
+TTT
+TTT
+TT T
+−− =
+−+ − =
+−+ − =
+−− + =
+ 
+34. Begin by interchanging R1 and R4, then create zeros in the first column: 
+   
+41 01 3 0 1 014 4 0 1 014 4 0
+14 10 6 0 1410 6 0 04 0 42 0~~01 41 7 0 0141 7 0 0141 7 0
+10 14 4 0 410 1 3 0 0 14 1 5 1 9 0
+−− −− −−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−− −− −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−− −− − −
+⎢⎥ ⎢⎥ ⎢ ⎥−− −− − −⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  Scale R1 by –1 and R2 by 1/4, create zeros in the second column, and replace R4 by R4 + R3: 
+   
+10 144 0 1 0 144 0 1 0 144 0
+01 01 50 1 01 50 1 01 5~~ ~01417 0 0 0427 5 0 0 427 5
+0 1 4 15 190 0 0 4 14 195 0 0 0 12 270
+−− −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Scale R4 by 1/12, use R4 to create zeros in column 4, and then scale R3 by 1/4: 
+   
+10 1 4 4 0 10 10 5 0 10 10 5 0
+01 0 1 5 01 002 7 . 5 01 002 7 . 5~~ ~0 0 4 2 75 0 0 4 0 120 0 0 1 0 30
+0 0 0 1 22.5 0 0 0 1 22.5 0 0 0 1 22.5
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The last step is to replace R1 by R1 + (–1)R3: 
+   
+10002 0 . 0
+0 1 0 0 27.5~. 00103 0 . 0
+0 0 0 1 22.5
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+ The solution is (20, 27.5, 30, 22.5). 
+Notes: The Study Guide includes a “Mathematical Note” about statements, “If … , then … .” 
+This early in the course, students typically use single row operations to reduce a matrix. As a result, 
+even the small grid for Exercise 34 leads to about 80 multiplications or additions (not counting operations 
+with zero). This exercise should give students an appreciation for matrix programs such as MATLAB. 
+Exercise 14 in Section 1.10 returns to this problem and states the solution in case students have not 
+already solved the system of equations. Exercise 31 in Section 2.5 uses this same type of problem in 
+connection with an LU factorization. 
+For instructors who wish to use technology in the course, the Study Guide provides boxed MATLAB 
+notes at the ends of many sections. Parallel notes for Maple, Mathematica, and the TI-83+/84+/89 
+calculators appear in separate appendices at the end of the Study Guide. The MATLAB box for Section 
+1.1 describes how to access the data that is available for all numerical exercises in the text. This feature 
+has the ability to save students time if they regularly have their matrix program at hand when studying 
+linear algebra. The MATLAB box also explains the basic commands replace, swap, and scale. 
+These commands are included in the text data sets, available from the text web site, 
+www.pearsonhighered.com/lay. 
+----- pagina 8 -----
+8 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+1.2 SOLUTIONS 
+Notes: The key exercises are 1–20 and 23–28. (Students should  work at least four or five from Exercises 
+7–14, in preparation for Section 1.5.)  
+ 1 . Reduced echelon form: a and b. Echelon form: d. Not echelon: c. 
+ 2 .  Reduced echelon form: a. Echelon form: b and d. Not echelon: c. 
+ 3 . 
+124 8 12 4 8 12 4 8
+246 8 ~ 00 2 8 ~ 00 1 4
+3691 2 00 3 1 2 00 3 1 2
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+1248 120 8
+~0 0 1 4~0 0 1 4
+0000 000 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+.  Pivot cols 1 and 3.  
+124 8
+246 8
+3691 2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+ 4 . 
+1 2 4 5 1 2 4 5 1 2 451 2 4 5
+2 4 5 4 ~ 0 0 3 6 ~ 0 3 12 18 ~ 0 1 4 6
+4 5 4 2 0 3 12 18 0 0 3 6 0 0 3 6
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− −− −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− − − − −−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+1245 124 5 100 1
+~0 1 4 6~0 1 0 2~0 1 0 2
+0 0 1 2 0 0 12 0 0 12
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+.  Pivot cols1, 2, and 3   
+1245
+2454
+4542
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+ 5 . ** 0,,00 0 0 0⎡ ⎤ ⎡⎤ ⎡⎤⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦   6.
+** 0
+0, 0 0 , 0 0
+00 0000
+⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦
+ 
+  
+ 7 . 1347 13 4 7 1347 130 5~~ ~3976 00 5 1 5 00 13 00 1 3 −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦  
+  Corresponding system of equations:  12
+3
+35
+3
+xx
+x
++= −
+=  
+  The basic variables (corresponding to the pivot positions) are x1 and x3. The remaining variable x2 is 
+free. Solve for the basic variables in terms of the free variable. The general solution is 
+   
+12
+2
+3
+53
+ is free
+3
+xx
+x
+x
+=− −⎧
+⎪⎨
+⎪ =⎩
+ 
+Note: Exercise 7 is paired with Exercise 10. 
+----- pagina 9 -----
+1.2  Solutions   9  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+8.   1 3 05 13 05 13 05 1 0 0 4~~ ~3 7 09 02 06 01 03 0 1 0 3−− − − − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+ Corresponding system of equations:  1
+2
+4
+3
+x
+x
+=
+=  
+  The basic variables (corresponding to the pivot positions) are x1 and x2. The remaining variable x3 is 
+free. Solve for the basic variables in terms of the free variable. In this particular problem, the basic 
+variables do not depend on the value of the free variable.  
+  General solution:  
+1
+2
+3
+4
+3
+is free
+x
+x
+x
+=⎧
+⎪ =⎨
+⎪⎩
+ 
+Note: A common error in Exercise 8 is to assume that x3 is zero. To avoid this, identify the basic 
+variables first. Any remaining variables are free. (This type of computation will arise in Chapter 5.) 
+ 9 . 01 23 1346 1 02 3 ~~1346 0 123 0 12 3−− − −⎡⎤ ⎡⎤ ⎡ ⎤⎢⎥ ⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣⎦ ⎣ ⎦  
+  Corresponding system:  13
+23
+23
+23
+xx
+xx
+−=
+−=  
+  Basic variables: x1, x2; free variable: x3. General solution: 
+13
+23
+3
+32
+32
+is free
+xx
+xx
+x
+=+⎧
+⎪ =+⎨
+⎪⎩
+ 
+ 10. 12 1 4 12 1 4 12 02~~245 6 007 1 4 00 12−− −− −⎡⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  Corresponding system:  12
+3
+22
+2
+xx
+x
+−=
+=−  
+  Basic variables: x1, x3; free variable: x2. General solution: 
+12
+2
+3
+22
+is free
+2
+xx
+x
+x
+=+⎧
+⎪⎨
+⎪ =−⎩
+ 
+ 11. 
+32 4 0 3240 12 3 4 3 0
+96 1 2 0 ~ 0000 ~ 0 0 0 0
+64 8 0 0000 0 0 0 0
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Corresponding system:  
+123
+24 033
+00
+00
+xx x−+=
+=
+=
+ 
+ 
+----- pagina 10 -----
+10 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ Basic variable: x1; free variables x2, x3. General solution: 
+123
+2
+3
+24
+33
+ is free
+ is free
+xxx
+x
+x
+⎧ =−⎪
+⎪
+⎨
+⎪
+⎪
+⎩
+ 
+ 12. Since the bottom row of the matrix is equivalent to the equation 0 = 1, the system has no solutions. 
+ 13. 
+1 3 0 1 0 2 1 300 9 2 1000 35
+0 1 0 0 4 1 0 100 4 1 0100 41 ~~0 0 0 1 9 4 0 001 9 4 0001 94
+0 0 0 0 0 0 0 000 0 0 0000 00
+−−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Corresponding system:  
+15
+25
+45
+35
+41
+94
+00
+xx
+xx
+xx
+−=
+−=
++=
+=
+   
+  Basic variables: x1, x2, x4; free variables: x3, x5. General solution: 
+15
+25
+3
+45
+5
+53
+14
+is free
+49
+is free
+xx
+xx
+x
+xx
+x
+=+⎧
+⎪ =+⎪⎪⎨
+⎪ =−⎪
+⎪⎩
+ 
+Note: The Study Guide discusses the common mistake x3 = 0. 
+ 14. 
+10 5 0 8 3 10 5 00 3
+01 4 1 0 6 01 4 1 0 6 ~00 0 0 1 0 00 0 01 0
+00 0 0 0 0 00 0 00 0
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+ 
+  Corresponding system:  
+13
+23 4
+5
+53
+46
+0
+00
+xx
+xx x
+x
+−=
++− =
+=
+=
+ 
+  Basic variables: x1, x2, x5; free variables: x3, x4. General solution: 
+13
+23 4
+3
+4
+5
+35
+64
+ is free
+ is free
+0
+xx
+xx x
+x
+x
+x
+=+⎧
+⎪ =− +⎪⎪⎨
+⎪
+⎪
+=⎪⎩
+ 
+ 15.  a.  The system is consistent.  There are many solutions because x3 is a free variable. 
+b. The system is consistent.  There are many solutions because x1 is a free variable. 
+ 16. a. The system is inconsistent. (The rightmost column of the augmented matrix is a pivot column). 
+----- pagina 11 -----
+1.2  Solutions   11  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. The system is consistent. There are many solutions because x2 is a free variable. 
+ 17. 11 4 11 4 ~23 0 1 8 hh−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−+⎣⎦ ⎣ ⎦  The system has a solution for all values of h since the augmented 
+column cannot be a pivot column. 
+ 18. 13 1 1 3 1 ~62 0 3 6 2hh h−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −+ − −⎣⎦ ⎣ ⎦  If 3h + 6 is zero, that is, if h = –2, then the system has a 
+solution, because 0 equals 0. When 2,h ≠−  the system has a solution since the augmented column 
+cannot be a pivot column.  Thus the system has a solution for all values of h. 
+ 19. 12 1 2 ~48 08 4 8hh kh k⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦   
+a. When h = 2 and 8,k ≠  the augmented column is a pivot column, and the system is inconsistent. 
+b. When 2,h ≠  the system is consistent and has a unique solution. There are no free variables.  
+c. When h = 2 and k = 8, the system is consistent and has many solutions.  
+ 20. 13 1 1 3 1 ~20 6 2hk h k−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ +−⎣⎦ ⎣ ⎦  
+a. When h = –6 and 2,k ≠  the system is inconsistent, because the augmented column is a pivot 
+column. 
+b. When 6,h ≠−  the system is consistent and has a unique solution. There are no free variables. 
+c. When h = –6  and k = 2, the system is consistent and has many solutions. 
+ 21. a. False. See Theorem 1. 
+b. False. See the second paragraph of the section. 
+c. True. Basic variables are defined after equation (4). 
+d. True. This statement is at the beginning of Parametric Descriptions of Solution Sets. 
+e. False. The row shown corresponds to the equation 5 x4 = 0, which does not by itself lead to a 
+contradiction. So the system might be consistent or it might be inconsistent. 
+ 
+ 22. a. True. See Theorem 1. 
+b. False. See Theorem 2. 
+c. False. See the beginning of the subsection Pivot Positions. The pivot positions in a matrix are 
+determined completely by the positions of the leading entries in the nonzero rows of any echelon 
+form obtained from the matrix. 
+d. True. See the paragraph just before Example 4. 
+ e. False. The existence of at least one solution is not related to the presence or absence of free 
+variables. If the system is inconsistent, the solution set is empty. See the solution of Practice 
+Problem 2. 
+----- pagina 12 -----
+12 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+23. Since there are four pivots (one in each row), the augmented matrix must reduce to the form 
+   
+1
+2
+3
+4
+1000
+0100    and so   0010
+0001
+xaa
+xbb
+xcc
+xdd
+=⎡⎤
+⎢⎥ =⎢⎥
+⎢⎥ =
+⎢⎥ =⎣⎦
+ 
+  No matter what the values of a, b, c, and d, the solution exists and is unique. 
+ 24. The system is consistent because there is not a pivot in column 5, which means that there is not a row 
+of the form [0   0   0   0   1]. Since the matrix is the augmented matrix for a system, Theorem 2 shows 
+that the system has a solution. 
+ 25. If the coefficient matrix has a pivot position in every row, then there is a pivot position in the bottom 
+row, and there is no room for a pivot in the augmented column. So, the system is consistent, by 
+Theorem 2. 
+ 26. Since the coefficient matrix has three pivot columns, there is a pivot in each row of the coefficient 
+matrix. Thus the augmented matrix will not have a row of the form [0   0  0   0   0   1], and the 
+system is consistent.  
+ 27. “If a linear system is consistent, then the solution is unique if and only if every column in the 
+coefficient matrix is a pivot column; otherwise there are infinitely many solutions. ”  
+  This statement is true because the free variables correspond to nonpivot columns of the coefficient 
+matrix. The columns are all pivot columns if and only if there are no free variables. And there are no 
+free variables if and only if the solution is unique, by Theorem 2. 
+ 28. Every column in the augmented matrix except the rightmost column is a pivot column, and the 
+rightmost column is not a pivot column. 
+ 29. An underdetermined system always has more variables than equations. There cannot be more basic 
+variables than there are equations, so there must be at least one free variable. Such a variable may be 
+assigned infinitely many different values. If the system is consistent, each different value of a free 
+variable will produce a different solution, and the system will not have a unique solution.  If the 
+system is inconsistent, it will not have any solution. 
+ 30. Example: 123
+123
+4
+22 25
+xx x
+xx x
+++=
+++=  
+ 31. Yes, a system of linear equations with more equations than unknowns can be consistent. 
+  Example (in which x1 = x2 = 1): 
+12
+12
+12
+2
+0
+32 5
+xx
+xx
+xx
++=
+−=
++=
+ 
+ 32. According to the numerical note in Section 1.2, when n = 20 the reduction to echelon form takes 
+about 2(20)3/3 ≈  5,333 flops, while further reduction to reduced echelon form needs at most (20)2 = 
+400 flops. Of the total flops, the “backward phase” is about 400/5733 = .07 or about 7%. When n = 
+200, the estimates are 2(200)3/3 ≈  5,333,333  flops for the reduction to echelon form and (200)2 = 
+40,000 flops for the backward phase. The fraction associated with the backward phase is about 
+(4×104) /(5.3×106) = .007, or about .7%. 
+----- pagina 13 -----
+1.2  Solutions   13  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 33. For a quadratic polynomial p(t) = a0 + a1t + a2t2 to exactly fit the data (1, 6), (2, 15), and (3, 28), the 
+coefficients a0, a1, a2 must satisfy the systems of equations given in the text. Row reduce the 
+augmented matrix: 
+   
+111 6 111 6 1116 1116
+1241 5 ~ 0 13 9 ~ 0 139 ~ 0 139
+1392 8 0282 2 0024 0012
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+1104 1001
+~0 1 0 3~0 1 0 3
+00 12 00 12
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+  The polynomial is p(t) = 1 + 3t + 2t2. 
+ 34. [M] The system of equations to be solved is: 
+   
+2345
+0 1 2345
+2345
+0 1 2345
+2345
+0 1 2345
+2345
+0 1 2345
+2345
+0 1 2345
+23
+01 2 3
+0 0000 0
+2 2222 2 . 9 0
+4 4 4 4 4 14.8
+6 6 6 6 6 39.6
+8 8 8 8 8 74.3
+10 10 10
+aa a a a a
+a a aaaa
+a a aaaa
+aa a a a a
+aa a a a a
+aa a a
++ ⋅ +⋅+⋅+⋅+⋅=
++ ⋅ +⋅+⋅+⋅+⋅=
++ ⋅ +⋅+⋅+⋅+⋅=
++ ⋅ +⋅+⋅+⋅+⋅=
++ ⋅ +⋅+⋅+⋅+⋅=
++⋅+ ⋅ +⋅ + 4545 10 10 119aa⋅+ ⋅=
+ 
+  The unknowns are a0, a1, …, a5. Use technology to compute the reduced echelon of the augmented 
+matrix: 
+   
+23 4 5
+10 0 0 0 0 0 10 0 0 0 0 0
+1 2 4 8 16 32 2.9 0 2 4 8 16 32 2.9
+1 4 16 64 256 1024 14.8 0 0 8 48 224 960 9~1 6 36 216 1296 7776 39.6 0 0 24 192 1248 7680 30.9
+1 8 64 512 4096 32768 74.3 0 0 48 480 4032 32640 62.7
+0 0 80 960 9920 99840 1011 01 0 1 0 1 0 1 0 1 1 9
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦ 4.5
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+   
+100 0 0 0 0 100 0 0 0 0
+0 2 4 8 16 32 2.9 0 2 4 8 16 32 2.9
+0 0 8 48 224 960 9 0 0 8 48 224 960 9~~ 0 0 0 48 576 4800 3.9 0 0 0 48 576 4800 3.9
+0 0 0 192 2688 26880 8.7 0 0 0 0 384 7680 6.9
+0 0 0 480 7680 90240 14.5 0 0 0 0 1920 42240 24.5
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −⎢⎥ ⎢ −⎢⎥ ⎢⎣⎦ ⎣⎦ ⎥⎥
+ 
+ 
+----- pagina 14 -----
+14 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+100 0 0 0 0 100 0 0 0 0
+024 8 1 6 3 2 2 . 9 024 8 1 6 3 2 2 . 9
+0 0 8 48 224 960 9 0 0 8 48 224 960 9~~ 0004 85 7 64800 3.9 0004 85 7 64 8 0 0 3 . 9
+0 0 0 0 384 7680 6.9 0 0 0 0 384 7680 6.9
+0 0 0 0 0 3840 10 0 0 0 0 0 1 .0026
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+   
+100 0 00 0 100000 0
+0 2 4 8 16 0 2.8167 0 1 0 0 0 0 1.7125
+0 0 8 48 224 0 6.5000 0 0 1 0 0 0 1.1948~~ ~0004 85 7 60 8 . 6000 0 0 0 1 0 0 .6615
+0 0 0 0 384 0 26.900 0 0 0 0 1 0 .0701
+0 0 0 0 0 1 .002604 0 0 0 0 0 1 .0026
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+"  
+  Thus p(t) = 1.7125t – 1.1948t2 + .6615t3 – .0701t4 + .0026t5, and p(7.5) = 64.6 hundred lb. 
+Notes: In Exercise 34, if the coefficients are retained to higher accuracy than shown here, then p(7.5) = 
+64.8. If a polynomial of lower degree is used, the resulting system of equations is overdetermined. The 
+augmented matrix for such a system is the same as the one used to find p, except that at least column 6 is 
+missing. When the augmented matrix is row reduced, the sixth row of the augmented matrix will be 
+entirely zero except for a nonzero entry in the augmented column, indicating that no solution exists. 
+Exercise 34 requires 25 row operations. It should give students an appreciation for higher-level 
+commands such as gauss and bgauss, discussed in Section 1.4 of the Study Guide. The command 
+ref (reduced echelon form) is available, but I recommend postponing that command until Chapter 2. 
+The Study Guide includes a “Mathematical Note” about the phrase, “If and only if,” used in Theorem 
+2. 
+1.3 SOLUTIONS 
+Notes: The key exercises are 11–16, 19–22, 25, and 26. A discussion of Exercise 25 will help students 
+understand the notation [a1   a2   a3], {a1, a2, a3}, and Span{a1, a2, a3}. 
+ 1. 131 ( 3 ) 421 2 ( 1 )1−−− + − −⎡⎤⎡⎤⎡ ⎤⎡⎤+= + = =⎢⎥⎢⎥⎢ ⎥⎢⎥−+ −⎣⎦⎣⎦⎣ ⎦⎣⎦uv .  
+  Using the definitions carefully, 
+   13 1 ( 2 ) ( 3 ) 1 6 52( 2 ) 21 2 ( 2 ) ( 1 ) 2 2 4−− − − − − +⎡⎤ ⎡⎤⎡⎤⎡ ⎤⎡ ⎤⎡ ⎤−= + − = + = =⎢⎥ ⎢⎥⎢⎥⎢ ⎥⎢ ⎥⎢ ⎥−− − +⎣⎦ ⎣⎦⎣⎦⎣ ⎦⎣ ⎦⎣ ⎦uv , or, more quickly, 
+   13 1 6 522 21 2 2 4−− − +⎡⎤ ⎡⎤⎡ ⎤⎡ ⎤−= − = =⎢⎥ ⎢⎥⎢ ⎥⎢ ⎥ −+⎣⎦ ⎣⎦⎣ ⎦⎣ ⎦uv . The intermediate step is often not written. 
+----- pagina 15 -----
+1.3  Solutions   15  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 2. 32 3 2 521 2 1 1 +⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤+= + = =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦uv .  
+  Using the definitions carefully, 
+   32 3 ( 2 ) ( 2 ) 3 4 12( 2 ) 21 2 ( 2 ) ( 1 ) 2 2 4 −− −⎡ ⎤ ⎡⎤⎡ ⎤⎡ ⎤⎡ ⎤⎡⎤−= + − = + = =⎢ ⎥ ⎢⎥⎢ ⎥⎢ ⎥⎢ ⎥⎢⎥−− − +⎣ ⎦ ⎣⎦⎣ ⎦⎣ ⎦⎣ ⎦⎣⎦uv , or, more quickly, 
+   32 3 4 122 21 2 2 4 −−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤−= − = =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−+⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦uv . The intermediate step is often not written. 
+3.   4. 
+    
+     
+ 
+ 5 . 12
+35 2
+20 3
+89 8
+xx
+⎡⎤ ⎡⎤⎡⎤
+⎢⎥ ⎢⎥⎢⎥−+ = −⎢⎥ ⎢⎥⎢⎥
+⎢⎥ ⎢⎥⎢⎥ −⎣⎦ ⎣⎦⎣⎦
+,    
+12
+1
+12
+35 2
+20 3
+89 8
+xx
+x
+xx
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−+ = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦
+,    
+12
+1
+12
+35 2
+23
+89 8
+xx
+x
+xx
++⎡ ⎤⎡⎤
+⎢ ⎥⎢⎥−= −⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥−⎣ ⎦⎣⎦
+ 
+   
+12
+1
+12
+35 2
+23
+89 8
+xx
+x
+xx
++=
+−= −
+−=
+ 
+  Usually the intermediate steps are not displayed. 
+ 6 . 12 3
+37 2 0
+23 1 0xx x −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤++ =⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦ ,    312 312 237 023 0xxx xxx −⎡⎤⎡⎤ ⎡ ⎤ ⎡ ⎤++ = ⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥− ⎣ ⎦⎣⎦ ⎣ ⎦ ⎣⎦ ,    12312 337 2 023 0xxxxx x+−⎡⎤ ⎡⎤=⎢⎥ ⎢⎥−+ + ⎣⎦⎣⎦  
+   223
+123
+3720
+23 0
+xxx
+xx x
++−=
+−+ + =  
+  Usually the intermediate steps are not displayed. 
+ 7 . See the figure below. Since the grid can be extended in every direction, the figure suggests that every 
+vector in R2 can be written as a linear combination of u and v. 
+  To write a vector a as a linear combination of u and v, imagine walking from the origin to a along 
+the grid "streets" and keep track of how many "blocks" you travel in the u-direction and how many in 
+the v-direction.  
+a. To reach a from the origin, you might travel 1 unit in the u-direction and –2 units in the v-
+direction (that is, 2 units in the negative v-direction). Hence a = u – 2v. 
+b. To reach b from the origin, travel 2 units in the u-direction and –2 units in the v-direction. So  
+b = 2u – 2v. Or, use the fact that b is 1 unit in the u-direction from a, so that  
+
+----- pagina 16 -----
+16 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   b = a + u = ( u – 2v) + u = 2u – 2v 
+c. The vector c is –1.5 units from b in the v-direction, so 
+   c  = b – 1.5v = (2u – 2v) – 1.5v = 2u – 3.5v 
+d. The “map” suggests that you can reach d if you travel 3 units in the u-direction and –4 units in 
+the v-direction. If you prefer to stay on the paths displayed on the map, you might travel from the 
+origin to –3v, then move 3 units in the u-direction, and finally move –1 unit in the v-direction. So 
+   d  = –3v + 3u – v = 3u – 4v 
+  Another solution is 
+   d  = b – 2v + u = (2u – 2v) – 2v + u = 3u – 4v 
+     
+ 
+Figure for Exercises 7 and 8 
+ 8 . See the figure above. Since the grid can be extended in every direction, the figure suggests that every 
+vector in R2 can be written as a linear combination of u and v. 
+w. To reach w from the origin, travel –1 units in the u-direction (that is, 1 unit in the negative  
+u-direction) and travel 2 units in the v-direction. Thus, w = (–1)u + 2v, or w = 2v – u. 
+x. To reach x from the origin, travel 2 units in the v-direction and –2 units in the u-direction. Thus, 
+x = –2u + 2v. Or, use the fact that x is –1 units in the u-direction from w, so that 
+   x  = w – u = (–u + 2v) – u = –2u + 2v 
+y. The vector y is 1.5 units from x in the v-direction, so 
+   y  = x + 1.5v = (–2u + 2v) + 1.5v = –2u + 3.5v 
+z. The map suggests that you can reach z if you travel 4 units in the v-direction and –3 units in the 
+u-direction. So z = 4v – 3u = –3u + 4v. I f you prefer to stay on the paths displayed on the “map,” 
+you might travel from the origin to –2u, then 4 units in the v-direction, and finally move –1 unit 
+in the u-direction. So  
+   z  = –2u + 4v – u = –3u + 4v 
+ 9 . 
+23
+123
+123
+50
+46 0
+380
+xx
+xxx
+xxx
++=
++−=
+−+ − =
+, 
+23
+12 3
+123
+50
+46 0
+38 0
+xx
+xx x
+xxx
++⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥+− =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−+ − ⎣ ⎦⎣⎦
+ 
+  
+23
+12 3
+12 3
+05 0
+46 0
+38 0
+xx
+xx x
+xx x
+⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥++ − =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+, 12 3
+01 5 0
+46 1 0
+13 8 0
+xx x
+⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥++ − =⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥−−⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦
+ 
+  Usually, the intermediate calculations are not displayed. 
+w
+x
+v
+u
+ac
+d
+2v
+b
+z
+y
+–2v –u
+–v
+0
+----- pagina 17 -----
+1.3  Solutions   17  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Note: The Study Guide says, “Check with your instructor whether you need to “show work” on a 
+problem such as Exercise 9.” 
+ 10.  
+123
+123
+123
+32 4 3
+27 5 1
+54 32
+xx x
+xx x
+xx x
+−+=
+−− + =
++−=
+ , 
+123
+123
+123
+32 4 3
+27 5 1
+543 2
+xx x
+xxx
+xxx
+−+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− + =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥+− ⎣ ⎦⎣⎦
+ 
+  
+123
+123
+123
+324 3
+27 5 1
+543 2
+xxx
+xxx
+xxx
+− ⎡⎤⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥−+ − + = ⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦
+ , 123
+324 3
+275 1
+543 2
+xx x
+−⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥−+ −+ =⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥ −⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦
+ 
+  Usually, the intermediate calculations are not displayed. 
+ 11. The question 
+   Is b a linear combination of a1, a2, and a3? 
+  is equivalent to the question 
+   Does the vector equation x1a1 + x2a2 + x3a3 = b have a solution? 
+  The equation 
+   
+12 3
+123
+10 5 2
+21 6 1
+02 8 6
+xx x
+⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−+ + −= −⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦
+↑↑↑ ↑
+aa a b
+  (*)
+ 
+  has the same solution set as the linear system whose augmented matrix is 
+   
+10 5 2
+21 6 1
+02 8 6
+M
+⎡⎤
+⎢⎥=− − −⎢⎥
+⎢⎥⎣⎦
+   
+  Row reduce M until the pivot positions are visible: 
+   
+1052 1052
+~0 1 4 3~0 1 4 3
+0286 0000
+M
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+  The linear system corresponding to M has a solution, so the vector equation (*) has a solution, and 
+therefore b is a linear combination of a1, a2, and a3. 
+  
+----- pagina 18 -----
+18 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. The equation 
+   
+12 3
+12 3
+126 1 1
+037 5
+125 9
+xx x
+−−⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥++= −⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥−⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦
+↑↑ ↑ ↑
+aa a b
+ (*)
+ 
+  has the same solution set as the linear system whose augmented matrix is 
+   
+126 1 1
+0375
+1259
+M
+−−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −⎣⎦
+ 
+  Row reduce M until the pivot positions are visible: 
+  
+126 1 1
+~0 3 7 5
+00 1 12
+M
+−−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥ −⎣⎦
+ 
+  The linear system corresponding to M has a solution, so the vector equation (*) has a solution, and 
+therefore b is a linear combination of a1, a2, and a3. 
+ 13. Denote the columns of A by a1, a2, a3. To determine if b is a linear combination of these columns, 
+use the boxed fact in the subsection Linear Combinations.  Row reduce the augmented matrix  
+[a1   a2   a3   b] until you reach echelon form: 
+   [ a1   a2   a3   b] =
+1 423 1 4 23
+0357 ~ 03 57
+284300 03
+−−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥−− −⎣ ⎦⎣ ⎦
+ 
+  The system for this augmented matrix is inconsistent, so b is not a linear combination of the columns 
+of A. 
+ 14. Row reduce the augmented matrix  [a1   a2   a3   b] until you reach echelon form: 
+ [a1   a2   a3   b] = 
+10 5 2 1052 1052
+21 6 1 ~ 01 43 ~ 01 43
+02 8 6 0286 0000
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+.  
+The linear system corresponding to this matrix has a solution, so b is a linear combination of the 
+columns of A. 
+ 15. [ a1   a2   b]  = 
+153 15 3 15 3 15 3
+3 8 5~0 7 1 4 ~0 1 2 ~0 1 2
+12 0 3 3 0 3 3 00 3h hhh
+− −−−⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥−− − − −⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥−− + − + −⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦
+. The vector b 
+is in Span{a1, a2} when h – 3 is zero, that is, when h = 3. 
+----- pagina 19 -----
+1.3  Solutions   19  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 16. [ v1   v2   y] = 
+12 12 12
+01 3 ~ 01 3~ 01 3
+275 035 2 00 4 2
+hh h
+hh
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − + +⎣⎦ ⎣ ⎦ ⎣ ⎦
+. The vector y is in  
+Span{v1, v2} when 4 + 2h is zero, that is, when h = –2. 
+ 17. Noninteger weights are acceptable, of course, but some simple choices are 0· v1 + 0· v2 = 0, and 
+   1 · v1 + 0· v2 = 
+3
+1
+2
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+,   0· v1 + 1· v2 = 
+4
+0
+1
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+,  1· v1 + 1· v2 = 
+1
+1
+3
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+,   1· v1 – 1· v2 = 
+7
+1
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+ 
+    
+ 
+ 18. Some likely choices are 0 · v1 + 0· v2 = 0, and 
+  1 · v1 + 0· v2 = 
+1
+1
+2
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+,   0· v1 + 1· v2 = 
+2
+3
+0
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+,  1· v1 + 1· v2 = 
+1
+4
+2
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎣ ⎦
+,   1· v1 – 1· v2 = 
+3
+2
+2
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥−⎣⎦
+ 
+ 19. By inspection, v2 = (3/2)v1. Any linear combination of v1 and v2 is actually just a multiple of v1. For 
+instance, 
+   a v1 + bv2 = av1 + b(3/2)v1 = (a + 3b/2)v1 
+  So Span{ v1, v2} is the set of points on the line through v1 and 0. 
+Note: Exercises 19 and 20 prepare the way for ideas in Sections 1.4 and 1.7.  
+ 20. Span{ v1, v2} is a plane in R3 through the origin, because neither vector in this problem is a multiple 
+of the other.  
+ 21. Let y = hk⎡⎤⎢⎥⎣⎦ . Then [u   v   y] = 22 22 ~11 02 / 2hhkk h⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−+⎣⎦ ⎣ ⎦ . This augmented matrix 
+corresponds to a consistent system for all h and k. So y is in Span{u, v} for all h and k. 
+ 22. Construct any 3×4 matrix in echelon form that corresponds to an inconsistent system. Perform 
+sufficient row operations on the matrix to eliminate all zero entries in the first three columns. 
+ 23. a. False. The alternative notation for a (column) vector is (–4, 3), using parentheses and commas. 
+b. False. Plot the points to verify this. Or, see the statement preceding Example 3. If 52−⎡⎤⎢⎥⎣⎦  were on 
+the line through 25−⎡⎤⎢⎥⎣⎦  and the origin, then 52−⎡ ⎤⎢ ⎥⎣ ⎦  would have to be a multiple of 25−⎡⎤⎢⎥⎣⎦ , which is 
+not the case. 
+c. True. See the line displayed just before Example 4. 
+d. True. See the box that discusses the matrix in (5). 
+----- pagina 20 -----
+20 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+e. False. The statement is often true, but Span{u , v} is not a plane when v is a multiple of u, or 
+when u is the zero vector. 
+ 24. a. False. Span{ u, v} can be a plane. 
+b. True. See the beginning of the subsection Vectors in Rn.  
+c. True.  See the comment following the definition of Span{ v1, …, vp}. 
+d. False. ( u – v) + v = u – v + v = u. 
+e. False. Setting all the weights equal to zero results in a legitimate linear combination of a set of 
+vectors. 
+ 
+25. a. There are only three vectors in the set {a1, a2, a3}, and b is not one of them. 
+b. There are infinitely many vectors in W = Span{a1, a2, a3}. To determine if b is in W, use the 
+method of Exercise 13. 
+  [ a1   a2   a3   b] =
+10 4 4 10 44 10 44
+03 2 1 ~ 03 21 ~ 03 21
+26 3 4 06 54 00 12
+−− −⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−− −⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥−− − −⎣ ⎦⎣ ⎦⎣ ⎦
+ 
+  The system for this augmented matrix is consistent, so b is in W. 
+c. a1 = 1a1 + 0a2 + 0a3. See the discussion in the text following the definition of Span{v1, …, vp}. 
+ 26. a. [ a1   a2   a3   b] = 
+2 061 0 1 035 1 0 35 1035
+18 53 ~ 18 5 3 ~ 088 8 ~ 0 8 8 8
+12 1 7 12 1 7 022 2 0 0 0 4
+−−
+−− − −
+⎡ ⎤⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦⎣ ⎦
+ 
+  No, b is not a linear combination of the columns of A, that is, b is not in W.    
+b. The second column of A is in W because a2 = 0· a1 + 1· a2 + 0· a3. 
+ 27. a. 5v 1 is the output of 5 days’ operation of mine #1. 
+b. The total output is x1v1 + x2v2, so x1 and x2 should satisfy 11 2 2
+240
+2824xx ⎡ ⎤+= ⎢ ⎥⎣ ⎦vv . 
+c. [M] Reduce the augmented matrix 30 40 240 1 0 1.73~600 380 2824 0 1 4.70⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦ .  
+  Operate mine #1 for 1.73 days and mine #2 for 4.70 days. (This is an approximate solution.) 
+ 28. a. The amount of heat produced when the steam plant burns x1 tons of anthracite and x2 tons of 
+bituminous coal is 27.6x1 + 30.2x2 million Btu.   
+b. The total output produced by x1 tons of anthracite and x2 tons of bituminous coal is given by the 
+vector 12
+27.6 30.2
+3100 6400
+250 360
+xx
+⎡⎤⎡⎤
+⎢⎥⎢⎥ +⎢⎥⎢⎥
+⎢⎥⎢⎥⎣⎦⎣⎦
+. 
+c. [M] The appropriate values for x1 and x2 satisfy 12
+27.6 30.2 162
+3100 6400 23,610
+250 360 1,623
+xx
+⎡ ⎤⎡⎤ ⎡ ⎤
+⎢ ⎥⎢⎥ ⎢ ⎥+=⎢ ⎥⎢⎥ ⎢ ⎥
+⎢ ⎥⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦ ⎣ ⎦
+.  
+  To solve, row reduce the augmented matrix: 
+----- pagina 21 -----
+1.3  Solutions   21  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+27.6 30.2 162 1.000 0 3.900
+3100 6400 23610 ~ 0 1.000 1.800
+250 360 1623 0 0 0
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+The steam plant burned 3.9 tons of anthracite coal and 1.8 tons of bituminous coal. 
+ 
+ 29. The total mass is 4 + 2 + 3 + 5 = 14. So v = (4v1 +2v2 + 3v3 + 5v4)/14. That is, 
+  
+2 4 4 1 8 8 12 5 17 14 1.214
+11 4 2 2 2 3 0 5 6 8 4 0 30 17 7 2.42914 14 43 20 1 6 6 6 08 7 1 . 1 4 3
+⎛⎞ −− + +⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤⎡ ⎤⎡ ⎤
+⎜⎟ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎢ ⎥⎢ ⎥= − + + + − =− + + −= − ≈ −⎜⎟ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎢ ⎥⎢ ⎥⎜⎟ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎢ ⎥⎢ ⎥ −+ − +⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦⎣ ⎦⎣ ⎦⎝⎠v  
+ 30. Let m be the total mass of the system. By definition, 
+   111 11 () kkk k mmmmmm m=+ + = + +vv v v v ""  
+  The second expression displays v as a linear combination of v1, …, vk, which shows that v is in  
+Span{v1, …, vk}. 
+ 31. a. The center of mass is 082 1 0 / 31 111114 23 ⎛⎞ ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤⋅+ ⋅+ ⋅ =⎜⎟ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦⎝⎠ . 
+b. The total mass of the new system is 9 grams. The three masses added, w1, w2, and w3, satisfy the 
+equation 
+   () ( ) ()123
+082 21 111 114 29 www⎛⎞ ⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤+⋅ + +⋅ + +⋅ =⎜⎟ ⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦⎝⎠  
+  which can be rearranged to  
+   () ( ) ()123
+082 1 8111 114 1 8www ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤+⋅ + +⋅ + +⋅ =⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+  and 
+   123
+082 8
+114 1 2www⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤⋅+ ⋅+ ⋅=⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+  The condition w1 + w2 + w3 = 6 and the vector equation above combine to produce a system of 
+three equations whose augmented matrix is shown below, along with a sequence of row 
+operations: 
+   
+111 6 1116 1116
+082 8 ~ 0828 ~ 0828
+1141 2 0036 0012
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+    
+1 1 0 4 1 0 0 3.5 1 0 0 3.5
+~0 8 0 4~0 8 0 4~0 1 0 . 5
+0012 001 2 001 2
+⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦
+ 
+  Answer: Add 3.5 g at (0, 1), add .5 g at (8, 1), and add 2 g at (2, 4). 
+----- pagina 22 -----
+22 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Extra problem: Ignore the mass of the plate, and distribute 6 gm at the three vertices to make the center 
+of mass at (2, 2). Answer: Place 3 g at (0, 1), 1 g at (8, 1), and 2 g at (2, 4). 
+ 32. See the parallelograms drawn on the figure from the text that accompanies this exercise. Here c1, c2, 
+c3, and c4 are suitable scalars. The darker parallelogram shows that b is a linear combination of v1 
+and v2, that is 
+   c 1v1 + c2v2 + 0· v3 = b 
+  The larger parallelogram shows that b is a linear combination of v1 and v3, that is,  
+   c 4v1 + 0· v2 + c3v3 = b 
+  So the equation x1v1 + x2v2 + x3v3 = b has at least two solutions, not just one solution. (In fact, the 
+equation has infinitely many solutions.)   
+  
+ 33. a. For j = 1,…, n, the jth entry of (u + v) + w is (uj + vj) + wj. By associativity of addition in R, this 
+entry equals uj + (vj + wj), which is the jth entry of u + (v + w). By definition of equality of 
+vectors, (u + v) + w = u + (v + w). 
+b. For any scalar c , the jth entry of c(u + v) is c(uj + vj), and the jth entry of cu + cv is cuj + cvj (by 
+definition of scalar multiplication and vector addition). These entries are equal, by a distributive 
+law in R. So c(u + v) = cu + cv. 
+ 34. a. For j = 1,…, n, uj + (–1)uj = (–1)uj + uj = 0, by properties of R. By vector equality, 
+   u + (–1)u = (–1)u + u = 0. 
+b. For scalars c and d, the jth entries of c(du) and (cd )u are c(duj) and (cd )uj, respectively. These 
+entries in R are equal, so the vectors c(du) and (cd)u are equal. 
+Note: When an exercise in this section involves a vector equation, the corresponding technology data (in 
+the data files on the web) is usually presented as a set of (column) vectors. To use MATLAB or other 
+technology, a student must first construct an augmented matrix from these vectors. The MATLAB note in 
+the Study Guide describes how to do this. The appendices in the Study Guide  give corresponding 
+information about Maple, Mathematica, and the TI calculators. 
+c2v2
+c3v3
+0
+v3
+c4v1
+c1v1
+v1
+v2
+b
+----- pagina 23 -----
+1.4  Solutions   23  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+1.4 SOLUTIONS 
+Notes: Key exercises are 1–20, 27, 28, 31 and 32. Exercises 29, 30, 33, and 34 are harder. Exercise 34 
+anticipates the Invertible Matrix Theorem but is not used in the proof of that theorem. 
+ 1 . The matrix-vector Ax is not defined because the number of columns (2) in the 3×2 matrix A does not 
+match the number of entries (3) in the vector x. 
+ 2 . The matrix-vector Ax is not defined because the number of columns (1) in the 3×1 matrix A does not 
+match the number of entries (2) in the vector x. 
+ 3 . 
+12 1 2 2 6 423 1 ( 2 ) 3 3 1639316 1 6 2 1 8 1 6A −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤−⎡⎤⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥=− =− − + = + =⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦x , and 
+  
+12 1 ( 2 )2 3 4231 ( 3 ) ( 2 ) 1 3 9316 1 ( 2 ) 6 3 1 6A ⋅− + ⋅⎡⎤ ⎡ ⎤ ⎡ ⎤ −⎡⎤⎢⎥ ⎢ ⎥ ⎢ ⎥=− = − ⋅ − +⋅ =⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎣⎦⎢⎥ ⎢ ⎥ ⎢ ⎥ ⋅− + ⋅⎣⎦ ⎣ ⎦ ⎣ ⎦x  
+ 4 . 
+113 4 1 3 4 1 6 4 321 2 132 1 3 2 1 3 4 1 81A ⎡⎤−− + −⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤⎢⎥== ⋅ + ⋅ + ⋅ = =⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥⎢⎥ ++⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦⎢⎥⎣⎦x , and 
+  
+113 4 1 1 3 2 ( 4 ) 1 3232 1 3 1 2 2 1 1 81A ⎡⎤−⋅ + ⋅ + − ⋅⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎢⎥== =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⋅+ ⋅ +⋅⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎢⎥⎣⎦x  
+ 5 . On the left side of the matrix equation, use the entries in the vector x as the weights in a linear 
+combination of the columns of the matrix A: 
+   12 31 4211 12311 1 −−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤⎡⎤⋅− ⋅+ ⋅− ⋅=⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎢⎥−− −⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦⎣⎦  
+ 6 . On the left side of the matrix equation, use the entries in the vector x as the weights in a linear 
+combination of the columns of the matrix A: 
+   
+23 2 1
+32 135 85 4 9
+21 1 1
+−−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−⋅ + ⋅ =⎢⎥ ⎢⎥ ⎢ ⎥ −−
+⎢⎥ ⎢⎥ ⎢ ⎥−⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+ 7 . The left side of the equation is a linear combination of three vectors. Write the matrix A whose 
+columns are those three vectors, and create a variable vector x with three entries: 
+----- pagina 24 -----
+24 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+457 4 5 7
+138 1 3 8
+750 7 5 0
+41 2 4 1 2
+A
+⎡⎤ −−⎡⎤⎡⎤⎡⎤ ⎡ ⎤
+⎢⎥⎢⎥⎢⎥⎢⎥ ⎢ ⎥−− − −⎢⎥⎢⎥⎢⎥⎢⎥ ⎢ ⎥==⎢⎥⎢⎥⎢⎥⎢⎥ ⎢ ⎥−−
+⎢⎥⎢⎥⎢⎥⎢⎥ ⎢ ⎥−−⎢⎥⎣⎦⎣⎦⎣⎦ ⎣ ⎦⎣⎦
+ and 
+1
+2
+3
+x
+x
+x
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+x . Thus the equation Ax = b is  
+   
+1
+2
+3
+457 6
+138 8
+750 0
+41 2 7
+x
+x
+x
+−⎡⎤ ⎡ ⎤ ⎡⎤⎢⎥ ⎢ ⎥−− − ⎢⎥⎢⎥ ⎢ ⎥ =⎢⎥⎢⎥ ⎢ ⎥ − ⎢⎥⎢⎥ ⎢ ⎥ ⎣⎦−−⎣⎦ ⎣ ⎦   
+  For your information : The unique solution of this equation is (5, 7, 3). Finding the solution by hand 
+would be time-consuming. 
+Note: The skill of writing a vector equation as a matrix equation will be important for both theory and 
+application throughout the text. See also Exercises 27 and 28. 
+ 8 . The left side of the equation is a linear combination of four vectors. Write the matrix A whose 
+columns are those four vectors, and create a variable vector with four entries: 
+  214 0 2 1 4 0453 2 4 5 3 2A ⎡⎤ −− − −⎡⎤⎡⎤⎡⎤⎡ ⎤ ⎡ ⎤==⎢⎥⎢⎥⎢⎥⎢⎥⎢ ⎥ ⎢ ⎥−−⎣⎦⎣⎦⎣⎦⎣ ⎦ ⎣ ⎦⎣⎦ , and 
+1
+2
+3
+4
+z
+z
+z
+z
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+z . Then the equation Az = b  
+is 
+1
+2
+3
+4
+214 0 5
+453 2 1 2
+z
+z
+z
+z
+⎡⎤
+⎢⎥−−⎡⎤ ⎡ ⎤ ⎢⎥ =⎢⎥ ⎢ ⎥ ⎢⎥−⎣⎦ ⎣ ⎦ ⎢⎥
+⎣⎦
+. 
+  For your information : One solution is (8, 7, 1, 3). The general solution is z1 = 37/6 + (17/6)z3 – 
+(1/3)z4, z2 = 22/3 +(5/3)z3 – (2/3)z4, with z3 and z4 free.  
+ 9 . The system has the same solution set as the vector equation 
+   123
+51 3 8
+02 4 0xx x −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤++ =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦  
+  and this equation has the same solution set as the matrix equation 
+   
+1
+2
+3
+51 3 8
+02 4 0
+x
+x
+x
+⎡⎤−⎡⎤ ⎡ ⎤ ⎢⎥ =⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎢⎥⎣⎦  
+ 10. The system has the same solution set as the vector equation 
+   12
+41 8
+53 2
+31 1
+xx
+−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥+=⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ −⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  and this equation has the same solution set as the matrix equation 
+----- pagina 25 -----
+1.4  Solutions   25  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1
+2
+41 8
+53 2
+31 1
+x
+x
+−⎡⎤ ⎡ ⎤ ⎡⎤⎢⎥ ⎢ ⎥ =⎢⎥⎢⎥ ⎢ ⎥ ⎣⎦⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦  
+ 11. To solve Ax = b, row reduce the augmented matrix [a1   a2   a3   b] for the corresponding linear 
+system: 
+ 
+ 
+1342 1 342 1 342 1 3 02 1 0 01 1
+1524 ~ 0 266 ~ 0 133 ~ 0 1 03 ~ 0 1 0 3
+3 7 6 1 20 2 6 60 0 1 00 0 1 00 0 1 0
+−− −− −− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The solution is 
+1
+2
+3
+11
+3
+0
+x
+x
+x
+=−⎧
+⎪ =⎨
+⎪ =⎩
+. As a vector, the solution is x = 
+1
+2
+3
+11
+3
+0
+x
+x
+x
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦
+. 
+ 12. To solve Ax = b, row reduce the augmented matrix [a1   a2   a3   b] for the corresponding linear 
+system: 
+   
+1211 1211 1211 1 21 1
+3422 ~ 0215 ~ 0888 ~ 0 11 1
+5233 0888 0215 0 21 5
+−−− −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− − − − −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− − − −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+12 11 1204 100 4
+~0 1 1 1~0 1 0 4~0 1 0 4
+00 13 0013 001 3
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The solution is 
+1
+2
+3
+4
+4
+3
+x
+x
+x
+=−⎧
+⎪ =⎨
+⎪ =⎩
+. As a vector, the solution is x = 
+1
+2
+3
+4
+4
+3
+x
+x
+x
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦
+. 
+ 13. The vector u is in the plane spanned by the columns of A if and only if u is a linear combination of 
+the columns of A. This happens if and only if the equation Ax = u has a solution. (See the box 
+preceding Example 3 in Section 1.4.) To study this equation, reduce the augmented matrix [A   u] 
+  
+35 0 11 4 11 4 1 1 4
+26 4 ~ 26 4 ~ 081 2 ~ 0 8 1 2
+11 4 35 0 081 2 0 0 0
+−⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The equation Ax = u has a solution, so u is in the plane spanned by the columns of A. 
+  For your information : The unique solution of Ax = u is (5/2, 3/2). 
+ 14. Reduce the augmented matrix [A   u] to echelon form: 
+  
+25 1 4 12 0 4 12 0 4 12 0 4
+0 111 ~ 0 111 ~ 0 111 ~ 0 111
+1 204 2 514 0 114 0 003
+−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−− −− −− −−⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −− −−⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+----- pagina 26 -----
+26 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The equation Ax = u has no solution, so u is not in the subset spanned by the columns of A. 
+ 15. The augmented matrix for Ax = b is 1
+2
+31
+93
+b
+b
+−⎡⎤
+⎢⎥−⎣⎦ , which is row equivalent to 1213100 3 bbb−⎡⎤⎢⎥ +⎣⎦ . 
+This shows that the equation Ax = b is not consistent when 3b1 + b2 is nonzero. The set of b for 
+which the equation is consistent is a line through the origin–the set of all points (b1, b2) satisfying b2 
+= –3b1. 
+ 16. Row reduce the augmented matrix [A   b]: 
+1
+2
+3
+121
+220 , .
+41 3
+b
+Ab
+b
+−− ⎡ ⎤⎡⎤
+⎢ ⎥⎢⎥=− = ⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥ −⎣⎦ ⎣ ⎦
+b  
+  
+11
+22 1
+33 1
+121 12 1
+220 ~ 022 2
+41 3 077 4
+bb
+bb b
+bb b
+−− −−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− − +⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+  
+11
+21 21
+31 21 1 2 3
+12 1 12 1
+~ 022 2 022 2
+000 4( 7 2 ) ( 2 ) 000 3( 7 2 )
+bb
+bb bb
+bb bb b b b
+−− −−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− + = −− +⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−+ + + +⎣⎦ ⎣ ⎦
+ 
+  The equation Ax = b is consistent if and only if 3b1 + (7/2)b2 + b3 = 0, or 6b1 + 7b2 + 2b3 = 0. The set 
+of such b is a plane through the origin in R3. 
+ 17. Row reduction shows that only three rows of A contain a pivot position: 
+  
+1303 1303 1 30 3 1 30 3
+11110214 0 21 4 0 21 4~~ ~0428 0428 0 00 0 0 00 5
+20310637 0 00 5 0 00 0
+A
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−− − − −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −−
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Because not every row of A contains a pivot position, Theorem 4 in Section 1.4 shows that the 
+equation Ax = b does not have a solution for each b in R4. 
+ 18. Row reduction shows that only three rows of B contain a pivot position: 
+  
+14 1 2 14 1 2 14 1 2 1 4 1 2
+01 3 4 01 3 4 01 3 4 0 1 3 4~~ ~026 7 026 7 0001 5 0 001 5
+295 7 013 1 1 000 7 0 00 0
+B
+⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ −− − −⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦
+ 
+  Because not every row of B contains a pivot position, Theorem 4 in Section 1.4 shows that not all 
+vectors in R4 can be written as a linear combination of the columns of B. The columns of B certainly 
+do not span R3, because each column of B is in R4, not R3. (This question was asked to alert students 
+to a fairly common misconception among students who are just learning about spanning.) 
+ 19. The work in Exercise 17 shows that statement (d) in Theorem 4 is false. So all four statements in 
+Theorem 4 are false. Thus, not all vectors in R4 can be written as a linear combination of the columns 
+of A. Also, the columns of A do not span R4. 
+----- pagina 27 -----
+1.4  Solutions   27  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 20. The work in Exercise 18 shows that statement (d) in Theorem 4 is false. So all four statements in 
+Theorem 4 are false. Thus, the equation Bx = y does not have a solution for each y in R4, and the 
+columns of B do not span R4.  
+ 21. Row reduce the matrix [v1   v2   v3] to determine whether it has a pivot in each row. 
+  
+10 1 10 1 10 1 1 01
+01 0 01 0 01 0 0 1 0~~~ .100 00 1 00 1 0 01
+011 011 001 0 0 0
+⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−−−⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ −−−⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  The matrix [v 1   v2   v3] does not have a pivot in each row, so the columns of the matrix do not span 
+R4, by Theorem 4. That is, {v1, v2, v3} does not span R4. 
+Note: Some students may realize that row operations are not needed, and thereby discover the principle 
+covered in Exercises 31 and 32. 
+ 22. Row reduce the matrix [v1   v2   v3] to determine whether it has a pivot in each row. 
+  
+004 396
+032 ~ 032
+396 004
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −− −−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+ 
+  The matrix [v 1   v2   v3] has a pivot in each row, so the columns of the matrix span R3, by Theorem 4. 
+That is, {v1, v2, v3} spans R3. 
+ 23. a. False. See the paragraph following equation (3). The text calls Ax = b a matrix equation. 
+b. True. See the box before Example 3. 
+c. False. See the warning following Theorem 4. 
+d. True. See Example 4.  
+e. True. See parts (c) and (a) in Theorem 4. 
+f. True. In Theorem 4, statement (a) is false if and only if statement (d) is also false. 
+ 24. a. True. This statement is in Theorem 3. However, the statement is true without any "proof" 
+because, by definition, Ax is simply a notation for x1a1 + ⋅ ⋅ ⋅ + xnan, where a1, …, an are the 
+columns of A. 
+b. True. See the box before Example 3. 
+c.  True. See Example 2. 
+d. False. In Theorem 4, statement (d) is true if and only if statement (a) is true. 
+e. True. See Theorem 3. 
+f. False. In Theorem 4, statement (c) is false if and only if statement (a) is also false. 
+ 25. By definition, the matrix-vector product on the left is a linear combination of the columns of the 
+matrix, in this case using weights –3, –1, and 2. So c1 = –3, c2 = –1, and c3 = 2. 
+ 26. The equation in x1 and x2 involves the vectors u, v, and w, and it may be viewed as 
+  [] 1
+2
+.xx⎡⎤ =⎢⎥⎣⎦uv w  By definition of a matrix-vector product, x1u + x2v = w. The stated fact that  
+2u – 3v – w = 0 can be rewritten as 2u – 3v = w. So, a solution is x1 = 2, x2 = –3. 
+----- pagina 28 -----
+28 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 27. The matrix equation can be written as c1v1 + c2v2 + c3v3 + c4v4 + c5v5 = v6, where 
+  c 1 = –3, c2 = 1, c3 = 2, c4 = –1, c5 = 2, and  
+  12 3456
+3 54971 1,, , , ,58 1 2 4 1 1−−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤== ====⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ −−−⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦vv vv v v  
+ 28. Place the vectors q1, q2, and q3 into the columns of a matrix, say, Q and place the weights x1, x2, and 
+x3 into a vector, say, x. Then the vector equation becomes 
+   Q x = v, where Q = [q1   q2   q3] and 
+1
+2
+3
+x
+x
+x
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+x  
+  Note: If your answer is the equation Ax = b, you need to specify what A and b are. 
+ 29. Start with any 3×3 matrix B in echelon form that has three pivot positions. Perform a row operation 
+(a row interchange or a row replacement) that creates a matrix A that is not in echelon form. Then A 
+has the desired property. The justification is given by row reducing A to B, in order to display the 
+pivot positions. Since A has a pivot position in every row, the columns of A span R3, by Theorem 4. 
+ 30. Start with any nonzero 3×3 matrix B in echelon form that has fewer than three pivot positions. 
+Perform a row operation that creates a matrix A that is not in echelon form. Then A has the desired 
+property. Since A does not have a pivot position in every row, the columns of A do not span R3, by 
+Theorem 4. 
+ 31. A 3×2 matrix has three rows and two columns. With only two columns, A can have at most two pivot 
+columns, and so A has at most two pivot positions, which is not enough to fill all three rows. By 
+Theorem 4, the equation Ax = b cannot be consistent for all b in R3. Generally, if A is an m×n matrix 
+with m > n, then A can have at most n pivot positions, which is not enough to fill all m rows. Thus, 
+the equation Ax = b cannot be consistent for all b in R3. 
+ 32. A set of three vectors in R4  cannot span R4. Reason: the matrix A whose columns are these three 
+vectors has four rows. To have a pivot in each row, A would have to have at least four columns (one 
+for each pivot), which is not the case. Since A does not have a pivot in every row, its columns do not 
+span R4, by Theorem 4. In general, a set of n vectors in Rm cannot span Rm when n is less than m. 
+ 33. If the equation Ax = b has a unique solution, then the associated system of equations does not have 
+any free variables. If every variable is a basic variable, then each column of A is a pivot column. So 
+the reduced echelon form of A must be 
+100
+010
+001
+000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+. 
+Note: Exercises 33 and 36 are difficult in the context of this section because the focus in Section 1.4 is on 
+existence of solutions, not uniqueness. However, these exercises serve to review ideas from Section 1.2, 
+and they anticipate ideas that will come later. 
+34. Given Au1 = v1 and Au2 = v2, you are asked to show that the equation Ax = w has a solution, where  
+w = v 1 + v 2. Observe that w = Au1 + Au2 and use Theorem 5(a) with u1 and u2 in place of u and v, 
+respectively. That is, w = Au1 + Au2 = A(u1 + u2). So the vector x = u1 + u2 is a solution of w = Ax. 
+----- pagina 29 -----
+1.4  Solutions   29  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+35. Suppose that y and z satisfy Ay = z. Then 5z = 5Ay. By Theorem 5(b), 5 Ay = A(5y). So 5z = A(5y), 
+which shows that 5y is a solution of Ax = 5z. Thus, the equation Ax = 5z is consistent. 
+ 36. If the equation Ax = b has a unique solution, then the associated system of equations does not have 
+any free variables. If every variable is a basic variable, then each column of A is a pivot column. So 
+the reduced echelon form of A must be 
+1000
+0100
+0010
+0001
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+. Now it is clear that A has a pivot position in 
+each row. By Theorem 4, the columns of A span R4. 
+ 37. [M] 
+7 2 5 8 72 58 72 5 8
+5 3 4 9 0 1 1/7 3/7 2 3/7 0 1 1/7 3/7 2 3/7~~6 10 2 7 0 58/ 7 16 / 7 1/ 7 0 0 50 /11 189 /11
+792 1 5 0 1 1 3 2 3 0 0 0 0
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − − − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  or, approximately 
+72 58
+0 1.57 .429 3.29
+0 0 4.55 17.2
+00 00
+−⎡⎤
+⎢⎥ −−⎢⎥
+⎢⎥ −
+⎢⎥⎢⎥⎣⎦
+, to three significant figures. The original matrix does 
+not have a pivot in every row, so its columns do not span R4, by Theorem 4. 
+ 38. [M] 
+451 8 4 5 1 8 4 5 1 8
+374 2 01 3 / 41 3 / 4 4 01 3 / 41 3 / 4 4~~561 4 0 1 / 4 1 / 4 6 0 0 08 2 / 1 3
+9 1 10 7 0 49 / 4 49 / 4 11 0 0 0 0
+− − −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − − − − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  With pivots only in the first three rows, the original matrix has columns that do not span R4, by 
+Theorem 4. 
+ 39. [M] 
+10 7 1 4 6 10 7 1 4 6
+8461 03 0 8 / 5 2 6 / 53 4 / 5 9 / 5~7 11 5 1 8 0 61/10 43 /10 9 / 5 19 / 5
+3 1 10 12 12 0 11/10 97 /10 54 / 5 51/ 5
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− − − − − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− − − − −
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  
+10 7 1 4 6 10 7 1 4 6
+0 8/5 2 6/5 3 4/5 9/5 0 8/5 2 6/5 3 4/5 9/5~~ 0 0 193 / 8 193 / 8 49 / 16 0 0 193 / 8 193 / 8 49 / 16
+0 0 49 / 8 49 / 8 183 / 16 0 0 0 0 4715 / 386
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −− − −− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −− −−
+⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+ 
+  The original matrix has a pivot in every row, so its columns span R4, by Theorem 4. 
+ 40. [M] 
+5 11 6 7 12 5 11 6 7 12
+7 3 4 6 9 0 62 / 5 62 / 5 19 / 5 39 / 5~1 1 56 93 09 6 / 5 9 6 / 53 2 / 5 1 4 7 / 5
+3 4 7 2 7 0 53 / 5 53 / 5 11/ 5 71/ 5
+−− − −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−− − − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− − −
+⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦
+ 
+----- pagina 30 -----
+30 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+5 11 6 7 12 5 11 6 7 12
+0 6 2/5 6 2/5 1 9/5 3 9/5 0 6 2/5 6 2/5 1 9/5 3 9/5~~ 0 0 0 16 / 31 537 / 31 0 0 0 16 / 31 537 / 31
+0 0 0 65 / 62 467 / 62 0 0 0 0 1367 / 62
+−− −−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−− −−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−
+⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦
+ 
+  The original matrix has a pivot in every row, so its columns span R4, by Theorem 4. 
+ 41. [M] Examine the calculations in Exercise 39. Notice that the fourth column of the original matrix, 
+say A, is not a pivot column. Let Ao be the matrix formed by deleting column 4 of A, let B be the 
+echelon form obtained from A, and let Bo be the matrix obtained by deleting column 4 of B. The 
+sequence of row operations that reduces A to B also reduces Ao to Bo. Since Bo is in echelon form, it 
+shows that Ao has a pivot position in each row. Therefore, the columns of Ao span R4. 
+  It is possible to delete column 3 of A instead of column 4. In this case, the fourth column of A 
+becomes a pivot column of Ao, as you can see by looking at what happens when column 3 of B is 
+deleted. For later work, it is desirable to delete a nonpivot column. 
+Note: Exercises 41 and 42 help to prepare for later work on the column space of a matrix. (See Section 
+2.9 or 4.6.) The Study Guide points out that these exercises depend on the following idea, not explicitly 
+mentioned in the text: when a row operation is performed on a matrix A, the calculations for each new 
+entry depend only on the other entries in the same column. If a column of A is removed, forming a new 
+matrix, the absence of this column has no affect on any row-operation calculations for entries in the other 
+columns of A. (The absence of a column might affect the particular choice of row operations performed 
+for some purpose, but that is not being considered here.) 
+ 42. [M] Examine the calculations in Exercise 40. The third column of the original matrix, say A, is not a 
+pivot column. Let Ao be the matrix formed by deleting column 3 of A, let B be the echelon form 
+obtained from A, and let Bo be the matrix obtained by deleting column 3 of B. The sequence of row 
+operations that reduces A to B also reduces Ao to Bo. Since Bo is in echelon form, it shows that Ao has 
+a pivot position in each row. Therefore, the columns of Ao span R4. 
+  It is possible to delete column 2 of A instead of column 3. (See the remark for Exercise 41.) 
+However, only one column can be deleted. If two or more columns were deleted from A, the 
+resulting matrix would have fewer than four columns, so it would have fewer than four pivot 
+positions. In such a case, not every row could contain a pivot position, and the columns of the matrix 
+would not span R4, by Theorem 4. 
+Notes: At the end of Section 1.4, the Study Guide gives students a method for learning and mastering 
+linear algebra concepts. Specific directions are given for constructing a review sheet that connects the 
+basic definition of “span” with related ideas: equivalent descriptions, theorems, geometric interpretations, 
+special cases, algorithms, and typical computations. I require my students to prepare such a sheet that 
+reflects their choices of material connected with “span”, and I make comments on their sheets to help 
+them refine their review. Later, the students use these sheets when studying for exams. 
+The MATLAB box for Section 1.4 introduces two useful commands gauss and bgauss that 
+allow a student to speed up row reduction while still visualizing all the steps involved. The command 
+B = gauss(A,1) causes MATLAB to find the left-most nonzero entry in row 1 of matrix A, and use 
+that entry as a pivot to create zeros in the entries be low, using row replacement operations. The result is a 
+matrix that a student might write next to A as the first stage of row reduction, since there is no need to 
+write a new matrix after each separate row replacement. I use the gauss command frequently in lectures 
+to obtain an echelon form that provides data for solving various problems. For instance, if a matrix has 5 
+rows, and if row swaps are not needed, the following commands produce an echelon form of A: 
+ B = gauss(A,1),  B = gauss(B,2),  B = gauss(B,3),  B = gauss(B,4) 
+----- pagina 31 -----
+1.5  Solutions   31  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+If an interchange is required, I can insert a command such as B = swap(B,2,5) . The command 
+bgauss uses the left-most nonzero entry in a row to produce zeros above that entry. This command, 
+together with scale, can change an echelon form into reduced echelon form. 
+The use of gauss and bgauss creates an environment in which students use their computer 
+program the same way they work a problem by hand on an exam. Unless you are able to conduct your 
+exams in a computer laboratory, it may be unwise to give students too early the power to obtain reduced 
+echelon forms with one command—they may have difficulty performing row reduction by hand during an 
+exam. Instructors whose students use a graphic calculator in class each day do not face this problem. In 
+such a case, you may wish to introduce rref earlier in the course than Chapter 4 (or Section 2.8), which 
+is where I finally allow students to use that command.  
+1.5 SOLUTIONS  
+Notes: The geometry helps students understand Span{ u, v}, in preparation for later discussions of sub-
+spaces. The parametric vector form of a solution set will be used throughout the text. Figure 6 will appear 
+again in Sections 2.9 and 4.8.  
+For solving homogeneous systems, the text recommends working with the augmented matrix, al-
+though no calculations take place in the augmented column. See the Study Guide comments on Exercise 7 
+that illustrate two common student errors. 
+All students need the practice of Exercises 1–14. (Assign all odd, all even, or a mixture. If you do not 
+assign Exercise 7, be sure to assign both 8 and 10.) Otherwise, a few students may be unable later to find 
+a basis for a null space or an eigenspace. Exercises 28–36 are important. Exercises 35 and 36 help 
+students later understand how solutions of Ax = 0 encode linear dependence relations among the columns 
+of A. Exercises 37–40 are more challenging. Exercise 37 will help students avoid the standard mistake of 
+forgetting that Theorem 6 applies only to a consistent equation Ax = b. 
+ 1 . Reduce the augmented matrix to echelon form and circle the pivot positions. If a column of the 
+coefficient matrix is not a pivot column, the corresponding variable is free and the system of 
+equations has a nontrivial solution. Otherwise, the system has only the trivial solution. 
+  
+2 5 8 0 25 8 0 25 8 0
+2 7 1 0~0 1 2 9 0~0 1 2 9 0
+42 7 0 01 29 0 0 0 0 0
+−−−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−− − −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  The variable  x3 is free, so the system has a nontrivial solution. 
+ 2 . 
+123 0 12 3 0
+234 0 ~ 07 2 0
+249 0 00 3 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  There is no free variable; the system has only the trivial solution. 
+ 3 . 34 8 0 3 4 80 ~25 4 0 0 7 / 3 2 8 / 30−− − −⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ . The variable x3 is free; the system has nontrivial 
+solutions. An alert student will realize that row operations are unnecessary. With only two equations, 
+there can be at most two basic variables. One variable must be free. Refer to Exercise 29 in Section 
+1.2. 
+----- pagina 32 -----
+32 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 4 . 53 2 0 5 3 2 0 ~34 2 0 02 9 / 5 1 6 / 5 0−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ . The variable x3 is free; the system has nontrivial 
+solutions. As in Exercise 3, row operations are unnecessary. 
+ 5 . 
+2 2 40 2 2 40 1 1 20 10 10
+4 4 8 0~0 0 0 0~0 1 1 0~0 1 1 0
+0 3 30 0 3 30 0 0 00 00 00
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−−⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  
+13
+23
+0
+0
+00
+xx
+xx
++=
++=
+=
+. The variable x3 is free, x1 = –x3, and x2 = –x3.  
+  In parametric vector form, the general solution is 
+13
+23 3
+33
+1
+1
+1
+xx
+xx x
+xx
+−−⎡⎤⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥== − = −⎢⎥⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣⎦⎣ ⎦
+x . 
+ 6 . 
+1 2 30 1 2 30 12 30 10 10
+21 3 0 ~ 0 3 3 0 ~ 0 1 10 ~ 0 1 10
+1 1 00 0 3 30 00 00 00 00
+−− − −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  
+13
+23
+0
+0
+00
+xx
+xx
+−=
+−=
+=
+. The variable x3 is free, x1 = x3, and x2 = x3.  
+  In parametric vector form, the general solution is 
+13
+23 3
+33
+1
+1
+1
+xx
+xx x
+xx
+⎡⎤⎡⎤ ⎡ ⎤
+⎢⎥⎢⎥ ⎢ ⎥===⎢⎥⎢⎥ ⎢ ⎥
+⎢⎥⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦⎣⎦
+x . 
+ 7 . 1 33 7 0 1 098 0 ~01 450 01 4 50−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ .   13 4 234 980450xx xxxx+−=−+=  
+  The basic variables are x 1 and x2, with x3 and x4 free. Next, x1 = –9x3 + 8x4, and x2 = 4x3 – 5x4. The 
+general solution is 
+  
+13 4 43
+23 4 43
+34
+33 3
+44 4
+98 899 8
+45 544 5
+0 10
+00 1
+xx x x x
+xx x x x xxxx x
+xx x
+−+ −−⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥−− −⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥== = + = +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥⎢⎥ ⎢ ⎥⎢ ⎥⎢⎥⎢ ⎥ ⎢ ⎥ ⎣⎦ ⎣ ⎦⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  
+ 8 . 1385 0 1 027 0 ~01 24 0 0 1 24 0−− −−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ .   13 4 234 270240xx xxxx−−=+−=  
+  The basic variables are x 1 and x2, with x3 and x4 free. Next, x1 = 2x3 + 7x4 and x2 = –2x3 + 4x4. The 
+general solution in parametric vector form is 
+----- pagina 33 -----
+1.5  Solutions   33  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+13 4 43
+23 4 43
+34
+33 3
+44 4
+27 722 7
+24 4 22 4
+0 10
+00 1
+xx x x x
+xx x x x xxxx x
+xx x
++⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥−+ −−⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥== = + = +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥
+⎣⎦ ⎣ ⎦⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  
+ 9 . 3 6 60 1 2 20 1 220 1 200~~ ~242 0 242 0 00 2 0 00 1 0−− − −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− −−⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦    
+12
+3
+20
+0
+xx
+x
+−=
+=
+. 
+  The solution is x1 = 2x2 , x3 = 0, with x2 free. In parametric vector form, 
+  
+22
+22 2
+3
+22 2
+1
+00
+xx
+xx x
+x
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥===⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎣⎦ ⎣ ⎦⎣⎦
+x . 
+ 10. 1 40 4 0 1 40 4 0 140 4 0 100 4 0~~ ~2 8 0 80 2 8 080 0 1 000 0 1 000−− −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦   
+14
+2
+40
+0
+xx
+x
++=
+=
+. 
+  The basic variables are x 1 and x2, so x3 and x4 are free. (Note that x3 is not zero.) Also, x1 = –4x4. The 
+general solution is 
+  
+14 4
+2
+34
+33 3
+44 4
+44 00 4
+00 00 0
+0 10
+00 1
+xx x
+x xxxx x
+xx x
+−− −⎡⎤⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥== =+ = +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎣ ⎦⎣ ⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  
+ 11.
+ 
+142 0 35 0 142 0 07 0 14 0 0 05 0
+001 0 01 0 001 0 01 0 00 1 0 01 0~~000 0 14 0 000 0 14 0 00 0 0 14 0
+000 0 00 0 000 0 00 0 00 0 0 00 0
+−− − −− −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−− −
+⎢⎥ ⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  
+12 6
+36
+56
+45 0
+0
+40
+00
+xx x
+xx
+xx
+−+ =
+−=
+−=
+=
+.   
+The basic variables are x1, x3, and x5. The remaining variables are free. In particular, x4 is free (and 
+not zero as some may assume). The solution is x1 = 4x2 – 5x6, x3 = x6, x5 = 4x6, with x2, x4, and x6 free. 
+In parametric vector form, 
+----- pagina 34 -----
+34 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+12 6 62
+22 2
+36 6
+24
+44 4
+56 6
+66 6
+45 540 4 0
+001 0
+00 0 0
+000
+44 00 0
+00 0
+xx x xx
+xx x
+xx x xxxx x
+xx x
+xx x
+−−⎡⎤⎡ ⎤ ⎡ ⎤⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+== = ++ = +⎢⎥⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎢⎥⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x 6
+5
+0
+1
+10
+04
+01
+x
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
++⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+ 
+Note: The Study Guide discusses two mistakes that students often make on this type of problem. 
+ 
+ 12. 
+1 2 3 6 5 00 1 2 3 6 500 1 2 30 2 900
+0 0 0 1 4 60 0 0 0 1 400 0 0 0 1 400~~00 0 0 0 1 0 00 0 0 0 1 0 00 0 0 0 1 0
+0 0 0 0 0 00 0 0 0 0 000 0 0 00 000
+−− −− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  
+123 5
+45
+6
+23 2 9 0
+40
+0
+00
+xxx x
+xx
+x
+−+ + =
++=
+=
+=
+. 
+  The basic variables are x 1, x4, and x6; the free variables are x2, x3, and x5. The general solution is 
+x1 = 2x2 – 3x3 – 29x5, x4 = – 4x5, and x6 = 0. In parametric vector form, the solution is 
+  
+1 23 5 2 3 5
+2 22
+3 33
+2
+4 55
+5 55
+6
+2 3 29 2 3 29 2
+00 1
+00 0
+40 0 4 0
+00 0
+00 0 0 0
+x xx x x x x
+x xx
+x xx xx xx
+x xx
+x
+−− − −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥== = + + =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎢⎥ ⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦⎣⎦
+x 35
+32 9
+00
+10
+04
+01
+00
+xx
+−−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥++ ⎢ ⎥⎢ ⎥ −⎢ ⎥⎢ ⎥
+⎥ ⎢⎥ ⎢ ⎥
+⎥ ⎢⎥ ⎢ ⎥
+⎥ ⎢⎥ ⎢ ⎥⎣ ⎦⎣ ⎦
+ 
+13. To write the general solution in parametric vector form, pull out the constant terms that do not 
+involve the free variable: 
+  
+13 3
+23 3 3 3
+33 3
+54 5 4 5 4
+27 2 7 2 7 .
+00 1
+xx x
+xx x x x
+xx x
++⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥= =−− =− +− =− + − = +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦⎣⎦⎣ ⎦ ⎣ ⎦
+↑↑
+xp q
+pq
+ 
+  Geometrically, the solution set is the line through 
+5
+2
+0
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ in the direction of 
+4
+7
+1
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+----- pagina 35 -----
+1.5  Solutions   35  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+14. To write the general solution in parametric vector form, pull out the constant terms that do not 
+involve the free variable: 
+  
+14 4
+24 4
+44
+34 4
+44 4
+55 00 5
+32 2 33 2
+25 5 22 5
+00 1
+xx x
+xx x xxxx x
+xx x
+⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−− −⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥= = =+ =+ = +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥+
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎣⎦ ⎣⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+↑↑
+xp q
+pq
+ 
+  The solution set is the line through p in the direction of q. 
+15. Solve x1 + 5x2 – 3x3 = –2 for the basic variable: x1 = –2 – 5x2 + 3x3, with x2 and x3 free. In vector 
+form, the solution is 
+  
+12 3 2 3
+22 2 2 3
+33 3
+25 3 2 5 3 2 5 3
+00 0 1 0
+00 0 0 1
+xx x x x
+xx x x x
+xx x
+−− + − − − −⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥== =+ + =+ +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  
+  The solution of x 1 + 5x2 – 3x3= 0 is x1 = – 5x2 + 3x3, with x2 and x3 free. In vector form, 
+  
+12 32 3
+22 2 2 3
+33 3
+53 5 3 5 3
+01 0
+00 1
+xx xx x
+xx x x x
+xx x
+−+ − −⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥== = + = +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥⎣⎦ ⎣ ⎦⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  = x2u + x3v 
+  The solution set of the homogeneous equation is the plane through the origin in R3 spanned by 
+u and v. The solution set of the nonhomogeneous equation is parallel to this plane and passes through 
+the point p = 
+2
+0
+0
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+. 
+ 
+16. Solve x1 – 2x2 + 3x3 = 4 for the basic variable: x1 = 4 + 2x2 – 3x3, with x2 and x3 free. In vector form, 
+the solution is 
+  
+12 3 2 3
+22 2 2 3
+33 3
+42 3 4 2 3 4 2 3
+00 0 1 0
+00 0 0 1
+xx x x x
+xx x x x
+xx x
++− − −⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥== = + + = + +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  
+  The solution of x 1 – 2x2 + 3x3 = 0 is x1 = 2x2 – 3x3, with x2 and x3 free. In vector form, 
+  
+12 32 3
+22 2 2 3
+33 3
+23 2 3 2 3
+01 0
+00 1
+xx xx x
+xx x x x
+xx x
+−− −⎡⎤⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥== = + = +⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  = x2u + x3v 
+  The solution set of the homogeneous equation is the plane through the origin in R3 spanned by u and 
+v. The solution set of the nonhomogeneous equation is parallel to this plane and passes through the 
+point p = 
+4
+0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+. 
+----- pagina 36 -----
+36 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+17. Row reduce the augmented matrix for the system:   
+224 8 2248 2248 1 1 24 1 0 18
+4481 6 ~ 000 0 ~ 033 1 2 ~ 0 1 14 ~ 0 1 14
+0331 2 033 1 2 000 0 0 0 00 0 0 00
+⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−−−− −− − −⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− −−⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+   13
+23
+8
+4
+00
+xx
+xx
++=
++= −
+=
+.   Thus x1 = 8 – x3, x2 =  –4 – x3, and x3 is free. In parametric vector form,  
+  
+13 3
+23 3 3
+33 3
+88 8 1
+44 4 1
+00 1
+xx x
+xx x x
+xx x
+−− −⎡⎤⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥= =−− =− +− =− + −⎢⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣ ⎦
+x  
+  The solution set is the line through 
+8
+4
+0
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+, parallel to the line that is the solution set of the 
+homogeneous system in Exercise 5. 
+   
+18. Row reduce the augmented matrix for the system: 
+  
+1 235 1235 1 235 1 01 7
+21 31 3 ~ 0 3 3 3 ~ 0 1 1 1 ~ 0 1 1 1
+1 108 0333 0 000 0 000
+−− − −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥− − −− −−⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  13
+23
+7
+1
+00
+xx
+xx
+−=
+−= −
+=
+. Thus x1 = 7 + x3, x2 =  –1 + x3, and x3 is free. In parametric vector form,  
+  
+13 3
+23 3 3
+33 3
+77 7 1
+11 1 1
+00 1
+xx x
+xx x x
+xx x
++⎡⎤⎡ ⎤ ⎡⎤ ⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥== − + = − += − +⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥ ⎢⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦⎣⎦⎣ ⎦ ⎣⎦
+x  
+  The solution set is the line through 
+7
+1
+0
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+, parallel to the line that is the solution set of the 
+homogeneous system in Exercise 6. 
+19. The line through a parallel to b can be written as x = a + t b, where t represents a parameter: 
+  x  = 1
+2
+25
+03
+x tx −−⎡⎤⎡ ⎤ ⎡ ⎤=+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎣⎦ , or 12 253xtxt =− −⎧⎨ =⎩  
+20. The line through a parallel to b can be written as x = a + tb, where t represents a parameter:  
+  x  = 1
+2
+37
+26
+x tx −⎡⎤ ⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥ ⎢⎥−⎣⎦ ⎣⎦⎣⎦ , or 12 3726xtxt =−⎧⎨ =− +⎩  
+----- pagina 37 -----
+1.5  Solutions   37  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+21. The line through p and q is parallel to q – p. So, given  34 and31⎡ ⎤⎡ ⎤==⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦pq , form 
+43 1
+1( 3 ) 4
+−⎡⎤ ⎡ ⎤−= = ⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦qp , and write the line as x = p + t(q – p) = 3134 t⎡ ⎤⎡ ⎤+⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦ . 
+22. The line through p and q is parallel to q – p. So, given 30 and 23−⎡ ⎤⎡ ⎤==⎢ ⎥⎢ ⎥ −⎣ ⎦⎣ ⎦pq , form 
+0( 3 ) 3
+32 5
+−−⎡⎤ ⎡ ⎤−= = ⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦qp , and write the line as x = p + t(q – p) = 3325 t−⎡ ⎤⎡ ⎤+⎢ ⎥⎢ ⎥ −⎣ ⎦⎣ ⎦  
+Note: Exercises 21 and 22 prepare for Exercise 26 in Section 1.8. 
+23. a. True. See the first paragraph of the subsection titled Homogeneous Linear Systems. 
+b. False. The equation Ax = 0 gives an implicit description of its solution set. See the subsection 
+entitled Parametric Vector Form. 
+c. False. The equation Ax = 0 always has the trivial solution. The box before Example 1 uses the 
+word nontrivial instead of trivial. 
+d. False. The line goes through p parallel to v. See the paragraph that precedes Fig. 5. 
+e. False. The solution set could be empty! The statement (from Theorem 6) is true only when there 
+exists a vector p such that Ap = b. 
+24. a . False. The trivial solution is always a solution to a homogeneous system of linear equations. 
+b. False. A nontrivial solution of Ax = 0 is any nonzero x that satisfies the equation. See the 
+ sentence before Example 2. 
+c. True. See the paragraph following Example 3. 
+d. True. If the zero vector is a solution, then b = Ax = A0 = 0. 
+e. True. See Theorem 6. 
+25. Suppose p satisfies Ax = b. Then Ap = b. Theorem 6 says that the solution set of Ax = b equals the 
+set S ={w : w = p + vh for some vh such that Avh = 0}. There are two things to prove: (a) every vector 
+in S satisfies Ax = b, (b) every vector that satisfies Ax = b is in S. 
+a. Let w have the form w = p + vh, where Avh = 0. Then 
+   A w = A(p + vh) = Ap + Avh. By Theorem 5(a) in section 1.4 
+        =  b + 0 = b 
+  So every vector of the form p + vh satisfies Ax = b. 
+b. Now let w be any solution of Ax = b, and set vh = w − p. Then 
+   A vh = A(w – p) = Aw – Ap = b – b = 0 
+  So vh satisfies Ax = 0. Thus every solution of Ax = b has the form w = p + vh. 
+26. When A is the 3×3 zero matrix, every x in R3 satisfies Ax = 0. So the solution set is all vectors in R3. 
+27. ( Geometric argument using Theorem 6.) Since Ax = b is consistent, its solution set is obtained by 
+translating the solution set of Ax = 0, by Theorem 6. So the solution set of Ax = b is a single vector if 
+and only if the solution set of Ax = 0 is a single vector, and that happens if and only if Ax = 0 has 
+only the trivial solution. 
+----- pagina 38 -----
+38 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  ( Proof using free variables.) If Ax = b has a solution, then the solution is unique if and only if there 
+are no free variables in the corresponding system of equations, that is, if and only if every column of 
+A is a pivot column. This happens if and only if the equation Ax = 0 has only the trivial solution. 
+28. a. When A is a 3×3 matrix with three pivot positions, the equation Ax = 0 has no free variables and 
+hence has no nontrivial solution.  
+b. With three pivot positions, A has a pivot position in each of its three rows. By Theorem 4 in 
+Section 1.4, the equation Ax = b has a solution for every possible b. The term "possible" in the 
+exercise means that the only vectors considered in this case are those in R3, because A has three 
+rows. 
+29. a. When A is a 4×4 matrix with three pivot positions, the equation Ax = 0 has three basic variables  
+  andone free variable.  So Ax = 0 has a nontrivial solution.   
+b. With only three pivot positions, A cannot have a pivot in every row, so by Theorem 4 in Section 
+1.4, the equation Ax = b cannot have a solution for every possible b (in R4). 
+30. a. When A is a 2×5 matrix with two pivot positions, the equation Ax = 0 has two basic variables and 
+  three free variables. So Ax = 0 has a nontrivial solution. 
+b. With two pivot positions and only two rows, A has a pivot position in every row. By Theorem 4 
+in Section 1.4, the equation Ax = b has a solution for every possible b (in R2). 
+31. a. When A is a 3×2 matrix with two pivot positions, each column is a pivot column. So the equation 
+  A x = 0 has no free variables and hence no nontrivial solution. 
+b. With two pivot positions and three rows, A cannot have a pivot in every row. So the equation Ax 
+= b cannot have a solution for every possible b (in R3), by Theorem 4 in Section 1.4. 
+32. No. If the solution set of Ax = b contained the origin, then 0 would satisfy A0= b, which is not true 
+since b is not the zero vector. 
+33. Look for A = [a1   a2   a3] such that 1· a1 + 1· a2 + 1· a3 = 0. That is, construct A so that each row sum 
+(the sum of the entries in a row) is zero. 
+34. Look for A = [a1   a2   a3] such that 2· a1 – 1· a2 + 1· a3 = 0. That is, construct A so that subtracting the 
+third column from the second column is twice the first column. 
+35. Look at 12
+13
+72 1
+26
+xx
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ +⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+ and notice that the second column is 3 times the first. So suitable values 
+for x1 and x2 would be 3 and –1 respectively. (Another pair would be 6 and –2, etc.) Thus 31⎡ ⎤= ⎢ ⎥−⎣ ⎦x
+satisfies Ax = 0.  
+36. Inspect how the columns a1 and a2 of A are related. The second column is –2/3 times the first. Put 
+another way, 2a1 + 3a2 = 0. Thus 23⎡⎤⎢⎥⎣⎦  satisfies Ax = 0. 
+Note: Exercises 35 and 36 set the stage for the concept of linear dependence.
+----- pagina 39 -----
+1.6  Solutions   39  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+37. Since the solution set of Ax = 0 contains the point (4,1), the vector x = (4,1) satisfies Ax = 0. Write 
+this equation as a vector equation, using a1 and a2 for the columns of A: 
+   4 · a1 + 1· a2 = 0 
+  Then a2 = –4a1. So choose any nonzero vector for the first column of A and multiply that column by 
+– 4 to get the second column of A. For example, set 1414A −⎡ ⎤= ⎢ ⎥−⎣ ⎦ .  
+  Finally, the only way the solution set of Ax = b could not be parallel to the line through (1,4) and the 
+origin is for the solution set of Ax = b to be empty. This does not contradict Theorem 6, because that 
+theorem applies only to the case when the equation Ax = b has a nonempty solution set. For b, take 
+any vector that is not a multiple of the columns of A. 
+ 
+Note: In the Study Guide, a “Checkpoint” for Section 1.5 will help students with Exercise 37. 
+38. If w satisfies Ax = 0, then Aw = 0. For any scalar c, Theorem 5(b) in Section 1.4 shows that 
+A(cw)=cAw = c0 = 0. 
+39. Suppose Av = 0 and Aw = 0. Then, since A(v + w) = Av + Aw by Theorem 5(a) in Section 1.4, 
+   A (v + w) = Av + Aw = 0 + 0 = 0.  
+  Now, let c and d be scalars. Using both parts of Theorem 5,  
+   A (cv + dw) = A(cv) + A(dw) = cAv + dAw = c0 + d0 = 0. 
+40. No. If Ax =  b has no solution, then A cannot have a pivot in each row. Since A is 3×3, it has at most 
+two pivot positions. So the equation Ax = y for any y has at most two basic variables and at least one 
+free variable. Thus, the solution set for Ax = y is either empty or has infinitely many elements. 
+Note: The MATLAB box in the Study Guide introduces the zeros command, in order to augment a 
+matrix with a column of zeros. 
+1.6 SOLUTIONS 
+ 1 . Fill in the exchange table one column at a time. The entries in a column describe where a sector's 
+output goes. The decimal fractions in each column sum to 1.  
+ 
+Distribution of 
+Output From:
+Goods Services Purchased by:
+output input
+.2 .7 Goods
+.8 .3 Services
+↓↓
+→
+→
+ 
+  Denote the total annual output (in dollars) of the sectors by pG and pS. From the first row, the total 
+input to the Goods sector is .2 pG + .7 pS. The Goods sector must pay for that. So the equilibrium 
+prices must satisfy 
+   income expenses=. 2 . 7GG Spp p +  
+----- pagina 40 -----
+40 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  From the second row, the input (that is, the expense) of the Services sector is .8 pG + .3 pS.  
+The equilibrium equation for the Services sector is 
+   income expenses=. 8 . 3SG Spp p +  
+  Move all variables to the left side and combine like terms: 
+  .8 .7 0.8 .7 0GSGSpppp −=−+ =  
+  Row reduce the augmented matrix: 
+.8 .7 0 .8 .7 0 1 .875 0~~.8 .7 0 0 0 0 0 0 0−− −⎡⎤ ⎡ ⎤ ⎡⎤⎢⎥ ⎢ ⎥ ⎢⎥−⎣⎦ ⎣ ⎦ ⎣⎦  
+  The general solution is pG = .875 pS, with pS free. One equilibrium solution is pS = 1000 and pG = 
+875.  If one uses fractions instead of decimals in the calculations, the general solution would be 
+written pG = (7/8) pS, and a natural choice of prices might be pS = 80 and pG = 70. Only the ratio of 
+the prices is important: pG = .875 pS. The economic equilibrium is unaffected by a proportional 
+change in prices. 
+ 2 . Take some other value for pS, say 200 million dollars. The other equilibrium prices are then  
+pC = 188 million, pE = 170 million. Any constant nonnegative multiple of these prices is a set of 
+equilibrium prices, because the solution set of the system of equations consists of all multiples of one 
+vector. Changing the unit of measurement to another currency such as Japanese yen has the same 
+effect as multiplying all equilibrium prices by a constant. The ratios of the prices remain the same, 
+no matter what currency is used. 
+ 3. a. Fill in the exchange table one column at a time. The entries in a column describe where a sector’s 
+   output goes. The decimal fractions in each column sum to 1. 
+ 
+  
+Distribution of Output From  :
+Purchased by :Fuels and Power Manufacturing Services
+output input
+.10 .10 .20 Fuels and Power
+.80 .10 .40 Manufacturing
+.10 .80 .40 Services
+↓↓ ↓
+→
+→
+→
+ 
+ 
+   
+b. Denote the total annual output (in dollars) of the sectors by pF, pM, and pS. From the first row of 
+the table, the total input to the Fuels & Power sector is .1pF + .1pM + .2pS. So the equilibrium 
+prices must satisfy 
+   income expenses=. 1 . 1 . 2FF M Spp p p ++  
+  From the second and third rows of the table, the income/expense requirements for the 
+Manufacturing sector and the Services sector are, respectively, 
+   .8 .1 .4.1 .8 .4MF MSSFMSpp ppppp p=++=+ +  
+----- pagina 41 -----
+1.6  Solutions   41  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Move all variables to the left side and combine like terms: 
+  
+.9 – .1 – .2 0
+–.8 .9 – .4 0
+–.1 – .8 .6 0
+FM S
+FMS
+FMS
+pp p
+pp p
+pp p
+=
++=
++=
+   
+.9 .1 .2 0
+.8 .9 .4 0
+.1 .8 .6 0
+−−⎡ ⎤
+⎢ ⎥−−⎢ ⎥
+⎢ ⎥−−⎣ ⎦
+ 
+ 
+c. [M] You can obtain the reduced echelon form with a matrix program.   
+ 
+.9 .1 .2 0 1 0 .301 0 The number of decimal
+.8 .9 .4 0 ~ 0 1 .712 0 places displayed is
+.1 .8 .6 0 0 0 0 0 somewhat arbitrary.
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+  The general solution is pF = .301 pS, pM = .712 pS, with pS free. If pS is assigned the value of  100, 
+then pF = 30.1 and pM = 71.2. Note that only the ratios of the prices are determined. This makes 
+sense, for if they were converted from, say, dollars to yen or Euros, the inputs and outputs of each 
+sector would still balance. The economic equilibrium is not affected by a proportional change in 
+prices. 
+ 
+ 4. a. Fill in the exchange table one column at a tim e. The entries in each column must sum to 1. 
+  
+Distribution of Output From  :
+Purchased by :Mining Lumber Energy Transportation
+output input
+.30 .15 .20 .20 Mining
+.10 .15 .15 .10 Lumber
+.60 .50 .45 .50 Energy
+0 .20 .20 .20 Transportation
+↓↓↓ ↓
+→
+→
+→
+→
+ 
+b. [M] Denote the total annual output of the sectors by pM, pL, pE, and pT, respectively. From the first 
+row of the table, the total input to Agriculture is .30pM + .15pL + .20pE + .20 pT. So the 
+equilibrium prices must satisfy 
+  income expenses.30  .15  .20  .20MM L E Tpp p p p= ++ +  
+  From the second, third, and fourth rows of the table, the equilibrium equations are 
+   
+T
+.10 .15 .15 .10
+.60 .50 .45 .50
+.20 .20 .20
+LM L E T
+EM L E T
+TL E
+pp p p p
+pp p p p
+pp p p
+=+ + +
+=+ + +
+=+ +
+ 
+  Move all variables to the left side and combine like terms: 
+   
+.70 .15 .20 .20 0
+.10 .85 .15 .10 0
+.60 .50 .55 .50 0
+.20 .20 .80 0
+MLE T
+ML E T
+ML E T
+LET
+pp p p
+pp p p
+pp p p
+ppp
+−−−=
+−+ −−=
+−− +−=
+− −+=
+ 
+  Reduce the augmented matrix to reduced echelon form: 
+----- pagina 42 -----
+42 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+.70 .15 .20 .20 0 1 0 0 1.37 0
+.10 .85 .15 .10 0 0 1 0 .84 0 ~.60 .50 .55 .50 0 0 0 1 3.16 0
+0 .20 .20 .80 0 0 0 0 0 0
+−−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− − −
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  Solve for the basic variables in terms of the free variable pT, and obtain pM = 1.37pT, pL = .84pT, 
+and pE = 3.16pT. The data probably justifies at most two significant figures, so take pT = 100 and 
+round off the other prices to pM = 137, pL = 84, and pE = 316. 
+ 5 . a. Fill in the exchange table one column at a tim e. The entries in each column must sum to 1. 
+Distribution of Output From  :
+Purchased by :Agriculture Manufacturing Services Transportation
+output input
+.20 .35 .10 .20 Agriculture
+.20 .10 .20 .30 Manufacturing
+.30 .35 .50 .20 Services
+.30 .20 .20 .30 Transportation
+↓↓ ↓ ↓
+→
+→
+→
+→
+ 
+ b. [M] Denote the total annual output of the sectors by pA, pM, pS, and pT, respectively. The 
+equilibrium equations are 
+   
+T
+.20 .35 .10 .20
+.20 .10 .20 .30
+.30 .35 .50 .20
+.30 .20 .20 .30
+A AM ST
+MA M S T
+SA M S T
+TA M S
+pp p p p
+pp p p p
+pp p p p
+pp p p p
+=+ + +
+=+ + +
+=+ + +
+=+ + +
+ 
+  Move all variables to the left side and combine like terms: 
+   
+.80 .35 .10 .20 0
+.20 .90 .20 .30 0
+.30 .35 .50 .20 0
+.30 .20 .20 .70 0
+AM ST
+AM ST
+AM ST
+AM ST
+pp pp
+pp pp
+pp pp
+pp pp
+−− − =
+−+ −− =
+−− +− =
+−− −+ =
+ 
+  Reduce the augmented matrix to reduced echelon form: 
+  
+.80 .35 .10 .20 0 1 0 0 .799 0
+.20 .90 .20 .30 0 0 1 0 .836 0 ~.30 .35 .50 .20 0 0 0 1 1.465 0
+.30 .20 .20 .70 0 0 0 0 0 0
+−−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− − −
+⎢⎥ ⎢ ⎥−−−⎣⎦ ⎣ ⎦
+ 
+  Solve for the basic variables in terms of the free variable pT, and obtain pA = .799pT, pM = .836pT, 
+and pS = 1.465pT. Take pT = $10.00 and round off the other prices to pA = $7.99,  pM = $8.36, and  
+pS = $14.65 per unit. 
+ c. Construct the new exchange table one column at a time. The entries in each column must sum to 1. 
+----- pagina 43 -----
+1.6  Solutions   43  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Distribution of Output From  :
+Purchased by :Agriculture Manufacturing Services Transportation
+output input
+.20 .35 .10 .20 Agriculture
+.10 .10 .20 .30 Manufacturing
+.40 .35 .50 .20 Services
+.30 .20 .20 .30 Transportation
+↓↓ ↓ ↓
+→
+→
+→
+→
+ 
+ 
+d. [M] The new equilibrium equations are 
+   
+T
+.20 .35 .10 .20
+.10 .10 .20 .30
+.40 .35 .50 .20
+.30 .20 .20 .30
+A AM ST
+MA M S T
+SA M S T
+TA M S
+pp p p p
+pp p p p
+pp p p p
+pp p p p
+=+ + +
+=+ + +
+=+ + +
+=+ + +
+ 
+  Move all variables to the left side and combine like terms: 
+   
+.80 .35 .10 .20 0
+.10 .90 .20 .30 0
+.40 .35 .50 .20 0
+.30 .20 .20 .70 0
+AM ST
+AM ST
+AM ST
+AM ST
+pp pp
+pp pp
+pp pp
+pp pp
+−− − =
+−+ −− =
+−− +− =
+−− −+ =
+ 
+  Reduce the augmented matrix to reduced echelon form: 
+  
+.80 .35 .10 .20 0 1 0 0 .781 0
+.10 .90 .20 .30 0 0 1 0 .767 0 ~.40 .35 .50 .20 0 0 0 1 1.562 0
+. 3 0 . 2 0 . 2 0 . 7 00 000 00
+−−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− − −
+⎢⎥ ⎢ ⎥−−−⎣⎦ ⎣ ⎦
+ 
+  Solve for the basic variables in terms of the free variable pT, and obtain pA = .781pT, pM = .767pT, 
+and  
+  pS = 1.562pT. Take pT = $10.00 and round off the other prices to pA = $7.81, pM = $7.67, and 
+   pS = $15.62 per unit.  The campaign has caused unit prices for the Agriculture and 
+Manufacturing sectirs to go down slightly, while increasing the unit price for the Services sector 
+to increase by $.10 per unit.  The campaign has benefited the Services sector the most. 
+ 
+ 6 . The following vectors list the numbers of atoms of aluminum (Al), oxygen (O), and carbon (C): 
+   23 2
+20 1 0 aluminum
+A l O: 3, C : 0, A l : 0, C O: 2 oxygen
+01 0 1 carbon
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The coefficients in the equation x1⋅Al2O3  +  x2⋅C   →    x3⋅Al  +  x4⋅CO2 satisfy 
+----- pagina 44 -----
+44 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1234
+2010
+3002
+0101
+xx xx
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥+=+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  Move the right terms to the left side (changing the sign of each entry in the third and fourth vectors) 
+and row reduce the augmented matrix of the homogeneous system: 
+   
+20 1 00 10 1 / 2 00 10 1 / 2 00
+30 0 20 ~ 30 0 20 ~ 00 3 / 2 20
+01 0 1 0 01 0 1 0 01 0 1 0
+−− −⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ −−−⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ −−−⎣ ⎦ ⎣⎦ ⎣⎦
+ 
+   
+1 01 / 20 0 1 01 / 2 0 0 1 0 02 / 3 0
+~0 1 0 1 0~0 1 0 1 0~0 1 0 1 0
+00 3 / 2 20 00 1 4 / 30 001 4 / 30
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The general solution is x1 = (2/3)x4, x2 = x4, x3 = (4/3)x4, with x4 free. Take x4 = 3. Then x1 = 2, 
+x2 = 3, and x3 = 4. The balanced equation is 
+   2Al 2O3  +  3C   →    4Al  +  3CO2 
+ 7 . The following vectors list the numbers of atoms of sodium (Na), hydrogen (H), carbon (C), and 
+oxygen (O): 
+   33 6 5 7 3 6 5 7 2 2
+1 0 3 0 0 sodium
+1 8 5 2 0 hydrogenNaHCO : , H C H O : , Na C H O : , H O : , CO :1 6 6 0 1 carbon
+3 7 7 1 2 oxygen
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The order of the various atoms is not important. The list here was selected by writing the elements in 
+the order in which they first appear in the chemical equation, reading left to right: 
+   x 1 · NaHCO3  + x2 · H3C6H5O7   →   x3 · Na3C6H5O7  +  x4 · H2O  +  x5 · CO2. 
+  The coefficients x1, …, x5 satisfy the vector equation 
+   1 2345
+10300
+18520
+16601
+37712
+xx x x x
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥+=++⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  Move all the terms to the left side (changing the sign of each entry in the third, fourth, and fifth 
+vectors) and reduce the augmented matrix: 
+   
+1 0 3 0 0 0 1000 1 0
+18 5 2 00 0 1 0 0 1 / 30 ~16 6 0 10 0 0 1 0 1 / 30
+3 7 7 1 2 0 0001 1 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦
+ 
+  The general solution is x1 = x5, x2 = (1/3)x5, x3 = (1/3)x5, x4 = x5, and x5 is free. Take x5 = 3. Then x1 = 
+x4 = 3, and x2 = x3 = 1. The balanced equation is 
+   3NaHCO 3  + H3C6H5O7   →   Na3C6H5O7  +  3H2O  +  3CO2 
+----- pagina 45 -----
+1.6  Solutions   45  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 8 . The following vectors list the numbers of atoms of hydrogen (H), oxygen (O), calcium (Ca), and 
+carbon (C): 
+   33 2 2
+30 2 0 0
+13 1 0 2
+H O: ,   CaCO : ,   H : ,   Ca: ,   CO : 
+01 0 1 0
+01 0 0 1
+hydrogen
+oxygenO calcium
+carbon
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The coefficients in the chemical equation 
+   x 1⋅H3O +  x2⋅CaCO3  →    x3⋅H2O +  x4⋅Ca  +  x5⋅CO2 
+  satisfy the vector equation 
+  12 345
+3020 0
+13 10 2
+01010
+0100 1
+xx xx x
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥+= + +⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  Move the terms to the left side (changing the sign of each entry in the last three vectors) and reduce 
+the augmented matrix: 
+  
+3 0 2 0 0 0 1000 2 0
+1 3 1 0 2 0 0100 1 0 ~0 1 0 1 0 0 0010 30
+01 0 0 10 0 0 0 1 1 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  The general solution is x1 = 2x5, x2 = x5, x3 = 3x5, x4 = x5, and x5 is free.  Take x5 = 1. Then x1 = 2, and 
+x2 = x4 = 1, and x3 = 3. The balanced equation is 
+   2H 3O + CaCO3  →    3H2O +  Ca  +  CO2 
+ 9.The following vectors list the numbers of atoms of boron (B), sulfur (S), hydrogen (H), and oxygen 
+(O): 
+   23 2 3 3 2
+2 0 1 0 boron
+30 0 1 s u l f u rBS: , HO : , HB O : , HS :0 2 3 2 hydrogen
+01 3 0 o x y g e n
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The coefficients in the equation x1⋅B2S3 + x2⋅H2O  →   x3⋅H3BO3 + x4⋅H2S satisfy 
+   1234
+2010
+3001
+0232
+0130
+xx xx
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥+=+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  Move the terms to the left side (changing the sign of each entry in the third and fourth vectors) and 
+row reduce the augmented matrix of the homogeneous system: 
+  
+20 1 00 100 1 / 30
+30 0 10 010 2 0 ~02 3 20 001 2 / 30
+01 3 00 000 0 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −− −
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+----- pagina 46 -----
+46 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The general solution is x1 = (1/3) x4, x2 = 2x4, x3 = (2/3) x4, with x4 free. Take x4 = 3. Then x1 = 1,  
+x2 = 6, and x3 = 2. The balanced equation is 
+   B 2S3  +  6H2O   →    2H3BO3 + 3H2S 
+10.  [M] Set up vectors that list the atoms per molecule. Using the order lead (Pb), nitrogen (N), 
+chromium (Cr), manganese (Mn), and oxygen (O), the vector equation to be solved is 
+   123456
+103000 l e a d
+6 0 0 0 0 1 nitrogen
+010200 c h r o m i u m
+020010 m a n g a n e s e
+084321 o x y g e n
+xxxxxx
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥+=+++
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The general solution is x1 = (1/6)x6, x2 = (22/45)x6, x3 = (1/18)x6, x4 = (11/45)x6, x5 = (44/45)x6, and x6 
+is free. Take x6 = 90. Then x1 = 15, x2 = 44, x3 = 5, x4 = 22, and x5 = 88. The balanced equation is 
+   15PbN 6 + 44CrMn2O8   →    5Pb3O4 + 22Cr2O3 + 88MnO2 + 90NO 
+ 11.  [M] Set up vectors that list the atoms per molecule. Using the order manganese (Mn), sulfur (S), 
+arsenic (As), chromium (Cr), oxygen (O), and hydrogen (H), the vector equation to be solved is 
+  12 3 456 7
+100 1 000
+101 0 030
+020 0 100
+01 00 00 1 0
+03 54401 21
+002 1 302
+xx x x xx x
+⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥++ = + ++⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦
+manganese
+sulfur
+arsenic
+chromium
+oxygen
+hydrogen
+⎥
+⎥
+⎥
+⎥⎥
+  
+  In rational format, the general solution is x1 = (16/327)x7, x2 = (13/327)x7, x3 = (374/327)x7, 
+x4 = (16/327)x7, x5 = (26/327)x7, x6 = (130/327)x7, and x7 is free. Take x7 = 327 to make the other 
+variables whole numbers. The balanced equation is 
+  16MnS + 13As 2Cr10O35 + 374H2SO4  →   16HMnO4 + 26AsH3 + 130CrS3O12 + 327H2O 
+  Note that some students may use decimal calculation and simply "round off" the fractions that relate 
+x1, ..., x6 to x7. The equations they construct may balance most of the elements but miss an atom or 
+two. Here is a solution submitted by two of my students: 
+  5MnS + 4As 2Cr10O35 + 115H2SO4  →   5HMnO4 + 8AsH3 + 40CrS3O12 + 100H2O 
+  Everything balances except the hydrogen. The right side is short 1 hydrogen atom. Perhaps the 
+students thought that it escaped! 
+ 
+12.   Write the equations for each intersection: 
+   14 2
+23
+34
+Intersection Flow in Flow out
+A
+B1 00
+C8 0
+xx x
+xx
+xx
++=
+=+
++=
+ 
+Rearrange the equations: 
+----- pagina 47 -----
+1.6  Solutions   47  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+12 4
+23
+34
+0
+100
+80
+xx x
+xx
+xx
+−+ =
+−=
+−= −
+ 
+  Reduce the augmented matrix: 
+  
+1 1 01 0 1 0 002 0
+0 1 1 0 100 ~ ~ 0 1 0 1 20
+0 0118 0 0 0 118 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ − ⋅⋅⋅ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −− −−⎣⎦ ⎣ ⎦
+ 
+  The general solution (written in the style of Section 1.2) is 
+   
+1
+24
+34
+4
+20
+20
+ = 80 + 
+ is free
+x
+xx
+xx
+x
+=⎧
+⎪ =+⎪⎨ −⎪
+⎪⎩
+  
+Since x3 cannot be negative, the minimum value of x4 is 80.  
+ 
+ 13. Write the equations for each intersection: 
+   
+21
+35 24
+65
+46
+13
+Intersection Flow in Flow out
+A3 08 0
+B
+C 100 40
+D4 09 0
+E6 0 2 0
+xx
+xx xx
+xx
+xx
+xx
++=+
++= +
++=+
++= +
++=+
+ 
+  Rearrange the equations: 
+   
+12
+2345
+56
+46
+13
+50
+0
+60
+50
+40
+xx
+xxxx
+xx
+xx
+xx
+−= −
+−+− =
+−=
+−=
+−= −
+ 
+  Reduce the augmented matrix: 
+   
+1100005 0 1 01 0 004 0
+01111 0 0 0 11 0 001 0
+~~0000116 0 0 00 1 015 0
+000 1015 0 0 00 0 116 0
+1010004 0 0 00 0 00 0
+−− − −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⋅⋅⋅−−
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+    
+----- pagina 48 -----
+48 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+a. The general solution is 
+13
+23
+3
+46
+56
+6
+40
+10
+ is free
+50
+60
+ is free
+xx
+xx
+x
+xx
+xx
+x
+=−⎧
+⎪ =+⎪
+⎪⎪⎨ =+⎪
+⎪ =+⎪
+⎪⎩
+   
+b. To find minimum flows, note that since x1 cannot be negative, x3 > 40. This implies that 
+x2 > 50. Also, since x6 cannot be negative, x4 > 50 and x5 > 60. The minimum flows are 
+x2 = 50, x3 = 40, x4 = 50, x5 = 60 (when x1 = 0 and x6 = 0). 
+ 
+14. Write the equations for each intersection: 
+   
+15
+12 4
+32
+45 3
+Intersection Flow in Flow out
+A8 0
+B 100
+C9 0
+D9 0
+xx
+xx x
+xx
+xx x
+=+
+++ =
+=+
++= +
+ 
+  Rearrange the equations: 
+   
+15
+12 4
+23
+345
+80
+100
+90
+90
+xx
+xx x
+xx
+xxx
++=
++−= −
+−= −
+−−= −
+ 
+  Reduce the augmented matrix: 
+   
+1 0001 8 0 1 0 001 8 0
+1 1 0 1 0 100 0 1 0 1 1 180 ~~0 1100 9 0 0 0 111 9 0
+0 0111 9 0 0 0 000 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− − − −⎢⎥ ⎢ ⎥⋅⋅⋅⎢⎥ ⎢ ⎥−− − − −
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+ 
+    
+a. The general solution is 
+15
+245
+34 5
+4
+5
+80
+180
+ = 90
+ is free
+ is free
+xx
+xxx
+xxx
+x
+x
+=−⎧
+⎪ =+−⎪⎪ +−⎨
+⎪
+⎪
+⎪⎩
+   
+b. If x5 = 0, then the general solution is 
+1
+24
+34
+4
+80
+180
+= 90
+ is free
+x
+xx
+xx
+x
+=⎧
+⎪ =−⎪⎨ −⎪
+⎪⎩
+    
+c.  Since x2 cannot be negative, the minimum value of x4 when x5 = 0 is 180.  
+  
+----- pagina 49 -----
+1.6  Solutions   49  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+15. Write the equations for each intersection. 
+   
+61
+12
+23
+34
+45
+56
+Intersection Flow in Flow out
+A6 0
+B7 0
+C 100
+D9 0
+E8 0
+F8 0
+xx
+xx
+xx
+xx
+xx
+xx
++=
+=+
++=
+=+
++=
+=+
+ 
+  Rearrange the equations: 
+   
+16
+12
+23
+34
+45
+56
+60
+70
+100
+90
+80
+80
+xx
+xx
+xx
+xx
+xx
+xx
+−=
+−=
+−= −
+−=
+−= −
+−=
+ 
+  Reduce the augmented matrix: 
+   
+100001 6 0 1 0 0 0 016 0
+110000 7 0 0 1 0 0 011 0
+0110001 0 0 0 0 1 0 019 0 ~~001100 9 0 0 0 0 1 01 0
+000110 8 0 0 0 0 0 118 0
+000011 8 0 0 0 0 0 00 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −⋅⋅⋅⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  The general solution is 
+16
+26
+36
+46
+56
+6
+60
+10
+90
+80
+ is free
+xx
+xx
+xx
+xx
+xx
+x
+=+⎧
+⎪ =− +⎪
+⎪ =+⎪⎨ =⎪
+⎪ =+⎪
+⎪⎩
+. 
+  Since x2 cannot be negative, the minimum value of x6 is 10. 
+ 
+Note: The MATLAB box in the Study Guide discusses rational calculations, needed for 
+balancing the chemical equations in Exercises 10 and 11. As usual, the appendices cover this 
+material for Maple, Mathematica, and the TI calculators.
+----- pagina 50 -----
+50 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+1.7 SOLUTIONS 
+Note: Key exercises are 9–20 and 23–30. Exercise 30 states a result that could be a theorem in the text. 
+There is a danger, however, that students will memorize the result without understanding the proof, and 
+then later mix up the words row and column. Exercises 37 and 38 anticipate the discussion in Section 1.9 
+of one-to-one transformations. Exercise 44 is fairly difficult for my students. 
+ 1 . Use an augmented matrix to study the solution set of x1u + x2v + x3w = 0 (*), where u, v, and w are 
+the three given vectors. Since 
+5 7 90 5790
+024 0 ~ 0 2 4 0
+068 0 0 0 4 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+, there are no free variables. So 
+the homogeneous equation (*) has only the trivial solution. The vectors are linearly independent. 
+ 2 . Use an augmented matrix to study the solution set of x1u + x2v + x3w = 0 (*), where u, v, and w are 
+the three given vectors.  Since 
+001 0 20 3 0
+203 0 ~ 087 / 2 0
+381 0 00 1 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+, there are no free 
+variables. So the homogeneous equation (*) has only the trivial solution. The vectors are linearly 
+independent. 
+ 3 . Use the method of Example 3 (or the box following the example). By comparing entries of the 
+vectors, one sees that the second vector is –2 times the first vector. Thus, the two vectors are linearly 
+dependent. 
+ 4 . From the first entries in the vectors, it seems that the second vector of the pair 13,39−−⎡⎤ ⎡⎤⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦  may be 3 
+times the first vector. But there is a sign problem with the second entries. So neither of the vectors is 
+a multiple of the other. The vectors are linearly independent. 
+ 5 . Use the method of Example 2. Row reduce the augmented matrix for Ax = 0: 
+039 0 142 0 142 0 142 0 142 0
+217 0 217 0 093 0 093 0 093 0~ ~~~145 0 145 0 007 0 007 0 007 0
+1 4 20 0 3 90 0 3 90 0 0 80 0 0 00
+− − −− −− −− −⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥− −−−−⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥− − − −−−−
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥−− − −⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦
+There are no free variables. The equation Ax = 0 has only the trivial solution and so the columns of A 
+are linearly independent. 
+ 6 . Use the method of Example 2. Row reduce the augmented matrix for Ax = 0: 
+ 
+4 3 00 1 1 50 1 1 50 1 1 50 1 1 50
+0 1 50 0 1 50 0 1 50 0 1 50 0 1 50~~ ~ ~11 5 0 43 0 0 012 0 0 001 5 0 001 5 0
+2 11 0 0 2 11 0 0 01 0 0 00 5 0 00 0 0
+−− − − − −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥− −−−−⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− − − − −
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+----- pagina 51 -----
+1.7  Solutions   51  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  There are no free variables. The equation Ax = 0 has only the trivial solution and so the columns of A 
+are linearly independent. 
+ 7 . Study the equation Ax = 0. Some people may start with the method of Example 2: 
+  
+143 0 0 1 43 0 0 1 430 0
+275 1 0 ~ 0 11 1 0 ~ 0 111 0
+4 5 750 0 1 1 550 0 0 6 60
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  But this is a waste of time. There are only 3 rows, so there are at most three pivot positions. Hence, at 
+least one of the four variables must be free. So the equation Ax = 0 has a nontrivial solution and the 
+columns of A are linearly dependent. 
+ 8 . Same situation as with Exercise 7. The (unnecessary) row operations are 
+  
+12 3 2 0 123 2 0 12 3 2 0
+2 4 62 0 ~ 0 0 060 ~ 0 1 130
+011 3 0 01 1 3 0 00 0 6 0
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Again, because there are at most three pivot positions yet there are four variables, the equation  
+Ax = 0 has a nontrivial solution and the columns of A are linearly dependent. 
+ 9 . a. The vector v3 is in Span{v1, v2} if and only if the equation x1v1 + x2v2 = v3 has a solution. To find 
+out, row reduce [v1   v2   v3], considered as an augmented matrix: 
+  
+135 13 5
+397 ~ 00 8
+26 00 1 0 hh
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  At this point, the equation 0 = 8 shows that the original vector equation has no solution. So v3 is 
+in Span{v1, v2} for no value of h. 
+ 
+b. For { v1, v2, v3} to be linearly independent, the equation x1v1 + x2v2 + x3v3 = 0 must have only the 
+trivial solution. Row reduce the augmented matrix [v1   v2   v3   0]  
+  
+1 3 50 1 3 5 0 1 350
+397 0 ~ 00 8 0 ~ 00 8 0
+2 6 0 0 0 1 00 0 000hh
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  For every value of h, x2 is a free variable, and so the homogeneous equation has a nontrivial 
+solution. Thus {v1, v2, v3} is a linearly dependent set for all h. 
+ 
+ 10. a.  The vector v3 is in Span{v1, v2} if and only if the equation x1v1 + x2v2 = v3 has a solution. To find 
+out, row reduce [v1   v2   v3], considered as an augmented matrix: 
+  
+132 13 2
+395 ~ 00 1
+51 5 0 0 1 0hh
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−+⎣⎦ ⎣ ⎦
+ 
+  At this point, the equation 0 = 1 shows that the original vector equation has no solution. So v3 is 
+in Span{v1, v2} for no value of h. 
+ 
+----- pagina 52 -----
+52 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. For { v1, v2, v3} to be linearly independent, the equation x1v1 + x2v2 + x3v3 = 0 must have only the 
+trivial solution. Row reduce the augmented matrix [v1   v2   v3   0]  
+  
+132 0 13 2 0 13 2 0
+395 0 ~ 00 1 0 ~ 00 1 0
+51 5 0 0 0 1 0 0 0 0 0 0hh
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−+⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  For every value of h, x2 is a free variable, and so the homogeneous equation has a nontrivial 
+solution. Thus {v1, v2, v3} is a linearly dependent set for all h. 
+ 11. To study the linear dependence of three vectors, say v1, v2, v3, row reduce the augmented matrix 
+[v1   v2   v3   0]: 
+  
+242 0 24 20 24 20
+262 0 ~ 02 00 ~ 02 00
+47 0 01 4 0 00 4 0hh h
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −+ +⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The equation x1v1 + x2v2 + x3v3 = 0 has a nontrivial solution if and only if h + 4 = 0 (which 
+corresponds to x3 being a free variable). Thus, the vectors are linearly dependent if and only if h = –4. 
+ 12. To study the linear dependence of three vectors, say v1, v2, v3, row reduce the augmented matrix 
+[v1   v2   v3   0]: 
+  
+36 9 0 36 9 0
+64 0 ~ 01 0 0
+13 3 0 00 1 8 0
+h
+h
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −+⎣⎦ ⎣ ⎦
+ 
+  The equation x1v1 + x2v2 + x3v3 = 0 has a nontrivial solution if and only if h + 18 = 0 (which 
+corresponds to x3 being a free variable). Thus, the vectors are linearly dependent if and only if h = –
+18. 
+ 13. To study the linear dependence of three vectors, say v1, v2, v3, row reduce the augmented matrix 
+[v1   v2   v3   0]: 
+  
+123 0 12 3 0
+59 0 ~ 01 1 5 0
+369 0 00 0 0
+hh
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+  The equation x1v1 + x2v2 + x3v3 = 0 has a free variable and hence a nontrivial solution no matter what 
+the value of h. So the vectors are linearly dependent for all values of h. 
+ 
+ 14. To study the linear dependence of three vectors, say v1, v2, v3, row reduce the augmented matrix 
+[v1   v2   v3   0]: 
+  
+13 2 0 13 20 13 2 0
+27 1 0 ~ 0 1 50 ~ 01 5 0
+46 0 06 8 0 00 3 8 0hh h
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− + +⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The equation x1v1 + x2v2 + x3v3 = 0 has a nontrivial solution if and only if h + 38 = 0 (which 
+corresponds to x3 being a free variable). Thus, the vectors are linearly dependent if and only  
+if h = –38. 
+----- pagina 53 -----
+1.7  Solutions   53  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 15. The set is linearly dependent, by Theorem 8, because there are four vectors in the set but only two 
+entries in each vector. 
+ 16. The set is linearly dependent because the second vector is –3/2 times the first vector. 
+ 17. The set is linearly dependent, by Theorem 9, because the list of vectors contains a zero vector. 
+ 18. The set is linearly dependent, by Theorem 8, because there are four vectors in the set but only two 
+entries in each vector. 
+ 19. The set is linearly independent because neither vector is a multiple of the other vector. [Two of the 
+entries in the first vector are – 4 times the corresponding entry in the second vector. But this multiple 
+does not work for the third entries.] 
+ 20. The set is linearly dependent, by Theorem 9, because the list of vectors contains a zero vector. 
+ 21. a. False. A homogeneous system always has the trivial solution. See the box before Example 2. 
+b. False. See the warning after Theorem 7. 
+c. True. See Fig. 3, after Theorem 8. 
+d. True. See the remark following Example 4. 
+ 22. a. True. See Theorem 7. 
+b. True. See Example 4. 
+c. False. For instance, the set consisting of 
+12
+2  and –4
+36
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+ is linearly dependent. See the warning 
+after Theorem 8. 
+d. False. See Example 3(a). 
+ 23. *0 0 0,,00 00 00⎡⎤ ⎡⎤ ⎡ ⎤⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦                 24. 
+**
+0*
+00
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+
+
+
+  25.
+*0
+00 0  and 00 00
+00 00
+⎡ ⎤⎡⎤
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥⎢ ⎥⎢⎥⎣ ⎦⎣⎦
+
+  
+ 26. 
+**
+0*
+00
+000
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+
+
+ . The columns must be linearly independent, by Theorem 7, because the first column is 
+not zero, the second column is not a multiple of the first, and the third column is not a linear 
+combination of the preceding two columns (because a3 is not in Span{a1, a2}). 
+ 27. All four columns of the 6×4 matrix A must be pivot columns. Otherwise, the equation Ax = 0 would 
+have a free variable, in which case the columns of A would be linearly dependent. 
+ 28. If the columns of a 4×6 matrix A span R4, then A has a pivot in each row, by Theorem 4. Since each 
+pivot position is in a different column, A has four pivot columns. 
+----- pagina 54 -----
+54 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 29. A: any 3×2 matrix with one column a multiple of the other.  
+B: any 3×2 matrix with two nonzero columns such that neither column is a multiple of the other. In 
+this case the columns are linearly independent and so the equation Bx = 0 has only the trivial 
+solution.  
+ 
+ 30. a. n   
+b. The columns of A are linearly independent if and only if the equation Ax = 0 has only the trivial 
+solution. This happens if and only if Ax = 0 has no free variables, which in turn happens if and 
+only if every variable is a basic variable, that is, if and only if every column of A is a pivot 
+column. 
+ 31. Think of A = [a1   a2   a3]. The text points out that a3 = a1 + a2. Rewrite this as a1 + a2 – a3 = 0. As a 
+matrix equation, Ax = 0 for x = (1, 1, –1). 
+ 32. Think of A = [a1   a2   a3]. The text points out that a1 –  3a2 = a3. Rewrite this as a1 – 3a2 – a3 = 0. As 
+a matrix equation, Ax = 0 for x = (1, –3, –1). 
+ 33. True, by Theorem 7. (The Study Guide adds another justification.) 
+ 34. False. The vector v1 could be the zero vector. 
+ 35. True, by Theorem 9. 
+ 36. False. Counterexample: Take v1 and v2 to be multiples of one vector. Take v3 to be not a multiple of 
+that vector. For example, 
+   12 3
+121
+1, 2, 0
+120
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥== =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+vv v  
+ 37. True. A linear dependence relation among v1, v2, v3 may be extended to a linear dependence relation 
+among v1, v2, v3, v4 by placing a zero weight on v4. 
+ 38. True. If the equation x1v1 + x2v2 + x3v3 = 0 had a nontrivial solution (with at least one of x1, x2, x3 
+nonzero), then so would the equation x1v1 + x2v2 + x3v3 + 0⋅v4 = 0. But that cannot happen because 
+{v1, v2, v3, v4} is linearly independent. So {v1, v2, v3} must be linearly independent. This problem can 
+also be solved using Exercise 37, if you know that the statement there is true. 
+ 
+ 39. If for all b the equation Ax = b has at most one solution, then take b = 0, and conclude that the 
+equation Ax = 0 has at most one solution. Then the trivial solution is the only solution, and so the 
+columns of A are linearly independent. 
+ 40. An m×n matrix with n pivot columns has a pivot in each column. So the equation Ax = b has no free 
+variables. If there is a solution, it must be unique. 
+----- pagina 55 -----
+1.7  Solutions   55  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 41. [M] 
+3 4 10 7 4 3 4 10 7 4
+5 3 7 11 15 0 29 / 3 29 / 3 2 / 3 25 / 3~4 3 5 2 1 0 2 5/3 2 5/3 2 2/3 1 9/3
+8 7 23 4 15 0 11/ 3 11/ 3 44 / 3 77 / 3
+A
+−− − −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−−− −⎢⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥ −−
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+ 
+ 
+34 1 0 7 4 34 1 0 7 4
+0 2 9/3 2 9/3 2/3 2 5/3 0 2 9/3 2 9/3 2/3 2 5/3~~ 0 0 0 196 / 29 392 / 29 0 0 0 196 / 29 392 / 29
+0 0 0 418 / 29 836 / 29 0 0 0 0 0
+−− −−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−
+⎢⎥ ⎢⎥−⎣⎦ ⎣⎦
+ 
+  Use the pivot columns of A to form 
+34 7
+531 1
+43 2
+87 4
+B
+−⎡ ⎤
+⎢ ⎥−−−⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+.  Other choices are possible.   
+ 42. [M]  
+1 2 1 06841 4 1 21 0 6 8 4 1 4
+76457 9 0 1 / 6 1 / 21 / 31 4 / 3 5 / 6
+~~999991 8 0 0 2 2 1 6 2
+431 08 1 0 0 0 0 3 6 0
+8756 11 1 0 0 0 0 0 0
+−− − −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −− − − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⋅⋅⋅−− − − −
+⎢⎥ ⎢ ⎥−−− − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦  
+  Use the pivot columns of  A to form 
+12 10 6 4
+7647
+9999
+4318
+8751
+B
+−⎡ ⎤
+⎢ ⎥−− −⎢ ⎥
+⎢ ⎥= −
+⎢ ⎥−−−−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+.  Other choices are possible. 
+ 43. [M] Make v any one of the columns of A that is not in B and row reduce the augmented matrix 
+[B   v]. The calculations will show that the equation Bx = v is consistent, which means that v is a 
+linear combination of the columns of B. Thus, each column of A that is not a column of B is in the set 
+spanned by the columns of B. 
+ 44. [M] Calculations made as for Exercise 43 will show that each column of A that is not a column of B 
+is in the set spanned by the columns of B. Reason: The original matrix A has only four pivot 
+columns. If one or more columns of A are removed, the resulting matrix will have at most four pivot 
+columns. (Use exactly the same row operations on the new matrix that were used to reduce A to 
+echelon form.) If v is a column of A that is not in B, then row reduction of the augmented matrix 
+[B   v] will display at most four pivot columns. Since B itself was constructed to have four pivot 
+columns, adjoining v cannot produce a fifth pivot column. Thus the first four columns of [B   v] are 
+the pivot columns. This implies that the equation Bx = v has a solution. 
+Note: At the end of Section 1.7, the Study Guide has another note to students about “Mastering Linear 
+Algebra Concepts.” The note describes how to organize  a review sheet that will help students form a 
+mental image of linear independence. The note also lists typical misuses of terminology, in which an 
+adjective is applied to an inappropriate noun. (This is a major problem for my students.) I require my 
+students to prepare a review sheet as described in the Study Guide, and I try to make helpful comments on 
+their sheets. I am convinced, through personal observation and student surveys, that the students who 
+----- pagina 56 -----
+56 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+prepare many of these review sheets consistently perform better than other students. Hopefully, these 
+students will remember important concepts for some time beyond the final exam. 
+1.8 SOLUTIONS 
+Notes: The key exercises are 17–20, 25 and 31. Exercise 20 is worth assigning even if you normally 
+assign only odd exercises. Exercise 25 (and 26) ca n be used to make a few comments about computer 
+graphics, even if you do not plan to cover Section 2.6. For Exercise 31, the Study Guide  encourages 
+students not to look at the proof before trying hard to construct it. Then the Guide explains how to create 
+the proof.  
+Exercises 19 and 20 provide a natural segue into Section 1.9. I arrange to discuss the homework on 
+these exercises when I am ready to begin Section 1.9. The definition of the standard matrix in Section 1.9 
+follows naturally from the homework, and so I’ve co vered the first page of Section 1.9 before students 
+realize we are working on new material. 
+The text does not provide much practice determining whether a transformation is linear, because the 
+time needed to develop this skill would have to be taken away from some other topic. If you want your 
+students to be able to do this, you may need to supplement Exercises 23, 24, 32 and 33. 
+If you skip the concepts of one-to-one and “onto” in Section 1.9, you can use the result of Exercise 31 
+to show that the coordinate mapping from a vector space onto Rn (in Section 4.4) preserves linear 
+independence and dependence of sets of vectors. (See Example 6 in Section 4.4.) 
+ 1 . T(u) = Au = 20 1 202 3 6⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦ , T(v) = 20 202 2 aabb⎡ ⎤⎡ ⎤ ⎡ ⎤=⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦  
+ 2 . T(u) = Au =
+13 0 0 3 1
+01 3 0 6 2
+00 1 3 9 3
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+, T(v) = 
+13 0 0 3
+01 3 0 3
+00 1 3 3
+aa
+bb
+cc
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥=⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+ 
+ 
+ 3 . []
+1032 1032 1 032
+31 63 ~ 01 33 ~ 0 1 33
+2211 0253 0 013
+A
+−− −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− − − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−− − −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+b  
+  
+10 3 2 1007 7
+~0 1 3 3~0 1 0 6 6 ,
+00 1 3 0011 1
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+x  unique solution 
+ 4 . []
+1236 1236 1236
+01 3 4 ~ 01 34 ~ 01 34
+2565 01 07 0033
+A
+−− −− −−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=− − − − − −⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−− − −⎣⎦ ⎣⎦ ⎣⎦
+b  
+ 
+1236 1 0 01 7 1 7
+~0 1 3 4~0 1 0 7 7
+0011 0 0 1 1 1
+−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− − = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+x , unique solution 
+----- pagina 57 -----
+1.8  Solutions    57  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5 . [] 1572 1572 1 0 3 3 ~~3752 0 12 1 0 1 2 1A −−− −−−⎡⎤ ⎡ ⎤ ⎡ ⎤= ⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦b  
+  Note that a solution is not 31⎡⎤⎢⎥⎣⎦ . To avoid this common error, write the equations: 
+  13
+23
+33
+21
+xx
+xx
++=
++=  and solve for the basic variables: 
+13
+23
+3
+33
+12
+is free
+xx
+xx
+x
+=−⎧
+⎪ =−⎨
+⎪⎩
+  
+  The general solution is 
+13
+23 3
+33
+33 3 3
+12 1 2
+01
+xx
+xxx
+xx
+−−⎡⎤⎡ ⎤ ⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥== −= + −⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣⎦⎣ ⎦
+x . For a particular solution, one might 
+choose x3 = 0 and 
+3
+1
+0
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+x . 
+ 6 . []
+13 21 13 2 1 13 2 1 1 0 8 1 0
+38 8 6 01 2 3 01 2 3 0 1 2 3~~~01 2 301 2 300 0 0 0 0 0 0
+1 081 0 0 369 0 000 0 0 0 0
+A
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥= ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+b  Write the 
+equations: 
+  13
+23
+81 0
+23
+xx
+xx
++=
++=  and solve for the basic variables: 
+13
+23
+3
+10 8
+32
+is free
+xx
+xx
+x
+=−⎧
+⎪ =−⎨
+⎪⎩
+  
+  The general solution is 
+13
+23 3
+33
+10 8 10 8
+32 3 2
+01
+xx
+xx x
+xx
+−−⎡⎤⎡ ⎤ ⎡ ⎤⎡ ⎤
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥== − =+ −⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥
+⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣⎦⎣ ⎦
+x . For a particular solution, one might 
+choose x3 = 0 and 
+10
+3
+0
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+x . 
+ 7 . The value of a is 5.  The domain of T is R5, because a 6×5 matrix has 5 columns and for Ax to be 
+defined, x must be in R5. The value of b is 6.  The codomain of T is R6, because Ax is a linear 
+combination of the columns of A, and each column of A is in R6. 
+ 8 . The matrix A must have 7 rows and 5 columns. For the domain of T to be R5, A must have five 
+columns so that Ax is defined for x in R5. For the codomain of T to be R7, the columns of A must 
+have seven entries (in which case A must have seven rows), because Ax is a linear combination of the 
+columns of A. 
+ 9 . Solve Ax = 0: 
+1 3 5 50 1 3 5 50 1 3 5 50
+0 1 3 5 0~0 1 3 5 0~0 1 3 5 0
+2444 0 0266 0 0004 0
+−− −− −−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥−−−⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−− − −⎣⎦ ⎣⎦ ⎣⎦
+ 
+----- pagina 58 -----
+58 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+10 400
+~0 1 3 0 0
+00 010
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+   
+13
+23
+4
+40
+30
+0
+xx
+xx
+x
+−=
+−=
+=
+,  
+13
+23
+3
+4
+4
+3
+is free
+= 0
+xx
+xx
+x
+x
+=⎧
+⎪ =⎪⎨
+⎪
+⎪⎩
+ 
+  x  = 
+1 3
+2 3
+3
+3 3
+4
+44
+33
+1
+00
+x x
+x x xx x
+x
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥==⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦⎣⎦
+ 
+ 10. Solve Ax = 0. 
+321 0 60 10 2 40 102 40
+10 2 40 32 1 0 60 024 60~~0 123 0 0 1 23 0 0 1 23 0
+141 0 80 14 1 0 80 048 1 20
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  
+102 40 102 40
+01 2 30 01 2 30~~ 024 60 000 00
+048 1 20 000 00
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦
+ 
+  13 4
+234
+240
+230
+xx x
+xxx
++−=
+++=      
+13 4
+23 4
+3
+4
+24
+23
+ is free
+is free
+xx x
+xx x
+x
+x
+=− +⎧
+⎪ =− −⎪⎨
+⎪
+⎪⎩
+     
+43
+43
+34
+3
+4
+422 4
+322 3
+0 10
+00 1
+xx
+xx xxx
+x
+−− ⎡⎤⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢⎥⎢ ⎥⎢ ⎥ ⎢ ⎥−−− − ⎢⎥⎢ ⎥⎢ ⎥ ⎢ ⎥=+=+ ⎢⎥⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢⎥⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎣ ⎦⎣ ⎦ ⎣ ⎦⎣⎦
+x  
+ 11. Is the system represented by [A   b] consistent? Yes, as the following calculation shows. 
+  
+13551 13551 13551
+01 351 ~ 01351 ~ 01 351
+24440 02662 00040
+−− − −− − −− −⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ −−−⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−− − −⎣⎦ ⎣⎦ ⎣⎦
+ 
+  The system is consistent, so b is in the range of the transformation Axx6 . 
+ 
+ 
+ 12. Is the system represented by [A   b] consistent? 
+  
+3 2 1 061 1 0 243 1 0 24 3
+1 0 243 3 2 1 061 0 2 461 0~~0 12310 1 2310 1 23 1
+1 4 10 8 4 1 4 10 8 4 0 4 8 12 1
+−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  
+102 4 3 1 0 2 4 3
+0 1 23 10 1 2 31~~ 0 2 461 0 0 0 0 08
+0481 2 1 0 0 0 0 5
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−
+⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+  
+----- pagina 59 -----
+1.8  Solutions    59  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The system is inconsistent, so b is not in the range of the transformation Axx6 . 
+ 13.  14. 
+                            
+   A reflection through the origin.  A scaling by the factor 2. 
+  The transformation in Exercise 13 may also be described as a rotation of π radians about the origin or 
+a rotation of –π radians about the origin. 
+ 15.  16.  
+                                   
+A reflection through the line x2 = x1.  A scaling by a factor of 2 and a projection onto the x2 
+axis. 
+ 17. T(2u) = 2T(u) = 482 12⎡⎤ ⎡⎤ =⎢⎥ ⎢⎥⎣⎦ ⎣⎦ , T(3v) = 3T(v) = 133 39−−⎡ ⎤⎡⎤=⎢ ⎥⎢⎥⎣ ⎦⎣⎦ , and  
+  T (2u + 3v) = 2T(u) + 3T(v) = 83 529 1 1−⎡⎤ ⎡ ⎤ ⎡⎤+=⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ . 
+18. Draw a line through w parallel to v, and draw a line through w parallel to u. See the left part of the 
+figure below. From this, estimate that w = u + 2v. Since T is linear, T(w) = T(u) + 2T(v). Locate T(u) 
+and 2T(v) as in the right part of the figure and form the associated parallelogram to locate T(w).  
+   
+x1
+x2
+x1
+x2
+u w
+v2v
+T(v)
+2T(v)
+T(u)
+T(w)
+----- pagina 60 -----
+60 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 19. All we know are the images of e1 and e2 and the fact that T is linear. The key idea is to write 
+  x  = 12
+51 0
+535 3
+301
+.=−= −
+−
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ee  Then, from the linearity of T, write 
+   T (x) = T(5e1 – 3e2) = 5T(e1) – 3T(e2) = 5y1 – 3y2 = 21 1 353 .56 7 −−=⎡ ⎤⎡ ⎤ ⎡ ⎤⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦  
+  To find the image of 1
+2
+x
+x
+⎡ ⎤
+⎢ ⎥⎣ ⎦ , observe that 1 121 1 2 22 1001x xx x xx⎡ ⎤ ⎡⎤ ⎡⎤== + = +⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎣⎦xe e . Then 
+   T (x) = T(x1e1 + x2e2) = x1T(e1) + x2T(e2) = 1212
+12
+221
+5656
+xxxx xx −− ⎡ ⎤⎡⎤ ⎡ ⎤+= ⎢ ⎥⎢⎥ ⎢ ⎥ +⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 20. Use the basic definition of Ax to construct A. Write 
+   [] 111 2 2 1 2
+2
+37 37() ,    52 52xTx x A x −−⎡⎤ ⎡ ⎤⎡⎤=+ = = = ⎢⎥ ⎢ ⎥⎢⎥−−⎣ ⎦⎣⎦⎣⎦xvv v v x  
+ 21. a. True. Functions from Rn to Rm are defined before Fig. 2. A linear transformation is a function 
+with certain properties. 
+b. False. The domain is R5. See the paragraph before Example 1. 
+c. False. The range is the set of all linear combinations of the columns of A. See the paragraph 
+before Example 1. 
+d. False. See the paragraph after the definition of a linear transformation. 
+e. True. See the paragraph following the box that contains equation (4). 
+ 22. a. True. See the subsection on Matrix Transformations. 
+b. True. See the subsection on Linear Transformations. 
+c. False. The question is an existence question. See the remark about Example 1(d), following the 
+solution of Example 1. 
+d. True. See the discussion following the definition of a linear transformation. 
+e. True. T(0) = 0. See the box after the definition of a linear transformation. 
+23.   a. When b = 0, f (x) = mx. In this case, for all x,y in R and all scalars c and d, 
+   f (cx + dy) = m(cx + dy) = mcx + mdy = c(mx) + d(my) = c· f (x) + d· f (y) 
+  This shows that f is linear. 
+b. When f (x) = mx + b, with b nonzero, f(0) = m(0) = b = b ≠ 0. This shows that f is not linear, 
+because every linear transformation maps the zero vector in its domain into the zero vector in the 
+codomain. (In this case, both zero vectors are just the number 0.) Another argument, for instance, 
+would be to calculate f (2x) = m(2x) + b and 2f (x) = 2mx + 2b. If b is nonzero, then f (2x) is not 
+equal to 2f (x) and so f is not a linear transformation. 
+c. In calculus, f is called a “linear function” because the graph of f is a line.   
+ 24. Let T(x) = Ax + b for x in Rn. If b is not zero, T(0) = A0 + b = b ≠  0. Actually, T fails both 
+properties  
+of a linear transformation. For instance, T(2x) = A(2x) + b = 2Ax + b, which is not the same as 2T(x) 
+= 2(Ax + b) = 2Ax + 2b. Also,  
+   T (x + y) = A(x + y) + b = Ax + Ay + b 
+----- pagina 61 -----
+1.8  Solutions    61  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  which is not the same as 
+   T (x) + T(y) = Ax + b + Ay + b 
+ 25. Any point x on the line through p in the direction of v satisfies the parametric equation  
+  x = p + t v for some value of t. By linearity, the image T(x) satisfies the parametric equation  
+   T (x) = T(p + tv) = T(p) + tT(v) 
+ (*) 
+  If T( v) = 0, then T(x) = T(p) for all values of t, and the image of the original line is just a single 
+point. Otherwise, (*) is the parametric equation of a line through T(p) in the direction of T(v). 
+ 26.  a. From the figure following Exercise 22 in Section 1.5, the line through p and q is in the direction 
+of q – p, and so the equation of the line is x = p + t(q – p) = p + tq – tp = (1 – t)p + tq. 
+b. Consider x = (1 – t)p + tq for t such that 0 < t < 1. Then, by linearity of T,  
+   T (x) = T((1 – t)p + tq) = (1 – t)T(p) + tT(q)      0 < t < 1 
+ (*) 
+  If T(p) and T(q) are distinct, then (*) is the equation for the line segment between T(p) and T(q), 
+as shown in part (a) Otherwise, the set of images is just the single point T(p), because 
+   (1 – t)T(p) + tT(q) =(1 – t)T(p) + tT(p) = T(p) 
+ 27. Any point x on the plane P satisfies the parametric equation x = su + tv for some values of s and t. 
+By linearity, the image T(x) satisfies the parametric equation 
+   T (x) = sT(u) + tT(v) ( s, t in R)   
+  The set of images is just Span{T (u), T(v)}. If T(u) an d T(v) are linearly independent, Span{T(u), 
+T(v)} is a plane through T(u), T(v), and 0. If T(u) and T(v) are linearly dependent and not both zero, 
+then Span{T(u), T(v)} is a line through 0. If T(u) = T(v) = 0, then Span{T(u), T(v)} is {0}.  
+ 28. Consider a point x in the parallelogram determined by u and v, say x = au + bv for 0 < a < 1, 
+0 < b < 1. By linearity of T, the image of x is 
+   T (x) = T(au + bv) = aT(u) + bT(v), for 0 < a < 1, 0 < b < 1   
+  This image point lies in the parallelogram determined by T (u) and T(v).  Special “degenerate” cases 
+arise when T(u) and T(v) are linearly dependent. If one of the images is not zero, then the 
+“parallelogram” is actually the line segment from 0 to T(u) + T(v). If both T(u) and T(v) are zero, 
+then the parallelogram is just {0}. Another possibility is that even u and v are linearly dependent, in 
+which case the original parallelogram is degenerate (either a line segment or the zero vector). In this 
+case, the set of images must be degenerate, too. 
+  
+----- pagina 62 -----
+62 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 29.  
+                
+ 
+ 30. Given any x in Rn, there are constants c1, …, cp such that x = c1v1 + ···  cpvp, because v1, …, vp span 
+Rn. Then, from property (5) of a linear transformation, 
+   T (x) = c1T(v1) + ···  + cpT(vp) = c10 + ··  + cp0 = 0 
+ 31. (The Study Guide has a more detailed discussion of the proof.) Suppose that {v1, v2, v3} is linearly 
+dependent. Then there exist scalars c1, c2, c3, not all zero, such that 
+   c 1v1 + c2v2 + c3v3 = 0 
+  Then T(c1v1 + c2v2 + c3v3) = T(0) = 0. Since T is linear, 
+   c 1T(v1) + c2T(v2) + c3T(v3) = 0 
+  Since not all the weights are zero, { T(v1), T(v2), T(v3)} is a linearly dependent set. 
+ 32. Take any vector ( x1, x2) with x2 ≠  0, and use a negative scalar. For instance, T(0, 1) = (–2, –4), but 
+T(–1· (0, 1)) = T(0, –1) = (–2, 4) ≠  (–1)· T(0, 1). 
+ 33. One possibility is to show that T does not map the zero vector into the zero vector, something that 
+every linear transformation does do. T(0, 0) = (0, –3, 0). 
+ 34. Take u and v in R3 and let c and d be scalars. Then 
+  c u + dv = (cu1 + dv1, cu2 + dv2, cu3 + dv3). The transformation T is linear because 
+  T (cu + dv) = (cu1 + dv1, cu2 + dv2, – (cu3 + dv3)) = (cu1 + dv1, cu2 + dv2,  cu3 – dv3) 
+   = ( cu1, cu2, –cu3) + (dv1, dv2, –dv3) = c(u1, u2, –u3) + d(v1, v2, –v3) 
+   = cT(u) + dT(v) 
+ 35. Take u and v in R3 and let c and d be scalars. Then 
+  c u + dv = (cu1 + dv1, cu2 + dv2, cu3 + dv3). The transformation T is linear because 
+  T (cu + dv) = (cu1 + dv1, 0, cu3 + dv3) = (cu1, 0, cu3) + (dv1, 0, dv3)  
+   = c(u1, 0, u3) + d(v1, 0, v3) 
+   = cT(u) + dT(v) 
+ 36. Suppose that { u, v} is a linearly independent set in Rn and yet T(u) and T(v) are linearly dependent. 
+Then there exist weights c1, c2, not both zero, such that c1T(u) + c2T(v) = 0 . Because T is linear, 
+T(c1u + c2v) = 0. That is, the vector x = c1u + c2v satisfies T(x) = 0. Furthermore, x cannot be the 
+zero vector, since that would mean that a nontrivial linear combination of u and v is zero, which is 
+impossible because u and v are linearly independent. Thus, the equation T(x) = 0 has a nontrivial 
+solution. 
+
+----- pagina 63 -----
+1.8  Solutions    63  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 37. [M]  
+23 5 5 0 1 01 0 0
+77 0 0 0 0110 0 ~,34 1 3 0 0001 0
+93 6 4 0 0000 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+  
+13
+23
+3
+4
+–
+–
+is free
+0
+xx
+xx
+x
+x
+=⎧
+⎪ =⎪⎨
+⎪
+⎪ =⎩
+    3
+1
+1
+1
+0
+x
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+x  
+ 38. [M] 
+347 0 0 1 0 0 1 0
+587 4 0 0 1 0 1 0 ~686 4 0 0 0 1 1 0
+972 0 0 0 0 0 0 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+,  
+14
+24
+34
+4 is free
+xx
+xx
+xx
+x
+=−⎧
+⎪ =−⎪⎨ =−⎪
+⎪⎩
+    4
+1
+1
+1
+1
+x
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+x
+ 
+ 39. [M]  
+23 5 5 8 1010 1
+77 0 0 7 01102 ~,34 1 3 5 00010
+93 6 4 3 00000
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦
+yes, b is in the range of the transformation, 
+because the augmented matrix shows a consistent system. In fact, 
+  the general solution is
+13
+23
+3
+4
+1–
+2–
+is free
+ 0
+xx
+xx
+x
+x
+=⎧
+⎪ =⎪⎨
+⎪
+⎪ =⎩
+; when x3 = 0 a solution is 
+1
+2
+0
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+x . 
+ 40. [M] 
+347 04 1 0 0 1 1
+5 8 74 4 01012 ~686 44 0 0 1 1 1
+9 7 20 7 00000
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+, yes, b is in the range of the transformation, 
+because the augmented matrix shows a consistent system. In fact, 
+  the general solution is
+14
+24
+34
+4
+1
+2
+1
+ is free
+xx
+xx
+xx
+x
+=−⎧
+⎪ =−⎪⎨ =−⎪
+⎪⎩
+; when x4 = 0 a solution is 
+1
+2
+1
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+x . 
+Notes: At the end of Section 1.8, the Study Guide provides a list of equations, figures, examples, and 
+connections with concepts that will strengthen a student’s understanding of linear transformations. I 
+encourage my students to continue the construction of review sheets similar to those for “span” and 
+“linear independence,” but I refrain from collecting these sheets. At some point the students have to 
+assume the responsibility for mastering this material. 
+If your students are using MATLAB or another matrix program, you might insert the definition of 
+matrix multiplication after this section, and then assign a project that uses random matrices to explore 
+properties of matrix multiplication. See Exercises 34–36 in Section 2.1. Meanwhile, in class you can 
+continue with your plans for finishing Chapter 1. When you get to Section 2.1, you won’t have much to 
+do. The Study Guide’s MATLAB note for Section 2.1 contains the matrix notation students will need for 
+a project on matrix multiplication. The appendices in the Study Guide have the corresponding material for 
+Mathematica, Maple, and the TI-83+/84+/89 calculators. 
+.
+----- pagina 64 -----
+64 CHAPTER 1  Linear Equations in Line a
+Copyright © 2012 Pear
+1.9 SOLUTIONS 
+Notes: This section is optional if yo u
+instructors will want to cover at least T
+illustrate a fast way to solve Exercises 
+basis. 
+The purpose of introducing one-to-
+4.4) and to acquaint math majors with t h
+digression, and some instructors prefer 
+use the result of Exercise 31 in Section 
+Rn (in Section 4.4) preserves linear ind e
+Section 4.4.) The notions of one-to-one 
+but can be omitted there if desired 
+Exercises 25–28 and 31–36 offer 
+important links to earlier material. 
+ 1. A = [T(e1)   T(e2)] = 
+35
+12
+30
+10
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+ 2. A = [T(e1)   T(e2)   T(e3)] = 1249 −⎡⎢⎣
+ 3. T(e1) = e1 – 3e2 = 13⎡⎤⎢⎥−⎣⎦ , T(e2) = e2, A
+ 4. T(e1) = e1, T(e2) = e2 + 2e1 = 21⎡⎤⎢⎥⎣⎦ , A
+ 5. T(e1) = e2, T(e2) = –e1. A = [ 2 −e e
+ 6. T (e1) = e2, T(e2) = –e1. A = [ 2 −e e
+ 7 . Follow what happens to e1 and e2. S
+circle in the plane, it rotates through
+point on the unit circle that lies in th
+on the line 21xx =  (that is, yx=  in
+The point (–1,–1) is on the ine 2x =
+from the origin is 2.  So the rotatio
+(–1/ 2, –1/ 2) . Then this image re
+axis to (–1/ 2,1/ 2) . Similarly, e2
+  the unit circle that lies in the second
+ar Algebra 
+rson Education, Inc. Publishing as Addison-Wesley. 
+u plan to treat linear transformations only lightl y
+Theorem 10 and a few geometric examples. Exercis e
+17–22 without explicitly computing the images of 
+one and onto is to prepare for the term isomorphism
+hese terms. Mastery of these concepts would require 
+to omit these topics (and Exercises 25–40). In this c a
+1.8 to show that the coordinate mapping from a vect o
+ependence and dependence of sets of vectors. (See E
+and onto appear in the Invertible Matrix Theorem ( S
+fairly easy writing practice. Exercises 31, 32, and 
+3
+8
+⎤
+⎥− ⎦  
+A = 1031⎡⎤⎢⎥−⎣⎦  
+A = 1201⎡⎤⎢⎥⎣⎦  
+]1
+01
+10
+=
+−⎡⎤
+⎢⎥⎣⎦e    
+]1
+01
+10
+=
+−⎡⎤
+⎢⎥⎣⎦e    
+Since e1 is on the unit 
+h –3 /4π  radians into a 
+he third quadrant and 
+n more familiar notation). 
+1x= , but its distance 
+onal image of e1 is 
+eflects in the horizontal 
+2 rotates into a point on  
+d quadrant and on the  
+ 
+y, but many 
+es 15 and 16 
+the standard 
+m (in Section 
+a substantial 
+ase, you can 
+or space onto 
+Example 6 in 
+Section 2.3), 
+35 provide 
+----- pagina 65 -----
+1.9  Solutions    65  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  line 21xx =− , namely, (1 / 2 , –1 / 2 ) . Then this image reflects in the horizontal axis to 
+( 1 /2 , 1 /2 ) . When the two calculations described above are written in vertical vector notation, the 
+transformation’s standard matrix [T(e1)   T(e2)] is easily seen: 
+   12
+1/ 2 1/ 2 1/ 2 1/ 2 ,
+1/ 2 1/ 2 1/ 2 1/ 2
+⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤−−→→ →→⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+−−⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+ee ,  1/ 2 1/ 2
+1/ 2 1/ 2
+A
+⎡ ⎤−= ⎢ ⎥
+⎢ ⎥⎣ ⎦  
+ 8. The horizontal shear maps e1 into e1, and then the reflection in the line x2 = –x1 maps e1 into –e2. (See 
+Table 1.) The horizontal shear maps e2 into e2 into e2 + 2e1. To find the image of e2 + 2e1 when it is 
+reflected in the line x2 = –x1, use the fact that such a reflection is a linear transformation. So, the 
+image of e2 + 2e1 is the same linear combination of the images of e2 and e1, namely,  
+–e1 + 2(–e2) = – e1 – 2e2. To summarize, 
+  11 2 2 2 1 1 2
+01  and 2 2 ,  so 12A −⎡ ⎤→→ − →+ → − − = ⎢ ⎥−−⎣ ⎦ee e e e e ee  
+ 9. 11 2 2 2 1  , 01 and   so 10A→ → →− →− −⎡ ⎤−= ⎢ ⎥−⎣ ⎦e ee eee  
+10. []11 2 2 2 1 2 1
+01 and ,  so 10A −⎡ ⎤→ → →− →− = − = ⎢ ⎥⎣ ⎦e e e eee e e  
+11. The transformation T described maps 11 1→→ −ee e  and maps 222 .→− →−eee  A rotation through 
+π radians also maps e1 into –e1 and maps e2 into –e2. Since a linear transformation is completely 
+determined by what it does to the columns of the identity matrix, the rotation transformation has the 
+same effect as T on every vector in 2.R  
+12. The transformation T in Exercise 10 maps 11 2→→eee  and maps 221→− →−eee . A rotation about 
+the origin through / 2π  radians also maps e1 into e2 and maps e2 into –e1. Since a linear 
+transformation is completely determined by what it does to the columns of the identity matrix, the 
+rotation transformation has the same effect as T on every vector in 2.R  
+13. Since (2, 1)=2 e 1+ e2, the image of (2, 1) under T is 2T(e1) + T(e2), by linearity of T. On the figure in 
+the exercise, locate 2T(e1) and use it with T(e2) to form the parallelogram shown below. 
+ 
+14. Since [] 12 1 1 2 2 1 2() 2TA x x== = + = −xx a a x aa a a , when x = (1, –2), the image of x is located by 
+forming the parallelogram shown below. 
+
+----- pagina 66 -----
+66 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+                  
+15. By inspection, 
+11 2
+21 3
+32 3
+240 24
+101
+01 3 3
+xx x
+xx x
+xx x
+−− ⎡⎤⎡ ⎤⎡⎤
+⎢⎥⎢ ⎥⎢⎥ −= −⎢⎥⎢ ⎥⎢⎥
+⎢⎥⎢ ⎥⎢⎥ −− +⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+16. By inspection, 
+12
+1
+12
+2
+2
+32 32
+14 4
+01
+xxx xxx x−−⎡⎤ ⎡ ⎤ ⎡⎤⎢⎥ ⎢ ⎥ =+⎢⎥⎢⎥ ⎢ ⎥ ⎣⎦⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+17. To express  T(x) as Ax , write T(x) and x as column vectors, and then fill in the entries in A by 
+inspection, as done in Exercises 15 and 16. Note that since T(x) and x have four entries, A must be a 
+4×4 matrix. 
+  T (x) = 
+12 1 1
+22
+24 3 3
+24 4 4
+2 120 0
+0 000 0
+2 020 1
+01 0 1
+xx x x
+xxAxx x x
+xx x x
++⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥+
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥− −⎣⎦ ⎣ ⎦⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+18. As in Exercise 17, write T (x) and x as column vectors. Since x has 2 entries, A has 2 columns. Since 
+T(x) has 4 entries, A has 4 rows. 
+  
+12
+11
+12 2 2
+1
+4 14
+0 00
+3 13
+10
+xx
+xxAxx x x
+x
++⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎡⎤ ⎡⎤⎢⎥ ⎢⎥ ⎢ ⎥== ⎢⎥ ⎢⎥⎢⎥ ⎢⎥ ⎢ ⎥− −⎣⎦ ⎣⎦⎢⎥ ⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦⎣⎦
+ 
+19. Since T(x) has 2 entries, A has 2 rows. Since x has 3 entries, A has 3 columns. 
+  
+11
+12 3
+22
+23
+33
+54 154
+6 01 6
+xxxx x Ax xxx xx⎡⎤ ⎡⎤−+ −⎡⎤ ⎡⎤ ⎡ ⎤ ⎢⎥ ⎢⎥==⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥− −⎣⎦ ⎣ ⎦⎣⎦ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+20. Since T(x) has 1 entry, A has 1 row. Since x has 4 entries, A has 4 columns. 
+  
+11
+22
+134
+33
+44
+[3 4 2 ] [ ] [3 0 4 2]
+xx
+xxxxx A xx
+xx
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥+− = = − ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦
+ 
+
+----- pagina 67 -----
+1.9  Solutions    67  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+21. T(x) = 12 1 1
+12 2 2
+11
+45 45
+xx x x Axx x x+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥+ ⎣⎦ ⎣ ⎦⎣⎦ ⎣ ⎦ ⎣ ⎦ . To solve T(x) = 38⎡ ⎤⎢ ⎥⎣ ⎦ , row reduce the augmented 
+matrix: 113 11 3 10 7 7~~ ,458 01 4 01 4 4⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ =⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ −− −⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦ x . 
+22. T(x) = 
+12
+11
+12
+22
+12
+22 1
+33 1
+23 23
+xx xxxx A xxxx −−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤⎢⎥ ⎢ ⎥ ⎢ ⎥−+ = = − ⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎣⎦ ⎣⎦⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦ . To solve T(x) = 014⎡ ⎤⎢ ⎥−⎢ ⎥⎢ ⎥−⎣ ⎦ , row reduce the 
+augmented matrix:  
+  
+21 0 2 1 0 21 0 21 0 2 0 2 1 0 1
+3 1 1 ~ 0 1 2 1 ~ 0 1 2 ~ 0 12 ~ 0 12 ~ 0 12
+234 0 24 024 00 0 0 0 0 0 0 0
+−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −− −−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+,  
+1 .2⎡⎤= ⎢⎥⎣⎦x  
+23. a. True. See Theorem 10. 
+b. True. See Example 3. 
+c. False. See the paragraph before Table 1. 
+d. False. See the definition of onto. Any function from Rn to Rm maps each vector onto another 
+vector. 
+e. False. See Example 5. 
+24.  a. False. See Theorem 12. 
+b. True. See Theorem 10. 
+c. True. See Theorem 10. 
+d. False. See the definition of one-to-one. Any function from Rn to Rm maps a vector onto a single 
+(unique) vector. 
+e. False. See Table 3. 
+25. A row interchange and a row replacement on the standard matrix A of the transformation T in 
+Exercise 17 produce 
+120 0
+010 1
+000 3
+000 0
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+. This matrix shows that A has only three pivot positions, so 
+the equation Ax = 0 has a nontrivial solution. By Theorem 11, the transformation T is not one-to-one. 
+Also, since A does not have a pivot in each row, the columns of A do not span R4. By Theorem 12, T 
+does not map R4 onto R4. 
+26. The standard matrix A of the transformation T in Exercise 2 is 2×3. Its columns are linearly 
+dependent because A has more columns than rows. So T is not one-to-one, by Theorem 12. Also, A is 
+row equivalent to 12 301 7 2 0−⎡⎤⎢⎥ −⎣⎦ , which shows that the rows of A span R2. By Theorem 12, T maps 
+R3onto R2. 
+----- pagina 68 -----
+68 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+27. The standard matrix A of the transformation T in Exercise 19 is 15401 6−⎡ ⎤⎢ ⎥−⎣ ⎦ . The columns of A 
+are linearly dependent because A has more columns than rows. So T is not one-to-one, by Theorem 
+12. Also, A has a pivot in each row, so the rows of A span R2. By Theorem 12, T maps R3 onto R2. 
+28. The standard matrix A of the transformation T in Exercise 14 has linearly independent columns, 
+because the figure in that exercise shows that a1 and a2 are not multiples. So T is one-to-one, by 
+Theorem 12. Also, A must have a pivot in each column because the equation Ax = 0 has no free 
+variables. Thus, the echelon form of A is *
+0
+.⎡ ⎤⎢ ⎥⎣ ⎦   Since A has a pivot in each row, the columns of A 
+span R2. So T maps R2 onto R2. An alternate argument for the second part is to observe directly from 
+the figure in Exercise 14 that a1 and a2 span R2. This is more or less evident, based on experience 
+with grids such as those in Figure 8 and Exercise 7 of Section 1.3. 
+29. By Theorem 12, the columns of the standard matrix A must be linearly independent and hence the 
+equation Ax = 0 has no free variables. So each column of A must be a pivot column: 
+**
+0*~. 00
+000
+A
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+
+
+  Note that T cannot be onto because of the shape of A. 
+30. By Theorem 12, the columns of the standard matrix A must span R3. By Theorem 4, the matrix must 
+have a pivot in each row. There are four possibilities for the echelon form: 
+  
+*** *** *** 0 **
+0 * * , 0 * *, 0 0 *, 0 0 *
+00 * 000 000 000
+⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+ 
+ 
+ 
+  Note that T cannot be one-to-one because of the shape of A. 
+31. “T is one-to-one if and only if A has n pivot columns.” By Theorem 12(b), T is one-to-one if and only 
+if the columns of A are linearly independent. And from the statement in Exercise 30 in Section 1.7, 
+the columns of A are linearly independent if and only if A has n pivot columns. 
+32. The transformation T maps Rn onto Rm if and only if the columns of A span Rm, by Theorem 12. This 
+happens if and only if A has a pivot position in each row, by Theorem 4 in Section 1.4. Since A has m 
+rows, this happens if and only if A has m pivot columns. Thus, “T maps Rn onto Rm if and only A has 
+m pivot columns.” 
+33. Define : nmT →RR  by T(x) = Bx for some m×n matrix B, and let A be the standard matrix for T. 
+By definition, A = [T(e1)   ⋅ ⋅ ⋅   T(en)], where ej is the jth column of In. However, by matrix-vector 
+multiplication, T(ej) = Bej = bj, the jth column of B. So A = [b1   ⋅ ⋅ ⋅   bn] = B. 
+34. Take u and v in Rp and let c and d be scalars. Then 
+  T (S(cu + dv)) = T(c⋅S(u) + d⋅S(v)) because S is linear 
+     = c⋅T(S(u)) + d⋅T(S(v)) because T is linear 
+  This calculation shows that the mapping x →  T(S(x)) is linear. See equation (4) in Section 1.8.
+----- pagina 69 -----
+1.10  Solutions    69  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+35. If : nmT →RR  maps nR  onto mR , then its standard matrix A has a pivot in each row, by Theorem 
+12 and by Theorem 4 in Section 1.4. So A must have at least as many columns as rows. That is, m < 
+n. When T is one-to-one, A must have a pivot in each column, by Theorem 12, so m > n. 
+36. The transformation T maps Rn onto Rm if and only if for each y in Rm there exists an x in Rn such that 
+y = T(x). 
+ 
+37. [M]  
+5656 1 0 0 1
+8338 0 1 0 1 ~~295 1 2 0 0 1 1
+3 2 7 1 2 000 0
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥ ⋅⋅⋅⎢⎥ ⎢ ⎥ −−
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+. There is no pivot in the fourth column of 
+the standard matrix A, so the equation Ax = 0 has a nontrivial solution. By Theorem 11, the 
+transformation T is not one-to-one. (For a shorter argument, use the result of Exercise 31.) 
+38. [M]  
+7599 1 0 0 0
+5644 0 1 0 0 ~~4807 0 0 1 0
+6665 0 0 0 1
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ⋅⋅⋅⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+. Yes. There is a pivot in every column of the 
+standard matrix A, so the equation Ax = 0 has only the trivial solution. By Theorem 11, the trans-
+formation T is one-to-one. (For a shorter argument, use the result of Exercise 31.) 
+39. [M]  
+47375 10050
+685 1 28 01 01 0
+~~71 0 8 91 4 0 0 1 2 0
+35426 00001
+56673 00000
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⋅⋅⋅−− − −
+⎢⎥ ⎢⎥ −−⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦
+. There is not a pivot in every row, 
+so the columns of the standard matrix do not span R5. By Theorem 12, the transformation T does not 
+map R5 onto R5. 
+40. [M]  
+9 4 3 5 6 1 10000
+14 15 7 5 4 0 1 0 0 0
+~~86 1 259 0 0 1 0 0
+56498 0 0 0 1 0
+13 14 15 3 11 0 0 0 0 1
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⋅⋅⋅−− −−
+⎢⎥ ⎢ ⎥−−−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+. There is a pivot in every row, so the 
+columns of the standard matrix span R5. By Theorem 12, the transformation T maps R5 onto R5. 
+1.10 SOLUTIONS 
+ 1. a. If x1 is the number of servings of Cheerios and x2 is the number of servings of 100% Natural 
+Cereal, then x1 and x2 should satisfy  
+  12
+nutrients nutrients quantities
+per serving per serving of of  nutrients
+of Cheerios 100% Natural required
+xx
+⎡⎤ ⎡ ⎤ ⎡ ⎤
++=⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+----- pagina 70 -----
+70 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  That is, 
+  12
+110 130 295
+43 9
+20 18 48
+25 8
+xx
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥+=⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+ 
+b. The equivalent matrix equation is 1
+2
+110 130 295
+43 9
+20 18 48
+25 8
+x
+x
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎡⎤⎢ ⎥⎢ ⎥ =⎢⎥⎢ ⎥⎢ ⎥⎣⎦⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦ . To solve this, row reduce the 
+augmented matrix for this equation. 
+  
+110 130 295 2 5 8 1 2.5 4
+439 439 439 ~~20 18 48 20 18 48 10 9 24
+2 5 8 110 130 295 110 130 295
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+ 
+  
+1 2.5 4 1 2.5 4 1 0 1.5
+0 7 7 011 0 11~~ ~01 61 6 0 0 0 0 0 0
+0 145 145 0 0 0 0 0 0
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  The desired nutrients are provided by 1.5 servings of Cheerios together with 1 serving of 100% 
+Natural Cereal. 
+ 2 . Set up nutrient vectors for one serving of Shredded Wheat (SW) and Kellogg's Crispix (Crp): 
+  
+Nutrients: SW Crp
+calories 160 110
+protein 5 2
+fiber 6 .1
+fat 1 .4
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+.  
+a. Let []
+160 110
+52 3SW    Crp , 6. 1 2
+1. 4
+B
+⎡⎤
+⎢⎥ ⎡ ⎤⎢⎥== = ⎢ ⎥⎢⎥ ⎣ ⎦⎢⎥
+⎣⎦
+u . 
+  Then Bu lists the amounts of calories, protein, carbohydrate, and fat in a mixture of three servings 
+of Shredded Wheat and two servings of Crispix. 
+b. [M]  Let u1 and u2 be the number of servings of Shredded Wheat and Crispix, respectively. Can 
+these numbers satisfy the equation 1
+2
+120
+3.2
+2.46
+.64
+B
+u
+u
+⎡ ⎤
+⎢ ⎥⎡⎤ ⎢ ⎥=⎢⎥ ⎢ ⎥⎣⎦ ⎢ ⎥
+⎣ ⎦
+? To find out, row reduce the augmented 
+matrix 
+----- pagina 71 -----
+1.10  Solutions    71  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+160 110 130 1 .4 .64 1 .4 .64 1 .4 .64 1 0 .4
+5 2 3 . 20 0 004 6 2 7 . 60 1 . 60 1 . 6~~~ ~6 .1 2.46 0 2.3 1.38 0 2.3 1.38 0 0 0 0 0 0
+1 .4 .64 0 46 27.6 0 0 0 0 0 0 0 0 0
+⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− −−
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Since the system is consistent, it is possible for a mixture of the two creals to provide the desired 
+nutrients.  The mixture is .4 servings of Shredded Wheat and .6 servings of Crispix.  
+3.     a. [M]  Let x1, x2, and x3 be the number of servings ofAnnies’s Mac and Cheese, broccoli, and 
+chicken, respectively, needed for the lunch.  The values of x1, x2, and x3 should satisfy 
+12 3
+nutrients nutrients nutrients quantities
+per serving per serving per serving of  nutrients
+of Mac and Cheese of broccoli of chicken required
+xx x
+⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+++=⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  From the given data, 
+   12 3
+270 51 70 400
+10 5.4 15 30
+25 . 2 0 1 0
+xx x
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥++ =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦
+ 
+  To solve, row reduce the corresponding augmented matrix: 
+   
+270 51 70 400 1 0 0 .99
+10 5.4 15 30 ~ ... ~ 0 1 0 1.54
+2 5.2 0 10 0 0 1 .79
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+  
+ 
+.99 servings of Mac and Cheese
+1.54 servings of broccoli
+.74 servings of chicken
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥≈=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+x  
+  b . [M]  Changing from Annie’s Mac and Cheese to Annie’s Whole Wheat Shells and White Cheddar 
+changes the vector equation to  
+ 12 3
+260 51 70 400
+9 5.4 15 30
+55 . 2 0 1 0
+xx x
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥++ =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦
+ 
+  To solve, row reduce the corresponding augmented matrix: 
+   
+260 51 70 400 1 0 0 1.09
+9 5.4 15 30 ~ ... ~ 0 1 0 .88
+5 5.2 0 10 0 0 1 1.03
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+  
+ 
+1.09 servings of Shells
+.88 servings of broccoli
+1.03 servings of chicken
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥≈=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+x  
+  Notice that the number of servings of broccoli has decreased as was desired. 
+  
+----- pagina 72 -----
+72 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 4 . Here are the data, assembled from Table 1 and Exercise 4: 
+   
+Mg of Nutrients/Unit Nutrients
+Requiredsoy soyNutrient (milligrams)milk flour whey prot.
+protein 36 51 13 80 33
+carboh. 52 34 74 0 45
+fat 0 7 1.1 3.4 3
+calcium 1.26 .19 .8 .18 .8
+ 
+a. Let x1, x2, x3, x4 represent the number of units of nonfat milk, soy flour, whey, and isolated soy 
+protein, respectively. These amounts must satisfy the following matrix equation 
+  
+1
+2
+3
+4
+36 51 13 80 33
+52 34 74 0 45
+07 1 . 1 3 . 4 3
+1.26 .19 .8 .18 .8
+x
+x
+x
+x
+⎡⎤⎡⎤ ⎡ ⎤
+⎢⎥⎢⎥ ⎢ ⎥
+⎢⎥⎢⎥ ⎢ ⎥ =⎢⎥⎢⎥ ⎢ ⎥
+⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+b. [M]  
+36 51 13 80 33 0 0 0 .641
+52 34 74 0 45 0 0 0 .54 1~~
+0 7 1.1 3.4 3 0 0 0 .09 1
+1.26 .19 .8 .18 .8 0 0 0 .21 1
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⋅⋅⋅⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+  The “solution” is x1 = .64, x2 = .54, x3 = –.09, x4 = –.21. This solution is not feasible, because the 
+mixture cannot include negative amounts of whey and isolated soy protein. Although the 
+coefficients of these two ingredients are fairly small, they cannot be ignored. The mixture of .64 
+units of nonfat milk and .54 units of soy flour provide 50.6 g of protein, 51.6 g of carbohydrate, 
+3.8 g of fat, and .9 g of calcium. Some of these nutrients are nowhere close to the desired 
+amounts. 
+ 5 . Loop 1: The resistance vector is 
+  
+1
+22
+1
+3
+4
+Total of RI voltage drops for current 11
+Voltage drop for  is negative;  flows in opposite direction5
+Current  does not flow in loop 10
+Current  does not flow in loop 10
+I
+II
+I
+I
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+r  
+  Loop 2: The resistance vector is  
+  
+11
+22
+33
+4
+5 Voltage drop for  is negative;  flows in opposite direction
+10 Total of RI voltage drops for current 
+Voltage drop for  is negative;  flows in opposite direction1
+Current  d0
+II
+I
+II
+I
+⎡⎤−
+⎢⎥
+⎢⎥= ⎢⎥−⎢⎥
+⎣⎦
+r
+oes not flow in loop 2
+ 
+  Also, r3 = 
+0
+1
+9
+2
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+, r4 = 
+0
+0
+2
+10
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+, and R = [r1   r2   r3   r4] = 
+50011
+51 0 0 1
+09 12
+00 1 0 2
+⎡ ⎤−
+⎢ ⎥− −⎢ ⎥
+⎢ ⎥−−⎢ ⎥
+−⎣ ⎦
+. 
+----- pagina 73 -----
+1.10  Solutions    73  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Notice that each off-diagonal entry of R is negative (or zero). This happens because the loop current 
+directions are all chosen in the same direction on the figure. (For each loop j, this choice forces the 
+currents in other loops adjacent to loop j to flow in the direction opposite to current Ij.) 
+  Next, set v = 
+50
+40
+30
+30
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥
+−⎣⎦
+. The voltages in loops 2 and 4 are negative because the battery orientation in 
+each loop is opposite to the direction chosen for positive current flow. Thus, the equation Ri = v 
+becomes 
+  
+1
+2
+3
+4
+500 5 011
+51 0 0 4 0 1
+09 3 012
+00 1 0 3 0 2
+I
+I
+I
+I
+⎡⎤⎡⎤ ⎡ ⎤ − ⎢⎥⎢⎥ ⎢ ⎥−− − ⎢⎥⎢⎥ ⎢ ⎥ =⎢⎥⎢⎥ ⎢ ⎥ −− ⎢⎥⎢⎥ ⎢ ⎥
+−−⎣⎦ ⎣ ⎦ ⎣⎦
+.    [M]: The solution is i = 
+1
+2
+3
+4
+3.68
+1.90
+2.57
+2.49
+I
+I
+I
+I
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+−⎣ ⎦⎣⎦
+. 
+ 6 . Loop 1: The resistance vector is 
+  
+1
+221
+3
+4
+6 Total of RI voltage drops for current 
+1 Voltage drop for  is negative;  flows in opposite direction
+0 Current  does not flow in loop 1
+0 Current  does not flow in loop 1
+I
+II
+I
+I
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+r  
+  Loop 2: The resistance vector is  
+  
+11
+2
+2
+33
+4
+Voltage drop for  is negative;  flows in opposite direction1
+9 Total of RI voltage drops for current 
+4 Voltage drop for  is negative;  flows in opposite direction
+Current  do0
+II
+I
+II
+I
+⎡⎤−⎢⎥
+⎢⎥= ⎢⎥−⎢⎥
+⎣⎦
+r
+es not flow in loop 2
+ 
+  Also, r3 =
+0
+4
+7
+2
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+, r4 =
+0
+0
+2
+7
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+, and R = [r1   r2   r3   r4]= 
+61 00
+1940
+0472
+0027
+−⎡ ⎤
+⎢ ⎥−−⎢ ⎥
+⎢ ⎥−−
+⎢ ⎥−⎣ ⎦
+. Set v = 
+30
+20
+40
+10
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+. Then Ri = 
+v becomes 
+  
+1
+2
+3
+4
+61 00 3 0
+1940 2 0
+0472 4 0
+0027 1 0
+I
+I
+I
+I
+− ⎡⎤⎡⎤ ⎡ ⎤
+⎢⎥⎢⎥ ⎢ ⎥−− ⎢⎥⎢⎥ ⎢ ⎥=⎢⎥⎢⎥ ⎢ ⎥−−
+⎢⎥⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦⎣⎦
+.  [M]: The solution is i =
+1
+2
+3
+4
+6.36
+8.14
+11.73
+4.78
+I
+I
+I
+I
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎣ ⎦⎣⎦
+. 
+  
+----- pagina 74 -----
+74 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 7 . Loop 1: The resistance vector is 
+  
+1
+22
+1
+3
+44
+Total of RI voltage drops for current 12
+7 Voltage drop for  is negative;  flows in opposite direction
+0 Current  does not flow in loop 1
+Voltage drop for  is negative;  flows4
+I
+II
+I
+II
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥
+−⎣⎦
+r
+in opposite direction
+ 
+  Loop 2: The resistance vector is  
+  
+11
+2
+2
+33
+4
+Voltage drop for  is negative;  flows in opposite direction7
+15 Total of RI voltage drops for current 
+6 Voltage drop for  is negative;  flows in opposite direction
+0 Current  d
+II
+I
+II
+I
+⎡⎤−
+⎢⎥
+⎢⎥= ⎢⎥−⎢⎥
+⎣⎦
+r
+oes not flow in loop 2
+ 
+  Also, r3 = 
+0
+6
+14
+5
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥−⎢⎥⎣⎦
+, r4 = 
+4
+0
+5
+13
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+, and R = [r1   r2   r3   r4] = 
+1 2704
+71 5 6 0
+06 1 45
+405 1 3
+−−⎡ ⎤
+⎢ ⎥−−⎢ ⎥
+⎢ ⎥−−
+⎢ ⎥−−⎢ ⎥⎣ ⎦
+. 
+  Notice that each off-diagonal entry of R is negative (or zero). This happens because the loop current 
+directions are all chosen in the same direction on the figure. (For each loop j, this choice forces the 
+currents in other loops adjacent to loop j to flow in the direction opposite to current Ij.) 
+  Next, set v 
+40
+30
+20
+10
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥−⎢⎥⎣⎦
+. Note the negative voltage in loop 4. The current direction chosen in loop 4 is 
+opposed by the orientation of the voltage source in that loop. Thus Ri = v becomes 
+  
+1
+2
+3
+4
+12 7 0 4 40
+71 5 6 0 3 0
+06 1 45 2 0
+405 1 3 1 0
+I
+I
+I
+I
+−− ⎡⎤⎡⎤ ⎡ ⎤
+⎢⎥⎢⎥ ⎢ ⎥−− ⎢⎥⎢⎥ ⎢ ⎥=⎢⎥⎢⎥ ⎢ ⎥−−
+⎢⎥⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥⎢⎥⎣⎦ ⎣ ⎦⎣⎦
+. [M]: The solution is i =
+1
+2
+3
+4
+11.43
+10.55
+8.04
+5.84
+I
+I
+I
+I
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥=⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢ ⎥⎢⎥ ⎣ ⎦⎣⎦
+. 
+ 8 . Loop 1: The resistance vector is 
+  
+1
+22
+1 3
+44
+Total of RI voltage drops for current 9
+1 Voltage drop for  is negative;  flows in opposite direction
+0 Current  does not flow in loop 1
+Voltage drop for  is negative;  1
+4
+I
+II
+I
+II
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥=
+⎢⎥
+−⎢⎥
+⎢⎥−⎣⎦
+r
+55
+flows in opposite direction
+Voltage drop for  is negative;  flows in opposite directionII
+ 
+  Loop 2: The resistance vector is  
+----- pagina 75 -----
+1.10  Solutions    75  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+11
+2
+2 33
+Voltage drop for  is negative; flows in opposite direction1
+7 Total of RI voltage drops for current 
+2 Voltage drop for  is negative;  flows in opposite direction
+0 Current 
+3
+II
+I
+II
+⎡⎤−
+⎢⎥
+⎢⎥
+⎢⎥= −⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+r
+4
+55
+ does not flow in loop 2
+Voltage drop for  is negative;  flows in opposite direction
+I
+II
+ 
+  Also, r3 = 
+0
+2
+10
+3
+3
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥−⎢⎥
+⎢⎥−⎣⎦
+, r4 = 
+1
+0
+3
+7
+2
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎣ ⎦
+, r5 = 
+4
+3
+3
+2
+12
+−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥−
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+, and R = 
+91 01 4
+1720 3
+02 1 033
+10372
+4332 1 2
+−− −⎡ ⎤
+⎢ ⎥−−−⎢ ⎥
+⎢ ⎥−− −
+⎢ ⎥−−−⎢ ⎥
+⎢ ⎥−−−−⎣ ⎦
+. Set v = 
+50
+30
+20
+40
+0
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+. Note 
+the negative voltages for loops where the chosen current direction is opposed by the orientation of 
+the voltage source in that loop. Thus Ri = v becomes: 
+  
+1
+2
+3
+4
+5
+91 01 4 5 0
+17 20 3 3 0
+02 1 033 2 0
+10372 4 0
+4332 1 2 0
+I
+I
+I
+I
+I
+−− − ⎡⎤⎡⎤ ⎡ ⎤
+⎢⎥⎢⎥ ⎢ ⎥−−− − ⎢⎥⎢⎥ ⎢ ⎥
+⎢⎥⎢⎥ ⎢ ⎥=−− −
+⎢⎥⎢⎥ ⎢ ⎥−−− − ⎢⎥⎢⎥ ⎢ ⎥
+⎢⎥⎢⎥ ⎢ ⎥−−−−⎣⎦ ⎣ ⎦⎣⎦
+.   [M]  The solution is 
+1
+2
+3
+4
+5
+4.00
+4.38
+.90
+5.80
+.96
+I
+I
+I
+I
+I
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥= −
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣ ⎦⎣⎦
+. 
+ 9 . The population movement problems in this section assume that the total population is constant, with 
+no migration or immigration. The statement that “about 7% of the city’s population moves to the 
+suburbs” means also that the rest of the city’s population (93%) remain in the city. This determines 
+the entries in the first column of the migration matrix (which concerns movement from the city). 
+   
+From:
+City Suburbs To:
+.93 City
+.07 Suburbs
+⎡⎤
+⎢⎥⎣⎦
+ 
+  Likewise, if 5% of the suburban population moves to the city, then the other 95% remain in the 
+suburbs. This determines the second column of the migration matrix:, M = .93 .05.07 .95⎡ ⎤⎢ ⎥⎣ ⎦ . The 
+difference equation is xk+1 = Mxk  for k = 0, 1, 2, …. Also, x0 = 800,000500,000⎡ ⎤⎢ ⎥⎣ ⎦  
+  The population in 2011 (when k = 1) is x1 = Mx0 = .93 .05 800,000 769,000.07 .95 500,000 531,000⎡ ⎤⎡ ⎤ ⎡ ⎤ =⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦  
+  The population in 2012 (when k = 2) is x2 = Mx1 = .93 .05 769,000 741,720.07 .95 531,000 558,280⎡ ⎤⎡ ⎤ ⎡ ⎤ =⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦  
+  
+----- pagina 76 -----
+76 CHAPTER 1  Linear Equations in Linear Algebra 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 10. The data in the first sentence implies that the migration matrix has the form: 
+   
+From:
+City Suburbs To:
+.04 City
+.06 Suburbs
+⎡⎤
+⎢⎥⎣⎦
+ 
+  The remaining entries are determined by the fact that the numbers in each column must sum to 1. 
+(For instance, if 6% of the city people move to the suburbs, then the rest, or 94%, remain in the city.) 
+So the migration matrix is M = .94 .04.06 .96⎡⎤⎢⎥⎣⎦ . The initial population is x0 = 10,000,000800,000⎡ ⎤⎢ ⎥⎣ ⎦ . 
+  The population in 2011 (when k = 1) is x1 = Mx0 = .94 .04 10,000,000 9,432,000.06 .96 800,000 1,368,000⎡ ⎤⎡ ⎤ ⎡ ⎤ =⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦  
+  The population in 2012 (when k = 2) is x2 = Mx1 = .94 .04 9,432,000 8,920,800.06 .96 1,368,000 1,879,200⎡ ⎤⎡ ⎤ ⎡ ⎤ =⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦  
+ 11. The problem concerns two groups of people–those living in California and those living outside 
+California (and in the United States). It is reasonable, but not essential, to consider the people living 
+inside California first. That is, the first entry in a column or row of a vector will concern the people 
+living in California. With this choice, the migration matrix has the form: 
+   
+From:
+Calif. Outside To:
+Calif.
+Outside
+⎡⎤
+⎢⎥⎣⎦
+ 
+a. For the first column of the migration matrix M, compute 
+  
+{ }
+{}
+Calif. persons
+who moved 516,100 .016372Total Calif. pop. 31,524,000==  
+  The other entry in the first column is 1 – .016372 = .983628. The exercise requests that 5 decimal 
+places be used. So this number should be rounded to .98363. Whatever number of decimal places 
+is used, it is important that the two entries sum to 1. So, for the first fraction, use .01637. 
+  For the second column of M, compute 
+{ }
+{}
+outside persons
+who moved 381,262 .00167Total outside pop. 228,680,000== . The other 
+entry is 1 – .00167 = .99833. Thus, the migration matrix is 
+  
+From:
+Calif. Outside To:
+.98363 .00167 Calif.
+.01637 .99833 Outside
+⎡⎤
+⎢⎥⎣⎦
+ 
+b. [M] The initial vector is x0 = (31.524, 228.680), with data in millions of persons. Since x0 
+describes the population in 1994, and x1 describes the population in 1995, the vector x6 describes 
+the projected population for the year 2000, assuming that the migration rates remain constant and 
+----- pagina 77 -----
+1.10  Solutions    77  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+there are no deaths, births, or migration. Here are the vectors x0 through x6 with the first 5 figures 
+displayed. Numbers are in millions of persons: 
+  x0 = 31.524 31.390 31.258 31.129 31.002 30.877 30.755,,,,,,228.68 228.82 228.95 229.08 229.20 229.33 229.45⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ = x6. 
+ 12. Set M = 0
+.97 .05 .10 295
+.00 .90 .05   and  55
+.03 .05 .85 150
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+x . Then x1 = 
+.97 .05 .10 295 304
+.00 .90 .05 55 57
+.03 .05 .85 150 139
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥ ≈⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+, and 
+x2 = 
+.97 .05 .10 304 312
+.00 .90 .05 57 58
+.03 .05 .85 139 130
+⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ≈⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦
+. The entries in x2 give the approximate distribution of cars on 
+Wednesday, two days after Monday. 
+ 13. [M] The order of entries in a column of a migration matrix must match the order of the columns. For 
+instance, if the first column concerns the population in the city, then the first entry in each column 
+must be the fraction of the population that moves to (or remains in) the city. In this case, the data in 
+the exercise leads to M = .95 .03.05 .97⎡⎤⎢⎥⎣⎦  and x0 = 600,000400,000⎡ ⎤⎢ ⎥⎣ ⎦  
+a. Some of the population vectors are 
+  51 01 5 2 0
+523,293 472,737 439,417 417,456,,,476,707 527,263 560,583 582,544⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤====⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦xx x x  
+  The data here shows that the city population is declining and the suburban population is 
+increasing, but the changes in population each year seem to grow smaller. 
+b. When x0 = 350,000650,000⎡⎤⎢⎥⎣⎦ , the situation is different. Now 
+  51 01 52 0
+358,523 364,140 367,843 370,283,,,641,477 635,860 632,157 629,717⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤====⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦xx x x  
+  The city population is increasing slowly and the suburban population is decreasing. No other 
+conclusions are expected. (This example will be analyzed in greater detail later in the text.)  
+ 14. Here are Figs. (a) and (b) for Exercise 13, followed by the figure for Exercise 34 in Section 1.1: 
+   
+10˚
+10˚
+40˚
+40˚
+20˚ 20˚
+30˚ 30˚
+12
+43
+0˚
+0˚
+0˚
+0˚
+20˚ 20˚
+20˚ 20˚
+12
+43
+10˚
+10˚
+40˚
+40˚
+0˚ 0˚
+10˚ 10˚
+12
+43
+(b) Section 1.1(a)
+----- pagina 78 -----
+ 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  For Fig. (a), the equations are    
+12 4
+21 3
+342
+41 3
+40 2 0
+42 0 0
+40 2 0
+40 2 0
+TT T
+TT T
+TTT
+TT T
+=+ + +
+=+ + +
+=++ +
+=+ + +  
+  To solve the system, rearrange the equations and row reduce the augmented matrix. Interchanging 
+rows 1 and 4 speeds up the calculations. The first five steps are shown in detail. 
+  
+4 1 0 1 20 1 0 1 4 20 1 0 1 4 20 1 0 1 4 20
+14 10 2 0 14 10 2 0 04 0 4 0 0 10 1 0
+~~ ~
+0 1 4 1 20 0 1 4 1 20 0 1 4 1 20 0 1 4 1 20
+1 0 1 4 20 4 1 0 1 20 0 1 4 15 100 0 1 4 15 100
+− − −− −− −−
+−− −− − −
+− − −− −− −−
+− − − − −− −−
+⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦
+ 
+  
+10 1 4 2 0 10 1 4 2 0 10001 0
+01 0 1 0 01 0 1 0 01 00 1 0
+~~ ~
+0 0422 0 0 0 422 0 0 0 1 0 1 0
+0 0 4 14 100 0 0 0 12 120 0 0 0 1 10
+~
+−− −−
+−−
+⋅⋅⋅
+−−
+−
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  For Fig (b), the equations are     
+12 4
+21 3
+342
+41 3
+41 0 0
+40 4 0
+44 0 1 0
+41 0 1 0
+TT T
+TT T
+TTT
+TT T
+=+ ++
+=+ + +
+=+++
+=+ ++
+ 
+  Rearrange the equations and row reduce the augmented matrix: 
+  
+4 1 0 1 10 1 0 0 0 10
+14 10 4 0 0 1 0 0 1 7 . 5
+0 1 4 15 0 0010 2 0
+10 14 2 0 0 0 0 1 1 2 . 5
+~~
+−−
+−−
+−−
+−−
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⋅⋅⋅⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+a. Here are the solution temperatures for the three problems studied: 
+   Fig. (a) in Exercise 14 of Section 1.10: (10,  10,  10,  10) 
+   Fig. (b) in Exercise 14 of Section 1.10: (10, 17.5, 20, 12.5) 
+   Figure for Exercises 34 in Section 1.1 (20, 27.5, 30, 22.5) 
+  When the solutions are arranged this way, it is ev ident that the third solution is the sum of the first 
+two solutions. What might not be so evident is that list of boundary temperatures of the third 
+problem is the sum of the lists of boundary temperatures of the first two problems. (The 
+temperatures are listed clockwise, starting at the left of T1.) 
+   Fig. (a):   (  0, 20, 20,   0,   0, 20, 20,   0) 
+   Fig. (b):  (10,   0,   0, 40, 40, 10, 10, 10) 
+   Fig. from Section 1.1: (10, 20, 20, 40, 40, 30, 30, 10) 
+b. When the boundary temperatures in Fig. (a) are multiplied by 3, the new interior temperatures are 
+also multiplied by 3. 
+c. The correspondence from the list of eight boundary temperatures to the list of four interior 
+temperatures is a linear transformation. A verification of this statement is not expected. However, 
+it can be shown that the solutions of the steady-state temperature problem here satisfy a 
+superposition principle. The system of equations that approximate the interior temperatures can 
+----- pagina 79 -----
+Chapter 1    Supplementary Exercises    79  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+be written in the form Ax = b, where A is determined by the arrangement of the four interior 
+points on the plate and b is a vector in R4 determined by the boundary temperatures.  
+Note: The MATLAB box in the Study Guide  for Section 1.10 discusses scientific notation and shows 
+how to generate a matrix whose columns list the vectors x0, x1, x2, …, determined by an equation  
+xk+1 = Mxk for k = 0 , 1, ….   
+Chapter 1 SUPPLEMENTARY EXERCISES 
+ 1 . a. False. (The word “reduced” is missing.) Counterexample: 
+  12 1 2 12,,34 0 2 01AB C⎡⎤ ⎡ ⎤ ⎡⎤== =⎢⎥ ⎢ ⎥ ⎢⎥ −⎣⎦ ⎣ ⎦ ⎣⎦  
+  The matrix A is row equivalent to matrices B and C, both in echelon form. 
+b. False. Counterexample: Let A be any n×n matrix with fewer than n pivot columns. Then the 
+equation Ax = 0 has infinitely many solutions. (Theorem 2 in Section 1.2 says that a system has 
+either zero, one, or infinitely many solutions, but it does not say that a system with infinitely 
+many solutions exists. Some counterexample is needed.) 
+c. True. If a linear system has more than one solution, it is a consistent system and has a free 
+variable. By the Existence and Uniqueness Theorem in Section 1.2, the system has infinitely 
+many solutions. 
+d. False. Counterexample: The following system has no free variables and no solution: 
+  
+12
+2
+12
+1
+5
+2
+xx
+x
+xx
++=
+=
++=
+ 
+e. True. See the box after the definition of elementary row operations, in Section 1.1. If [A   b] is 
+transformed into [C   d] by elementary row operations, then the two augmented matrices are row 
+equivalent. 
+f. True. Theorem 6 in Section 1.5 essentially says that when Ax = b is consistent, the solution sets 
+of the nonhomogeneous equation and the homogeneous equation are translates of each other. In 
+this case, the two equations have the same number of solutions. 
+g. False. For the columns of A to span Rm, the equation Ax = b must be consistent for all b in Rm, 
+not for just one vector b in Rm. 
+h. False. Any matrix can be transformed by elementary row operations into reduced echelon form, 
+but not every matrix equation Ax = b is consistent. 
+i. True. If A is row equivalent to B, then A can be transformed by elementary row operations first 
+into B and then further transformed into the reduced echelon form U of B. Since the reduced 
+echelon form of A is unique, it must be U. 
+j. False. Every equation Ax = 0 has the trivial solution whether or not some variables are free. 
+k. True, by Theorem 4 in Section 1.4. If the equation Ax = b is consistent for every b in Rm, then A 
+must have a pivot position in every one of its m rows. If A has m pivot positions, then A has m 
+pivot columns, each containing one pivot position. 
+l. False. The word “unique” should be deleted. Let A be any matrix with m pivot columns but more 
+than m columns altogether. Then the equation Ax = b is consistent and has m basic variables and 
+at least one free variable. Thus the equation does not does not have a unique solution. 
+----- pagina 80 -----
+ 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+m. True. If A has n pivot positions, it has a pivot in each of its n columns and in each of its n rows. 
+The reduced echelon form has a 1 in each pivot position, so the reduced echelon form is the n×n 
+identity matrix.  
+n. True. Both matrices A and B can be row reduced to the 3×3 identity matrix, as discussed in the 
+previous question. Since the row operations that transform B into I3 are reversible, A can be 
+transformed first into I3 and then into B. 
+o. True. The reason is essentially the same as that given for question f. 
+p. True. If the columns of A span Rm, then the reduced echelon form of A is a matrix U with a pivot 
+in each row, by Theorem 4 in Section 1.4. Since B is row equivalent to A, B can be transformed 
+by row operations first into A and then further transformed into U. Since U has a pivot in each 
+row, so does B. By Theorem 4, the columns of B span Rm. 
+q. False. See Example 5 in Section 1.7. 
+r. True. Any set of three vectors in R2 would have to be linearly dependent, by Theorem 8 in 
+Section 1.7. 
+s. False. If a set { v1, v2, v3, v4} were to span R5, then the matrix A = [v1   v2   v3   v4] would have 
+a pivot position in each of its five rows, which is impossible since A has only four columns. 
+t. True. The vector –u  is a linear combination of u and v, namely, –u = (–1)u + 0v. 
+u. False. If u and v are multiples, then Span{u, v} is a line, and w need not be on that line. 
+v. False. Let u and v be any linearly independent pair of vectors and let w = 2v. Then w = 0u + 2v, 
+so w is a linear combination of u and v. However, u cannot be a linear combination of v and w 
+because if it were, u would be a multiple of v. That is not possible since {u, v} is linearly 
+independent. 
+w. False. The statement would be true if the condition v1 is not zero were present. See Theorem 7 in 
+Section 1.7. However, if v1 = 0, then {v1, v2, v3} is linearly dependent, no matter what else might 
+be true about v2 and v3. 
+x. True. “Function” is another word used for “transformation” (as mentioned in the definition of 
+“transformation” in Section 1.8), and a linear transformation is a special type of transformation. 
+y. True. For the transformation x 6 Ax to map R5 onto R6, the matrix A would have to have a pivot 
+in every row and hence have six pivot columns. This is impossible because A has only five 
+columns. 
+z. False. For the transformation x 6 Ax to be one-to-one, A must have a pivot in each column. 
+Since A has n columns and m pivots, m might be less than n.  
+ 2 . If a ≠ 0, then x = b/a; the solution is unique. If a = 0, and b ≠ 0, the solution set is empty, because  
+0x = 0 ≠ b. If a = 0 and b = 0, the equation 0x = 0 has infinitely many solutions. 
+ 3. a. Any consistent linear system whose echelon form is 
+   
+*** * ** 0 **
+0 * * o r  0 0 * o r  0 0 *
+0 000 00 00 0 0 00
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+ 
+   
+b. Any consistent linear system whose coefficient matrix has reduced echelon form I3. 
+c. Any inconsistent linear system of three equations in three variables.  
+ 4 . Since there are three pivots (one in each row), the augmented matrix must reduce to the form 
+----- pagina 81 -----
+Chapter 1    Supplementary Exercises    81  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+** *
+0* *
+00 *
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+
+
+
+. A solution of Ax = b exists for all b because there is a pivot in each row of A. Each 
+solution is unique because there are no free variables. 
+ 5. a. 13 1 3 ~48 0 1 2 8 4kkhh k⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ . If h = 12 and k ≠ 2, the second row of the augmented matrix 
+indicates an inconsistent system of the form 0x2 = b, with b nonzero. If h = 12, and k = 2, there is 
+only one nonzero equation, and the system has infinitely many solutions. Finally, if h ≠ 12, the 
+coefficient matrix has two pivots and the system has a unique solution. 
+b. 21 2 1 ~62 0 3 1hhkk h−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −+⎣⎦ ⎣ ⎦ . If k + 3h = 0, the system is inconsistent. Otherwise, the 
+coefficient matrix has two pivots and the system has a unique solution. 
+ 6 . a. Set 12 3
+42 7,,83 1 0 −⎡⎤ ⎡ ⎤ ⎡ ⎤== =⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦vv v , and 53−⎡ ⎤= ⎢ ⎥−⎣ ⎦b . “Determine if b is a linear combination of v1, 
+v2, v3.” Or, “Determine if b is in Span{v1, v2, v3}.” To do this, compute 
+42 75 4275 ~83 1 03 0147−− − −⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ . The system is consistent, so b is in Span{v1, v2, v3}. 
+b. Set A = 42 7 5 ,83 1 0 3−−⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ b . “Determine if b is a linear combination of the columns of A.” 
+c. Define T(x) = Ax. “Determine if b is in the range of T.”  
+ 7. a. Set 123
+242
+5, 1, 1
+753
+−−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=− = =⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ −−⎣⎦ ⎣⎦ ⎣⎦
+vv v  and 
+1
+2
+3
+b
+b
+b
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+b . “Determine if v1, v2, v3 span R3.” To do this, 
+row reduce [v1   v2   v3]: 
+  
+242 242 242
+511 ~ 094 ~ 094
+753 094 000
+−− −− −−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+. The matrix does not have a pivot in each row, 
+so its columns do not span R3, by Theorem 4 in Section 1.4. 
+b. Set A = 
+242
+511
+753
+−−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥ −−⎣⎦
+. “Determine if the columns of A span R3.” 
+c. Define T(x) = Ax. “Determine if T maps R3 onto R3.” 
+ 8. a. ** ** 0 *,,0* 0 0 0 0⎡ ⎤ ⎡⎤ ⎡⎤⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦    b. 
+**
+0*
+00
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+
+
+
+ 
+----- pagina 82 -----
+ 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. The first line is the line spanned by 12⎡⎤⎢⎥⎣⎦ . The second line is spanned by 21⎡ ⎤⎢ ⎥⎣ ⎦ . So the problem is to 
+write 56⎡⎤⎢⎥⎣⎦  as the sum of a multiple of 12⎡ ⎤⎢ ⎥⎣ ⎦  and a multiple of 21⎡ ⎤⎢ ⎥⎣ ⎦ . That is, find x1 and x2 such that 
+12
+21 5
+12 6xx⎡⎤ ⎡⎤ ⎡⎤+=⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ . Reduce the augmented matrix for this equation: 
+  2 1 51 2 61 2 61 2 61 0 4 / 3~~ ~ ~126 2 15 0 3 7 0 17 / 3 0 17 / 3⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  Thus, 473352161 2⎡⎤ ⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦   or  58 / 3 7 / 36 4/3 1 4/3⎡⎤ ⎡ ⎤ ⎡ ⎤=+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ . 
+ 10. The line through a1 and the origin and the line through a2 and the origin determine a “grid” on the  
+x1x2-plane as shown below. Every point in R2 can be described uniquely in terms of this grid. Thus, b 
+can be reached from the origin by traveling a certain number of units in the a1-direction and a certain 
+number of units in the a2-direction. 
+     
+ 11. A solution set is a line when the system has one free variable. If the coefficient matrix is 2×3, then 
+two of the columns should be pivot columns. For instance, take 12*03 *⎡ ⎤⎢ ⎥⎣ ⎦ . Put anything in column 
+3. The resulting matrix will be in echelon form. Make one row replacement operation on the second 
+row to create a matrix not in echelon form, such as 121 12 1 ~03 1 152⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦  
+ 12. A solution set is a plane where there are two free variables. If the coefficient matrix is 2×3, then only 
+one column can be a pivot column. The echelon form will have all zeros in the second row. Use a 
+row replacement to create a matrix not in echelon form. For instance, let A = 123123⎡⎤⎢⎥⎣⎦ . 
+ 13. The reduced echelon form of A looks like 
+10 *
+01*
+000
+E
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+. Since E is row equivalent to A, the 
+equation Ex = 0 has the same solutions as Ax = 0. Thus 
+10 * 3 0
+01* 2 0
+000 1 0
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥−=⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+.  
+x1
+x2
+a2
+a1
+b
+----- pagina 83 -----
+Chapter 1    Supplementary Exercises    83  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  By inspection, 
+10 3
+01 2
+00 0
+E
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+. 
+ 14. Row reduce the augmented matrix for 12
+10
+20
+axx aa⎡ ⎤⎡⎤ ⎡ ⎤+=⎢ ⎥⎢⎥ ⎢ ⎥ +⎣ ⎦⎣⎦ ⎣ ⎦  (*). 
+   2
+1010 1 0 ~20 0( 2 ) ( 1 )002 0 aaaaa a aaa⎡⎤⎡⎤ ⎡ ⎤ =⎢⎥⎢⎥ ⎢ ⎥ +− ++−⎣⎦ ⎣ ⎦ ⎣⎦  
+  The equation (*) has a nontrivial solution only when (2 – a)(1 + a ) = 0. So the vectors are linearly 
+independent for all a except a = 2 and a = –1. 
+ 15. a. If the three vectors are linearly independent, then a, c, and f must all be nonzero. (The converse is 
+true, too.) Let A be the matrix whose columns are the three linearly independent vectors. Then A 
+must have three pivot columns. (See Exercise 30 in Section 1.7, or realize that the equation  
+Ax = 0 has only the trivial solution and so there can be no free variables in the system of 
+equations.) Since A is 3×3, the pivot positions are exactly where a, c, and f are located. 
+b. The numbers a, …, f can have any values. Here's why. Denote the columns by v1, v2, and v3. 
+Observe that v1 is not the zero vector. Next, v2 is not a multiple of v1 because the third entry of v2 
+is nonzero. Finally, v3 is not a linear combination of v1 and v2 because the fourth entry of v3 is 
+nonzero. By Theorem 7 in Section 1.7, {v1, v2, v3} is linearly independent. 
+ 16. Denote the columns from right to left by v1, …, v4. The “first” vector v1 is nonzero, v2 is not a 
+multiple of v1 (because the third entry of v2 is nonzero), and v3 is not a linear combination of v1 and 
+v2 (because the second entry of v3 is nonzero). Finally, by looking at first entries in the vectors, v4 
+cannot be a linear combination of v1, v2, and v3. By Theorem 7 in Section 1.7, the columns are 
+linearly independent. 
+ 17. Here are two arguments. The first is a “direct” proof. The second is called a “proof by contradiction.” 
+i. Since { v1, v2, v3} is a linearly independent set, v1 ≠ 0. Also, Theorem 7 shows that v2 cannot be a 
+multiple of v1, and v3 cannot be a linear combination of v1 and v2. By hypothesis, v4 is not a linear 
+combination of v1, v2, and v3. Thus, by Theorem 7, {v1, v2, v3, v4} cannot be a linearly dependent 
+set and so must be linearly independent. 
+ii. Suppose that { v1, v2, v3, v4} is linearly dependent. Then by Theorem 7, one of the vectors in the 
+set is a linear combination of the preceding vectors. This vector cannot be v4 because v4 is not in 
+Span{v1, v2, v3}. Also, none of the vectors in {v1, v2, v3} is a linear combinations of the preceding 
+vectors, by Theorem 7. So the linear dependence of {v1, v2, v3, v4} is impossible. Thus {v1, v2, v3, 
+v4} is linearly independent. 
+ 18. Suppose that c1 and c2 are constants such that  
+   c 1v1 + c2(v1 + v2) = 0      (*) 
+  Then ( c1 + c2)v1 + c2v2 = 0. Since v1 and v2 are linearly independent, both c1 + c2 = 0 and c2 = 0. It 
+follows that both c1 and c2 in (*) must be zero, which shows that {v1, v1 + v2} is linearly independent. 
+ 19. Let M be the line through the origin that is parallel to the line through v1, v2, and v3. Then v2 – v1 and  
+v3 – v1 are both on M. So one of these two vectors is a multiple of the other, say v2 – v1 = k(v3 – v1). 
+This equation produces a linear dependence relation (k – 1)v1 + v2 – kv3 = 0. 
+----- pagina 84 -----
+ 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  A second solution: A parametric equation of the line is x = v1 + t(v2 – v1). Since v3 is on the line, 
+there is some t0 such that v3 = v1 + t0(v2 – v1) = (1 – t0)v1 + t0v2. So v3 is a linear combination of v1 
+and v2, and {v1, v2, v3} is linearly dependent. 
+ 20. If T(u) = v, then since T is linear, 
+   T (–u) = T((–1)u) = (–1)T(u) = –v. 
+ 21. Either compute T(e1), T(e2), and T(e3) to make the columns of A, or write the vectors vertically in the 
+definition of T and fill in the entries of A by inspection: 
+  
+11
+22
+33
+??? 1 0 0
+?? , 0 1 0
+??? 0 0 1
+xx
+AA x x A
+xx
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥== − = −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+x  
+ 22. By Theorem 12 in Section 1.9, the columns of A span R3. By Theorem 4 in Section 1.4, A has a pivot 
+in each of its three rows. Since A has three columns, each column must be a pivot column. So the 
+equation Ax = 0 has no free variables, and the columns of A are linearly independent. By Theorem 12 
+in Section 1.9, the transformation x 6 Ax is one-to-one. 
+ 23. 45 4 3 5  implies that  30 3 4 0ab a bba a b=−− =⎡⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥ +=⎣⎦ ⎣ ⎦ ⎣ ⎦ . Solve:  
+  43 5 4 3 5 43 5 4 0 1 6 / 5 1 04 / 5~~ ~ ~3 4 0 0 25/ 4 15/ 4 0 1 3/ 5 0 1 3/ 5 0 1 3/ 5−− −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− − −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  Thus a = 4/5 and b = –3/5. 
+ 24. The matrix equation displayed gives the information 242 5ab−=  and 420 .ab+=  Solve for a and 
+b: 242 5 12 5 1 01 / 524 2 5 ~~ ~
+42 0 01 0 4 5 0 1 2 / 5 0 1 2 / 5
+⎡ ⎤⎡ ⎤⎡ ⎤⎡⎤ −−− ⎢ ⎥⎢ ⎥⎢ ⎥⎢⎥ −− −⎢ ⎥⎢ ⎥⎢ ⎥⎣⎦ ⎣ ⎦⎣ ⎦⎣ ⎦  
+  So 1/ 5, 2/ 5.ab== −  
+ 25. a. The vector lists the number of three-, two-, and one-bedroom apartments provided when x1 floors 
+of plan A are constructed. 
+b. 123
+345
+743
+889
+xxx
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥++⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+ 
+c. [M]  Solve 123
+345 6 6
+743 7 4
+8 8 9 136
+xxx
+⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥++=⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  
+13
+23
+3 4 56 6 1 01 / 22 ( 1 / 2 ) 2
+7 4 3 74 ~ 0 1 13/8 15    (13/8) 15
+8 8 9 136 0 0 0 0 0 0
+xx
+xx
+−− =⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥⋅⋅⋅ + =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ =⎣⎦ ⎣ ⎦
+ 
+  The general solution is 
+----- pagina 85 -----
+Chapter 1    Supplementary Exercises    85  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+13
+23 3
+33
+2( 1 / 2 ) 2 1 / 2
+15 (13/8) 15 13/8
+01
+xx
+xx x
+xx
++⎡⎤⎡ ⎤⎡⎤ ⎡ ⎤
+⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥== − =+ −⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥
+⎢⎥⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦⎣ ⎦⎣⎦ ⎣ ⎦
+x  
+  However, the only feasible solutions must have whole numbers of floors for each plan. Thus, x3 
+must be a multiple of 8, to avoid fractions. One solution, for x3 = 0, is to use 2 floors of plan A 
+and 15 floors of plan B. Another solution, for x3 = 8, is to use 6 floors of plan A , 2 floors of plan 
+B, and 8 floors of plan C. These are the only feasible solutions. A larger positive multiple of 8 for 
+x3 makes x2 negative. A negative value for x3, of course, is not feasible either. 
+ 
+----- pagina 86 -----
+ 
+ 
+ 

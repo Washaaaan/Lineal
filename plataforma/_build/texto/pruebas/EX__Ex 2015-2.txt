@@ -1,0 +1,875 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2015
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on al Examen, primera versi´ on
+Justifique sus respuestas.
+1. [Problema 1.8.25 del texto]
+Sean v, p∈ R3 tales que v⁄= 0. Se sabe que la recta que pasa por p en la direcci´ onv tiene por
+ecuaci´ on param´ etricax = p +tv (donde t∈ R es el par´ ametro).
+Demuestre que si T : R3→ R3 es una transformaci´ on lineal, entonces la imagen bajoT de esta
+recta es, o bien ella misma, o bien otra recta, o bien un punto de R3 (en otras palabras, T mapea
+esta recta sobre s´ ı misma, sobre otra recta o sobre un solo punto).
+Soluci´ on:
+Llamemos 𝓁 a la recta. Claramente, la imagen de 𝓁 bajo T contiene a T (p). Dependiendo de si
+T (v) = 0 o no, tenemos dos casos:
+a) Si T (v) = 0, entonces dado cualquier x = p +tv∈𝓁 se tiene
+T (x) =T (p +tv) =T (p) +T (tv) =T (p) +tT (v) =T (p) +t0 =T (p).
+As´ ı, en este caso la imagen bajoT de esta recta es un punto de R3, a saber, T (p).
+b) Si T (v) = u⁄= 0, entonces dado cualquier x = p +tv∈𝓁 se tiene
+T (x) =T (p +tv) =T (p) +T (tv) =T (p) +tT (v) =T (p) +tu.
+As´ ı, en este caso la imagen bajo T de esta recta es la recta que pasa por T (p) y tiene
+direcci´ onu =T (v).
+Esta recta puede ser la misma recta 𝓁 u otra.
+Nota: En estricto rigor, lo anterior demuestra que la imagen de 𝓁 bajo T est´ acontenida en
+la recta a que pasa por T (p) y tiene direcci´ onu = T (v). Para completar la demostraci´ on
+debemos probar la inclusi´ on rec´ ıproca, o sea, dado cualquier vectorT (p) +λu de la recta
+que pasa por T (p) y tiene direcci´ onu = T (v), dicho vector es imagen de alg´ un elemento
+de 𝓁 bajo T .
+Pero esto es evidente:
+T (p) +λu =T (p) +λT (v) =T (p +λv),
+y p +λv)∈𝓁.
+Puntaje:
+Si la estructura general de la demostraci´ on est´ a correcta, 1 punto.
+Por probar que si T (v) = 0 entoncesT (𝓁) es un punto, 2 puntos.
+Por probar que si T (v)⁄= 0 entoncesT (𝓁) est´ a contenida en una recta, 3 puntos.
+Por probar que si T (v)⁄= 0 entonces la recta que pasa por T (p) y tiene direcci´ onu =T (v)
+est´ a contenido enT (𝓁), 1 punto.
+A lo anterior se agrega el punto base.2. [Problema 2.3.27 del texto]
+SeanA yB dos matrices de n×n. Demuestre que si AB es invertible, entoncesA tambi´ en lo es.
+Primera Soluci´ on:
+Por ser AB invertible, existe una matriz F tal que (AB)F =I.
+Pero entonces A(BF ) =I, por lo que A es invertible.
+Segunda Soluci´ on:
+Por ser AB invertible, dado cualquier b∈ Rn, la ecuaci´ onABx = b es consistente (tiene al
+menos una soluci´ on).
+Pero entonces la ecuaci´ onAx = c debe tener soluci´ on para todoc∈ Rn, ya que si v es soluci´ on
+de ABx = c entoncesBv es soluci´ on deAx = c.
+Tercera Soluci´ on:
+Por ser AB invertible, la transformaci´ on linealx→ ABx es sobre Rn.
+Pero entonces la transformaci´ on linealx→Ax debe ser sobre Rn, ya que de no ser as´ ı, existir´ ıa
+un y∈ Rn tal que no hay ning´ unv∈ Rn tal que Av = y. Pero —por ser x→ ABx sobre Rn—
+existe alg´ unu∈ Rn tal que ABu = y. Pero entonces tomando b =Bu contradecimos el hecho
+de que no hay ning´ unv∈ Rn tal que Av = y.
+En el fondo, demostramos el contrarrec´ ıproco: siA no es invertible, entonces AB tampoco lo es.
+Puntaje:
+En cualquiera de las soluciones (u otras correctas que se les ocurran a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada (por ejemplo, directa o por
+contradicci´ on), 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.3. [Problema 4.1.32 del texto]
+SeanH yK dos subespacios de un espacio vectorial V . La intersecci´ ondeH yK, representada
+como H∩K, se deﬁne como el conjunto de vectores de V que pertenecen tanto a H como a K.
+Demuestre que H∩K es un subespacio de V .
+Soluci´ on:
+Para probar que H∩K es un subespacio de V , debemos probar que:
+(i) H∩K⁄= ∅.
+(ii) H∩K es cerrado bajo suma.
+(iii) H∩K es cerrado bajo ponderaci´ on por un escalar.
+Note que una forma alternativa es probar que H∩K⁄= ∅ y es cerrado bajo “combinaciones
+lineales de dos de sus elementos”: en otras palabras, si α,β ∈ R y u, v ∈ H∩K entonces
+αu +βv∈H∩K.
+En efecto:
+(i) La forma m´ as simple de demostrar que H∩K⁄= ∅ es probar que 0∈ H∩K. Para ello
+podemos usar el hecho de que 0∈H y 0∈K, por lo que 0 es un elemento com´ un deH y
+de K, de donde 0∈H∩K.
+(ii) Sean u, v∈H∩K. Entonces u∈H, u∈K, v∈H y v∈K. Como H es subespacio de
+V , es cerrado bajo suma, por lo que u + v∈H; del mismo modo, u + v∈K, por lo que
+u + v∈H∩K.
+O sea, H∩K es cerrado bajo suma.
+(iii) Sean u∈H∩K y c∈ R. Entonces u∈H y u∈K, por lo que —como tanto H como K
+son subespacios de V — se tiene que cu∈ H y cu∈ K, por lo que cu∈ H∩K. O sea,
+H∩K es cerrado bajo ponderaci´ on por un escalar.
+Puntaje:
+Por mencionar que se debe demostrar que H∩K ⁄= ∅, y que H∩K es cerrado bajo
+suma y bajo ponderaci´ on (o, equivalente a estos ´ ultimos dos, queH∩K es cerrado bajo
+combinaciones lineales de dos de sus elementos), 1 punto.
+Nota: este punto se da incluso si no se menciona expl´ ıcitamenteque hay que demostrar las
+tres condiciones, siempre y cuando demuestren las tres (o al menos intenten demostrarlas).
+Por ejemplo, si demuestran que H∩K es cerrado bajo suma y ponderaci´ on, pero omiten
+demostrar que H∩K⁄= ∅, reciben solo 4 puntos, no 5.
+Por demostrar que H∩K⁄= ∅, 1 punto.
+Por demostrar que H∩K es cerrado bajo suma, 2 puntos.
+Por demostrar que H∩K es cerrado bajo ponderaci´ on, 2 puntos.
+O, equivalente a estos ´ ultimos dos, por demostrar queH∩K es cerrado bajo combinaciones
+lineales de dos de sus elementos), 4 puntos.
+A lo anterior se le suma el punto base.4. Sea A una matriz de 4× 3 tal que PA =LU, donde P es una matriz de permutaci´ on,L es una
+matriz cuadrada, triangular inferior con n´ umeros 1 en la diagonal, yU est´ a en forma escalonada
+(o, en otras palabras, es triangular superior).
+Demuestre que siU tiene columnas linealmente independientes, entonces la transformaci´ on lineal
+x→Ax es uno a uno.
+Soluci´ on:
+SiU tiene columnas l.i., entonces todas las columnas deU son pivotes. Pero las columnas pivotes
+de U son las mismas que las de PA , por lo que todas las columnas de A son pivotes.
+Ya que todas las columnas de A son pivotes, al escalonar la matriz aumentada [ A| b] donde b
+es alg´ un vector en ColA, las tres columnas correspondientes a A son pivotes, por lo que ninguna
+corresponde a una variable libre.
+As´ ı, sib∈ ColA, el sistema Ax = b tiene soluci´ on ´ unica, lo que signiﬁca que la transformaci´ on
+lineal x→Ax es uno a uno.
+Puntaje:
+En esta soluci´ on (u otracorrecta que se le ocurra a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada (por ejemplo, directa o por
+contradicci´ on), 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.5. [Problema 5.6.1 del texto]
+Sea A una matriz de 2 × 2 con valores propios 3 y 1 /3, y vectores propios correspondientes
+v1 =
+[1
+1
+]
+y v2 =
+[−1
+1
+]
+.
+Sea{xk} una soluci´ on de la ecuaci´ on en diferenciasxk+1 =Axk, donde x0 =
+[9
+1
+]
+.
+Calcule x1, y encuentre una f´ ormula paraxk en t´ erminos dek y de los vectores propios v1 y v2.
+Soluci´ on:
+Como{v1, v2} es una base de R2, buscamos escalares α y β tales que
+x0 =
+[9
+1
+]
+=αv1 +βv2.
+No es dif´ ıcil ver queα = 5, β =−4 satisface esto. As´ ı,x0 = 5v1− 4v2 y por lo tanto
+x1 =Ax0 =A(5v1− 4v2) = 5Av1− 4Av2 = 5· (3v1)− 4·
+(1
+3v1
+)
+= 15v1− 43v2 =
+
+
+49
+3
+41
+3
+
+.
+Calculando x2 =Ax1 = 5· 9v1− 49v2, etc., descubrimos que
+xk = 5· 3kv1− 43k v2.
+Puntaje:
+Por expresar x0 en t´ erminos de los vectores propiosv1 y v2 (encontrandoα y β): 1 punto.
+Por calcular x1: 1 punto.
+Por llegar a la f´ ormula general paraxk: 4 puntos.
+A lo anterior se suma el punto base.6. [Problema 7.4.10 del texto]
+Encuentre una descomposici´ on en valores singulares deA =
+
+
+4 −2
+2 −1
+0 0
+
+.
+Soluci´ on:
+Encontremos primero los valores singulares de A. Estos son las ra´ ıces cuadradas de los valores
+propios de
+ATA =
+[ 4 2 0
+−2 −1 0
+]
+
+4 −2
+2 −1
+0 0
+
+ =
+[ 20 −10
+−10 5
+]
+.
+Como los valores propios de esta matriz son (ordenados de mayor a menor):
+λ1 = 25, λ 2 = 0,
+los valores singulares de A son
+σ1 = 5, σ 2 = 0.
+Dos vectores propios de ATA correspondientes a los vectores propios λ1 = 25,λ 2 = 0 son,
+respectivamente,
+
+
+−2
+1
+
+ y
+
+
+1√
+5
+2√
+5
+
+.
+Normaliz´ andolos, obtenemos
+v1 =
+
+− 2√51√
+5
+
+ y v2 =
+
+
+1√
+5
+2√
+5
+
+ ;
+con ellos formamos la matriz ortogonal
+V = [v1 v2] =
+
+− 2√5 1√51√
+5
+2√
+5
+
+.
+El vectorAv1 =
+
+
+−10
+−5
+0
+
+, por s´ ı solo, forma una base del espacio ColA. Normaliz´ andolo, obtene-
+mos una base ortonormal de Col A,BColA ={u1} =
+
+
+
+
+− 2√5− 1√5
+0
+
+
+
+
+.El siguiente paso es completar {u1} a una base ortonormal {u1, u2, u3} de R3. Una forma de
+hacer esto (¡no la ´ unica!) es tomaru2 =
+
+
+1√
+5
+− 2√5
+0
+
+, u3 =
+
+
+0
+0
+1
+
+.
+Con los tres vectores u1, u2 y u3 formamos la matriz ortogonal
+U =
+
+− 2√5 1√5 0− 1√5 − 2√5 0
+0 0 1
+
+
+La tercera matriz que necesitamos es una matriz Σ del mismo tama˜ no que A (3× 2) que en la
+diagonal principal est´ a formada por los valores singulares mayores que 0, ordenados en forma
+decreciente, seguidos de tantos ceros como sea necesario, y donde los elementos fuera de la
+diagonal principal son cero.
+En este caso, el ´ unico valor singular> 0 es σ1 = 5, y la diagonal principal tiene largo 2, por lo
+que
+Σ =
+
+
+5 0
+0 0
+0 0
+
+
+Finalmente, la descomposici´ on en valores singulares deA es
+A =UΣVT =
+
+− 2√5 1√5 0− 1√5 − 2√5 0
+0 0 1
+
+5 00 00 0 − 2√5 1√51√5 2√5T =
+
+− 2√5 1√5 0− 1√5 − 2√5 0
+0 0 1
+
+5 00 00 0 − 2√5 1√51√5 2√5.
+Puntaje:
+Por encontrar los valores singulares de A: 1 punto.
+Por encontrar los vectores propios de ATA: 1 punto.
+Por construir la matriz V : 1 punto.
+Por determinar el vector u1: 1 punto.
+Por completar{u1} a una base ortonormal de R3, y construir la matriz U: 1 punto.
+Por construir la matriz Σ: 1 punto.7. [Problema 6.5-10 del texto]
+Dadas las matrices
+A =
+
+
+1 2
+−1 4
+1 2
+
+, b =
+
+
+3
+−1
+5
+
+
+a) Encuentre la proyecci´ on deb sobre Col(A).
+b) Encuentre una soluci´ on de m´ ınimos cuadrados deAx = b.
+Soluci´ on:
+a) Observamos en primer lugar que las columnas de A son ortogonales:
+(1,−1, 1)· (2, 4, 2) = 2− 4 + 2 = 0.
+As´ ı, una base ortonormal de ColA se obtiene simplemente normalizando las columnas de
+A:
+BColA =
+
+
+
+
+
+1√
+3
+−1√
+3
+1√
+3
+
+,
+
+
+1√
+6
+2√
+6
+1√
+6
+
+
+
+
+.
+As´ ı, la proyecci´ on ortogonal deb sobre ColA est´ a dada por
+proyColA b =
+
+
+1√
+3
+1√
+6
+−1√
+3
+2√
+6
+1√
+3
+1√
+6
+
+
+
+
+1√
+3
+1√
+6
+−1√
+3
+2√
+6
+1√
+3
+1√
+6
+
+
+T
+b =
+
+
+1√
+3
+1√
+6
+−1√
+3
+2√
+6
+1√
+3
+1√
+6
+
+ 1√3 −1√3 1√31√6 2√6 1√6 3−15 
+=
+
+
+1√
+3
+1√
+6
+−1√
+3
+2√
+6
+1√
+3
+1√
+6
+
+ 3√3√6  = 4−14 b) El conjunto de soluciones del problema de m´ ınimos cuadrados deAx = b es el conjunto de
+soluciones de las ecuaciones normales ATAx =ATb, o sea, de
+[1 −1 1
+2 4 2
+]
+
+1 2
+−1 4
+1 2
+
+
+[x1
+x2
+]
+=
+[1 −1 1
+2 4 2
+]
+
+3
+−1
+5
+
+ o, equivalentemente,
+[3 0
+0 24
+][x1
+x2
+]
+=
+[ 9
+12
+]
+.
+Claramente, este ´ ultimo sistema tiene como ´ unica soluci´ on
+
+
+x1
+x2
+
+ =
+
+
+3
+1/2
+
+, que es la soluci´ on
+buscada.
+Puntaje:
+a) Por darse cuenta de que los vectores columna de A forman una base ortogonal (y
+normalizarlos): 1 punto.
+Por plantear la f´ ormula proyColA = UUTb (donde U es la matriz cuyas columnas son
+la base ortonormal de Col A): 1 punto.
+Por realizar el c´ alculo correctamente: 1 punto.
+b) Por indicar que se debe resolver ATAx =ATb: 1 punto.
+Por plantear correctamente los productos a realizar para resolver lo anterior: 1 punto.
+Por llegar al sistema diagonal que permite encontrar x: 0,5 puntos.
+Por llegar al valor buscado de x: 0,5 puntos.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) [Problema 7.1.25c del texto]
+Toda matriz sim´ etrica den×n tiene n valores propios reales distintos.
+b) [Problema 7.2.28 del texto]
+Si A es una matriz sim´ etrica e invertible de n×n tal que la forma cuadr´ atica xTA x es
+positiva deﬁnida, entonces la forma cuadr´ aticaxTA−1 x tambi´ en lo es.
+Soluci´ on:
+a) FALSO.
+La matriz I2 =
+[1 0
+0 1
+]
+tiene un valor propio repetido (λ = 1).
+b) VERDADERO.
+Por ser A sim´ etrica, es diagonalizable, o sea, puede ser escrita como A = PDP −1 con P
+invertible y D es una matriz diagonal formada por los valores propios de A.
+Por ser A invertible, todos sus valores propios son no nulos, por lo que D es invertible (sus
+entradas diagonales son los rec´ ıprocos de los valores propios deA), y A−1 = (PDP −1)−1 =
+PD −1P −1.
+Ahora bien: una matriz sim´ etrica es deﬁnida positiva si y solo si todos sus valores propios
+son positivos, por lo que los deA lo son, y en consecuencia los deA−1 (que son los rec´ ıprocos
+de los valores propios de A) tambi´ en lo son, por lo queA−1 es deﬁnida positiva.
+Puntaje:
+a) Responder FALSO sin realmente justiﬁcar obtiene 0 puntos de 3.
+Responder FALSO con una justiﬁcaci´ on muy vaga, obtiene 1 punto de 3.
+Si explican MUY bien C´OMO construir un contraejemplo, sin llegar a dar uno espec´ ıﬁco
+obtienen 2 puntos de 3.
+b) Si lo hacen siguiendo el esquema mostrado aqu´ ı:
+Por mostrar que A es diagonalizable y los valores propios de D son los mismos de A: 1
+punto.
+Por argumentar que D es invertible, y en consecuencia los valores propios de D−1 son
+los mismos de A−1 (que son los rec´ ıprocos de los valores propios deA: 1 punto.
+Por ligar la cualidad de deﬁnida positiva a tener solo valores propios positivos, y llegar
+a que A−1 es deﬁnida positiva: 1 punto.
+A lo anterior se le suma el punto base.Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2015
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on al Examen, segunda versi´ on
+Justifique sus respuestas.
+1. [Problema 4.2.33 del texto]
+SeaM2×2 el espacio vectorial de todas las matrices de 2×2, y deﬁnaT :M2×2→M2×2 mediante
+T (A) =A +AT .
+a) [4 pts.] Demuestre que T es una transformaci´ on lineal.
+b) [2 pts.] Describa el n´ ucleo deT , indicando una propiedad que caracterice a las matrices
+de 2× 2 que pertenecen a ´ el.
+Soluci´ on:
+a) Debemos probar que T (A +B) =T (A) +T (B) y que, si c∈ R, entonces T (cA) =cT (A).
+En efecto:
+T (A+B) = (A+B)+(A+B)T =A+B+AT +BT = (A+AT )+(B+BT ) =T (A)+T (B).
+T (cA) = (cA) + (cA)T =cA +cAT =c(A +AT ) =cT (A).
+Nota: Otra forma de demostrar esto es probar que, si A,B ∈ M2×2 y s,t ∈ R entonces
+T (sA +tB) =sT (A) +tT (B).
+En efecto:
+T (sA +tB) = ( sA +tB) + (sA +TB )T =sA +tB +sAT +tBT
+= sA +sAT +tB +tBT =s(A +AT ) +t(B +BT )
+= sT (A) +tT (B).
+b) El n´ ucleo (okernel) de la transformaci´ onT es el conjunto de las matrices A de M2×2 que
+satisfacen A +AT = 0, o sea, tales que AT =−A.
+En otras palabras, el n´ ucleo de la transformaci´ onT es el conjunto de las matrices anti-
+sim´ etricasde 2× 2.
+a) Por probar que T (A +B) =T (A) +T (B): 2 puntos.
+Por probar que, si c∈ R, entonces T (cA) =cT (A): 2 puntos.
+Nota: Si en lugar de esto prueban correctamente que para s,t∈ R se cumple que T (sA +
+tB) =sT (A) +tT (B), obtienen los 4 puntos.
+b) Por decir que el n´ ucleo de la transformaci´ onT es el conjunto de las matrices A de M2×2
+que satisfacen A +AT = 0 (o AT =−A, o que son antisim´ etricas): 2 puntos.
+A lo anterior se le agrega el punto base.2. [Problema 2.3.23 del texto]
+Sea A una matriz de n×n. Demuestre que si la ecuaci´ onAx = b es inconsistente para alg´ un
+b∈ Rn, entonces la ecuaci´ onAx = 0 tiene alguna soluci´ on no trivial.
+Primera Soluci´ on:
+Supongamos que para b∈ Rn, la ecuaci´ onAx = b es inconsistente.
+Entonces al escalonar la matriz aumentada [A| b] llegamos a una ﬁla de la forma [0 0 ... 0 1].
+Pero entonces, al escalonar la matriz aumentada [A| 0] llegamos a una ﬁla de la forma [0 0... 0 0],
+por lo que al menos una de las variables en el sistema Ax = 0 es libre. Pero entonces las varia-
+bles dependientes pueden ser despejadas en t´ erminos de las variables libres, y como estas pueden
+tomar valores arbitrarios, basta que una de ellas tome un valor ⁄= 0 para encontrar una soluci´ on
+no trivial del sistema.
+Segunda Soluci´ on:
+Si la ecuaci´ onAx = b es inconsistente, entonces A tiene rango menor que la matriz aumentada
+[A| 0]: rangoA< rango([A| 0])≤n.
+Como el rango de A es menor a su n´ umero de columnas, todo sistema de la formaAx = c o bien
+es inconsistente o tiene inﬁnitas soluciones.
+Como el sistema Ax = 0 claramente no es inconsistente, debe tener inﬁnitas soluciones, por lo
+que tiene una cantidad inﬁnita de soluciones no triviales.
+Puntaje:
+En cualquiera de las soluciones (u otras correctas que se les ocurran a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada (por ejemplo, directa o por
+contradicci´ on), 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.3. [Problema 4.1.33 del texto]
+Sean H y K dos subespacios de un espacio vectorial V . La suma de H y K, representada como
+H +K, se deﬁne como el conjunto de los vectores de V que pueden ser representados como la
+suma de un vector de H y un vector de K. En otras palabras:
+H +K ={w : w = u + v para alg´ unu∈H y alg´ unv∈K}.
+Demuestre que H +K es un subespacio de V .
+Soluci´ on:
+Para probar que H +K es un subespacio de V , debemos probar que:
+(i) H +K⁄= ∅.
+(ii) H +K es cerrado bajo suma.
+(iii) H +K es cerrado bajo ponderaci´ on por un escalar.
+Note que una forma alternativa es probar que H +K⁄= ∅ y es cerrado bajo “combinaciones
+lineales de dos de sus elementos”: en otras palabras, si α,β ∈ R y u, v ∈ H +K entonces
+αu +βv∈H +K.
+En efecto:
+(i) La forma m´ as simple de demostrar queH +K⁄= ∅ es probar que 0∈ H +K. Para ello
+podemos usar el hecho de que 0∈H y 0∈K, por lo que 0 puede ser escrito como suma
+de un elemento de H y otro de K: 0 = 0 + 0∈H +K.
+(ii) Sean u, v∈ H +K. Entonces u = uH + uK con uH∈ H, uK∈ K, y v = vH + vK con
+vH∈H, vK∈K.
+Como H es subespacio de V , es cerrado bajo suma, por lo que uH + vH∈H; del mismo
+modo, uK + vK∈K, de donde
+u + v = (uH + uK) + (vH + vK) = (uH + vH) + (uK + vK)∈H +K.
+O sea, H +K es cerrado bajo suma.
+(iii) Sean u∈H +K y c∈ R. Entonces u = uH + uK con uH∈H, uK∈K
+Como tanto H como K son subespacios de V , se tiene que cuH∈ H y cuK∈ K, por lo
+que
+cu =c(uH + uK) = (cuH) + (cuK)∈H +K.
+O sea, H +K es cerrado bajo ponderaci´ on por un escalar.
+Puntaje:
+Por mencionar que se debe demostrar que H +K ⁄= ∅, y que H +K es cerrado bajo
+suma y bajo ponderaci´ on (o, equivalente a estos ´ ultimos dos, queH +K es cerrado bajo
+combinaciones lineales de dos de sus elementos), 1 punto.
+Nota: este punto se da incluso si no se menciona expl´ ıcitamenteque hay que demostrar las
+tres condiciones, siempre y cuando demuestren las tres (o al menos intenten demostrarlas).
+Por ejemplo, si demuestran que H +K es cerrado bajo suma y ponderaci´ on, pero omiten
+demostrar que H +K⁄= ∅, reciben solo 4 puntos, no 5.Por demostrar que H +K⁄= ∅, 1 punto.
+Por demostrar que H +K es cerrado bajo suma, 2 puntos.
+Por demostrar que H +K es cerrado bajo ponderaci´ on, 2 puntos.
+O, equivalente a estos ´ ultimos dos, por demostrar queH +K es cerrado bajo combinaciones
+lineales de dos de sus elementos), 4 puntos.
+A lo anterior se le suma el punto base.4. Sea A una matriz de 3× 4 tal que PA =LU, donde P es una matriz de permutaci´ on,L es una
+matriz cuadrada, triangular inferior con n´ umeros 1 en la diagonal, yU est´ a en forma escalonada
+(o, en otras palabras, es triangular superior).
+Demuestre que si U tiene ﬁlas linealmente independientes, entonces la transformaci´ on lineal
+x→Ax mapea R4 sobre R3.
+Soluci´ on:
+Si U tiene ﬁlas l.i., entonces al escalonar A no queda una ﬁla de ceros (si eso ocurriera, quiere
+decir que dicha ﬁla es combinaci´ on lineal de las otras y por lo tanto las ﬁlas no son l.i.).
+As´ ı, dado cualquierb∈ R3, al escalonar [A| b], las columnas pivote ser´ an columnas deA (no la
+´ ultima columna).
+En otras palabras, dado cualquier b∈ R3, el sistema representado por la ecuaci´ onAx = b es
+consistente, lo que nos dice que existe un x∈ R4 cuya imagen por la transformaci´ onx→Ax es
+b.
+Lo anterior demuestra que la transformaci´ onx→Ax mapea R4 sobre R3.
+Puntaje:
+En esta soluci´ on (u otracorrecta que se le ocurra a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada (por ejemplo, directa o por
+contradicci´ on), 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.5. [Problema 5.3.15 del texto]
+Diagonalice la matriz
+A =
+
+
+0 −1 −1
+1 2 1
+−1 −1 0
+
+
+Soluci´ on:
+El polinomio caracter´ ıstico deA es
+det(A−λI) =
+⏐⏐⏐⏐⏐⏐−λ −1 −11 2 −λ 1−1 −1 −λ⏐⏐⏐⏐⏐⏐ =−⏐⏐⏐⏐⏐⏐ 1 2 −λ 1−λ −1 −1−1 −1 −λ⏐⏐⏐⏐⏐⏐ =f3+f1,f2+λf1−⏐⏐⏐⏐⏐⏐1 2 −λ 10 2 λ−λ2− 1 λ− 10 1 −λ 1−λ⏐⏐⏐⏐⏐⏐
+= −
+⏐⏐⏐⏐⏐⏐1 2 −λ 10 −(λ− 1)2 λ− 10 1 −λ 1−λ⏐⏐⏐⏐⏐⏐ = (λ− 1)⏐⏐⏐⏐⏐⏐1 2 −λ 10 λ− 1 −10 1 −λ 1−λ⏐⏐⏐⏐⏐⏐ =−(λ− 1)2⏐⏐⏐⏐⏐⏐1 2 −λ 10 λ− 1 −10 1 1 ⏐⏐⏐⏐⏐⏐
+= −(λ− 1)2 (λ− 1 + 1) =−λ(λ− 1)2
+Note que hay m´ as de una manera de llegar a este resultado . . .
+As´ ı, los valores propios deA son 1 (con multiplicidad 2) y 0 (con multiplicidad 1).
+Para determinar los vectores propios, debemos encontrar las soluciones de (A−I)x = 0 yAx = 0.
+Para λ = 0, tenemos A−λI = A =
+
+
+0 −1 −1
+1 2 1
+−1 −1 0
+
+, la que tras ser llevada a forma escalo-
+nada reducida queda
+
+
+1 0 −1
+0 1 1
+0 0 0
+
+, y vemos que la soluci´ on de (A−λI)x = 0 es x2 =−x3,
+x1 = x3, por lo que la dimensi´ on del espacio propio correspondiente al valor propio λ = 0
+es 1, ya que hay solo una variable libre, a saber x3. Asignando el valor 1 a dicha variable libre
+obtenemos el vector propio (1,−1, 1), por lo que una base de dicho espacio propio es{(1,−1, 1)}.
+Paraλ = 1, calculamosA−I =
+
+
+−1 −1 −1
+1 1 1
+−1 −1 −1
+
+, la que tras ser escalonada queda
+
+
+1 1 1
+0 0 0
+0 0 0
+
+, de
+donde la soluci´ on de (A−I)x = 0 es x1 =−x2−x3, por lo que la dimensi´ on del espacio propio
+correspondiente al valor propio λ = 1 es 2, ya que hay dos variables libres. Para determinar
+una base de dicho espacio propio, asignamos los valores (1 , 0) y (0, 1) a (x2,x 3), obteniendo los
+vectores (−1, 1, 0) y (−1, 0, 1).
+Con los vectores propios como columnas (agrupadas por valor propio) generamos la matriz P :
+P =
+
+
+1 −1 −1
+−1 1 0
+1 0 1
+
+.
+La matrizD es la matriz que en la diagonal tiene los valores propios, en el orden correspondiente
+a los vectores propios que son columnas de A:D =
+
+
+0 0 0
+0 1 0
+0 0 1
+
+.
+As´ ı,
+A =PDP −1 =
+
+
+1 −1 −1
+−1 1 0
+1 0 1
+
+
+
+
+0 0 0
+0 1 0
+0 0 1
+
+
+
+
+1 −1 −1
+−1 1 0
+1 0 1
+
+
+−1
+.
+Puntaje:
+Por calcular el polinomio caracter´ ıstico deA: 1 punto.
+Por determinar los valores propios de A: 0,5 puntos.
+Por encontrar un vector propio correspondiente a λ = 2: 1 punto.
+Por encontrar dos vectores propios independientes, correspondientes a λ = 3: 2 puntos.
+Por escribir la matriz P : 1 punto.
+Por escribir A como PDP −1: 0,5 puntos.
+A lo anterior se suma el punto base.
+Note que No es necesario calcular P −1.6. [Problema 7.1.30 del texto]
+Suponga que tanto A como B son diagonalizables ortogonalmente, y que AB = BA. Explique
+por qu´ eAB tambi´ en es diagonalizable ortogonalmente.
+Soluci´ on:
+Sabemos (Teorema 2, Lay) que una matriz M es diagonalizable ortogonalmente si y solo si es
+sim´ etrica.
+Ya queA y B son diagonalizables ortogonalmente, entonces tanto A como B son sim´ etricas.
+As´ ı, (AB)T =BTAT =BA =AB; o sea, AB es sim´ etrica.
+Pero entonces —aplicando nuevamente el mismo teorema— como AB es sim´ etrica, es diagona-
+lizable ortogonalmente.
+Puntaje:
+Por plantear una demostraci´ on correctamente estructurada (por ejemplo, directa o por
+contradicci´ on), 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.7. Sea R =
+
+−35 454
+5
+3
+5
+
+.
+a) Demuestre que R es una matriz de reﬂexi´ on.
+b) Encuentre una base para el espacio sobre el cual R reﬂeja.
+c) ¿Cu´ al es la matriz de proyecci´ on correspondiente a este espacio?
+Soluci´ on:
+a) Una matriz cuadrada R es de reﬂexi´ on si y solo siP =
+(R +I
+2
+)
+es una matriz de proyecci´ on.
+A su vez, una matriz cuadrada P es de proyecci´ on si y solo siP 2 =P .
+As´ ı, la forma m´ as simple de demostrar queR es de reﬂexi´ on es calcular
+P =
+(R +I
+2
+)
+= 12
+
+
+2
+5
+4
+5
+4
+5
+8
+5
+
+ =
+
+
+1
+5
+2
+5
+2
+5
+4
+5
+
+
+y probar que P 2 =P . Esto puede hacerse directamente.
+b) El espacio sobre el cual se reﬂeja es generado por el conjunto de columnas de P . Como este
+conjunto es l.d., una base est´ a formada por un vector,
+B =
+
+
+
+
+
+1
+5
+2
+5
+
+
+
+
+
+o, si se preﬁere,
+B =
+
+
+
+
+
+1
+2
+
+
+
+
+.
+c) La matriz de proyecci´ on es la matrizP indicada anteriormente.
+Puntaje:
+a) Por justiﬁcar adecuadamente que R es de reﬂexi´ on: 2 puntos.
+b) Por llegar a alguna base del espacio indicado: 2 puntos.
+c) Por dar en forma expl´ ıcita la matriz (o mencionar que fue calculada antes, si es ese el caso):
+2 puntos.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) [Problema 7.4.21 del texto]
+Si A es una matriz de m×n y P es una matriz ortogonal de m×m, entonces PA y A
+tienen los mismos valores singulares.
+b) [Problema 7.2.21e del texto]
+Si todos los valores propios de una matriz sim´ etrica A son positivos, entonces la forma
+cuadr´ aticaxTA x es positiva deﬁnida.
+Soluci´ on:
+a) VERDADERO.
+Los valores singulares de una matriz M son las ra´ ıces cuadradas de los valores propios de
+MTM.
+Como (PA )T (PA ) =ATPTPA =AT (PTP )A =ATIA =ATA, las matrices (PA )T (PA ) y
+ATA tienen los mismos valores propios (de hecho, son la misma matriz) y por lo tanto PA
+y A tienen los mismos valores singulares.
+b) VERDADERO.
+Si los valores propios de A son λ1,λ 2,...,λ n > 0 entonces es posible escribir A como
+A = PDP T con P ortogonal y D la matriz diagonal determinada por los valores propios
+λ1,λ 2,...,λ n.
+As´ ı, la forma cuadr´ aticaQ(x) = xTAx puede ser escrita como
+Q(x) = xTAx = xT (PDP T )x = (xTP )D(PTx) = (PTx)TD(PTx).
+Deﬁniendo y =PTx, vemos que Q(x) = yTDy =λ1y21 +λ2y22 +··· +λny2n.
+Como todos los λi son> 0, esta ´ ultima expresi´ on no es nunca negativa, por lo queQ(x) es
+positiva deﬁnida o semideﬁnida, dependiendo de si ocurre o no que y = 0 para x⁄= 0.
+Pero esto ´ ultimo es imposible, ya que —por serP ortogonal,PT es invertible y por lo tanto
+la transformaci´ on linealx→PTx es uno a uno, por lo que y =PTx = 0→ x = 0.
+As´ ı,Q(x) es positiva deﬁnida.
+Puntaje: En cada parte:
+Por plantear una justiﬁcaci´ on correctamente estructurada, 1 punto.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 1 punto.
+Por justiﬁcar adecuadamente los argumentos, 1 punto.
+A lo anterior se le suma el punto base.

@@ -1,0 +1,54 @@
+/* Módulo 6 · Sección 2 — Ecuación característica y similitud */
+(function () {
+  var M = window.MAT1203;
+  M.register({
+    id: "m06_s02", modulo: 6, moduloNombre: "Módulo 6 · Valores y vectores propios", orden: 2,
+    materia: "MAT1203 · Álgebra Lineal",
+    titulo: "Ecuación característica y similitud",
+    objetivo: "Calcular el polinomio característico, encontrar valores propios con sus multiplicidades, relacionar determinante y traza con los valores propios, y reconocer matrices similares.",
+    fuente: "Clase 29 · Apunte Clase 10–14 · Lay §5.2 · Poole §4.2",
+    prerrequisitos: ["Valores y vectores propios", "Determinantes", "Factorización de polinomios"],
+    teoria: [
+      { tipo: "texto", html: "<p>Para hallar los valores propios necesitamos resolver una ecuación polinomial. El <b>polinomio característico</b> codifica toda la información de los valores propios y permite además hablar de matrices que representan la misma transformación en distintas bases.</p>" },
+      { tipo: "definicion", titulo: "Ecuación y polinomio característico", html: "<p>Un escalar $\\lambda$ es valor propio de la matriz $A$ de $n\\times n$ si y solo si satisface la <b>ecuación característica</b></p>$$\\det(A-\\lambda I)=0.$$<p>La expresión $\\det(A-\\lambda I)$ es un polinomio de grado $n$ en $\\lambda$, llamado <b>polinomio característico</b> de $A$.</p>" },
+      { tipo: "definicion", titulo: "Multiplicidad algebraica", html: "<p>La <b>multiplicidad (algebraica)</b> de un valor propio $\\lambda$ es su multiplicidad como raíz de la ecuación característica. Es decir, cuántas veces aparece el factor $(\\lambda_0-\\lambda)$ en el polinomio característico.</p>" },
+      { tipo: "teorema", titulo: "Determinante, traza y valores propios", html: "<p>Si $A$ tiene $n$ valores propios reales $\\lambda_1,\\dots,\\lambda_n$ contados con multiplicidad, entonces</p>$$\\det A=\\lambda_1\\lambda_2\\cdots\\lambda_n,\\qquad \\operatorname{tr}(A)=a_{11}+\\dots+a_{nn}=\\lambda_1+\\dots+\\lambda_n.$$<p>En particular, $A$ es invertible si y solo si ningún valor propio es $0$.</p>" },
+      { tipo: "definicion", titulo: "Similitud", html: "<p>Dos matrices $A$ y $B$ de $n\\times n$ son <b>similares</b> si existe una matriz invertible $P$ tal que</p>$$P^{-1}AP=B,\\qquad\\text{equivalentemente}\\qquad A=PBP^{-1}.$$" },
+      { tipo: "teorema", titulo: "Propiedades de la similitud", html: "<p>Si $A$ y $B$ son similares, entonces tienen el <b>mismo polinomio característico</b> y por lo tanto los <b>mismos valores propios</b> con las mismas multiplicidades. También tienen el mismo determinante y la misma traza.</p>" },
+      { tipo: "nota", titulo: "Similitud no es equivalencia por filas (Clase 29)", html: "<p>¡Atención! Que dos matrices sean similares es mucho más fuerte que ser equivalentes por filas. La equivalencia por filas solo exige igual rango, mientras que la similitud exige un cambio de base $P^{-1}AP$ y conserva valores propios, determinante y traza. No confundir $A\\sim B$ (equivalencia por filas) con $B=P^{-1}AP$ (similitud).</p>" },
+      { tipo: "nota", titulo: "Similitud y cambio de base (Lay §5.2)", html: "<p>La similitud dice que $A$ y $B$ representan la <b>misma</b> transformación lineal vistas en bases distintas. En la próxima sección veremos que la matriz de cambio de base realiza precisamente $B=P^{-1}AP$.</p>" },
+      { tipo: "grafico", spec: { tipo: "plot2d", titulo: "Polinomio característico p(λ)=λ²−9λ+8: sus raíces 1 y 8 son los valores propios", funciones: [ { f: function (x) { return x * x - 9 * x + 8; }, desde: -1, hasta: 10, label: "p(λ)", color: "#1e5eff" } ], xlabel: "λ", ylabel: "p(λ)" } },
+    ],
+    ejemplos: [
+      { titulo: "Ecuación característica de una matriz triangular", enunciado: "<p>Encuentre la ecuación característica y los valores propios de $A=\\begin{bmatrix}5&-2&6&-1\\\\0&3&-8&0\\\\0&0&5&4\\\\0&0&0&1\\end{bmatrix}$.</p>", desarrollo: [ "Como $A$ es triangular superior, $A-\\lambda I$ también lo es, y el determinante de una matriz triangular es el producto de sus entradas diagonales.", "$\\det(A-\\lambda I)=(5-\\lambda)(3-\\lambda)(5-\\lambda)(1-\\lambda)$.", "La ecuación característica es $(5-\\lambda)^2(3-\\lambda)(1-\\lambda)=0$.", "Los valores propios son $5$ (multiplicidad $2$), $3$ (multiplicidad $1$) y $1$ (multiplicidad $1$)." ], respuesta: "Ecuación: $(5-\\lambda)^2(3-\\lambda)(1-\\lambda)=0$. Valores propios: $5$ (mult. 2), $3$ y $1$." },
+      { titulo: "Valores y vectores propios de una 2×2", enunciado: "<p>Determine los valores y vectores propios de $A=\\begin{bmatrix}2&3\\\\3&-6\\end{bmatrix}$.</p>", desarrollo: [ "$\\det(A-\\lambda I)=(2-\\lambda)(-6-\\lambda)-9=\\lambda^2+4\\lambda-21=(\\lambda+7)(\\lambda-3)$.", "Valores propios: $\\lambda=3$ y $\\lambda=-7$.", "Para $\\lambda=3$: $A-3I=\\begin{bmatrix}-1&3\\\\3&-9\\end{bmatrix}\\Rightarrow -x_1+3x_2=0\\Rightarrow x=\\begin{bmatrix}3\\\\1\\end{bmatrix}$.", "Para $\\lambda=-7$: $A+7I=\\begin{bmatrix}9&3\\\\3&1\\end{bmatrix}\\Rightarrow 3x_1+x_2=0\\Rightarrow x=\\begin{bmatrix}1\\\\-3\\end{bmatrix}$." ], respuesta: "$\\lambda=3$ con $\\begin{bmatrix}3\\\\1\\end{bmatrix}$ y $\\lambda=-7$ con $\\begin{bmatrix}1\\\\-3\\end{bmatrix}$." },
+      { titulo: "Matrices similares", enunciado: "<p>Sean $A=\\begin{bmatrix}7&2\\\\-4&1\\end{bmatrix}$, $D=\\begin{bmatrix}5&0\\\\0&3\\end{bmatrix}$ y $P=\\begin{bmatrix}1&1\\\\-1&-2\\end{bmatrix}$. Verifique que $A=PDP^{-1}$, es decir, que $A$ y $D$ son similares.</p>", desarrollo: [ "Basta comprobar $AP=PD$ (equivalente a $A=PDP^{-1}$).", "$AP=\\begin{bmatrix}7&2\\\\-4&1\\end{bmatrix}\\begin{bmatrix}1&1\\\\-1&-2\\end{bmatrix}=\\begin{bmatrix}5&3\\\\-5&-6\\end{bmatrix}$.", "$PD=\\begin{bmatrix}1&1\\\\-1&-2\\end{bmatrix}\\begin{bmatrix}5&0\\\\0&3\\end{bmatrix}=\\begin{bmatrix}5&3\\\\-5&-6\\end{bmatrix}$.", "Como $AP=PD$ y $P$ es invertible, $A=PDP^{-1}$: $A$ y $D$ son similares." ], respuesta: "$AP=PD$, luego $A=PDP^{-1}$ y $A\\sim D$. Ambas tienen valores propios $5$ y $3$." },
+    ],
+    ejercicios: [
+      { titulo: "Polinomio característico 2×2", dificultad: "basico", enunciado: "<p>Encuentre el polinomio característico y los valores propios de $A=\\begin{bmatrix}5&3\\\\4&4\\end{bmatrix}$.</p>", pista: "Use $\\det(A-\\lambda I)=0$.", desarrollo: [ "$\\det(A-\\lambda I)=(5-\\lambda)(4-\\lambda)-12=20-9\\lambda+\\lambda^2-12=\\lambda^2-9\\lambda+8$.", "Factorizando: $(\\lambda-1)(\\lambda-8)=0$." ], respuesta: "$p(\\lambda)=\\lambda^2-9\\lambda+8$; valores propios $\\lambda=1$ y $\\lambda=8$." },
+      { titulo: "Matriz triangular", dificultad: "basico", enunciado: "<p>Determine los valores propios de $A=\\begin{bmatrix}-2&0\\\\3&1\\end{bmatrix}$ y su determinante.</p>", pista: "Aproveche la estructura triangular.", desarrollo: [ "$A$ es triangular inferior, así que sus valores propios son $-2$ y $1$.", "El determinante es el producto de los valores propios: $\\det A=(-2)(1)=-2$." ], respuesta: "$\\lambda=-2,\\,1$ y $\\det A=-2$." },
+      { titulo: "Multiplicidades", dificultad: "intermedio", enunciado: "<p>El polinomio característico de cierta matriz es $p(\\lambda)=\\lambda^3-2\\lambda^2+\\lambda$. Determine sus valores propios con multiplicidades y la traza.</p>", pista: "Factorice primero $\\lambda$ y reconozca un cuadrado.", desarrollo: [ "$p(\\lambda)=\\lambda(\\lambda^2-2\\lambda+1)=\\lambda(\\lambda-1)^2$.", "Valores propios: $0$ con multiplicidad $1$ y $1$ con multiplicidad $2$.", "La traza es la suma de los valores propios contados con multiplicidad: $0+1+1=2$." ], respuesta: "$\\lambda=0$ (mult. 1) y $\\lambda=1$ (mult. 2); traza $=2$." },
+      { titulo: "Similitud y potencias", dificultad: "avanzado", enunciado: "<p>Con $A=\\begin{bmatrix}7&2\\\\-4&1\\end{bmatrix}=PDP^{-1}$, $P=\\begin{bmatrix}1&1\\\\-1&-2\\end{bmatrix}$ y $D=\\begin{bmatrix}5&0\\\\0&3\\end{bmatrix}$, calcule $A^2$.</p>", pista: "$A^2=PDP^{-1}PDP^{-1}=PD^2P^{-1}$.", desarrollo: [ "$A^2=P D^2 P^{-1}$ y $D^2=\\begin{bmatrix}25&0\\\\0&9\\end{bmatrix}$.", "$P^{-1}=\\dfrac{1}{-1}\\begin{bmatrix}-2&-1\\\\1&1\\end{bmatrix}=\\begin{bmatrix}2&1\\\\-1&-1\\end{bmatrix}$.", "$PD^2=\\begin{bmatrix}1&1\\\\-1&-2\\end{bmatrix}\\begin{bmatrix}25&0\\\\0&9\\end{bmatrix}=\\begin{bmatrix}25&9\\\\-25&-18\\end{bmatrix}$.", "$A^2=\\begin{bmatrix}25&9\\\\-25&-18\\end{bmatrix}\\begin{bmatrix}2&1\\\\-1&-1\\end{bmatrix}=\\begin{bmatrix}41&16\\\\-32&-7\\end{bmatrix}$." ], respuesta: "$A^2=\\begin{bmatrix}41&16\\\\-32&-7\\end{bmatrix}$." },
+    ],
+    erroresComunes: [
+      "Calcular $\\det(\\lambda I-A)$ con el signo cambiado y confundir el polinomio característico (las raíces son las mismas, pero conviene ser consistente).",
+      "Errores al expandir $\\det(A-\\lambda I)$, sobre todo el signo del término constante: recuerde que $\\det(A-0I)=\\det A$.",
+      "Olvidar que la suma de los valores propios (con multiplicidad) es la traza y el producto es el determinante.",
+      "Confundir similitud con equivalencia por filas: dos matrices con igual rango no son necesariamente similares.",
+      "Creer que toda matriz con entradas repetidas en la diagonal es diagonal; no es así (por ejemplo $\\begin{bmatrix}3&1\\\\0&3\\end{bmatrix}$ no lo es).",
+    ],
+    checklist: [
+      "Calculo $\\det(A-\\lambda I)$ como polinomio de grado $n$.",
+      "Resuelvo la ecuación característica y determino multiplicidades algebraicas.",
+      "Uso $\\det A=$ producto de valores propios y $\\operatorname{tr}A=$ suma de valores propios.",
+      "Reconozco cuándo dos matrices son similares ($B=P^{-1}AP$).",
+      "Verifico que matrices similares tienen los mismos valores propios y determinante.",
+    ],
+    autoevaluacion: [
+      { pregunta: "$\\lambda$ es valor propio de $A$ si y solo si:", opciones: [ "$\\det(A-\\lambda I)=0$", "$\\det(\\lambda A)=0$", "$A-\\lambda I=I$", "$\\lambda I-A$ es invertible" ], correcta: 0, explicacion: "La ecuación característica es $\\det(A-\\lambda I)=0$; equivale a que $A-\\lambda I$ sea no invertible." },
+      { pregunta: "Si $A$ y $B$ son similares, ¿qué NO se conserva necesariamente?", opciones: [ "El polinomio característico", "Los valores propios", "El determinante", "Las entradas de la matriz" ], correcta: 3, explicacion: "La similitud conserva polinomio característico, valores propios, determinante y traza, pero las entradas cambian con el cambio de base." },
+      { pregunta: "El polinomio característico de una matriz $3\\times3$ es $(\\lambda-4)^2(\\lambda+1)$. La traza es:", opciones: [ "$4$", "$9$", "$7$", "$-1$" ], correcta: 2, explicacion: "Traza $=$ suma de valores propios con multiplicidad $=4+4+(-1)=7$." },
+    ],
+    referencias: [ { titulo: "Clase 29 — La ecuación característica: Similitud (PDF)", ruta: "recursos/clases/clase-29.pdf" }, { titulo: "Apunte Clase 10 — SistemasHomogeneos (PDF)", ruta: "recursos/apuntes/apunte-clase-10.pdf" } ],
+  });
+})();

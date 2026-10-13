@@ -1,0 +1,856 @@
+Pontificia Universidad Cat´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2022
+MAT1203 – ´Algebra Lineal
+Soluci´ on Examen
+1. Sea B =
+
+
+
+
+
+1
+0
+0
+
+ ,
+
+
+1
+1
+0
+
+ ,
+
+
+1
+1
+1
+
+
+
+
+ una base de R3. Determine, si es posible, una transformaci´ on
+lineal T : R3 → R3 cuya matriz para T respecto a B sea
+
+T
+
+B =
+
+
+1 1 0
+−1 3 2
+0 2 −2
+
+ .
+Soluci´ on.Tenemos que
+
+T
+
+
+1
+0
+0
+
+
+
+
+B
+=
+
+
+1
+−1
+0
+
+ ⇐ ⇒T
+
+
+1
+0
+0
+
+ = (1)
+
+
+1
+0
+0
+
+ + (−1)
+
+
+1
+1
+0
+
+ + (0)
+
+
+1
+1
+1
+
+ =
+
+
+0
+−1
+0
+
+
+
+T
+
+
+1
+1
+0
+
+
+
+
+B
+=
+
+
+1
+3
+2
+
+ ⇐ ⇒T
+
+
+1
+1
+0
+
+ = (1)
+
+
+1
+0
+0
+
+ + (3)
+
+
+1
+1
+0
+
+ + (2)
+
+
+1
+1
+1
+
+ =
+
+
+6
+5
+2
+
+
+
+T
+
+
+1
+1
+1
+
+
+
+
+B
+=
+
+
+0
+2
+−2
+
+ ⇐ ⇒T
+
+
+1
+1
+1
+
+ = (0)
+
+
+1
+0
+0
+
+ + (2)
+
+
+1
+1
+0
+
+ + (−2)
+
+
+1
+1
+1
+
+ =
+
+
+0
+0
+−2
+
+
+Como B es una base entonces todo vector en R3 es combinaci´ on lineal de los elementos de la
+base, resolviendo el sistema se obtiene que:
+
+
+x
+y
+z
+
+ = (x − y)
+
+
+1
+0
+0
+
+ + (y − z)
+
+
+1
+1
+0
+
+ + z
+
+
+1
+1
+1
+
+ .
+Entonces, usando que T es una transformaci´ on lineal se obtiene que:
+T
+
+
+x
+y
+z
+
+ = ( x − y)T
+
+
+1
+0
+0
+
+ + (y − z)T
+
+
+1
+1
+0
+
+ + zT
+
+
+1
+1
+1
+
+
+= ( x − y)
+
+
+0
+−1
+0
+
+ + (y − z)
+
+
+6
+5
+2
+
+ + z
+
+
+0
+0
+−2
+
+ =
+
+
+6y − 6z
+−x + 6y − 5z
+2y − 4z
+
+Puntaje Pregunta 1.
+2 puntos por obtener los valores de la transformaci´ on linealT en la base B.
+2 puntos por determinar los escalares que permiten escribir los vectores de R3 como com-
+binaci´ on lineal de la baseB.
+2 puntos por obtener expl ´ ıcitamente la transformaci´ onT .2. Considere el subespacio vectorial W =
+
+
+
+
+
+x
+y
+z
+t
+
+ : x − y − z = 0
+
+
+.
+a) Demuestre que B =
+
+
+
+
+
+1
+1
+0
+0
+
+ ,
+
+
+0
+0
+0
+1
+
+ ,
+
+
+1
+−1
+2
+0
+
+
+
+
+ es una base de W .
+b) Determine la proyecci´ on ortogonal de vectorx =
+
+
+1
+1
+1
+1
+
+ en W .
+c) Determine la distancia del vector x =
+
+
+1
+1
+1
+1
+
+ al subespacio W .
+Soluci´ on.
+a) Note que los vectores de B son ortogonales luego es un conjunto linealmente independiente.
+Cada vector de B pertenece a W y como W tiene dimensi´ on 3 se sigue queB es una base.
+b) Considere x = [1, 1, 1, 1]T ∈ R4 y B = {v1, v2, v3} entonces la proyecci´ on ortogonal deR4
+en W es
+proyW x = x · v1v1 · v1 v1 + x · v2v2 · v2 v2 + x · v3v3 · v3 v3
+=
+
+
+1
+1
+0
+0
+
+ +
+
+
+0
+0
+0
+1
+
+ + 13
+
+
+1
+−1
+2
+0
+
+ =
+
+
+4/3
+2/3
+2/3
+1
+
+
+c) Sabemos que
+d(x, W) = ∥x − proyW x∥ =
+1111 − 4/32/32/31  = −1/31/31/30 = √33 .
+Puntaje Pregunta 2.
+2 puntos por mostrar que B es base de W .
+2 puntos por determinar la proyecci´ on ortogonal deR4 en W .
+2 puntos por determinar la distancia de un vector de R4 sobre W .3. Encuentre la ecuaci´ ony = β0 + β1x de la recta de m ´ ınimos cuadrados que mejor se ajuste a los
+puntos de datos (2 , 4), (3, 6) y (4 , 5).
+Soluci´ on.Usamos las coordenadas x de los datos para construir la matriz de dise˜ no X y las
+coordenadas y para construir el vector de observaciones y:
+X =
+
+
+1 2
+1 3
+1 4
+
+ , y =
+
+
+4
+6
+5
+
+ .
+Buscamos la soluci´ onβ de m ´ ınimos cuadrados deXβ = y. Para ello planteamos las ecuaciones
+normales:
+X T Xβ = X T y ⇐ ⇒
+1 1 1
+2 3 4
+ 
+
+1 2
+1 3
+1 4
+
+
+β0
+β1
+
+=
+1 1 1
+2 3 4
+ 
+
+4
+6
+5
+
+
+⇐ ⇒
+3 9
+9 29
+ β0
+β1
+
+=
+15
+46
+
+⇐ ⇒
+β0
+β1
+
+=
+3 9
+9 29
+−1 15
+46
+
+= 16  29 −9−9 3  1546 = 7/21/2 .
+De manera que la recta de m ´ ınimos cuadrados tiene la ecuaci´ ony = 72 + 12 x.
+Puntaje Pregunta 3.
+2 puntos por identificar correctamente la matriz de dise˜ no.
+1 punto por identificar el vector de observaciones y.
+2 puntos por escribir expl ´ ıcitamente las ecuaciones normales:
+1 1 1
+2 3 4
+ 
+
+1 2
+1 3
+1 4
+
+
+β0
+β1
+
+=
+1 1 1
+2 3 4
+ 
+
+4
+6
+5
+
+
+1 punto por resolver el sistema y exhibir la recta de m ´ ınimos cuadrados.4. Considere la forma cuadr´ atica
+Q(x1, x2) = x21 + 2ax1x2 + x22.
+Encuentre para qu´ e valores dea, Q es una forma definida positiva.
+Soluci´ on.La matriz sim´ etrica que define aQ es
+A =
+1 a
+a 1
+
+.
+La ecuaci´ on caracter ´ ıstica deA es
+(1 − λ)2 − a2 = 0,
+de donde los valores propios de A son 1 ± |a|. Para que Q sea definida positiva, es necesario y
+suficiente que ambos valores propios sean positivos. El valor propio 1 + |a| es siempre positivo,
+por lo que es necesario y suficiente que
+1 − |a| > 0 ⇐ ⇒ |a| < 1.
+Por lo tanto, la forma es definida positiva si y solo si |a| < 1, es decir, a ∈ (−1, 1).
+Puntaje Pregunta 4.
+1,5 puntos por identificar la matriz sim´ etrica que define aQ.
+1,5 puntos por obtener la ecuaci´ on caracter ´ ıstica deA.
+2 punto por identificar que Q es definida positiva si y solo si 1 ± |a| > 0
+1 punto por encontrar todos los valores de a que permiten a Q ser positiva definida.5. Suponga A es una matriz sim´ etrica de 3× 3 tal que
+A
+
+
+1
+1
+1
+
+ =
+
+
+2
+2
+2
+
+
+y que
+Nul A = Gen
+
+
+
+
+
+1
+1
+−2
+
+ ,
+
+
+1
+−2
+1
+
+ ,
+
+
+2
+−1
+−1
+
+
+
+
+ .
+Encuentre una matriz diagonal D y un matriz ortogonal P tal que A = P DPT .
+Soluci´ on.La primera igualdad nos dice que u1 =
+
+
+1
+1
+1
+
+ es vector propio asociado al valor propio
+λ1 = 2. Notemos que los vectores
+u2 =
+
+
+1
+1
+−2
+
+ u3 =
+
+
+1
+−2
+1
+
+ u4 =
+
+
+2
+−1
+−1
+
+
+satisfacen u2 + u3 = u4, luego {u2, u3} es un conjunto L.I. Por lo tanto {u2, u3} es base de
+Nul A, que es el espacio propio asociado al valor propio λ2 = 0. De aqu ´ ı se concluye que
+{u1, u2, u3} es base de vectores propios.
+Se verifica que u1 · u2 = 0 y u1 · u3 = 0 pero u2 · u3 = −3. Para conseguir una base ortogonal
+de Nul A reemplazamos {u2, u3} con
+v2 = u2
+v3 =
+
+
+1
+−2
+1
+
+ −
+ −3
+6
+ 
+
+1
+1
+−2
+
+ =
+
+
+3/2
+−3/2
+0
+
+
+Como ∥u1∥ =
+√
+3, ∥v2∥ =
+√
+6 y ∥v3∥ = 32 √2 obtenemos la base ortonormal
+
+
+
+
+
+1/
+√
+3
+1/
+√
+3
+1/
+√
+3
+
+ ,
+
+
+1/
+√
+6
+1/
+√
+6
+−2/
+√
+6
+
+ ,
+
+
+1/
+√
+2
+−1/
+√
+2
+0
+
+
+
+
+ .
+Luego, A = P DPT con
+P =
+
+
+1/
+√
+3 1 /
+√
+6 1 /
+√
+2
+1/
+√
+3 1 /
+√
+6 −1/
+√
+2
+1/
+√
+3 −2/
+√
+6 0
+
+ D =
+
+
+2 0 0
+0 0 0
+0 0 0
+
+ .Puntaje Pregunta 5.
+1 punto por deducir que u1 = [1, 1, 1]T es vector propio asociado a λ1 = 2.
+1,5 punto por deducir que {u2, u3} es una base del espacio nulo de A asociado al valor
+propio λ2 = 0.
+1,5 punto por encontrar una base ortogonal.
+1 punto por normalizar la base.
+1 punto por expresar A como P DPT con P ortogonal.6. Sea A =
+
+
+4 −2
+2 −1
+0 0
+
+. Encuentre una descomposici´ on en valores singulares deA.
+Soluci´ on.Se tiene que AT A =
+ 20 −10
+−10 5
+
+, la ecuaci´ on caracter ´ ıstica deAT A es
+det(AT A − λI) = λ2 − 25λ = λ(λ − 25)
+y los valores propios de AT A son en orden decreciente λ1 = 25 y λ2 = 0.
+Los vectores propios unitarios son:
+λ1 = 25 : v1 =
+ 2/√5
+−1/
+√
+5
+
+y λ2 = 0 : v2 =
+1/√5
+2/
+√
+5
+
+.
+Luego una elecci´ on paraV es V =
+ 2/√5 1 /√5
+−1/
+√
+5 2 /
+√
+5
+
+.
+Los valores singulares deA son σ1 =
+√
+25 = 5 y σ2 =
+√
+0 = 0. Luego la matriz Σ es Σ =
+
+
+5 0
+0 0
+0 0
+
+.
+Se tiene que u1 = 1σ1 Av1 =
+
+
+2/
+√
+5
+1/
+√
+5
+0
+
+. Como Av2 = 0, la ´ unica columna encontrada para U
+hasta ahora es u1. Para encuentrar las otras columnas de U debemos extender {u1} a una base
+ortonormal para R3. En este caso, necesitamos dos vectores unitarios ortogonales u2 y u3 que
+sean ortogonales a u1. Cada vector debe satisfacer la ecuaci´ on uT1 x = 0, que es equivalente a
+la ecuaci´ on 2x1 + x2 = 0. Una base ortonormal para el conjunto soluci´ on de esta ecuaci´ on es
+u2 =
+
+
+1/
+√
+5
+−2/
+√
+5
+0
+
+, u3 =
+
+
+0
+0
+1
+
+. Por lo tanto, sea U =
+
+
+2/
+√
+5 1 /
+√
+5 0
+1/
+√
+5 −2/
+√
+5 0
+0 0 1
+
+. Por lo tanto,
+A = U ΣV T =
+
+
+2/
+√
+5 1 /
+√
+5 0
+1/
+√
+5 −2/
+√
+5 0
+0 0 1
+
+
+
+
+5 0
+0 0
+0 0
+
+
+2/√5 −1/√5
+1/
+√
+5 2 /
+√
+5
+
+.
+Puntaje Pregunta 6
+0,5 punto por encontrar los valores propios de AT A.
+1 punto por encontrar los vectores propios de AT A.
+0,5 punto por normalizar los vectores propios de AT A.
+0,5 punto por calcular los valores singulares de A.
+1 punto por determinar correctamente V .
+0,5 punto por determinar correctamente Σ.
+2 punto por determinar U .

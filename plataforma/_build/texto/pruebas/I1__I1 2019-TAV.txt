@@ -1,0 +1,609 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Temporada Verano 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 1
+1. Sean v1, v2, v3 ∈ R3 vectores unitarios tales que v1 es ortogonal a v2 y a v3, y v2 · v3 = 5.
+Calcule el valor de
+∥3v1 − 2v2 + 2v3∥2
+Soluci´ on.
+∥3v1 − 2v2 + 2v3∥2 = (3v1 − 2v2 + 2v3) · (3v1 − 2v2 + 2v3)
+= 3v1 · 3v1 + 2v2 · 2v2 + 2v3 · 2v3 − 3v1 · 2v2 + 3v1 · 2v3 − 2v2 · 3v1 − 2v2 · 2v3 + 2v3 · 3v1 − 2v3 · 2v2
+Luego como vi · vi = ∥vi∥2 = 1 ya que son vectores unitarios, v1 · v2 = 0 y v1 · v3 = 0 ya que v1 es
+ortogonal a v2 y a v3 y que el producto punto es conmutativo, tenemos que
+= 9∥v1∥2 + 4∥v2∥2 + 4∥v3∥2 − 8v2 · v3 = 9 + 4 + 4 − 8 · 5 = −23
+Puntaje:
+1 pto por argumentar que ∥3v1 − 2v2 + 2v3∥2 = (3v1 − 2v2 + 2v3) · (3v1 − 2v2 + 2v3).
+1 pto por argumentar que el producto punto es distributivo y conmutativo.
+1 pto por argumentar que vi · vi = ∥vi∥2 = 1 ya que son vectores unitarios.
+1 pto por argumentar que v1 · v2 = 0 y v1 · v3 = 0 ya que v1 es ortogonal a v2 y a v3.
+2 pto por llegar el resultado correcto. (1 pto si hay alg´ un error algebraico).2. a) Encuentre las ecuaciones param´ etricas para la recta de intersecci´ on de los planos:
+π1 : x + y + z = 1
+π2 : x + 2y + 2z = 1
+b) Encuentre una ecuaci´ on del plano que pasa por el punto (1 , 2, 3) y contiene a la recta de
+ecuaciones x = 3t, y = 1 + t, z = 2 − t
+Soluci´ on.
+a) Solucionamos el sistema lineal x+y +z = 1, x +2y +2z = 1 obtenemos la recta de ecuaciones
+param´ etricasx = 1, y = −t, z = t.
+b) Tomemos un punto cualquiera de la recta (0 , 1, 2) y formemos el vector que pasa por este
+punto y el punto (1 , 2, 3), < 1, 1, 1 > luego la normal del plano que nos piden debe ser
+perpendicular a este vector y al vector director de la recta < 3, 1, −1 >, por lo cual podemos
+tomar al vector normal como < 1, 1, 1 > × < 3, 1, −1 >=< −2, 4, −2 > as ´ ı una ecuaci´ on del
+plano pedido es −2x + 4y − 2z + d = 0 evaluando en el punto d = 0,−2x + 4y − 2z = 0
+Puntaje:
+3 ptos por encontrar unas ecuaciones param´ etricas de la recta.
+1,5 ptos por determinar una normal del plano.
+1,5 ptos por determinar una ecuaci´ on del plano.3. Obtenga el valor o los valores de h para que el vector y =
+
+
+−4
+3
+h
+
+ est´ e en
+Gen
+
+
+
+
+
+1
+−1
+−2
+
+ ,
+
+
+5
+−4
+−7
+
+ ,
+
+
+−3
+1
+0
+
+
+
+
+.
+Soluci´ on.
+Para que el vector y =
+
+
+−4
+3
+h
+
+ est´ e enGen
+
+
+
+
+
+1
+−1
+−2
+
+ ,
+
+
+5
+−4
+−7
+
+ ,
+
+
+−3
+1
+0
+
+
+
+
+, necesitamos que
+y =
+
+
+−4
+3
+h
+
+ sea una combinaci´ on lineal de los vectores
+
+
+
+
+
+1
+−1
+−2
+
+ ,
+
+
+5
+−4
+−7
+
+ ,
+
+
+−3
+1
+0
+
+
+
+
+ es
+decir que la ecuaci´ on vectorial
+
+
+−4
+3
+h
+
+ = x1
+
+
+1
+−1
+−2
+
+ + x2
+
+
+5
+−4
+−7
+
+ + x3
+
+
+−3
+1
+0
+
+
+tenga soluci´ on. Pasando esta ecuaci´ on vectorial a un sistema de ecuaciones la matriz ampliada
+que le corresponde es
+
+
+1 5 −3 −4
+−1 −4 1 3
+−2 −7 0 h
+
+ ∼
+
+
+1 5 −3 −4
+0 1 −2 −1
+0 0 0 h − 5
+
+
+luego para que el sistema sea consistente h ̸= 5. Entonces para todo valor de h ̸= 5 el vector
+y =
+
+
+−4
+3
+h
+
+ pertenece al Gen
+
+
+
+
+
+1
+−1
+−2
+
+ ,
+
+
+5
+−4
+−7
+
+ ,
+
+
+−3
+1
+0
+
+
+
+
+
+Puntaje:
+2 ptos por argumentar que el vector y debe ser combinaci´ on lineal de los vectores.
+2 ptos por determinar el sistema que resuelve este problema y argumentar que debe ser
+consistente.
+2 ptos por determinar correctamente la condici´ on que debe cumplir h.4. Sea A una matriz de 3 × 4 tal que la suma de sus columnas es el vector
+
+
+1
+3
+4
+
+ y su forma
+escalonada reducida es
+
+
+1 0 0 −1
+0 1 0 2
+0 0 1 3
+
+. Escriba la soluci´ on general del sistema Ax =
+
+
+1
+3
+4
+
+
+Soluci´ on.
+Si la suma de las columnas de A es el vector
+
+
+1
+3
+4
+
+ entonces A
+
+
+1
+1
+1
+1
+
+ =
+
+
+1
+3
+4
+
+. Luego el vector
+
+
+1
+1
+1
+1
+
+ es una soluci´ on particular del sistema matricial Ax =
+
+
+1
+3
+4
+
+.
+Si la forma escalonada reducida de A es
+
+
+1 0 0 −1
+0 1 0 2
+0 0 1 3
+
+ implica que la soluci´ on del sistema
+homogeneo asociado a Ax =
+
+
+1
+3
+4
+
+ es Gen
+
+
+
+
+
+1
+−2
+−3
+1
+
+
+
+
+.
+Luego por teorema visto en clases la soluci´ on general del sistema Ax =
+
+
+1
+3
+4
+
+ es
+
+
+
+
+
+1
+1
+1
+1
+
+ + Gen
+
+
+
+
+
+1
+−2
+−3
+1
+
+
+
+
+
+
+
+
+Puntaje:
+2 ptos por argumentar que
+
+
+1
+1
+1
+1
+
+ es una soluci´ on particular del sistema .
+2 ptos por encontrar correctamente la soluci´ on del sistema homogeneo.
+2 ptos por encontrar correctamente que la soluci´ on general del sistema .5. Sea T : R3 → R2 una transformaci´ on lineal tal que
+T
+
+
+1
+0
+0
+
+ =
+( 1
+1
+)
+, T
+
+
+1
+1
+0
+
+ =
+( −1
+α
+)
+y T
+
+
+0
+0
+−1
+
+ =
+( 2
+2
+)
+.
+a) [4 ptos] Determine la matriz A, tal que T (x) = Ax para todo x ∈ R3.
+b) [1 pto] ¿Que condiciones debe cumplir α para que esta tranformaci´ on lineal sea uno a uno?.
+c) [1 pto] ¿Que condiciones debe cumplir α para que esta tranformaci´ on lineal sea sobreyectiva?.
+Soluci´ on.
+a) Ya que T es una transformaci´ on lineal tenemos que A = [T (e1) T (e2) T (e3)]. Para encontrar
+las imagenes de los vectores canonicos tenemos que
+T
+
+
+1
+0
+0
+
+ =
+( 1
+1
+)
+T
+
+
+0
+1
+0
+
+ = T
+
+
+1
+1
+0
+
+ − T
+
+
+1
+0
+0
+
+ =
+( −1
+α
+)
+−
+( 1
+1
+)
+=
+( −2
+α − 1
+)
+T
+
+
+0
+0
+1
+
+ = −T
+
+
+0
+0
+−1
+
+ = −
+( 2
+2
+)
+=
+( −2
+−2
+)
+Luego A =
+( 1 −2 −2
+1 α − 1 −2
+)
+.
+b) Para que T sea uno a uno necesitamos que las columnas de la matriz A sean linealmente
+independientes(todos columnas pivotes), lo que no dependiendo de α nunca se cumplira.
+c) Para que T sea sobreyectiva necesitamos que las columnas de la matriz A generen a R2 (2
+columnas pivotes), lo que se cumple si α ̸= −1.
+Puntaje:
+1 pto por argumentar que A = [T (e1) T (e2) T (e3)].
+1 pto por encontrar cada columna de A correctamente.(3 ptos)
+1 pto por argumentar que la transformaci´ on no puede der uno a uno.
+1 pto por argumentar que la transformaci´ on para ser sobreyectiva α ̸= −1.6. a) Determine la inversa de la matriz A =
+
+
+2 0 −1
+2 −1 −1
+−1 0 1
+
+
+b) Sean A, B, C matrices 7 × 7 tales que A, C y A − AC son matrices invertibles. Supongamos
+que
+(A − AC)−1 = C −1B.
+Despeje C de esta ecuaci´ on justiﬁcando cada paso.
+Soluci´ on.
+a) Para determinar la inversa de la matriz A, tenemos que
+
+
+2 0 −1 1 0 0
+2 −1 −1 0 1 0
+−1 0 1 0 0 1
+
+ ∼
+
+
+1 0 0 1 0 1
+0 1 0 1 −1 0
+0 0 1 1 0 2
+
+
+luego A−1 =
+
+
+1 0 1
+1 −1 0
+1 0 2
+
+
+b) Observemos en primer lugar que B es tambi´ en una matriz invertible, pues, multiplicando por
+C a la izquierda de ambos lados de la ecuaci´ on, se tiene que
+C(A − AC)−1 = B,
+de modo que B es producto de matrices invertibles. Considerando esto, aplicando inversa a
+ambos lados de la ecuaci´ on inicial, se tiene que
+(A − AC) = B−1C,
+por lo que A = ( A + B−1)C. Por ´ ultimo, como A y C son matrices invertibles, A + B−1
+tambi´ en lo es, de modo que
+C = (A + B−1)−1A
+Puntaje:
+1 pto por encontrar correctamente cada columna de A−1
+1 puntos por argumentar que B es invertible.
+1 puntos por justiﬁcar que A + B−1 es una matriz invertible.
+1 puntos por aplicar las diferentes propiedades para llegar a una expresi´ on para C.7. Utilice la factorizaci´ onP A = LU de
+
+
+−3 1 1 0
+−6 2 2 2
+3 3 2 −1
+3 7 2 0
+
+
+para obtener la ´ ultima columna de la inversa de A.
+Soluci´ on. Se debe resolver el sistema Ax = e4. La factorizaci´ on P A = LU viene dada por:
+P =
+
+
+1 0 0 0
+0 0 1 0
+0 0 0 1
+0 1 0 0
+
+ , L =
+
+
+1 0 0 0
+−1 1 0 0
+−1 2 1 0
+2 0 0 1
+
+ y U =
+
+
+−3 1 1 0
+0 4 3 −1
+0 0 −3 2
+0 0 0 2
+
+
+Por lo tanto, para resolver Ax = e4, multiplicando por P se tiene que ( P A)x = P e4 y as ´ ı, debemos
+resolver ( LU )x = P e4 = (0 , 0, 1, 0)t. En primer lugar, resolvemos Ly = (0 , 0, 1, 0)t, resultando
+y = (0, 0, 1, 0)t. Por ´ ultimo, determinamos la soluci´ on resolviendoU x = (0, 0, 1, 0)t, obteni´ endose
+x = (−1/36, 1/4, −1/3, 0)t.
+Puntaje:
+Asignar 3 puntos por encontrar la descomposici´ on PA=LU (1 punto por cada matriz correc-
+ta).
+Asginar 1 punto por utilizar la descomposici´ on para resolver Ax = e4.
+Asignar 1 punto por resolver correctamente el sistema Ly = P e4.
+Asignar 1 punto por resolver correctamente el sistema U x = y.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. En caso de ser verdaderas dem´ ues-
+trelas y si son falsas de un contraejemplo.
+a) Si {u, v, w} es un conjunto linealmente independiente de Rn y A es un matriz de n × m,
+entoces {Au,Av,Aw} es un conjunto linealmente independiente de Rm.
+b) Si la trasformaci´ on linealT : Rm → Rn es inyectiva, entonces m ≤ n.
+c) Si T : R2 → R2 es una transformaci´ on lineal que primero reﬂeja a cada vector trav´ es del eje
+Y y luego lo pondera por 3 entonces la matriz asociada a esta transfomaci´ on es
+( −3 0
+0 3
+)
+Soluci´ on.
+a) Falsa.
+Si A es la matiz nula cada vector Ax = 0 luego el conjunto es linealmente dependiente
+b) Verdadero.
+Sea A la matriz asociada a tal transformaci´ on. Sabemos que A tiene dimensi´ onn × m y como
+es inyectiva, entonces Ax = 0 tiene soluci´ on ´ unica. Esto ´ ultimo quiere decir queA tiene m
+pivotes (es decir, la misma cantidad de pivotes que el n´ umero de columnas), y esto no ser ´ ıa
+posible si n < m , pues la matriz tendr ´ ıa menos ﬁlas que columnas y cada pivote est´ a ubicado
+en una ﬁla distinta.
+c) Verdadero
+La matriz A = [T (e1) T (e2)] =
+( −3 0
+0 3
+)
+Puntaje:
+2 puntos por dar contraejemplo en a).
+2 puntos por demostrar b).
+2 puntos por demostrar c).

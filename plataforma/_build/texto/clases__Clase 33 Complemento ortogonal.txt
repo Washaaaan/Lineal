@@ -1,0 +1,77 @@
+
+----- pagina 1 -----
+Clase 33 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 6
+----- pagina 2 -----
+Recordatorio
+Producto interior (o punto): Si u y v son vectores en Rn, su
+producto punto es u · v = uTv.
+Longitud (o norma): La longitud de un vector v es el escalar no
+negativo ||v|| = √v · v.
+Normalización: Un vector u es un vector unitario si ||u|| = 1.
+Normalizar un vector v consiste en calcular u = 1||v|| v.
+Distancia: La distancia entre u y v, denotada por dist (u, v), es la
+longitud del vector u − v.
+Ortogonalidad: Dos vectores u y v son ortogonales si u · v = 0.
+2 / 6
+----- pagina 3 -----
+Recordatorio
+Teorema: Teorema de Pitágoras
+Dos vectores u y v son ortogonales si y solo si
+||u + v||2 = ||u||2 + ||v||2
+3 / 6
+----- pagina 4 -----
+Complemento Ortogonal
+Definición: Complemento Ortogonal
+Si W es un subespacio de Rn, el conjunto de todos los vectores z que son
+ortogonales a W se llama complemento ortogonal de W y se denota
+mediante W⊥.
+Ejemplo: Sea W un plano que pasa
+por el origen en R3, y sea L la recta
+que pasa por el origen y es perpen-
+dicular a W. Entonces L = W⊥.
+4 / 6
+----- pagina 5 -----
+Complemento Ortogonal
+Propiedades del complemento ortogonal
+1 Un vector x está en W⊥ si y solo si x es ortogonal a todo vector en
+un conjunto que genera a W.
+2 W⊥ es un subespacio de Rn.
+Ejemplo: Calcule el complemento ortogonal de
+W = Gen
+
+
+
+
+
+1
+0
+0
+0
+
+ ,
+
+
+3
+1
+0
+0
+
+
+
+
+
+5 / 6
+----- pagina 6 -----
+Complemento Ortogonal
+Teorema
+Sea A una matriz de m × n. El complemento ortogonal del espacio fila de
+A es el espacio nulo de A, y el complemento ortogonal del espacio columna
+de A es el espacio nulo de AT:
+(Fila A)⊥ = Nul A y (Col A)⊥ = Nul AT
+6 / 6

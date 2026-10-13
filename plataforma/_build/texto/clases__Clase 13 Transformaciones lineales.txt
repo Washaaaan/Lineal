@@ -1,0 +1,208 @@
+
+----- pagina 1 -----
+Clase 13 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Dado un SEL, podemos tomar la matriz de coeficientes A, el
+vector de resultados b y la matriz ampliada
+[
+A b
+]
+Usando operaciones de fila, podemos llegar a la forma escalonada
+(reducida).
+La forma escalonada nos indica cuántas soluciones tiene el sistema.
+Los sistemas homogéneos Ax = 0 siempre tienen al menos una
+solución.
+Un conjunto de vectores {v1, . . . ,vn} en Rm es LI si la ecuación
+c1v1 + · · · + cnvn = 0
+tiene únicamente la solución trivial c1 = · · · = cn = 0.
+2 / 11
+----- pagina 3 -----
+Transformaciones y transformaciones lineales
+Transformación
+Una transformación es una regla que asigna a cada vector x en Rn un
+vector T(x) en Rm, llamado imagen de x.
+Rn se llama el dominio de T, Rm el codominio, y el conjunto de imágenes
+{T(x) : x ∈ Rn}
+se llama el rango o recorrido de T.
+3 / 11
+----- pagina 4 -----
+Transformaciones y transformaciones lineales
+Transformación matricial
+Sea A una matriz de tamaño m × n. La asignación T(x) = Ax define una
+transformación T : Rn → Rm llamada transformación matricial .
+Ejemplo:
+Sean
+A =
+
+
+1 −3
+3 5
+−1 7
+
+ , u =
+[ 2
+−1
+]
+, b =
+
+
+3
+2
+−5
+
+ , c =
+
+
+3
+2
+5
+
+ .
+Defina una transformación T : R2 → R3 por T(x) = Ax.
+a) Encuentre la imagen de u bajo la transformación T.
+b) Encuentre T(x) para x =
+[x1
+x2
+]
+.
+c) ¿Existe una x en R2 cuya imagen bajo T sea b? ¿Cuántas?
+e) Determine si c está en el rango de la transformación T.
+4 / 11
+----- pagina 5 -----
+Transformaciones y transformaciones lineales
+Nota: 
+
+1 −3 3
+3 5 2
+−1 7 −5
+
+ ∼
+
+
+1 0 3/2
+0 1 −1/2
+0 0 0
+
+
+
+
+1 −3 3
+3 5 2
+−1 7 5
+
+ ∼
+
+
+1 −3 3
+0 1 2
+0 0 −35
+
+
+5 / 11
+----- pagina 6 -----
+Transformaciones y transformaciones lineales
+Transformación lineal
+Una transformación T : Rn → Rm es una transformación lineal si para
+todos los vectores u, v en Rn y todo escalar c, se cumple:
+T(u + v) = T(u) + T(v), (Preserva sumas)
+T(c u) = c T(u) (Preserva multiplicación por escalar)
+Ejemplo: Las transformaciones matriciales son lineales.
+6 / 11
+----- pagina 7 -----
+Transformaciones y transformaciones lineales
+Ejemplo: Considere
+T
+
+
+
+
+x1
+x2
+x3
+
+
+
+ =
+[x1
+x2
+]
+.
+¿Es T una transformación lineal?
+Nota:
+T(x) =
+[ 1 0 0
+0 1 0
+]
+x.
+7 / 11
+----- pagina 8 -----
+Transformaciones y transformaciones lineales
+Propiedades de una transformación lineal
+Si T : Rn → Rm es una transformación lineal, entonces:
+T(0) = 0
+T(c1u + c2v) = c1T(u) + c2T(v)
+En general, T(c1u1 + c2u2 + . . . ckuk) = c1T(u1) + c2T(u2) + . . . ckT(uk)
+8 / 11
+----- pagina 9 -----
+Transformaciones y transformaciones lineales
+Ejemplo: Defina
+T
+([x1
+x2
+])
+=
+[x1 + 3x2
+x2
+]
+.
+¿Es T lineal?
+Nota:
+T(x) =
+[ 1 3
+0 1
+]
+x.
+9 / 11
+----- pagina 10 -----
+Transformaciones y transformaciones lineales
+Ejemplo: Considere r ∈ R y la transformación T : Rn → Rn,
+T(x) = r x
+¿Es T una transformación lineal?
+Nota:
+T(x) =
+
+
+r 0 . . . 0
+0 r 0
+... . . .
+0 . . . 0 r
+
+ x.
+10 / 11
+----- pagina 11 -----
+Transformaciones y transformaciones lineales
+Ejemplo: Defina
+T
+([x1
+x2
+])
+=
+[−x2
+x1
+]
+.
+¿Es T lineal?
+Nota:
+T(x) =
+[ 0 −1
+1 0
+]
+x.
+11 / 11

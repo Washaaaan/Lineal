@@ -1,0 +1,50 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+FACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+I3 MAT1203 - Algebra Lineal
+Noviembre 7, 2014
+1. a) [ 3 pts.] Considere la matriz A y su escalonada reducida
+A =
+
+
+1 0 −3 2 0 3
+−2 1 7 −3 0 −7
+−1 2 5 0 1 −4
+2 1 −5 5 2 7
+
+ rref (A) =
+
+
+1 0 −3 2 0 3
+0 1 1 1 0 −1
+0 0 0 0 1 1
+0 0 0 0 0 0
+
+
+Determine bases del espacio ﬁla, espacio columna y espacio nulo de A.
+b) [ 3 pts.] Sea F una matriz ﬁja de 3 × 2, y sea H el conjunto de todas
+las matrices A enM2×4 con la propiedad de que FA = 0 (la matriz nula en
+M3×4). Determine si H es un subespacio de M2×4. Justiﬁque su respuesta.
+2. a) [ 2 pts.] Los vectores v1 = (1, 0,−2, 3) y v2 = (−2, 3, 1, 1) son l.i.
+Encuentre dos vectores v3 y v4 tales que{v1, v2, v3, v4} sea una base de R4.
+b) T : P1→ P2 la transformaci´ on lineal cuya matriz respecto a las bases B =
+{1−x, 1 +x} de P1 y la base C ={x,x +x2,x 2 + 1} de P2 es
+
+
+1 1
+0 1
+−1 2
+
+.
+i) [ 2 pts.] Calcule T (2 + 3x).
+ii) [ 2 pts.] Demuestre que T es un operador 1-1 pero no sobre.
+3. a) [ 3 pts.] Demuestre que si λ es valor propio de A entonces λ3 + 2λ− 5 es
+valor propio de A3 + 2A− 5I.
+b) [ 3 pts.] Diagonalice A =
+
+
+1 0 0
+−1 0 −1
+−1 −1 0
+
+ y calcule A99.

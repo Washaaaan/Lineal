@@ -1,0 +1,638 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Primer semestre 2026
+Pauta Interrogaci´ on 1 - MAT1203
+1. En una ciudad inteligente, dos drones aut´ onomos realizan entregas siguiendo trayectorias rec-
+til ´ ıneas en el espacio.
+• El Drone A despega desde el punto (1 , 2, 0) y se desplaza en l ´ ınea recta siguiendo la
+direcci´ on del vector
+
+
+1
+−1
+2
+
+.
+• El Drone B despega desde el punto (9 , −6, 1) y se mueve en l ´ ınea recta siguiendo la
+direcci´ on del vector
+
+
+−1
+1
+1
+
+.
+El sistema de control a´ ereo detecta un posible riesgo de colisi´ on y necesita analizar la situaci´ on.
+Para esto:
+(a) Describa las trayectorias de ambos drones mediante ecuaciones param´ etricas.
+(b) Demuestre que las trayectorias de los drones se intersectan. Determine el punto en com´ un
+de dichas trayectorias.
+(c) Para evitar el riesgo, se decide reprogramar el punto de despegue del Drone B, manteniendo
+su direcci´ on de movimiento.
+Describa las condiciones que debe cumplir el nuevo punto de partida P = ( a, b, c) para
+que la trayectoria del Drone B no intersecte con la del Drone A.
+Soluci´ on:
+(a) La trayectoria del Drone A es la recta que pasa por el punto (1 , 2, 0) con direcci´ on
+
+
+1
+−1
+2
+
+,
+por lo tanto una ecuaci´ on param´ etrica es
+ℓA :
+
+
+
+x = 1 + t
+y = 2 − t
+z = 2t
+t ∈ R.La trayectoria del Drone B es la recta que pasa por el punto (9, −6, 1) con direcci´ on
+
+
+−1
+1
+1
+
+,
+por lo tanto una ecuaci´ on param´ etrica es
+ℓB :
+
+
+
+x = 9 − s
+y = −6 + s
+z = 1 + s
+s ∈ R.
+(b) Para determinar si las trayectorias se intersectan, igualamos las ecuaciones param´ etricas:
+
+
+
+1 + t = 9 − s
+2 − t = −6 + s
+2t = 1 + s
+De la primera ecuaci´ on se obtiene que
+t + s = 8.
+La segunda ecuaci´ on equivale a
+−t − s = −8,
+que es consistente con la anterior.
+De la tercera ecuaci´ on se tiene
+2t − s = 1.
+Resolvemos entonces el sistema (
+t + s = 8
+2t − s = 1
+Sumando ambas ecuaciones:
+3t = 9 = ⇒ t = 3.
+Luego,
+s = 8 − 3 = 5.
+Como existen par´ ametros t = 3 y s = 5 que satisfacen simult´ aneamente el sistema,
+concluimos que las trayectorias se intersectan.
+El punto de intersecci´ on es
+(1 + 3, 2 − 3, 2 · 3) = (4, −1, 6).
+(c) Sea ahora P = ( a, b, c) el nuevo punto de partida del Drone B. Manteniendo la misma
+direcci´ on, la nueva trayectoria del Drone B es
+ℓ′B :
+
+
+
+x = a − s
+y = b + s
+z = c + s
+s ∈ R.Para determinar cu´ ando esta nueva trayectoria intersecta a la trayectoria del Drone A,
+igualamos con la recta
+ℓA :
+
+
+
+x = 1 + t
+y = 2 − t
+z = 2t
+t ∈ R.
+Debemos entonces estudiar la consistencia del sistema
+
+
+
+1 + t = a − s
+2 − t = b + s
+2t = c + s
+Reordenando, obtenemos 
+
+
+t + s = a − 1
+−t − s = b − 2
+2t − s = c
+La matriz ampliada asociada es
+
+
+1 1 a − 1
+−1 −1 b − 2
+2 −1 c
+
+ .
+Aplicando operaciones elementales:
+
+
+1 1 a − 1
+−1 −1 b − 2
+2 −1 c
+
+ ∼
+
+
+1 1 a − 1
+0 0 a + b − 3
+0 −3 c − 2a + 2
+
+ .
+Para que las trayectorias se intersecten, este sistema debe ser consistente. Como la segunda
+fila representa la ecuaci´ on
+0 = a + b − 3,
+el sistema es consistente si y s´ olo si
+a + b = 3.
+Por lo tanto, la nueva trayectoria del Drone B no intersecta a la del Drone A si y s´ olo si
+a + b ̸= 3.
+En consecuencia, el nuevo punto de partida P = (a, b, c) debe satisfacer que
+a + b ̸= 3.Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 0.5 pto Describe correctamente la trayectoria del Drone A me-
+diante ecuaciones param´ etricas.
+C2 0.5 pto Describe correctamente la trayectoria del Drone B me-
+diante ecuaciones param´ etricas.
+C3 1 pto Plantea correctamente el sistema asociado a la inter-
+secci´ on de ambas trayectorias.
+C4 1 pto Resuelve correctamente el sistema y concluye que las
+trayectorias se intersectan.
+C5 1 pto Determina el punto de intersecci´ on de las trayectorias.
+C6 1 pto Describe correctamente la nueva trayectoria del Drone
+B con punto inicial ( a, b, c) y la misma direcci´ on.
+C7 1 pto Determina y justifica correctamente la condici´ ona + b ̸=
+3 para que no haya intersecci´ on.
+2. Sea A una matriz de tama˜ no 3× 4 con columnas v1, v2, v3 y v4, tales que {v1, v2} es linealmente
+independiente, v1 + v2 = v3 y que v2 + v3 = v4.
+(a) Resuelva el sistema Ax = 0.
+(b) Resuelva el sistema Ax = 2v1 − v2.
+(c) A qu´ e objeto geom´ etrico corresponde el conjunto generado por las columnas deA.
+Soluci´ on:
+(a) Observamos que de las relaciones dadas se obtiene que
+v3 = v1 + v2 y v4 = v2 + v3 = v1 + 2v2.
+por lo tanto si
+x =
+
+
+x1
+x2
+x3
+x4
+
+ .
+tenemos que
+Ax = x1v1 + x2v2 + x3v3 + x4v4 = (x1 + x3 + x4)v1 + (x2 + x3 + 2x4)v2.
+Dado que {v1, v2} es l.i. se tiene que, resolver Ax = 0 equivale a resolver el sistema
+(
+x1 + x3 + x4 = 0
+x2 + x3 + 2x4 = 0
+tomandox3 = s, x 4 = t, se obtiene
+x1 = −s − t, x 2 = −s − 2t.
+Por lo tanto, el conjunto soluci´ on es
+
+
+
+
+
+−s − t
+−s − 2t
+s
+t
+
+ : s, t∈ R
+
+
+ =
+
+
+s
+
+
+−1
+−1
+1
+0
+
+ + t
+
+
+−1
+−2
+0
+1
+
+ : s, t∈ R
+
+
+ .
+(b) Sabemos que Ax es una combinaci´ on lineal de las columnas deA, donde los ponderadores
+son las entradas del vector x. En efecto, si
+x =
+
+
+x1
+x2
+x3
+x4
+
+ ,
+entonces
+Ax = x1v1 + x2v2 + x3v3 + x4v4.
+Como
+2v1 − v2 = 2v1 + (−1)v2 + 0v3 + 0v4,
+se tiene que una soluci´ on particular es
+xp =
+
+
+2
+−1
+0
+0
+
+ .
+Del inciso anterior, el conjunto soluci´ on del sistema homog´ eneoAx = 0 es
+
+
+s
+
+
+−1
+−1
+1
+0
+
+ + t
+
+
+−1
+−2
+0
+1
+
+ : s, t∈ R
+
+
+ .
+Por lo tanto, el conjunto soluci´ on deAx = 2v1 − v2 es
+
+
+
+
+2
+−1
+0
+0
+
+ + s
+
+
+−1
+−1
+1
+0
+
+ + t
+
+
+−1
+−2
+0
+1
+
+ : s, t∈ R
+
+
+ .
+(c) Como
+v3 = v1 + v2 y v4 = v1 + 2v2,
+todas las columnas de A pertenecen a Gen {v1, v2}. Luego,
+Gen{v1, v2, v3, v4} = Gen{v1, v2}.
+Como v1 y v2 son linealmente independientes tenemos que el conjunto generado por las
+columnas de A corresponde a un plano que pasa por el origen.Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 0.5 pto Reconoce que v3 = v1 + v2 y v4 = v1 + 2v2.
+C2 0.5 pto Expresa correctamente Ax como combinaci´ on lineal de
+v1 y v2.
+C3 1 pto Resuelve correctamente el sistema asociado dado que el
+conjunto {v1, v2} es l.i.
+C4 1 pto Reconoce una soluci´ on particular deAx = 2v1 − v2.
+C5 1 pto Describe correctamente la soluci´ on general como suma
+de una soluci´ on particular y la soluci´ on del sistema ho-
+mog´ eneo.
+C6 1 pto Justifica que las columnas de A pertenecen a
+Gen{v1, v2}.
+C7 1 pto Concluye que el conjunto generado por las columnas es
+un plano por el origen.
+3. Determine qu´ e condiciones deben cumplira, b∈ R para que la intersecci´ on de los planos
+
+
+
+x + y + z = 1,
+x + 2y + 3z = 2,
+2x + ay + bz = 3
+corresponda a una recta enR3. Para dichos valores dea y b, determine una ecuaci´ on param´ etrica
+de esa recta.
+Soluci´ on.
+Consideremos la matriz aumentada del sistema:
+
+
+1 1 1 1
+1 2 3 2
+2 a b 3
+
+
+Aplicamos operaciones elementales por filas:
+F2 → F2 − F1, F 3 → F3 − 2F1,
+obteniendo 
+
+1 1 1 1
+0 1 2 1
+0 a − 2 b − 2 1
+
+ .
+Luego,
+F3 → F3 − (a − 2)F2,
+resultando
+
+1 1 1 1
+0 1 2 1
+0 0 b − 2a + 2 3 − a
+
+ .
+Para que la soluci´ on del sistema corresponda a una recta enR3, el sistema debe ser consistente
+y tener una variable libre. Esto ocurre si y solo si la matriz tiene dos pivotes y no existe una
+fila de la forma [0 0 0 |c] con c ̸= 0. Por lo tanto, debe cumplirse:
+b − 2a + 2 = 0 y 3 − a = 0.
+De 3 − a = 0 se obtiene
+a = 3.
+Reemplazando en la primera ecuaci´ on:
+b − 2(3) + 2 = 0 =⇒ b − 4 = 0 =⇒ b = 4.
+Por lo tanto, la intersecci´ on corresponde a una recta si y solo si
+a = 3, b = 4.
+Para estos valores, el sistema queda
+
+
+
+x + y + z = 1,
+x + 2y + 3z = 2,
+2x + 3y + 4z = 3.
+y por lo tanto realizando las mismas operaciones elementales que se hicieron anteriormente se
+obtiene la matriz ampliada 
+
+1 1 1 1
+0 1 2 1
+0 0 0 0
+
+ .
+Tomando z = t, con t ∈ R, se obtiene
+y = 1 − 2t.
+Sustituyendo en la primera ecuaci´ on:
+x + (1 − 2t) + t = 1 =⇒ x = t.
+As ´ ı, una ecuaci´ on param´ etrica de la recta soluci´ on es
+x = t, y = 1 − 2t, z = t.Criterio de evaluaci´ on.
+Criterio Puntaje Indicador
+C1 1 pto Plantear la matriz ampliada asociada.
+C2 1 pto Por escalonar.
+C3 1 pto Por plantear la condici´ onb − 2a + 2 = 0 .
+C4 1 pto Por plantear la condici´ on 3− a = 0.
+C5 1 pto Por determinar a y b.
+C6 1 pto Escribir la soluci´ on de forma param´ etrica.
+4. Sea T : R2 → R3 una transformaci´ on lineal tal que
+T
+1
+1
+
+=
+
+
+1
+0
+1
+
+ , T
+ 0
+−1
+
+=
+
+
+0
+1
+1
+
+ .
+(a) Determine la matriz asociada a T .
+(b) Calcule T
+x
+y
+
+para
+x
+y
+
+∈ R2.
+(c) ¿El vector
+
+
+2
+1
+3
+
+ pertenece a la imagen de T ?
+Soluci´ on:
+Sea A la matriz asociada a T . Como
+T
+1
+1
+
+= T
+1
+0
+
++ T
+0
+1
+
+,
+y adem´ as
+T
+ 0
+−1
+
+= − T
+0
+1
+
+,
+se obtiene primero que
+T
+0
+1
+
+= −
+
+
+0
+1
+1
+
+ =
+
+
+0
+−1
+−1
+
+ .
+Luego,
+T
+1
+0
+
+= T
+1
+1
+
+− T
+0
+1
+
+=
+
+
+1
+0
+1
+
+ −
+
+
+0
+−1
+−1
+
+ =
+
+
+1
+1
+2
+
+ .
+Por lo tanto, la matriz asociada a T es
+A =
+
+
+1 0
+1 −1
+2 −1
+
+ .Adem´ as, para todo
+x
+y
+
+∈ R2,
+T
+x
+y
+
+= x T
+1
+0
+
++ y T
+0
+1
+
+= x
+
+
+1
+1
+2
+
+ + y
+
+
+0
+−1
+−1
+
+ =
+
+
+x
+x − y
+2x − y
+
+ .
+Finalmente, para determinar si el vector
+
+
+2
+1
+3
+
+
+pertenece a la imagen de T , se debe estudiar si existe
+x
+y
+
+∈ R2
+tal que
+T
+x
+y
+
+=
+
+
+2
+1
+3
+
+ .
+Esto equivale a resolver el sistema 
+
+
+x = 2,
+x − y = 1,
+2x − y = 3.
+De la primera ecuaci´ on se obtienex = 2. Reemplazando en la segunda,
+2 − y = 1 ⇒ y = 1.
+Verificando en la tercera tenemos que:
+2 · 2 − 1 = 3,
+por lo tanto
+T
+2
+1
+
+=
+
+
+2
+1
+3
+
+
+luego
+
+
+2
+1
+3
+
+ pertenece a la imagen de T . Criterio de evaluaci´ on.Criterio Puntaje Indicador
+C1 1 pto Por determinar T (e1).
+C2 1 pto Por determinar T (e2).
+C3 1 pto Por la matriz .
+C4 1 pto Por la f´ ormula paraT .
+C5 1 pto Por plantear sistema correspondiente.
+C6 1 pto Por determinar que el vector pertenece a la imagen.

@@ -1,0 +1,909 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on alExamen
+1. Sea A =
+[ 18 −10
+30 −17
+]
+.
+Diagonalice A, y use esta diagonalizaci´ on para calcularA20.
+Soluci´ on:
+El polinomio caracter´ ıstico deA es
+det(A−λI) =
+⏐⏐⏐⏐ 18−λ −1030 −17−λ ⏐⏐⏐⏐ = (λ− 18)(λ + 17) + 300 =λ2−λ− 306 + 300 =λ2−λ− 6,
+por lo que los valores propios de A son λ =−2 y λ = 3.
+Los vectores propios de A, correspondientes a estos valores propios, son:
+Para λ =−2: Buscamos x =
+[ x1
+x2
+]
+que sea una soluci´ on no trivial de
+[ 20 −10
+30 −15
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+.
+Es f´ acil ver quex =
+[ x1
+x2
+]
+=
+[ 1
+2
+]
+es soluci´ on no trivial de
+[ 20 −10
+30 −15
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+y por lo tanto vector propio de A.
+Para λ = 3: Buscamos x =
+[ x1
+x2
+]
+que sea una soluci´ on no trivial de
+[ 15 −10
+30 −20
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+.
+Es f´ acil ver quex =
+[ x1
+x2
+]
+=
+[ 2
+3
+]
+es soluci´ on no trivial de
+[ 15 −10
+30 −20
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+y por lo tanto vector propio de A.
+As´ ı, una base de vectores propios esB =
+{[ 1
+2
+]
+,
+[ 2
+3
+]}
+, por lo que tomando P =
+[ 1 2
+2 3
+]
+(la
+matriz que tiene por columnas a los elementos de la base) y D =
+[−2 0
+0 3
+]
+(la matriz diagonal
+que tiene los valores propios correspondientes a las columnas de P ), se tiene A = PDP−1. En
+otras palabras,
+A =
+[ 1 2
+2 3
+][ −2 0
+0 3
+][ 1 2
+2 3
+]−1
+=
+[ 1 2
+2 3
+][ −2 0
+0 3
+][ −3 2
+2 −1
+]
+.Para calcular A20, vemos que
+A20 = ( PDP−1)(PDP−1)··· (PDP−1)
+= ( PD )(P−1P )D(P−1P )D... (P−1P )DP 1
+= ( PD )DD...DP −1,
+donde D aparece 20 veces, o sea,
+A20 = PD 20P−1 =
+[ 1 2
+2 3
+][ −2 0
+0 3
+]20[−3 2
+2 −1
+]
+=
+[ 1 2
+2 3
+][ 220 0
+0 3 20
+][ −3 2
+2 −1
+]
+=
+[−3· 220 + 4· 320 −6· 220 + 6· 320
+2· 220− 2· 320 4· 220− 3· 320
+]
+=
+[ 13943991876 20914414950
+−6971471650 −10456158899
+]
+Puntaje:
+Por calcular el polinomio caracter´ ıstico: 1 punto.
+Por encontrar los valores propios: 0,5 puntos.
+Por encontrar un vector propio correspondiente a λ =−2: 1 punto.
+Por encontrar un vector propio correspondiente a λ = 3: 1 punto.
+Por expresar la matriz A como A =
+[ 1 2
+2 3
+][ −2 0
+0 3
+][ 1 2
+2 3
+]−1
+: 0,5 puntos.
+Por llegar a A20 =
+[ 1 2
+2 3
+]
+D20
+[ 1 2
+2 3
+]−1
+, 1 punto.
+Por llegar a A20 =
+[ 1 2
+2 3
+][ 220 0
+0 3 20
+][ −3 2
+2 −1
+]
+, 0,5 puntos.
+Por llegar a A20 =
+[−3· 220 + 4· 320 −6· 220 + 6· 320
+2· 220− 2· 320 4· 220− 3· 320
+]
+, 0,5 puntos.2. Sean P una matriz invertible, D una matriz diagonal, A =PDP−1 y B =A2 + 5A− 3I.
+Demuestre que B es diagonalizable.
+Ayuda: Encuentre una factorizaci´ on conveniente deB.
+Soluci´ on:
+Como A =PDP−1,
+B = (PDP−1)(PDP−1)+5(PDP−1)−3I =PD 2P−1+5(PDP−1)−3PP−1 =P (D2+5D−3I)P−1.
+Pero E = D2 + 5D− 3I es una suma de matrices diagonales y por lo tanto es diagonal. As´ ı,
+B =PEP−1 con E diagonal, por lo que B es diagonalizable.
+Puntaje:
+Por llegar a B =P (D2 + 5D− 3I)P−1, 3 puntos.
+Por argumentar que la matriz E =D2 + 5D− 3I es diagonal, 2 puntos.
+Por deducir que, ya que B =PEP−1 con E diagonal, B es diagonalizable: 1 punto.3. Sean u1 =
+
+
+1
+2
+−3
+
+, u2 =
+
+
+2
+−1
+−1
+
+ y u3 =
+
+
+1
+2
+3
+
+.
+a) Construya una base ortogonal de W = Gen(u1, u2) que contenga a u1.
+b) Encuentre la proyecci´ on ortogonal deu3 sobre W .
+Soluci´ on:
+a) Para encontrar una base ortogonal {v1, v2} de W , aplicamos Gram-Schmidt al conjunto
+{(1, 2,−3), (2,−1,−1)}. Para ello, debemos:
+Tomar v1 = (1, 2,−3).
+Considerar p la proyecci´ on ortogonal de (2,−1,−1) sobre Gen{v1}.
+Tomar v2 = (2,−1,−1)− p.
+Haciendo los c´ alculos,
+ˆv1 = 1√14(1, 2,−3),
+p = ((2 ,−1,−1)· ˆv1)ˆv1 = 114 ((2,−1,−1)· v1) v1
+= 114 ((2,−1,−1)· (1, 2,−3)) (1, 2,−3) = 314(1, 2,−3),
+v2 = (2 ,−1,−1)− p = (2,−1,−1)− 314(1, 2,−3) = 514(5,−4,−1);
+As´ ı, una base ortogonal1 deW est´ a dada por cualquier ponderado no nulo dev1 = (1, 2,−3)
+y cualquier ponderado no nulo de 14 v2 = (5,−4,−1).
+De hecho, es m´ as simple renombrarv2 = (5,−4,−1) y tomar como base
+{v1, v2} ={(1, 2,−3), (5,−4,−1)} .
+En cualquier caso, si se quiere tener una base ortonormal de W , los vectores adecuados
+ser´ ıanˆv1 =± 1√14(1, 2,−3), ˆv2 =± 142(5,−4,−1).
+b) Buscamos la proyecci´ on ortogonal deu3 sobre W .
+De acuerdo al teorema 6.10, si normalizamos la base de (a), la proyecci´ on buscada es
+proyWu3 = (u3· ˆv1)ˆv1 + (u3· ˆv2)ˆv2.
+Una forma equivalente de escribir esto es
+proyWu3 = (u3· v1)||v1||2 v1 + (u3· v2)||v2||2 v2
+= (1, 2, 3)· (1, 2,−3)
+||(1, 2,−3)||2 (1, 2,−3) + (1, 2, 3)· (5,−4,−1)||(5,−4,−1)||2 (5,−4,−1)
+= −414 (1, 2,−3)− 642(5,−4,−1) =−27 (1, 2,−3)− 17(5,−4,−1)
+= 17(−2− 5,−4 + 4, 6 + 1) = 17(−7, 0, 7) = (−1, 0, 1)
+1En todo caso, no toda base ortogonal de W se obtiene de esta forma. Pero esta es quiz´ as la forma m´ as f´ acil de
+obtener una.Otra forma de resolver este problema es planteando el sistema que resulta de conside-
+rar proy Wu3 como combinaci´ on lineal dev1 y v2 (o de las dos columnas de A), digamos
+proyWu3 =αv1 +βv2, y a partir de aqu´ ı plantear el sistema de ecuaciones
+(proyWu3− u3)· v1 = 0 ,
+(proyWu3− u3)· v2 = 0 .
+o equivalentemente
+(αv1 +βv2)· v1 = u3· v1,
+(αv1 +βv2)· v2 = u3· v2.
+que es lo mismo que
+α||v1||2 +β(v1· v2) = u3· v1,
+α(v1· v2) +β||v1||2 = u3· v2.
+Resolviendo para α y β y reemplazando en proy Wu3 =αv1 +βv2 se obtiene la proyecci´ on
+ortogonal.
+Puntaje:
+a) Por encontrar una base ortogonal (cualquiera, no necesariamente ortonormal) de W que
+contenga u1, 3 puntos.
+Si se equivocan al aplicar Gram-Schmidt, cometiendo alg´ un peque˜ no error de c´ alculo, pero
+queda en evidencia que tienen claro c´ omo aplicar el m´ etodo, 2 puntos.
+b) Por plantear correctamente una forma de encontrar la proyecci´ on ortogonal, 1 punto.
+Por realizar los c´ alculos en la forma correcta, 2 puntos. Si cometenpeque˜ nos errores de
+c´ alculo, reciben 1 o 1,5 puntos (a criterio del corrector).
+A lo anterior se le suma el punto base.4. Encuentre una soluci´ on de m´ ınimos cuadrados deAx = b para
+A =
+
+
+3 1
+1 1
+3 −2
+2 1
+
+, b =
+
+
+2
+1
+−1
+2
+
+.
+Soluci´ on:
+El conjunto de soluciones del problema de m´ ınimos cuadrados de Ax = b es el conjunto de
+soluciones de las ecuaciones normales ATAx =ATb, o sea, de
+[ 3 1 3 2
+1 1 −2 1
+]
+
+
+3 1
+1 1
+3 −2
+2 1
+
+[ x1x2 ] =[ 3 1 3 21 1 −2 1 ]
+
+
+2
+1
+−1
+2
+
+ o, equivalentemente,
+[ 23 0
+0 7
+][ x1
+x2
+]
+=
+[ 8
+7
+]
+.
+Claramente, este ´ ultimo sistema tiene como ´ unica soluci´ on
+
+
+x1
+x2
+
+ =
+
+
+8
+23
+1
+
+, que es la soluci´ on
+buscada.
+Puntaje:
+Por indicar que se debe resolver ATAx =ATb: 2 puntos.
+Por plantear correctamente los productos a realizar para resolver lo anterior: 2 puntos.
+Por llegar al sistema diagonal que permite encontrar x: 1 punto.
+Por llegar al valor buscado de x: 1 punto.
+Segunda Soluci´ on:
+Una segunda idea de soluci´ on consiste en:
+Calcular la proyecci´ on ortogonal deb sobre ColA. Dicha proyecci´ on es (omitimos los c´ alculos
+intermedios) b⊥ = 123
+
+
+47
+31
+−22
+39
+
+.
+Resolver la ecuaci´ onAx = b⊥, o sea,
+
+
+3 1
+1 1
+3 −2
+2 1
+
+
+
+
+x1
+x2
+
+ = 123
+
+
+47
+31
+−22
+39
+
+.
+La soluci´ on de este sistema es, por supuesto,
+
+
+x1
+x2
+
+ =
+
+
+8
+23
+1
+
+.Puntaje:
+Por indicar que se buscar´ a la proyecci´ on ortogonalb⊥ de b sobre ColA: 2 puntos.
+Por llegar a plantear correctamente el sistema Ax = b⊥: 2 puntos.
+Por resolver correctamente el sistema anterior: 2 puntos.5. Una matriz A de n×n se dice ortogonal si ATA =In. Demuestre que todo valor propio real de
+una matriz ortogonal debe ser 1 o −1.
+Ayuda: Si x∈ Rn, ¿cu´ al es la relaci´ on entre||x|| y||Ax||?
+Soluci´ on:
+Sea λ un valor propio de A. As´ ı, existe un vectorx⁄= 0 tal que Ax =λx.
+Pero entonces, por una parte
+||Ax||2 = (Ax)T (Ax) = (xTAT )(Ax) = xT (ATA)x = xT (In)x = xTx =||x||2 ;
+y por otra,
+||Ax||2 = (Ax)T (Ax) = (λx)T (λx) =λ2xTx =λ2||x||2.
+As´ ı,||x||2 =λ2||x||2 y —como||x||2⁄= 0— tenemos λ2 = 1, de donde λ∈{± 1}.
+Puntaje:
+Por llegar a||Ax||2 =||x||2, 2 puntos.
+Por llegar a||Ax||2 =λ2||x||2, 2 puntos.
+Por deducir que λ2 = 1, 1 punto.
+Por llegar a λ∈{± 1}, 1 punto.6. Sea A =
+
+
+5 2 2
+2 5 2
+2 2 5
+
+. Diagonalice A ortogonalmente.
+Ayuda: Puede ser ´ util el demostrar previamente quev =
+
+
+1
+1
+1
+
+ es un vector propio de A.
+Soluci´ on:
+El polinomio caracter´ ıstico deA es
+p(λ) = det( A−λI) =
+⏐⏐⏐⏐⏐⏐ 5−λ 2 22 5 −λ 22 2 5 −λ ⏐⏐⏐⏐⏐⏐
+= (5 −λ)
+(
+(5−λ)2− 4)− 2 (2(5−λ)− 4) + 2 (4− 2(5−λ))
+= (5 −λ)
+(
+25− 10λ +λ2− 4)− 2 (10− 2λ− 4) + 2 (4− 10 + 2λ)
+= (5 −λ)
+(
+λ2− 10λ + 21) + 4 (2λ− 6)
+= 105 − 50λ + 5λ2− 21λ + 10λ2−λ3 + 8λ− 24
+= 81 − 63λ + 15λ2−λ3.
+v =
+
+
+1
+1
+1
+
+ es vector propio de A; como Av =
+
+
+9
+9
+9
+
+ = 9v, una de las ra´ ıces dep(λ) es λ = 9,
+por lo que p(λ) tiene a 9−λ como factor.
+De hecho,p(λ) = (9−λ)(λ−3)2. As´ ı, 9 es valor propio con multiplicidad 1 (y por lo tanto{v} =
+
+
+
+
+1
+1
+1
+
+
+
+
+ es base del espacio propio correspondiente), y 3 es valor propio con multiplicidad 2.
+Necesitamos hallar dos vectores propios correspondientes a λ = 3 que sean l.i. Para ello, resol-
+vemos el sistema (A− 3I)x = 0, o sea,
+
+
+2 2 2
+2 2 2
+2 2 2
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.
+Al escalonar este sistema, queda la ´ unica ecuaci´ onx1 +x2 +x3 = 0, por lo que x1 =−x2−x3.
+As´ ı, dos soluciones independientes de este sistema son (x1,x 2,x 3) = (−1, 1, 0) = w1 y (x1,x 2,x 3) =
+(−1, 0, 1) = w2, por lo que una base del espacio propio corespondiente al valor propio 3 es
+{w1, w2} ={(−1, 1, 0), (−1, 0, 1)}.
+Estos dos vectores no son ortogonales, por lo que debemos encontrar una base ortogonal del mis-
+mo espacio. Esto puede ser hecho, por ejemplo, por Gram-Schmidt, obteniendo{(−1, 1, 0), (1, 1,−2)}
+o{(−1, 0, 1), (1,−2, 1)}. As´ ı, una base ortogonal de R3, formada por valores propios de A, es
+
+
+
+
+1
+1
+1
+
+,
+
+
+−1
+1
+0
+
+,
+
+
+1
+1
+−2
+
+
+
+
+; otra posibilidad es
+
+
+
+
+
+1
+1
+1
+
+,
+
+
+−1
+0
+1
+
+,
+
+
+1
+−2
+1
+
+
+
+
+.
+Pero estas bases no son ortonormales. Normaliz´ andolas, obtenemos, respectivamente,
+
+
+
+1√
+3
+
+
+1
+1
+1
+
+, 1√2
+
+
+−1
+1
+0
+
+, 1√6
+
+
+1
+1
+−2
+
+
+
+
+,
+
+
+
+1√
+3
+
+
+1
+1
+1
+
+, 1√2
+
+
+−1
+0
+1
+
+, 1√6
+
+
+1
+−2
+1
+
+
+
+
+.As´ ı,A =P
+
+
+9 0 0
+0 3 0
+0 0 3
+
+P T , donde P =
+
+
+1√
+3 − 1√2 1√6
+1√
+3
+1√
+2
+1√
+6
+1√
+3 0 − 2√6
+
+ o P =
+
+
+1√
+3 − 1√2 1√6
+1√
+3 0 − 2√6
+1√
+3
+1√
+2
+1√
+6
+
+.
+Puntaje:
+Por calcular el polinomio caracter´ ıstico: 1 punto.
+Por factorizar el polinomio caracter´ ıstico: 1 punto.
+Por encontrar los dos vectores propios restantes: 1 punto.
+Por encontrar una base ortogonal: 1 punto.
+Por normalizar la base: 1 punto.
+Por expresar A como PDP T con P ortogonal: 1 punto.7. Sea A =
+[ 3 −6
+−6 14
+]
+.
+a) Encuentre una matriz L cuadrada, triangular inferior con n´ umeros 1 en la diagonal, y una
+matriz diagonal D tal que A =LDLT .
+Primera Soluci´ on:
+Una idea es usar la factorizaci´ onA =LU, que nos da
+L =
+[ 1 0
+−2 1
+]
+, U =
+[ 3 −6
+0 2
+]
+.
+Necesitamos expresar U de la forma U =DLT , con D diagonal. Como LT es invertible,
+D =U(LT )−1 =
+[ 3 −6
+0 2
+][ 1 −2
+0 1
+]−1
+=
+[ 3 −6
+0 2
+][ 1 2
+0 1
+]
+=
+[ 3 0
+0 2
+]
+.
+As´ ı,A =
+[ 1 0
+−2 1
+][ 3 0
+0 2
+][ 1 0
+−2 1
+]T
+=LDLT .
+Segunda Soluci´ on:
+Una segunda idea es usar fuerza bruta (s´ ı, a veces resulta).
+Si es posible escribir A como A =LDLT con L triangular inferior y 1s en la diagonal, y D
+diagonal, entonces existen x,y,z ∈ R que satisfacen
+[ 3 −6
+−6 14
+]
+=LDLT =
+[ 1 0
+x 1
+][ y 0
+0 z
+][ 1 x
+0 1
+]
+=
+[ y 0
+xy z
+][ 1 x
+0 1
+]
+=
+[ y xy
+xy x 2y +z
+]
+.
+De aqu´ ı se deduce quey = 3, x =−2 y ﬁnalmente z = 2, de donde
+L =
+[ 1 0
+−2 1
+]
+y D =
+[ 3 0
+0 2
+]
+, o sea, A =
+[ 1 0
+−2 1
+][ 3 0
+0 2
+][ 1 0
+−2 1
+]T
+.
+b) Realice un cambio de variable adecuado (por ejemplo,x =My para alguna matriz invertible
+M) que permita expresar la forma cuadr´ atica
+Q
+([ x1
+x2
+])
+=
+[
+x1 x2
+]
+A
+[ x1
+x2
+]
+como una suma ponderada de cuadrados.
+Soluci´ on:
+Como A =LDLT ,
+Q(x) = xT (LDLT )x = (xTL)D(LTx) = (LTx)TD(LTx).
+As´ ı, si tomamosy =LTx =
+[ 1 −2
+0 1
+][ x1
+x2
+]
+=
+[ x1− 2x2
+x2
+]
+, o equivalentemente
+[ x1
+x2
+]
+= x = (LT )−1y =
+[ 1 2
+0 1
+][ y1
+y2
+]
+=
+[ y1 + 2y2
+y1
+]
+,(en otras palabras, tomando M = (LT )−1 =
+[ 1 2
+0 1
+]
+) tenemos que
+Q(x) = (LTx)TD(LTx) = yTDy =[ y1 y2 ][ 3 00 2 ][ y1y2 ] = 3y21 + 2y22
+que es una expresi´ on sin t´ ermino cruzado.
+Comentario:
+Este problema no tiene una soluci´ on ´ unica. Una factorizaci´ on del tipoQ(x) = (M−1x)TD(M−1x)
+con D diagonal puede ser re-escrita cambiando el orden de las columnas de la matriz M e
+intercambiando los elementos de la diagonal de D. Por ejemplo, podemos tomar:
+M =
+[ 1 2
+0 1
+]
+,D =
+[ 3 0
+0 2
+]
+o M =
+[ 2 1
+1 0
+]
+,D =
+[ 2 0
+0 3
+]
+.
+Tambi´ en una soluci´ on puede ser transformada multiplicandoM por un escalar c⁄= 0, y
+dividiendoD porc2. Esto por ejemplo se logra dividiendo M en la soluci´ on anterior por√2
+y multiplicando D por 2:
+M =
+[
+1/
+√
+2
+√
+2
+0 1 /sqrt2
+]
+,D =
+[ 4 0
+0 6
+]
+.
+Cualquiera de estas factorizaciones nos permite transformar la forma cuadr´ atica en otra sin
+t´ erminos con producto cruzado, mediante el cambio de variablex =My.
+c) Clasiﬁque la forma cuadr´ aticaQ. ¿Es esta forma deﬁnida positiva, deﬁnida negativa, semi-
+deﬁnida positiva, semi-deﬁnitiva negativa o indeﬁnida?
+Soluci´ on:
+Claramente, en todas las soluciones presentadas a la parte (b), la matriz diagonal correspon-
+diente tiene los dos elementos diagonal positivos. As´ ı,Q(x) =ay21 +b· 0 =ay21 cona,b> 0,
+por lo que Q(x) es > 0 para todo ( y1,y 2)⁄= (0, 0). Como x = My y M es invertible, si
+(x1,x 2)⁄= 0 entonces (y1,y 2)⁄= 0.
+En otras palabras, Q(x) > 0 para todo x∈ R2− (0, 0), por lo que esta forma es deﬁnida
+positiva.
+Puntaje:
+a) Cualquier soluci´ on correcta (y completa) recibe 2 puntos.
+Si la soluci´ on est´ a esencialmente correcta, pero hay erroresmenores de c´ alculo, o
+faltan detalles importantes, recibe 1 punto.
+b) Una soluci´ on correcta (y completa, que muestre que la expresi´ on ﬁnal no tiene
+t´ ermino mixto) recibe 2 puntos.
+Si la soluci´ on est´ a esencialmente correcta, pero hay erroresmenores de c´ alculo, o
+faltan detalles importantes, recibe 1 punto.
+c) Por decir que la forma es deﬁnida positiva, 1 punto.
+Por justiﬁcar correctamente la aﬁrmaci´ on, 1 punto.
+A lo anterior se le suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) Las matrices similares siempre tienen exactamente los mismos vectores propios.
+b) Si u y v son vectores propios de la matrizA asociados, respectivamente, a los valores propios
+λ y µ (con λ⁄=µ) entonces u y v son ortogonales.
+c) Si los vectores del conjunto S ={v1,..., vk} son todos ⁄= 0 y mutuamente ortogonales,
+entoncesS es un conjunto linealmente independiente.
+Soluci´ on:
+a) FALSO
+Matrices similares tienen necesariamente los mismos valores propios, pero no necesariamente
+los mismos vectores propios.
+Ejemplo:
+Sea A =
+[ 1 0
+0 2
+]
+. Esta matriz tiene como vectores propios a los ponderados de (1 , 0) (con
+valor propio 1) y a los ponderados de (0 , 1) (con valor propio 2).
+Sea P =
+[ 1 0
+3 1
+]
+, de donde P−1 =
+[ 1 0
+−3 1
+]
+.
+La matrizA es similar a la matrizB =PAP−1 =
+[ 1 0
+3 1
+][ 1 0
+0 2
+][ 1 0
+−3 1
+]
+=
+[ 1 0
+−3 2
+]
+.
+Pero esta ´ ultima matriz tiene por vectores propios a los ponderados de (1 , 3) (con valor
+propio 1) y a los ponderados de (0 , 1) (con valor propio 2).
+As´ ı, estas dos matrices no tienen los mismos vectores propios.
+b) FALSO
+Ejemplo:
+La misma matriz B del ejemplo anterior sirve como contraejemplo en este caso:
+Dos vectores propios de la matriz B =
+[ 1 0
+−3 2
+]
+correspondientes a valores propios dis-
+tintos son (1, 3) y (0, 1), los que no son ortogonales: (1 , 3)· (0, 1) = 3.
+c) VERDADERO
+Demostraci´ on:
+Sea α1v1 +α2v2 +··· +αkvk = 0 una combinaci´ on lineal nula de los vectoresv1,..., vk.
+Multiplicando “punto v1” obtenemos
+α1v1· v1 +α2v2· v1 +··· +αkvk· v1 = 0· v1 = 0.
+Como v1⊥ v2, v1⊥ v3,··· , v1⊥ vk, se tiene α1||v1||2 = 0.
+Pero v1⁄= 0 lleva a que||v1||⁄ = 0, por lo que —comoα1||v1||2 = 0— obtenemos queα1 = 0.
+Aplicando el mismo proceso a α2,α 3,...,α k, llegamos a que α1 = α2 = ...α k = 0, lo que
+nos dice que S es un conjunto linealmente independiente.Puntaje:
+En cada parte, se dan los dos puntos si se da una justiﬁcaci´ on correcta. En las partes (a) y (b),
+una justiﬁcaci´ on correcta es un contraejemplo; en la (c) es una breve demostraci´ on.
+A lo anterior se le suma el punto base.

@@ -1,0 +1,755 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2015
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on y pauta de correcci´ on de la Interrogaci´ on N◦ 2
+Justifique sus respuestas.
+1. Sea A =LU donde
+L =
+
+
+1 0 0
+−2 1 0
+1 −1 1
+
+, U =
+
+
+1 2 1
+0 2 1
+0 0 −1
+
+
+Use esta factorizaci´ on y, sin calcular expl´ ıcitamenteA, AT , ni la inversa de ninguna matriz,
+determine la segunda ﬁla de A−1.
+Soluci´ on:
+La segunda ﬁla de A−1 es la segunda columna de ( A−1)T =(AT)−1.
+Llamemos c2 a esta columna. Sabemos que ATc2 = e2 =
+
+
+0
+1
+0
+
+, por lo que c2 es la soluci´ on del
+sistema de ecuaciones ATx =
+
+
+0
+1
+0
+
+.
+Como este sistema es equivalente a (LU)Tx =
+
+
+0
+1
+0
+
+, o sea a U TLTx =
+
+
+0
+1
+0
+
+, lo podemos resolver
+como sigue:
+(i) Resolvemos el sistema U Ty =
+
+
+0
+1
+0
+
+.
+(ii) Resolvemos el sistema LTx = y.
+Ambos sistemas son triangulares, y por lo tanto simples de resolver.
+En efecto: el primer sistema tiene por matriz ampliada
+
+
+1 0 0 0
+2 2 0 1
+1 1 −1 0
+
+
+de donde y1 = 0, 2y1 + 2y2 = 1→y2 = 1/2 y ﬁnalmente y1 +y2−y3 = 0→y3 =y2 = 1/2.El segundo sistema es LTx =
+
+
+0
+1/2
+1/2
+
+, por lo que su matriz ampliada es
+
+
+1 −2 1 0
+0 1 −1 1 /2
+0 0 1 1 /2
+
+
+de donde x3 = 1/2, x2−x3 = 1/2→x2 = 1 y ﬁnalmente x1− 2x2 +x3 = 0→x1 = 2x2−x3 =
+2− 1/2 = 3/2. As´ ı,c2 = x =
+
+
+3/2
+1
+1/2
+
+, que es la segunda columna de ( A−1)T de donde la segunda
+ﬁla de A−1 es
+cT2 =[3/2 1 1 /2].
+Puntaje:
+Suponiendo que lo hacen por el m´ etodo mostrado aqu´ ı:
+Por indicar que c2 es la soluci´ on del sistema de ecuacionesATx =
+
+
+0
+1
+0
+
+, 1 punto.
+Por plantear correctamente el m´ etodo para resolver el problema, 1 punto.
+Por resolver U Ty = e2, 2 puntos.
+Por resolver LTx = y, 2 puntos.
+A lo anterior se suma el punto base.
+Si lo hacen por otro m´ etodo correcto (que no calcule expl´ ıcitamenteA, AT , ni la inversa de
+ninguna matriz), consultar por el puntaje.2. Sea
+A =
+
+
+1 1 0
+α 6 3
+0 β 2
+
+
+a) ¿Qu´ e condici´ on deben cumplirα yβ para que sea posible realizar la factorizaci´ onA =LU?
+b) ¿Qu´ e condici´ on deben cumplirα y β para que la matriz no tenga inversa?
+Soluci´ on:
+a) Observamos en primer lugar que, tras pivotear en la primera columna se tendr´ a
+A∼
+
+
+1 1 0
+0 6 −α 3
+0 β 2
+
+.
+Si α⁄= 6, entonces es posible factorizar A =LU (el pivote de la segunda ﬁla es 6 −α).
+As´ ı, el ´ unico problema posible se puede presentar siα = 6. En este caso, siβ = 0 entonces el
+3 de la tercera columna sirve como pivote, por lo que el caso α = 6,β = 0 tambi´ en permite
+la factorizaci´ onA =LU. El ´ unico caso en que esto no ocurre es cuandoα = 6 y β⁄= 0, en
+cuyo caso es necesario permutar la segunda y la tercera ﬁla.
+As´ ı, la respuesta a la pregunta planteada (la condici´ on que deben cumplirα y β para que
+sea posible realizar la factorizaci´ onA =LU) es que α⁄= 6 o β = 0.
+b) Para que la matriz no tenga inversa, es suﬁciente y necesario que su determinante sea cero.
+Pero ⏐⏐⏐⏐⏐⏐1 1 0α 6 30 β 2⏐⏐⏐⏐⏐⏐ = 12− 3β− 2α,
+de donde A es singular (no tiene inversa) si y solo si 2 α + 3β = 12.
+Puntaje:
+a) Por indicar que α⁄= 6 garantiza que se pueda obtener lo pedido, 1 punto.
+Por indicar que con α = 6 todav´ ıa es posible (siempre queβ = 0) tambi´ en se puede, 1
+punto.
+Por llegar a que la condici´ on pedida esα⁄= 6 o β = 0 (u otra equivalente), 1 punto.
+b) Por dar una condici´ on equivalente a que la matriz sea (o no sea) invertible 1, y que
+pueda ser usada para resolver el problema, 1 punto.
+Por desarrollar lo necesario para veriﬁcar la condici´ on en el caso de esta matriz (por
+ejemplo, con el m´ etodo presentado, calcular el determinante), 1 punto.
+Por llegar a la condici´ on pedida, 1 punto.
+A lo anterior se suma el punto base.
+1Por ejemplo, es invertible si y solo si su determinante no es cero, si y solo si tiene tres pivotes, si y solo si sus formas
+escalonadas tienen tres ﬁlas no nulas.3. Considere la forma cuadr´ atica
+f(x1,x 2,x 3) = 2x21− 4x1x2 + 4x1x3 + 5x22 + 8x2x3 + 16x23.
+a) Escriba esta forma cuadr´ atica como
+f(x) = xTAx
+con A sim´ etrica, y la factorizaci´ on de Cholesky (sin ra´ ız cuadrada) deA.
+b) Escriba f(x) como suma ponderada de cuadrados, y clasif´ ıquela.
+Soluci´ on:
+a) La matriz sim´ etrica que representa a la formaf es A =
+
+
+2 −2 2
+−2 5 4
+2 4 16
+
+.
+En otras palabras, f(x) = xT
+
+
+2 −2 2
+−2 5 4
+2 4 16
+
+ x.
+Para encontrar la factorizaci´ on de Cholesky, debemos primero intentar encontrar una facto-
+rizaci´ onA =LU, donde L sea triangular inferior y tenga 1’s en la diagonal (si es necesario
+permutar ﬁlas en el proceso, entonces no hay factorizaci´ on de Cholesky).
+En nuestro caso, L =
+
+
+1 0 0
+−1 1 0
+1 2 1
+
+ , U =
+
+
+2 −2 2
+0 3 6
+0 0 2
+
+
+Una vez logrado esto, debemos expresar U =DU′ dondeD es diagonal y U′ sea triangular
+superior y tenga 1’s en la diagonal (de hecho, por ser A sim´ etrica, debe tenerseU′ =LT ):
+D =
+
+
+2 0 0
+0 3 0
+0 0 2
+
+ , U =D
+
+
+1 −1 1
+0 1 2
+0 0 1
+
+ =DLT.
+Con esto tenemos la factorizaci´ on de Cholesky deA como
+A =LDLT =
+
+
+1 0 0
+−1 1 0
+1 2 1
+
+
+
+
+2 0 0
+0 3 0
+0 0 2
+
+
+
+
+1 −1 1
+0 1 2
+0 0 1
+
+
+b) El cambio de variables que diagonaliza la forma cuadr´ atica es y =LTx, o sea:
+y =
+
+
+y1
+y2
+y3
+
+ =
+
+
+1 −1 1
+0 1 2
+0 0 1
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+x1−x2 +x3
+x2 + 2x3
+x3
+
+.
+Usando esta transformaci´ on, se tiene
+f(x) = xTAx = xT (LDLT )x = (xTL)D(LTx) = (LTx)TD(LTx) = yTDy = 2y21+3y22+2y23,
+o sea,
+f(x) = 2(x1−x2 +x3)2 + 3(x2 + 2x3)2 + 2x23.
+Como en esta expresi´ on todos los ponderadores de los cuadrados son positivos, la forma es
+deﬁnida positiva.
+Nota: Esto puede ser justiﬁcado de otras maneras, por ejemplo:La matriz diagonal que aparece en la factorizaci´ on tiene todos los elementos de la
+diagonal positivos.
+Los determinantes de las sub-matrices principales son
+D1 =|2| = 2, D 2 =
+⏐⏐⏐⏐ 2 −2−2 5 ⏐⏐⏐⏐ = 14, D 2 =⏐⏐⏐⏐⏐⏐ 2 −2 2−2 5 42 4 16 ⏐⏐⏐⏐⏐⏐ = 12.
+Como todos los determinantes de las sub-matrices principales son positivos, la matriz
+A (y por lo tanto la forma f) es deﬁnida positiva.
+Cuando se hizo la eliminaci´ on de Gauss, no se necesit´ o hacer intercambio de ﬁlas, y
+todos los pivotes encontrados fueron positivos.
+Puntaje:
+a) Por escribir correctamente la matriz A: 0,5 puntos.
+Por factorizar correctamente A =LU: 1 punto.
+Por encontrar D: 1 punto.
+Por escribir A =LDLT : 0,5 puntos.
+b) Por encontrar el cambio de variables correcto: 1 punto.
+Por escribir f(x) como 2y21 + 3y22 + 2y33: 1 punto.
+Por concluir (¡justiﬁcando!) que f es deﬁnida positiva: 1 punto.
+A lo anterior se le suma el punto base.4. a) Sea A una matriz de 3×3 con determinante detA =−3, y sean∈ N. Calcule det (nA), det (An)
+y det(A2((AT )−1)n).
+b) Calcule la inversa de A =
+
+
+2 −3 2
+2 1 3
+1 1 2
+
+ por el m´ etodo de la matriz adjunta.
+Soluci´ on:
+a) (i) Ya que nA es la matrizA despu´ es de multiplicar cada una de sus tres ﬁlas porn. Cada
+una de estas multiplicaciones de ﬁla tiene el efecto de multiplicar el det A por n, por
+lo que
+det(nA) =n3 detA =−3n3.
+(ii) Aplicando n− 1 veces la propiedad det(AB) = detA· detB, vemos que
+det(An) = det(A·A····· A) = detA· detA····· detA = (detA)n = (−3)n.
+(iii) Como det((AT )−1) = 1det(AT ) = 1detA, det((AT )−1)n = 1(detA)n . Multiplicando esto
+por det(A2) = (detA)2, obtenemos
+det(A2((AT )−1)n) = det(A2)· det((AT )−1)n = (detA)2
+(detA)n = 1(detA)n−2.
+b) La matriz M formada por los menores de A (donde mij = al determinante de 2 × 2 que
+resulta de eliminar la ﬁla i y la columna j) es como sigue:
+M =
+
+
+−1 1 1
+−8 2 5
+−11 2 8
+
+
+La matrizC formada por los cofactores deA es aquella dondecij = (−1)i+jmij, o sea, donde
+cada entrada es la correspondiente de M, a la que se le asiga un signo que va alternando:
+C =
+
+
+−1 −1 1
+8 2 −5
+−11 −2 8
+
+
+A partir de C, calculamos la matriz adjunta de A como
+Adj(A) =C T =
+
+
+−1 8 −11
+−1 2 −2
+1 −5 8
+
+
+de donde ﬁnalmente
+A−1 = Adj(A)detA = 13
+
+
+−1 8 −11
+−1 2 −2
+1 −5 8
+
+ =
+
+−13 83 −113−13 23 −231
+3 −53 83
+
+Puntaje:
+a) La respuesta correcta de cada ´ ıtem (−3n3, (−3)n, 1(−3)n−2 ) vale 1 punto si est´ a justiﬁcada.
+Si no lo est´ a, vale 0,5 puntos.
+b) Por calcular la matriz M de menores: 0,5 puntos.
+Por calcular la matriz C de cofactores: 0,5 puntos.
+Por calcular la matriz adjunta: 0,5 puntos.
+Por calcular el determinante: 0,5 puntos.
+Por llegar a la inversa en forma correcta: 1 punto.
+Los puntajes se dan aunque el c´ alculo no est´ e hecho en forma expl´ ıcita: si dan la matriz
+adjunta pero no la de menores ni la de cofactores, reciben 1,5 puntos por eso (se da por
+hecho que calcularon la matriz de menores y la de cofactores, aunque no la hayan escrito).
+A lo anterior se le suma el punto base.5. Mediante operaciones ﬁla, reduzca la matriz A a una matriz triangular, y calcule su determinante
+como producto de pivotes:
+A =
+
+
+1 1 1 1
+1 3 3 3
+1 3 6 6
+1 3 6 9
+
+
+Soluci´ on:
+
+
+1 1 1 1
+1 3 3 3
+1 3 6 6
+1 3 6 9
+
+ ∼
+f2←f2−f1
+f3←f3−f1
+f4←f4−f1
+
+
+1 1 1 1
+0 2 2 2
+0 2 5 5
+0 2 5 8
+
+ ∼
+f3←f3−f2
+f4←f4−f2
+
+
+1 1 1 1
+0 2 2 2
+0 0 3 3
+0 0 3 6
+
+ ∼
+f4←f4−f3
+
+
+1 1 1 1
+0 2 2 2
+0 0 3 3
+0 0 0 3
+
+
+Ahora su determinante es simplemente el producto de los pivotes, o sea
+detA = 1· 2· 3· 3 = 18.
+Puntaje:
+Por reducir correctamente A a una matriz triangular, 4,5 puntos (se da puntaje parcial si
+se equivocan entre medio: 1,5 puntos por cada ﬁla bien calculada, la primera no se cuenta).
+Por calcular correctamente el determinantea partir de la matriz triangular a la que llegaron :
+1,5 puntos.
+A lo anterior se le suma el punto base.6. Se sabe que A es equivalente por ﬁlas a B, donde
+A =
+
+
+1 2 3 −4 8
+1 2 0 2 8
+2 4 −3 10 9
+3 6 0 6 9
+
+ B =
+
+
+1 2 0 2 5
+0 0 3 −6 3
+0 0 0 0 −7
+0 0 0 0 0
+
+
+a) Encuentre bases de Nul A y ColA.
+b) Sea w =
+
+
+−4
+1
+2
+1
+0
+
+. Decida si w∈ NulA y/o si w∈ ColA.
+Soluci´ on:
+a) Como B es una (no la ´ unica) forma escalonada deA, el sistema de ecuaciones Ax = 0 es
+equivalente al sistema Bx = 0.
+En este sistema, las variables dependientes (correspondientes a los pivotes) son x1,x3 yx5,
+lo que nos dice que las columnas 1, 3 y 5 forman una base de Col A:
+BCol A =
+
+
+
+
+
+1
+1
+2
+3
+
+,
+
+
+3
+0
+−3
+0
+
+,
+
+
+8
+8
+9
+9
+
+
+
+
+.
+Adem´ as, una base de NulA puede obtenerse tomando, para cada variable independiente
+(en este caso, x2 y x4) la asignaci´ on de 1 a dicha variable y 0 a la(s) otra(s) variables
+independientes, y a partir de estos valores determinar los de las variables dependientes,
+suponiendo que en cada ecuaci´ on el lado derecho es cero.
+En nuestro caso, como las variables independientes son x2 y x4, las ecuaciones no nulas
+quedan:
+x1 = − 2x2 − 2x4 − 5x5
+3x3 = 6 x4 − 3x5
+−7x5 = 0
+⏐⏐⏐⏐⏐⏐
+o, simpliﬁcando,
+x1 = − 2x2 − 2x4 − 5x5
+x3 = 2 x4 − x5
+x5 = 0
+⏐⏐⏐⏐⏐⏐
+As´ ı, consideramos las asignaciones (x2,x 4) = (1, 0) y (x2,x 4) = (0, 1), y usamos esos valores
+para determinar los de las variables dependientes. En la primera asignaci´ on, obtenemos
+x5 = 0, x3 = 2x4 = 0, x1 =−2x2− 2x4− 5x5 =−2. En la segunda asignaci´ on obtenemos
+x5 = 0, x3 = 2x4 = 2, x1 =−2x2− 2x4− 5x5 =−2. As´ ı, nuestra base de NulA es
+BNul A =
+
+
+
+
+
+−2
+1
+0
+0
+0
+
+,
+
+
+−2
+0
+2
+1
+0
+
+
+
+
+.b) Claramente, w⁄∈ ColA ya que este ´ ultimo es subespacio deR4 y w∈ R5.
+Para decidir si w∈ NulA o no, basta calcular Aw =
+
+
+0
+0
+0
+0
+
+ para darse cuenta de que la
+respuesta es “S´I”.
+Puntaje:
+a) Por obtener correctamente una base de Nul A: 1,5 puntos.
+Nota: Si determinan correctamente un vector de una base de Nul A y se equivocan al
+calcular el segundo, reciben 1 punto en lugar de 1,5.
+Por obtener correctamente una base de Col A: 1,5 puntos.
+Nota: Si determinan correctamente un vector de de una base de Col A y se equivocan
+al calcular los otros, reciben 0,5 puntos en lugar de 1,5. Si determina dos correctos
+reciben 1 punto.
+b) Por argumentar que w⁄∈ ColA: 1 punto.
+Por argumentar correctamente que w∈ NulA: 2 puntos.
+A lo anterior se suma el punto base.7. Sea A una matriz sim´ etrica deﬁnida positiva de n×n. Demuestre que 3 A3 + 2I es sim´ etrica
+deﬁnida positiva.
+Soluci´ on:
+Sea x∈ Rn, x⁄= 0 cualquiera. Debemos probar que xT (3A3 + 2I)x> 0.
+Pero
+xT (3A3 + 2I)x = 3 xTA3x + 2xTIx
+= 3( xTA)A(Ax) + 2xTIx
+= 3( ATx)TA(Ax) + 2xTIx
+= 3( Ax)TA(Ax) + 2xTIx.
+(a la ´ ultima l´ ınea llegamos porqueAT =A por ser A sim´ etrica).
+Ahora bien: por ser A deﬁnida positiva, se tiene —tomando y = Ax— que ( Ax)TA(Ax) =
+yTAy≥ 0 (de hecho, podemos decir que esto es > 0 ya que y =Ax⁄= 0 para todo x⁄= 0, pero
+basta usar que es≥ 0).
+Por otra parte,por ser I diagonal con todos los elementos de la diagonal positivos, es sim´ etrica
+deﬁnida positiva, por lo que xTIx> 0.
+As´ ı,xT (3A3+2I)x que es la suma de una expresi´ on≥ 0 y otra> 0, por lo que xT (3A3+2I)x> 0
+como quer´ ıamos demostrar.
+Puntaje:
+Por demostrar que 3A3 + 2I es sim´ etrica, 0,5 puntos.
+Por indicar que se debe probar que xT (3A3 + 2I)x> 0 para x⁄= 0, 0,5 puntos.
+Nota: Si no se menciona que x debe ser ⁄= 0, se dan 0 puntos por este ´ ıtem (o, visto de
+otra manera, se descuentan 0,5 puntos).
+Por separar lo anterior en 3 xTA3x y 2xTIx, 1 punto.
+Por probar que xTA3x> 0 (o≥ 0) para todo x⁄= 0, 2 puntos.
+Por argumentar que xTIx> 0 para todo x⁄= 0, 1 punto.
+Por concluir lo pedido, 1 punto.
+A lo anterior se suma el punto base.
+Alternativa de Soluci´ on:
+Es posible tambi´ en demostrar que 3A3 + 2I es sim´ etrica deﬁnida positiva (SDP) simplemente
+aprovech´ andonos de las propiedades de las matrices SDP vistas en clases (o explicadas en el
+texto, o enunciadas en la gu´ ıa correspondiente), o que son demostradas en la respuesta.
+Por ejemplo:
+I (y por lo tanto 2 I) es SDP ya que es diagonal con todos los elementos de la diagonal
+positivos.
+Por ser A sim´ etrica,A2 = ATA que es semi-deﬁnida positiva, y por tener A columnas l.i.
+(A es SDP→A es invertible) se tiene que A2 es SDP. Alternativamente, se puede usar la
+propiedad siguiente (con A =B).Dadas dos matrices SDPs A yB, siAB =BA, entoncesAB es SDP. Esto no aparece como
+materia en las referencias, por lo que de usarse habr´ ıa que demostrarlo .
+Una segunda aplicaci´ on de esta propiedad (conB =A2) da que A3 (y por lo tanto 3A3) es
+SDP.
+Finalmente, como 3A3 es SDP y 2I tambi´ en entonces su suma 3A3 + 2I es SDP.
+Puntaje:
+Si se hace por el m´ etodo aqu´ ı descrito, el puntaje se distribuye como sigue:
+Por demostrar que 3A3 + 2I es sim´ etrica, 0,5 puntos.
+Por mencionar que I es SDP (sin demostrarlo), 0,5 puntos.
+Por mencionar que un ponderado positivo de una matriz SDP es SDP, 0,5 puntos.
+Por mencionar que el producto de matrices SDP que conmutan es SDP, 0,5 puntos.
+Por demostrar esta propiedad, 2,5 puntos.
+Por concluir que A3 es SDP, 0,5 puntos.
+Por mencionar que la suma de dos matrices SDP es SDP, 1 punto.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) El conjunto de las matrices de 2 × 2 tales que el producto de los elementos de la diagonal
+es cero es un subespacio del espacio vectorial de las matrices de 2 × 2.
+b) El conjunto de los polinomios p∈ P3 (el espacio formado por todos los polinomios de grado
+menor o igual a 3) que satisfacen la condici´ onp(1) +p(3) = 0 es un subespacio vectorial de
+P3.
+Soluci´ on:
+a) Falso.
+Llamemos S al conjunto de las matrices de 2 × 2 que satisfacen la propiedad indicada.
+Probaremos que S no es cerrado bajo suma.
+En efecto: las matrices A =
+[1 0
+0 0
+]
+y B =
+[0 0
+0 1
+]
+son elementos de S, pero su suma es
+I =A +B =
+[1 0
+0 1
+]
+que claramente no es elemento de S.
+b) Verdadero.
+Para justiﬁcar, llamemos U al conjunto formado por todos los polinomios de grado menor
+o igual a 3 que satisfacen la condici´ onp(1) +p(3) = 0. Debemos probar que:
+(i) U⁄= ∅.
+(ii) U es cerrado bajo suma.
+(iii) U es cerrado bajo ponderaci´ on por un escalar.
+Note que una forma alternativa es probar que U ⁄= ∅ y es cerrado bajo “combinaciones
+lineales de dos de sus elementos”: en otras palabras, si α,β ∈ R y u, v ∈ U entonces
+αu +βv∈U.
+En efecto:
+(i) La forma m´ as com´ un (pero no la ´ unica posible) de demostrar queU⁄= ∅ es probar
+que el “cero” del espacio (en este caso, el polinomio id´ enticamente cero) es elemento
+de U. En este caso, tambi´ en podr´ ıamos probar quef(x) = ( x− 1)(x− 3)∈ U (o
+cualquiera de los m´ ultiplos def(x)).
+Que cualquiera de estos polinomios pertenece a U es trivial; por ejemplo, tomando
+p(x) =f(x) = (x− 1)(x− 3), se satisface p(1) =p(3) = 0, por lo que p(1) +p(3) = 0,
+o sea, p(x)∈U.
+(ii) Sean f(x),g (x) ∈ U. Entonces f(1) + f(3) = 0, g(1) + g(3) = 0 y, si tomamos
+h(x) =f(x) +g(x), tenemos h(1) =f(1) +g(1), h(3) =f(3) +g(3), por lo que
+h(1) +h(3) = (f(1) +g(1)) + (f(3) +g(3)) = (f(1) +f(3)) + (g(1) +g(3)) = 0 + 0 = 0,
+de donde h(x)∈U. O sea, U es cerrado bajo suma.(iii) Sean f(x)∈ U y c∈ R. Entonces f(1) +f(3) = 0, y si tomamos h(x) = c f(x),
+tenemos h(1) =cf (1) y h(3) =cf (3), por lo que
+h(1) +h(3) =cf (1) +cf (3) =c(f(1) +f(3)) =c· 0 = 0,
+de donde h(x)∈U. O sea, U es cerrado bajo ponderaci´ on por un escalar.
+Puntaje:
+a) Por indicar que S no es cerrado bajo suma (de hecho, es cerrado bajo ponderaci´ on por
+escalar), 1 punto.
+Por exhibir un contraejemplo concreto de dos matrices que est´ an enS y cuya suma no
+est´ a, 1,5 puntos.
+Por exhibir la suma de las dos matrices, y argumentar que “obviamente no est´ a enS”
+o darse el trabajo de explicar por qu´ e no, 0,5 puntos.
+b) Por mencionar que se debe demostrar que U⁄= ∅, y queU es cerrado bajo suma y bajo
+ponderaci´ on (o, equivalente a estos ´ ultimos dos, queU es cerrado bajo combinaciones
+lineales de dos de sus elementos), 0,5 puntos.
+Nota: estos 0,5 puntos se dan incluso si no se menciona expl´ ıcitamenteque hay que de-
+mostrar las tres condiciones, siempre y cuando demuestren las tres (o al menos intenten
+demostrarlas). Por ejemplo, si demuestran que U es cerrado bajo suma y ponderaci´ on,
+pero omiten demostrar que U⁄= ∅, reciben solo 2 puntos, no 2,5.
+Por demostrar que U⁄= ∅, 0,5 puntos.
+Por demostrar que U es cerrado bajo suma, 1 punto.
+Por demostrar que U es cerrado bajo ponderaci´ on, 1 punto.
+O, equivalente a estos ´ ultimos dos, por demostrar queU es cerrado bajo combinaciones
+lineales de dos de sus elementos), 2 puntos.
+A lo anterior se le suma el punto base.
+Alternativas de Soluci´ on:
+a) En la parte (b), tambi´ en es posible argumentar lo siguiente:
+Sea p(x) el polinomio p(x) =a0 +a1x +a2x2 +a3x3∈ P3. Este puede ser identiﬁcado 2 con
+el vector
+[
+a0 a1 a2 a3
+]T
+∈ R4.
+Como p(1) = a0 +a1 +a2 +a3 y p(3) = a0 + 3a1 + 9a2 + 27a3, se tiene que p(1) +p(3) =
+2a0 + 4a1 + 10a2 + 28a3, por lo que la condici´ on “p(1) +p(3) = 0” es equivalente a pedir
+que 2a0 + 4a1 + 10a2 + 28a3 = 0, o equivalentemente, que a0 + 2a1 + 5a2 + 14a3 = 0, lo que
+puede ser expresado como
+
+
+a0
+a1
+a2
+a3
+
+∈ Nul([2 4 10 28 ]) = Nul([1 2 5 14 ]).
+Pero ya sabemos que, dada cualquier matriz A dem×n, Nul(A) es un subespacio vectorial
+de Rn, en este caso, de R4. As´ ı, el conjunto que corresponde aU en R4 es un subespacio
+2La noci´ on precisa es la deisomorﬁsmo, mencionada en la secci´ on 2.9 y que se estudia en m´ as detalle en la secci´ on
+4.4 del texto.de R4, por lo que U debe ser un subespacio de P3 (porque, ya que a cada polinomio de
+P3 le corresponde un vector de R4, y todo lo que se haga en un conjunto se puede hacer
+en el otro, en particular las demostraciones de que U es no vac´ ıo y cerrado bajo suma y
+ponderaci´ on por escalar).
+Puntaje:
+Esta soluci´ on (suponiendo que no hay errores de c´ alculo, por ejemplo al calcularp(1)+p(3)),
+tiene puntaje m´ aximo.
+b) Otra forma de demostrar (b) es encontrando un conjunto de polinomios que genera U, y
+despu´ es aplicar el Teorema 1 del cap´ ıtulo 4 del texto (el conjunto generado por un conjunto
+ﬁnito de vectores de un espacio vectorial es un subespacio de este).
+En nuestro caso, como a0 =−2a1− 5a2− 14a3 (ver alternativa anterior), un generador
+(de hecho, una base) de U es BU ={x− 2,x 2− 5,x 3− 14}, que corresponde a la base
+
+
+
+
+−2
+1
+0
+0
+
+,
+
+
+−5
+0
+1
+0
+
+,
+
+
+−14
+0
+0
+1
+
+
+
+
+ de Nul(
+[
+1 2 5 14
+]
+).
+Es f´ acil comprobar que todos estos polinomios forman parte de U (o sea, que satisfacen
+p(1) +p(3) = 0).
+Por otra parte, es necesario probar que todo polinomio de U es generado por este conjunto.
+En efecto, si
+p(x) =a0 +a1x +a2x2 +a3x3∈U,
+entoncesp(x) =a1(x− 2) +a2(x2− 5) +a3(x3− 14) + (a0 + 2a1 + 5a2 + 14a3).
+Pero ya sabemos que, si p(x)∈U, entonces a0 + 2a1 + 5a2 + 14a3 = 0, por lo que
+p(x) =a0 +a1x +a2x2 +a3x3∈U,
+entoncesp(x) =a1(x−2)+a2(x2−5)+a3(x3−14) y por lo tantop(x)∈ Gen({x− 2,x 2− 5,x 3− 14}).
+Puntaje:
+Por encontrar un conjunto S de polinomios que genera U (no necesariamente una base
+de U), 1 punto.
+Por probar que todo polinomio de S es elemento de U, 1 punto.
+Por probar que todo polinomio de U es combinaci´ on lineal de elenentos deS, 1 punto.

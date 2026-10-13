@@ -1,0 +1,1417 @@
+
+----- pagina 1 -----
+ 
+ Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley . 453 
+ 
+ 
+ The Geometry of 
+Vector Spaces 
+ 
+ 
+8.1 SOLUTIONS 
+Notes.  This section introduces a special kinds of linear combination used to describe the sets created 
+when a subspace is shifted away from the origin.  An affine combination is a linear combination in which 
+the coefficients sum to one.  Theorems 1, 3, and 4 connect affine combinations directly to linear 
+combinations. There are several approaches to solving many of the exercises in this section, and some of 
+the alternatives are presented here.    
+1. 12 3 4
+12 03 5,, 4 , ,22 47 3 −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤== = = =⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦vv v vy  
+ 
+21 31 41 1
+31 2 4,, ,02 5 1−−⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤−= −= −= −=⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦vv vv vv y v   
+Solve c2(v2 − v1) + c3(v3 − v1) + c4(v4 − v1) = y − v1 by row reducing the augmented matrix. 
+31 2 4 31 2 4 3 0 4 . 5 4 . 5 1 01 . 51 . 5
+0 25 1 0 12 . 5. 5 0 12 . 5 . 5 0 1 2 . 5 . 5
+−− −− − − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ∼∼∼  
+The general solution is c2 = 1.5c4 −1.5,  c3 = −2.5c4 + .5, with c4 free.  When c4 = 0,  
+ y  − v1 = −1.5(v2 − v1) + .5(v3 − v1)   and   y = 2v1 − 1.5v2 + .5v3 
+If c4 = 1, then c2 = 0 and 
+  y  − v1 = −2(v3 − v1) + 1(v4 − v1)   and   y = 2v1 − 2v3 + v4 
+If c4 = 3, then  
+y − v1 = 3(v2 − v1) − 7(v3 − v1) + 3(v4 − v1)   and   y = 2v1 + 3v2 − 7v3 + 3v4 
+ Of course, many other answers are possible.  Note that in all cases, the weights in the linear 
+combination sum to one. 
+2. 12 3
+11 3 5,, ,12 2 7 −⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤== = =⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦vv v y , so 21 31 1 22 4,, a n d11 6−⎡ ⎤⎡ ⎤ ⎡ ⎤−= −= −=⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦vv vv y v  
+ Solve c2(v2 – v1) + c3(v3 – v1)  =  y – v1 by row reducing the augmented matrix: 
+
+----- pagina 2 -----
+454 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 224 112 1 0 2~~116 028 0 1 4−− −⎡⎤ ⎡⎤ ⎡ ⎤⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦  
+ The general solution is c2 = 2 and c3 = 4, so  y – v1  =  2(v2 – v1) + 4(v3 – v1)  and  
+ y =  –5v1 + 2v2 + 4v3.  The weights sum to one, so this is an affine sum. 
+3. Row reduce the augmented matrix [ v2-v1  v3-v1  y-v1] to find a solution for writing y-v1 in terms of 
+ v2-v1 and v3-v2.  Then solve for y to get y = −3v1 + 2v2 + 2v3.  The weights sum to one, so this is an 
+affine sum. 
+4. Row reduce the augmented matrix [ v2-v1  v3-v1  y-v1] to find a solution for writing y-v1 in terms of 
+  v 2-v1 and v3-v2.  Then solve for y to get y = 2.6v1 − .4v2 − 1.2v3.  The weights sum to one, so this is 
+an affine sum. 
+5. Since { b1, b2, b3} is an orthogonal basis, use Theorem 5 from Section 6.2 to write 
+   
+12 3
+12 3
+11 2 2 33
+= +
+jj j
+j +pb pb pbpb bbbb bb bbii iii i  
+ a. p1 = 3b1 – b2 – b3  ∈ aff S since the coefficients sum to one. 
+ b. p2 = 2b1 + 0b2 + b3  ∉ aff S since the coefficients do not sum to one. 
+ c. p3 = – b1 + 2b2 + 0b3  ∈ aff S since the coefficients sum to one. 
+6. Since { b1, b2, b3} is an orthogonal basis, use Theorem 5 from Section 6.2 to write 
+   
+12 3
+12 3
+11 2 2 33
+= +
+jj j
+j +pb pb pbpb bbbb bb bbii iii i  
+ a. p 1 = – 4b1 +2b2 +3b3  ∈ aff S since the coefficients sum to one. 
+ b. p 2 = .2b1 + .5b2 + .3b3  ∈ aff S since the coefficients sum to one. 
+ c. p 3 = b1 + b2 + b3  ∉ aff S since the coefficients do not sum to one. 
+7. The matrix [ v1  v2  v3  p1  p2  p3] row reduces to 
+100 2 2 2
+01 0 1 4 2
+0 0 1132
+000 0 0 5
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−
+⎢ ⎥−⎢ ⎥⎣ ⎦
+. 
+Parts a., b., and c. use columns 4, 5, and 6, respectively, as the “augmented” column. 
+a. p1 = 2v1 + v2 − v3, so p1 is in Span S.  The weights do not sum to one, so p1 ∉ aff S. 
+b. p2 = 2v1 − 4v2 + 3v3, so p2 is in Span S.  The weights sum to one, so p2 ∈ aff S. 
+c. p3 ∉ Span S because 0 ≠ −5, so p3 cannot possibly be in aff S. 
+----- pagina 3 -----
+8.1  Solutions   455  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+8. The matrix [ v1  v2  v3  p1  p2  p3] row reduces to 
+100 3 0 2
+0 1 01 06
+001 1 0 3
+0 0 00 10
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+. 
+ Parts a., b., and c. use columns 4, 5, and 6, respectively, as the “augmented” column. 
+a. p1 = 3v1 − v2 + v3, so p1 is in Span S.  The weights do not sum to one, so p1 ∉ aff S. 
+b. p2 ∉ Span S because 0 ≠ 1 (column 5 is the augmented column), so p2 cannot possibly be 
+  in aff S. 
+c. p3 = −2v1 + 6v2 − 3v3, so p3 is in Span S.  The weights sum to one, so p3 ∈ aff S. 
+9. Choose v1 and v2 to be any two point on the line x=x3u+p.  For example, take x3=0 and x3=1 to get 
+1
+3
+0
+−⎡⎤= ⎢⎥⎣⎦v  and 2 12⎡ ⎤= ⎢ ⎥−⎣ ⎦v  respectively.   Other answers are possible. 
+10. Choose v1 and v2 to be any two point on the line x=x3u+p.  For example, take x3=0 and x3=1 to get
+ 1
+1
+3
+4
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+v  and 2
+6
+2
+2
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  respectively.  Other answers are possible. 
+11. a. True.  See the definition at the beginning of this section. 
+ b . False.  The weights in the linear combination must sum to one.  See the definition. 
+ c. True.  See equation (1).  
+ d . False.  A flat is a translate of a subspace.  See the definition prior to Theorem 3. 
+ e. True.  A hyperplane in R3 has dimension 2, so it is a plane.  See the definition prior to Theorem 3. 
+12. a . False.  If S = {x}, then aff S = {x}.  See the definition at the beginning of this section. 
+  b.  True.  Theorem 2. 
+ c .  True.  See the definition prior to Theorem 3. 
+ d . False.  A flat of dimension 2 is called a hyperplane only if the flat is considered a subset of R3.  In 
+general, a hyperplane is a flat of dimension n − 1.  See the definition prior to Theorem 3. 
+ e.  True.  A flat through the origin is a subspace translated by the 0 vector. 
+13. Span { v2 − v1, v3 − v1} is a plane if and only if {v2 − v1, v3 − v1} is linearly independent.  Suppose c2 
+and c3 satisfy c2(v2 − v1) + c3(v3 − v1) = 0.  Then c2v2 + c3v3 − (c2 + c3)v1 = 0.  Then c2 = c3 = 0, 
+because {v1, v2, v3} is a linearly independent set.  This shows that {v2 − v1, v3 − v1} is a linearly 
+independent set.  Thus, Span {v2 − v1, v3 − v1} is a plane in R3. 
+14. Since { v1, v2, v3} is a basis for R3, the set W = Span { v2 − v 1, v3 − v1} is a plane in R3, by 
+Exercise 13.  Thus, W + v1 is a plane parallel to W that contains v1.  Since v2 = (v2 − v1) + v1, W + 
+v1 contains v2.  Similarly, W + v1 contains v3.  Finally, Theorem 1 shows that aff {v1, v2, v3} is the 
+plane W + v1 that contains v1, v2, and v3.  
+15. Let S = {x : Ax = b}.  To show that S is affine, it suffices to show that S is a flat, by Theorem 3.  
+Let W = {x : Ax = 0}.  Then W is a subspace of Rn, by Theorem 2 in Section 4.2 (or Theorem 12 
+in Section 2.8).  Since S = W + p, where p satisfies Ap = b, by Theorem 6 in Section 1.5, S is a 
+translate of W, and hence S is a flat. 
+----- pagina 4 -----
+456 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+16. Suppose p, q ∈ S and t ∈ R.  Then, by properties of the dot product (Theorem 1 in Section 6.1),  
+   [(1 − t)p + t q] ⋅ v =  (1 − t)(p ⋅ v) + t (q ⋅ v) = (1 − t)k + t k  = k 
+ Thus, [(1 − t)p + t q] ∈ S, by definition of S.  This shows that S is an affine set. 
+17. A suitable set consists of any three vectors that are not collinear and have 5 as their third entry.  If 
+5 is their third entry, they lie in the plane x3 = 5.  If the vectors are not collinear, their affine hull 
+cannot be a line, so it must be the plane.  For example use 
+101
+0,1,1 .
+555
+S
+⎧ ⎫⎡ ⎤⎡⎤⎡⎤
+⎪ ⎪⎢ ⎥⎢⎥⎢⎥= ⎨ ⎬⎢ ⎥⎢⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥⎢⎥⎣ ⎦⎣⎦⎣⎦⎩⎭  
+18. A suitable set consists of any four vectors that lie in the plane 2 x1 + x2 − 3x3 = 12 and are not col-
+linear.  If the vectors are not collinear, their affine hull cannot be a line, so it must be the plane.  
+For example use 
+60 0 3
+0,1 2, 0 , 3 .
+00 4 1
+S
+⎧ ⎫⎡ ⎤⎡ ⎤⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥= ⎨ ⎬⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥ −−⎣ ⎦⎣ ⎦⎣ ⎦⎣ ⎦⎩⎭  
+19. If p, q ∈ f (S), then there exist r, s ∈ S such that f (r) = p and f (s) = q.  Given any t ∈ R, we must 
+show that z = (1 − t)p + t q is in f (S).  Since f is linear, 
+  z  =  (1 − t)p + t q   =  (1 − t) f (r) + t f (s) =  f ((1 − t)r + t s) 
+ Since S is affine,  (1 − t)r + t s ∈ S.  Thus, z is in S and f (S) is affine. 
+20. Given an affine set T, let S = {x ∈ Rn : f (x) ∈ T}.  Consider x, y ∈ S and t ∈ R.  Then 
+   f ((1 − t)x + t y) = (1 − t) f (x) + t  f (y) 
+ But f (x) ∈ T and f (y) ∈ T, so (1 − t) f (x) + t  f (y) ∈ T because T is an affine set.  It follows that  
+ [(1 − t)x + t y] ∈ S.  This is true for all x, y ∈ S and t ∈ R, so S is an affine set. 
+21. Since B is affine, Theorem 1 implies that B contains all affine combinations of points of B.  Hence 
+B contains all affine combinations of points of A.  That is, aff A ⊂ B. 
+22. Since B ⊂ aff B, we have  A ⊂ B ⊂ aff B.  But aff B is an affine set, so Exercise 21 implies 
+aff A ⊂ aff B. 
+23. Since A ⊂ (A ∪ B), it follows from Exercise 22 that aff A ⊂ aff (A ∪ B).   
+ Similarly, aff B ⊂ aff (A ∪ B), so [aff A ∪ aff B] ⊂ aff (A ∪ B). 
+24. One possibility is to let A ={(0, 1)} and B = {(1, 0)}.  Then (aff A) ∪ (aff B) consists of the two 
+coordinate axes, but aff (A ∪ B) = R2. 
+25. Since ( A ∩ B) ⊆ A, it follows from Exercise 22 that aff (A ∩ B) ⊂ aff A.   
+ Similarly, aff ( A ∩ B) ⊂ aff B, so aff (A ∩ B) ⊂ (aff A ∩ aff B). 
+26. One possibility is to let A = {(0, 1)} and B = {(0, 2)}.  Then both aff A and aff B are equal to the 
+x-axis.  But A ∩ B = ∅, so aff (A ∩ B) = ∅.
+----- pagina 5 -----
+8.2  Solutions   457  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+8.2 SOLUTIONS 
+Notes: Affine dependence and independence are developed in this section.  Theorem 5 links affine 
+independence to linear independence.  This material has important applications to computer graphics. 
+1. Let 12 3
+302,,.360⎡⎤ ⎡ ⎤ ⎡ ⎤== =⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦vv v   Then 21 31 31,.93−−⎡ ⎤⎡ ⎤−= −= ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦vv vv   Since v3 − v1 is a multiple 
+of v2 − v1, these two points are linearly dependent.  By Theorem 5, { v1, v2, v3} is affinely dependent.  
+Note that (v2 − v1) − 3(v3 − v1) = 0.  A rearrangement produces the affine dependence relation 2v1 + v2 
+− 3v3 = 0.  (Note that the weights sum to zero.)  Geometrically, v1, v2, and v3 are collinear. 
+2. 123 2 13 1
+25 3 3 5,, . ,14 2 3 3 −−⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤=== − = − =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦vv v v vv v .  Since v3 − v1 and v2 − v1 are not 
+multiples, they are linearly independent.  By Theorem 5, {v1, v2, v3} is affinely independent. 
+3. The set is affinely independent.  If the points are called v1, v2, v3, and v4, then row reduction of  
+[v1   v2   v3   v4] shows that {v1, v2, v3} is a basis for R3 and v4 = 16v1 + 5v2 − 3v3. Since there is 
+unique way to write v4 in terms of the basis vectors, and the weights in the linear combination do not 
+sum to one, v4 is not an affine combination of the first three vectors.   
+4. Name the points v1, v2, v3, and v4.  Then 21 31 41
+230
+8, 7, 2
+496
+⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−= − −= − −=⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥ −−⎣ ⎦⎣ ⎦⎣ ⎦
+vv vv vv .  To study 
+the linear independence of these points, row reduce the augmented matrix for Ax = 0:
+2 3 00 2 3 00 2300 10 . 60
+872 0 ~ 0 52 0 ~ 0 5 2 0 ~ 0 1. 4 0
+496 0 01 56 0 0 0 0 0 0 0 0 0
+−⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦
+.  The first three columns 
+are linearly dependent, so { v1, v2, v3, v4} is affinely dependent, by Theorem 5.  To find the affine 
+dependence relation, write the general solution of this system:  x1 = .6x3, x2 = −.4x3, with x3 free.  Set 
+x3 = 5, for instance.  Then x1 = 3, x2 = −2, and x3 = 5.  Thus, 3( v2 − v1) − 2(v3 − v1) + 5(v4 − v1) = 0.  
+Rearrange to obtain −6v1 + 3v2 − 2v3 + 5v4 = 0. 
+Alternative solution :  Name the points v1, v2, v3, and v4. Use Theorem 5(d) and study the 
+homogeneous forms of the points.  The first step is to move the bottom row of ones (in the 
+augmented matrix) to the top to simplify the arithmetic: 
+[] 1234
+1111 1 0 0 1 . 2
+2012 0 1 0. 6~~ 5327 0 0 1. 4
+3763 0 0 0 0
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−− −⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥−−
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+vv vv    
+Thus,  x1 + 1.2x4 = 0, x2 − .6x4 = 0, and x3 + .4x4 = 0, with x4 free.  Take x4 = 5, for example, and 
+get  x1 = −6,  x2 = 3, and  x3 = 2− .  An affine dependence relation is  −6v1 + 3v2 − 2v3 + 5v4 = 0. 
+5. − 4v1 + 5 v2 – 4 v3 + 3 v4 = 0 is an affine dependence relation.  It can be found by row reducing the 
+matrix [] 1234 ,vv vv  and proceeding as in the solution to Exercise 4. 
+  
+----- pagina 6 -----
+458 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+6. The set is affinely independent, as the following calculation with homogeneous forms shows: 
+[] 1234
+1 1 11 10 00
+10 2 3 0 1 0 0~~31 5 5 0 0 1 0
+12 2 0 0 0 0 1
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥−
+⎢ ⎥⎢ ⎥−⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+vv vv    
+Alternative solution:  Row reduction of [v1   v2   v3   v4] shows that {v1, v2, v3} is a basis for R3 and  
+v4 = −2v1 + 1.5v2 + 2.5v3, but the weights in the linear combination do not sum to one, so this v4 is 
+not an affine combination of the basis vectors and hence the set is affinely independent. 
+Note:  A potential exam question might be to change the last entry of v4 from 0 to 1 and again ask if 
+the set is affinely independent.  Notice that row reduction of this new set of vectors [v1   v2   v3   v4] 
+shows that {v1, v2, v3} is a basis for R3 and v4 = −3v1 + v2 + 3v3  is an affine combination of the basis.  
+7. Denote the given points as v1, v2, v3, and p.  Row reduce the augmented matrix for the equation 
+x1ṽ1 + x2ṽ2 + x3ṽ3 = p.̃  Remember to move the bottom row of ones to the top as the first step to 
+simplify the arithmetic by hand. 
+[] 123
+1111 1002
+12 15 0 104
+~~ 1124 0011
+2022 0000
+1102 0000
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥−−
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+vv vp    
+Thus, x1 = −2, x2 = 4, x3 = −1, and p̃ = −2ṽ1 + 4ṽ2 − ṽ3, so p = −2v1 + 4v2 − v3, and the barycentric 
+coordinates are (−2, 4, −1). 
+Alternative solution:  Another way that this problem can be solved is by “translating” it to the 
+origin.  That is, compute v2 – v1, v3 – v1, and p – v1, find weights c2 and c3 such that  
+   c2(v2 – v1) + c3(v3 – v1)  =  p – v1 
+and then write p  =  (1 – c2 – c3)v1 + c2v2 + c3v3.  Here are the calculations for Exercise 7: 
+ 21
+21 1
+11 2
+02 2
+11 0
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥−= − = ⎢⎥ ⎢ ⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+vv ,  31
+11 0
+21 3
+22 4
+01 1
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥−⎢ ⎥⎢ ⎥ ⎢ ⎥−= − = ⎢ ⎥⎢ ⎥ ⎢ ⎥−−
+⎢ ⎥⎢ ⎥ ⎢ ⎥ −⎣ ⎦⎣ ⎦ ⎣ ⎦
+vv ,  1
+51 4
+41 5
+22 4
+21 1
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ −⎢⎥ ⎢⎥ ⎢ ⎥−= − = ⎢⎥ ⎢⎥ ⎢ ⎥−−
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎣⎦ ⎣⎦ ⎣ ⎦
+pv  
+   [] 2131 1
+104 1 0 4
+235 0 1 1~~ 2 4 4 000
+0 1 1 000
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥ −⎢ ⎥⎢ ⎥−− − ⎢ ⎥⎢ ⎥−− −
+⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦
+vvvv p v  
+Thus  p – v1  =  4(v2 – v1) – 1(v3 – v1),  and  p  =  –2 v1 + 4v2 – v3.   
+  
+----- pagina 7 -----
+8.2  Solutions   459  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+8. Denote the given points as v1, v2, v3, and p.  Row reduce the augmented matrix for the equation 
+ x 1ṽ1 + x2ṽ2 + x3ṽ3 = p̃.   
+    
+[] 123
+1111 1 002
+0111 01 01
+~~ 1141 001 0
+2064 0000
+1250 0000
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+vv vp    
+Thus. p̃ = 2ṽ1 − ṽ2 + 0ṽ3, so p = 2v1 − v2.  The barycentric coordinates are (2 ,  −1, 0). 
+Notice  v3 = 3v1 + v2 
+9. a. True.  Theorem 5 uses the point v1 for the translation, but the paragraph after the  theorem 
+ points out that any one of the points in the set can be used for the translation. 
+ b . False, by (d) of Theorem 5. 
+ c . False.  The weights in the linear combination must sum to zero, not one.  See the definition at the 
+beginning of this section. 
+ d . False.  The only points that have barycentric coordinates determined by S belong to aff S.  See the 
+definition after Theorem 6. 
+ e . True.  The barycentric coordinates have some zeros on the edges of the triangle and are only 
+positive for interior points.  See Example 6. 
+10. a. False.  By Theorem 5, the set of homogeneous forms must be linearly dependent, too. 
+ b . True.  If one statement in Theorem 5 is false, the other statements are false, too. 
+ c . False.  Theorem 6 applies only when S is affinely independent. 
+ d . False.  The color interpolation applies only to points whose barycentric coordinates are 
+nonnegative, since the colors are formed by nonnegative combinations of red, green, and blue.  
+See Example 5. 
+ e . True.  See the discussion of Fig. 5. 
+11. When a set of five points is translated by subtracting, say, the first point, the new set of four 
+points must be linearly dependent, by Theorem 8 in Section 1.7, because the four points are in R3.  
+By Theorem 5, the original set of five points is affinely dependent.  
+12. Suppose v1, …, vp are in Rn and p ≥ n + 2.  Since p − 1 ≥ n + 1, the points v2 − v1, v3 − v1, … , vp − v1 
+are linearly dependent, by Theorem 8 in Section 1.7.  By Theorem 5, {v1, v2, …, vp } is affinely 
+dependent. 
+13. If {v1, v2} is affinely dependent, then there exist c1 and c2, not both zero, such that c1 + c2 = 0, and 
+c1v1 + c2v2 = 0.  Then  c1 = – c2 ≠  0 and c1v1 = – c2v2 = c1v2, which implies that v1 = v2.  
+Conversely, if v1 = v2, let c1 = 1 and c2 = −1.  Then c1v1 + c2v2 =  v1 + (−1)v1 =  0 and c1 + c2 = 0, 
+which shows that {v1, v2} is affinely dependent.   
+14. Let S1 consist of three (distinct) points on a line through the origin.  The set is affinely dependent 
+because the third point is on the line determined by the first two points.  Let S2 consist of two 
+(distinct) points on a line through the origin.  By Exercise 13, the set is affinely independent 
+----- pagina 8 -----
+460 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+because the two points are distinct.  (A correct solution should include a justification for the sets 
+presented.) 
+15. a.  The vectors v2 − v1 = 12⎡⎤⎢⎥⎣⎦  and v3 − v1 = 32⎡ ⎤⎢ ⎥−⎣ ⎦  are not multiples and hence are linearly 
+independent.  By Theorem 5, S is affinely independent. 
+ b. () ()12 695 11888 22,, , 0 ,, ,↔− ↔pp  () ()34 56 5 714 188 8 8 8 8,, , ,,↔− − ↔ −pp , () 5115 488,,↔p     
+ c.   p6 is (−, −, +),  p7 is (0, +, −), and p8 is (+, +, −). 
+16. a. The vectors v2 − v1 = 14⎡⎤⎢⎥⎣⎦  and v3 − v1 = 42⎡ ⎤⎢ ⎥⎣ ⎦  are not 
+multiples and hence are linearly independent.  By 
+Theorem 5, S is affinely independent. 
+b. 55 1 0 324 2 2 212 3 777 7 7 7 777( ,,) , (, , ) , (,,)↔− ↔ − ↔pp p  
+c. 45 (,,) , (,,) ,↔+ − − ↔+ + −pp
+ 
+67 (,,) , (, 0 ,) .↔+ + + ↔− +pp  
+ See the figure to the right.   Actually, 
+19 3 5 321 2
+45 14 14 14 14 14 14
+93 3 21
+67 14 14 14 2 2
+(, , ) , (, , ) ,
+(, ,) , ( , 0 , ) .
+↔− − ↔ −
+↔↔ −
+pp
+pp
+ 
+17. Suppose S = {b1, …, bk} is an affinely independent set.  Then (7) has a solution, because p is in 
+aff S.  Hence (8) has a solution.  By Theorem 5, the homogeneous forms of the points in S are 
+linearly independent.  Thus (8) has a unique solution.  Then (7) also has a unique solution, 
+because (8) encodes both equations that appear in (7).   
+  The following argument mimics the proof of Theorem 7 in Section 4.4.  If S = {b1, …, bk} is 
+an affinely independent set, then scalars c1, …, ck exist that satisfy (7), by definition of aff S.  
+Suppose x also has the representation 
+  x  = d1b1 + … + dkbk   and   d1 + … + dk = 1  (7a) 
+for scalars d1, …, dk.  Then subtraction produces the equation 
+  0  = x − x = (c1 − d1)b1 + … +  (ck − dk)bk   (7b) 
+The weights in (7b) sum to zero because the c’s and the d’s separately sum to one.  This is 
+impossible, unless each weight in (8) is zero, because S is an affinely independent set.  This 
+proves that ci = di for i = 1, …, k. 
+18. Let .
+x
+y
+z
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+p  Then 
+00 0
+00 10
+00 0
+xa
+xyz x y zyb abc a b czc⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎛⎞⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥=+++ − − − ⎜⎟⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎝⎠⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦   So the barycentric coordi-
+nates are x/a, y/b, z/c, and 1 − x/a − y/b − z/c.  This holds for any nonzero choices of a, b, and c. 
+19. If { p1, p2, p3} is an affinely dependent set, then there exist scalars c1, c2, and c3, not all zero, such 
+that c1p1 + c2p2 + c3p3 = 0 and c1 + c2 + c3 = 0.  But then, applying the transformation f, 
+p2 
+v3 
+v1 
+v2 p1 
+p3 
+p4 
+p5 
+p6 
+p7 
+----- pagina 9 -----
+8.2  Solutions   461  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   11 2 2 3 3 1 1 2 2 3 3() ( ) () ( ) ( )cf c f cf f c c c f++= + + = =ppp p p p 0 0 , 
+ since f is linear.  This shows that 123{ ( ), ( ), ( )}ff fpp p is also affinely dependent. 
+20. If the translated set {p1 + q, p2 + q, p3 + q} were affinely dependent, then there would exist real 
+numbers c1, c2, and c3, not all zero and with c1 + c2 + c3 = 0, such that   
+c1(p1 + q) + c2(p2 + q) + c3 (p3 + q) = 0. 
+But then, 
+ c1p1 + c2 p2 + c3 p3 + (c1 + c2 + c3)q = 0.   
+Since c1 + c2 + c3 = 0, this implies  c1p1 + c2 p2 + c3 p3 = 0, which would make {p1, p2, p3} affinely 
+dependent.  But {p1, p2, p3} is affinely independent, so the translated set must in fact be affinely 
+independent, too.  
+21. Let 11 1
+22 2
+,,  a n d  .ab cab c⎡⎤ ⎡⎤ ⎡⎤== =⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ab c   Then det  [ã  b̃  c̃] = 111 12222 12
+12
+1
+det det 1
+111 1
+abc aa
+abc bb
+cc
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥=⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+, 
+by using the transpose property of the determinant (Theorem 5 in Section 3.2).  By Exercise 30 in 
+Section 3.3, this determinant equals 2 times the area of the triangle with vertices at a, b, and c. 
+22. If p is on the line through a and b, then p is an affine combination of a and b, so p̃ is a linear 
+combination of ã  and b̃.  Thus the columns of [ã  b̃  p̃] are linearly dependent. So the determinant 
+of this matrix is zero.   
+23. If  [ ã   b̃   c̃]
+r
+s
+t
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ = p̃, then Cramer’s rule gives r = det  [p̃   b̃   c̃] / det [ã   b̃   c̃]. By  Exercise 21,  th e 
+numerator of this quotient is twice the area of Δ pbc, and the denominator is twice the area of Δ abc.  
+This proves the formula for r.  The other formulas are proved using Cramer’s rule for s and t. 
+24. Let p = (1 − x)q + x a, where q is on the line segment from b to c.  Then, because the determinant 
+is a linear function of the first column when the other columns are fixed (Section 3.2),  
+det [p̃  b̃  c̃]  =  det [(1 − x)q̃ + x ã   b̃   c̃] =  (1 − x) · det [q̃  b̃  c̃]  + x · det [ã  b̃  c̃]   
+Now, [q̃  b̃  c̃]  is a singular matrix because q̃ is a linear combination of b̃ and c̃. So det [q̃  b̃  c̃]  = 
+0 and  det [p̃  b̃  c̃]  =  x · det [ã  b̃  c̃] .   
+ 
+----- pagina 10 -----
+462 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+8.3 SOLUTIONS 
+Notes: The notion of convexity is introduced in this section and has important applications in computer 
+graphics.  Bézier curves are introduced in Exercises 21-24 explored in greater detail in Section 8.6. 
+1.  The set 0 :0 1Vy y⎧⎫⎡⎤⎪⎪=≤ <⎨⎬⎢⎥⎪⎪⎣⎦⎩⎭  is the vertical line segment from (0,0) to 
+(0,1)  that includes (0,0) but not (0,1).  The convex hull of S includes 
+each line segment from a point in V to the point (2,0), as shown in the 
+figure.  The dashed line segment along the top of the shaded region 
+indicates that this segment is not in conv S, because (0,1) is not in S.   
+2. a. Conv S includes all points p of the form  
+  
+1/2 1/2 ( 1/2)(1 ) 21 / 2 ( 2 1 / )xt xtt xt x +−⎡⎤ ⎡⎤ ⎡ ⎤=− + = ⎢⎥ ⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣⎦ ⎣ ⎦p , where  
+  1/ 2 and 0 1.xt≥≤ ≤   Notice that if t=a/x, then  
+2
+1/2 /(2 )() 22 / / aa xx ax ax+−⎡⎤= ⎢⎥ −−⎣⎦p  and 1/ 2lim  ( ) 2x ax→∞ +⎡ ⎤= ⎢ ⎥⎣ ⎦p , establishing that there are points 
+arbitrarily close to the line y=2 in conv S.  Since the curve y=1/x is in S, the line segments 
+between y=2 and y=1/x are also included in conv S, whenever 1/ 2.x ≥  
+b. Recall that for any integer n, ()sin( 2 ) sinxn x π+= .  Then  
+ 
+22(1 ) conv S.sin( ) sin( 2 ) sin( )xx n x n ttt xx n x πππ++⎡⎤ ⎡ ⎤ ⎡ ⎤=− + = ∈⎢⎥ ⎢ ⎥ ⎢ ⎥ +⎣⎦ ⎣ ⎦ ⎣ ⎦p  
+ Notice that sin( x) is always a number between -1 and 1.  For a 
+fixed x and any real number r, an integer n and a number t (with 01 t≤≤ ) can be chosen so that 
+2.rx n t π=+  
+c. Conv S includes all points p of the form  
+ 
+0(1 ) 0 xxtt t xx⎡ ⎤⎡ ⎤⎡⎤=− + = ⎢ ⎥⎢ ⎥⎢⎥⎣⎦ ⎣ ⎦⎣ ⎦p ,  where 0 and 0 t 1.x ≥≤ ≤  
+ Letting t=a/x, lim  0x
+a
+→∞
+⎡⎤= ⎢⎥⎣⎦p  establishing that there are point arbitrarily close to y=0 in the set.  
+3. From Exercise 5, Section 8.1,  
+ a.  p1 = 3b1 – b2 – b3  ∉ conv S since some of the coefficients are negative. 
+ b. p2 = 2b1 + 0b2 + b3  ∉ conv S since the coefficients do not sum to one. 
+ c. p3 = – b1 + 2b2 + 0b3 ∉ conv S since some of the coefficients are negative. 
+  
+2 4
+2
+2 4 
+2
+2
+1 
+----- pagina 11 -----
+8.3  Solutions   463  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+4. From Exercise 5, Section 8.1, 
+  a. p1 = – 4b1 +2b2 +3b3  ∉ conv S since some of the coefficients are negative. 
+ b. p 2 = .2b1 + .5b2 + .3b3  ∈ conv S since the coefficients are nonnegative and sum to one. 
+ c. p 3 = b1 + b2 + b3  ∉ conv S since the coefficients do not sum to one. 
+5. Row reduce the matrix [] 123412vv vvpp   to obtain the barycentric coordinates 
+  p 1 = 11 2 1123463 3 6−+ + +vv v v , so p1 ∉ conv S, and p2 = 11 1 1123433 6 6+++vv v v , so p2 ∈ conv S. 
+6.  Let W be the subspace spanned by the orthogonal set S = {v1, v2, v3}.  As in Example 1, the 
+barycentric coordinates of the points p1, …, p4 with respect to S are easy to compute, and they 
+determine whether or not a point is in Span S, aff S, or conv S.   
+a. 1311 121123
+11 2 2 3 3
+projW
+⋅⋅⋅=+ + ⋅⋅ ⋅ pvpv pvpvvv vv v v vv    
+  3 1
+2
+5
+2
+120 2
+202 111
+12 022
+21 2
+−⎡⎤−⎡⎤ ⎡⎤ ⎡⎤ ⎢⎥⎢⎥ ⎢⎥ ⎢⎥ − ⎢⎥⎢⎥ ⎢⎥ ⎢⎥=−+ = = ⎢⎥−⎢⎥ ⎢⎥ ⎢⎥− ⎢⎥⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ p  
+This shows that p1 is in W = Span S.  Also, since the coefficients sum to 1, p1 is an aff S.  
+However, p1 is not in conv S, because the coefficients are not all nonnegative.  
+ b. Similarly, 
+99 9
+44 2
+21 2 3 1 2 3 2
+11 1proj 99 9 4 4 2W =++ = + + =pv v v v v v p .  This shows that p2 
+lies in Span S.  Also, since the coefficients sum to 1, p2 is in aff S.  In fact, p2 is in conv S, 
+because the coefficients are also nonnegative. 
+ c. 31 2 3 1 2 3 3
+99 1 8proj 2 999W =+−= + − =p v v vv vvp .  Thus p3 is in Span S.  However, since 
+the coefficients do not sum to one, p3 is not in aff S and certainly not in conv S. 
+ d.  41 2 3 4
+68 8proj 999W =++ ≠pv v v p .  Since 4projW p  is the closest point in Span S to p4, the 
+point p4 is not in Span S.  In particular, p4 cannot be in aff S or conv S. 
+7. 12 3 1 2 3 4
+1242320,,, ,,,031 1202−⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤== = = = = =⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦vv v p p p p , T = {v1, v2, v3} 
+ a.  Use an augmented matrix (with four augmented columns) to write the homogeneous forms of      
+p1, …, p4 in terms of the homogeneous forms of v1, v2, and v3, with the first step interchanging 
+rows 1 and 3: 
+----- pagina 12 -----
+464 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  123 1234
+11 1
+32 2
+311 1
+62 4 4
+311 1
+22 4 4
+100 01111111
+~ 1242320 ~ 010
+0311202 001
+⎡ ⎤⎡⎤ ⎢ ⎥⎢⎥⎡⎤ ⎢ ⎥−−⎣⎦ ⎢⎥ ⎢ ⎥⎢⎥⎣⎦ ⎢ ⎥−⎣ ⎦vv vpppp    
+The first four columns reveal that 11 1 112336 2 ++=vv v p    and 11 1123 136 2 ++=vv v p .  Thus column 4 
+contains the barycentric coordinates of p1 relative to the triangle determined by T.  Similarly, 
+column 5 (as an augmented column) contains the barycentric coordinates of p2, column 6 
+contains the barycentric coordinates of p3, and column 7 contains the barycentric coordinates of 
+p4. 
+b. p3 and p4 are outside conv T, because in each case at least one of the barycentric coordinates is 
+negative.  p1 is inside conv T, because all of its barycentric coordinates are positive.  p2 is on the 
+edge 12vv  of conv T, because its its barycentric coordinates are nonnegative and its first 
+coordinate is 0. 
+8. a. The barycentric coordinates of p1, p2, p3, and p4 are, respectively, () 312 213 13 13,, , −  ()83 213 13 13,, ,  
+()2133,0 , ,  and ()95 113 13 13,, .−  
+ b. The point p1 and p4 are outside conv T since they each have a negative coordinate. The point p2 is 
+inside conv T since the coordinates are positive, and  p3 is on the edge 13vv  of conv T. 
+9. The points p1 and p3 are outside the tetrahedron conv S since their barycentric coordinates contain 
+negative numbers.  The point p2 is on the face containing the vertices v2, v3, and v4 since its first 
+barycentric coordinate is zero and the rest are positive.  The point p4 is inside conv S since all its 
+barycentric coordinates are positive.  The point p5 is on the edge between v1 and v3 since the first and 
+third barycentric coordinates are positive and the rest are zero. 
+10. The point q1 is inside conv S because the barycentric coordinates are all positive.  The point q2 is 
+outside conv S because it has one negative barycentric coordinate.  The point q4 is outside conv S for 
+the same reason.  The point q3 is on the edge between v2 and v3 because () 31440 ,,, 0  shows that q3 is 
+a convex combination of v2 and v3.  The point q5 is on the face containing the vertices v1, v2, and v3 
+because ()111333,,, 0  shows that q5 is a convex combination of those vertices. 
+11. a. False.  In order for y to be a convex combination, the c’s must also all be nonnegative.  See the 
+definition at the beginning of this section. 
+ b. False.  If S is convex, then conv S is equal to S.  See Theorem 7. 
+ c. False.  For example, the union of two distinct points is not convex, but the individual points are. 
+12. a. True.  See the definition prior to Theorem 7. 
+ b. True.  Theorem 9. 
+ c. False.  The points do not have to be distinct.  For example, S might consist of two points in R5.  A 
+point in conv S would be a convex combination of these two points.  Caratheodory’s Theorem 
+requires n + 1 or fewer points. 
+----- pagina 13 -----
+8.3  Solutions   465  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+13. If p, q ∈ f (S), then there exist r, s ∈ S such that f (r) = p and f (s) = q.  The goal is to show that the 
+line segment y = (1 − t)p + t q, for 0 ≤ t ≤ 1, is in f (S).  Since f is linear, 
+  y  =  (1 − t)p + t q  = (1 − t) f (r) + t  f (s) =  f ((1 − t)r + t s) 
+ Since S is convex, (1 − t)r + t s ∈ S for 0 ≤ t ≤ 1.  Thus y ∈ f (S) and f (S) is convex. 
+14. Suppose r, s ∈ S and 0 ≤ t ≤ 1.  Then, since f  is a linear transformation, 
+  f [(1 − t)r + t s ] = (1 − t) f (r) + t  f (s) 
+ But  f (r) ∈ T and f (s) ∈ T, so (1 − t) f (r) + t  f (s) ∈ T since T is a convex set.  It follows that  
+ (1 − t)r + t s ∈ S, because S consists of all points that  f  maps into T. This shows that S is convex. 
+15. It is straightforward to confirm the equations in the problem:  (1)  11 1 1123433 6 6+++ =vv v v p   and   
+(2)  v1 – v2 + v3 – v4 = 0.  Notice that the coefficients of v1 and v3 in equation (2) are positive.  With 
+the notation of the proof of Caratheodory’s Theorem, d1 = 1 and d3 = 1.  The corresponding 
+coefficients in equation (1) are 11 3c =  and 13 6c = .  The ratios of these coefficients are 111 3/cd =  
+and 133 6/cd = .  Use the smaller ratio to eliminate v3 from equation (1).  That is, add 16−  times 
+equation (2) to equation (1):  
+ 11 11 11 11 1 1 11234 1 2 436 36 66 66 6 2 3() ()()()=− + + + − + + = + +pvv v v v v v  
+To obtain the second combination, multiply equation (2) by –1 to reverse the signs so that d2 and d4 
+become positive.  Repeating the analysis with these terms eliminates the v4 term resulting in 
+  
+11 1
+12326 3=+ +pv v v . 
+16. 12 3 4
+103 1 1,,, ,  031 1 2−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤== = = =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦vv v vp   It is straightforward to confirm the 
+equations in the problem:  (1)  72 3711 123 4121 121 121 11+++ =vv v v p   and   (2)   10v1 – 6v2 + 7v3 – 11v4 = 
+0.   
+Notice that the coefficients of v1 and v3 in equation (2) are positive.  With the notation of the proof of 
+Caratheodory’s Theorem, d1 = 10 and d3 = 7.  The corresponding coefficients in equation (1) are 
+1
+1 121c =  and 373 121c = .  The ratios of these coefficients are 1111 121 1210/1 0cd =÷ =  and 
+37 37
+33 121 847/7cd =÷ = .  Use the smaller ratio to eliminate v1 from equation (1).  That is, add 11210−  
+times equation (2) to equation (1):  
+ 10 72 6 37 7 3 311 1 1 1 1 2 3 4234121 1210 121 1210 121 1210 11 1210 5 10 10() () () ( )= − ++ +− + + = + +pvv v v v v v  
+To obtain the second combination, multiply equation (2) by –1 to reverse the signs so that d2 and d4 
+become positive.  Repeating the analysis with these terms eliminates the v4 term resulting in 
+ 10 72 6 37 7 611 1 1 1 4 123 4 1 2 3121 121 121 121 121 121 11 121 11 11 11() () () ( )= + +− ++ + − = + +pvv v v v v v  
+----- pagina 14 -----
+466 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+17. Suppose A ⊂ B, where B is convex.  Then, since B is convex, Theorem 7 implies that B contains 
+all convex combinations of points of B.  Hence B contains all convex combinations of points of A.  
+That is, conv A ⊂ B. 
+18. Suppose A ⊂ B.  Then A ⊂ B ⊂ conv B.  Since conv B is convex, Exercise 17 shows that  
+conv A ⊂ conv B.   
+19 a.  Since A ⊂ (A ∪ B), Exercise 18 shows that conv A ⊂ conv (A ∪ B).  Similarly,  
+ conv B ⊂ conv (A ∪ B).  Thus, [(conv A) ∪ (conv B)] ⊂ conv (A ∪ B). 
+ b.  One possibility is to let A be two adjacent corners of a square and B be the other two corners.  
+Then (conv A) ∪ (conv B) consists of two opposite sides of the square, but conv (A ∪ B) is the 
+whole square. 
+20. a. Since ( A ∩ B) ⊂ A, Exercise 18 shows that conv (A ∩ B) ⊂ conv A.  Similarly,  
+ conv ( A ∩ B) ⊂ conv B.  Thus, conv (A ∩ B) ⊂ [(conv A) ∩ (conv B)]. 
+b. One possibility is to let A be a pair of opposite vertices of a square and let B be the other pair 
+of opposite vertices.  Then conv A and conv B are intersecting diagonals of the square.  
+A ∩ B is the empty set, so conv ( A ∩ B) must be empty, too.  But conv A ∩ conv B contains 
+the single point where the diagonals intersect.  So conv ( A ∩ B) is a proper subset of conv A 
+∩ conv B.  
+21.      22. 
+ 
+ 
+23.  g(t) = (1 − t)f0(t) + t f1(t)  
+        = (1 − t)[(1 − t)p0 + t p1] + t[(1 − t)p1 + t p2] = (1 − t)2p0 + 2t(1 − t)p1 + t 2p2. 
+The sum of the weights in the linear combination for g is (1 − t)2 + 2t(1 − t) + t 2, which equals 
+(1 − 2t + t2) + (2t − 2t2) + t 2 = 1.  The weights are each between 0 and 1 when 0 ≤ t ≤ 1, so g(t) is in 
+conv{p0, p1, p2}. 
+24. h(t) = (1 − t)g1(t) + t g2(t).  Use the representation for g1(t) from Exercise 23, and the analogous 
+representation for g2(t), based on the control points p1, p2, and p3, and obtain 
+h(t) = (1 − t)[(1 − t)2p0 + 2t(1 − t)p1 + t 2p2] + t [(1 − t)2p1 + 2t(1 − t)p2 + t 2p3] 
+       = (1 − t)3p0 + 2t(1 − 2t + t 2)p1 + (t 2 − t 3)p2 + t (1 − 2t + t 2) p1 + 2t 2(1 − t)p2 + t 3p3 
+  = (1 − 3t + 3t
+ 
+2 − t 3)p0 + (2t − 4t 2 + 2t 3)p1 + (t 2 − t 3)p2  
+        + (t − 2t 
+2 + t 3)p1 + (2t 2 − 2t 3)p2 + t 3p3 
+  = (1 − 3t + 3t
+ 
+2 − t 3)p0 + (3t − 6t 2 + 3t 3)p1 + (3t 2 − 3t 3)p2 + t 3p3 
+By inspection, the sum of the weights in this linear combination is 1, for all t.  To show that the 
+weights are nonnegative for 0 ≤ t ≤ 1, factor the coefficients and write
+p1 
+p0 
+p2 
+()10 2f  
+()11 2f
+()12g  
+p1
+p0
+p2 
+()30 4f  
+()31 4f
+()34g
+----- pagina 15 -----
+8.4  Solutions   467  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+h(t) = (1 − t)3p0 + 3t(1 − t)2p1 + 3t2(1 − t)p2 + t 3p3  for  0 ≤ t ≤ 1 
+Thus, h(t) is in the convex hull of the control points p0, p1, p2, and p3. 
+ 
+8.4 SOLUTIONS 
+Notes: In this section lines and planes are generalized to higher dimensions using the notion of 
+hyperplanes.  Important topological ideas such as open, closed, and compact sets are introduced.   
+1. Let 12
+13 and .41−⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦vv  Then 21 314 .14 3 −⎡ ⎤⎡⎤⎡ ⎤−= − =⎢ ⎥⎢⎥⎢ ⎥ −⎣ ⎦⎣⎦⎣ ⎦vv   Choose n to be a vector orthogonal to
+21−vv , for example let 34⎡⎤= ⎢⎥⎣⎦n .  Then f (x1, x2) = 3x1 + 4x2 and  d =  f (v1) = 3(–1) + 4(4) = 13. 
+ This is easy to check by verifying that  f (v2) is also 13. 
+2. Let 12
+12 and .41 −⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦vv  Then 21 21 3 .14 5−−⎡ ⎤⎡ ⎤⎡ ⎤−= − =⎢ ⎥⎢ ⎥⎢ ⎥−−⎣ ⎦⎣ ⎦⎣ ⎦vv   Choose n to be a vector orthogonal 
+to 21−vv , for example let 53⎡⎤= ⎢⎥−⎣⎦n .  Then f (x1, x2) = 5x1 − 3x2 and  d =  f (v1) = 5(1) − 3(4) = 7− . 
+3. a. The set is open since it does not contain any of its boundary points. 
+ b. The set is closed since it contains all of its boundary points.   
+ c. The set is neither open nor closed since it contains some, but not all, of its boundary points. 
+ d. The set is closed since it contains all of its boundary points.   
+ e. The set is closed since it contains all of its boundary points.   
+4. a. The set is closed since it contains all of its boundary points.   
+ b. The set is open since it does not contain any of its boundary points. 
+ c. The set is neither open nor closed since it contains some, but not all, of its boundary points. 
+ d. The set is closed since it contains all of its boundary points.   
+ e. The set is open since it does not contain any of its boundary points. 
+5. a.  The set is not compact since it is not closed, however it is convex. 
+ b. The set is compact since it is closed and bounded.  It is also convex. 
+ c. The set is not compact since it is not closed, however it is convex. 
+ d. The set is not compact since it is not bounded.  It is not convex. 
+ e. The set is not compact since it is not bounded, however it is convex. 
+6. a. The set is compact since it is closed and bounded.  It is not convex. 
+ b. The set is not compact since it is not closed.  It is not convex. 
+----- pagina 16 -----
+468 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ c. The set is not compact since it is not closed, however it is convex. 
+ d. The set is not compact since it is not bounded.  It is convex. 
+ e. The set is not compact since it is not closed.  It is not convex. 
+7. a.   Let 12 3
+12 1
+1, 4, 2,
+31 5
+a
+b
+c
+−⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥== = − =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦
+vv v n  and compute the translated points 
+  21 31
+12
+3, 3
+22
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−= −= −⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦
+vv vv . 
+  To solve the system of equations ( v2 – v1) · n = 0 and (v3 – v1) · n = 0, reduce the augmented 
+matrix for a system of two equations with three variables. 
+    [1 3 2] 0,
+a
+b
+c
+⎡⎤
+⎢⎥−= ⎢⎥
+⎢⎥⎣⎦
+     [2 3 2 ] 0
+a
+b
+c
+⎡⎤
+⎢⎥−− = ⎢⎥
+⎢⎥⎣⎦
+. 
+  Row operations show that  1320 1000 ~2320 0320−⎡⎤ ⎡⎤⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦ .  A suitable normal vector 
+is 
+0
+2
+3
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+n .   
+b.  The linear functional is 123 2 3(, , ) 2 3fxx x x x =+ , so d  =  f (1, 1, 3)  =  2 + 9  =  11.  As a check, 
+evaluate  f  at the other two points on the hyperplane:  f (2, 4, 1)  =  8 + 3  =  11 and  
+  f  (–1 , –2 , 5)  =   – 4 + 15  =  11. 
+8. a. Find a vector in the null space of the transpose of [ v2-v1  v3-v1].  For example, take
+4
+3.
+6
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−⎣⎦
+n  
+ b .  f (x) = 4x1 + 3x2 − 6x3,  d = f (v1) =−8 
+9. a. Find a vector in the null space of the transpose of [v2-v1  v3-v1  v4-v1 ].  For example, take  
+ n  = 
+3
+1 .2
+1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+ 
+b. f (x) = 3x1 − x2 + 2x3 + x4,  d = f (v1) =5  
+  
+----- pagina 17 -----
+8.4  Solutions   469  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+10. a. Find a vector in the null space of the transpose of [ v2-v1  v3-v1  v4-v1].  For example, take 
+ n = 
+2
+3 .5
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−
+⎢⎥
+⎣⎦
+ 
+ b .  f (x) = −2x1 + 3x2 − 5x3 + x4,  d = f (v1) = 4 
+11. 12 32 ;  02 ;  52 ;  22 ;  2 .== < = > = − < =np n0 nv nv nvii i i i   Hence v2 is on the same side of H 
+as 0, v1 is on the other side, and v3 is in H. 
+12. Let H = [ f : d ], where f (x1, x2, x3) =  3x1 + x2 − 2x3.  f (a1) = −5,  f (a2) = 4.  f (a3) =3,  f (b1) =7, 
+ f (b 2) = 4, and f (b 3) = 6.  Choose d = 4 so that all the points in A are in or on one side of H and all 
+the points in B are in or on the other side of H.  There is no hyperplane parallel to H that strictly 
+separates A and B because both sets have a point at which  f  takes on the value of 4.  There may be 
+(and in fact is) a hyperplane that is not parallel to H that strictly separates A and B. 
+13. H1 = {x : n1 ⋅ x = d1} and H2 = {x : n 2 ⋅ x = d2}.  Since p1 ∈ H1, d1 = n1 ⋅ p1 = 4.  Similarly, 
+d2 = n 2 ⋅ p2 = 22.  Solve the simultaneous system [1   2   4   2]x = 4  and  [2   3   1   5]x = 22: 
+12424 1 01 0 43 2 ~2315 2 2 0 1 7 11 4 −⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦  
+The general solution provides one set of vectors, p, v1, and v2.  Other choices are possible. 
+34 3 1 4 2
+32 10 4
+14 7 1 ,010
+00 1
+xx x x
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥=+ + = + +⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+xp v v    where 12
+32 10 4
+14 7 1,,010
+00 1
+−⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥−−⎢ ⎥⎢ ⎥ ⎢ ⎥== =⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎣ ⎦⎣ ⎦ ⎣ ⎦
+pvv  
+Then  H1 ∩ H2  =  {x : x = p + x3v1 + x4v2}. 
+14. Since each of F1 and F2 can be described as the solution sets of A1x=b1 and A2x=b2  respectively, 
+where A1 and A2 have rank 2, their intersection is described as the solution set to 11
+22
+A
+A
+⎡⎤ ⎡⎤ =⎢⎥ ⎢⎥⎣⎦ ⎣⎦ bx b .  
+Since 
+1
+2
+2r a n k 4 AA⎛⎞⎡⎤≤≤ ⎜⎟⎢⎥⎣⎦⎝⎠ , the solution set will have dimensions 6−2=4,6 −3=3, or 6 −4=2. 
+15. f (x1, x2, x3) =Ax= x1 – 3x2 + 4x3 – 2x4 and d =b= 5 
+16. f (x1, x2, x3) = Ax= 2x1 + 5x2 – 3x3 + 6x5 and d = b= 0 
+17. Since by Theorem 3 in Section 6.1, Row B=(Nul B) ⊥ , choose a nonzero vector n∈ Nul B .  For 
+example take n=
+1
+2
+1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+.  Then f (x1, x2, x3) = x1 – 2x2 + x3 and d = 0 
+----- pagina 18 -----
+470 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+18.  Since by Theorem 3, Section 6.1, Row B=(Nul B) ⊥ , choose a nonzero vector n∈ Nul B .  For 
+example take n=
+11
+4
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+.  Then f (x1, x2, x3) = –11x1 + 4x2 + x3 and d = 0 
+19. Theorem 3 in Section 6.1 says that (Col B)⊥ = Nul BT.  Since the two columns of B are clearly linear 
+independent, the rank of B is 2, as is the rank of BT.   So dim Nul BT = 1, by the Rank Theorem, since 
+there are three columns in BT.  This means that Nul BT is one-dimensional and any nonzero vector n 
+in Nul BT will be orthogonal to H and can be used as its normal vector.  Solve the linear system  
+ BTx = 0 by row reduction to find a basis for Nul BT: 
+     1470 1 050 ~0260 01 3 0−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦   ⇒  531−⎡ ⎤⎢ ⎥= ⎢ ⎥⎢ ⎥⎣ ⎦n  
+ Now, let  f (x1, x2, x3) = –5x1 + 3x2 + x3.  Since the hyperplane H is a subspace, it goes through the 
+origin and d must be 0.  
+ The solution is easy to check by evaluating  f  at each of the columns of B.   
+20. Since by Theorem 3, Section 6.1, Col B=(Nul BT) ⊥ , choose a nonzero vector n∈ Nul BT .  For 
+example take n=
+6
+2
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+.  Then  f (x1, x2, x3) =  – 6x1 + 2x2 + x3 and d = 0 
+21. a. False.  A linear functional goes from Rn to R.  See the definition at the beginning of this section. 
+ b. False.  See the discussion of (1) and (4).  There is a 1× n matrix A such that f (x) = Ax for all x in 
+Rn.  Equivalently, there is a point n in Rn such that f (x) = n ⋅ x  for all x in Rn. 
+ c. True.  See the comments after the definition of strictly separate. 
+ d. False.  See the sets in Figure 4. 
+22. a. True.  See the statement after (3). 
+ b. False.  The vector n must be nonzero.  If n = 0, then the given set is empty if d ≠ 0 and the set 
+is all of Rn if d = 0. 
+ c. False.  Theorem 12 requires that the sets A and B be convex.  For example, A could be the 
+boundary of a circle and B could be the center of the circle. 
+ d. False.  Some other hyperplane might strictly separate them.  See the caution at the end of 
+Example 8. 
+23. Notice that the side of the triangle closest to p is 23vv .  A vector orthogonal to 23vv .is n=
+3
+2
+⎡⎤
+⎢⎥−⎣⎦ . 
+ Take f (x1, x2) = 3x1 – 2x2 .  Then f (v2) = f (v3)=9 and f (p)=10 so any d satisfying  9 < d < 10 will 
+work. There are other possible answers. 
+  
+----- pagina 19 -----
+8.4  Solutions   471  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+24. Notice that the side of the triangle closest to p is 13vv   A vector orthogonal to 13vv is n=
+2
+3
+−⎡⎤
+⎢⎥⎣⎦ . 
+ Take f (x1, x2) = −2x1 +3x2 .  Then f (v1) = f (v3)=4 and f (p)=5 so any d satisfying  4 < d < 5 will 
+work. There are other possible answers. 
+25. Let L be the line segment from the center of B(0, 3) to the center of B(p, 1).  This is on the line 
+through the origin in the direction of p.  The length of L is (42 + 12)1/2 ≈  4.1231.  This exceeds the 
+sum of the radii of the two disks, so the disks do not touch.  If the disks did touch, there would be no 
+hyperplane (line) strictly separating them, but the line orthogonal to L through the point of tangency 
+would (weakly) separate them.  Since the disks are separated slightly, the hyperplane need not be 
+exactly perpendicular to L, but the easiest one to find is a hyperplane H whose normal vector is p.  
+So define  f  by  f (x) = p ⋅ x. 
+ To find d, evaluate  f  at any point on L that is between the two disks.  If the disks were tangent, that 
+point would be three-fourths of the distance between their centers, since the radii are 3 and 1.  Since 
+the disks are slightly separated, the distance is about 4.1231.  Three-fourths of this distance is greater 
+than 3, and one-fourth of this distance is greater than 1.  A suitable value of d is f (q), where q = 
+(.25)0 + (.75)p = (3, .75).  So d = p ⋅ q = 4(3) + 1(.75) = 12.75. 
+26. The normal to the separating hyperplane has the direction of the line segment between p and q.  So, 
+let n = p − q = 42⎡⎤⎢⎥−⎣⎦ .  The distance between p and q is 20 , which is more than the sum of the radii 
+of the two balls. The large ball has center q.  A point three-fourths of the distance from q to p will be 
+greater than 3 units from q and greater than 1 unit from p.  This point is  
+  x  = .75p + .25q = 62 5 . 0.75 .2513 1 . 5⎡⎤ ⎡⎤ ⎡ ⎤+=⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦  
+Compute n ⋅ x = 17.  The desired hyperplane is :4 2 1 7x xyy⎧ ⎫⎡⎤⎪ ⎪−=⎨ ⎬⎢⎥⎪ ⎪⎣⎦⎩⎭ . 
+27. Exercise 2(a) in Section 8.3 gives one possibility.  Or let S = {(x, y) : x2y 2 = 1 and y > 0}.  Then 
+conv S is the upper (open) half-plane. 
+28. One possibility is B = {(x, y) : x2y 2 = 1 and y > 0} and A = {(x, y) : | x | ≤ 1 and y = 0}. 
+29. Let x, y ∈ B( p, δ ) and suppose z = (1 − t) x + t y, where 0 ≤ t ≤ 1.  Then   
+  | | z − p||  =  || [(1 − t) x + t y] − p||  =  ||(1 − t)(x − p) + t (y − p)||   
+   ≤  (1 − t)  ||x − p|| + t ||y − p||  <  (1 − t) δ + tδ  =  δ  
+ where the first inequality comes from the Triangle Inequality (Theorem 17 in Section 6.7) and the 
+second inequality follows from x, y ∈ B( p, δ ).  It follows that z ∈ B( p, δ ) and B( p, δ ) is convex. 
+30. Let S be a bounded set.  Then there exists a δ  > 0 such that S ⊂ B(0, δ ).  But B(0, δ ) is              
+convex by Exercise 29, so Theorem 9 in Section 8.3 (or Exercise 17 in Section 8.3) implies that    
+conv S ⊂ B( p, δ ) and conv S is bounded. 
+----- pagina 20 -----
+472 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+8.5 SOLUTIONS 
+Notes: A polytope is the convex hull of a finite number of points.  Polytopes and simplices are important 
+in linear programming, which has numerous applications in engineering design and business 
+management.  The behavior of functions on polytopes is studied in this section.   
+1. Evaluate each linear functional at each of the three extreme points of S.  Then select the extreme 
+point(s) that give the maximum value of the functional. 
+ a. f  (p1)  =  1,  f  (p2)  =  –1, and  f  (p3)  =  –3, so m = 1 at p1. 
+ b. f  (p1)  =  1,  f  (p2)  =  5, and  f  (p3)  =  1, so m = 5 at p2. 
+ c. f  (p1)  =  –3,  f  (p2)  =  –3, and  f  (p3)  =  5, so m = 5 at p3. 
+2. Evaluate each linear functional at each of the three extreme points of S.  Then select the point(s) that 
+give the maximum value of the functional. 
+ a. f  (p1)  = −1,  f  (p2)  =  3, and  f  (p3)  =  3, so m = 3 on the set conv {p2, p3}. 
+ b. f  (p1)  = 1,  f  (p2)  =  1, and  f  (p3)  = −1, so m = 1 on the set conv {p1, p2}. 
+ c. f  (p1)  =  –1,  f  (p2)  =  –3, and  f  (p3)  =  0, so m = 0 at p3. 
+3. Evaluate each linear functional at each of the three extreme points of S.  Then select the point(s) that 
+give the minimum value of the functional. 
+ a.  f  (p1)  =  1,  f  (p2)  =  –1, and  f  (p3)  =  –3, so m = –3 at the point p3 
+ b. f  (p1)  =  1,  f  (p2)  =  5, and  f  (p3)  =  1, so m =  1 on the set conv {p1, p3}. 
+ c. f  (p1)  =  –3,  f  (p2)  =  –3, and  f  (p3)  =  5, so m = –3 on the set conv {p1, p2}. 
+4. Evaluate each linear functional at each of the three extreme points of S.  Then select the point(s) that 
+give the maximum value of the functional. 
+ a. f  (p1)  = −1,  f  (p2)  =  3, and  f  (p3)  =  3, so m = –1 at the point p1. 
+ b. . f  (p1)  = 1,  f  (p2)  =  1, and  f  (p3)  = −1, so m = –1 at the point p3. 
+ c. f  (p1)  =  –1,  f  (p2)  =  –3, and  f  (p3)  =  0, so m = –3 at the point p2. 
+5. The two inequalities are (a) x1 + 2x2 ≤ 10 and (b) 3x1 + x2 ≤ 15.  Line (a) goes from (0,5) to (10,0).  
+Line (b) goes from (0,15) to (5,0).  One vertex is (0,0).  The x1-intercepts (when x2 = 0) are 10 and 5, 
+so (5,0) is a vertex.  The x2-intercepts (when x1 = 0) are 5 and 15, so (0,5) is a vertex.  The two lines 
+intersect at (4,3) so (4,3) is a vertex.  The minimal representation is 0540,,,0035⎧ ⎫⎡ ⎤⎡⎤⎡⎤⎡⎤⎪ ⎪⎨ ⎬⎢ ⎥⎢⎥⎢⎥⎢⎥⎪ ⎪⎣ ⎦⎣⎦⎣⎦⎣⎦⎩⎭   
+  
+----- pagina 21 -----
+8.5  Solutions   473  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+6. The two inequalities are (a) 2x1 + 3x2 ≤ 18 and (b) 4x1 + x2 ≤ 16.  Line (a) goes from (0,6) to (9,0).  
+Line (b) goes from (0,16) to (4,0).  One vertex is (0,0).  The x1-intercepts (when x2 = 0) are 9 and 4, so 
+(4,0) is a vertex.  The x2-intercepts (when x1 = 0) are 6 and 16, so (0,6) is a vertex.  The two lines 
+intersect at (3,4) so (3,4) is a vertex.  The minimal representation is 0430,,,0046⎧ ⎫⎡ ⎤⎡⎤⎡⎤⎡⎤⎪ ⎪⎨ ⎬⎢ ⎥⎢⎥⎢⎥⎢⎥⎪ ⎪⎣ ⎦⎣⎦⎣⎦⎣⎦⎩⎭  
+7. The three inequalities are (a) x1 + 3x2 ≤ 18, (b) x1 + x2 ≤ 10, and (c) 4x1 + x2 ≤ 28.  Line (a) goes from 
+(0,6) to (18,0).  Line (b) goes from (0,10) to (10,0).  And line (c) goes from (0,28) to (7,0).  One 
+vertex is (0,0).  The x1-intercepts (when x2 = 0) are 18, 10, and 7, so (7,0) is a vertex.  The x2-
+intercepts (when x1 = 0) are 6, 10, and 28, so (0,6) is a vertex.  All three lines go through (6,4), so 
+(6,4) is a vertex.  The minimal representation is 0760,,,0046⎧ ⎫⎡ ⎤⎡⎤⎡⎤⎡⎤⎪ ⎪⎨ ⎬⎢ ⎥⎢⎥⎢⎥⎢⎥⎪ ⎪⎣ ⎦⎣⎦⎣⎦⎣⎦⎩⎭ . 
+8. The three inequalities are (a) 2x1 + x2 ≤ 8, (b) x1 + x2 ≤ 6, and (c) x1 + 2x2 ≤ 7.  Line (a) goes from 
+(0,8) to (4,0).  Line (b) goes from (0,6) to (6,0).  And line (c) goes from (0,3.5) to (7,0).  One vertex is 
+(0,0).  The x1-intercepts (when x2 = 0) are 4, 6, and 7, so (4,0) is a vertex.  The x2-intercepts (when x1 
+= 0) are 8, 6, and 3.5, so (0,3.5) is a vertex.  All three lines go through (3,2), so (3,2) is a vertex.  The 
+minimal representation is 043 0,,,0023 . 5⎧⎫⎡⎤⎡⎤⎡⎤⎡ ⎤⎪⎪⎨⎬⎢⎥⎢⎥⎢⎥⎢ ⎥⎪⎪⎣⎦⎣⎦⎣⎦⎣ ⎦⎩⎭  
+9. The origin is an extreme point, but it is not a vertex.  It is an  
+ extreme point since it is not in the interior of any line segment  
+ that lies in S.  It is not a vertex since the only supporting  
+ hyperplane (line) containing the origin also contains the line  
+ segment from (0,0) to (3,0). 
+ 
+10. One possibility is a ray.  It has an extreme point at one end. 
+11. One possibility is to let S be a square that includes part of the boundary but not all of it.  For example, 
+include just two adjacent edges.  The convex hull of the profile P is a triangular region. 
+ 
+ 
+ 
+12. a. f 0(S 
+5) = 6,  f 1(S 5) = 15,  f 2(S 5) = 20,  f 3(S 5) = 15,  f 4(S 5) = 6, and 6 − 15 + 20 − 15 + 6 = 2. 
+ b.  
+ f 0 f 1 f 2 f 3 f 4 
+S 
+1 2     
+S 
+2 3 3    
+S 
+3 4 6 4   
+S 
+4 5 10 10 5  
+S 
+5 6 15 20 15 6 
+S conv P  = 
+----- pagina 22 -----
+474 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1() , 1nk nfS k +⎛⎞= ⎜⎟ +⎝⎠  where !!( )!a ab ba b⎛⎞ =⎜⎟ −⎝⎠  is the binomial coefficient.  
+13. a. To determine the number of k-faces of the 5-dimensional hypercube C 5, look at the pattern that is 
+followed in building C 4 from C 3.  For example, the 2-faces in C 4 include the 2-faces of C 3 and 
+the 2-faces in the translated image of C 3.  In addition, there are the 1-faces of C 3 that are 
+“stretched” into 2-faces.  In general, the number of k-faces in C n equals twice the number of k-
+faces in C n – 1 plus the number of  (k – 1)-faces in C n – 1.  Here is the pattern:  fk(C n)  =  2 fk (C n – 1) 
++ fk – 1(C n – 1).  For k = 0, 1, …, 4, and n = 5,  this gives  f 0(C 5) = 32,  f 1(C 5) = 80,  f 2(C 5) = 80,  
+f 3(C 5) = 40, and  f 4(C 5) = 10.  These numbers satisfy Euler’s formula since, 32 − 80 + 80 − 40 + 
+10 = 2. 
+ b. The general formula is !()2 , w h e r e !( )!nn kk na afC kb ba b− ⎛⎞ ⎛⎞== ⎜⎟ ⎜⎟ −⎝⎠ ⎝⎠  is the binomial coefficient. 
+ 
+14. a. X 
+1 is a line segment   X 2 is a parallelogram   
+ 
+ b. f 0 (X 3) = 6,  f 1 (X 3) = 12,  f 2 (X 3) = 8.  X 3  is an octahedron. 
+ c.  f 0 (X 4 ) = 8,  f 1 (X 4 ) = 24,  f 2 (X 4 ) = 32,  f 3 (X 4 ) = 16,  8 − 24 + 32 − 16 = 0  
+ d. 1() 2 , 1nkk nfX k+ ⎛⎞= ⎜⎟ +⎝⎠  0 ≤ k ≤ n −1, where !!( )!a ab ba b⎛⎞ =⎜⎟ −⎝⎠  is the binomial coefficient. 
+15. a.  f 0 (P n ) =  f 0 (Q) + 1 
+ b. f k (P n ) =  f k (Q) + f k − 1 (Q) 
+ c. f n − 1 (P 
+n
+ 
+) = f n − 2 (Q) + 1 
+16. a. True.  See the definition at the beginning of this section. 
+ b. True.  See the definition after Example 1. 
+ c. False.  S must be compact.  See Theorem 15. 
+ d. True.  See the comment after Fig. 7. 
+17. a. False.  It has six facets (faces). 
+ b. True.  See Theorem 14. 
+ c. False.  The maximum is always attained at some extreme point, but there may be other points that 
+are not extreme points at which the maximum is attained.  See Theorem 16. 
+ d. True.  Follows from Euler’s formula with n = 2. 
+18. Let v be an extreme point of the convex set S and let T = {y ∈ S : y ≠ v}.  If y and z are in T, then 
+S⊆yz  since S is convex.  But since v is an extreme point of S, v ∉ ,yz  so .Tyz ⊂   Thus T is 
+convex.
+0 v1 v1 
+v2 
+----- pagina 23 -----
+8.6  Solutions   475  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Conversely, suppose v ∈ S, but v is not an extreme point of S.  Then there exist y and z in S such 
+that v ∈ yz , with v ≠ y and v ≠ z.  It follows that y and z are in T, but .Tyz ⊄   Hence T is not 
+convex. 
+19. Let S be convex and let x ∈ cS + dS, where c > 0 and d > 0.  Then there exist s1 and s2 in S such that 
+   x   =  cs1 + ds2.  But then 
+   12 1 2 () cdcd c d cd cd⎛⎞=+ = + + ⎜⎟ ++⎝⎠xss s s . 
+ Now show that the expression on the right side is a member of ( c + d)S. 
+ For the converse, pick an typical point in ( c + d)S and show it is in cS + dS. 
+20. For example, let S  = {1, 2} in 
+1
+R .  Then 2S  = {2, 4}, 3S  = {3, 6} and (2 + 3)S  =  {5, 10}.   
+However, 2S + 3S  =  {2, 4} + {3, 6}  =  {2 + 3, 4 + 3, 2 + 6, 4 + 6}  =  {5, 7, 8, 10} ≠ (2 + 3)S. 
+21. Suppose A and B are convex.  Let x, y ∈ A + B.  Then there exist a, c ∈ A and b, d ∈ B such that   
+x = a + b and y = c + d.  For any t such that 0 ≤ t ≤ 1, we have 
+   [] [ ]
+(1 ) (1 )( ) ( )
+(1 ) (1 )
+tt t t
+tt tt
+=− + =− ++ +
+=−+ + −+
+wx y a b c d
+ac bd  
+ But (1 − t)a + tc ∈ A since A is convex, and (1 − t)b + td ∈ B since B is convex.  Thus w is in A + B, 
+which shows that A + B is convex. 
+22. a. Since each edge belongs to two facets, kr is twice the number of edges: k r = 2e.  Since each edge 
+has two vertices, s v = 2e. 
+ b. v − e + r = 2, so 22 11 11 22eess e kke−+ = ⇒ +=+  
+ c. A polygon must have at least three sides, so k ≥ 3.  At least three edges meet at each vertex, 
+so s ≥ 3.  But both k and s cannot both be greater than 3, for then the left side of the equation 
+in (b) could not exceed 1/2. 
+   When k = 3, we get 11 16 ,se−=  so  s = 3, 4, or 5.  For these values, we get  e = 6, 12, or 30, 
+corresponding to the tetrahedron, the octahedron, and the icosahedron, respectively.   
+   When s = 3, we get 11 1 6 ,ek −=  so  k = 3, 4, or 5 and  e = 6, 12, or 30, respectively.  
+These values correspond to the tetrahedron, the cube, and the dodecahedron. 
+ 
+8.6 SOLUTIONS 
+Notes: This section moves beyond lines and planes to the study of some of the curves that are used to 
+model surfaces in engineering and computer aided design.  Notice that these curves have a matrix 
+representation. 
+1. The original curve is  x(t) = (1 – t)3p0 + 3t(1 – t)2p1 + 3t 2(1 – t)p2 + t 3p3  (0 < t < 1).  Since the 
+curve is determined by its control points, it seems reasonable that to translate the curve, one 
+should translate the control points.  In this case, the new Bézier curve y(t) would have the 
+equation 
+----- pagina 24 -----
+476 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   y(t) = (1 – t)3(p0 + b) + 3t(1 – t)2(p1 + b) + 3t 2(1 – t)(p2 + b) + t 3(p3 + b) 
+    =  ( 1  –  t)3p0 + 3t(1 – t)2p1 + 3t 2(1 – t)p2 + t 3p3  
+      +   ( 1  –  t)3b + 3t(1 – t)2b + 3t 2(1 – t)b + t 3b   
+A routine algebraic calculation verifies that  (1 – t)3 + 3 t(1 – t)2 + 3 t 2(1 – t) + t 3  =  1 for all t.  
+Thus  y(t)  =  x(t) + b for all t, and translation by b maps a Bézier curve into a Bézier curve. 
+2. a. Equation (15) reveals that each polynomial weight is nonnegative for 0 <  t < 1, since 4 − 3t > 
+0.  For the sum of the coefficients, use (15) with the first term expanded: 1 – 3 t + 6 t 
+2 − t 3.  
+The 1 here plus the 4 and 1 in the coefficients of p1 and p2, respectively, sum to 6, while the 
+other terms sum to 0.  This explains the 1/6 in the formula for x(t), which makes the 
+coefficients sum to 1.  Thus, x(t) is a convex combination of the control points for 0 < t < 1. 
+b. Since the coefficients inside the brackets in equation (14) sum to 6, it follows that 
+ [] 33 2 3 2 31166 6( 1 ) ( 3 6 4 ) ( 3 3 3 1 )tt t t t tt⎡ ⎤== − + − + + − + + + +⎣ ⎦bb b b b b and hence x(t) + b 
+may be written in a similar form, with pi replaced by pi + b for each i.  This shows that 
+x(t) + b is a cubic B-spline with control points pi + b for i = 0, …, 3. 
+3. a. x' (t) = (–3 + 6t – 3t 
+2)p0 + (3 –12t + 9t 2)p1 + (6t – 9t 2)p2 + 3t 2p3, so x' (0) = –3p0 + 3p1=3(p1 – p0), 
+and x' (1) = –3p2 + 3p3 = 3(p3 – p2).  This shows that the tangent vector x' (0) points in the 
+direction from p0 to p1 and is three times the length of p1 – p0.  Likewise, x' (1) points in the 
+direction from p2 to p3 and is three times the length of p3 – p2.  In particular, x' (1) = 0 if and only 
+if p3 = p2. 
+b. x'' (t) = (6 – 6t)p0 + (–12 + 18t)p1 + (6 – 18t)p2 + 6tp3, so that  
+ x'' (0) = 6p0 – 12p1 + 6p2 = 6(p0 – p1) + 6(p2 – p1)   
+ and x'' (1) = 6p1 – 12p2 + 6p3 = 6(p1 – p2) + 6(p3 – p2) 
+For a picture of x'' (0), construct a coordinate system with the origin at  p1, temporarily, label p0 
+as p0 − p1, and label p2 as p2 − p1.  Finally, construct a line from this new origin through the sum 
+of p0 − p1 and p2 − p1, extended out a bit.  That line points in the direction of x'' (0). 
+ 
+ 
+ 
+ 
+ 
+ 
+4. a. x' (t) = () ( ) ()22 2 2 01 2 316 36 3 91 2 96 3 3tt t t tt t⎡⎤−+ − + − + −+ + +⎣⎦ pp p p  
+x' (0) = () 2012 −pp   and  x' (1) = () 3112 −pp  
+(Verify that, in the first part of Fig. 10, a line drawn through p0 and p2 is parallel to the 
+tangent line at the beginning of the B-spline.)   
+ When x' (0) and x' (1) are both zero, the figure collapses and the convex hull of the set of 
+control points is the line segment between p0 and p3, in which case x(t) is a straight line.  
+Where does x(t) start?  In this case,  
+ x (t) = 32 32 0316 (4 6 2 ) ( 4 6 4 )tt tt⎡⎤−+ + + − +⎣⎦ pp    
+ x (0) = 12 0333 +pp    and   x(1) = 21 0333 +pp  
+0 = p1  
+p0 – p1 
+p2 – p1 
+w 
+1
+01 21 6() ()( 0 ) ′′=− + − =wp p p p x
+----- pagina 25 -----
+8.6  Solutions   477  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+The curve begins closer to p3 and finishes closer to p0.  Could it turn around during its travel? 
+Since x' (t) = 2t(1 − t)(p0 − p3), the curve travels in the direction p0 − p3, so when x' (0) = x' (1) 
+= 0, the curve always moves away from p3 toward p0 for 0 < t < 1. 
+b. x'' (t) = (1 – t)p0 + (–2 + 3t)p1 + (1 – 3t)p2 + tp3 
+x'' (0) = p0 – 2p1 + p2 = (p0 − p1) + (p2 − p1)   
+and   x'' (1) = p1 – 2p2 + p3 = (p1 − p2) + (p3 − p2) 
+For a picture of x'' (0), construct a coordinate system with the origin at p1, temporarily, label p0 as 
+p0 − p1, and label p2 as p2 − p1.  Finally, construct a line from this new origin to the sum of p0 − p1 
+and p2 − p1.  That segment represents x'' (0). 
+For a picture of x'' (1), construct a coordinate system with the origin at p2, temporarily, label p1 as 
+p1 − p2, and label p3 as p3 − p2.  Finally, construct a line from this new origin to the sum of  
+p1 − p2 and p3 − p2.  That segment represents x'' (1). 
+ 
+ 
+ 
+ 5. a. From Exercise 3(a) or equation (9) in the text,   
+ x ' (1) = 3(p3 – p2)  
+Use the formula for x'(0), with the control points from y(t), and obtain 
+ y ' (0) = –3p3 + 3p4 = 3(p4 – p3) 
+For C1 continuity, 3( p3 – p2) = 3( p4 – p3), so p3 = ( p4 + p2)/2, and p3 is the midpoint of the 
+line segment from p2 to p4. 
+b. If x' (1) = y' (0) = 0, then p2 = p3 and p3 = p4.  Thus, the “line segment” from p2 to p4 is just 
+the point p3.  [ Note: In this case, the combined curve is still C1 continuous, by definition.  
+However, some choices of the other control points, p0, p1, p5, and p6 can produce a curve 
+with a visible “corner” at p3, in which case the curve is not G1 continuous at p3.] 
+6. a. With x(t) as in Exercise 2,   
+ x (0) = (p0 + 4p1 + p2)/6   and   x(1) = (p1 + 4p2 + p3)/6   
+Use the formula for x(0), but with the shifted control points for y(t), and obtain  
+ y(0) = (p1 + 4p2 + p3)/6 
+This equals x(1), so the B-spline is G0 continuous at the join point. 
+b. From Exercise 4(a),  
+ x' (1) = (p3 – p1)/2   and   x' (0) = (p2 – p0)/2 
+Use the formula for x' (0) with the control points for y(t), and obtain  
+ y' (0) = (p3 – p1)/2 = x' (1)  
+Thus the B-spline is C1 continuous at the join point. 
+7. From Exercise 3(b), 
+x'' (0) = 6(p0 – p1) + 6(p2 – p1)   and   x'' (1) = 6(p1 – p2) + 6(p3 – p2) 
+Use x'' (0) with the control points for y(t), to get 
+ y '' (0) = 6(p3 – p4) + 6(p5 – p4)  
+p2 = 0
+p3 – p2 
+p1 – p2 
+w 
+12 32() () ( 1 ) ′′=−+− =wp p p p x
+----- pagina 26 -----
+478 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Set x'' (1) = y'' (0) and divide by 6, to get  
+   ( p1 – p2) + (p3 – p2) = (p3 – p4) + (p5 – p4)     (*) 
+Since the curve is C1 continuous at p3, the point p3 is the midpoint of the segment from p2 to p4, by 
+Exercise 5(a).  Thus 132 4 2 ()=+pp p , which leads to p4 – p3 = p3 – p2. Substituting into (*) gives 
+ ( p1 – p2) + (p3 – p2) =  –(p3 – p2) + p5 – p4  
+ ( p1 – p2) + 2(p3 – p2) + p4 = p5 
+Finally, again from C1 continuity, p4 = p3 + p3 – p2.  Thus, 
+ p5 = p3 + (p1 – p2) + 3(p3 – p2) 
+So p4 and p5 are uniquely determined by p1, p2, and p3.   Only p6 can be chosen arbitrarily. 
+8. From Exercise 4(b), x'' (0) = p0 – 2p1 + p2 and x'' (1) = p1 – 2p2 + p3.  Use the formula for x'' (0), with 
+the shifted control points for y(t), to get 
+y'' (0) =  p1 – 2p2 + 2p3 = x'' (1)  
+Thus the curve has C2 continuity at x(1). 
+9. Write a vector of the polynomial weights for x(t), expand the polynomial weights and factor the 
+vector as MBu(t): 
+23 4
+23 4
+223 4
+334
+44
+14 6 4 1 1 464 1
+41 2 1 2 4 041 21 24
+00 61 2661 26
+0 004 444
+0 000 1
+tt tt
+ttt tt
+ttt t
+ttt
+tt
+⎡⎤ −+ − + ⎡ ⎤−−⎡⎤⎢⎥ ⎢ ⎥⎢⎥⎢⎥ −+− −− ⎢ ⎥⎢⎥⎢⎥ ⎢ ⎥⎢⎥= −−+⎢⎥ ⎢ ⎥⎢⎥⎢⎥ ⎢ ⎥−⎢⎥−⎢⎥ ⎢ ⎥⎢⎥⎢⎥ ⎣⎦ ⎢ ⎥⎣ ⎦⎢⎥⎣⎦ ,   MB = 14 6 4 1041 21 2400 61 2600 0 4400 0 01−−⎡ ⎤⎢ ⎥−−⎢ ⎥⎢ ⎥−⎢ ⎥−⎢ ⎥⎢ ⎥⎣ ⎦  
+10. Write a vector of the polynomial weights for x(t), expand the polynomial weights, taking care to 
+write the terms in ascending powers of t, and factor the vector as MSu(t): 
+23
+23
+223
+33
+13 3 1 1331
+4 6 3 406311
+13336613 3 3
+0001
+ttt
+ttt
+ttt t
+tt
+⎡⎤ −+ − ⎡ ⎤−−⎡⎤⎢⎥ ⎢ ⎥⎢⎥⎢⎥ −+ − ⎢ ⎥⎢⎥=⎢⎥ ⎢ ⎥⎢⎥ −++ −⎢⎥ ⎢ ⎥⎢⎥⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎢⎥⎣⎦  = MSu(t),   MS = 133140631 13336 0001−−⎡ ⎤⎢ ⎥−⎢ ⎥⎢ ⎥−⎢ ⎥⎢ ⎥⎣ ⎦  
+11. a. True.  See equation (2). 
+ b. False.  Example 1 shows that the tangent vector x′(t) at p0 is two times the directed line segment 
+from p0 to p1. 
+ c. True.  See Example 2. 
+12. a.  False.  The essential properties are preserved under translations as well as linear transformations.  
+See the comment after Figure 1. 
+ b. True.  This is the definition of G0 continuity at a point. 
+ c. False.  The Bézier basis matrix is a matrix of the polynomial coefficients of the control points.  
+See the definition before equation (4). 
+13. a. From (12), 11 110 10 1 0 22 2()−= − = −qq pp p p .  Since 100 1 1 0 2,  ( )== +qp q p p . 
+b. From (13),  8( q3 – q2) = –p0 – p1 + p2 + p3.  So 8q3 + p0 + p1 – p2 – p3 = 8q2.   
+c. Use (8) to substitute for 8 q3, and obtain  
+----- pagina 27 -----
+8.6  Solutions   479  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+8q2 = (p0 + 3p1 + 3p2 + p3) + p0 + p1 – p2 – p3  =  2p0 + 4p1 + 2p2   
+Then divide by 8, regroup the terms, and use part (a) to obtain 
+1 1 11 1 1 11 1
+2 012 01 12 1 1 24 2 44 4 4 42 4
+11
+11 222
+() ()( )
+(( ) )
+= + + = +++ = ++
+=++
+q p pp p p pp q p p
+qp p
+ 
+14. a.  3( r3 − r2) = z'(1), by (9) with z'(1) and rj in place of x'(1) and pj.  
+z'(1) = .5x'(1), by (11) with t = 1. 
+.5x'(1) = (.5)3(p3 − p2), by (9). 
+b. From part (a), 6( r3 − r2) = 3(p3 − p2),  11 1132 3 2 3 3 2 222 22 , and  .−= − − + =rr p p r p p r    
+Since r3 = p3, this equation becomes 123 2 2 ()=+rp p . 
+c. 3( r1 − r0) = z' (0), by (9) with z'(0) and rj in place of x'(0) and pj.  
+z' (0) = .5x'(.5), by (11) with t = 0. 
+d. Part (c) and (10) show that 3( r1 − r0) = 38 (−p0 − p1 + p2 + p3).  Multiply by 83  and rearrange to 
+obtain  8r1 = −p0 − p1 + p2 + p3 + 8r0. 
+e. From (8), 8 r0 = p0 + 3p1 + 3p2 + p3.  Substitute into the equation from part (d), and obtain 
+8r1 = 2p1 + 4p2 + 2p3.  Divide by 8 and use part (b) to obtain 
+ ()11 1 11 1 1 1 11123 12 2 3 1 2 242 4 44 4 2 2 2 () ( )=++= + + + = + +rpp p pp p p p p r i  
+Interchange the terms on the right, and obtain r1 = 11 21 222[( ) ]++rp p . 
+15. a. From (11), y'(1) = .5x'(.5) = z'(0).   
+b. Observe that y'(1) = 3(q 3 – q 2).  This follows from (9), with y(t) and its control points in 
+place of x(t) and its control points.  Similarly, for z(t) and its control points, z'(0) = 3(r1 – r0).  
+By part (a) 3(q 3 – q 2) = 3(r1 – r0).  Replace r0 by q 3, and obtain q 3 – q 2 = r1 – q 3, and hence 
+q 3 = (q 2 + r1)/2. 
+c. Set q 0 = p0 and r3 = p3.  Compute q1 = (p0 + p1)/2 and r2 = (p2 + p3)/2.  Compute m = (p1 + p2)/2. 
+Compute q 2 = (q1 + m)/2  and  r1 = (m + r2)/2.  Compute q 3 = (q 2 + r1)/2  and  set r0 = q 3. 
+16. A Bézier curve is completely determined by its four control points.  Two are given directly: p0 = 
+x(0) and p3 = x(1).  From equation (9), x' (0) = 3(p1 – p0) and x' (1) = 3(p3 – p2).  Solving gives 
+  p1 = p0 + 13 x' (0)   and   p2 =  p3 − 13 x' (1)  
+17. a. The quadratic curve is w(t) = (1 – t) 2 p0 + 2t(1 − t)p1 + t 2 p2.  From Example 1, the tangent 
+vectors at the endpoints are w' (0) = 2 p1 − 2p0 and w' (1) = 2 p2 − 2p1.    Denote the control 
+points of x(t) by r0, r1, r2, and r3.  Then 
+ r 0 = x(0) = w(0) = p0   and   r3 = x(1) = w(1) = p2   
+From equation (9) or Exercise 3(a) (using ri in place of pi) and Example 1,  
+  – 3 r0 + 3r1 = x' (0) = w' (0) = 2p1 − 2p0  
+ so   −p0 + r1 = 1022 3−pp    and    
+----- pagina 28 -----
+480 CHAPTER 8  The Geometry of Vector Sp aces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  r1 = 01 23+pp          ( i) 
+Similarly, using the tangent data at t = 1, along with equation (9) and Example 1, yields 
+ –3 r2 + 3r3 = x' (1) = w' (1) = 2p2 − 2p1,     
+ −r2 + p2 = 2122 3−pp ,   r2 = 212 22 3−− ppp ,   and    
+ r2 = 122 3+pp          ( ii) 
+b. Write the standard formula (7) in this section, with ri in place of pi for i = 1, …, 4, and then 
+replace r0 and r3 by p0 and p2, respectively: 
+ x (t) = (1 – 3t + 3t2 – t 3)p0 + (3t – 6t2 + 3t 3)r1 + (3t2 – 3t 3)r2 + t 3p2   ( iii) 
+Use the formulas (i) and (ii) for r1 and r2 to examine the second and third terms in (iii): 
+ 
+23 23 23 12
+101 33
+23 2 3
+01
+(3 6 3 ) (3 6 3 ) (3 6 3 )
+(2 ) ( 24 2 )
+tt t tt t tt t
+ttt tt t
+−+ = −+ + −+
+=− + + − +
+rp p
+pp
+ 
+ 
+23 23 23 21
+212 33
+23 2 3
+12
+(3 3 ) (3 3 ) (3 3 )
+(2 2 ) ( )
+tt tt tt
+tt t t
+−= −+ −
+=− + −
+rpp
+pp
+ 
+When these two results are substituted in (iii), the coefficient of p0 is 
+ (1 − 3t + 3t 
+2 − t 3) + (t − 2t 2 + t 3) = 1 − 2t + t 2 = (1 − t)2 
+The coefficient of p1 is 
+ (2 t − 4t 
+2 + 2t 3) + (2t 2 − 2t 3) = 2t − 2t 2 = 2t(1 − t) 
+The coefficient of p2 is ( t 
+2 − t 3) + t 3 = t 2.  So x(t) = (1 − t)2p0 + 2 t(1 − t)p1 + t 2p2, which 
+shows that x(t) is the quadratic Bézier curve w(t). 
+18. 
+0
+01
+012
+012 3
+33
+363
+33
+⎡⎤
+⎢⎥ −+⎢⎥
+⎢⎥ −+
+⎢⎥−+ − +⎢⎥⎣⎦
+p
+pp
+pp p
+pp p p
+ 

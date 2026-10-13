@@ -1,0 +1,260 @@
+
+----- pagina 1 -----
+Clase 11 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 12
+----- pagina 2 -----
+Recordatorio
+Dado un SEL, podemos tomar la matriz de coeficientes A, el
+vector de resultados b y la matriz ampliada
+[
+A b
+]
+Usando operaciones de fila, podemos llegar a la forma escalonada
+(reducida).
+Un sistema lineal es consistente si y solo si una forma escalonada de
+la matriz aumentada NO contiene una fila del tipo
+[ 0 · · · 0 | b ] , b ̸= 0.
+Si el sistema es consistente, entonces tiene:
+única solución si no hay variables libres,
+infinitas soluciones si hay al menos una variable libre.
+2 / 12
+----- pagina 3 -----
+Conjuntos solución de sistemas lineales
+Sistemas lineales homogéneos
+Un sistema es homogéneo si puede escribirse como
+Ax = 0.
+El sistema homogéneo siempre tiene al menos una solución, a saber
+x = 0
+(la solución trivial).
+3 / 12
+----- pagina 4 -----
+Conjuntos solución de sistemas lineales
+Ejemplo: Determine si el sistema homogéneo tiene una solución no trivial
+y describa su conjunto solución:
+
+
+
+3x1 + 5x2 − 4x3 = 0
+−3x1 − 2x2 + 4x3 = 0
+6x1 + x2 − 8x3 = 0
+.
+Nota: 
+
+3 5 −4
+−3 −2 4
+6 1 −8
+
+ ∼
+
+
+1 0 − 43
+0 1 13
+0 0 0
+
+ .
+Observación: Si A ∼ B, entonces las soluciones de Ax = 0 y Bx = 0 son
+las mismas. Esto no es válido para sistemas no homogéneos .
+4 / 12
+----- pagina 5 -----
+Conjuntos solución de sistemas lineales
+Existencia de soluciones no triviales
+El sistema homogéneo Ax = 0 tiene una solución no trivial si y solo si el
+sistema tiene al menos una variable libre.
+Más aún, las soluciones de los sistema homogéneo siempre son conjuntos
+generados:
+x = t1u1 + t2u2 + . . . + tkuk
+Esta forma describe rectas, planos, etc. que pasan por el origen.
+5 / 12
+----- pagina 6 -----
+Conjuntos solución de sistemas lineales
+Ejemplo: Considere la ecuación lineal homogénea
+10x1 − 3x2 − 2x3 = 0.
+Describa todas sus soluciones.
+6 / 12
+----- pagina 7 -----
+Conjuntos solución de sistemas lineales
+Sistemas no homogéneos
+Para un sistema
+Ax = b
+con al menos una solución p, el conjunto solución completo tiene la forma:
+x = p + vh,
+donde vh recorre todas las soluciones del sistema homogéneo Ax = 0.
+7 / 12
+----- pagina 8 -----
+Conjuntos solución de sistemas lineales
+Ejemplo: Describa todas las soluciones de Ax = b, donde
+A =
+
+
+3 5 −4
+−3 −2 4
+6 1 −8
+
+ , b =
+
+
+7
+−1
+−4
+
+ .
+La matriz aumentada es:
+
+
+3 5 −4 7
+−3 −2 4 −1
+6 1 −8 −4
+
+ .
+Nota: La matriz es equivalente por fila a:
+
+
+1 0 − 43 −1
+0 1 0 2
+0 0 0 0
+
+ .
+8 / 12
+----- pagina 9 -----
+Conjuntos solución de sistemas lineales
+Interpretación geométrica
+La solución general tiene la forma
+x = p + Soluciones del sistema homogéneo ,
+Es decir, las soluciones de Ax = b se obtienen trasladando las soluciones
+de Ax = 0 por un vector p.
+Nota: Si un sistema consistente
+tiene una única o infinitas soluciones,
+y cuántos parámetros quedan, de-
+pende exclusivamente de la forma
+escalonada de la matriz A, no del
+vector b.
+9 / 12
+----- pagina 10 -----
+Conjuntos solución de sistemas lineales
+Nota: Si se desea resolver varios sistemas con una misma matriz de
+coeficientes A, las soluciones en los casos consistentes son las mismas
+salvo traslaciones.
+Ejemplo: Resuelva los sistemas con matrices ampliadas:
+
+
+1 1 1 0
+1 2 3 0
+2 3 4 0
+
+ ,
+
+
+1 1 1 1
+1 2 3 4
+2 3 4 5
+
+ y
+
+
+1 1 1 2
+1 2 3 3
+2 3 4 0
+
+
+E interprete el problema en su contexto geométrico.
+Nota:
+
+
+1 1 1 0 1 2
+1 2 3 0 4 3
+2 3 4 0 5 0
+
+ ∼
+
+
+1 0 −1 0 −2 0
+0 1 2 0 3 0
+0 0 0 0 0 1
+
+
+10 / 12
+----- pagina 11 -----
+Conjuntos solución de sistemas lineales
+Ejemplo: Determine una matriz A y un vector b de manera que la
+solución del sistema Ax = b sea la recta con dirección
+
+
+1
+2
+3
+
+ y pasa por el
+punto P(0, 1, −1).
+Ejemplo: Sea Ax = b un SEL con solución
+x =
+
+
+3
+1
+0
+
+ + t
+
+
+1
+2
+0
+
+ + s
+
+
+−1
+1
+1
+
+ .
+Determine si existe un vector c tal que el SEL Ax = c tenga como solución
+la recta
+x =
+
+
+4
+5
+6
+
+ + t
+
+
+1
+2
+0
+
+
+11 / 12
+----- pagina 12 -----
+Conjuntos solución de sistemas lineales
+Ejemplo: Suponga que A ∼
+
+
+1 0 −1
+0 1 1
+0 0 0
+
+ y que la suma de sus
+columnas es
+
+
+−1
+2
+3
+
+. Encuentre las soluciones del sistema
+Ax =
+
+
+−1
+2
+3
+
+
+12 / 12

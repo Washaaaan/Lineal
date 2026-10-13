@@ -1,0 +1,1395 @@
+
+----- pagina 1 -----
+ 
+                                Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley.  167  
+ 
+  
+ 
+3.1 SOLUTIONS 
+Notes: Some exercises in this section provide practice in computing determinants, while others allow the 
+student to discover the properties of determinants wh ich will be studied in the next section. Determinants 
+are developed through the cofactor expansion, which is given in Theorem 1. Exercises 33–36 in this 
+section provide the first step in the inductive proof of Theorem 3 in the next section.  
+ 1. Expanding along the first row:  
+  
+30 4 32 22 2 32 3 2 3 0 4 3( 13) 4(10) 151 01 0 505 1 =−+ = − + =−−−   
+  Expanding along the second column:  
+  12 22 32
+30 4 22 34 3 42 3 2 ( 1) 0 ( 1) 3 ( 1) 5 3( 3) 5( 2) 101 01 2 205 1 ++ +=− ⋅ +− ⋅ +− ⋅ = − − − =−−−  
+ 2. Expanding along the first row:  
+  
+05 1 30 40 4 34 3 0 0 5 1 5(4) 1(22) 241 21 2 424 1 −−−= − + = − + =   
+  Expanding along the second column:  
+  12 22 32
+05 1 40 01 014 3 0 ( 1) 5 ( 1) ( 3) ( 1) 4 5(4) 3( 2) 4( 4) 221 21 4024 1 ++ +− =− ⋅ +− ⋅− +− ⋅ = − − − − − =   
+ 3. Expanding along the first row:  
+  
+243 12 32 3 13 1 2 2 ( 4) 3 2( 9) 4( 5) (3)(11) 541 11 1 4141− =− −+ = − + − + = −−−−   
+ 
+
+----- pagina 2 -----
+168 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Expanding along the second column:  
+ 
+ 
+12 22 32
+243 32 23 2 33 1 2 (1 ) (4 ) (1 ) 1 (1 ) 4 4 (5 ) 1 (5 ) 4 (5 ) 511 11 3 2141 ++ +− =− ⋅− +− ⋅ +− ⋅ = − + − − − = −−−−
+  
+ 4 . Expanding along the first row:  
+  
+135 11 21 212 1 1 1 3 5 1( 2) 3(1) 5(5) 2042 32 34342 =−+ = − − + =   
+  Expanding along the second column:  
+  12 22 32
+135 21 15 152 1 1 ( 1) 3 ( 1) 1 ( 1) 4 3(1) 1( 13) 4( 9) 2032 32 21342 ++ += − ⋅ + − ⋅ + − ⋅ = − + − −−=   
+ 5. Expanding along the first row:  
+  
+23 4 05 45 404 0 5 2 3 ( 4) 2( 5) 3( 1) 4(4) 2316 56 5151 6 − =−+ − = − − − − = −   
+ 6. Expanding along the first row:  
+  
+524 35 05 030 3 5 5 ( 2) 4 5(1) 2(10) 4( 6) 147 27 24247 − −−−= − − + = + +−=−−−   
+ 7. Expanding along the first row:  
+  
+430 52 62 65652 4 3 0 4 ( 1 ) 3 ( 0 ) 473 93 97973 =− += − =  
+ 8 . Expanding along the first row: 
+  
+81 6 03 43 4 04 0 3 8 1 6 8(6) 1(11) 6( 8) 1125 35 3 232 5 =− += − + − = −−−−   
+ 9. First expand along the third row, then expand along the first row of the remaining matrix:  
+----- pagina 3 -----
+3.1  Solutions   169  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  31 13
+600 5 00 5172 5 72 ( 1) 2 7 2 5 2 ( 1) 5 10(1) 10200 0 31 31 8831 8 ++− =− ⋅ − = ⋅− ⋅ = =   
+ 10. First expand along the second row, then expand along either the third row or the second column of 
+the remaining matrix. 
+  23
+125 2 12 2003 0 (1 ) 3 2 6 5267 5 50 4504 4 +− −=− ⋅ −−−  
+  31 3322 1 2( 3) ( 1) 5 ( 1) 4 ( 3) (5(2) 4( 2)) 665 2 6++⎛⎞ −−=− − ⋅ +− ⋅ =− + − = −⎜⎟ −−⎝⎠  
+  or 
+  23
+125 2 12 2003 0 (1 ) 3 2 6 5267 5 50 4504 4 +− −=− ⋅ −−−  
+  12 2225 12(3 )(1 ) (2 ) (1 ) (6 )54 54++⎛⎞=− − ⋅− +− ⋅−⎜⎟⎝⎠  ()(3 )2 (1 7 ) 6 (6 ) 6=− − − − = −  
+ 11. There are many ways to do this determinant efficiently. One strategy is to always expand along the 
+first column of each matrix:  
+  11 11
+3584 23 70237 1 5 (1 ) 3 0 1 5 3(1 ) (2 )0015 0 2 00 20002 ++− −−−− =− ⋅ = ⋅− ⋅−  = 3(–2)(2) = –12 
+ 12. There are many ways to do this determinant efficiently. One strategy is to always expand along the 
+first row of each matrix:  
+  11 11
+40 00 10 071 00 3 0 (1 ) 4 6 3 0 4(1 ) (1 )26 30 4384 358 43 ++ −− =− ⋅ = ⋅− ⋅− −−−−−  = 4(–1)( –9) = 36  
+  
+  
+----- pagina 4 -----
+170 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+13. First expand along either the second row or the second column. Using the second row,  
+  23
+40 7 3 5 40 3 500 2 0 0 73 4 8(1 ) 273 6 4 8 50 2 350 5 2 3 00 1 200 9 1 2 +−− −−=− ⋅−− −− −−  
+  Now expand along the second column to find:  
+  23 22
+40 3 5 43573 4 8(1 ) 2 2(1 ) 3 5 2 350 2 3 01200 1 2++ − ⎛⎞ −− ⎜⎟−⋅ = − −⋅ − ⎜⎟− ⎜⎟ −⎝⎠−  
+  Now expand along either the first column or third row. The first column is used below. 
+  22
+435
+2(1 ) 3 5 2 3
+012
++
+⎛⎞ −
+⎜⎟−− ⋅ −⎜⎟
+⎜⎟ −⎝⎠
+11 2123 356 ( 1) 4 ( 1) 5 ( 6)(4(1) 5(1)) 612 12++⎛⎞ −−=− − ⋅ + − ⋅ = − − =⎜⎟ −−⎝⎠   
+ 14. First expand along either the fourth row or the fifth column. Using the fifth column,  
+  35
+632 4 0 63 24904 1 0 90 41(1 ) 1856 7 1 30 00300 0 0 42 32423 2 0 +− −=− ⋅−  
+  Now expand along the third row to find:  
+  35 31
+63 24 32 490 41(1 ) 1 1(1 ) 3 0 4 130 00 23 242 32++ ⎛⎞− ⎜⎟−⋅ = −⋅ − ⎜⎟⎜⎟⎝⎠  
+  Now expand along either the first column or second row. The first column is used below. 
+  31
+32 4
+1(1 ) 30 4 1
+23 2
++
+⎛⎞
+⎜⎟−⋅ −⎜⎟
+⎜⎟⎝⎠
+11 3141 243 ( 1) 3 ( 1) 2 (3)(3( 11) 2(18)) 932 41++⎛⎞ −=− ⋅ + − ⋅ = − + =⎜⎟ −⎝⎠  
+ 15. 
+30 4
+23 2
+05 1
+=
+−
+ (3)(3)(–1) + (0)(2)(0) + (4)(2)(5) – (0)(3)(4) – (5)(2)(3) – (–1)(2)(0)  
+    = –9 + 0 + 40 – 0 – 30 –0 = 1 
+----- pagina 5 -----
+3.1  Solutions   171  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 16. 
+05 1
+43 0
+24 1
+−=  (0)(–3)(1) + (5)(0)(2) + (1)(4)(4) – (2)(–3)(1) – (4)(0)(0) – (1)(4)(5) 
+    = 0 + 0 + 16 – (–6) – 0 – 20 = 2 
+ 17. 
+243
+31 2
+141
+−
+=
+−
+ (2)(1)(–1) + (–4)(2)(1) + (3)(3)(4) – (1)(1)(3) – (4)(2)(2) – (–1)(3)(–4)  
+    = –2 + (–8) + 36 – 3 – 16 – 12 = –5 
+ 18. 
+135
+211
+342
+=  (1)(1)(2) + (3)(1)(3) + (5)(2)(4) – (3)(1)(5) – (4)(1)(1) – (2)(2)(3)  
+    = 2 + 9 + 40 – 15 – 4 – 12 = 20 
+ 19. ,ab ad bccd =−  ()cd cb da ad bcab =−= − −  
+  The row operation swaps rows 1 and 2 of the matrix, and the sign of the determinant is reversed. 
+ 20. ,ab ad bccd =−  () ( ) ( )ab ak d k cb k a d k b c ka d b ckc kd =− = − = −  
+  The row operation scales row 2 by k, and the determinant is multiplied by k. 
+ 21. 34 18 20 2,56 =− = −  34 3(6 4 ) (5 3 )4 253 64 kkkk =+− + = −++  
+  The row operation replaces row 2 with k times row 1 plus row 2, and the determinant is unchanged. 
+ 22. ,ab ad bccd =−  () ()ak c bk d a kc d c b kd ad kcd bc kcd ad bccd++ = + − + =+ − − =−  
+  The row operation replaces row 1 with k times row 2 plus row 1, and the determinant is unchanged. 
+ 23. 
+111
+3 8 4 1(4) 1(2) 1( 7) 5,
+232
+−− = − + − = −
+−
+ 384 ( 4 ) ( 2 ) ( 7 )5
+232
+kkk
+kkk k−− = − + − = −
+−
+ 
+  The row operation scales row 1 by k, and the determinant is multiplied by k. 
+ 24. 322 ( 2 ) ( 6 ) ( 3 ) 2 6 3 ,
+656
+abc
+abc a b c=−+= − +  
+----- pagina 6 -----
+172 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+322
+3 ( 65 ) 2 ( 66 ) 2 ( 56 ) 263
+656
+abc b c a c a b a b c=− −− +− = − + −  
+  The row operation swaps rows 1 and 2 of the matrix, and the sign of the determinant is reversed. 
+ 25. Since the matrix is triangular, by Theorem 2 the determinant is the product of the diagonal entries:  
+  
+100
+0 1 0 (1)(1)(1) 1
+01 k
+==  
+ 26. Since the matrix is triangular, by Theorem 2 the determinant is the product of the diagonal entries:  
+  
+100
+0 1 0 (1)(1)(1) 1
+01k
+==  
+ 27. Since the matrix is triangular, by Theorem 2 the determinant is the product of the diagonal entries:  
+  
+00
+010 ( ) ( 1 ) ( 1 )
+001
+k
+kk==  
+ 28. Since the matrix is triangular, by Theorem 2 the determinant is the product of the diagonal entries:  
+  
+100
+0 0 (1)( )(1)
+001
+kk k ==  
+ 29. A cofactor expansion along row 1 gives 
+  
+010 10100 1 1 01001 =− =−  
+ 30. A cofactor expansion along row 1 gives 
+  
+001 010101 1 10100 == −  
+ 31. A 3 × 3 elementary row replacement matrix looks like one of the six matrices  
+  
+100 100 100 100 10 1 0
+1 0,0 1 0,0 1 0,0 1 k,0 1 0,0 1 0
+001 01 0 1 001 001 001
+kk
+k
+kk
+⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  In each of these cases, the matrix is triangular and its determinant is the product of its diagonal 
+entries, which is 1. Thus the determinant of a 3 × 3 elementary row replacement matrix is 1. 
+----- pagina 7 -----
+3.1  Solutions   173  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 32. A 3 × 3 elementary scaling matrix with k on the diagonal looks like one of the three matrices  
+   
+00 100 100
+010 , 0 0 , 010
+001 001 00
+k
+k
+k
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+ 
+  In each of these cases, the matrix is triangular and its determinant is the product of its diagonal 
+entries, which is k. Thus the determinant of a 3 × 3 elementary scaling matrix with k on the diagonal 
+is k. 
+ 33. 01 ,10E ⎡⎤= ⎢⎥⎣⎦ ,abA cd⎡⎤= ⎢⎥⎣⎦ cdEA ab⎡⎤= ⎢⎥⎣⎦  
+  det E = –1, det A = ad – bc,  
+det EA = cb – da = –1(ad – bc) = (det E)(det A) 
+ 34. 10 ,0E k⎡⎤= ⎢⎥⎣⎦ ,abA cd⎡⎤= ⎢⎥⎣⎦ abEA kc kd⎡⎤= ⎢⎥⎣⎦  
+  det E = k, det A = ad – bc,  
+det EA = a(kd) – (kc)b = k(ad – bc) = (det E)(det A) 
+ 35. 1 ,01 kE ⎡⎤= ⎢⎥⎣⎦ ,abA cd⎡⎤= ⎢⎥⎣⎦ ak c bk dEA cd++⎡⎤= ⎢⎥⎣⎦  
+  det E = 1, det A = ad – bc,  
+det EA = (a + kc)d – c(b + kd) = ad + kcd – bc – kcd = 1(ad – bc) = (det E)(det A) 
+ 
+ 36. 10 ,1E k⎡⎤= ⎢⎥⎣⎦ ,abA cd⎡⎤= ⎢⎥⎣⎦ abEA ka c kb d⎡⎤= ⎢⎥ ++⎣⎦  
+  det E = 1, det A = ad – bc,  
+det EA = a(kb + d) – (ka + c)b = kab + ad – kab – bc = 1(ad – bc) = (det E)(det A) 
+ 37. 31 ,42A ⎡⎤= ⎢⎥⎣⎦  15 55, 20 10A ⎡⎤= ⎢⎥⎣⎦  det A = 2, det 5A = 50 ≠ 5det A 
+ 38. ,abA cd⎡⎤= ⎢⎥⎣⎦  ,ka kbkA kc kd⎡⎤= ⎢⎥⎣⎦  det A = ad – bc,  
+22det ( )( ) ( )( ) ( ) detkA ka kd kb kc k ad bc k A=− = − =  
+ 39. a. True. See the paragraph preceding the definition of the determinant. 
+ b. False. See the definition of cofactor, which precedes Theorem 1. 
+ 40. a. False. See Theorem 1. 
+ b. False. See Theorem 2. 
+----- pagina 8 -----
+174 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 41. The area of the parallelogram determined by 3 ,0⎡ ⎤= ⎢ ⎥⎣ ⎦u  1 ,2⎡ ⎤= ⎢ ⎥⎣ ⎦v  u + v, and 0 is 6, since the base of 
+the parallelogram has length 3 and the height of the parallelogram is 2. By the same reasoning, the 
+area of the parallelogram determined by 3 ,0⎡ ⎤= ⎢ ⎥⎣ ⎦u  ,2x⎡ ⎤= ⎢ ⎥⎣ ⎦x  u + x, and 0 is also 6. 
+ 
+  Also note that [] 31det det 6, 02⎡⎤== ⎢⎥⎣⎦uv  and [] 3det det 6. 02 x⎡⎤== ⎢⎥⎣⎦ux  The determinant of the 
+matrix whose columns are those vectors which define the sides of the parallelogram adjacent to 0 is 
+equal to the area of the parallelogram 
+42. The area of the parallelogram determined by ab⎡ ⎤= ⎢ ⎥⎣ ⎦u , 0c⎡ ⎤= ⎢ ⎥⎣ ⎦v , u + v, and 0 is cb, since the base of 
+the parallelogram has length c and the height of the parallelogram is b.
+ 
+  Also note that []det det 0ac cbb⎡⎤== − ⎢⎥⎣⎦uv , and []det det .0ca cbb⎡⎤== ⎢⎥⎣⎦vu  The determinant of 
+the matrix whose columns are those vectors which define the sides of the parallelogram adjacent to 0 
+either is equal to the area of the parallelogram or is equal to the negative of the area of the 
+parallelogram. 
+ 43. [M] Answers will vary. The conclusion should be that det (A + B) ≠ det A + det B. 
+ 44. [M] Answers will vary. The conclusion should be that det (AB) = (det A)(det B).
+X
+V
+UU
+X2
+X2
+X1 X1
+2
+1 2
+1
+11 22 4
+X2
+a
+b
+c
+X1
+U
+V
+----- pagina 9 -----
+ 3.2  Solutions   175  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 45. [M]  Answers will vary. For 4 × 4 matrices, the conclusions should be that det det ,TAA =   
+  det(–A) = det A, det(2A) = 16det A, and 4det (10 ) 10 detAA= . For 5 × 5 matrices, the conclusions 
+should be that det det ,TAA =  det(–A) = –det A, det(2A) = 32det A, and 5det (10 ) 10 det .AA=  For 6 
+× 6 matrices, the conclusions should be that det detTAA = , det(–A) = det A, det(2A) = 64det A, and 
+6det (10 ) 10 det .AA=  
+ 46. [M] Answers will vary. The conclusion should be that 1det 1/ det .AA− =  
+3.2 SOLUTIONS 
+Notes: This section presents the main properties of the determinant, including the effects of row 
+operations on the determinant of a matrix. These properties are first studied by examples in Exercises 1–
+20. The properties are treated in a more theoretical manner in later exercises. An efficient method for 
+computing the determinant using row reduction and se lective cofactor expansion is presented in this 
+section and used in Exercises 11–14. Theorems 4 and 6 are used extensively in Chapter 5. The linearity 
+property of the determinant studied in the text is optional, but is used in more advanced courses. 
+ 1. Rows 1 and 2 are interchanged, so the determinant changes sign (Theorem 3b.). 
+ 2. The constant 2 may be factored out of the Row 1 (Theorem 3c.). 
+ 3. The row replacement operation does not change the determinant (Theorem 3a.). 
+ 4. The row replacement operation does not change the determinant (Theorem 3a.). 
+ 5. 
+1561 561 56
+1440 120 12 3
+2790 330 03
+−−−
+−− = − = − =
+−− −
+ 
+ 6. 
+1531 53 153 153
+3 3 3 0 18 12 6 0 3 2 6 0 3 2 (6)( 3) 18
+2 1 370 31 031 001
+−−−−
+−= − = −= −= − = −
+−−−
+ 
+ 7. 
+13 0213 021 3021 302
+25 7401 780 1 780 1 78 03 5 2 1 0 4 2 5 0 0 30 27 0 0 30 27
+11 2304 250 0 3 0 2 70 000
+−− ==== −−
+−− −−
+ 
+ 8. 
+1334133 41 3 34
+0125012 50 1 25 02543012 50 0 00
+37520241 00 0 00
+−− −
+−− −== =−− −
+−−− −
+ 
+----- pagina 10 -----
+176 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. 
+113 0 113 01130 1130
+015 4015 40154 0154 (3 ) 31 2 85 0 1 55 0 0 0 1 0 0 3 5
+312 3027 30035 000 1
+−− −− −− −−
+== = − = − − =−− −
+−− −−
+ 
+ 10. 
+13 10 2 13 10 2 1 3 10 2
+02416024160 2416
+26239000350 0035
+3738702081 0 0477
+355270482 1 30 0001
+−− −− −−
+−−− −−− −−−
+== =−−
+−−− − −−
+−
+ 
+   
+13 1 0 2
+0 2416
+( 24) 2400 4 7 7
+00 0 3 5
+00 0 0 1
+−−
+−−−
+−= − − = −−  
+ 11. First use a row replacement to create zeros in the second column, and then expand down the second 
+column: 
+  
+25 3 1 2 5 3 1 31 330 13 3 0 13 56 4 96 049 6 049 02141 0 4 1 00 2 1−− −− −−− == − − −−− − − −−  
+  Now use a row replacement to create zeros in the first column, and then expand down the first 
+column:  
+  
+31 3 31 3 235 6 4 9 5 0 2 3 ( 5)(3) ( 5)(3)( 8) 120 21021 021 −− −− − − = − − =− =− − =  
+ 12. First use a row replacement to create zeros in the fourth column, and then expand down the fourth 
+column: 
+  
+1230 12 30 12 33430 34 30 33 4 35466 30 20 30 24243 42 43−− −==−− −−  
+  Now use a row replacement to create zeros in the first column, and then expand down the first 
+column: 
+12 3 1 2 3 10 123 3 4 3 3 0 10 12 3( 1) 3( 1)( 38) 114 61 130 2 0 6 1 1−− == − = − − =−−−− − −   
+ 13. First use a row replacement to create zeros in the fourth column, and then expand down the fourth 
+column: 
+----- pagina 11 -----
+ 3.2  Solutions   177  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  
+254 1 254 1 032476 2 032 0 16 2 4624 0 624 0 677677 0 677 0 −−−−== − − −−− −− −−−  
+  Now use a row replacement to create zeros in the first column, and then expand down the first 
+column: 
+032 032 321 624 1 624 ( 1 ) ( 6 ) ( 1 ) ( 6 ) ( 1 ) 6 53677 053−− −− −−− − −= − − −= −− = −− =−   
+ 14. First use a row replacement to create zeros in the third column, and then expand down the third 
+column:  
+  
+3214 32 14 1331303 13 03 19 0 03428 90 00 3443404 34 04−− − −− − −−− == −−− − −−−  
+  Now expand along the second row:  
+  
+133 331 9 0 0 1( ( 9)) (1)(9)(0) 0 44344 − −−= − −= = −−   
+ 15. 55 (7) 3 5
+555
+ab c a b c
+def d e f
+ghi g h i
+== =  
+ 16. 33 3 3 3 ( 7 ) 2 1
+abc a b c
+def d e f
+gh i g h i
+== =  
+ 17. 7
+abc abc
+gh i de f
+def ghi
+=− =−   
+ 18. (7 ) 7
+ghi abc abc
+abc gh i de f
+def def ghi
+⎛⎞
+⎜⎟=− =− − =− − = ⎜⎟
+⎜⎟⎝⎠
+  
+ 19. 22 2 2 2 2 2 2 ( 7 ) 1 4
+abca b c a b c
+da e b fc d e f d e f
+ghig h i g h i
+++ + = = = =  
+----- pagina 12 -----
+178 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 20. 7
+a db ecf ab c
+defd e f
+ghig h i
+++ +
+==  
+ 21. Since 
+230
+134 1 0
+121
+=− ≠ , the matrix is invertible. 
+ 22. Since 
+50 1
+132 0
+053
+−
+−− = , the matrix is not invertible. 
+ 23. Since 
+200 8
+175 0 0386 0
+075 4
+−− = , the matrix is not invertible. 
+ 24. Since 
+473
+605 1 1 0
+726
+−−
+−= ≠
+−
+, the columns of the matrix form a linearly independent set. 
+ 25. Since 
+787
+450 1 0
+675
+−
+−= − ≠
+−−
+, the columns of the matrix form a linearly independent set. 
+ 26. Since 
+3220
+5610 06030
+4703
+−
+−− =−
+−
+, the columns of the matrix form a linearly dependent set. 
+ 27. a. True. See Theorem 3. 
+ b. True. See the paragraph following Example 2. 
+ c. True. See the paragraph following Theorem 4. 
+ d. False. See the warning following Example 5. 
+ 28. a. True. See Theorem 3. 
+ b. False. See the paragraphs following Example 2. 
+ c. False. See Example 3. 
+ d. False. See Theorem 5. 
+ 29. By Theorem 6, 55 5det (det ) ( 2) 32BB== − = − . 
+----- pagina 13 -----
+ 3.2  Solutions   179  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 30. Suppose the two rows of a square matrix A are equal. By swapping these two rows, the matrix A is 
+not changed so its determinant should not change. But since swapping rows changes the sign of the 
+determinant, det A = – det A. This is only possible if det A = 0. The same may be proven true for 
+columns by applying the above result to TA  and using Theorem 5. 
+ 31. By Theorem 6, 1(det )(det ) det 1AA I − == , so 1det 1/ det .AA− =  
+ 32. By factoring an r out of each of the n rows, det ( ) det . nrA r A=  
+ 33. By Theorem 6, det AB = (det A)(det B) = (det B)(det A) = det BA. 
+ 34. By Theorem 6 and Exercise 31,  
+   11 1det ( ) (det )(det )(det ) (det )(det )(det )PAP P A P P P A−− −==  
+   1(det ) (det ) 1detdetPA A P⎛⎞== ⎜⎟⎝⎠  
+   det A=  
+ 35. By Theorem 6 and Theorem 5, 2det (det )(det ) (det ) .TTUU U U U==  Since ,TUU I =  
+det det 1TUU I == , so 2(det ) 1.U =  Thus det U = ±1. 
+ 36. By Theorem 6 44det (det )AA= . Since 4det 0A = , then 4(det ) 0A = . Thus det A = 0, and A is not 
+invertible by Theorem 4. 
+ 37. One may compute using Theorem 2 that det A = 3 and det B = 8, while 6017 4AB ⎡⎤= ⎢⎥⎣⎦ . Thus  
+det AB = 24 = 3 × 8 = (det A)(det B). 
+ 38. One may compute that det A = 0 and det B = –2, while 6020AB ⎡ ⎤= ⎢ ⎥−⎣ ⎦ . Thus  
+det AB = 0 = 0 × –2 = (det A)(det B). 
+ 39. a. By Theorem 6, det AB = (det A)(det B) = 4 × –3 = –12. 
+ b. By Exercise 32, 3det 5 5 det 125 4 500AA== × = . 
+ c. By Theorem 5, det det 3TBB == − . 
+ d. By Exercise 31, 1det 1/ det 1/ 4AA− == . 
+ e. By Theorem 6, 33 3det (det ) 4 64AA== = . 
+ 40. a. By Theorem 6, det AB = (det A)(det B) = –1 × 2 = –2. 
+ b. By Theorem 6, 55 5det (det ) 2 32BB== = . 
+ c. By Exercise 32, 4det 2 2 det 16 1 16AA== × − = − . 
+ d. By Theorems 5 and 6, det (det )(det ) (det )(det ) 1 1 1TTAA A A A A== = − × − = . 
+----- pagina 14 -----
+180 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ e. By Theorem 6 and Exercise 31,  
+11det (det )(det )(det ) (1/ det )(det )(det ) det 1BA B B A B B A B A−− === = − . 
+ 41. det A = (a + e)d – c(b + f) = ad + ed – bc – cf = (ad – bc) + (ed – cf) = det B + det C. 
+ 42. 1det ( ) (1 )(1 ) 1 det det1abA B a d cb a d ad cb A a d Bcd++= = + +−= + + + −= + + ++ , so  
+det (A + B) = det A + det B if and only if a + d = 0. 
+ 43. Compute det A by using a cofactor expansion down the third column:  
+   1 1 13 2 2 23 3 3 33det ( )det ( )det ( )detAuv A uv A uv A=+ −+ ++  
+   1 13 2 23 3 33 1 13 2 23 3 33det det det det det detuA u A uA vA vA vA=− ++−+  
+   det detBC=+  
+ 44. By Theorem 5, det det ( ) . TAE AE=  Since () TT TAE E A= , det det( ). TTAE E A=  Now TE  is itself 
+an elementary matrix, so by the proof of Theorem 3, det ( ) (det )(det ).TT T TEA E A=  Thus it is true 
+that det (det )(det ), TTAE E A=  and by applying Theorem 5, det AE = (det E)(det A). 
+ 45. [M] Answers will vary, but will show that det TAA  always equals 0 while det TAA  should seldom 
+be zero. To see why TAA - should not be invertible (and thus det 0TAA = ), let A be a matrix with 
+more columns than rows. Then the columns of A must be linearly dependent, so the equation Ax = 0 
+must have a non-trivial solution x. Thus () ( ) ,TT TAA A A A== =xx 0 0  and the equation () TAA =x0  
+has a  
+non-trivial solution. Since TAA  is a square matrix, the Invertible Matrix Theorem now says that 
+TAA  is not invertible. Notice that the same argument will not work in general for ,TAA  since TA  
+has more rows than columns, so its columns are not automatically linearly dependent. 
+ 46. [M] One may compute for this matrix that det A = –4008  and cond A ≈ 16.3. Note that this is the 2A  
+condition number, which is used in Section 2.3. Since det A ≠ 0, it is invertible and  
+   1
+837 181 207 297
+750 574 30 6541
+171 195 87 10954008
+21 187 81 639
+A−
+−− −⎡⎤
+⎢⎥−−⎢⎥=− ⎢⎥ −−
+⎢⎥ −−⎣⎦
+ 
+  The determinant is very sensitive to scaling, as 4det10 10 det 40,080,000AA== −  and  
+det 0.1A = 4(0.1) det 0.4008.A =−  The condition number is not changed at all by scaling:  
+cond(10A) = cond(0.1A) = cond A ≈ 16.3.  When 4AI= , det A=1 and cond A = 1. As before the 
+determinant is sensitive to scaling: 4det10 10 det 10,000AA==  and 4det 0.1 (0.1) det 0.0001.AA==  
+Yet the condition number is not changed by scaling: cond(10A) = cond(0.1A) = cond A = 1. 
+----- pagina 15 -----
+3.3  Solutions   181  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+3.3 SOLUTIONS 
+Notes: This section features several independent topics from which to choose. The geometric 
+interpretation of the determinant (Theorem 10) provides the key to changes of variables in multiple 
+integrals. Students of economics and engineering are likely to need Cramer’s Rule in later courses. 
+Exercises 1–10 concern Cramer’s Rule, exercises 11–18 deal with the adjugate, and exercises 19–32 
+cover the geometric interpretation of the determinant. In particular, Exercise 25 examines students’ 
+understanding of linear independence and requires a careful explanation, which is discussed in the Study 
+Guide. The Study Guide also contains a heuristic proof of Theorem 9 for 2 × 2 matrices. 
+ 1. The system is equivalent to Ax = b, where 5724A ⎡ ⎤= ⎢ ⎥⎣ ⎦  and 31⎡ ⎤= ⎢ ⎥⎣ ⎦b . We compute  
+12 1 2
+37 53() , () , d e t 6 , d e t () 5 , d e t () 1 ,14 21AA A A A⎡⎤ ⎡⎤== = = = −⎢⎥ ⎢⎥⎣⎦ ⎣⎦bb b b   
+12
+12
+det ( ) det ( )51,.det 6 det 6AAxx AA== = = −bb  
+ 2. The system is equivalent to Ax = b, where 4152A ⎡ ⎤= ⎢ ⎥⎣ ⎦  and 67⎡ ⎤= ⎢ ⎥⎣ ⎦b . We compute  
+12 1 2
+61 46( ) , ( ) , det 3, det ( ) 5, det ( ) 2,72 57AA A A A⎡⎤ ⎡⎤== = = = −⎢⎥ ⎢⎥⎣⎦ ⎣⎦bb b b   
+12
+12
+det ( ) det ( )52,.det 3 det 3AAxx AA== = = −bb  
+ 3. The system is equivalent to Ax = b, where 3256A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  and 75⎡ ⎤= ⎢ ⎥−⎣ ⎦b . We compute  
+12 1 2
+72 37() , () , d e t 8 , d e t () 3 2 , d e t () 2 0 ,56 55AA A A A −⎡⎤ ⎡⎤== = = =⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦bb b b   
+12
+12
+det ( ) det ( )32 20 54, .det 8 det 8 2AAxx AA== = == =bb  
+ 4. The system is equivalent to Ax = b, where 5331A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  and 95⎡ ⎤= ⎢ ⎥−⎣ ⎦b . We compute  
+12 1 2
+93 59() , () , d e t 4 , d e t () 6 , d e t () 2 ,51 35AA A A A −⎡⎤ ⎡⎤== = − = = −⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦bb b b   
+12
+12
+det ( ) det ( )63 2 1,.det 4 2 det 4 2AAxx AA −== = − = = = −−bb  
+----- pagina 16 -----
+182 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. The system is equivalent to Ax = b, where 
+21 0
+30 1
+01 2
+A
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and 
+7
+8
+3
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+b . We compute  
+12 3
+71 0 2 70 21 7
+() 8 0 1, () 3 8 1, () 3 0 8,
+312 0 32 01 3
+AA A
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− =− − =− −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+bb b   
+  12 3det 4,det ( ) 6,det ( ) 16,det ( ) 14,AA A A=== = − bb b   
+  31212 3 det ( )det ( ) det ( )6 3 16 14 7,4 , .det 4 2 det 4 det 4 2 AAAxx x AA A −== = = = = == = − bbb  
+ 6. The system is equivalent to Ax = b, where 
+211
+102
+313
+A
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and 
+4
+2
+2
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+b . We compute  
+12 3
+411 2 41 21 4
+() 2 0 2, () 1 2 2, () 1 0 2,
+213 3 23 31 2
+AA A
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥== − = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+bb b  
+  12 3det 4, det ( ) 16, det ( ) 52, det ( ) 4,AA A A== − = = −bb b   
+  31212 3 det ( )det ( ) det ( ) 16 52 44, 13, 1.det 4 det 4 det 4 AAAxx x AA A −−== = − = = = == = − bbb  
+ 7. The system is equivalent to Ax = b, where 6492sA s⎡ ⎤= ⎢ ⎥⎣ ⎦  and 52⎡ ⎤= ⎢ ⎥−⎣ ⎦b . We compute  
+12 12
+54 6 5( ) , ( ) , det ( ) 10 8, det ( ) 12 45.22 9 2 sAA A s A s s⎡⎤ ⎡⎤== = + = − −⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦bb bb   
+Since 22det 12 36 12( 3) 0As s=− = − ≠  for 3s ≠± , the system will have a unique solution when 
+3s ≠± . For such a system, the solution will be  
+12
+12 22 22
+det ( ) det ( )10 8 5 4 12 45 4 15,.det det12( 3) 6( 3) 12( 3) 4( 3)AA ss ssxx AA ss ss++ − − − −== = = = = −− −−bb  
+ 8. The system is equivalent to Ax = b, where 3595sA s−⎡ ⎤= ⎢ ⎥⎣ ⎦  and 32⎡ ⎤= ⎢ ⎥⎣ ⎦b . We compute  
+12 1 2
+35 33( ) , ( ) , det ( ) 15 10, det ( ) 6 27.25 92 sAA A s A s s−⎡⎤ ⎡ ⎤== = + = −⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦bb b b   
+Since 22det 15 45 15( 3) 0As s=+ = + ≠  for all values of s, the system will have a unique solution for 
+all values of s. For such a system, the solution will be  
+12
+12 22 22
+det ( ) det ( )15 10 3 2 6 27 2 9,.det det15( 3) 3( 3) 15( 3) 5( 3)AA ss s sxx AA ss ss++ − −== = = = = ++ ++bb  
+----- pagina 17 -----
+3.3  Solutions   183  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. The system is equivalent to Ax = b, where 236ssA s−⎡ ⎤= ⎢ ⎥⎣ ⎦  and 14−⎡ ⎤= ⎢ ⎥⎣ ⎦b . We compute  
+12 1 2
+12 1() , () , d e t () 2 , d e t () 4 3 .46 34 ssAA A s A ss−− −⎡⎤ ⎡ ⎤== = = +⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦bb b b   
+Since 2det 6 6 6 ( 1) 0As ss s=+ = + =  for s = 0, –1, the system will have a unique solution when s ≠ 0, 
+–1. For such a system, the solution will be  
+12
+12
+det ( ) det ( )21 4 3,.d e t 6 (1 ) 3 (1 ) d e t 6 (1 )AA ssxx As s s As s +== = == ++ +bb  
+ 10. The system is equivalent to Ax = b, where 2136sA ss⎡ ⎤= ⎢ ⎥⎣ ⎦  and 12⎡ ⎤= ⎢ ⎥⎣ ⎦b . We compute  
+12 1 2
+11 21() , () , d e t () 6 2 , d e t () .26 3 2 sAA A s A s ss⎡⎤ ⎡⎤== = − =⎢⎥ ⎢⎥⎣⎦ ⎣⎦bb b b   
+Since 2det 12 3 3 (4 1) 0Ass s s=− = − =  for s = 0,1/4, the system will have a unique solution when  
+s ≠ 0,1/4. For such a system, the solution will be  
+12
+12
+det ( ) det ( )62 1,.det 3 (4 1) det 3 (4 1) 3(4 1)AA ssxx As s As s s −== = = = −− −bb  
+ 11. Since det A = 3 and the cofactors of the given matrix are  
+   11
+00 0,11C ==  12 30 3,11C =− =−−  13 30 3,11C ==−  
+   21
+21 1,11C −−=− =  22 01 1,11C −== −−  23 02 2,11C −=− =−  
+   31
+21 0,00C −−==  32 01 3,30C −=− =−  33 02 6,30C −==  
+  
+010
+adj 3 1 3
+326
+A
+⎡⎤
+⎢⎥=− − −⎢⎥
+⎢⎥⎣⎦
+ and 1
+01 / 30
+1 adj 1 1/ 3 1 .det 12 / 32AA A−
+⎡ ⎤
+⎢ ⎥== − − − ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+ 12. Since det A = 5 and the cofactors of the given matrix are  
+   11
+21 1,10C −== −  12 21 0,00C =− =  13 22 2,01C −==  
+   21
+13 3,10C =− =  22 13 0,00C ==  23 11 1,01C =− =−  
+   31
+13 7,21C ==−  32 13 5,21C =− =  33 11 4,22C == − −  
+  
+137
+adj 0 0 5
+214
+A
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥ −−⎣⎦
+ and 1
+1/5 3/5 7/5
+1 adj 0 0 1 .det 2/5 1/5 4/5AA A−
+−⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥−−⎣ ⎦
+ 
+----- pagina 18 -----
+184 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 13. Since det A = 6 and the cofactors of the given matrix are  
+   11
+01 1,11C == −  12 11 1,21C =− =  13 10 1,21C ==  
+   21
+54 1,11C =− =−  22 34 5,21C == −  23 35 7,21C =− =  
+   31
+54 5,01C ==  32 34 1,11C =− =  33 35 5,10C == −  
+  
+115
+adj 1 5 1
+17 5
+A
+−−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −⎣⎦
+ and 1
+1/6 1/6 5/6
+1 a d j 1/6 5/6 1/6 .det 1/6 7/6 5/6AA A−
+−−⎡ ⎤
+⎢ ⎥== − ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+ 14. Since det A = –1 and the cofactors of the given matrix are  
+   11
+21 5,34C ==  12 01 2,24C =− =  13 02 4,23C == −  
+   21
+67 3,34C =− =−  22 37 2,24C == −  23 36 3,23C =− =  
+   31
+67 8,21C == −  32 37 3,01C =− =−  33 36 6,02C ==  
+  
+538
+adj 2 2 3
+436
+A
+−−⎡⎤
+⎢⎥=− −⎢⎥
+⎢⎥−⎣⎦
+ and 1
+538
+1 adj 2 2 3 .det 436AA A−
+−⎡ ⎤
+⎢ ⎥== − ⎢ ⎥
+⎢ ⎥−−⎣ ⎦
+ 
+ 15. Since det A = 6 and the cofactors of the given matrix are  
+   11
+10 2,32C ==  12 10 2,22C −=− =−  13 11 1,23C −== −−  
+   21
+00 0,32C =− =  22 30 6,22C ==−  23 30 9,23C =− =−−  
+   31
+00 0,10C ==  32 30 0,10C =− =−  33 30 3,11C ==−  
+  
+20 0
+adj 2 6 0
+19 3
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−−⎣⎦
+ and 1
+1/3 0 0
+1 adj 1/ 3 1 0 .det 1/6 3/2 1/2AA A−
+⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥−−⎣ ⎦
+ 
+ 16. Since det A = –9 and the cofactors of the given matrix are  
+   11
+31 9,03C −== −  12 01 0,03C =− =  13 03 0,00C −==  
+   21
+24 6,03C =− =−  22 14 3,03C ==  23 12 0,00C =− =  
+----- pagina 19 -----
+3.3  Solutions   185  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   31
+24 14,31C ==−  32 14 1,01C =− =−  33 12 3,03C == − −  
+  
+96 1 4
+adj 0 3 1
+003
+A
+−−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −⎣⎦
+ and 1
+1 2/3 1 4/9
+1 adj 0 1/ 3 1/ 9 .det 00 1 / 3AA A−
+−⎡ ⎤
+⎢ ⎥== − ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+ 17. Let abA cd⎡⎤= ⎢⎥⎣⎦ . Then the cofactors of A are 11 ,Cd d==  12 ,Cc c=− =−  21Cb b=− =− , and 
+22Ca a== . Thus adj dbA ca −⎡⎤= ⎢⎥−⎣⎦ . Since det A = ad – bc, Theorem 8 gives that 
+1 11 adjdet dbAA caAa d b c− −⎡⎤== ⎢⎥−− ⎣⎦ . This result is identical to that of Theorem 4 in Section 2.2. 
+ 18. Each cofactor of A is an integer since it is a sum of products of entries in A. Hence all entries in adj A 
+will be integers. Since det A = 1, the inverse formula in Theorem 8 shows that all the entries in 1A−  
+will be integers. 
+ 19. The parallelogram is determined by the columns of 5624A ⎡ ⎤= ⎢ ⎥⎣ ⎦ , so the area of the parallelogram is  
+|det A| = |8| = 8. 
+ 20. The parallelogram is determined by the columns of 1435A −⎡ ⎤= ⎢ ⎥−⎣ ⎦ , so the area of the parallelogram 
+is |det A| = |–7| = 7. 
+ 21. First translate one vertex to the origin. For example, subtract (–1, 0) from each vertex to get a new 
+parallelogram with vertices (0, 0),(1, 5),(2, –4), and (3, 1). This parallelogram has the same area as 
+the original, and is determined by the columns of 1254A ⎡ ⎤= ⎢ ⎥−⎣ ⎦ , so the area of the parallelogram is  
+|det A| = |–14| = 14. 
+ 22. First translate one vertex to the origin. For example, subtract (0, –2) from each vertex to get a new 
+parallelogram with vertices (0, 0),(6, 1),(–3, 3), and (3, 4). This parallelogram has the same area as  
+the original, and is determined by the columns of 6313A −⎡ ⎤= ⎢ ⎥⎣ ⎦ , so the area of the parallelogram is  
+|det A| = |21| = 21. 
+ 23. The parallelepiped is determined by the columns of 
+117
+021
+240
+A
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+, so the volume of the 
+parallelepiped is |det A| = |22| = 22. 
+----- pagina 20 -----
+186 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 24. The parallelepiped is determined by the columns of 
+121
+452
+021
+A
+−−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+, so the volume of the 
+parallelepiped is |det A| = |–15| = 15. 
+ 25. The Invertible Matrix Theorem says that a 3 × 3 matrix A is not invertible if and only if its columns 
+are linearly dependent. This will happen if and only if one of the columns is a linear combination of 
+the others; that is, if one of the vectors is in the plane spanned by the other two vectors. This is 
+equivalent to the condition that the parallelepiped determined by the three vectors has zero volume, 
+which is in turn equivalent to the condition that det A = 0. 
+ 26. By definition, p + S is the set of all vectors of the form p + v, where v is in S. Applying T to a typical 
+vector in p + S, we have T(p + v) = T(p) + T(v). This vector is in the set denoted by T(p) + T(S). This 
+proves that T maps the set p + S into the set T(p) + T(S).  Conversely, any vector in T(p) + T(S) has 
+the form T(p) + T(v) for some v in S. This vector may be written as T(p + v). This shows that every 
+vector in T(p) + T(S) is the image under T of some point p + v in p + S. 
+ 27. Since the parallelogram S is determined by the columns of 2235−−⎡ ⎤⎢ ⎥⎣ ⎦ , the area of S is 
+22det | 4 | 4.35−−⎡⎤ =− =⎢⎥⎣⎦  The matrix A has 62det 6 32A −==− . By Theorem 10, the area of T(S) 
+is |det A|{area of S} = 6 ⋅ 4 = 24. Alternatively, one may compute the vectors that determine the 
+image, namely, the columns of  
+   [] 12
+62 22 1 82 2
+3 2 3 5 12 16A −− − − −⎡⎤ ⎡⎤ ⎡ ⎤==⎢⎥ ⎢⎥ ⎢ ⎥−⎣⎦ ⎣⎦ ⎣ ⎦bb  
+  The determinant of this matrix is –24, so the area of the image is 24. 
+ 28. Since the parallelogram S is determined by the columns of 4071⎡ ⎤⎢ ⎥−⎣ ⎦ , the area of S is 
+40det | 4 | 471⎡⎤ ==⎢⎥−⎣⎦ . The matrix A has 72det 5 11A == . By Theorem 10, the area of T(S) is  
+|det A|{area of S} =5 ⋅ 4 = 20.  Alternatively, one may compute the vectors that determine the image, 
+namely, the columns of  
+   [] 12
+72 40 1 42
+11 71 31A ⎡⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦bb  
+  The determinant of this matrix is 20, so the area of the image is 20. 
+ 29. The area of the triangle will be one half of the area of the parallelogram determined by 1v  and 2 .v  
+By Theorem 9, the area of the triangle will be (1/2)|det A|, where [] 12 .A = vv  
+ 30. Translate R to a new triangle of equal area by subtracting 33(, )xy  from each vertex. The new triangle 
+has vertices (0, 0), 13 1 3(, )xx yy−− , and 23 23(, ) .xx yy−−  By Exercise 29, the area of the triangle 
+will be  
+----- pagina 21 -----
+3.3  Solutions   187  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   13 23
+13 23
+1 det .2 xx x xyy yy−−⎡⎤⎢⎥ −−⎣⎦  
+  Now consider using row operations and a cofactor expansion to compute the determinant in the 
+formula:  
+   
+11 1 31 3
+13 13
+22 2 32 3
+23 23
+33 3 3
+10
+det 1 det 0 det
+11
+xy x xy y xx yyxy x xy y xx yyxy x y −−⎡⎤ ⎡ ⎤ −−⎡ ⎤⎢⎥ ⎢ ⎥ =− − = ⎢ ⎥⎢⎥ ⎢ ⎥ −−⎣ ⎦⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+  By Theorem 5,   
+ 13 13 13 23
+2 3 23 13 23
+det detxx yy xx x xxx yy y y yy−− −−⎡⎤ ⎡⎤ =⎢⎥ ⎢⎥−− −−⎣⎦ ⎣⎦  
+  So the above observation allows us to state that the area of the triangle will be  
+   
+11
+13 23
+22
+13 23
+33
+1
+11det det 122 1
+xyxx x x xyyy y y xy⎡ ⎤−−⎡⎤ ⎢ ⎥=⎢⎥ ⎢ ⎥−−⎣⎦ ⎢ ⎥⎣ ⎦  
+ 31. a. To show that T(S) is bounded by the ellipsoid with equation 
+222
+312
+222 1xxxabc++= , let 
+1
+2
+3
+u
+u
+u
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  and 
+let 
+1
+2
+3
+x
+xA
+x
+⎡⎤
+⎢⎥==⎢⎥
+⎢⎥⎣⎦
+xu . Then 11 /ux a= , 22 /ux b= , and 33 /ux c= , and u lies inside S (or 
+222
+12 3 1uuu++≤ ) if and only if x lies inside T(S) (or 
+222
+312
+222 1xxxabc++≤ ). 
+b. By the generalization of Theorem 10,  
+   {volume of ellipsoid} {volume of ( )}TS=  
+   44|d e t | { v o l u m eo f } 33 abcA S abc ππ=⋅ ==  
+ 32. a. A linear transformation T that maps S onto S′ will map 1e  to 1,v  2e  to 2 ,v  and 3e  to 3 ;v  that is, 
+11()T =ev , 22()T =ev , and 33() .T =ev  The standard matrix for this transformation will be 
+[] [ ]123 1 2 3() ( ) () .AT T T== ee e v v v
+----- pagina 22 -----
+188 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. The area of the base of S is (1/2)(1)(1) = 1/2, so the volume of S is (1/3)(1/2)(1) = 1/6. By part a.  
+T(S) = S′ , so the generalization of Theorem 10 gives that the volume of S′  is |det A|{volume of 
+S} = (1/6)|det A|. 
+ 33. [M] Answers will vary. In MATLAB, entries in B – inv(A) are approximately 1510−  or smaller. 
+ 34. [M] Answers will vary, as will the commands which produce the second entry of x. For example, the 
+MATLAB command is x2 = det([A(:,1) b A(:,3:4)])/det(A) while the Mathematica 
+command is x2 = Det[{Transpose[A][[1]],b,Transpose[A][[3]], 
+Transpose[A][[4]]}]/Det[A]. 
+ 35. [M] MATLAB Student Version 4.0 uses 57,771 flops for inv A and 14,269,045 flops for the inverse 
+formula. The inv(A) command requires only about 0.4% of the operations for the inverse formula. 
+Chapter 3 SUPPLEMENTARY EXERCISES 
+ 1. a. True. The columns of A are linearly dependent. 
+ b. True. See Exercise 30 in Section 3.2. 
+ c. False. See Theorem 3(c); in this case 3det 5 5 detAA= . 
+ d. False. Consider 2001A ⎡⎤= ⎢⎥⎣⎦ , 1003B ⎡ ⎤= ⎢ ⎥⎣ ⎦ , and 3004AB ⎡ ⎤+= ⎢ ⎥⎣ ⎦ . 
+ e. False. By Theorem 6, 33det 2A = . 
+ f. False. See Theorem 3(b). 
+ g. True. See Theorem 3(c). 
+ h. True. See Theorem 3(a). 
+ i. False. See Theorem 5. 
+ j. False. See Theorem 3(c); this statement is false for n × n invertible matrices with n an even 
+integer. 
+ k.  True. See Theorems 6 and 5; 2det (det )TAA A= . 
+  l. False. The coefficient matrix must be invertible. 
+m. False. The area of the triangle is 5. 
+ n. True. See Theorem 6; 33det (det )AA= . 
+ o. False. See Exercise 31 in Section 3.2. 
+ p. True. See Theorem 6. 
+ 2 . 
+12 13 14 12 13 14
+15 16 17 3 3 3 0
+18 19 20 6 6 6
+==  
+ 3. 
+11 1
+10 ( ) ( ) 0 1 1 0
+10 0 1 1
+ab c a b c ab c
+ba c b aa b b a c a
+ca b c aa c
+++ +
++= − −=− − − =
++− − −
+ 
+----- pagina 23 -----
+ Chapter 3  Supplementary Exercises   189  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 4. 111 0
+111
+abc a b c a b c
+a xb xc x xxx x y
+a y b yc y yyy
++++ = = =
++++
+ 
+ 5. 
+91999 9992 40590992 4050(1 ) (1 ) (2 ) 9 3 940050 9390 60790390 607060070 =− =− −  
+  45( 1)( 2)(3) ( 1)( 2)(3)( 2) 1267=− − =− − − = −  
+ 6. 
+48885 4885 48501000 6887 45(1) (1)(2) 6 8 7 (1)(2)( 3) (1)(2)( 3)( 2) 1268887 0830 67 03008830 020008200 = = =− =− − =  
+ 7 . Expand along the first row to obtain  
+11 1 1
+11
+22 2 2
+22
+1 1111 0 . 111 xy xy y xxy x y xy y xxy =− + =  
+This is an equation of the form ax + by + c = 0, and since the points 11(, )xy  and 22(, )xy  are distinct, 
+at least one of a and b is not zero. Thus the equation is the equation of a line. The points 11(, )xy  and 
+22(, )xy  are on the line, because when the coordinates of one of the points are substituted for x and y, 
+two rows of the matrix are equal and so the determinant is zero. 
+ 8. Expand along the first row to obtain  
+11 1 1
+11 1 1
+1 1111 1 ( ) ( ) ( 1 ) 0 .100 101 xy xy y xxy x y m x yx m ymmm =− += − − + =  This equation may 
+be rewritten as 11 0,mx y mx y−− + =  or 11 () .yy m xx−= −  
+ 9 . 
+22 2
+22 2
+22 2
+11 1
+det 1 0 0 ( )( )
+0( ) ( )10
+aa a a aa
+Tb b b a b a b a b a b a
+ca ca cacc c ac a
+== − − = − − +
+−− +−−
+ 
+   
+2211
+() () 0 1 () () 0 1 () () ()
+01 00
+aa aa
+ba ca ba ba ca ba ba ca cb
+ca cb
+=− − +=− − +=− − −
++−
+ 
+----- pagina 24 -----
+190 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 10. Expanding along the first row will show that 2301 2 3() d e t .ft V c c t c t c t== + + +  By Exercise 9,  
+   
+2
+11
+2
+3 2 2 2 13 13 2
+2
+33
+1
+1 ( )( )( ) 0
+1
+xx
+cx x x x x x x x
+xx
+=− = − − − ≠  
+  since 1x , 2x , and 3x  are distinct. Thus f (t) is a cubic polynomial. The points 1(, 0 )x , 2(, 0 )x , and 
+3(, 0 )x  are on the graph of f, since when any of 1x , 2x  or 3x  are substituted for t, the matrix has two 
+equal rows and thus its determinant (which is f (t)) is zero. Thus () 0ifx =  for i = 1, 2, 3. 
+ 11. To tell if a quadrilateral determined by four points is a parallelogram, first translate one of the 
+vertices to the origin. If we label the vertices of this new quadrilateral as 0, 1v , 2v , and 3v , then 
+they will be the vertices of a parallelogram if one of 1v , 2v , or 3v  is the sum of the other two. In 
+this example, subtract (1, 4) from each vertex to get a new parallelogram with vertices 0 = (0, 0),
+1 (2 , 1 )=−v , 2 (2,5)=v , and 3 (4,4)=v . Since 23 1=+vv v , the quadrilateral is a parallelogram as 
+stated. The translated parallelogram has the same area as the original, and is determined by the 
+columns of [] 13
+24
+14A −⎡⎤== ⎢⎥⎣⎦vv , so the area of the parallelogram is |det A| = |–12| = 12. 
+ 12. A 2 × 2 matrix A is invertible if and only if the parallelogram determined by the columns of A has 
+nonzero area. 
+ 13. By Theorem 8, 11(adj ) detAA A A IA −⋅= = . By the Invertible Matrix Theorem, adj A is invertible 
+and 1 1(adj ) detAA A− = . 
+ 14. a. Consider the matrix k
+k
+AOA OI⎡⎤= ⎢⎥⎣⎦ , where 1 ≤ k ≤ n and O is an appropriately sized zero matrix. 
+We will show that det detkAA=  for all 1 ≤ k ≤ n by mathematical induction. 
+  First let k = 1. Expand along the last row to obtain  
+(1 ) (1 )
+1det det ( 1) 1 det det .1 nnAOAA A O ++ +⎡⎤== − ⋅ ⋅ =⎢⎥⎣⎦  
+  Now let 1 < k ≤ n and assume that 1det det .kAA− =  Expand along the last row of kA  to obtain  
+() ()
+11det det ( 1) 1 det det det . nk nkkk k
+k
+AOAA A A OI +++ −−⎡⎤== − ⋅ ⋅ = =⎢⎥⎣⎦  Thus we have proven the 
+result, and the determinant of the matrix in question is det A. 
+b. Consider the matrix kk
+k
+IOA CD⎡⎤= ⎢⎥⎣⎦ , where 1 ≤ k ≤ n, kC  is an n × k matrix and O is an 
+appropriately sized zero matrix. We will show that det detkAD=  for all 1 ≤ k ≤ n by 
+mathematical induction.  
+----- pagina 25 -----
+ Chapter 3  Supplementary Exercises   191  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  First let k = 1. Expand along the first row to obtain  
+11
+1
+1
+1det det ( 1) 1 det det .OAD D CD +⎡⎤== − ⋅ ⋅ =⎢⎥⎣⎦  
+  Now let 1 < k ≤ n and assume that 1det det .kAD− =  Expand along the first row of kA  to obtain  
+11
+11det det ( 1) 1 det det det .kkk k
+k
+IOAA A D CD + −−⎡⎤== − ⋅ ⋅ = =⎢⎥⎣⎦  Thus we have proven the result, and 
+the determinant of the matrix in question is det D. 
+c. By combining parts a. and b., we have shown that  
+det det det (det )(det ).AO AO I O ADCD OI CD⎛⎞ ⎛⎞⎡⎤ ⎡⎤ ⎡⎤ ==⎜⎟ ⎜⎟⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦ ⎝⎠ ⎝⎠  
+  From this result and Theorem 5, we have  
+det det det (det )(det )
+T T
+TT
+TT
+AB AB A O ADOD OD BD⎡⎤⎡⎤ ⎡⎤ == = ⎢⎥⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎢⎥⎣⎦ (det )(det ).AD=  
+ 15. a. Compute the right side of the equation:  
+   IO A B A BX I O Y XA XB Y⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥ +⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  Set this equal to the left side of the equation: 
+   so thatAB A B XA C XB Y DC D XA XB Y⎡⎤ ⎡ ⎤ == + =⎢⎥ ⎢ ⎥ +⎣⎦ ⎣ ⎦  
+  Since XA = C and A is invertible, 1.XC A −=  Since XB + Y = D, 1YD X BD C A B −=− =− . Thus 
+by Exercise 14(c),  
+   11det det det
+IO A BAB
+CD CA I O D CA B−−
+⎡⎤ ⎡ ⎤⎡⎤ = ⎢⎥ ⎢ ⎥⎢⎥ −⎣⎦ ⎣⎦ ⎣ ⎦  
+   1(det )(det ( ))AD C A B −=−  
+b. From part a.,  
+   11det (det )(det ( )) det[ ( )]AB AD C A B A D C A BCD −−⎡⎤ =− = −⎢⎥⎣⎦  
+   11det[ ] det[ ]AD ACA B AD CAA B−−=− =−  
+   det[ ]AD CB=−  
+ 16. a. Doing the given operations does not change the determinant of A  since the given operations are 
+all row replacement operations. The resulting matrix is  
+   
+00
+00
+00 0
+ab ab
+ab ab
+ab
+bb b a
+−− + …⎡⎤
+⎢⎥ −− + …⎢⎥
+⎢⎥ −…
+⎢⎥
+⎢⎥
+⎢⎥ …⎣⎦
+## # % #
+ 
+----- pagina 26 -----
+192 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. Since column replacement operations are equivalent to row operations on TA  and det detTAA = , 
+the given operations do not change the determinant of the matrix. The resulting matrix is 
+   
+00 0
+00 0
+00 0
+23 ( 1 )
+ab
+ab
+ab
+bb b a n b
+−…⎡⎤
+⎢⎥ −…⎢⎥
+⎢⎥ −…
+⎢⎥
+⎢⎥
+⎢⎥ …+ −⎣⎦
+### % #
+ 
+c. Since the preceding matrix is a triangular matrix with the same determinant as A,  
+   1det ( ) ( ( 1) ). nAa b an b −=− +−  
+  
+17. First consider the case n = 2. In this case  
+   2det ( ),det ,0ab b b bBa a b C a b bab a−== − = = −  
+  so 22 2 2 1det det det ( ) ( )( ) ( ) ( (2 1) )A B C a a b a b b a ba b a b a ba b −= + = − +−=−= − + =− + − , and 
+the formula holds for n = 2. 
+  Now assume that the formula holds for all ( k – 1) × (k – 1) matrices, and let A, B, and C be k × k 
+matrices. By a cofactor expansion along the first column,  
+  21d e t ( ) ( ) ( ) ((2 ) ) ( ) ((2 ) )kk
+ab b
+ba bBa b a b a b ak b a b ak b
+bb a
+−−
+…
+…=− =− − +− =− +−
+…
+## % #  
+  since the matrix in the above formula is a ( k – 1) × (k – 1) matrix. We can perform a series of row 
+operations on C to “zero out” below the first pivot, and produce the following matrix whose 
+determinant is det C: 
+   00 .
+00
+bb b
+ab
+ab
+…⎡⎤
+⎢⎥ −…⎢⎥
+⎢⎥
+⎢⎥ …−⎢⎥⎣⎦
+## % #  
+  Since this is a triangular matrix, we have found that 1det ( ) kCb ab −=− . Thus  
+  11 1d e t d e t d e t () ( ( 2 ) ) () () ( ( 1 ) ) ,kk kA B C a ba kb b a b a ba k b−− −= + =− +− + − =− +−  
+  which is what was to be shown. Thus the formula has been proven by mathematical induction. 
+  
+18. [M] Since the first matrix has a = 3, b = 8, and n = 4, its determinant is 
+41 3(3 8) (3 (4 1)8) ( 5) (3 24) ( 125)(27) 3375.−−+ − = − + = − = −  Since the second matrix has a = 8, b = 
+3, and n = 5, its determinant is 51 4(8 3) (8 (5 1)3) (5) (8 12) (625)(20) 12,500.−−+ − = + = =  
+  
+----- pagina 27 -----
+ Chapter 3  Supplementary Exercises   193  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+19. [M] We find that  
+   
+111111111111 122221222122 1 , 1 , 1 . 123331233123 123441234 12345== =  
+  Our conjecture then is that  
+   
+111 1
+122 2
+1.123 3
+123 n
+…
+…
+=…
+…
+## #%#
+ 
+  To show this, consider using row replacement operations to “zero out” below the first pivot. The 
+resulting matrix is  
+   
+111 1
+011 1
+.012 2
+012 1 n
+…⎡⎤
+⎢⎥ …⎢⎥
+⎢⎥ …
+⎢⎥
+⎢⎥
+⎢⎥ …−⎣⎦
+###% #
+ 
+  Now use row replacement operations to “zero out” below the second pivot, and so on. The final 
+matrix which results from this process is  
+   
+111 1
+011 1
+,001 1
+000 1
+…⎡⎤
+⎢⎥ …⎢⎥
+⎢⎥ …
+⎢⎥
+⎢⎥
+⎢⎥ …⎣⎦
+### % #
+ 
+  which is an upper triangular matrix with determinant 1. 
+ 20. [M] We find that  
+   
+1111 11111111 1333 31333133 6 , 1 8 , 5 4 . 1366 61366136 1369 91369 13691 2== =  
+  Our conjecture then is that  
+----- pagina 28 -----
+194 CHAPTER 3  Determinants  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   2
+111 1
+133 3
+23 .136 6
+136 3 ( 1 )
+n
+n
+−
+…
+…
+=⋅…
+…−
+###% #
+ 
+  To show this, consider using row replacement operations to “zero out” below the first pivot. The 
+resulting matrix is  
+   
+111 1
+022 2
+.025 5
+025 3 ( 1 ) 1 n
+…⎡⎤
+⎢⎥ …⎢⎥
+⎢⎥ …
+⎢⎥
+⎢⎥
+⎢⎥ …− −⎣⎦
+### % #
+ 
+  Now use row replacement operations to “zero out” below the second pivot. The matrix which results 
+from this process is  
+   
+11111 1 1
+02222 2 2
+00333 3 3
+.00366 6 6
+00369 9 9
+003691 2 3 ( 2 ) n
+…⎡⎤
+⎢⎥ …⎢⎥
+⎢⎥ …
+⎢⎥ …⎢⎥
+⎢⎥ …⎢⎥
+⎢⎥
+⎢⎥ …−⎣⎦
+##### #% #
+ 
+  This matrix has the same determinant as the origin al matrix, and is recognizable as a block matrix of 
+the form  
+   ,ABOD⎡⎤⎢⎥⎣⎦  
+  where  
+  
+333 3 3 1111 1
+366 6 6 1222 211 and 3 . 369 9 9 1233 302
+3691 2 3 ( 2 ) 1234 2
+AD
+nn
+……⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥……⎢ ⎥⎢ ⎥⎡⎤ ⎢ ⎥⎢ ⎥== =……⎢⎥ ⎢ ⎥⎢ ⎥⎣⎦
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥…− −⎣ ⎦⎣ ⎦
+### #% # #### % #
+…
+ 
+  As in Exercise 14(c), the determinant of the matrix ABOD⎡ ⎤⎢ ⎥⎣ ⎦  is (det A)(det D) = 2 det D.  
+Since D is an (n – 2) × (n – 2) matrix,  
+----- pagina 29 -----
+ Chapter 3  Supplementary Exercises   195  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   22 2
+1111 1
+1222 2
+det 3 3 (1) 3 1233 3
+1234 2
+nn nD
+n
+−− −
+…
+…
+== = …
+…−
+#### % #
+ 
+  by Exercise 19. Thus the determinant of the matrix ABOD⎡ ⎤⎢ ⎥⎣ ⎦  is 22det 2 3 . nD −=⋅  
+ 
+----- pagina 30 -----
+ 
+ 
+ 

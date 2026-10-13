@@ -1,0 +1,575 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Primer Semestre 2023
+´Algebra Lineal - MAT1203
+Pauta Interrogaci´ on 3
+1. Considere el espacio vectorial P2 de los polinomios de grado menor o igual a 2 incluyendo
+el polinomio nulo. El conjunto B = {1 + t, 1 + t2, t+ t2} es una base para P2.
+(a) Encuentre la matriz de cambio de base desde B hacia la can´ onica (base est´ andar).
+(3 pts)
+(b) Usando el ´ ıtem anterior, determine una ecuaci´ on matricial que permita encontrar
+las coordenadas de p(t) = 6 + 3 y − t2 con respecto de la base B (no es necesario
+resolver la ecuaci´ on). (3 pts)
+Soluci´ on
+(a) La matriz de cambio de base desde B hacia la can´ onica{1, t, t2} es aquella cuyas
+columnas son los vectores de coordenadas de los elementos de B con respecto a la
+base can´ onica. De esta forma:
+PB =
+[1 + t] [1 + t2] [ t + t2] =
+
+
+1 1 0
+1 0 1
+0 1 1
+
+ .
+(b) La matriz del ´ ıtem anterior cumple quePB[x]B = [x] donde [x] corresponde al vector
+de coordenadas de x con respecto de la base can´ onica.
+Para encontrar las B-coordenadas del polinomio p debemos resolver el sistema de
+ecuaciones dado por la ecuaci´ on
+PB[p]B = [p] ⇐ ⇒
+
+
+1 1 0
+1 0 1
+0 1 1
+
+
+
+
+x
+y
+z
+
+ =
+
+
+6
+3
+−1
+
+ .
+Nota: Si define la base can´ onica como{t2, t,1}, entonces PB =
+
+
+0 1 1
+1 0 1
+1 1 0
+
+ y [p] =
+
+
+−1
+3
+6
+
+.
+Puntaje
+• 2 puntos por establecer, expl ´ ıcita o impl ´ ıcitamente, como calcular correctamente la
+matriz de cambio de base.
+• 1 punto por determinar correctamente la matriz PB.
+• 3 puntos por escribir correctamente la ecuaci´ on matricial pedida o alguna otra
+equivalente. Tambi´ en asignar el puntaje si se escribe la matriz aumentada.2. Sea A una matriz tal que A3 es la matriz nula.
+(a) Demuestre que si λ es valor propio de A entonces λ3 es valor propio de A3. (3 pts)
+(b) Concluya que λ = 0 es el ´ unico valor propio deA. (3 pts)
+Soluci´ on
+(a)
+Sea λ valor propio de A
+⇒ Av = λv para alg´ unv ̸= 0
+⇒ A(Av) = A(λv) para alg´ unv ̸= 0
+⇒ A2v = λAv = λ2v para alg´ unv ̸= 0
+⇒ A(A2v) = A(λ2v) para alg´ unv ̸= 0
+⇒ A3v = λ3v para alg´ unv ̸= 0
+esto significa que λ3 es valor propio de la matriz A3.
+(b) De lo anterior, como tenemos que A3 = 0 entonces λ3v = 0, lo que implica λ = 0.
+Por lo tanto, el ´ unico valor propio deA es λ = 0.
+Puntaje
+(a) • Asignar 1 de 3 puntos si no logra demostrar la proposici´ on pero escribe qu´ e
+significa que λ sea valor propio de A.
+• Asignar 2 de 3 puntos si escribe una demostraci´ on coherente pero tiene errores
+(por ejemplo, no afirma que el vector propio debe ser no nulo)
+• Asignar 3 puntos si la demostraci´ on es correcta.
+(b) 3 puntos si concluye correcta y justificadamente que λ = 0 (aunque no haya de-
+mostrado el ´ ıtem anterior).3. (a) Diagonalice las matrices A =
+
+3 1
+0 −1
+
+, B=
+
+1 2
+2 1
+
+. (3 pts)
+(b) A partir del ´ ıtem anterior, demuestre queA y B son similares. En otras palabras,
+encuentre expl ´ ıcitamente una matrizR invertible tal que A = RBR −1. (3 pts)
+Soluci´ on
+(a) La matriz A tiene valores propios 3 y −1, por lo tanto es diagonalizable. Notamos
+que A
+
+1
+0
+
+= 3
+
+1
+0
+
+y A
+
+1
+−4
+
+= −
+
+1
+−4
+
+. Por lo tanto
+A =
+
+1 1
+0 −4
+ 
+3 0
+0 −1
+ 
+1 1
+0 −4
+−1
+.
+Por otro lado, det
+
+1 − λ 2
+2 1 − λ
+
+= (1 − λ)2 − 4 = −(λ + 1)(λ − 3) por lo que B
+tiene los mismos valores propios queA, lo que implica que tambi´ en es diagonalizable.
+Adem´ as,B
+
+1
+1
+
+= 3
+
+1
+1
+
+y B
+
+1
+−1
+
+= −
+
+1
+−1
+
+. Por lo tanto
+B =
+
+1 1
+1 −1
+ 
+3 0
+0 −1
+ 
+1 1
+1 −1
+−1
+(b) De la diagonalizaci´ on deB, tenemos que
+
+3 0
+0 −1
+
+=
+
+1 1
+1 −1
+−1
+B
+
+1 1
+1 −1
+
+. Reem-
+planzando en la diagonalizaci´ on deA se tiene
+A =
+
+1 1
+0 −4
+ 
+1 1
+1 −1
+−1
+B
+
+1 1
+1 −1
+ 
+1 1
+0 −4
+−1
+.
+Sea R =
+
+1 1
+0 −4
+ 
+1 1
+1 −1
+−1
+. Ya que R es invertible, entonces A = RBR −1, lo que
+significa que A y B son matrices similares.
+Puntaje
+(a) • 0.5 puntos por determinar los valores propios de cada matriz (1 punto en total).
+• 0.5 puntos por determinar dos vectores propios linealmente independientes de
+cada matriz. (1 en total)
+• 0.5 puntos por escribir la diagonalizaci´ on de la matriz cada matriz (1 en total).
+(b) • 1 punto por despejar correctamente la matriz diagonal
+
+3 0
+0 −1
+
+.
+• 1 punto por definir correctamente la matriz R.
+• 1 punto por demostrar correctamente que A y B son similares.4. Encuentre una matriz real que tenga a λ = −2 + 2i como valor propio y v =
+
+1 + i
+3i
+
+como vector propio asociado a λ.
+Soluci´ on 1 Notamos que Re v =
+
+1
+0
+
+y Im v =
+
+1
+3
+
+. Como buscamos una matriz real,
+basta definir la matriz
+A =
+Re v Im v −2 2−2 −2 Re v Im v−1 .
+Obtenemos
+A =
+
+1 1
+0 3
+ 
+−2 2
+−2 −2
+ 
+1 −1/3
+0 1 /3
+
+=
+
+−4 4 /3
+−6 0
+
+.
+Luego, A cumple que Av = λv.
+Soluci´ on 2 Como buscamos una matriz real, entonces ¯v =
+
+1 − i
+−3i
+
+debe ser un vector
+propio asociado al valor propio ¯λ = −2 − 2i. Adem´ as,v y ¯v son linealmente indepen-
+dientes, por lo que la matriz buscada se obtiene
+
+1 + i 1 − i
+3i −3i
+ 
+−2 + 2i 0
+0 −2 − 2i
+ 
+1 + i 1 − i
+3i −3i
+−1
+=
+
+−4 4 /3
+−6 0
+
+.
+Puntaje
+• 2 puntos por definir elementos necesarios para la construcci´ on de la matriz (vectores
+parte real e imaginaria, o bien vector propio conjugado y valor propio conjugado).
+• 2 puntos por escribir una ecuaci´ on que permita encontrar la matriz buscada.
+• 2 puntos por determinar la matriz.5. Sea W el subespacio de R4 generado por
+w1 =
+
+
+1
+1
+1
+1
+
+ , w2 =
+
+
+−1
+−1
+1
+−2
+
+ , w3 =
+
+
+2
+2
+−2
+2
+
+
+Encuentre una base para W ⊥.
+Soluci´ on Los vectores de W ⊥ son aquellos x tales que x · w1 = x · w2 = x · w3 = 0, es
+decir, las soluciones del sistema
+
+
+1 1 1 1
+−1 −1 1 −2
+2 2 −2 2
+
+
+
+
+x1
+x2
+x3
+x4
+
+ =
+
+
+0
+0
+0
+
+ .
+Escalonando la matriz y resolviendo el sistema se obtiene x1 = −x2, x3 = 0, x4 = 0.
+Por lo tanto, una base para W ⊥ corresponde a
+
+
+
+
+
+−1
+1
+0
+0
+
+
+
+
+.
+Puntaje
+• 2 puntos por identificar, impl ´ ıcita o expl ´ ıcitamente, cu´ al es el subespacioW ⊥.
+• 2 puntos por establecer una manera de encontrar la base de W ⊥.
+• 2 puntos por determinar correctamente una base para W ⊥.
+6. Sea A =
+
+
+3 −1 3
+−2 3 8
+1 −3 7
+3 4 0
+
+
+(a) Verifique que las columnas de A son vectores ortogonales. (2 pts)
+(b) Determine una matriz U de columnas ortonormales tal que Col( A) = Col( U ). (2
+pts)
+(c) Determine ∥U x∥ donde x =
+
+
+4
+0
+3
+
+. (2 pts)Soluci´ on
+(a) Dos columnas son ortogonales si su producto punto es cero. Verificamos:
+
+
+3
+−2
+1
+3
+
+ ·
+
+
+−1
+3
+−3
+4
+
+ = −3 − 6 − 3 + 12 = 0,
+
+
+−1
+3
+−3
+4
+
+ ·
+
+
+3
+8
+7
+0
+
+ = −3 + 24 − 21 + 0 = 0
+
+
+3
+−2
+1
+3
+
+ ·
+
+
+3
+8
+7
+0
+
+ = 9 − 16 + 7 + 0 = 0.
+(b) Calculamos las normas de cada columna:
+ 3−213  = √9 + 4 + 1 + 9 =√23, −13−34  = √1 + 9 + 9 + 16 =√35,
+3870 = √9 + 64 + 49 + 0 =√122.
+Definimos U como la matriz A cuyas columnas est´ an normalizadas.
+U =
+
+
+3/
+√
+23 −1/
+√
+35 3 /
+√
+122
+−2/
+√
+23 3 /
+√
+35 8 /
+√
+122
+1/
+√
+23 −3/
+√
+35 7 /
+√
+122
+3/
+√
+23 4 /
+√
+35 0
+
+ .
+Luego U es la matriz pedida.
+(c) Como U es una matriz de columnas ortonormales, se tiene
+||U x|| = ||x|| =
+403 = √16 + 0 + 9 = 5.
+Puntaje
+(a) • 1 punto por establecer que vectores ortogonales son aquellos cuyo producto
+punto es cero.
+• 1 punto por verificar que todas las columnas son ortogonales.
+(b) • 1 punto por calcular correctamente la norma de las tres columnas.
+• 1 punto por definir correctamente U .
+(c) • 1 punto por afirmar que ||U x|| = ||x||.
+• 1 punto por calcular correctamente ||U x||.7. Sean y =
+
+
+5
+−9
+5
+
+ , u1 =
+
+
+−3
+−5
+1
+
+ , u2 =
+
+
+−3
+2
+1
+
+ y P el plano de R3 generado por u1 y
+u2.
+(a) Escriba al vector y como suma de un vector del plano P y otro del complemento
+ortogonal P ⊥.
+(b) Encuentre la distancia de y al plano P .
+Soluci´ on
+(a) Los vectores u1 y u2 son ortogonales. En efecto, u1 · u2 = 9 − 10 + 1 = 0. Esto
+implica que proyectar sobre P es sumar las proyecciones sobre u1 y u2:
+proyP (y) = y · u1||u1||2 u1 + y · u2||u2||2 u2 =
+
+
+−3
+−5
+1
+
+ − 2
+
+
+−3
+2
+1
+
+ =
+
+
+3
+−9
+−1
+
+ .
+Adem´ as se define
+z = y − proyP (y) =
+
+
+5
+−9
+5
+
+ −
+
+
+3
+−9
+−1
+
+ =
+
+
+2
+0
+6
+
+ .
+Luego, por construcci´ on de los vectores se tieney = proyP (y) + z donde proyP (y)
+pertenece al plano P y y z al complemento ortogonal P ⊥.
+(b) La distancia de y al plano P corresponde a
+dist(y, P) = ||y − proyP (y)|| = ||z|| =
+206 = √4 + 0 + 36 =√40.
+Puntaje
+(a) • 1 punto establecer que la descomposici´ on buscada es y = proyP (y) + z donde
+z = y − proyP (y), aunque no calcule dichos vectores.
+• 1 punto por calcular correctamente proy P (y).
+• 1 punto por calcular correctamente z = y − proyP (y).
+(b) • 2 puntos por identificar que la distancia corresponde a ||y − proyP (y)||.
+• 1 punto por calcular correctamente la distancia.

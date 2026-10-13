@@ -1,0 +1,448 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Primer Semestre 2023
+´Algebra Lineal - MAT1203
+Pauta Interrogaci´ on 2
+1. Suponga que la matriz A ha sido reducida a una forma escalonada como sigue:
+A =
+
+
+3 1 3 −4
+6 4 8 −10
+3 2 5 −1
+−9 5 −2 −4
+
+ ∼
+
+
+3 1 3 −4
+0 2 2 −2
+0 1 2 3
+0 8 7 −16
+
+ ∼
+
+
+3 1 3 −4
+0 2 2 −2
+0 0 1 4
+0 0 −1 −8
+
+ ∼
+
+
+3 1 3 −4
+0 2 2 −2
+0 0 1 4
+0 0 0 −4
+
+
+(a) Determine una factorizaci´ onLU de A. (4 pts)
+(b) Calcule el determinante de A. (2 pts)
+Soluci´ on
+(a) Lo primero es notar que la ´ ultima matriz que se obtiene es una forma escalonada
+de A, por lo que definimos
+U =
+
+
+3 1 3 −4
+0 2 2 −2
+0 0 1 4
+0 0 0 −4
+
+ .
+Por otro lado, vemos que cada operaci´ on elemental sobre la matriz A es de reem-
+plazo (sumar un m´ ultiplo de una fila a otra) de una fila superior hacia una inferior.
+Por esto, es que la matriz L puede obtenerse rellenando las entradas bajo la diago-
+nal de 1’s por el n´ umero opuesto de signo del multiplicador de cada operaci´ on. Es
+decir:
+L =
+
+
+1 0 0 0
+2 1 0 0
+1 1/2 1 0
+−3 4 −1 1
+
+
+(b) |A| = |LU | = |L||U | = 1 · (3) · (2) · (1) · (−4) = −24.
+Puntaje
+• 1 punto por definir U correctamente.
+• 3 puntos por definir L correctamente. Asignar puntaje incluso si se equivoca en
+algunas entradas, pero restar 1 punto por cada entrada de L m´ al calculada.
+• 1 punto por establecer una manera de encontrar |A|.
+• 1 puntos por determinar |A| correctamente.2. Sea
+A =
+
+
+α 2 1
+2α α + 5 4
+α 2 α
+
+ .
+(a) Aplicando el desarrollo por cofactores (sin usar operaciones elementales), calcule el
+determinante de A.
+(b) Determine todos los valores de α ∈ R para los que la matriz A es invertible.
+Soluci´ on
+(a) Observe que
+|A| = α
+ α + 5 42 α  − 2  2α 4α α  +  2α α + 5α 2  = α3 − α
+(b) La matriz A es invertible si y s´ olo si |A| ̸= 0, por lo tanto, del inciso anterior
+tenemos que A es invertible si y s´ olo siα3 − α = α (α2 − 1) ̸= 0 y esto ocurre si y
+s´ olo si
+α ̸= 0, α̸= 1 y α ̸= −1
+Puntaje
+• 1 punto por aplicar correctamente el desarrollo en cofactores.
+• 2 puntos por determinar correctamente el determinante.
+• 1.5 puntos por argumentar que la matriz A es invertible si y s´ olo si|A| ̸= 0.
+• 0.5 puntos por encontrar cada valor que no debe tomar α (1.5 puntos en total)3. Utilice el m´ etodo de Cramer para encontrar ´ unicamente la segunda columna de laA−1
+donde
+A =
+
+
+2 4 6
+4 5 6
+3 1 −2
+
+ ,
+sin encontrar la matriz inversa completa.
+Soluci´ on Sea x = la segunda columna de A−1, es decir, x = A−1e2. Esto implica que
+Ax = e2. Para usar la regla de Cramer, primero calculamos |A|:
+|A| =
+ 2 4 64 5 63 1 −2  =  11 7 013 8 03 1 −2  = −2  11 713 8  = −2(−3) = 6.
+Ahora calculamos cada entrada de la columna x:
+x1 = |A1(e2)||A| =
+ 0 4 61 5 60 1 −2 
+6 =
+−1
+ 4 61 −2 
+6 = 146 = 73 .
+x2 = |A2(e2)||A| =
+ 2 0 64 1 63 0 −2 
+6 =
+ 2 63 −2 
+6 = −226 = −113 .
+x3 = |A3(e2)||A| =
+ 2 4 04 5 13 1 0 
+6 =
+−1
+ 2 43 1 
+6 = 106 = 53 .
+Por lo tanto, la segunda columna de A−1 es x =
+
+
+7/3
+−11/3
+5/3
+
+.
+Puntaje
+• 1 punto por establecer una forma de encontrar la columna buscada. Puede ser
+mediante la ecuaci´ onAx = e2 o directamente diciendo que la columna buscada
+corresponde a 1det(A)
+
+
+C21
+C22
+C23
+
+, donde C2i corresponde al cofactor correspondiente.
+• 1 punto por calcular correctamente |A|.
+• 1 punto por calcular correctamente cada entrada xi, independiente que se pudo
+haber equivocado en el ´ ıtem anterior (3 puntos en total).
+• 1 punto por escribir la columna x completa.4. Sea M =
+
+1 2
+3 4
+
+. Considere el conjunto S de todas las matrices reales A de 2 × 2 tales
+que A = DM donde D es cualquier matriz diagonal D =
+
+α 0
+0 β
+
+, es decir,
+S =
+
+A ∈ M2×2
+ Existe matriz diagonal D = α 00 β tal que A = DM  .
+Determine si S es o no un subespacio vectorial de M2×2.
+Soluci´ on 1: Primero notamos que la matriz nula pertenece a S ya que si D =
+
+0 0
+0 0
+
+entonces DM =
+
+0 0
+0 0
+
+. Adem´ as,S es cerrado para la operaci´ on de suma ya que si A
+y B son dos matrices de S entonces existen D1 y D2 matrices tales que A = D1M y
+B = D2M , lo que implica
+A + B = D1M + D2M = (D1 + D2)M = D3M
+donde D3 = D1 + D2 es nuevamente una matriz diagonal. Por ´ ultimo, S adem´ as es
+cerrado para operaci´ on de producto escalar. En efecto, si α ∈ R y A ∈ S, se tiene
+αA = α(DM ) = (αD)M = ˆDM
+con ˆD = αD una matriz diagonal.
+Por estos tres puntos, concluimos que S es un subespacio vectorial de M2×2.
+Soluci´ on 2 Una soluci´ on alternativa consiste en demostrar queS es un conjunto gen-
+erado. Para esto, basta notar que una matriz A es un elemento del conjunto S si y s´ olo
+si existe una matriz de la forma D =
+
+α 0
+0 β
+
+tal que
+A = DM =
+
+α 0
+0 β
+ 
+1 2
+3 4
+
+=
+
+α 2α
+3β 4β
+
+= α
+
+1 2
+0 0
+
++ β
+
+0 0
+3 4
+
+.
+Esto implica que S = Gen
+
+1 2
+0 0
+
+,
+
+0 0
+3 4
+
+, y por lo tanto es un subespacio de M2×2
+Puntaje Soluci´ on 1
+• 2 puntos por establecer las tres condiciones para demostrar que S es un subespacio.
+• 1 punto por verificar cada condici´ on (3 en total).
+• 1 punto por concluir.
+Puntaje Soluci´ on 2
+• 2 puntos por explicar que los conjuntos generados son subespacios.
+• 4 puntos por determinar correctamente generadores del conjunto S. Restar 1 punto
+por cada error aritm´ etico.5. Considere las matrices equivalentes por filas
+A =
+
+
+−2 4 −2 −4
+2 −6 −3 1
+−3 8 2 −3
+
+ ∼ B =
+
+
+1 0 6 5
+0 2 5 3
+0 0 0 0
+
+
+(a) Encuentre una base de Nul A e indique la dimensi´ on.
+(b) Encuentre una base de Col A e indique la dimensi´ on.
+(c) Determine una base de Fil A e indique la dimensi´ on.
+Soluci´ on
+(a) Notamos que Nul( A) = Nul( B). Un vector
+
+
+x1
+x2
+x3
+x4
+
+ en este espacio debe cumplir
+x1 + 6x3 + 5x4 = 0 y 2 x2 + 5x3 + 3x4 = 0 por lo que se puede escribir
+
+
+x1
+x2
+x3
+x4
+
+ =
+
+
+−6x3 − 5x4
+− 52 x3 − 32 x4
+x3
+x4
+
+ = x3
+
+
+−6
+−5/2
+1
+0
+
+ + x4
+
+
+−5
+−3/2
+0
+1
+
+ .
+De esta forma una base de Nul( A) es
+
+
+
+
+
+−6
+−5/2
+1
+0
+
+ ,
+
+
+−5
+−3/2
+0
+1
+
+
+
+
+ y dim Nul(A)=2.
+(b) Una base de Col( B) son las dos primeras columnas de B por lo que las dos primeras
+columnas de A generan a las dem´ as columnas. Por lo tanto, una base de Col(A) es
+
+
+
+
+−2
+2
+−3
+
+ ,
+
+
+4
+−6
+8
+
+
+
+
+ y dim Col(A) = 2.
+(c) Por otro lado, Fil( A) = Fil( B) por lo que una base de Fil( A) es
+
+
+
+
+
+1
+0
+6
+5
+
+ ,
+
+
+0
+2
+5
+3
+
+
+
+
+ y
+dim Fil(A) = 2.
+Puntaje
+• 1 punto por encontrar correctamente una base del espacio pedido. (3 en total)
+• 1 punto por determinar correctamente la dimensi´ on del espacio, aunque se haya
+equivocado en el ´ ıtem anterior. (3 en total)6. Sea T : P2 → R2 la transformaci´ on lineal definida por
+T (p) =
+
+p(0)
+p(1)
+
+.
+(a) Encuentre la imagen del polinomio p(x) = x2 + x − 3 por la transformaci´ onT . (2
+pts)
+(b) Encuentre una base para Nul( T ) e indique la dimensi´ on de dicho n´ ucleo. (4 pts)
+Soluci´ on
+(a)
+T (p) = T (x2 + x − 3) =
+
+02 + 0 − 3
+12 + 1 − 3
+
+=
+
+−3
+−1
+
+.
+(b) Sea p(x) = ax2 + bx + c un polinomio de P2. Se tiene que
+p ∈ Nul(A) ⇔
+
+p(0)
+p(1)
+
+=
+
+0
+0
+
+⇔
+
+c
+a + b + c
+
+=
+
+0
+0
+
+⇔
+
+c = 0
+a = −b ⇔ p(x) = a(x2 − x)
+Por lo tanto, una base de Nul( A) es {x2 − x} y tiene dimensi´ on 1.
+Puntaje
+• 2 puntos por determinar correctamente la imagen del polinomio. Restar un punto
+por cada error aritm´ etico.
+• 1 punto por plantear correctamente c´ omo se calcula el n´ ucleo deT .
+• 2 puntos por encontrar correctamente base de n´ ucleo de T . Cualquier polinomio
+ponderado de x2 − x es correcto.
+• 1 punto por determinar dimensi´ on de n´ ucleo deT , aunque la respuesta del ´ ıtem
+anterior no est´ e correcta.7. Determine si las siguientes afirmaciones son verdaderas o falsas. Justifique sus respues-
+tas.
+(a) Si existe un conjunto linealmente independiente {v1, . . . ,vp} en un espacio vectorial
+V , entonces dim V ≤ p.
+(b) Sea A una matriz de 3 × 4. El rango de A es 3 si y s´ olo si dim Nul
+ 
+AT  = 0.
+Puntaje
+(a) Falso. El conjunto {e1, e2} es linealmente independiente en R3 pero dim R3 = 3 > 2.
+(b) Verdadero. La matriz AT es de 4 × 3 por lo que seg´ un el Teorema del Rango se
+cumple que
+dim Nul(AT ) + rango(AT ) = 3.
+Como rango( A) = rango( AT ) se concluye que dicho rango es 3 si y s´ olo si la
+dimensi´ on del n´ ucleo deAT es nula.
+Puntaje
+• 1 punto por determinar correctamente el valor de verdad de la proposici´ on justi-
+ficando su respuesta y la justificaci´ on est´ a parcialmente correcta, aunque no sea
+completamente concluyente. Asignar 0 puntos si no hay justificaci´ on. (2 puntos en
+total)
+• 2 punto por justificar correctamente la respuesta de verdadero o falso. (4 en total)

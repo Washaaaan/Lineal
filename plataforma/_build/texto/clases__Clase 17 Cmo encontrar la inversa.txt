@@ -1,0 +1,190 @@
+
+----- pagina 1 -----
+Clase 17 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Una matriz es un arreglo rectangular de números reales, A = [aij]
+Las matrices se pueden sumar y multiplicar por escalar y multiplicar
+entre ellas.
+La inversa A−1 de una matriz A es una matriz que cumple que
+AA−1 = A−1A = In.
+Si A es invertible, entonces el sistema Ax = b tiene la solución única.
+Si A es invertible, ¿cómo debe ser su forma escalonada reducida?
+2 / 11
+----- pagina 3 -----
+Cómo encontrar la inversa de una matriz
+Trataremos de escribir operaciones de fila como multiplicación de matrices.
+Para eso, es necesario hablar de matrices elementales .
+Definición
+Una matriz elemental es aquella que se obtiene al realizar una única
+operación elemental de fila sobre una matriz identidad.
+Ejemplo: Sean
+E1 =
+
+
+1 0 0
+0 1 0
+−4 0 1
+
+ , E2 =
+
+
+0 1 0
+1 0 0
+0 0 1
+
+ , E3 =
+
+
+1 0 0
+0 1 0
+0 0 5
+
+
+A =
+
+
+a b c
+d e f
+g h i
+
+
+Calcule E1A, E2A y E3A, y describa cómo se pueden obtener estos
+productos por medio de operaciones elementales de fila sobre A.
+3 / 11
+----- pagina 4 -----
+Cómo encontrar la inversa de una matriz
+Propiedad
+Si se realiza una operación elemental de fila con una matriz A de m × n, la
+matriz resultante se puede escribir como EA, donde la matriz E de m × m
+se crea al realizar la misma operación de fila sobre Im.
+Teorema
+Toda matriz elemental E es invertible. La inversa de E es la matriz
+elemental del mismo tipo que transforma a E de nuevo en I.
+4 / 11
+----- pagina 5 -----
+Cómo encontrar la inversa de una matriz
+Teorema
+Una matriz A de n × n es invertible si y solo si A es equivalente por filas a
+In, y, en este caso, cualquier secuencia de operaciones elementales de fila
+que reduzca A a In también transforma a In en A−1.
+Algoritmo para determinar A−1
+Reduzca por filas la matriz aumentada
+[
+A I
+]
+. Si A es equivalente por
+filas a I, entonces
+[
+A I
+]
+es equivalente por filas a
+[
+I A−1 ]. De otra
+manera, A no tiene inversa.
+Nota: Si buscamos una matriz X =
+[
+x1 . . . xn
+]
+tal que AX = In,
+debemos resolver simultáneamente los sistemas
+Axi = ei
+5 / 11
+----- pagina 6 -----
+Cómo encontrar la inversa de una matriz
+Ejemplo: Encuentre la inversa de la matriz A, si acaso existe.
+A =
+
+
+0 1 2
+1 0 3
+4 −3 8
+
+
+Nota: La matriz aumentada
+
+
+0 1 2 1 0 0
+1 0 3 0 1 0
+4 −3 8 0 0 1
+
+ es equivalente por
+fila a
+
+
+1 0 0 −9/2 7 −3/2
+0 1 0 −2 4 −1
+0 0 1 3/2 −2 1 /2
+
+.
+6 / 11
+----- pagina 7 -----
+Teorema de la matriz invertible
+Teorema de la matriz invertible
+Sea A una matriz cuadrada de n × n. Entonces, los siguientes enunciados
+son equivalentes:
+a) A es una matriz invertible.
+b) A es equivalente por filas a la matriz identidad de n × n.
+c) A tiene n posiciones pivote.
+d) La ecuación Ax = 0 tiene solamente la solución trivial.
+e) Las columnas de A forman un conjunto linealmente independiente.
+f) La transformación lineal x ↦→ Ax es uno a uno.
+7 / 11
+----- pagina 8 -----
+Teorema de la matriz invertible
+Teorema de la matriz invertible (continuación)
+g) La ecuación Ax = b tiene al menos una solución para toda b en Rn.
+h) Las columnas de A generan Rn.
+i) La transformación lineal x ↦→ Ax mapea Rn sobre Rn.
+j) Existe una matriz C de n × n tal que CA = I.
+k) Existe una matriz D de n × n tal que AD = I.
+ℓ) AT es una matriz invertible.
+8 / 11
+----- pagina 9 -----
+Teorema de la matriz invertible
+Ejemplo: Use el teorema de la matriz invertible para determinar si A es
+invertible:
+A =
+
+
+1 0 −2
+3 1 −2
+−5 −1 9
+
+
+Nota: La matriz A es equivalente por fila a
+
+
+1 0 −2
+0 1 4
+0 0 3
+
+.
+Ejemplo: Demuestre que si A y B son matrices cuadradas y AB es
+invertible, entonces A es invertible.
+9 / 11
+----- pagina 10 -----
+Teorema de la matriz invertible
+Definición
+Se dice que una transformación lineal T : Rn → Rn es invertible si existe
+una función S : Rn → Rn tal que
+S(T(x)) = x para toda x en Rn
+T(S(x)) = x para toda x en Rn
+Se dice que S es la inversa de T y se escribe como T−1.
+Teorema
+Sea T : Rn → Rn una transformación lineal y sea A la matriz estándar
+para T. Así, T es invertible si y solo si A es una matriz invertible. En tal
+caso, la transformación lineal S dada por S(x) = A−1x es la única función
+que satisface las ecuaciones anteriores.
+10 / 11
+----- pagina 11 -----
+Teorema de la matriz invertible
+Ejemplo: ¿Qué se puede decir acerca de una transformación lineal T uno
+a uno de Rn en Rn?
+11 / 11

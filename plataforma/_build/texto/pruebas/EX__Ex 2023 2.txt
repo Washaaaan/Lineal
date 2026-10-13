@@ -1,0 +1,622 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Segundo Semestre 2023
+´Algebra Lineal - MAT1203
+PAUTA Examen
+1. Determine el conjunto soluci´ on del siguiente sistema de ecuaciones usando matrices:
+x + y + z − w = 2
+2x + y + w = 5
+3x + z + w = 1
+3x + 2y + z = 3
+Soluci´ on La matriz aumentada es
+
+
+1 1 1 −1 2
+2 1 0 1 5
+3 0 1 1 1
+3 2 1 0 3
+
+
+la que puede escalonarse como sigue
+
+
+1 1 1 −1 2
+2 1 0 1 5
+3 0 1 1 1
+3 2 1 0 3
+
+
+f2 − 2f1
+f3 − 3f1
+f4 − 3f1
+− →
+
+
+1 1 1 −1 2
+0 −1 −2 3 1
+0 −3 −2 4 −5
+0 0 0 0 −4
+
+
+Por lo tanto la matriz aumentada y la matriz de coeficientes tienen diferente rango.
+Esto implica que el conjunto soluci´ on del sistema es vac ´ ıo.
+Puntaje
+• 2 puntos si escribe la matriz aumentada del sistema de ecuaciones.
+• 2 puntos si obtiene una forma escalonada correcta de la matriz aumentada.
+• 2 puntos si determina el conjunto soluci´ on coherente a partir de la matriz escalonada
+obtenida.2. Escriba, de ser posible,
+A =
+
+2 3
+1 3
+
+como multiplicaci´ on de matrices elementales. Si no se puede, justifique.
+Soluci´ on Una transformaci´ on deA en su forma escalonada reducida es la siguiente:
+A =
+
+2 3
+1 3
+
+f2− 12 f1
+− →
+
+2 3
+0 3 /2
+ 2
+3 f2
+− →
+
+2 3
+0 1
+
+f1−3f2
+− →
+
+2 0
+0 1
+ 1
+2 f1
+− →
+
+1 0
+0 1
+
+.
+A nivel de matrices elementales esto puede escribirse
+ 1
+2 0
+0 1
+ 
+1 −3
+0 1
+ 
+1 0
+0 23
+ 
+1 0
+− 12 1
+
+A =
+
+1 0
+0 1
+
+Finalmente, despejamos la matriz A:
+A =
+
+1 0
+− 12 1
+−1 1 0
+0 23
+−1 1 −3
+0 1
+−1  1
+2 0
+0 1
+−1
+=⇒ A =
+
+1 0
+1
+2 1
+ 
+1 0
+0 32
+ 
+1 3
+0 1
+ 
+2 0
+0 1
+
+.
+Nota: Existen varias soluciones diferentes a este problema.
+Puntaje
+• 1 puntos por obtener la forma escalonada reducida de A.
+• 1 punto si todas las operaciones elementales son correctas
+• 0.5 puntos por interpretar correctamente las operaciones de ponderaci´ on de fila
+como matrices elementales.
+• 0.5 puntos por interpretar correctamente las operaciones de reemplazo de fila como
+matrices elementales.
+• 0.5 puntos por interpretar correctamente las operaciones de intercambio de fila
+como matrices elementales.
+• 1 puntos por calcular correctamente todas las inversas de matrices elementales
+• 0.5 puntos por escribir A como producto de matrices elementales.
+• 1 punto si la multiplicaci´ on de matrices elementales se presenta en el orden correcto.3. Demuestre que V = {p ∈ P2| p(1) = 0} es un subespacio vectorial de P2.
+Soluci´ on 1 El polinomio nulo cumple con quep(1) = 0. Adem´ as, siq(x) y r(x) cumplen
+con que q(1) = 0 y r(1) = 0, entonces (q+r)(1) = q(1)+r(1) = 0. Finalmente, αs(1) = 0
+para cada α ∈ R y s(x) ∈ V . Esto implica que V es un subespacio vectorial de P2.
+Soluci´ on 2 Si p(x) ∈ V , entonces p(x) = ax2 + bx + c y p(1) = 0, es decir, a + b + c = 0,
+o equivalentemente, a = −b − c. As ´ ı:
+V = {ax2 + bx + c : a, b, c∈ R} = {−b(−x2 + x) + c(−x2 + 1) : b, c∈ R}
+=⇒ V = Gen{−x2 + x, −x2 + 1}.
+Como V es un conjunto generado, entonces V es un subespacio vectorial de P2.
+Puntaje
+• 2 puntos por establecer una manera de demostrar que V es un subespacio.
+• 2 puntos por ejecutar la demostraci´ on correctamente.
+• 2 puntos por concluir que V es un subespacio vectorial.4. (a) Usando alg´ un m´ etodo visto en clases, calcule el determinante de la matriz
+B =
+
+
+k k 0
+k2 2 k
+0 k k
+
+
+(b) Determine todos los valores de k para los que la matriz B del ´ ıtem anterior es
+invertible.
+Soluci´ on
+(a) Aplicando operaciones de determinante obtenemos:
+|B| =
+ k k 0k2 2 k0 k k  =  k k 0k2 2 − k 00 k k  =  k 0 0k2 2 − k − k2 00 k k  .
+Ahora calculando el determinante a trav´ es de la tercera columna obtenemos:
+|B| = k2(2 − k − k2).
+(b) La matriz B es invertible si y s´ olo si|B| ̸= 0. As ´ ı,
+|B| = k2(2 − k − k2) = −k2(k + 2)(k − 1).
+Por lo tanto, B es invertible si y s´ olo sik ̸= 0, k ̸= −2 y k ̸= 1.
+Puntaje
+• 2 puntos por calcular el determinante usando cofactores o propiedades vistas en
+clases.
+• 2 puntos por obtener el determinante correcto.
+• 2 puntos por determinar los valores de k que hacen que B sea invertible, de acuerdo
+al determinante calculado.5. (a) Demuestre que los vectores {u1, u2, u3} son ortogonales, donde
+u1 =
+
+
+1
+1
+0
+1
+
+ , u2 =
+
+
+0
+1
+1
+−1
+
+ , u3 =
+
+
+−1
+0
+1
+1
+
+ .
+(b) Encuentre la proyecci´ on dev =
+
+
+4
+−2
+−3
+2
+
+ sobre el subespacio generado por{u1, u2, u3}.
+Soluci´ on
+(a)
+u1 · u2 =
+
+
+1
+1
+0
+1
+
+ ·
+
+
+0
+1
+1
+−1
+
+ = 0 + 1 + 0− 1 = 0
+u2 · u3 =
+
+
+0
+1
+1
+−1
+
+ ·
+
+
+−1
+0
+1
+1
+
+ = 0 + 0 + 1− 1 = 0
+u1 · u3 =
+
+
+1
+1
+0
+1
+
+ ·
+
+
+0
+1
+1
+−1
+
+ = 0 + 1 + 0− 1 = 0.
+(b) Sea W = Gen {u1, u2, u3}. Ya que los vectores u1, u2, u3 son ortogonales, la
+proyecci´ on se calcula de la siguiente forma:
+proyW (v) = proyu1(v) + proyu2(v) + proyu3(v)
+= u1 · v||u1||2 u1 + u2 · v||u2||2 u2 + u3 · v||u3||2 u3
+= 43
+
+
+1
+1
+0
+1
+
+ + −73
+
+
+0
+1
+1
+−1
+
+ + −53
+
+
+−1
+0
+1
+1
+
+ =
+
+
+3
+−1
+−4
+2
+
+
+Puntaje
+• 1 punto por probar que cada producto punto es 0 (3 puntos en total).
+• 1 punto por establecer una manera correcta de calcular el vector proyecci´ on.
+• 1 punto por calcular correctamente la proyecci´ on sobre cada vectoru1, u2, u3.
+• 1 punto por calcular el vector proyecci´ on buscado.6. Encuentre una base ortonormal para R3 a partir de los vectores
+v1 =
+
+
+1
+2
+3
+
+ y v2 =
+
+
+0
+1
+0
+
+
+Soluci´ on Usaremos el procedimiento de ortogonalizaci´ on de Gram-Schmidt.
+Sea u1 = v1.
+Sea u2 = v2 − proyu1(v2) = v2 − u1 · v2||u1||2 u1 =
+
+
+0
+1
+0
+
+ − 214
+
+
+1
+2
+3
+
+ = 17
+
+
+−1
+5
+−3
+
+.
+Una forma de buscar un tercer vector u3 ortogonal a u1 y u2 es resolviendo u1 · u3 = 0
+y u2 · u3 = 0, o equivalentemente, resolver el sistema
+
+1 2 3 0
+−1 5 −3 0
+
+. As ´ ı:
+
+1 2 3 0
+−1 5 −3 0
+
+∼
+
+1 0 3 0
+0 1 0 0
+
+por lo que u3 =
+
+
+−3
+0
+1
+
+ . Ahora calculamos las normas de dichos vectores:
+||u1|| =
+√
+1 + 4 + 9 =
+√
+14, ||u2|| = 17 √1 + 25 + 9 = √357 , ||u3|| = √9 + 0 + 1 =√10.
+Normalizamos los vectores:
+u1
+||u1|| = 1√14
+
+
+1
+2
+3
+
+ , u2
+||u2|| = 7√35
+
+
+−1/7
+5/7
+−3/7
+
+ = 1√35
+
+
+−1
+5
+−3
+
+ ,
+u3
+||u3|| = 1√10
+
+
+−3
+0
+1
+
+ .
+Una base ortonormal buscada es:
+ u1
+||u1|| , u2||u2|| , u3||u3|| = =  1√14 123 , 1√35  −15−3  , 1√10 −301 
+Nota: Una base diferente se puede obtener fijando v2 en vez de v1.
+Puntaje
+• 2 puntos si usa correctamente el procedimiento de Gram-Schmidt
+• 2 puntos si encuentra correctamente un tercer vector ortogonal
+• 2 puntos si determina una base ortonormal a partir de los vectores dados.7. Diagonalice ortogonalmente la matriz
+C =
+
+1 1
+1 1
+
+.
+Soluci´ on Calculamos el polinomio caracter ´ ıstico:
+p(λ) =
+ 1 − λ 11 1 − λ  = (1 − λ)2 − 1 = λ2 − 2λ = λ(λ − 2).
+Los valores propios son λ = 0 y λ = 2. Sean E(0) y E(2) los espacios propios asociados.
+E(0) = Nul
+
+1 1
+1 1
+
+= Nul
+
+1 1
+0 0
+
+= Gen
+
+1
+−1
+
+.
+E(2) = Nul
+
+1 − 2 1
+1 1 − 2
+
+= Nul
+
+−1 1
+0 0
+
+= Gen
+
+1
+1
+
+Los vectores propios
+
+1
+−1
+
+y
+
+1
+1
+
+son ortogonales. Luego de normalizarlos, definimos
+las matrices
+P =
+
+1/
+√
+2 1 /
+√
+2
+−1/
+√
+2 1 /
+√
+2
+
+, D =
+
+0 0
+0 2
+
+que cumplen que
+A = P DPT .
+Puntaje
+• 2 puntos por determinar valores propios correctos.
+• 2 puntos por determinar vectores propios correctos.
+• 1 punto por definir correctamente P .
+• 1 punto por definir correctamente D.8. Determine la descomposici´ on en valores singulares de
+A =
+
+1 1 0
+0 0 1
+
+.
+Ayuda:
+Para esto puede usar el hecho que la matriz AT A se diagonaliza de la siguiente forma:
+AT A =
+
+
+1 0 −1
+1 0 1
+0 1 0
+
+
+
+
+2 0 0
+0 1 0
+0 0 0
+
+
+
+
+1 0 −1
+1 0 1
+0 1 0
+
+
+−1
+.
+Soluci´ on Los valores propios de AT A son λ1 = 2, λ2 = 1 y λ3 = 0. Los valores
+singulares de A son σ1 =
+√
+2, σ2 = 1 y σ3 = 0. Esto permite definir la matriz Σ de
+2 × 3:
+Σ =
+√
+2 0 0
+0 1 0
+
+.
+Por otro lado, definimos la matriz V de 3×3 normalizando los vectores propios de AT A:
+V =
+
+
+1/
+√
+2 0 −1/
+√
+2
+1/
+√
+2 0 1 /
+√
+2
+0 1 0
+
+ .
+Para encontrar U de 2 × 2, calcule
+u1 = 1σ1 A
+
+
+1/
+√
+2
+1/
+√
+2
+0
+
+ = 1√2  1 1 00 0 1   1/√21/√20  =  10 
+u2 = 1σ2 A
+
+
+0
+0
+1
+
+ = 11  1 1 00 0 1   001  =  01 
+Estos vectores ya forman una base ortonormal (la base est´ andar) para R2, as ´ ı que se
+tiene
+U =
+
+1 0
+0 1
+
+Esto produce la DVS
+A =
+
+1 1 0
+0 0 1
+
+=
+
+1 0
+0 1
+ √
+2 0 0
+0 1 0
+ 
+
+1/
+√
+2 1 /
+√
+2 0
+0 0 1
+−1/
+√
+2 1 /
+√
+2 0
+
+ = U ΣV T
+Puntaje
+• 1 punto por encontrar los valores singualares de A.
+• 1 punto por definir la matriz Σ de acuerdo a los valores singulares encontrados.
+• 2 puntos por determinar la matriz V .
+• 1 punto por calcular los vectores u1 y u2 correctos.
+• 1 puntos por definir la matriz U de acuerdo a los vectores u1 y u2 encontrados..

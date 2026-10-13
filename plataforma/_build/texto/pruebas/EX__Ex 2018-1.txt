@@ -1,0 +1,797 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Examen
+1. Sea A una matriz de 4 × 4 deﬁnida por
+
+
+a a a a
+2 a a a
+3 2 a a
+4 3 2 a
+
+
+a) [4 ptos] Calcule el determinante de A.
+b) [2 ptos] Determine que condiciones debe cumplir la constante a para que la matriz A sea
+invertible.
+Soluci´ on.
+a) ⏐⏐⏐⏐⏐⏐⏐⏐⏐ a a a a2 a a a3 2 a a4 3 2 a ⏐⏐⏐⏐⏐⏐⏐⏐⏐ = ⏐⏐⏐⏐⏐⏐⏐⏐⏐ a a a a2 − a 0 0 01 2 − a 0 01 1 2 − a 0 ⏐⏐⏐⏐⏐⏐⏐⏐⏐
+= −a
+⏐⏐⏐⏐⏐⏐ 2 − a 0 01 2 − a 01 1 2 − a ⏐⏐⏐⏐⏐⏐ = −a(2 − a)3
+b) Para que A sea invertible es necesario y suﬁciente que el | A |̸= 0, luego si a ̸= 0 ∧ a ̸= 2
+la matriz A es invertible.
+Puntaje:
+1.5 ptos por aplicar correctamente alguna operaci´ on que facilite el calculo del determinante
+de A.
+1.5 ptos por aplicar correctamente el calculo de cofactores para calcular el determinante
+de A.
+1 pto por calcular correctamente el determinante de A.
+1 pto por determinar que a ̸= 0 para que A sea invertible.
+1 pto por determinar que a ̸= 2 para que A sea invertible.2. Sean V ≤ R3 deﬁnido por V =
+
+
+
+
+
+x
+y
+z
+
+ | x − y = 0
+
+
+ y T : R3 → R3 una transformaci´ on
+lineal deﬁnida por T
+
+
+x
+y
+z
+
+ =
+
+
+x + y − z
+−2y + z
+2x − z
+
+
+a) Determine una base para V .
+b) Determine la dimensi´ on de la imagen de V , es decir T (V ) = {T (v) | v ∈ V }. Justiﬁque su
+respuesta.
+Soluci´ on.
+a) V =
+
+
+
+
+
+x
+y
+z
+
+ | x − y = 0
+
+
+ =
+
+
+
+
+
+x
+y
+z
+
+ | x = y
+
+
+ =
+
+
+
+
+
+x
+x
+z
+
+
+
+
+ =
+
+
+x
+
+
+1
+1
+0
+
+ + z
+
+
+0
+0
+1
+
+
+
+
+.
+Luego V = Gen
+
+
+
+
+
+1
+1
+0
+
+ ,
+
+
+0
+0
+1
+
+
+
+
+ y estos dos vectores son linealmente independientes,
+entonces
+
+
+
+
+
+1
+1
+0
+
+ ,
+
+
+0
+0
+1
+
+
+
+
+ es una base para V .
+b) T (V ) = {T (v) | v ∈ V } =
+
+
+T (v) | v = x
+
+
+1
+1
+0
+
+ + z
+
+
+0
+0
+1
+
+
+
+
+ =
+
+
+T
+
+x
+
+
+1
+1
+0
+
+ + z
+
+
+0
+0
+1
+
+
+
+
+
+
+
+=
+
+
+xT
+
+
+1
+1
+0
+
+ + zT
+
+
+0
+0
+1
+
+
+
+
+ =
+
+
+x
+
+
+2
+−2
+2
+
+ + z
+
+
+−1
+1
+−1
+
+
+
+
+ .
+Luego V = Gen
+
+
+
+
+
+2
+−2
+2
+
+ ,
+
+
+−1
+1
+−1
+
+
+
+
+ pero estos dos vectores son linealmente depen-
+dientes, entonces
+
+
+
+
+
+1
+−1
+1
+
+
+
+
+ es una base para T (V ) y as ´ ı la dimensi´ on deT (V )es 1.
+Puntaje:
+1 pto por mostrar vectores que generen al subespacio V .
+1 pto por argumentar que los vectores escogidos para formar la base deben ser li.
+1 pto mostrar dos vectores que formen una base para V .
+3 pto por determinar justiﬁcadamente que la dimensi´ on de T (V ) es 1.(1.5 ptos si solo
+muestra vectores que generen T (V ))3. Sean B = {u, v, w} una base para R3 y A una matriz de 3 × 3 tal que
+Au = u + w, Av = −v, Aw = 2u + 2w
+a) Demuestre que B1 = {u + w, v, −2u + w} es una base para R3.
+b) Demuestre que u + w, v y −2u + w son vectores propios para A.
+c) Determine una matriz D diagonal que sea similar a la matriz A2 − I.
+Soluci´ on.
+a) Primero demostraremos que el conjunto B1 = {u + w, v, −2u + w} es linealmente inde-
+pendiente.
+Sean c1, c2 y c3 ∈ R
+c1(u + w) + c2(v) + c3(−2u + w) = ⃗0
+(c1 − 2c3)u + c2v + (c1 + c3)w = 0 → c1 − 2c3 = 0 ∧ c2 = 0 ∧ c1 + c3 = 0
+ya que {u, v, w} es linealmente independiente, luego c1 = 0 ∧ c2 = 0 ∧ c3 = 0 as ´ ı demostra-
+mos que B1 = {u + w, v, −2u + w} es un conjunto de 3 vectores linealmente independiente
+en R3 luego es una base para R3.
+b) Como
+A(u + w) = A(u) + A(w) = u + w + 2u + 2w = 3(u + w)
+A(v) = −1v
+A(−2u + w) = A(−2u) + A(w) = −2(u + w) + 2u + 2w = ⃗0
+tenemos que los vectores u + w, v, −2u + w son vectores propios de la matriz A.
+c) Si x es vector propio se A asociado a un valor propio λ tenemos que
+(A2 − I)x = A2x + x = λ2x + x = (λ2 − 1)x
+luego x es un vector propio de A2 − I asociado al valor propio ( λ2 − 1). Luego como
+A(u + w) = 3( u + w), A (v) = −1v, A (−2u + w) = 0( −2u + w)
+la matriz A2 − I tiene una base de vectores propios y cuyos valore propios son 8, 0, -1
+as ´ ı sabemos que la matrizD =
+
+
+8 0 0
+0 0 0
+0 0 −1
+
+ es una matriz similar a A2 − I.Puntaje:
+0.5 ptos por plantear la ecuaci´ on vectorial que veriﬁca si los vectores son li o ld.
+0.5 ptos por concluir que los coeﬁcientes que ponderan a los vectores u, v y w deben ser 0
+argumentando que ellos son li .
+0.5 ptos por concluir que que B1 es un conunto de vectores li.
+0.5 ptos por argumentar que 3 vectores li de R3 forman una base para R3.
+0.7 ptos por demostar que cada uno de los vectores son vectores propios para A.(2 ptos
+en total como m´ aximo).
+2 ptos por mostrar una atriz diagonal similar a A2 − I.
+4. Dada la forma cuadr´ aticax21 + 5x22 + αx23 + 2x2x3 + 4x1x2 con α ̸= 5.
+a) [4 pts] Determine la descomposici´ on de Cholesky de la matriz asociada a este forma.
+b) [2 pts] Determine las condiciones que debe cumplir α para que la forma cuadr´ atica sea
+deﬁnida positiva.
+Soluci´ on.
+a)
+
+
+1 2 0
+2 5 1
+0 1 α
+
+ =
+
+
+1 0 0
+2 1 0
+0 1 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 α − 1
+
+
+
+
+1 2 0
+0 1 1
+0 0 1
+
+
+b) Para que forma cuadr´ atica sea deﬁnida positiva se necesita que los elementos de la diagonal
+de
+
+
+1 0 0
+0 1 0
+0 0 α − 1
+
+ sean positivos es decir α > 1.
+Puntaje:
+2 ptos por determinar correctamente la matriz L.
+2 ptos por determinar correctamente la matriz D.
+2 ptos por determinar que la condici´ on es α > 1.
+Contin´ ua en la siguiente p´ agina.5. Determine una base ortogonal para el espacio columna de la matriz A =
+
+
+3 4 2
+1 2 8
+−1 −3 −4
+3 1 4
+
+
+Soluci´ on.
+Primero determinaremos un base para el espacio columna A
+A ∼
+
+
+3 4 2
+0 −3 1
+0 0 1
+0 0 0
+
+
+Luego los vectores
+
+
+
+
+
+3
+1
+−1
+3
+
+ ,
+
+
+4
+2
+−3
+1
+
+ ,
+
+
+2
+8
+−4
+4
+
+
+
+
+ son linealmente independiente y formar
+una base para el Col(A), ahora necesitamos ortogonalizarla y para esto ocuparemos el proceso
+de gram-schimdt.
+v1 =
+
+
+3
+1
+−1
+3
+
+
+v2 =
+
+
+4
+2
+−3
+1
+
+ −
+
+
+4
+2
+−3
+1
+
+ ·
+
+
+3
+1
+−1
+3
+
+
+
+
+3
+1
+−1
+3
+
+ ·
+
+
+3
+1
+−1
+3
+
+
+
+
+3
+1
+−1
+3
+
+ =
+
+
+4
+2
+−3
+1
+
+ − 2020
+
+
+3
+1
+−1
+3
+
+ =
+
+
+1
+1
+−2
+−2
+
+
+v3 =
+
+
+2
+8
+−4
+4
+
+ −
+
+
+2
+8
+−4
+4
+
+ ·
+
+
+3
+1
+−1
+3
+
+
+
+
+3
+1
+−1
+3
+
+ ·
+
+
+3
+1
+−1
+3
+
+
+
+
+3
+1
+−1
+3
+
+ −
+
+
+2
+8
+−4
+4
+
+ ·
+
+
+1
+1
+−2
+−2
+
+
+
+
+1
+1
+−2
+−2
+
+ ·
+
+
+1
+1
+−2
+−2
+
+
+
+
+1
+1
+−2
+−2
+
+=
+
+
+2
+8
+−4
+4
+
+ − 3020
+
+
+3
+1
+−1
+3
+
+ − 1010
+
+
+1
+1
+−2
+−2
+
+ =
+
+
+−7
+2
+11
+2
+−1
+2
+3
+2
+
+
+Puntaje:
+0.5 ptos por argumentar que la base tiene dimensi´ on 3.
+0.5 por mostrar v1.
+2.5 por calcular correctamente v2.(0.5 ptos si muestra bien la forma que debe calcularlo
+para comete alg´ un error algebraico)
+2.5 por calcular correctamente v3.(0.5 ptos si muestra bien la forma que debe calcularlo
+para comete alg´ un error algebraico)6. Si a, b y c son n´ umeros distintos, entonces el siguiente sistema es inconsistente.
+x − 2y + 5z = a,
+x − 2y + 5z = b,
+x − 2y + 5z = c.
+Demuestre que el conjunto de todas las soluciones de m ´ ınimos cuadrados del sistema es el plano
+cuya ecuaci´ on esx − 2y + 5z = a + b + c3 .
+Soluci´ on.
+El sistema matricial que corresponde con este sistema de ecuaciones es
+
+
+1 −2 5
+1 −2 5
+1 −2 5
+
+
+
+
+x
+y
+z
+
+ =
+
+
+a
+b
+c
+
+
+luego para encontrar el conjunto de todas las soluciones de m ´ ınimos cuadrados del sistema,
+debemos solucionar el sistema
+
+
+1 1 1
+−2 −2 −2
+5 5 5
+
+
+
+
+1 −2 5
+1 −2 5
+1 −2 5
+
+
+
+
+x
+y
+z
+
+ =
+
+
+1 1 1
+−2 −2 −2
+5 5 5
+
+
+
+
+a
+b
+c
+
+
+
+
+3 −6 15
+−6 12 −30
+15 −30 75
+
+
+
+
+x
+y
+z
+
+ =
+
+
+a + b + c
+−2a − 2b − 2c
+5a + 5b + 5c
+
+
+el cual se soluciona a trav´ es de la matriz aumentada
+
+
+3 −6 15 a + b + c
+−6 12 −30 −2a − 2b − 2c
+15 −30 75 5a + 5b + 5c
+
+ ∼
+
+
+3 −6 15 a + b + c
+0 0 0 −0
+0 0 0 −0
+
+
+luego la soluci´ on es 3x − 6y + 15z = a + b + c → x − 2y + 5z = a + b + c3
+Puntaje:
+2 ptos por plantear correctamente sistema matricial que encunetra el conjunto de todas
+las soluciones de m ´ ınimos cuadrados.
+3 ptos por solucionar el sistema planteado.
+1 pto por concluir lo que se pide demostrar.7. Sean P una matriz ortogonal de m × m y A una matriz de m × n. Demuestre que si √σ es un
+valor singular de P A entonces tambi´ en es un valor singular de A .
+Soluci´ on.
+Si √σ es un valor propio de P A tenemos que σ es un valor propio para
+(P A)T (P A) = AT P T P A = AT A
+ya que P es una matriz ortogonal por lo cual cumple que P T P = I. As ´ ıσ es un valor propio
+para AT A lo que implica que √σ es un valor singular para A.
+Puntaje:
+1 pto por argumentar que σ es valor propio para ( P A)T (P A).
+2 pto por argumentar que ( P A)T (P A) = AT A.
+1 pto por argumentar que σ es un valor propio para AT A.
+2 ptos por concluir que σ s un valor singular para A.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. Justiﬁque sus respuestas.
+a) Si A es una matriz invertible y diagonalizable ortogonalmente entonces A−1 tambien es
+diagonalizable ortogonalmente.
+b) El sistema de ecuaciones
+x + 3z = 3,
+x + y = 2,
+2x + y + 2z = b.
+es consistente para todo b.
+c) Si A una matriz de 3 ×3 dada por A = [a1 a2 a3] y W = (N ul(At))⊥ entonces P royW a1 = ⃗0
+Soluci´ on.
+a) Verdadero. Si x es un vector propio de A entonces Ax = λx → 1λx = A−1x con λ ̸= 0(ya
+que A es invertible, luego x es un vector propio de A−1, luego como A es diagonalizable
+posee una base ortogonal de vectores propios, que como ya demostramos es una base
+ortogonal de vectores propios para A−1, esto equivale a decir que A−1 es diagonalizable
+ortogonalmente.
+b) Verdadero. El sistema se representa por
+
+
+1 0 3 3
+1 1 0 2
+2 1 2 b
+
+ ∼
+
+
+1 0 3 3
+0 1 0 −1
+0 0 −4 b − 5
+
+
+el cual siempre tiene soluci´ on.
+c) Falso. (N ul(AT ))⊥ = Col(A) luego P royCol(A)a1 = a1
+Puntaje:
+2 ptos por cada item contestado correctamente y justiﬁcado.

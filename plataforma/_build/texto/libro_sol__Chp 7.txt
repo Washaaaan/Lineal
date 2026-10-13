@@ -1,0 +1,3354 @@
+
+----- pagina 1 -----
+ 
+ Copyright © 2012 Pear
+ 
+ 
+7.1 SOLUTIONS 
+Notes: Students can profit by reviewin
+working on this section. Theorems 1 and
+sections that follow. Note that symmetric
+text have real entries, as mentioned at 
+been constructed so that mastery of the G
+Theorem 2 is easily proved for the 2
+   If ,abA cd⎡⎤= ⎢⎥⎣⎦  then (12 aλ=
+If b = 0 there is nothing to prove. Otherw
+diagonalizable. In each case, an eigenvec
+ 1 . Since 35 ,57 TAA ⎡⎤==⎢⎥ −⎣⎦  the matri
+ 2. Since 35 ,53 TAA −⎡⎤=≠⎢⎥−⎣⎦  the matri
+ 3 . Since 22 ,44 TAA ⎡⎤=≠⎢⎥⎣⎦  the matrix
+ 4 . Since 
+083
+802 ,
+320
+TAA
+⎡⎤
+⎢⎥=− =⎢⎥
+⎢⎥ −⎣⎦
+ the 
+ 5 . Since 
+620
+062 ,
+006
+TAA
+−⎡⎤
+⎢⎥=− ≠⎢⎥
+⎢⎥ −⎣⎦
+ th
+rson Education, Inc. Publishing as Addison-Wesley. 
+ 
+ 
+ng Section 5.3 (focusing on the Diagonalization The o
+d 2 and the calculations in Examples 2 and 3 are imp o
+c matrix means real symmetric matrix, because all ma
+the beginning of this chapter. The exercises in this s
+Gram-Schmidt process is not needed. 
+2 × 2 case:  
+)
+22() 4 .a da d b+± − +   
+wise, there are two distinct eigenvalues, so A must be 
+ctor for λ is .d b−λ⎡⎤⎢⎥ −⎣⎦  
+ix is symmetric. 
+ix is not symmetric. 
+x is not symmetric. 
+matrix is symmetric. 
+he matrix is not symmetric.
+405 
+orem) before 
+ortant for the 
+atrices in the 
+section have 
+
+----- pagina 2 -----
+406 CHAPTER 7 • Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 6 . Since A is not a square matrix TAA≠  and the matrix is not symmetric. 
+ 7 . Let .6 .8 ,.8 .6P ⎡⎤= ⎢⎥ −⎣⎦  and compute that  
+   2
+.6 .8 .6 .8 1 0
+.8 .6 .8 .6 0 1
+TPP I ⎡⎤ ⎡⎤ ⎡ ⎤== =⎢⎥ ⎢⎥ ⎢ ⎥−−⎣⎦ ⎣⎦ ⎣ ⎦  
+  Since P is a square matrix, P is orthogonal and 1 .6 .8 ..8 .6TPP− ⎡ ⎤== ⎢ ⎥−⎣ ⎦  
+ 8 . Let 1/ 2 1/ 2 ,
+1/ 2 1/ 2
+P
+⎡⎤ −= ⎢⎥
+⎢⎥⎣⎦
+ and compute that  
+   2
+1/ 2 1/ 2 1/ 2 1/ 2 1 0
+011/ 2 1/ 2 1/ 2 1/ 2
+TPP I ⎡⎤ ⎡⎤ − ⎡⎤== =⎢⎥ ⎢⎥ ⎢⎥− ⎣⎦⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  Since P is a square matrix, P is orthogonal and 1 1/ 2 1/ 2 .
+1/ 2 1/ 2
+TPP− ⎡ ⎤== ⎢ ⎥
+−⎢ ⎥⎣ ⎦
+ 
+ 9 . Let 52 ,25P −⎡⎤= ⎢⎥⎣⎦  and compute that  
+   2
+52 52 2 9 0
+25 25 02 9
+TPP I −−⎡⎤ ⎡⎤ ⎡ ⎤== ≠⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦  
+  Thus P is not orthogonal. 
+ 10. Let 
+122
+21 2 ,
+221
+P
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −⎣⎦
+ and compute that  
+   3
+122122 9 0 0
+21 2 21 2 0 9 0
+221 221 0 0 9
+TPP I
+−−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥=− − = ≠⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  Thus P is not orthogonal. 
+ 11. Let 
+2/3 2/3 1/3
+01 / 52 / 5 ,
+5/3 4/ 4 5 2/ 4 5
+P
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −−⎣⎦
+ and compute that  
+----- pagina 3 -----
+7.1  Solutions   407  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   3
+2/3 0 5/3 2/3 2/3 1/3 100
+2/3 1/ 5 4/ 4 5 0 1/ 5 2/ 5 0 1 0
+0011 / 32 / 52 / 4 55 / 34 / 4 52 / 4 5
+TPP I
+⎡⎤ ⎡⎤ ⎡⎤⎢⎥ ⎢⎥ ⎢⎥=− − = =⎢⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢⎥ ⎢⎥−− − − ⎣⎦⎢⎥ ⎣⎦⎣⎦  
+  Since P is a square matrix, P is orthogonal and 1
+2/3 0 5/3
+2/3 1/ 5 4/ 4 5 .
+1/3 2/ 5 2/ 45
+TPP−
+⎡ ⎤
+⎢ ⎥
+== − ⎢ ⎥
+⎢ ⎥−−⎢ ⎥⎣ ⎦
+ 
+ 12. Let 
+.5 .5 .5 .5
+.5 .5 .5 .5 ,.5 .5 .5 .5
+.5 .5 .5 .5
+P
+−−⎡⎤
+⎢⎥−−⎢⎥= ⎢⎥
+⎢⎥−−⎢⎥⎣⎦
+ and compute that  
+   4
+.5 .5 .5 .5 .5 .5 .5 .5 1 0 0 0
+.5 .5 .5 .5 .5 .5 .5 .5 0 1 0 0
+.5 .5 .5 .5 .5 .5 .5 .5 0 0 1 0
+.5 .5 .5 .5 .5 .5 .5 .5 0 0 0 1
+TPP I
+−− − −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢⎥ ⎢ ⎥== =⎢⎥ ⎢⎥ ⎢ ⎥−−
+⎢⎥ ⎢⎥ ⎢ ⎥−− −−⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  Since P is a square matrix, P is orthogonal and 1
+.5 .5 .5 .5
+.5 .5 .5 .5 ..5 .5 .5 .5
+.5 .5 .5 .5
+TPP−
+−−⎡ ⎤
+⎢ ⎥
+⎢ ⎥== ⎢ ⎥−−
+⎢ ⎥−−⎢ ⎥⎣ ⎦
+ 
+ 13. Let 31 .13A ⎡⎤= ⎢⎥⎣⎦  Then the characteristic polynomial of A is 22(3 ) 1 6 8 ( 4)( 2),− λ −= λ−λ + =λ − λ −  
+so the eigenvalues of A are 4 and 2. For λ = 4, one computes that a basis for the eigenspace is 1 ,1⎡ ⎤⎢ ⎥⎣ ⎦  
+which can be normalized to get 1
+1/ 2 .
+1/ 2
+⎡⎤
+= ⎢⎥
+⎢⎥⎣⎦
+u  For λ = 2, one computes that a basis for the eigenspace 
+is 1 ,1−⎡⎤⎢⎥⎣⎦  which can be normalized to get 2 1/ 2 .1/ 2⎡ ⎤−= ⎢ ⎥⎢ ⎥⎣ ⎦u  Let  
+   [] 12
+1/ 2 1/ 2 4 0 and 021/ 2 1/ 2PD ⎡⎤ − ⎡ ⎤== = ⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥⎣⎦uu  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+----- pagina 4 -----
+408 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 14. Let 15 .51A ⎡⎤= ⎢⎥⎣⎦  Then the characteristic polynomial of A is 
+22(1 ) 25 2 24 ( 6)( 4),−λ − =λ − λ− = λ− λ+  so the eigenvalues of A are 6 and –4. For λ = 6, one 
+computes that a basis for the eigenspace is 1 ,1⎡ ⎤⎢ ⎥⎣ ⎦  which can be normalized to get 1 1/ 2 .1/ 2⎡⎤= ⎢⎥⎢⎥⎣⎦u  For 
+λ = –4, one computes that a basis for the eigenspace is 1 ,1−⎡ ⎤⎢ ⎥⎣ ⎦  which can be normalized to get 
+2
+1/ 2 .
+1/ 2
+⎡⎤−= ⎢⎥
+⎢⎥⎣⎦
+u   
+  Let  
+   [] 12
+1/ 2 1/ 2 6 0 and 041/ 2 1/ 2PD ⎡⎤ − ⎡ ⎤== = ⎢⎥ ⎢ ⎥−⎣ ⎦⎢⎥⎣⎦uu  
+  Then P orthogonally diagonalizes A, and 1.AP D P −=  
+ 15. Let 16 4 .41A −⎡⎤= ⎢⎥−⎣⎦  Then the characteristic polynomial of A is 
+2(16 )(1 ) 16 17 ( 17)−λ −λ − =λ − λ= λ− λ , so the eigenvalues of A are 17 and 0. For λ = 17, one 
+computes that a basis for the eigenspace is 4 ,1−⎡ ⎤⎢ ⎥⎣ ⎦  which can be normalized to get 1 4/ 1 7 .1/ 17⎡⎤−= ⎢⎥⎢⎥⎣⎦u  
+For λ = 0, one computes that a basis for the eigenspace is 14⎡ ⎤⎢ ⎥⎣ ⎦ , which can be normalized to get 
+2
+1/ 17 .
+4/ 1 7
+⎡⎤
+= ⎢⎥
+⎢⎥⎣⎦
+u  Let  
+   [] 12
+4 / 17 1/ 17 17 0 and 001/ 17 4 / 17PD ⎡⎤− ⎡ ⎤== = ⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥⎣⎦uu  
+  Then P orthogonally diagonalizes A, and 1.AP D P −=  
+ 16. Let 72 4 .24 7A −⎡⎤= ⎢⎥⎣⎦  Then the characteristic polynomial of A is 2(7 ) ( 7 ) 5 7 6 6 2 5−− λ − λ − = λ− =  
+(2 5 ) (2 5 )λ− λ+ , so the eigenvalues of A are 25 and –25. For λ = 25, one computes that a basis for 
+the eigenspace is 3 ,4⎡⎤⎢⎥⎣⎦  which can be normalized to get 1 3/5 .4/5⎡ ⎤= ⎢ ⎥⎣ ⎦u  For λ = –25, one computes that a 
+basis for the eigenspace is 4 ,3−⎡⎤⎢⎥⎣⎦  which can be normalized to get 2 4/5 .3/5−⎡ ⎤= ⎢ ⎥⎣ ⎦u  Let  
+----- pagina 5 -----
+7.1  Solutions   409  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   [] 12
+3/5 4/5 25 0 and4/5 3/5 0 2 5PD −⎡ ⎤⎡⎤== = ⎢ ⎥⎢⎥ −⎣ ⎦⎣⎦uu  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 17. Let 
+113
+131 .
+311
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ The eigenvalues of A are 5, 2, and –2. For λ = 5, one computes that a basis for 
+the eigenspace is 
+1
+1,
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ which can be normalized to get 1
+1/ 3
+1/ 3 .
+1/ 3
+⎡ ⎤
+⎢ ⎥
+= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  For λ = 2, one computes that a 
+basis for the eigenspace is 
+1
+2,
+1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ which can be normalized to get 2
+1/ 6
+2/ 6 .
+1/ 6
+⎡ ⎤
+⎢ ⎥
+=−⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  For λ = –2, one 
+computes that a basis for the eigenspace is 
+1
+0,
+1
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ which can be normalized to get 3
+1/ 2
+0.
+1/ 2
+⎡⎤−
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  Let  
+   [] 123
+1/ 3 1/ 6 1/ 2 50 0
+1/ 3 2/ 6 0 and 0 2 0
+00 21/ 3 1/ 6 1 2
+PD
+⎡⎤ − ⎡ ⎤⎢⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−⎣ ⎦⎢⎥⎣⎦uu u  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 18. Let 
+23 6 0
+36 23 0 .
+00 3
+A
+−−⎡⎤
+⎢⎥=− −⎢⎥
+⎢⎥⎣⎦
+ The eigenvalues of A are 25, 3, and –50. For λ = 25, one computes that a 
+basis for the eigenspace is 
+4
+3,
+0
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ which can be normalized to get 1
+4/5
+3/5 .
+0
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  For λ = 3, one 
+computes that a basis for the eigenspace is 
+0
+0,
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ which is of length 1, so 2
+0
+0.
+1
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  For λ = –50, one 
+computes that a basis for the eigenspace is 
+3
+4,
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ which can be normalized to get 3
+3/5
+4/5 .
+0
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  Let  
+----- pagina 6 -----
+410 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   [] 123
+4/5 0 3/5 2 5 0 0
+3/5 0 4/5 and 0 3 0
+01 0 00 5 0
+PD
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥== = ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+uu u  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 19. Let 
+32 4
+26 2 .
+42 3
+A
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ The eigenvalues of A are 7 and –2. For λ = 7, one computes that a basis for 
+the eigenspace is 
+11
+2,0 .
+01
+⎧⎫ −⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎩⎭  This basis may be converted via orthogonal projection to an 
+orthogonal basis for the eigenspace: 
+14
+2,2 .
+05
+⎧⎫ −⎡ ⎤⎡ ⎤
+⎪⎪⎢ ⎥⎢ ⎥⎨⎬⎢ ⎥⎢ ⎥⎪⎪⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎩⎭  These vectors can be normalized to get 
+1
+1/ 5
+2/ 5 ,
+0
+⎡⎤−
+⎢⎥
+= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  2
+4/ 4 5
+2/ 4 5 .
+5/ 45
+⎡ ⎤
+⎢ ⎥
+= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  For λ = –2, one computes that a basis for the eigenspace is 
+2
+1,
+2
+−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ 
+which can be normalized to get 3
+2/3
+1/3 .
+2/3
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+u  Let  
+   [] 123
+1/ 5 4/ 45 2/3 70 0
+2/ 5 2/ 4 5 1/3 a n d 0 7 0
+00 205 / 4 5 2 / 3
+PD
+⎡⎤−− ⎡ ⎤⎢⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−⎣ ⎦⎢⎥⎣⎦uu u  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 20. Let 
+74 4
+45 0 .
+40 9
+A
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ The eigenvalues of A are 13, 7, and 1. For λ = 13, one computes that a basis 
+for the eigenspace is 
+2
+1,
+2
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ which can be normalized to get 1
+2/3
+1/3 .
+2/3
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  For λ = 7, one computes 
+----- pagina 7 -----
+7.1  Solutions   411  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+that a basis for the eigenspace is 
+1
+2,
+2
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ which can be normalized to get 2
+1/3
+2/3 .
+2/3
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  For λ = 1, one 
+computes that a basis for the eigenspace is 
+2
+2,
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ which can be normalized to get 3
+2/3
+2/3 .
+1/3
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−⎣⎦
+u  Let  
+   [] 123
+2/3 1/3 2/3 1 3 0 0
+1/3 2/3 2/3 and 0 7 0
+2/3 2/3 1/3 0 0 1
+PD
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+uu u  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 21. Let 
+4131
+1413 .3141
+1314
+A
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+ The eigenvalues of A are 9, 5, and 1. For λ = 9, one computes that a basis 
+for the eigenspace is 
+1
+1 ,1
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ which can be normalized to get 1
+1/ 2
+1/ 2 .1/ 2
+1/ 2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  For λ = 5, one computes that a 
+basis for the eigenspace is 
+1
+1 ,1
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−
+⎢⎥⎢⎥⎣⎦
+ which can be normalized to get 2
+1/2
+1/2 .1/2
+1/2
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  For λ = 1, one 
+computes that a basis for the eigenspace is 
+10
+01,.10
+01
+⎧ ⎫−⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎩⎭  This basis is an orthogonal basis for the 
+eigenspace, and these vectors can be normalized to get 3
+1/ 2
+0 ,
+1/ 2
+0
+⎡ ⎤−
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  4
+0
+1/ 2 .0
+1/ 2
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  Let  
+   [] 1234
+1/2 1/2 1/ 2 0 9000
+1 / 2 1 / 2 0 1 / 2 0500 and 00101/2 1/2 1/ 2 0
+00011/2 1/2 0 1/ 2
+PD
+⎡⎤ −− ⎡ ⎤⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥== = ⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦uu uu  
+----- pagina 8 -----
+412 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 22. Let 
+2000
+01 01 .0020
+01 01
+A
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+ The eigenvalues of A are 2 and 0. For λ = 2, one computes that a basis for 
+the eigenspace is 
+100
+01 0,, .001
+01 0
+⎧⎫⎡⎤⎡⎤⎡⎤
+⎪⎪⎢⎥⎢⎥⎢⎥⎪⎪⎢⎥⎢⎥⎢⎥⎨⎬⎢⎥⎢⎥⎢⎥⎪⎪⎢⎥⎢⎥⎢⎥⎪⎪⎢⎥⎢⎥⎢⎥⎣⎦⎣⎦⎣⎦⎩⎭  This basis is an orthogonal basis for the eigenspace, and these 
+vectors can be normalized to get 1
+1
+0 ,0
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  2
+0
+1/ 2 ,0
+1/ 2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  and 3
+0
+0 .1
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  For λ = 0, one computes 
+that a basis for the eigenspace is 
+0
+1 ,0
+1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ which can be normalized to get 4
+0
+1/ 2 .0
+1/ 2
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  Let  
+   [] 1234
+10 0 0 2000
+0 1 /2 0 1 /2 0 2 0 0 and0 01 0 0020
+00000 1 /2 0 1 /2
+PD
+⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥== = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢ ⎥⎢⎥ ⎣ ⎦⎣⎦uu uu  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 23. Let 
+311
+131
+113
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+. Since each row of A sums to 5,  
+13 1 1 15 1
+11 3 1 15 5 1
+11 1 3 15 1
+A
+⎡ ⎤⎡ ⎤ ⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥== =⎢ ⎥⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦⎣ ⎦ ⎣ ⎦
+ 
+  and 
+1
+1
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+is an eigenvector of  A with corresponding eigenvalue λ = 5.  The eigenvector may be 
+normalized to get 1
+1/ 3
+1/ 3
+1/ 3
+⎡ ⎤
+⎢ ⎥
+= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u . For λ = 2, one computes that a basis for the eigenspace is 
+11
+1, 0 ,
+01
+⎧⎫ −−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭  so λ = 2 is an eigenvalue of A.  This basis may be converted via orthogonal 
+----- pagina 9 -----
+7.1  Solutions   413  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+projection to an orthogonal basis 
+11
+1, 1
+02
+⎧⎫ −−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ −⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭ for the eigenspace, and these vectors can be 
+normalized to get 2
+1/ 2
+1/ 2
+0
+⎡ ⎤−
+⎢ ⎥
+= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  and 3
+1/ 6
+1/ 6 .
+2/ 6
+⎡ ⎤−
+⎢ ⎥
+=−⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u   Let  
+   [] 123
+1/ 3 1/ 2 1/ 6 500
+1/ 3 1/ 2 1/ 6 a nd 0 2 0
+0021/ 3 0 2/ 6
+PD
+⎡⎤ −− ⎡ ⎤⎢⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥⎣⎦uuu  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 24. Let 
+542
+452 .
+222
+A
+−−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥−⎣⎦
+ One may compute that 
+22 0 2
+22 0 1 0 2
+11 0 1
+A
+−− −⎡ ⎤⎡ ⎤ ⎡⎤
+⎢ ⎥⎢ ⎥ ⎢⎥==⎢ ⎥⎢ ⎥ ⎢⎥
+⎢ ⎥⎢ ⎥ ⎢⎥⎣ ⎦⎣ ⎦ ⎣⎦
+, so 1
+2
+2
+1
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  is an  
+ 
+eigenvector of A with associated eigenvalue 1 10λ= . Likewise one may compute that  
+11 1
+11 1 1
+00 0
+A
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥==⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+, so 
+1
+1
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ is an eigenvector of A with associated eigenvalue 2 1λ= . For 2 1λ= , one 
+computes that a basis for the eigenspace is 
+11
+1,0 .
+02
+⎧ ⎫⎡ ⎤⎡⎤
+⎪ ⎪⎢ ⎥⎢⎥⎨ ⎬⎢ ⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥⎣ ⎦⎣⎦⎩⎭  This basis may be converted via orthogonal 
+projection to an orthogonal basis for the eigenspace: {}23
+11
+,1 , 1 .
+04
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥=−⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎩⎭vv  The eigenvectors 1v , 
+2v , and 3v  may be normalized to get the vectors 1
+2/3
+2/3 ,
+1/3
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  2
+1/ 2
+1/ 2 ,
+0
+⎡ ⎤
+⎢ ⎥
+= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  and 3
+1/ 1 8
+1/ 1 8 .
+4/ 1 8
+⎡⎤
+⎢⎥
+=−⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  
+Let  
+   [] 123
+2/3 1/ 2 1/ 1 8 10 0 0
+2/3 1/ 2 1/ 1 8 a n d 0 1 0
+0011/3 0 4/ 18
+PD
+⎡⎤− ⎡ ⎤⎢⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥⎣⎦uuu  
+  Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 25. a. True. See Theorem 2 and the paragraph preceding the theorem.  
+----- pagina 10 -----
+414 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ b. True. This is a particular case of the statement in Theorem 1, where u and v are nonzero.  
+ c. False. There are n real eigenvalues (Theorem 3), but they need not be distinct (Example 3).  
+ d. False. See the paragraph following formula (2), in which each u is a unit vector.  
+ 26. a. True. See Theorem 2.  
+ b. True. See the displayed equation in the paragraph before Theorem 2.  
+ c. False. An orthogonal matrix can be symmetric (and hence orthogonally diagonalizable), but not 
+every orthogonal matrix is symmetric. See the matrix P in Example 2.  
+ d. True. See Theorem 3(b).  
+ 27. Since A is symmetric, () TTT T T TTBA B BAB BA B== , and TBA B  is symmetric. Applying this result 
+with A = I gives TBB  is symmetric. Finally, () TT T T T TBB B B BB== , so TBB  is symmetric. 
+ 28. Let A be an n × n symmetric matrix. Then  
+   () () () TT T TAA A A A⋅= = = =⋅xy xy x y x y x y  
+  since TAA = . 
+ 29. Since A is orthogonally diagonalizable, 1AP D P −= , where P is orthogonal and D is diagonal. Since 
+A is invertible, 11 1 1 1()AP D P P D P−− − − −== . Notice that 1D−  is a diagonal matrix, so 1A−  is 
+orthogonally diagonalizable.  
+ 30. If A and B are orthogonally diagonalizable, then A and B are symmetric by Theorem 2. If AB = BA, 
+then () () TT T TAB BA A B AB=== . So AB is symmetric and hence is orthogonally diagonalizable by 
+Theorem 2.  
+ 31. The Diagonalization Theorem of Section 5.3 says that the columns of P are linearly independent 
+eigenvectors corresponding to the eigenvalues of A listed on the diagonal of D. So P has exactly k 
+columns of eigenvectors corresponding to λ. These k columns form a basis for the eigenspace. 
+ 32. If 1,A PRP −=  then 1 .PA P R− =  Since P is orthogonal, TR PA P= . Hence 
+()T T T TTT TRP A PP A P== =  
+,TPA P R=  which shows that R is symmetric. Since R is also upper triangular, its entries above the 
+diagonal must be zeros to match the zeros below the diagonal. Thus R is a diagonal matrix. 
+ 33. It is previously been found that A is orthogonally diagonalized by P, where  
+   [] 123
+1/ 2 1/ 6 1/ 3 800
+1/ 2 1/ 6 1/ 3 and 0 6 0
+00302 / 6 1 / 3
+PD
+⎡⎤−− ⎡ ⎤⎢⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥⎣⎦uu u  
+  Thus the spectral decomposition of A is  
+   111 2 2 2 3 3 3 11 2 2 3 3λλ λ 86 3
+TT T T T T
+A =+ + = ++uu u u uu uu u u uu  
+----- pagina 11 -----
+7.1  Solutions   415  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1/ 2 1/2 0 1/6 1/6 2/6 1/3 1/3 1/3
+8 1/ 2 1/2 0 6 1/6 1/6 2/6 3 1/3 1/3 1/3
+00 0 2 / 6 2 / 6 4 / 6 1 / 3 1 / 3 1 / 3
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− + − +⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+ 34. It is previously been found that A is orthogonally diagonalized by P, where  
+   [] 123
+1/ 2 1/ 18 2/3 70 0
+04 / 1 8 1 / 3 a n d 0 70
+00 21/ 2 1/ 18 2/3
+PD
+⎡⎤ −− ⎡ ⎤⎢⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−⎣ ⎦⎢⎥⎣⎦uu u  
+  Thus the spectral decomposition of A is  
+  111 2 2 2 3 3 3 11 2 2 3 3λλ λ 77 2
+TT T T T T
+A =+ + = +−uu u u uu uu u u uu  
+   
+1/ 2 0 1/2 1/18 4/18 1/18 4/9 2/9 4/9
+7 0 0 0 7 4/1 8 1 6/1 8 4/1 8 2 2/9 1/9 2/9
+1/ 2 0 1/2 1/18 4/18 1/18 4/9 2/9 4/9
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=+ − − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+ 35. a. Given x in n, () () () ,TT Tb ===xu u x u u x u x u  because Tux  is a scalar. So Bx = (x ⋅ u)u. Since 
+u is a unit vector, Bx is the orthogonal projection of x onto u.  
+ b. Since () ,TT T T T T TBB == = =uu u u uu  B is a symmetric matrix. Also, 
+2 () () ()TT T T TBB== = =uu uu u u u u uu  because 1.T =uu   
+ c. Since 1T =uu , () () ( 1 )TTB === =uu u u u u uu u , so u is an eigenvector of B with corresponding 
+eigenvalue 1.  
+ 36. Given any y in n, let ˆy = By and z = y – ˆy . Suppose that TBB =  and 2BB= . Then 
+.TBB B B B==   
+a. Since ˆˆ ˆ( ) () () () () 0 TT T T TBBB B B B B B B⋅= − ⋅ =⋅ −⋅ = − = − =z yy y yy yy yy y y y y y y y , z is 
+orthogonal to ˆ.y  
+b. Any vector in W = Col B has the form Bu for some u. Noting that B is symmetric, Exercise 28 
+gives  
+   ( y – ˆy ) ⋅ (Bu) = [B(y – ˆy )] ⋅ u = [By – BBy] ⋅ u = 0 
+  since 2 .BB =  So y – ˆy  is in ,W ⊥  and the decomposition y = ˆy + (y – ˆy ) expresses y as the sum 
+of a vector in W and a vector in .W ⊥  By the Orthogonal Decomposition Theorem in Section 6.3, 
+this decomposition is unique, and so ˆy  must be proj .W y  
+----- pagina 12 -----
+416 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 37. [M] Let 
+5296
+2569 .9652
+6925
+A
+−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥ −
+⎢⎥−⎢⎥⎣⎦
+ The eigenvalues of A are 18, 10, 4, and –12. For λ = 18, one 
+computes that a basis for the eigenspace is 
+1
+1 ,1
+1
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+ which can be normalized to get 1
+1/ 2
+1/ 2 .1/ 2
+1/ 2
+−⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥−
+⎢⎥⎢⎥⎣⎦
+u  For 
+λ = 10, one computes that a basis for the eigenspace is 
+1
+1
+1
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+, which can be normalized to get 
+2
+1/ 2
+1/ 2 .1/ 2
+1/ 2
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+u  For λ = 4, one computes that a basis for the eigenspace is 
+1
+1
+1
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥−⎢ ⎥⎣ ⎦
+, which can be 
+normalized to get 3
+1/ 2
+1/ 2 .1/ 2
+1/ 2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥−⎢ ⎥⎣ ⎦
+u  For λ = –12, one computes that a basis for the eigenspace is 
+1
+1 ,1
+1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥−
+⎢⎥⎢⎥⎣⎦
+ 
+which can be normalized to get 4
+1/2
+1/2 .1/2
+1/2
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥−
+⎢⎥⎢⎥⎣⎦
+u  Let 
+[] 1234
+1/2 1/2 1/2 1/2
+1/2 1/2 1/2 1/2
+1/2 1/2 1/2 1/2
+1/2 1/2 1/2 1/2
+P
+−⎡⎤
+⎢⎥ −⎢⎥== ⎢⎥−− −
+⎢⎥ −⎢⎥⎣⎦
+uu uu  and 
+18 0 0 0
+01 00 0 .00 4 0
+00 0 1 2
+D
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎢ ⎥⎣ ⎦
+ Then P 
+orthogonally diagonalizes A, and 1AP D P −= . 
+ 38. [M] Let 
+.38 .18 .06 .04
+.18 .59 .04 .12 ..06 .04 .47 .12
+.04 .12 .12 .41
+A
+−−−⎡⎤
+⎢⎥−−⎢⎥= ⎢⎥−− −
+⎢⎥−−⎢⎥⎣⎦
+ The eigenvalues of A are .25, .30, .55, and .75. For λ = 
+.25, one computes that a basis for the eigenspace is 
+4
+2 ,2
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ which can be normalized to get 1
+.8
+.4 ..4
+.2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  
+For  
+----- pagina 13 -----
+7.1  Solutions   417  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+λ = .30, one computes that a basis for the eigenspace is 
+1
+2 ,2
+4
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ which can be normalized to get 
+2
+.2
+.4 ..4
+.8
+−⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+u  For λ = .55, one computes that a basis for the eigenspace is 
+2
+1 ,4
+2
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+ which can be 
+normalized to get 3
+.4
+.2 ..8
+.4
+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  For λ = .75, one computes that a basis for the eigenspace is 
+2
+4 ,1
+2
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−
+⎢⎥⎢⎥⎣⎦
+ 
+which can be normalized to get 4
+.4
+.8 ..2
+.4
+−⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥−
+⎢⎥⎢⎥⎣⎦
+u  Let [] 1234
+.8 .2 .4 .4
+.4 .4 .2 .8
+.4 .4 .8 .2
+.2 .8 .4 .4
+P
+−−⎡ ⎤
+⎢ ⎥−−⎢ ⎥== ⎢ ⎥−−
+⎢ ⎥⎢ ⎥⎣ ⎦
+uu uu  
+and 
+. 2 5000
+0. 3 0 0 0 .00 . 5 50
+000 . 7 5
+D
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+ Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 39. [M] Let 
+.31 .58 .08 .44
+.58 .56 .44 .58 ..08 .44 .19 .08
+.44 .58 .08 .31
+A
+⎡⎤
+⎢⎥ −−⎢⎥= ⎢⎥ −
+⎢⎥ −−⎢⎥⎣⎦
+ The eigenvalues of A are .75, 0, and –1.25. For λ = .75, one 
+computes that a basis for the eigenspace is 
+13
+02,.02
+10
+⎧ ⎫⎡ ⎤⎡⎤
+⎪ ⎪⎢ ⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥⎨ ⎬⎢ ⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥⎣ ⎦⎣⎦⎩⎭  This basis may be converted via orthogonal 
+projection to the orthogonal basis 
+13
+04,.04
+13
+⎧⎫⎡⎤⎡ ⎤
+⎪⎪⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥⎨⎬⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥⎪⎪ −⎢⎥⎢ ⎥⎣⎦⎣ ⎦⎩⎭  These vectors can be normalized to get 
+1
+1/ 2
+0 ,0
+1/ 2
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  2
+3/ 50
+4/ 5 0 .
+4/ 5 0
+3/ 50
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+u  For λ = 0, one computes that a basis for the eigenspace is 
+2
+1 ,4
+2
+−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+----- pagina 14 -----
+418 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+which can be normalized to get 3
+.4
+.2 ..8
+.4
+−⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+u  For λ = –1.25, one computes that a basis for the 
+eigenspace is 
+2
+4 ,1
+2
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−
+⎢⎥⎢⎥⎣⎦
+ which can be normalized to get 4
+.4
+.8 ..2
+.4
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  
+  Let [] 1234
+1/ 2 3/ 50 .4 .4
+04 / 5 0. 2. 8
+04 / 5 0 . 8. 2
+1/ 2 3/ 50 .4 .4
+P
+⎡⎤ −−
+⎢⎥
+−⎢⎥== ⎢⎥ −⎢⎥
+⎢⎥ −⎣⎦
+uu uu  and 
+.75 0 0 0
+0. 7 50 0
+00 0 0
+00 0 1 . 2 5
+D
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎢ ⎥⎣ ⎦
+. 
+Then P orthogonally diagonalizes A, and 1AP D P −= . 
+ 40. [M] Let 
+1 0226 9
+21 0 2 6 9
+.22 1 06 9
+666 2 6 9
+99991 9
+A
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥= −
+⎢⎥−−−⎢⎥
+⎢⎥ −⎣⎦
+ The eigenvalues of A are 8, 32, –28, and 17. For λ = 8, 
+one computes that a basis for the eigenspace is 
+11
+10
+,.01
+00
+00
+⎧ ⎫−⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  This basis may be converted via 
+orthogonal projection to the orthogonal basis 
+11
+11
+,.02
+00
+00
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥−⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  These vectors can be normalized to get 
+1
+1/ 2
+1/ 2
+,0
+0
+0
+⎡⎤
+⎢⎥
+−⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+u  2
+1/ 6
+1/ 6
+.2/ 6
+0
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥= −⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  For λ = 32, one computes that a basis for the eigenspace is 
+1
+1
+,1
+3
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ 
+----- pagina 15 -----
+7.1  Solutions   419  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+which can be normalized to get 3
+1/ 12
+1/ 12
+.1/ 12
+3/ 12
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+u  For λ = –28, one computes that a basis for the 
+eigenspace is 
+1
+1
+,1
+1
+4
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+ which can be normalized to get 4
+1/ 20
+1/ 20
+.1/ 20
+1/ 20
+4/ 2 0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎣ ⎦
+u  For λ = 17, one computes that 
+a basis for the eigenspace is 
+1
+1
+,1
+1
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ which can be normalized to get 5
+1/ 5
+1/ 5
+.1/ 5
+1/ 5
+1/ 5
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  Let 
+[] 12345
+1/ 2 1/ 6 1/ 12 1/ 20 1/ 5
+1/ 2 1/ 6 1/ 12 1/ 20 1/ 5
+0 2 / 6 1/ 12 1/ 20 1/ 5
+0 0 3/ 12 1/ 20 1/ 5
+00 0 4 / 2 0 1 / 5
+P
+⎡⎤
+⎢⎥
+−⎢⎥
+⎢⎥== −⎢⎥
+⎢⎥ −⎢⎥
+⎢⎥ −⎣⎦
+uuuu u  and 
+80 0 0 0
+08 0 0 0
+.003 2 0 0
+00 0 2 8 0
+00 0 01 7
+D
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥=
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+ Then P orthogonally diagonalizes A, and 1AP D P −= . 
+----- pagina 16 -----
+420 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+7.2 SOLUTIONS 
+Notes: This section can provide a good conclusion to the course, because the mathematics here is widely 
+used in applications. For instance, Exercises 23 and 24 can be used to develop the second derivative test 
+for functions of two variables. However, if time pe rmits, some interesting applications still lie ahead. 
+Theorem 4 is used to prove Theorem 6 in Section 7.3, which in turn is used to develop the singular value 
+decomposition. 
+ 1. a. []
+21 2
+12 1 1 2 2
+2
+51 / 3 5( 2 / 3 )1/3 1T xAx x x x x x x⎡⎤⎡⎤== + + ⎢⎥⎢⎥⎣⎦ ⎣⎦xx   
+ b. When 6 ,1⎡⎤= ⎢⎥⎣⎦x  225(6) (2/ 3)(6)(1) (1) 185.T A =+ + =xx  
+ c. When 1 ,3⎡⎤= ⎢⎥⎣⎦x  225(1) (2 / 3)(1)(3) (3) 16.T A =+ + =xx  
+ 2. a. []
+1
+22 2
+1 2 3 2 1 2 31 22 3
+3
+430
+321 4 2 6 2
+011
+T
+x
+Ax x x x xx xx xx x
+x
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥== + + + + ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+xx   
+ b. When 
+2
+1,
+5
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+x  22 24(2) 2( 1) (5) 6(2)( 1) 2( 1)(5) 21.T A =+ − + + − + − =xx  
+ c. When 
+1/ 3
+1/ 3 ,
+1/ 3
+⎡⎤
+⎢⎥
+= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+x  
+22 24(1/ 3) 2( 1/ 3) (1/ 3) 6(1/ 3)(1/ 3) 2(1/ 3)(1/ 3) 5.T A =++ + + =xx  
+ 3. a. The matrix of the quadratic form is 10 3 .33 −⎡ ⎤⎢ ⎥−−⎣ ⎦  
+ b. The matrix of the quadratic form is 53 / 2 .3/2 0⎡ ⎤⎢ ⎥⎣ ⎦  
+ 4. a. The matrix of the quadratic form is 20 15/ 2 .15/ 2 10⎡ ⎤⎢ ⎥−⎣ ⎦  
+ b. The matrix of the quadratic form is 01 / 2 .1/2 0⎡ ⎤⎢ ⎥⎣ ⎦  
+ 5. a. The matrix of the quadratic form is 
+832
+37 1 .
+21 3
+−⎡ ⎤
+⎢ ⎥−−⎢ ⎥
+⎢ ⎥−−⎣ ⎦
+ 
+----- pagina 17 -----
+7.2  Solutions   421  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ b. The matrix of the quadratic form is 
+023
+204 .
+340
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+ 6. a. The matrix of the quadratic form is 
+55 / 2 3 / 2
+5/2 1 0 .
+3/2 0 7
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+ b. The matrix of the quadratic form is 
+02 0
+20 2 .
+02 1
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+ 7. The matrix of the quadratic form is 15 .51A ⎡ ⎤= ⎢ ⎥⎣ ⎦  The eigenvalues of A are 6 and –4. An eigenvector 
+for λ = 6 is 1 ,1⎡⎤⎢⎥⎣⎦  which may be normalized to 1 1/ 2 .1/ 2⎡ ⎤= ⎢ ⎥⎢ ⎥⎣ ⎦u  An eigenvector for λ = –4 is 1 ,1−⎡⎤⎢⎥⎣⎦  
+which may be normalized to 2
+1/ 2 .
+1/ 2
+⎡⎤−= ⎢⎥
+⎢⎥⎣⎦
+u  Then 1AP D P −= , where 
+[] 12
+1/ 2 1/ 2
+1/ 2 1/ 2
+P
+⎡⎤ −== ⎢⎥
+⎢⎥⎣⎦
+uu  and 60 .04D ⎡ ⎤= ⎢ ⎥−⎣ ⎦  The desired change of variable is x = Py, and 
+the new quadratic form is  
+   2212()() 6 4TT T T TAP A P P A P D y y== = = −xx y y y y yy  
+ 8. The matrix of the quadratic form is 
+94 4
+47 0 .
+40 1 1
+A
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 3, 9, and 15. An 
+eigenvector for λ = 3 is 
+2
+2,
+1
+−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ which may be normalized to 1
+2/3
+2/3 .
+1/3
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  An eigenvector for λ = 9 
+is 
+1
+2,
+2
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ which may be normalized to 2
+1/3
+2/3 .
+2/3
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  An eigenvector for λ = 15 is 
+2
+1,
+2
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ which may 
+be normalized to 3
+2/3
+1/3 .
+2/3
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  Then 1AP D P −= , where 
+[] 123
+2/3 1/3 2/3
+2/3 2/3 1/3
+1/3 2/3 2/3
+P
+−−⎡ ⎤
+⎢ ⎥== − − ⎢ ⎥
+⎢ ⎥⎣ ⎦
+uu u  and 
+30 0
+09 0 .
+001 5
+D
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The desired change of variable 
+is x = Py, and the new quadratic form is  
+----- pagina 18 -----
+422 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   22 212 3()() 3 9 1 5TT T T TAP A P P A P D y y y== = = + +xx y y y y yy  
+ 9. The matrix of the quadratic form is 32 .26A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  The eigenvalues of A are 7 and 2, so the 
+quadratic form is positive definite. An eigenvector for λ = 7 is 1 ,2−⎡ ⎤⎢ ⎥⎣ ⎦  which may be normalized to 
+1
+1/ 5 .
+2/ 5
+⎡⎤−= ⎢⎥
+⎢⎥⎣⎦
+u  An eigenvector for λ = 2 is 2 ,1⎡ ⎤⎢ ⎥⎣ ⎦  which may be normalized to 2 2/ 5 .1/ 5⎡⎤= ⎢⎥⎢⎥⎣⎦u  Then 
+1AP D P −= , where [] 12 1/ 5 2/ 52/ 5 1/ 5P ⎡⎤−== ⎢⎥⎢⎥⎣⎦uu  and 70 .02D ⎡ ⎤= ⎢ ⎥⎣ ⎦  The desired change of 
+variable is x = Py, and the new quadratic form is  
+   2212()() 7 2TT T T TAP A P P A P D y y== = = +xx y y y y yy  
+ 10. The matrix of the quadratic form is 94 .43A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  The eigenvalues of A are 11 and 1, so the 
+quadratic form is positive definite. An eigenvector for λ = 11 is 2 ,1⎡ ⎤⎢ ⎥−⎣ ⎦  which may be normalized to 
+1
+2/ 5 .
+1/ 5
+⎡⎤
+= ⎢⎥
+−⎢⎥⎣⎦
+u  An eigenvector for λ = 1 is 12⎡ ⎤⎢ ⎥⎣ ⎦ , which may be normalized to 2 1/ 5 .2/ 5⎡⎤= ⎢⎥⎢⎥⎣⎦u  Then 
+1AP D P −= , where [] 12 2/ 5 1/ 51/ 5 2/ 5P ⎡⎤== ⎢⎥−⎢⎥⎣⎦uu  and 11 0 .01D ⎡ ⎤= ⎢ ⎥⎣ ⎦  The desired change of 
+variable is x = Py, and the new quadratic form is  
+   2212()() 1 1TT T T TAP A P P A P D y y== = = +xx y y y y yy  
+ 11. The matrix of the quadratic form is 25 .52A ⎡ ⎤= ⎢ ⎥⎣ ⎦  The eigenvalues of A are 7 and –3, so the quadratic 
+form is indefinite. An eigenvector for λ = 7 is 1 ,1⎡ ⎤⎢ ⎥⎣ ⎦  which may be normalized to 1 1/ 2 .1/ 2⎡⎤= ⎢⎥⎢⎥⎣⎦u  An 
+eigenvector for λ = –3 is 1 ,1−⎡⎤⎢⎥⎣⎦  which may be normalized to 2 1/ 2 .1/ 2⎡ ⎤−= ⎢ ⎥⎢ ⎥⎣ ⎦u  Then 1AP D P −= ,  
+ where [] 12
+1/ 2 1/ 2
+1/ 2 1/ 2
+P
+⎡⎤ −== ⎢⎥
+⎢⎥⎣⎦
+uu  and 70 .03D ⎡ ⎤= ⎢ ⎥−⎣ ⎦  The desired change of variable is x 
+= Py, and the new quadratic form is  
+   2212()() 7 3TT T T TAP A P P A P D yy== = = −xx y y y y yy  
+----- pagina 19 -----
+7.2  Solutions   423  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. The matrix of the quadratic form is 52 .22A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  The eigenvalues of A are –1 and –6, so the 
+quadratic form is negative definite. An eigenvector for λ = –1 is 1 ,2⎡ ⎤⎢ ⎥⎣ ⎦  which may be normalized to 
+1
+1/ 5 .
+2/ 5
+⎡⎤
+= ⎢⎥
+⎢⎥⎣⎦
+u  An eigenvector for λ = –6 is 2 ,1−⎡ ⎤⎢ ⎥⎣ ⎦  which may be normalized to 2 2/ 5 .1/ 5⎡⎤−= ⎢⎥⎢⎥⎣⎦u  Then 
+1AP D P −= , where [] 12 1/ 5 2/ 52/ 5 1/ 5P ⎡⎤ −== ⎢⎥⎢⎥⎣⎦uu  and 1006D −⎡ ⎤= ⎢ ⎥−⎣ ⎦ . The desired change of 
+variable is x = Py, and the new quadratic form is  
+   2212()() 6TT T T TAP A P P A P D y y== = = − −xx y y y y yy  
+ 13. The matrix of the quadratic form is 13 .39A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  The eigenvalues of A are 10 and 0, so the 
+quadratic form is positive semidefinite. An eigenvector for λ = 10 is 1 ,3⎡ ⎤⎢ ⎥−⎣ ⎦  which may be 
+normalized to 1
+1/ 10 .
+3/ 10
+⎡⎤
+= ⎢⎥
+−⎢⎥⎣⎦
+u  An eigenvector for λ = 0 is 3 ,1⎡ ⎤⎢ ⎥⎣ ⎦  which may be normalized to 
+2
+3/ 10 .
+1/ 10
+⎡⎤
+= ⎢⎥
+⎢⎥⎣⎦
+u  Then 1AP D P −= , where [] 12 1/ 10 3/ 103/ 10 1/ 10P ⎡ ⎤== ⎢ ⎥−⎢ ⎥⎣ ⎦uu  and 10 0 .00D ⎡⎤= ⎢⎥⎣⎦  The 
+desired change of variable is x = Py, and the new quadratic form is  
+   21()() 1 0TT T T TAP A P P A P D y== = =xx y y y y yy  
+ 14. The matrix of the quadratic form is 83 .30A ⎡ ⎤= ⎢ ⎥⎣ ⎦  The eigenvalues of A are 9 and –1, so the quadratic 
+form is indefinite. An eigenvector for λ = 9 is 3 ,1⎡ ⎤⎢ ⎥⎣ ⎦  which may be normalized to 1 3/ 10 .1/ 10⎡⎤= ⎢⎥⎢⎥⎣⎦u  An 
+eigenvector for λ = –1 is 1 ,3−⎡⎤⎢⎥⎣⎦  which may be normalized to 2 1/ 10 .3/ 10⎡ ⎤−= ⎢ ⎥⎢ ⎥⎣ ⎦u  Then 1AP D P −= , 
+where [] 12
+3/ 10 1/ 10
+1/ 10 3/ 10
+P
+⎡ ⎤−== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+uu  and 90 .01D ⎡ ⎤= ⎢ ⎥−⎣ ⎦  The desired change of variable is x = 
+Py, and the new quadratic form is  
+   2212()() 9TT T T TAP A P P A P D y y== = = −xx y y y y yy  
+----- pagina 20 -----
+424 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 15. [M] The matrix of the quadratic form is 
+2222
+2600 .2093
+2039
+A
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥−
+⎢ ⎥−⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 0, –6, –
+8, and –12, so the quadratic form is negative semidefinite. The corresponding eigenvectors may be 
+computed:  
+   
+301 0
+121 0λ 0: , λ 6: , λ 8: , λ 12 :11 1 1
+11 1 1
+−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥== − = − = −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  These eigenvectors may be normalized to form the columns of P, and 1AP D P −= , where  
+   
+3/ 12 0 1/2 0 000 0
+1/ 12 2/ 6 1/2 0 0 6 0 0 and 008 01/ 12 1/ 6 1/2 1/ 2
+0001 21/ 12 1/ 6 1/2 1/ 2
+PD
+⎡⎤ − ⎡ ⎤⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥⎢⎥ −⎢ ⎥⎣ ⎦⎣⎦  
+  The desired change of variable is x = Py, and the new quadratic form is  
+   22 223 4()() 6 8 1 2TT T T TAP A P P A P D yy y== = = − − −xx y y y y yy  
+ 16. [M] The matrix of the quadratic form is 
+43 / 2 0 2
+3 / 2420 .024 3 / 2
+20 3 / 24
+A
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 
+13/2 and 3/2, so the quadratic form is positive definite. The corresponding eigenvectors may be 
+computed:  
+   
+43 4 3
+05 0 5λ 13/ 2 : , , λ 3/2: ,34 3 4
+50 5 0
+⎧⎫ ⎧ ⎫−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ −⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥== ⎨⎬ ⎨ ⎬⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ −⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦⎩⎭ ⎩ ⎭  
+  Each set of eigenvectors above is already an orthogonal set, so they may be normalized to form the 
+columns of P, and 1AP D P −= , where  
+   
+3/ 50 4 / 50 3/ 50 4 / 50 1 3 / 2 000
+5 / 5 0 0 5 / 5 0 0 0 1 3 / 200 and 00 3 / 2 04 / 50 3/ 50 4 / 50 3/ 50
+00 0 3 / 205 / 5 0 05 / 5 0
+PD
+⎡⎤ − ⎡ ⎤⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦  
+  The desired change of variable is x = Py, and the new quadratic form is  
+   2 22212 3 413 13 3 3()() 22 2 2TT T T TA P A P P A P D y yyy== = = + + +xx y y y y yy  
+----- pagina 21 -----
+7.2  Solutions   425  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 17. [M] The matrix of the quadratic form is 
+19 / 2 0 6
+9/2 1 6 0 .061 9 / 2
+60 9 / 21
+A
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 
+17/2 and –13/2, so the quadratic form is indefinite. The corresponding eigenvectors may be 
+computed:  
+   
+43 4 3
+05 0 5λ 17 / 2 : , , λ 13/ 2 : ,34 3 4
+50 5 0
+⎧⎫ ⎧ ⎫−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ −⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥== − ⎨⎬ ⎨ ⎬⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ −⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎪⎪ ⎪ ⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦⎩⎭ ⎩ ⎭  
+  Each set of eigenvectors above is already an orthogonal set, so they may be normalized to form the 
+columns of P, and 1AP D P −= , where  
+   
+3/ 50 4 / 50 3/ 50 4 / 50 17 / 2 0 0 0
+5/ 50 0 5/ 50 0 0 17/2 0 0 and 00 1 3 / 2 04 / 50 3/ 50 4 / 50 3/ 50
+00 0 1 3 / 205 / 5 0 05 / 5 0
+PD
+⎡⎤ − ⎡ ⎤⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥⎢⎥ −⎢ ⎥⎣ ⎦⎣⎦  
+  The desired change of variable is x = Py, and the new quadratic form is  
+   222212 3 417 17 13 13()() 2222TT T T TA P A P P A PD yyyy== = = + − −xx y y y y yy  
+ 18. [M] The matrix of the quadratic form is 
+11 6 6 6
+61 00 .6001
+6010
+A
+−−−⎡ ⎤
+⎢ ⎥−−⎢ ⎥= ⎢ ⎥−−
+⎢ ⎥−−⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 17, 1, –
+1, and –7, so the quadratic form is indefinite. The corresponding eigenvectors may be computed:  
+   
+30 0 1
+10 2 1λ 17 : , λ 1: , λ 1: , λ 7:11 11
+11 11
+−⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ −⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥== = − = −⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+  These eigenvectors may be normalized to form the columns of P, and 1AP D P −= , where  
+   
+3/ 1 2 0 0 1/2 17 0 0 0
+1/ 1 2 0 2/ 6 1/2 0 1 0 0 and 00 1 01/ 1 2 1/ 2 1/ 6 1/2
+00 0 71/ 1 2 1/ 2 1/ 6 1/2
+PD
+⎡⎤− ⎡ ⎤⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥⎢⎥ −⎣ ⎦⎣⎦  
+  The desired change of variable is x = Py, and the new quadratic form is  
+   222 212 3 4()() 1 7 7TT T T TAP A P P A P D y y y y= = = = +−−xx y y y y yy  
+----- pagina 22 -----
+426 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 19. Since 8 is larger than 5, the 22x  term should be as large as possible. Since 2212 1xx += , the largest 
+value that 2x  can take is 1, and 1 0x =  when 2 1x = . Thus the largest value the quadratic form can 
+take when 1T =xx  is 5(0) + 8(1) = 8. 
+ 20. Since 5 is larger in absolute value than –3, the 21x  term should be as large as possible. Since 
+22
+12 1xx += , the largest value that 1x  can take is 1, and 2 0x =  when 1 1x = . Thus the largest value 
+the quadratic form can take when 1T =xx  is 5(1) – 3(0) = 5. 
+ 21. a. True. See the definition before Example 1, even though a nonsymmetric matrix could be used to 
+compute values of a quadratic form.  
+ b. True. See the paragraph following Example 3.  
+ c. True. The columns of P in Theorem 4 are eigenvectors of A. See the Diagonalization Theorem in 
+Section 5.3.  
+ d. False. Q(x) = 0 when x = 0.  
+ e. True. See Theorem 5(a).  
+ f. True. See the Numerical Note after Example 6.  
+ 22. a. True. See the paragraph before Example 1.  
+ b. False. The matrix P must be orthogonal and make TPA P  diagonal. See the paragraph before 
+Example 4.  
+ c. False. There are also “degenerate” cases: a single point, two intersecting lines, or no points at all. 
+See the subsection “A Geometric View of Principal Axes.”  
+ d. False. See the definition before Theorem 5.  
+ e. True. See Theorem 5(b). If T Axx  has only negative values for x ≠ 0, then T Axx  is negative 
+definite.  
+ 23. The characteristic polynomial of A may be written in two ways:  
+   22λdet( λ )d e t λ () λλabAI a d a d b bd−⎡⎤−= = − + + −⎢⎥ −⎣⎦  
+  and  
+   212 1 2 1 2(λλ )(λλ ) λ (λλ )λλ λ−− = − + +  
+  The coefficients in these polynomials may be equated to obtain 12λλ ad+= +  and 12λλ =  
+2 detad b A−= . 
+ 24. If det A > 0, then by Exercise 23, 12λλ 0> , so that 1λ  and 2λ  have the same sign; also, 
+2det 0ad A b=+ > .  
+ a. If det A > 0 and a > 0, then d > 0 also, since ad > 0. By Exercise 23, 12λλ 0ad+= + > . Since 1λ  
+and 2λ  have the same sign, they are both positive. So Q is positive definite by Theorem 5.  
+ b. If det A > 0 and a < 0, then d < 0 also, since ad > 0. By Exercise 23, 12λλ 0ad+= + < . Since 1λ  
+and 2λ  have the same sign, they are both negative. So Q is negative definite by Theorem 5.  
+ c. If det A < 0, then by Exercise 23, 12λλ 0< . Thus 1λ  and 2λ  have opposite signs. So Q is 
+indefinite by Theorem 5. 
+----- pagina 23 -----
+7.3  Solutions   427  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 25. Exercise 27 in Section 7.1 showed that TBB  is symmetric. Also ( ) || || 0TT TBB B B B== ≥xx x x x , so 
+the quadratic form is positive semidefinite, and the matrix TBB  is positive semidefinite. Suppose 
+that B is square and invertible. Then if 0,TTBB =xx  || Bx || = 0 and Bx = 0. Since B is invertible, x = 
+0. Thus if x ≠ 0, 0TTBB >xx  and TBB  is positive definite. 
+ 26. Let ,TAP D P=  where 1.TPP −=  The eigenvalues of A are all positive: denote them 1λ ,, λ .n…  Let C 
+be the diagonal matrix with 1λ ,, λ n…  on its diagonal. Then 2 TDC C C== . If TBP C P= , then B 
+is positive definite because its eigenvalues are the positive numbers on the diagonal of C. Also  
+   () () ( ) ()TT T T T T T T T T T TB B PCP PCP P C P PCP PC CP PDP A== = = =  
+  since .TPP I =  
+ 27. Since the eigenvalues of A and B are all positive, the quadratic forms T Axx  and T Bxx  are positive 
+definite by Theorem 5. Let x ≠ 0. Then 0T A >xx  and 0T B >xx , so () 0TT TAB A B+= + >xx x x x x , 
+and the quadratic form ()T AB+xx  is positive definite. Note that A + B is also a symmetric matrix. 
+Thus by Theorem 5 all the eigenvalues of A + B must be positive. 
+ 28. The eigenvalues of A are all positive by Theorem 5. Since the eigenvalues of 1A−  are the reciprocals 
+of the eigenvalues of A (see Exercise 25 in Section 5.1), the eigenvalues of 1A−  are all positive. Note 
+that 1A−  is also a symmetric matrix. By Theorem 5, the quadratic form 1T A−xx  is positive definite. 
+7.3 SOLUTIONS 
+Notes: Theorem 6 is the main result needed in the next two sections. Theorem 7 is mentioned in Example 
+2 of Section 7.4. Theorem 8 is needed at the very end of Section 7.5. The economic principles in Example 
+6 may be familiar to students who have had a course in macroeconomics. 
+ 1. The matrix of the quadratic form on the left is 
+520
+262 .
+027
+A
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ The equality of the quadratic 
+forms implies that the eigenvalues of A are 9, 6, and 3. An eigenvector may be calculated for each 
+eigenvalue and normalized:  
+   
+1/3 2/3 2/3
+λ 9: 2/3 , λ 6: 1/3 , λ 3: 2/3
+2/3 1/3 1/3
+−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥== =⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥−⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  The desired change of variable is x = Py, where 
+1/3 2/3 2/3
+2/3 1/3 2/3 .
+2/3 2/3 1/3
+P
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+----- pagina 24 -----
+428 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 2. The matrix of the quadratic form on the left is 
+311
+122 .
+122
+A
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The equality of the quadratic forms 
+implies that the eigenvalues of A are 5, 2, and 0. An eigenvector may be calculated for each 
+eigenvalue and normalized:  
+   
+1/ 3 2/ 6 0
+λ 5: 1/ 3 , λ 2: 1/ 6 , λ 0: 1/ 2
+1/ 3 1/ 6 1/ 2
+⎡⎤ ⎡ ⎤ − ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥== = −⎢⎥ ⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎣ ⎦⎣⎦ ⎣ ⎦  
+  The desired change of variable is x = Py, where 
+1/ 3 2/ 6 0
+1/ 3 1/ 6 1/ 2 .
+1/ 3 1/ 6 1/ 2
+P
+⎡ ⎤−
+⎢ ⎥
+=−⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+ 3. (a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A. By Exercise 1, 1λ 9.=  
+(b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. By Exercise 1, 
+1/3
+2/3 .
+2/3
+⎡⎤
+⎢⎥=± ⎢⎥
+⎢⎥−⎣⎦
+u  
+(c) By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu  is 
+the second greatest eigenvalue 2λ  of A. By Exercise 1, 2λ 6.=  
+ 4. (a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A. By Exercise 2, 1λ 5.=  
+(b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. By Exercise 2, 
+1/ 3
+1/ 3 .
+1/ 3
+⎡⎤
+⎢⎥
+=± ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  
+(c) By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu  is 
+the second greatest eigenvalue 2λ  of A. By Exercise 2, 2λ 2.=  
+ 5. The matrix of the quadratic form is 52 .25A −⎡ ⎤= ⎢ ⎥−⎣ ⎦  The eigenvalues of A are 1λ 7=  and 2λ 3.=  
+(a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A, which is 7.  
+----- pagina 25 -----
+7.3  Solutions   429  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+(b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. One may compute that 11−⎡⎤⎢⎥⎣⎦  is 
+an eigenvector corresponding to 1λ 7,=  so 1/ 2 .1/ 2⎡ ⎤−=± ⎢ ⎥⎢ ⎥⎣ ⎦u  
+(c) By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu  is 
+the second greatest eigenvalue 2λ  of A, which is 3.  
+ 6. The matrix of the quadratic form is 73 / 2 .3/2 3A ⎡ ⎤= ⎢ ⎥⎣ ⎦  The eigenvalues of A are 1λ 15/ 2=  and 
+2λ 5/2.=  
+(a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A, which is 15/2.  
+(b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. One may compute that 31⎡⎤⎢⎥⎣⎦  is an 
+eigenvector corresponding to 1λ 15 / 2,=  so 3/ 10 .1/ 10⎡ ⎤=± ⎢ ⎥⎢ ⎥⎣ ⎦u  
+(c) By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu  is 
+the second greatest eigenvalue 2λ  of A, which is 5/2.  
+ 7. The eigenvalues of the matrix of the quadratic form are 1λ 2,=  2λ 1,=−  and 3λ 4.=−  By Theorem 
+6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit eigenvector u 
+corresponding to the greatest eigenvalue 1λ  of A. One may compute that 
+1/2
+1
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ is an eigenvector 
+corresponding to 1λ 2,=  so 
+1/3
+2/3 .
+2/3
+⎡⎤
+⎢⎥=± ⎢⎥
+⎢⎥⎣⎦
+u  
+ 8. The eigenvalues of the matrix of the quadratic form are 1λ 9,=  and 2λ 3.=−  By Theorem 6, the 
+maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit eigenvector u 
+corresponding to the greatest eigenvalue 1λ  of A. One may compute that 
+1
+0
+1
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and 
+2
+1
+0
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ are linearly 
+independent eigenvectors corresponding to 1λ 9,=  so u can be any unit vector which is a linear 
+combination of 
+1
+0
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ and 
+2
+1.
+0
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ Alternatively, u can be any unit vector which is orthogonal to the 
+----- pagina 26 -----
+430 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+eigenspace corresponding to the eigenvalue 2λ 3.=−  Since multiples of 
+1
+2
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ are eigenvectors 
+corresponding to 2λ 3,=−  u can be any unit vector orthogonal to 
+1
+2.
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+ 9. This is equivalent to finding the maximum value of T Axx  subject to the constraint 1.T =xx  By 
+Theorem 6, this value is the greatest eigenvalue 1λ  of the matrix of the quadratic form. The matrix of 
+the quadratic form is 71 ,13A −⎡⎤= ⎢⎥−⎣⎦  and the eigenvalues of A are 1λ 55 ,=+  2λ 55 .=−  Thus 
+the desired constrained maximum value is 1λ 55 .=+  
+ 10. This is equivalent to finding the maximum value of T Axx  subject to the constraint 1T =xx . By 
+Theorem 6, this value is the greatest eigenvalue 1λ  of the matrix of the quadratic form. The matrix of 
+the quadratic form is 31 ,15A −−⎡⎤= ⎢⎥−⎣⎦  and the eigenvalues of A are 1λ 11 7 ,=+  2λ 11 7 .=−  Thus 
+the desired constrained maximum value is 1λ 11 7 .=+  
+ 11. Since x is an eigenvector of A corresponding to the eigenvalue 3, Ax = 3x, and (3 )TTA ==xx x x  
+23( ) 3 || || 3T ==xx x  since x is a unit vector. 
+ 12. Let x be a unit eigenvector for the eigenvalue λ. Then (λ ) λ () λTT TA ===xx x x x x  since 1T =xx . 
+So λ must satisfy m ≤ λ ≤ M. 
+ 13. If m = M, then let t = (1 – 0)m + 0M = m and .n=xu  Theorem 6 shows that .TnnAm =uu  Now 
+suppose that m < M, and let t be between m and M. Then 0 ≤ t – m ≤ M – m and 0 ≤ (t – m)/(M – m) 
+≤ 1. Let  
+α = (t – m)/(M – m), and let 11. nαα=− +xu u  The vectors 1 nα− u  and 1α u  are orthogonal 
+because they are eigenvectors for different eigenvectors (or one of them is 0). By the Pythagorean 
+Theorem  
+  22 22 2 11|| || || 1 || || || |1 ||| || | ||| || (1 ) 1T nnαααα α α== − + = − + = − + =xx x u u u u  
+  since nu  and 1u  are unit vectors and 0 ≤ α ≤ 1. Also, since nu  and 1u  are orthogonal,  
+   11(1 ) (1 )TT nnAA αα αα=− + − +x x uu uu  
+   11(1 )( 1 ) Tnn mMαα α α=− + − +uu u u  
+   11|1 | | | ( 1 )TTnnmM m M tαα α α=− + =− + =uu uu  
+  Thus the quadratic form T Axx  assumes every value between m and M for a suitable unit vector x. 
+----- pagina 27 -----
+7.3  Solutions   431  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 14. [M] The matrix of the quadratic form is 
+01 / 23 / 2 1 5
+1/2 0 15 3/2 .3/2 15 0 1/2
+15 3/ 2 1/ 2 0
+A
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 
+1λ 17,=  2λ 13,=  3λ 14,=−  and 4λ 16.=−  
+ (a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A, which is 17.  
+ (b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. One may compute that 
+1
+1
+1
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ is an 
+eigenvector corresponding to 1λ 17,=  so 
+1/2
+1/2 .1/2
+1/2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥=± ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  
+ (c) By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu  is 
+the second greatest eigenvalue 2λ  of A, which is 13.  
+ 15. [M] The matrix of the quadratic form is 
+0 3/2 5/2 7/2
+3/2 0 7/2 5/2 .5/2 7/2 0 3/2
+7/2 5/2 3/2 0
+A
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 
+1λ 15/ 2,=  2λ 1/2,=−  3λ 5/2,=−  and 4λ 9/2 .=−  
+ (a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A, which is 15/2.  
+ (b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. One may compute that 
+1
+1
+1
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ is an 
+eigenvector corresponding to 1λ 15/ 2,=  so 
+1/2
+1/2 .1/2
+1/2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥=± ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+u  
+ (c) By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu  is 
+the second greatest eigenvalue 2λ  of A, which is –1/2. 
+----- pagina 28 -----
+432 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 16. [M] The matrix of the quadratic form is 
+4355
+3033 .5301
+5310
+A
+−−−⎡ ⎤
+⎢ ⎥−− −⎢ ⎥= ⎢ ⎥−− −
+⎢ ⎥−−−⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 1λ 9,=  
+2λ 3,=  3λ 1,=  and 4λ 9.=−  
+ (a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A, which is 9.  
+ (b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. One may compute that 
+2
+0
+1
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ is 
+an eigenvector corresponding to 1λ 9,=  so 
+2/ 6
+0
+.
+1/ 6
+1/ 6
+⎡ ⎤−
+⎢ ⎥
+⎢ ⎥=± ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u
+ 
+(c)  By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu is the 
+second greatest eigenvalue 2λ  of A, which is 3. 
+17. [M] The matrix of the quadratic form is 
+6222
+2 1 000 .20 1 33
+203 1 3
+A
+−−−−⎡ ⎤
+⎢ ⎥−−⎢ ⎥= ⎢ ⎥−−
+⎢ ⎥−−⎢ ⎥⎣ ⎦
+ The eigenvalues of A are 
+1λ 4,=−  2λ 10,=−  3λ 12,=−  and 4λ 16.=−  
+ (a) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  is the greatest 
+eigenvalue 1λ  of A, which is –4.  
+ (b) By Theorem 6, the maximum value of T Axx  subject to the constraint 1T =xx  occurs at a unit 
+eigenvector u corresponding to the greatest eigenvalue 1λ  of A. One may compute that 
+3
+1
+1
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ is 
+an eigenvector corresponding to 1λ 4,=−  so 
+3/ 12
+1/ 12 .
+1/ 12
+1/ 12
+⎡ ⎤−
+⎢ ⎥
+⎢ ⎥=± ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  
+ (c) By Theorem 7, the maximum value of T Axx  subject to the constraints 1T =xx  and 0T =xu  is 
+the second greatest eigenvalue 2λ  of A, which is –10. 
+----- pagina 29 -----
+7.4  Solutions   433  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+7.4 SOLUTIONS 
+Notes: The section presents a modern topic of great impor tance in applications, particularly in computer 
+calculations. An understanding of the singular value decomposition is essential for advanced work in 
+science and engineering that requires matrix computations. Moreover, the singular value decomposition 
+explains much about the structure of matrix transformations. The SVD does for an arbitrary matrix almost 
+what an orthogonal decomposition does for a symmetric matrix. 
+ 1. Let 10 .03A ⎡⎤= ⎢⎥ −⎣⎦  Then 10 ,09TAA ⎡⎤= ⎢⎥⎣⎦  and the eigenvalues of TAA  are seen to be (in decreasing 
+order) 1λ 9=  and 2λ 1.=  Thus the singular values of A are 1 93σ ==  and 2 11 .σ ==  
+ 2. Let 50 .00A −⎡⎤= ⎢⎥⎣⎦  Then 25 0 ,00TAA ⎡⎤= ⎢⎥⎣⎦  and the eigenvalues of TAA  are seen to be (in decreasing 
+order) 1λ 25=  and 2λ 0.=  Thus the singular values of A are 1 25 5σ ==  and 2 00 .σ ==  
+ 3. Let 61 .
+06
+A
+⎡⎤
+= ⎢⎥
+⎢⎥⎣⎦
+ Then 66 ,
+67
+TAA ⎡⎤= ⎢⎥
+⎢⎥⎣⎦
+ and the characteristic polynomial of TAA  is 
+2λ 13λ 36 ( λ 9)(λ 4),−+ = − −  and the eigenvalues of TAA  are (in decreasing order) 1λ 9=  and 
+2λ 4.=  Thus the singular values of A are 1 93σ ==  and 2 42 .σ ==  
+ 4. Let 32 .
+03
+A
+⎡⎤
+= ⎢⎥
+⎢⎥⎣⎦
+ Then 32 3 ,
+23 7
+TAA ⎡⎤= ⎢⎥
+⎢⎥⎣⎦
+ and the characteristic polynomial of TAA  is 
+2λ 10λ 9( λ 9)(λ 1),−+ = − −  and the eigenvalues of TAA  are (in decreasing order) 1λ 9=  and 
+2λ 1.=  Thus the singular values of A are 1 93σ ==  and 2 11 .σ ==  
+ 5. Let 30 .00A −⎡⎤= ⎢⎥⎣⎦  Then 90 ,00TAA ⎡⎤= ⎢⎥⎣⎦  and the eigenvalues of TAA  are seen to be (in decreasing 
+order) 1λ 9=  and 2λ 0.=  Associated unit eigenvectors may be computed:  
+   10λ 9: , λ 0:01⎡⎤ ⎡⎤== ⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  Thus one choice for V is 10 .01V ⎡⎤= ⎢⎥⎣⎦  The singular values of A are 1 93σ ==  and 2 00 .σ ==  
+Thus the matrix Σ is 30 .00⎡⎤Σ= ⎢⎥⎣⎦  Next compute  
+   11
+1
+11
+0Aσ −⎡⎤== ⎢⎥⎣⎦uv  
+  Because Av2 = 0, the only column found for U so far is u1. Find the other column of U is found by 
+extending {u1} to an orthonormal basis for 2. An easy choice is u2 = 0 .1⎡ ⎤⎢ ⎥⎣ ⎦  
+----- pagina 30 -----
+434 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Let 10 .01U −⎡⎤= ⎢⎥⎣⎦  Thus  
+   10301001 00 01TAU V −⎡ ⎤ ⎡⎤ ⎡⎤=Σ = ⎢ ⎥ ⎢⎥ ⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦  
+ 6. Let 20 .01A −⎡⎤= ⎢⎥ −⎣⎦  Then 40 ,01TAA ⎡⎤= ⎢⎥⎣⎦  and the eigenvalues of TAA  are seen to be (in decreasing 
+order) 1λ 4=  and 2λ 1.=  Associated unit eigenvectors may be computed:  
+   10λ 4: , λ 1:01⎡⎤ ⎡⎤== ⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  Thus one choice for V is 10 .01V ⎡⎤= ⎢⎥⎣⎦  The singular values of A are 1 42σ ==  and 2 11 .σ ==  
+Thus the matrix Σ is 20 .01⎡⎤Σ= ⎢⎥⎣⎦  Next compute  
+   11 2 2
+12
+1011 ,01AAσσ −⎡⎤ ⎡⎤== = = ⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦uv u v  
+  Since 12{, }uu  is a basis for 2, let 10 .01U −⎡ ⎤= ⎢ ⎥−⎣ ⎦  Thus  
+   10 2 0 1 00 1 01 01TAU V −⎡⎤ ⎡ ⎤ ⎡ ⎤=Σ = ⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 7. Let 21 .22A −⎡⎤= ⎢⎥⎣⎦  Then 82 ,25TAA ⎡⎤= ⎢⎥⎣⎦  and the characteristic polynomial of TAA  is 
+2λ 13λ 36 ( λ 9)(λ 4),−+ = − −  and the eigenvalues of TAA  are (in decreasing order) 1λ 9=  and 
+2λ 4.=  Associated unit eigenvectors may be computed:  
+   2/ 5 1/ 5λ 9: , λ 4:
+1/ 5 2/ 5
+⎡⎤ ⎡ ⎤ −== ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Thus one choice for V is 2/ 5 1/ 5 .
+1/ 5 2/ 5
+V
+⎡⎤ −= ⎢⎥
+⎢⎥⎣⎦
+ The singular values of A are 1 93σ ==  and 
+2 42 .σ ==  Thus the matrix Σ is 30 .02⎡ ⎤Σ= ⎢ ⎥⎣ ⎦  Next compute  
+   11 2 2
+12
+1/ 5 2/ 511 ,
+2/ 5 1/ 5
+AAσσ
+⎡⎤ ⎡ ⎤ −== = = ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+uv u v  
+  Since 12{, }uu  is a basis for 2, let 1/ 5 2/ 5 .2/ 5 1/ 5U ⎡ ⎤−= ⎢ ⎥⎢ ⎥⎣ ⎦  Thus  
+----- pagina 31 -----
+7.4  Solutions   435  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1/ 5 2/ 5 3 0 2/ 5 1/ 5
+022/ 5 1/ 5 1/ 5 2/ 5
+TAU V ⎡⎤ ⎡⎤ − ⎡⎤=Σ = ⎢⎥ ⎢⎥ ⎢⎥ −⎣⎦⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+ 8. Let 23 .02A ⎡⎤= ⎢⎥⎣⎦  Then 46 ,61 3TAA ⎡⎤= ⎢⎥⎣⎦  and the characteristic polynomial of TAA  is 
+2λ 17λ 16 ( λ 16)(λ 1),−+ = − −  and the eigenvalues of TAA  are (in decreasing order) 1λ 16=  and 
+2λ 1.=  Associated unit eigenvectors may be computed:  
+   1/ 5 2/ 5λ 16 : , λ 1:
+2/ 5 1/ 5
+⎡⎤ ⎡ ⎤ −== ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Thus one choice for V is 1/ 5 2/ 5 .
+2/ 5 1/ 5
+V
+⎡⎤ −= ⎢⎥
+⎢⎥⎣⎦
+ The singular values of A are 1 16 4σ ==  and 
+2 11 .σ ==  Thus the matrix Σ is 40 .01⎡ ⎤Σ= ⎢ ⎥⎣ ⎦  Next compute  
+   11 2 2
+12
+2/ 5 1/ 511 ,
+1/ 5 2/ 5
+AAσσ
+⎡⎤ ⎡ ⎤ −== = = ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+uv u v  
+  Since 12{, }uu  is a basis for 2, let 2/ 5 1/ 5 .1/ 5 2/ 5U ⎡ ⎤−= ⎢ ⎥⎢ ⎥⎣ ⎦  Thus  
+   2/ 5 1/ 5 4 0 1/ 5 2/ 5
+011/ 5 2/ 5 2/ 5 1/ 5
+TAU V ⎡⎤ ⎡⎤ − ⎡⎤=Σ = ⎢⎥ ⎢⎥ ⎢⎥ −⎣⎦⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+ 9. Let 
+71
+00 .
+55
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ Then 74 32 ,32 26TAA ⎡⎤= ⎢⎥⎣⎦  and the characteristic polynomial of TAA  is 
+2λ 100λ 900 ( λ 90)(λ 10),−+ = − −  and the eigenvalues of TAA  are (in decreasing order) 1λ 90=  
+and 2λ 10.=  Associated unit eigenvectors may be computed:  
+   2/ 5 1/ 5λ 90 : , λ 10 :
+1/ 5 2/ 5
+⎡⎤ ⎡ ⎤ −== ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Thus one choice for V is 2/ 5 1/ 5 .
+1/ 5 2/ 5
+V
+⎡⎤ −= ⎢⎥
+⎢⎥⎣⎦
+ The singular values of A are 1 90 3 10σ ==  and 
+2 10.σ =  Thus the matrix Σ is 
+31 0 0
+01 0 .
+00
+⎡⎤
+⎢⎥
+Σ= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ Next compute  
+----- pagina 32 -----
+436 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   11 2 2
+12
+1/ 2 1/ 2
+11 0, 0
+1/ 2 1/ 2
+AAσσ
+⎡⎤ ⎡ ⎤ −
+⎢⎥ ⎢ ⎥== = = ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+uv u v  
+  Since 12{, }uu  is not a basis for 3, we need a unit vector 3u  that is orthogonal to both 1u  and 2 .u  
+The vector 3u  must satisfy the set of equations 1 0T =ux  and 2 0.T =ux  These are equivalent to the 
+linear equations  
+   12 3 3
+12 3
+0000 ,s o 1 ,a n d 100 00xx xxx x ⎡⎤ ⎡⎤++ = ⎢⎥ ⎢⎥==⎢⎥ ⎢⎥−+ + = ⎢⎥ ⎢⎥⎣⎦ ⎣⎦xu  
+  Therefore let 
+1/ 2 1/ 2 0
+00 1
+1/ 2 1/ 2 0
+U
+⎡⎤ −
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+. Thus  
+   
+31 0 01/ 2 1/ 2 0 2/ 5 1/ 500 1 0 1 0
+1/ 5 2/ 5001/ 2 1/ 2 0
+TAU V
+⎡⎤⎡⎤ − ⎢⎥ ⎡ ⎤⎢⎥=Σ = ⎢⎥ ⎢ ⎥⎢⎥ −⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+ 10. Let 
+42
+21 .
+00
+A
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ Then 20 10 ,10 5TAA −⎡⎤= ⎢⎥−⎣⎦  and the characteristic polynomial of TAA  is 
+2λ 25λλ (λ 25)−=− , and the eigenvalues of TAA  are (in decreasing order) 1λ 25=  and 2λ 0.=  
+Associated unit eigenvectors may be computed:  
+   2/ 5 1/ 5λ 25 : , λ 0:
+1/ 5 2/ 5
+⎡⎤ ⎡ ⎤
+== ⎢⎥ ⎢ ⎥
+−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Thus one choice for V is 2/ 5 1/ 5 .
+1/ 5 2/ 5
+V
+⎡⎤
+= ⎢⎥
+−⎢⎥⎣⎦
+ The singular values of A are 1 25 5σ ==  and 
+2 00 .σ ==  Thus the matrix Σ is 
+50
+00 .
+00
+⎡ ⎤
+⎢ ⎥Σ= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Next compute  
+   11
+1
+2/ 5
+1 1/ 5
+0
+Aσ
+⎡⎤
+⎢⎥
+== ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+uv  
+  Because Av2 = 0, the only column found for U so far is u1. Find the other columns of U found by 
+extending {u1} to an orthonormal basis for 3. In this case, we need two orthogonal unit vectors u2 
+and u3 that are orthogonal to u1. Each vector must satisfy the equation 1 0,T =ux which is equivalent 
+to the equation 2x1 + x2 = 0. An orthonormal basis for the solution set of this equation is 
+----- pagina 33 -----
+7.4  Solutions   437  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   23
+1/ 5 0
+2/ 5 , 0 .
+01
+⎡⎤ ⎡⎤⎢⎥ ⎢⎥=− =⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎣⎦⎢⎥⎣⎦uu  
+  Therefore, let 
+2/ 5 1/ 5 0
+1/ 5 2/ 5 0 .
+00 1
+U
+⎡⎤
+⎢⎥
+=−⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ Thus  
+   
+2/ 5 1/ 5 0 50 2/ 5 1/ 51/ 5 2/ 5 0 0 0
+1/ 5 2/ 500 1 0 0
+TAU V
+⎡⎤ ⎡⎤⎢⎥ ⎡ ⎤−⎢⎥=Σ = − ⎢⎥ ⎢ ⎥⎢⎥⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥⎣⎦⎢⎥⎣⎦  
+ 11. Let 
+31
+62 .
+62
+A
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −⎣⎦
+ Then 81 27 ,27 9TAA −⎡⎤= ⎢⎥−⎣⎦  and the characteristic polynomial of TAA  is 
+2λ 90λλ (λ 90),−=−  and the eigenvalues of TAA  are (in decreasing order) 1λ 90=  and 2λ 0.=  
+Associated unit eigenvectors may be computed:  
+   3/ 10 1/ 10λ 90 : , λ 0: .
+1/ 10 3/ 10
+⎡⎤ ⎡ ⎤
+== ⎢⎥ ⎢ ⎥
+−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Thus one choice for V is 3/ 10 1/ 10 .
+1/ 10 3/ 10
+V
+⎡⎤
+= ⎢⎥
+−⎢⎥⎣⎦
+ The singular values of A are 1 90 3 10σ ==  and 
+2 00 .σ ==  Thus the matrix Σ is 
+31 0 0
+00 .
+00
+⎡ ⎤
+⎢ ⎥Σ= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Next compute  
+   11
+1
+1/3
+1 2/3
+2/3
+Aσ
+−⎡⎤
+⎢⎥== ⎢⎥
+⎢⎥⎣⎦
+uv  
+  Because Av2 = 0, the only column found for U so far is u1. The other columns of U can be found by 
+extending {u1} to an orthonormal basis for 3. In this case, we need two orthogonal unit vectors u2 
+and u3 that are orthogonal to u1. Each vector must satisfy the equation 1 0,T =ux which is equivalent 
+to the equation 123 220 .xx x− ++=  An orthonormal basis for the solution set of this equation is 
+   23
+2/3 2/3
+1/3 , 2/3 .
+2/3 1/3
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=− =⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦
+uu  
+  Therefore, let 
+1/3 2/3 2/3
+2/3 1/3 2/3 .
+2/3 2/3 1/3
+U
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −⎣⎦
+ Thus  
+----- pagina 34 -----
+438 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1/3 2/3 2/3 3 10 0 3/ 10 1/ 102/3 1/3 2/3 0 0
+1/ 10 3/ 102/3 2/3 1/3 0 0
+TAU V
+⎡⎤−⎡⎤ ⎡ ⎤−⎢⎥⎢⎥=Σ = − ⎢ ⎥⎢⎥⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥⎢⎥ −⎣⎦ ⎣⎦  
+ 12. Let 
+11
+01 .
+11
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−⎣⎦
+ Then 20 ,03TAA ⎡⎤= ⎢⎥⎣⎦  and the eigenvalues of TAA  are seen to be (in decreasing 
+order) 1λ 3=  and 2λ 2.=  Associated unit eigenvectors may be computed:  
+   01λ 3: , λ 2:10⎡⎤ ⎡⎤== ⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  Thus one choice for V is 01 .10V ⎡⎤= ⎢⎥⎣⎦  The singular values of A are 1 3σ =  and 2 2.σ =  Thus the 
+matrix Σ is 
+30
+02 .
+00
+⎡⎤
+⎢⎥
+Σ= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ Next compute  
+   11 2 2
+12
+1/ 3 1/ 2
+11 1/ 3 , 0
+1/ 3 1/ 2
+AAσσ
+⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥== = = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−⎢⎥ ⎣ ⎦⎣⎦uv u v  
+  Since 12{, }uu  is not a basis for 3, we need a unit vector 3u  that is orthogonal to both 1u  and 2 .u  
+The vector 3u  must satisfy the set of equations 1 0T =ux  and 2 0.T =ux  These are equivalent to the 
+linear equations  
+  123 3
+12 3
+1/ 610,so 2 ,and 2/ 600 1 1/ 6xx xxx x ⎡ ⎤⎡⎤ ⎢ ⎥++ = ⎢⎥=− =− ⎢ ⎥⎢⎥+− = ⎢ ⎥⎢⎥⎣⎦ ⎢ ⎥⎣ ⎦xu .  Therefore let 1/ 3 1/ 2 1/ 61/ 3 0 2/ 6 .1/ 3 1/ 2 1/ 6U ⎡ ⎤⎢ ⎥=−⎢ ⎥⎢ ⎥−⎢ ⎥⎣ ⎦  
+Thus  
+   
+1/ 3 1/ 2 1/ 6 3 0
+011/ 3 0 2/ 6 0 2 10001/ 3 1/ 2 1/ 6TAU V
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎡ ⎤=Σ = − ⎢⎥ ⎢ ⎥ ⎢ ⎥⎣ ⎦⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+ 13. Let 32 2 .23 2A ⎡⎤= ⎢⎥ −⎣⎦  Then 3223 ,22TA ⎡⎤⎢⎥= ⎢⎥⎢⎥ −⎣⎦  17 8 ,81 7TT T TAA A A ⎡ ⎤== ⎢ ⎥⎣ ⎦  and the eigenvalues of 
+TT TAA  are seen to be (in decreasing order) 1λ 25=  and 2λ 9.=  Associated unit eigenvectors may 
+be computed:  
+----- pagina 35 -----
+7.4  Solutions   439  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1/ 2 1/ 2λ 25 : , λ 9:
+1/ 2 1/ 2
+⎡⎤ ⎡ ⎤ −== ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Thus one choice for V is 1/ 2 1/ 2 .
+1/ 2 1/ 2
+V
+⎡⎤ −= ⎢⎥
+⎢⎥⎣⎦
+ The singular values of TA  are 1 25 5σ ==  and 
+2 93 .σ ==  Thus the matrix Σ is 
+50
+03 .
+00
+⎡ ⎤
+⎢ ⎥Σ= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Next compute  
+   11 2 2
+12
+1/ 2 1/ 18
+11 1/ 2 , 1/ 18
+0 4/ 1 8
+TTAAσσ
+⎡ ⎤⎡ ⎤ −
+⎢ ⎥⎢ ⎥
+== = = ⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥ −⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+uv u v  
+  Since 12{, }uu  is not a basis for 3, we need a unit vector 3u  that is orthogonal to both 1u  and 2 .u  
+The vector 3u  must satisfy the set of equations 1 0T =ux  and 2 0.T =ux  These are equivalent to the 
+linear equations  
+   12 3 3
+12 3
+22 / 30 0,s o 2 ,a n d 2/34 0 11 / 3xx xxx x −−⎡⎤ ⎡ ⎤++ = ⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥−+ − = ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦xu  
+  Therefore let 
+1/ 2 1/ 18 2/3
+1/ 2 1/ 18 2/3 .
+04 / 1 8 1 / 3
+U
+⎡⎤ −−
+⎢⎥
+= ⎢⎥
+⎢⎥ −⎢⎥⎣⎦
+ Thus  
+   
+1/ 2 1/ 18 2/3 50 1/ 2 1/ 21/ 2 1/ 18 2/3 0 3
+1/ 2 1/ 20004 / 1 8 1 / 3
+TTAU V
+⎡⎤ −− ⎡⎤⎢⎥ ⎡ ⎤⎢⎥=Σ = ⎢⎥ ⎢ ⎥⎢⎥ −⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥− ⎣⎦⎢⎥⎣⎦  
+ 
+  An SVD for A is computed by taking transposes:  
+   
+1/ 2 1/ 2 0
+1/ 2 1/ 2 5 0 0 1/ 18 1/ 18 4 / 180301/ 2 1/ 2 2/3 2/3 1/3A
+⎡ ⎤
+⎢ ⎥⎡⎤ − ⎡⎤=− − ⎢ ⎥⎢⎥ ⎢⎥⎣⎦ ⎢ ⎥⎢⎥⎣⎦ −⎢ ⎥⎣ ⎦  
+ 14. From Exercise 7, TAUV=Σ  with 2/ 5 1/ 5 .
+1/ 5 2/ 5
+V
+⎡ ⎤−= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Since the first column of V is unit 
+eigenvector associated with the greatest eigenvalue 1λ  of ,TAA  so the first column of V is a unit 
+vector at which || Ax || is maximized. 
+ 15. a. Since A has 2 nonzero singular values, rank A = 2.  
+----- pagina 36 -----
+440 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ b. By Example 6, 12
+.40 .78
+{ , } .37 , .33
+.84 .52
+⎧⎫ −⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥=−⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦⎩⎭uu  is a basis for Col A and 3
+.58
+{} . 5 8
+.58
+⎧⎫⎡⎤
+⎪⎪⎢⎥=−⎨⎬⎢⎥⎪⎪⎢⎥⎣⎦⎩⎭v  is a basis  
+for Nul A.  
+ 16. a. Since A has 2 nonzero singular values, rank A = 2.  
+ b. By Example 6, 12
+.86 .11
+{ , } .31 , .68
+.41 .73
+⎧⎫ −−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥= ⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦⎩⎭uu  is a basis for Col A and 
+34
+.65 .34
+.08 .42{, } , .16 .84
+.73 .08
+⎧⎫ −⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥= ⎨⎬⎢⎥ ⎢⎥−−⎪⎪⎢⎥ ⎢⎥⎪⎪ −−⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭vv  is a basis for Nul A.  
+ 17. Let 1.TAUV UV −=Σ =Σ  Since A is square and invertible, rank A = n, and all of the entries on the 
+diagonal of Σ must be nonzero. So 11 1 1 1 1() . TAU V V U V U−− − − − −= Σ =Σ =Σ  
+ 18. First note that the determinant of an orthogonal matrix is ±1, because 1d e t d e t TIU U== =
+2(det )(det ) (det ) .TUU U =  Suppose that A is square and .TAUV=Σ  Then Σ is square, and 
+1det (det )(det )(det ) det T nAU V σσ=Σ = ± Σ = ± … . 
+ 19. Since U and V are orthogonal matrices,  
+   1() ( ) ( )TT T T T T T T T TA A UV UV V U UV V V V V −=Σ Σ = Σ Σ =Σ Σ =Σ Σ  
+  If 1,, rσσ …  are the diagonal entries in Σ, then TΣΣ  is a diagonal matrix with diagonal entries 
+22
+1 ,, rσσ …  and possibly some zeros. Thus V diagonalizes TAA  and the columns of V are 
+eigenvectors of TAA  by the Diagonalization Theorem in Section 5.3. Likewise  
+   1( ) () ()T T T T T T TT TTA A UV UV UV V U U U U U −= ΣΣ= Σ Σ = Σ Σ= Σ Σ  
+  so U diagonalizes TAA  and the columns of U must be eigenvectors of TAA . Moreover, the 
+Diagonalization Theorem states that 
+22
+1 ,, rσσ …  are the nonzero eigenvalues of TAA . Hence 
+1,, rσσ …  are the nonzero singular values of A. 
+ 20. If A is positive definite, then TAP D P= , where P is an orthogonal matrix and D is a diagonal matrix. 
+The diagonal entries of D are positive because they are the eigenvalues of a positive definite matrix. 
+Since P is an orthogonal matrix, TPP I =  and the square matrix TP  is invertible. Moreover, 
+11 1() ( ) () ,TT TPP P P−− −== =  so TP  is an orthogonal matrix. Thus the factorization TAP D P=  has 
+the properties that make it a singular value decomposition. 
+ 21. Let .TAU V=Σ  The matrix PU is orthogonal, because P and U are both orthogonal. (See Exercise 
+29 in Section 6.2). So the equation () TPA PU V=Σ  has the form required for a singular value 
+decomposition. By Exercise 19, the diagonal entries in Σ are the singular values of PA. 
+----- pagina 37 -----
+7.4  Solutions   441  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 22. The right singular vector 1v  is an eigenvector for the largest eigenvector 1λ  of .TAA  By Theorem 7 
+in Section 7.3, the second largest eigenvalue 2λ  is the maximum of ()TT AAxx  over all unit vectors 
+orthogonal to 1v . Since 2( ) || || ,TT AA A =xx x  the square root of 2λ ,  which is the second largest 
+singular value of A, is the maximum of || Ax || over all unit vectors orthogonal to 1.v  
+ 23. From the proof of Theorem 10, [] 11 .rrU σσΣ= … …uu 0 0  The column-row expansion 
+of the product () TUVΣ  shows that  
+   
+1
+111() ()
+T
+TTT
+rrr
+T
+n
+AU V U σσ
+⎡⎤
+⎢⎥=Σ =Σ = + … + ⎢⎥
+⎢⎥⎢⎥⎣⎦
+v
+uv uv
+v
+#  
+  where r is the rank of A. 
+ 24. From Exercise 23, 111 .TT T rrrA σσ=+ … +vu vu  Then since 0f o r ,1f o rTij ijij≠⎧= ⎨ =⎩uu  
+   111() ( ) ( )TT T T Tj r r r jj j j j j j j jj jA σσ σσ σ= + … + ===uv u v u u v u u v u u v  
+ 25. Consider the SVD for the standard matrix A of T, say TAU V=Σ . Let 1{, , } nB =…vv  and 
+1{, , } mC =…uu  be bases for n and m constructed respectively from the columns of V and U. Since 
+the columns of V are orthogonal, T jjV =ve , where je  is the jth column of the n × n identity matrix. 
+To find the matrix of T relative to B and C, compute  
+   () Tjj j j j j j j j jTA U V U U U σσ σ== Σ = Σ = = =vv v e e e u  
+  so [( ) ] jC j jT σ=ve . Formula (4) in the discussion at the beginning of Section 5.4 shows that the 
+“diagonal” matrix Σ is the matrix of T relative to B and C. 
+ 26. [M] Let 
+18 13 4 4
+21 9 41 2 .14 11 12 8
+22 1 4 8
+A
+−−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥−−
+⎢⎥ −⎢⎥⎣⎦
+ Then 
+528 392 224 176
+392 1092 176 536 ,224 176 192 128
+176 536 128 288
+TAA
+−−⎡ ⎤
+⎢ ⎥−−⎢ ⎥= ⎢ ⎥−−
+⎢ ⎥−−⎢ ⎥⎣ ⎦
+ and the 
+eigenvalues of TAA  are found to be (in decreasing order) 1λ 1600,=  2λ 400,=  3λ 100,=  and 
+4λ 0.=  Associated unit eigenvectors may be computed:  
+   12 34
+.4 .8 .4 .2
+.8 .4 .2 .4λ :, λ :, λ :, λ :.2 .4 .8 .4
+.4 .2 .4 .8
+−−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ −−⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−−
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦
+ 
+----- pagina 38 -----
+442 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus one choice for V is 
+.4 .8 .4 .2
+.8 .4 .2 .4 ..2 .4 .8 .4
+.4 .2 .4 .8
+V
+−−⎡⎤
+⎢⎥ −−⎢⎥= ⎢⎥−−
+⎢⎥⎢⎥⎣⎦
+ The singular values of A are 1 40,σ =  1 20,σ =  
+3 10,σ =  and 4 0.σ =  Thus the matrix Σ is 
+40 0 0 0
+02 0 00 .00 1 0 0
+000 0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥Σ= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ Next compute  
+   11 2 2
+12
+.5 .5
+.5 .511 ,,.5 .5
+.5 .5
+AAσσ
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥== = = ⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+uv u v  
+   33
+3
+.5
+.51
+.5
+.5
+Aσ
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥−⎢ ⎥⎣ ⎦
+uv  
+  Because Av4 = 0, only three columns of U have been found so far. The last column of U can be found 
+by extending {u1, u2, u3} to an orthonormal basis for 4. The vector u4 must satisfy the set of 
+equations 1 0,T =ux  2 0,T =ux  and 3 0.T =ux These are equivalent to the linear equations 
+   
+1234
+1234 4
+1234
+1. 50 1. 50,so ,and . 1. 50 1. 5xxxxxxxxxx xx −−⎡⎤ ⎡ ⎤+++= ⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥−+ − + = = = ⎢⎥ ⎢ ⎥−+ + − = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦xu  
+  Therefore, let 
+.5 .5 .5 .5
+.5 .5 .5 .5 ..5 .5 .5 .5
+.5 .5 .5 .5
+U
+−−−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥ −
+⎢⎥ −⎢⎥⎣⎦
+ Thus  
+  
+.5 .5 .5 .5 40 0 0 0 .4 .8 .2 .4
+.5 .5 .5 .5 0 20 0 0 .8 .4 .4 .2
+.5 .5 .5 .5 0 0 10 0 .4 .2 .8 .4
+.5 .5 .5 .5 0 0 0 0 .2 .4 .4 .8
+TAU V
+−−− − −⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ −⎢⎥ ⎢ ⎥ ⎢⎥=Σ = ⎢⎥ ⎢ ⎥ ⎢⎥−− −
+⎢⎥ ⎢ ⎥ ⎢⎥ −− −⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦  
+----- pagina 39 -----
+7.4  Solutions   443  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 27. [M] Let 
+68454
+27564 .01 822
+12448
+A
+−− −⎡⎤
+⎢⎥ −−⎢⎥= ⎢⎥ −−
+⎢⎥−− −⎢⎥⎣⎦
+ Then 
+41 32 38 14 8
+32 118 3 92 74
+,38 3 121 10 52
+14 92 10 81 72
+87 45 27 2 1 0 0
+TAA
+−− −⎡ ⎤
+⎢ ⎥−− −⎢ ⎥
+⎢ ⎥= −− −
+⎢ ⎥−−⎢ ⎥
+⎢ ⎥−− −⎣ ⎦
+ and the 
+eigenvalues of TAA  are found to be (in decreasing order) 1λ 270.87,=  2λ 147.85,=  3λ 23.73,=  
+4λ 18.55,=  and 5λ 0.=  Associated unit eigenvectors may be computed: 
+   12345
+.10 .39 .74 .41 .36
+.61 .29 .27 .50 .48
+λ :, λ :, λ :, λ :, λ :.21 .84 .07 .45 .19
+.52 .14 .38 .23 .72
+.55 .19 .49 .58 .29
+−−− −⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −−−⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−−−
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−− −−⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −−⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦
+ 
+  Thus one choice for V is 
+.10 .39 .74 .41 .36
+.61 .29 .27 .50 .48
+..21 .84 .07 .45 .19
+.52 .14 .38 .23 .72
+.55 .19 .49 .58 .29
+V
+−−− −⎡⎤
+⎢⎥ −−−⎢⎥
+⎢⎥= −−−
+⎢⎥−− −−⎢⎥
+⎢⎥ −−⎣⎦
+ The nonzero singular values of A 
+are 1 16.46,σ =  1 12.16,σ =  3 4.87,σ =  and 4 4.31.σ =  Thus the matrix Σ is 
+16.46 0 0 0 0
+0 12.16 0 0 0 .0 0 4.87 0 0
+00 0 4 . 3 1 0
+⎡⎤
+⎢⎥
+⎢⎥Σ= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+ Next compute  
+   11 2 2
+12
+.57 .65
+.63 .2411 ,,.07 .63
+.51 .34
+AAσσ
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥== = = ⎢⎥ ⎢⎥ −
+⎢⎥ ⎢⎥−⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+uv u v  
+   33 44
+34
+.42 .27
+.68 .2911 ,.53 .56
+.29 .73
+AAσσ
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥== == ⎢ ⎥⎢ ⎥ −
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+uv uv
+ 
+  Since 1234{, , , }uu uu  is a basis for 4, let 
+.57 .65 .42 .27
+.63 .24 .68 .29 ..07 .63 .53 .56
+.51 .34 .29 .73
+U
+−−−⎡ ⎤
+⎢ ⎥−−−⎢ ⎥= ⎢ ⎥−−
+⎢ ⎥−− −⎢ ⎥⎣ ⎦
+ Thus  
+   TAU V=Σ
+----- pagina 40 -----
+444 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+.10 .61 .21 .52 .55.57 .65 .42 .27 16.46 0 0 0 0 .39 .29 .84 .14 .19.63 .24 .68 .29 0 12.16 0 0 0= .74 .27 .07 .38 .49.07 .63 .53 .56 0 0 4.87 0 0 .41 .50 .45 .23 .58.51 .34 .29 .73 0 0 0 4.31 0 .36 .4−− −−−−⎡⎤ ⎡ ⎤ −− −⎢⎥ ⎢ ⎥ −−−⎢⎥ ⎢ ⎥ −−−⎢⎥ ⎢ ⎥ −− −−⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ −− 8 .19 .72 .29⎡ ⎤⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥−−−⎣ ⎦  
+ 28. [M] Let 
+4037
+6999 .7 5 10 19
+124 1
+A
+−−⎡⎤
+⎢⎥−⎢⎥= ⎢⎥ −
+⎢⎥−−⎣⎦
+ Then 
+102 91 0 108
+91 110 39 16 ,03 9 2 0 6 2 4 6
+108 16 246 492
+TAA
+−⎡ ⎤
+⎢ ⎥−−⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ and the eigenvalues of 
+TAA  are found to be (in decreasing order) 1λ 649.9059,=  2λ 218.0033,=  3λ 39.6345,=  and 
+4λ 2.4564.=  The singular values of A are thus 1 25.4933,σ =  2 14.7649,σ =  3 6.2956,σ =  and 
+4 1.5673.σ =  The condition number 14/ 6.266.σσ ≈  
+ 29. [M] Let 
+531 7 9
+642 8 8
+.7531 0 9
+9 6 495
+852 1 1 4
+A
+⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥=
+⎢⎥ −−⎢⎥
+⎢⎥⎣⎦
+ Then 
+255 168 90 160 47
+168 111 60 104 30
+,90 60 34 39 8
+160 104 39 415 178
+47 30 8 178 267
+TAA
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥=
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and the 
+eigenvalues of TAA  are found to be (in decreasing order) 1λ 672.589,=  2λ 280.745,=  
+3λ 127.503,=  4λ 1.163,=  and 75λ 1.428 10 .−=×  The singular values of A are thus 1 25.9343,σ =  
+2 16.7554,σ =  3 11.2917,σ =  4 1.07853,σ =  and 5 .000377928.σ =  The condition number 
+15/ 68,622.σσ =  
+7.5 SOLUTIONS 
+Notes: The application presented here has turned out to be of interest to a wide variety of students, 
+including engineers. I cover this in Course Syllabus 3 described in the front mater of the text, but I only 
+have time to mention the idea briefly to my other classes. 
+ 1. The matrix of observations is 19 22 6 3 2 2012 6 9 15 13 5X ⎡⎤= ⎢⎥⎣⎦  and the sample mean is 
+72 121 .60 106M ⎡⎤⎡ ⎤== ⎢⎥⎢ ⎥⎣⎦⎣ ⎦  The mean-deviation form B is obtained by subtracting M from each column of X, 
+so 7 1 0691 08 .2415 35B −−−⎡⎤= ⎢⎥ −− −⎣⎦  The sample covariance matrix is  
+   430 135 86 2711 135 80 27 1661 5 TSB B −−⎡⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥−−− ⎣⎦ ⎣ ⎦  
+----- pagina 41 -----
+7.5  Solutions   445  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 2. The matrix of observations is 1 526 7 331 16 81 51 1X ⎡⎤= ⎢⎥⎣⎦  and the sample mean is 
+24 41 .54 96M ⎡⎤⎡ ⎤== ⎢⎥⎢ ⎥⎣⎦⎣ ⎦  The mean-deviation form B is obtained by subtracting M from each column of X, 
+so 31 2 23 1 .62 3 16 2B −− −⎡⎤= ⎢⎥−− −⎣⎦  The sample covariance matrix is  
+   28 40 5.6 811 40 90 8 1861 5 TSB B ⎡ ⎤⎡ ⎤== = ⎢ ⎥⎢ ⎥− ⎣ ⎦⎣ ⎦  
+ 3. The principal components of the data are the unit eigenvectors of the sample covariance matrix S. 
+One computes that (in descending order) the eigenvalues of 86 2727 16S −⎡ ⎤= ⎢ ⎥−⎣ ⎦  are 1λ 95.2041=  and 
+2λ 6.79593.=  One further computes that corresponding eigenvectors are 1
+2.93348
+1
+−⎡⎤= ⎢⎥⎣⎦v  and 
+2
+.340892 .1⎡⎤= ⎢⎥⎣⎦v  These vectors may be normalized to find the principal components, which are 
+1
+.946515
+.322659
+⎡⎤= ⎢⎥−⎣⎦u  for 1λ 95.2041=  and 2 .322659.946515⎡ ⎤= ⎢ ⎥⎣ ⎦u  for 2λ 6.79593.=  
+ 4. The principal components of the data are the unit eigenvectors of the sample covariance matrix S. 
+One computes that (in descending order) the eigenvalues of 5.6 881 8S ⎡ ⎤= ⎢ ⎥⎣ ⎦  are 1λ 21.9213=  and 
+2λ 1.67874.=  One further computes that corresponding eigenvectors are 1
+.490158
+1
+⎡⎤= ⎢⎥⎣⎦v  and 
+2
+2.04016 .1−⎡⎤= ⎢⎥⎣⎦v  These vectors may be normalized to find the principal components, which are 
+1
+.44013
+.897934
+⎡⎤= ⎢⎥⎣⎦u  for 1λ 21.9213=  and 2 .897934.44013−⎡ ⎤= ⎢ ⎥⎣ ⎦u  for 2λ 1.67874.=  
+ 5. [M] The largest eigenvalue of 
+164.12 32.73 81.04
+32.73 539.44 249.13
+81.04 249.13 189.11
+S
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ is 1λ 677.497,=  and the first 
+principal component of the data is the unit eigenvector corresponding to 1λ , which is 
+1
+.129554
+.874423
+.467547
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u . The fraction of the total variance that is contained in this component is 
+1λ / tr( ) 677.497 / (164.12 539.44 189.11) .758956S =+ + =  so 75.8956% of the variance of the data is 
+contained in the first principal component. 
+----- pagina 42 -----
+446 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 6. [M] The largest eigenvalue of 
+29.64 18.38 5.00
+18.38 20.82 14.06
+5.00 14.06 29.21
+S
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ is 1λ 51.6957,=  and the first principal 
+component of the data is the unit eigenvector corresponding to 1λ ,  which is 1
+.615525
+.599424 .
+.511683
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  Thus 
+one choice for the new variable is 1123 .615525 .599424 .511683 .yxxx=+ +  The fraction of the total 
+variance that is contained in this component is 
+1λ / tr( ) 51.6957 /(29.64 20.82 29.21) .648872,S =+ + =  so 64.8872% of the variance of the data is 
+explained by 1.y  
+ 7. Since the unit eigenvector corresponding to 1λ 95.2041=  is 1
+.946515 ,.322659⎡ ⎤= ⎢ ⎥−⎣ ⎦u  one choice for the 
+new variable is 112 .946515 .322659 .yxx=−  The fraction of the total variance that is contained in this 
+component is 1λ / tr( ) 95.2041/(86 16) .933374,S =+ =  so 93.3374% of the variance of the data is 
+explained by 1.y  
+ 8. Since the unit eigenvector corresponding to 1λ 21.9213=  is 1
+.44013 ,.897934⎡ ⎤= ⎢ ⎥⎣ ⎦u  one choice for the new 
+variable is 11 2 .44013 .897934 .yx x=+  The fraction of the total variance that is contained in this 
+component is 1λ / tr( ) 21.9213/(5.6 18) .928869,S =+ =  so 92.8869% of the variance of the data is 
+explained by 1.y  
+ 9. The largest eigenvalue of 
+520
+262
+027
+S
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ is 1λ 9,=  and the first principal component of the data is 
+the unit eigenvector corresponding to 1λ ,  which is 1
+1/3
+2/3 .
+2/3
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  Thus one choice for y is 
+123( 1/3 ) (2/3 ) (2/3 ) ,yx x x=+ +  and the variance of y is 1λ 9.=  
+ 10. [M] The largest eigenvalue of 
+54 2
+41 14
+24 5
+S
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ is 1λ 15,=  and the first principal component of the 
+data is the unit eigenvector corresponding to 1λ ,  which is 1
+1/ 6
+2/ 6 .
+1/ 6
+⎡ ⎤
+⎢ ⎥
+= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+u  Thus one choice for y is 
+12 3(1 / 6 ) (2 / 6 ) (1/ 6 ) ,yx x x=+ +  and the variance of y is 1λ 15.=  
+ 11. a. If w is the vector in N with a 1 in each position, then [] 11 NN…= + … + =XX w X X 0  since 
+the kX  are in mean-deviation form. Then 
+----- pagina 43 -----
+Chapter 7  Supplementary Exercises   447  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  [] [ ]11 1 TT T TNN N PP P P⎡⎤…= … = … = =⎣⎦YY w X X w X X w 0 0  
+  Thus 1 ,N+…+ =YY 0  and the kY  are in mean-deviation form.  
+b. By part a., the covariance matrix SY  of 1,, N…YY  is  
+   [] []11
+1
+1
+T
+NNS N=… …−Y YY YY  
+   [] []11
+1 ()1 TT T NNPPN=… …− XX XX  
+   [] []11
+1
+1
+TTT
+NNPP P S PN⎛⎞=… … =⎜⎟ −⎝⎠ XX XX  
+  since the kX  are in mean-deviation form.  
+ 12. By Exercise 11, the change of variables X = PY changes the covariance matrix S of X into the 
+covariance matrix TPS P  of Y. The total variance of the data as described by Y is tr( ).TPS P  
+However, since TPS P  is similar to S, they have the same trace (by Exercise 25 in Section 5.4). Thus 
+the total variance of the data is unchanged by the change of variables X = PY. 
+ 13. Let M be the sample mean for the data, and let ˆ .kk=−XXM  Let 1ˆˆ NB ⎡ ⎤=…⎣ ⎦XX  be the 
+matrix of observations in mean-deviation form. By the row-column expansion of ,TBB  the sample 
+covariance matrix is  
+   1 1 TSB BN= −   
+ 
+1
+1
+ˆ
+1 ˆˆ
+1 ˆ
+T
+N
+T
+N
+N
+⎡⎤
+⎢⎥⎡⎤=… ⎢⎥⎣⎦− ⎢⎥⎣⎦
+X
+XX
+X
+#  
+   
+1
+1 ˆˆ
+1
+NN
+TT
+kk k k
+kkNN == 1
+1== ( − ) ( − )−− 1∑∑X X XM XM  
+Chapter 7 SUPPLEMENTARY EXERCISES 
+ 1. a. True. This is just part of Theorem 2 in Section 7.1. The proof appears just before the statement 
+of the theorem.  
+ b. False. A counterexample is 01 .10A −⎡⎤= ⎢⎥⎣⎦   
+ c . True. This is proved in the first part of the proof of Theorem 6 in Section 7.3. It is also a 
+consequence of Theorem 7 in Section 6.2.  
+ d. False. The principal axes of T Axx  are the columns of any orthogonal matrix P that 
+diagonalizes A. Note: When A has an eigenvalue whose eigenspace has dimension greater than 
+1, the principal axes are not uniquely determined.  
+----- pagina 44 -----
+448 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ e . False. A counterexample is 11 .11P −⎡⎤= ⎢⎥⎣⎦  The columns here are orthogonal but not 
+orthonormal.  
+ f . False. See Example 6 in Section 7.2.  
+ g. False. A counterexample is 2003A ⎡⎤= ⎢⎥ −⎣⎦  and 1 .0⎡ ⎤= ⎢ ⎥⎣ ⎦x  Then 20T A =>xx , but T Axx  is an 
+indefinite quadratic form.  
+ h. True. This is basically the Principal Axes Theorem from Section 7.2. Any quadratic form can be 
+written as T Axx  for some symmetric matrix A.  
+ i . False. See Example 3 in Section 7.3.  
+ j . False. The maximum value must be computed over the set of unit vectors. Without a restriction 
+on the norm of x, the values of T Axx  can be made as large as desired.  
+ k. False. Any orthogonal change of variable x = Py changes a positive definite quadratic form into 
+another positive definite quadratic form. Proof: By Theorem 5 of Section 7.2., the classification 
+of a quadratic form is determined by the eigenvalues of the matrix of the form. Given a form 
+,T Axx  the matrix of the new quadratic form is 1 ,PA P−  which is similar to A and thus has the 
+same eigenvalues as A.  
+ l . False. The term “definite eigenvalue” is undefined and therefore meaningless.  
+m. True. If x = Py, then 1()()TT T T TAP A P P A P P A P −== =xx y y y y y y .  
+ n. False. A counterexample is 11 .11U −⎡ ⎤= ⎢ ⎥−⎣ ⎦  The columns of U must be orthonormal to make 
+TUU x  the orthogonal projection of x onto Col U.  
+ o. True. This follows from the discussion in Example 2 of Section 7.4., which refers to a proof 
+given in Example 1.  
+ p. True. Theorem 10 in Section 7.4 writes the decomposition in the form ,TUVΣ  where U and V 
+are orthogonal matrices. In this case, TV  is also an orthogonal matrix. Proof: Since V is 
+orthogonal, V is invertible and 1 .TVV− =  Then 11() ( ) () ,TT T TVVV−− ==  and since V is square 
+and invertible, TV  is an orthogonal matrix.  
+ q. False. A counterexample is 20 .01A ⎡ ⎤= ⎢ ⎥⎣ ⎦  The singular values of A are 2 and 1, but the singular 
+values of TAA  are 4 and 1.  
+ 2. a. Each term in the expansion of A is symmetric by Exercise 35 in Section 7.1. The fact that 
+() TT TBC B C+= +  implies that any sum of symmetric matrices is symmetric, so A is 
+symmetric.  
+ b. Since 11 1T =uu  and 1 0Tj =uu  for j ≠ 1,  
+  1 111 1 1 11 1 1 1 11(λ )( λ ) λ () λ () λTT TT nnn nn nA =+ … + =+ … + =uu u u u u u u u u u u uu  
+  Since 1 ≠u0 , 1λ  is an eigenvalue of A. A similar argument shows that λ j  is an eigenvalue of A 
+for j = 2, …, n. 
+----- pagina 45 -----
+Chapter 7  Supplementary Exercises   449  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3. If rank A = r, then dim Nul A = n – r by the Rank Theorem. So 0 is an eigenvalue of A with 
+multiplicity n – r, and of the n terms in the spectral decomposition of A exactly n – r are zero. The 
+remaining r terms (which correspond to nonzero eigenvalues) are all rank 1 matrices, as mentioned 
+in the discussion of the spectral decomposition.  
+ 4. a. By Theorem 3 in Section 6.1, (Col ) Nul Nul TAA A⊥ ==  since .TAA =  
+ b. Let y be in n. By the Orthogonal Decomposition Theorem in Section 6.3, y = ˆy + z, where ˆy  is 
+in Col A and z is in (Col ) .A ⊥  By part a., z is in Nul A.  
+ 5. If Av = λv for some nonzero λ, then 11λ (λ ),AA−−==vv v  which shows that v is a linear 
+combination of the columns of A. 
+ 6. Because A is symmetric, there is an orthonormal eigenvector basis 1{, , } n…uu  for n. Let r = rank A.  
+If r = 0, then A = O and the decomposition of Exercise 4(b) is y = 0 + y for each y in n; if r = n then 
+the decomposition is y = y + 0 for each y in n. 
+  Assume that 0 < r < n. Then dim Nul A = n – r by the Rank Theorem, and so 0 is an eigenvalue of A 
+with multiplicity n – r. Hence there are r nonzero eigenvalues, counted according to their 
+multiplicities. Renumber the eigenvector basis if necessary so that 1 ,, r…uu  are the eigenvectors 
+corresponding to the nonzero eigenvalues. By Exercise 5, 1 ,, r…uu  are in Col A. Also, 1,,rn+ …uu  
+are in Nul A because these vectors are eigenvectors corresponding to the eigenvalue 0. For y in n, 
+there are scalars 1,, ncc …  such that  
+   11 1 1
+ˆ
+rr r r nncc c c ++= +…+ + +…+
+Z
+yu u u u
+y
+  	
+  	
+  
+  This provides the decomposition in Exercise 4(b). 
+ 7. If TAR R=  and R is invertible, then A is positive definite by Exercise 25 in Section 7.2.  
+  Conversely, suppose that A is positive definite. Then by Exercise 26 in Section 7.2, TAB B=  for 
+some positive definite matrix B. Since the eigenvalues of B are positive, 0 is not an eigenvalue of B 
+and B is invertible. Thus the columns of B are linearly independent. By Theorem 12 in Section 6.4, B 
+= QR for some n × n matrix Q with orthonormal columns and some upper triangular matrix R with 
+positive entries on its diagonal. Since Q is a square matrix, ,TQQ I=  and  
+   () ()TT T T TAB B Q R Q R R Q Q RR R== = =  
+  and R has the required properties. 
+ 8. Suppose that A is positive definite, and consider a Cholesky factorization of TAR R=  with R upper 
+triangular and having positive entries on its diagonal. Let D be the diagonal matrix whose diagonal 
+entries are the entries on the diagonal of R. Since right-multiplication by a diagonal matrix scales the 
+columns of the matrix on its left, the matrix 1TLR D −=  is lower triangular with 1’s on its diagonal.  
+If U = DR, then 1 .TAR D D RL U−==  
+ 9. If A is an m × n matrix and x is in n, then 2() () | | | | 0 .TT TAA A A A== ≥xx x x x  Thus TAA  is positive 
+semidefinite. By Exercise 22 in Section 6.5, rank rank .TAA A=  
+----- pagina 46 -----
+450 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 10. If rank G = r, then dim Nul G = n – r by the Rank Theorem. Hence 0 is an eigenvalue of G with 
+multiplicity n – r, and the spectral decomposition of G is  
+   111λλ TT rrrG =+ … +uu uu  
+  Also 1λ ,, λ r…  are positive because G is positive semidefinite. Thus  
+   () () () ()11 11λλ λ λ
+TT
+rr rrG =+ … +uu u u  
+  By the column-row expansion of a matrix product, TGB B=  where B is the n × r matrix 
+11λλ .rrB ⎡⎤=…⎣⎦ uu  Finally, TGA A=  for .TAB=  
+ 11. Let TAUV=Σ  be a singular value decomposition of A. Since U is orthogonal, TUU I =  and 
+TTAUU U V P Q=Σ =  where 1TPUU UU −=Σ =Σ  and .TQU V=  Since Σ is symmetric, P is 
+symmetric, and P has nonnegative eigenvalues because it is similar to Σ, which is diagonal with 
+nonnegative diagonal entries. Thus P is positive semidefinite. The matrix Q is orthogonal since it is 
+the product of orthogonal matrices. 
+ 12. a. Because the columns of rV  are orthonormal,  
+   11() ( ) ( )TT TTrr r r r r r rA A U D V V DU U D DU U U+− −== =yy y y  
+  Since TrrUU y  is the orthogonal projection of y onto Col rU  by Theorem 10 in Section 6.3, and  
+since Col ColrUA =  by (5) in Example 6 of Section 7.4, AA+y  is the orthogonal projection of  
+y onto Col A.  
+ b. Because the columns of rU  are orthonormal,  
+   11() ( ) ( ) TT T Trr r r r r r rA A VD U UD V VD D V VV+− − == =xx x x  
+  Since TrrVV x  is the orthogonal projection of x onto Col rV  by Theorem 10 in Section 6.3, and 
+since Col RowrVA=  by (8) in Example 6 of Section 7.4, AA+ x  is the orthogonal projection of 
+x onto Row A.  
+ c. Using the reduced singular value decomposition, the definition of A+ , and the associativity of 
+matrix multiplication gives:  
+   11() ( ) () ( ) ()TT T T Trr r r rr r r rrAA A U DV V D U U DV U DD U U DV+− −==  
+   1 TTrr r rUD D D V UD V A−== =  
+   11 1 1() ( ) () ( ) ()TT T T Trr r r rr r r rrAA A V DU U D V V DU V DD V V DU++ − − − −==  
+   11 1 TTrr r rVD D D U VD U A−− − +== =  
+ 13. a. If b = Ax, then .AA A++ +==xb x  By Exercise 12(a), +x  is the orthogonal projection of x onto  
+Row A.  
+b. From part (a) and Exercise 12(c), () () .AA A A A A A A++ +=== =xxx x b  
+c. Let Au = b. Since +x  is the orthogonal projection of x onto Row A, the Pythagorean Theorem 
+shows that 22 2 2|| || || || || || || || ,++ +=+ − ≥ux u x x  with equality only if .+=ux  
+----- pagina 47 -----
+Chapter 7  Supplementary Exercises   451  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 14. The least-squares solutions of Ax = b are precisely the solutions of Ax = ˆ,b  where ˆb is the 
+orthogonal projection of b onto Col A. From Exercise 13, the minimum length solution of Ax = ˆb  is 
+ˆ,A+b  so ˆA+b  is the minimum length least-squares solution of Ax = b. However, ˆ AA+=bb  by 
+Exercise 12(a) and hence ˆAA A A++ + +== Αbb b  by Exercise 12(c). Thus A+b  is the minimum 
+length least-squares solution of Ax = b.  
+ 15. [M] The reduced SVD of A is ,TrrAU D V=  where  
+   
+.966641 .253758 .034804 9.84443 0 0.185205 .786338 .589382 , 0 2.62466 0 ,.125107 .398296 .570709 0 0 1.09467.125107 .398296 .570709rUD −⎡⎤ ⎡ ⎤⎢⎥ −− ⎢ ⎥⎢⎥== ⎢ ⎥⎢⎥ − ⎢ ⎥⎢⎥ ⎣ ⎦−⎢⎥⎣⎦  
+   
+.313388 .009549 .633795
+.313388 .009549 .633795
+and .633380 .023005 .313529
+.633380 .023005 .313529
+.035148 .999379 .002322
+rV
+−⎡⎤
+⎢⎥−⎢⎥
+⎢⎥= −−
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+ 
+  So the pseudoinverse 1 TrrAV D U+−=  may be calculated, as well as the solution ˆ A+=xb  for the 
+system Ax = b:  
+   
+.05 .35 .325 .325
+.05 .35 .325 .325
+ˆ,.05 .15 .175 .175
+.05 .15 .175 .175
+.10 .30 .150 .150
+A+
+−− . 7⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− . 7⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥==−− − − . 8
+⎢⎥ ⎢ ⎥ −. 8⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −− − . 6⎣⎦ ⎣ ⎦
+x  
+  Row reducing the augmented matrix for the system ˆTA =zx  shows that this system has a solution, so 
+ˆx  is in Col Row .TAA=  A basis for Nul A is 12
+01
+01
+{, } , , 10
+10
+00
+⎧ ⎫−⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥
+⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥= ⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭aa  and an arbitrary element of 
+Nul A is 12 .cd=+ua a  One computes that ˆ|| , || =1 3 1 / 5 0x  while ˆ|| . cd22+ ||= (131/50) + 2 + 2xu  
+Thus if u ≠ 0, || ˆx || < || ˆx  + u ||, which confirms that ˆx  is the minimum length solution to Ax = b. 
+ 16. [M] The reduced SVD of A is ,TrrAU D V=  where  
+   
+.337977 .936307 .095396 12.9536 0 0.591763 .290230 .752053 , 0 1.44553 0 ,.231428 .062526 .206232 0 0 .337763.694283 .187578 .618696rUD −⎡⎤ ⎡ ⎤⎢⎥ − ⎢ ⎥⎢⎥== ⎢ ⎥⎢⎥−−− ⎢ ⎥⎢⎥ ⎣ ⎦−−−⎢⎥⎣⎦  
+----- pagina 48 -----
+452 CHAPTER 7  Symmetric Matrices and Quadratic Forms  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+.690099 .721920 .050939
+00 0
+and .341800 .387156 .856320
+.637916 .573534 .513928
+00 0
+rV
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥= −
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  So the pseudoinverse 1 TrrAV D U+−=  may be calculated, as well as the solution ˆ A+=xb  for the  
+system Ax = b:  
+   
+.5 0 .05 .15
+00 0 0
+ˆ,02 . 5 1 . 5
+.5 1 .35 1.05
+00 0 0
+A+
+−− 2 . 3⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ 0⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥== 5.0
+⎢⎥ ⎢ ⎥ −− − − . 9⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ 0⎣⎦ ⎣ ⎦
+x  
+  Row reducing the augmented matrix for the system ˆTA =zx  shows that this system has a solution, so 
+ˆx  is in Col RowTAA= . A basis for Nul A is 12
+00
+10
+{, } , , 00
+00
+01
+⎧ ⎫⎡ ⎤⎡⎤
+⎪ ⎪⎢ ⎥⎢⎥
+⎪ ⎪⎢ ⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥= ⎨ ⎬⎢ ⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥⎪ ⎪⎢ ⎥⎢⎥⎪ ⎪⎣ ⎦⎣⎦⎩⎭aa  and an arbitrary element of 
+Nul A is 12 .cd=+ua a  One computes that ˆ|| , || = 311/10x  while ˆ|| . cd22+ || = (311/10) + +xu  
+Thus if u ≠ 0, || ˆx || < || ˆx + u ||, which confirms that ˆx  is the minimum length solution to Ax = b. 

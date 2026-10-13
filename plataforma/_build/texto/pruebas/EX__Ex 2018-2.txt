@@ -1,0 +1,691 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Segundo Semestre 2018
+MAT 1203 – ´Algebra lineal
+Soluci´ on Examen
+1. Determine la ecuaci´ on del plano que es perpendicular a la recta de intersecci´ on de los planos
+Π1 : 3x − 2y + z = 0 Π 2 : x + y + z = 1
+y que pasa por el punto (1 , −1, 1).
+Soluci´ on.
+La normal de este plano es paralela a la direcci´ on de la recta de intersecci´ on de los planos Π 1, Π2.
+La direcci´ on de esta recta es perpendicular a las normales de los planos Π 1, Π2, por lo cual la
+normal del plano pedido se puede obtener como
+< 3, −2, 1 > × < 1, 1, 1 >=
+ i j k3 −2 11 1 1  =< −3, −2, 5 >
+Luego la ecuaci´ on del plano pedido es
+< −3, −2, 5 > · < x − 1, y + 1, z − 1 >= −3x − 2y + 5z = 4
+Puntaje:
+1 pto por argumentar que la normal del plano es paralela a la direcci´ on de la recta de
+intersecci´ on de los planos Π1, Π2.
+1 pto por argumentar que la direcci´ on de la recta de intersecci´ on es perpendicular a las
+normales de los planos Π 1, Π2.
+2 pts por encontrar correctamente la normal del plano.(descontar un punto si comete un
+error algebraico)
+2 pto por calcular correctamente la ecuaci´ on del plano.(descontar un punto si comete un
+error algebraico)2. A una matriz B se le han realizado tres operaciones elementales en el siguiente orden:
+Intercambio ﬁla 1 con ﬁla 3.
+Fila 2 se ha intercambiado por, ﬁla 2 menos 4 veces ﬁla 3.
+Fila 3 se ha multiplicado por -5.
+y se ha obtenido la matriz
+C =
+
+
+1 2 0
+0 1 2
+0 2 2
+
+
+a) Determine el determinante de B. [ 4 ptos. ]
+b) ¿El sistema Bx = b tiene soluci´ on ´ unica para todob ∈ R3? [ 2 ptos. ]
+Soluci´ on.
+a) Si a una matriz se le intercambia ﬁla 1 con ﬁla 3 el nuevo determinate es menos el determi-
+nante original.
+Si a una matriz la ﬁla 2 se ha intercambia por, ﬁla 2 menos 4 veces ﬁla 3, el nuevo determinate
+es igual al original.
+Si a una matriz la ﬁla 3 se ha multiplica por -5, el nuevo determinante es -5 veces el deter-
+minante original. Luego el
+det(C) = −1 · −5 · det(B).
+Como el
+det(C) = 1 ·
+ 1 22 2  = −2
+Obtenemos que det( B) = − 25
+b) Como det( B) ̸= 0 la matriz B es invertible por la cual para todo b ∈ R3 el sistema
+Bx = b → x = B−1b
+tiene soluci´ on ´ unica.
+Puntaje:
+1.5 pto por concluir que det( B) = −1 · −5 · det(C). (0.5 por cada propiedad)
+1 pto por encontrar correctamente det( C).
+1.5 pto por concluir que det( B) = −10
+2 pts por argumentar de manera correcta que el sistema tiene ´ unica soluci´ on.3. Sea T : R3 − →R3 una transformaci´ on lineal tal que:
+T
+
+
+1
+0
+1
+
+ =
+
+
+−1
+0
+1
+
+ , T
+
+
+1
+1
+1
+
+ =
+
+
+1
+1
+1
+
+ , T
+
+
+0
+0
+1
+
+ =
+
+
+0
+1
+2
+
+
+a) Determine la matriz A tal que T (x) = Ax para todo x ∈ R3.
+b) Determine la dimensi´ on del Rango (Imagen) y del N´ ucleo (espacio nulo) de la transformaci´ on
+T .
+Soluci´ on.
+a) Sabemos que la matriz A = [ T (e1) T (e2) T (e3)], como T es una transformaci´ on lineal
+tenemos que
+T
+
+
+1
+0
+0
+
+ = T
+
+
+
+
+1
+0
+1
+
+ −
+
+
+0
+0
+1
+
+
+
+ = T
+
+
+1
+0
+1
+
+−T
+
+
+0
+0
+1
+
+ =
+
+
+−1
+0
+1
+
+−
+
+
+0
+1
+2
+
+ =
+
+
+−1
+−1
+−1
+
+
+T
+
+
+0
+1
+0
+
+ = T
+
+
+
+
+1
+1
+1
+
+ −
+
+
+1
+0
+1
+
+
+
+ = T
+
+
+1
+1
+1
+
+ − T
+
+
+1
+0
+1
+
+ =
+
+
+1
+1
+1
+
+ −
+
+
+−1
+0
+1
+
+ =
+
+
+2
+1
+0
+
+
+Luego
+A =
+
+
+−1 2 0
+−1 1 1
+−1 0 2
+
+
+b) Como
+A =
+
+
+−1 2 0
+−1 1 1
+−1 0 2
+
+ ∼
+
+
+−1 2 0
+0 −1 1
+0 0 0
+
+
+dim(N ucleo(T )) = 1 que es la cantidad de columnas no pivotes de la matriz A,
+dim(Rango(T )) = 2 que es la cantidad de columnas pivotes de la matriz A.
+Puntaje:
+1 pto por encontrar correctamente cada columna de la matriz A.(3 ptos total)(decontar 0,5
+por cada error algebraico)
+1.5 pto por concluir que la dim( N ucleo(T )) = 1 .
+1.5 pto por concluir que dim( Rango(T )) = 2.4. Sea A =
+
+
+5 −4 −2
+−4 5 2
+−2 2 2
+
+ , cuyo polinomio caracter ´ ıstico esPA(λ) = ( λ − 10)(λ − 1)2. Determine
+una matriz P ortogonal y una matriz D diagonal, tal que A = P DP
+T
+.
+Contin´ ua en la siguiente p´ agina.
+Soluci´ on.
+Como el polinomio caracter ´ ıstico esPA(λ) = ( λ − 10)(λ − 1)2 tenemos que λ1 = 10 y λ2 = 1 son
+valores propios de A. Calculando A − λiI, i = 1, 2
+A − λ1I =
+
+
+−5 −4 −2
+−4 −5 2
+−2 2 −8
+
+ ∼
+
+
+−5 −4 −2
+0 −1 2
+0 0 0
+
+
+as ´ ı que su espacio nulo tiene dimesi´ on 1 y es generado por v1 =
+
+
+−2
+2
+1
+
+
+A − λ2I ∼
+
+
+4 −4 −2
+−4 4 2
+−2 2 1
+
+ ∼
+
+
+−2 2 1
+0 0 0
+0 0 0
+
+
+as ´ ı que su espacio nulo tiene dimesi´ on 2 y es generado por
+v2 =
+
+
+1
+1
+0
+
+ y ˜ v3 =
+
+
+1
+0
+2
+
+ .
+Obtengamos una base ortogonal para Nul( A − λ2I). Para hacerlo, reemplazamos ˜v3 por
+v3 = ˜v3 −
+(
+˜v3 · v2
+|v2|
+) v2
+|v2| =
+
+
+1
+0
+2
+
+ − 12
+
+
+1
+1
+0
+
+ =
+
+
+1/2
+−1/2
+2
+
+ .
+As ´ ı, la base{v1, v2, v3} es una base ortogonal para R3 y
+{ˆv1, ˆv2, ˆv3} =
+
+
+
+1
+3
+
+
+−2
+2
+1
+
+ , 1√2
+
+
+1
+1
+0
+
+ , 1√
+9/2
+
+
+1/2
+−1/2
+2
+
+
+
+
+ , ˆvi = vi|vi| , i = 1, 2, 3
+es una base ortonormal para R3 que consta de vectores propios de la matriz simetrica A. Por lo
+tanto, A = P DP T donde
+D =
+
+
+10 0 0
+0 1 0
+0 0 1
+
+ y P = [ˆv1 ˆv2 ˆv3] =
+
+
+−2/3 1 /
+√
+2 1 /(3
+√
+2)
+2/3 1 /
+√
+2 −1/(3
+√
+2)
+1/3 0 2
+√
+2/3
+
+
+Puntaje:1 pto por observar que λ1 = 10 es valor propio de A y encontrar una base de su espacio
+propio.
+1.5 pts por observar que λ2 = 1 es valor propio doble y encontrar una base de su espacio
+propio.
+2 pts por encontrar una base ortogonal para el espacio propio correspondiente a λ2 = 1;
+1 pto por calcular una base ortonormal de vectores propios para R3 y escribir P ;
+0.5 pts por escribir la matriz diagonal D.5. Encuentre la ecuaci´ ony = β0 + β1x de la recta de m ´ ınimos cuadrados que mejor se ajuste a los
+puntos de datos
+(2, 3), (3, 2), (5, 1), (6, 0).
+Soluci´ on.
+Debemos encontrar la soluci´ on de m ´ ınimos cuadrados del sistema inconsistenteXβ = y
+y =
+
+
+3
+2
+1
+0
+
+ , X =
+
+
+1 2
+1 3
+1 5
+1 6
+
+ , β = [ β0β1 ]
+Para la soluci´ on de m ´ ınimos cuadrados deXβ = y, obtenga las ecuaciones normales:
+X T Xβ = X T y.
+Calculamos
+X T X =
+[ 4 16
+16 74
+]
+, X T y =
+[ 6
+17
+]
+.
+Entonces,
+β = (X T X)−1(X T y) = 14 · 74 − (16)2
+[ 74 −16
+−16 4
+] [ 6
+17
+]
+= 174 − 82
+[ 37 · 3 − 4 · 17
+−4 · 6 + 17
+]
+=
+[ 4, 3
+−0, 7
+]
+.
+Puntaje:
+2 pts por escribir el problema en forma de aplicar m ´ ınimos cuadrados;
+1 pto por calcular X T X;
+1 pto por calcular X T y;
+1 pto por invertir X T X;
+1 pto por calcular β.6. Dada la forma cuadr´ atica
+Qt(x1, x2, x3) = (2 − t)x21 + x22 + 2x23 + (2t − 4)x1x3 − 2x2x3
+donde t ∈ R.
+a) Determine la descomposici´ on de Cholesky de la matriz asociada a esta forma.
+b) ¿ Cu´ ales son los valores de t para que Qt sea positiva deﬁnida?
+Soluci´ on.
+(a) Expresamos
+Qt(x) = xT Ax donde A =
+
+
+2 − t 0 t − 2
+0 1 −1
+t − 2 −1 2
+
+
+Aplicando el algoritmo de Cholesky, obtenemos A = LT DtL donde
+L =
+
+
+1 0 0
+0 1 0
+−1 −1 1
+
+ y Dt =
+
+
+2 − t 0 0
+0 1 0
+0 0 t − 1
+
+ .
+(b) Desde la descomposici´ on arriba observamos que
+Qt(x) = yT Dty con y = LT x.
+Entonces, Qt es positiva deﬁnida cuando las entradas diagonales de Dt son todas positivas.
+Eso ocurre cuando 1 < t < 2.
+Puntaje:
+1 pto por obtener A.
+1 pto por obtener L.
+1 pto por obtener D.
+1.5 pts por argumentar que todos los valores de la diagonal deben ser positivos.
+1.5 pts por encontrar los valores de t requeridos.7. Considere la matriz
+A =
+
+
+1 −1
+−2 2
+2 −2
+
+
+Encontrar la descomposici´ on en valores singulares de A.
+Soluci´ on.
+La matriz
+AT A =
+( 9 −9
+−9 9
+)
+tiene valores propios λ1 = 18 y λ2 = 0. Luego, los valores singulares de A son σ1 =
+√
+18 y σ2 = 0.
+El lector puede comprobar que
+V18 =
+⟨( 1
+−1
+)⟩
+y V0 =
+⟨( 1
+1
+)⟩
+.
+As ´ ı, la matrizQ esta dada por
+Q =
+( −1/√2 1 /√2
+1/
+√
+2 1 /
+√
+2
+)
+.
+Consideremos el vector
+⃗Y1 =
+A
+( −1/√2
+1/
+√
+2
+)
+A ( −1/√21/√2 ) =
+
+
+−1/3
+2/3
+−2/3
+
+ .
+Sea ⃗U1 un vector de norma 1 ortogonal a ⃗Y1. Este vector debe satisfacer la ecuaci´ on
+−x + 2y − 2z = 0. De esta manera, tales vectores pertenecen al espacio
+W =
+⟨
+
+2
+1
+0
+
+ ,
+
+
+−2
+0
+1
+
+
+⟩
+.
+Aplicando el proceso de Gram-Schmidt, y luego normalizando, tenemos que
+W =
+⟨
+
+2/
+√
+5
+1/
+√
+5
+0
+
+ ,
+
+
+−2/3
+√
+5
+4/3
+√
+5√
+5/3
+
+
+⟩
+.
+De esta manera, si consideramos la matriz P
+
+−1/3 2 /
+√
+5 −2/3
+√
+5
+2/3 1 /
+√
+5 4 /3
+√
+5
+−2/3 0
+√
+5/3
+
+
+tenemos que
+P T AQ = Σ =
+
+
+√
+18 0
+0 0
+0 0
+
+ .
+Puntaje:
+0.5 ptos por encontrar cada valor singular.(1 pto)
+1 ptos por encontrar la matriz σ
+0.5 pto por encontrar cada columna de la matriz Q.(1 ptos)
+1 pto por encontrar cada columna de la matriz P .(3 ptos)8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. En caso de ser verdaderas dem´ ues-
+trelas y si son falsas de un contraejemplo.
+a) Si A es una matriz de 3 × 4 con tres posiciones pivotes entonces la ecuaci´ on Ax = b es
+consistente para todo b ∈ R3.
+b) El conjunto {A ∈ M2×2 | A = At} es un sub-espacio vectorial de M2×2
+c) Si T : R2 → R2 es la transformaci´ on lineal que reﬂeja los puntos a trav´ es del eje x entonces
+1 es un valor propio de esta transformaci´ on.
+Soluci´ on.
+a) Verdadero
+Al tener A tres columnas pivotes la dim( Col(A)) = 3 y Col(A) ≤ R3 luego Col(A) = R3
+as ´ ı que el sistemaAx = b es consistente para todo b ∈ R3.
+b) Verdadero
+La matriz cero si se transpone es la misma matriz, luego la matriz cero pertenece al
+conjunto.
+Si A y B pertenecen al conjunto, α y β ∈ R tenemos que
+(αA + βB )
+T
+= αA
+T
++ βB
+T
+= αA + βB
+luego αA + βB tambien pertenece al conjunto, as ´ ı queda demostrado que este conjunto
+es un subespacio de M2×2.
+c) Verdadero
+Si tomamos el vector
+( 1
+0
+)
+y le aplicamos la transformaci´ on T
+( 1
+0
+)
+= 1 ·
+( 1
+0
+)
+, luego 1
+es un valor propio de la transformaci´ on.
+Puntaje:
+2 pto por cada item correctamente respondiddo.

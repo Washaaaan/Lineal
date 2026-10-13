@@ -1,0 +1,2868 @@
+
+----- pagina 1 -----
+ 
+ Copyright © 2012 Pear
+ 
+ 
+6.1 SOLUTIONS 
+Notes: The first half of this section is c
+concepts of orthogonality and orthogon a
+an important general fact, but is needed 
+in Section 7.4. The optional material on 
+ 1. Since 12−⎡⎤= ⎢⎥⎣⎦u  and 4 ,6⎡⎤= ⎢⎥⎣⎦v  ⋅ =uu
+ 2. Since 
+3
+1
+5
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥−⎣⎦
+w  and 
+6
+2,
+3
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+x  ⋅w
+and 51 .35 7⋅ ==⋅xwww  
+ 3. Since 
+3
+1,
+5
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥−⎣⎦
+w  223( 1 )⋅= + −ww
+ 4. Since 1 ,2−⎡⎤= ⎢⎥⎣⎦u  22(1 ) 2⋅= − + =uu
+ 5. Since 12−⎡⎤= ⎢⎥⎣⎦u  and 4 ,6⎡⎤= ⎢⎥⎣⎦v  u ⋅ v 
+48 / 1 32 .61 2 / 1 313 ⎡⎤ ⎡ ⎤⋅⎛⎞ ==⎜⎟ ⎢⎥ ⎢ ⎥⋅⎝⎠ ⎣⎦ ⎣ ⎦uv vvv  
+rson Education, Inc. Publishing as Addison-Wesley. 
+ 
+ 
+computational and is easily learned. The second half c
+al complements, which are essential for later work. T
+only for Supplementary Exercise 13 at the end of th e
+angles is not used later. Exercises 27–31 concern facts
+22(1 ) 2 5=− + = , v ⋅ u = 4(–1) + 6(2) = 8, and 85⋅ =⋅vuuu
+2223( 1 )( 5 )3 5=+ −+ − =w , x ⋅ w = 6(3) + (–2)(–1) + 
+2(5 ) 3 5+− = , and 
+3/35
+1 1/35 .
+1/7
+⎡⎤
+⎢⎥=−⎢⎥⋅ ⎢⎥−⎣⎦www  
+5=  and 1/51 .2/5−⎡⎤= ⎢⎥⋅ ⎣⎦uuu  
+= (–1)(4) + 2(6) = 8, 22465 2 ,⋅ =+=vv  and 
+357 
+concerns the 
+Theorem 3 is 
+e chapter and 
+s used later. 
+8.5  
+3(–5) = 5, 
+
+----- pagina 2 -----
+358 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 6. Since 
+6
+2
+3
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+x  and 
+3
+1,
+5
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥−⎣⎦
+w  x ⋅ w = 6(3) + (–2)(–1) + 3(–5) = 5, 22 26( 2 )34 9 ,⋅= + − + =xx  and 
+63 0 / 4 9
+5 21 0 / 4 9 .49 31 5 / 4 9⎡⎤ ⎡ ⎤⋅⎛⎞ ⎢⎥ ⎢ ⎥=− = −⎜⎟ ⎢⎥ ⎢ ⎥⋅⎝⎠ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦xw xxx  
+ 7. Since 
+3
+1,
+5
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥−⎣⎦
+w  222|| || 3 ( 1) ( 5) 35.=⋅ = + − + − =ww w  
+ 8. Since 
+6
+2,
+3
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+x  22 2|| || 6 ( 2) 3 49 7.=⋅ = + −+ = =xx x  
+ 9. A unit vector in the direction of the given vector is  
+   
+22
+30 30 3/ 511
+40 40 4/ 550( 30) 40
+−− −⎡ ⎤⎡ ⎤ ⎡ ⎤==⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦−+  
+ 10. A unit vector in the direction of the given vector is  
+   
+22 2
+6/ 6 166
+11 44 4 / 6 1
+61(6 ) 4 (3 ) 33 36 1
+⎡ ⎤−−−⎡⎤ ⎡⎤ ⎢ ⎥⎢⎥ ⎢⎥ == ⎢ ⎥⎢⎥ ⎢⎥ ⎢ ⎥−+ + − ⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦ ⎢ ⎥⎣ ⎦  
+ 11. A unit vector in the direction of the given vector is  
+   
+22 2
+7/ 6 97/4 7/4
+11 1/2 1/2 2/ 69
+69 /16(7 / 4) (1/ 2) 1 11 4/ 6 9
+⎡ ⎤⎡⎤ ⎡⎤ ⎢ ⎥⎢⎥ ⎢⎥ == ⎢ ⎥⎢⎥ ⎢⎥ ⎢ ⎥++ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎢ ⎥⎣ ⎦  
+ 12. A unit vector in the direction of the given vector is  
+   
+22
+8/3 8/3 4/511
+22 3 / 5100/ 9(8 / 3) 2
+⎡⎤ ⎡⎤ ⎡⎤==⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦+  
+ 13. Since 103⎡⎤= ⎢⎥−⎣⎦x  and 1 ,5−⎡⎤= ⎢⎥−⎣⎦y  22 2|| || [10 ( 1)] [ 3 ( 5)] 125−= − −+ − − −=xy  and 
+dist ( , ) 125 5 5.==xy  
+----- pagina 3 -----
+6.1  Solutions   359  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 14. Since 
+0
+5
+2
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+u  and 
+4
+1,
+8
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+z  22 2 2| | | | [ 0 (4 ) ] [5 (1 ) ] [ 2 8 ] 6 8− = −− +−−− + − =uz  and 
+dist ( , ) 68 2 17.==uz  
+ 15. Since a ⋅ b = 8(–2) + (–5)( –3) = –1 ≠ 0, a and b are not orthogonal. 
+ 16. Since u ⋅ v = 12(2) + (3)( –3) + (–5)(3) = 0, u and v are orthogonal. 
+ 17. Since u ⋅ v = 3(–4) + 2(1) + (–5)( –2) + 0(6) = 0, u and v are orthogonal. 
+ 18. Since y ⋅ z = (–3)(1) + 7(–8) + 4(15) + 0(–7) = 1 ≠ 0, y and z are not orthogonal. 
+ 19. a. True. See the definition of || v ||.  
+ b. True. See Theorem 1(c).  
+ c. True. See the discussion of Figure 5.  
+ d. False. Counterexample: 11 .00⎡⎤⎢⎥⎣⎦  
+ e. True. See the box following Example 6.  
+ 20. a. True. See Example 1 and Theorem 1(a).  
+ b. False. The absolute value sign is missing. See the box before Example 2.  
+ c. True. See the defintion of orthogonal complement.  
+ d. True. See the Pythagorean Theorem.  
+ e. True. See Theorem 3. 
+ 21. Theorem 1(b):  
+   () () ( ) TT TT T+ ⋅ = + = + = + =⋅ +⋅uvw uvw u vwu wv wu wv w  
+  The second and third equalities used Theorems 3(b) and 2(c), respectively, from Section 2.1. 
+  Theorem 1(c):  
+   () () ( ) ( ) TTcc cc⋅= = = ⋅uv uv u v u v  
+  The second equality used Theorems 3(c) and 2(d), respectively, from Section 2.1. 
+ 22. Since u ⋅ u is the sum of the squares of the entries in u, u ⋅ u ≥ 0. The sum of squares of numbers is 
+zero if and only if all the numbers are themselves zero. 
+ 23. One computes that u ⋅ v = 2(–7) + (–5)( –4) + (–1)6 = 0, 22 2 2|| || 2 ( 5) ( 1) 30,=⋅= + − + − =uu u  
+22 2 2|| || ( 7) ( 4) 6 101,= ⋅ =− +− + =vv v  and 2| | | | () ()+= + ⋅ + =uv uv uv  
+22 2(2 ( 7)) ( 5 ( 4)) ( 1 6) 131.+− +−+− +−+ =  
+ 24. One computes that  
+   22 2|| || ( ) ( ) 2 || || 2 || ||+= + ⋅ + = ⋅ + ⋅ + ⋅ = + ⋅ +uv uv uv u u u vv v u u v v  
+  and  
+----- pagina 4 -----
+360 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   22 2|| || ( ) ( ) 2 || || 2 || ||−= − ⋅ − = ⋅ − ⋅ + ⋅ = − ⋅ +uv uv uv u u u vv v u u v v  
+  so  
+   2 2 22 22 2 2|| || || || || || 2 || || || || 2 || || 2 || || 2 || ||+ + − = + ⋅ ++− ⋅ + = +uv uv u u v v u u v v u v  
+ 25. When ,ab⎡⎤= ⎢⎥⎣⎦v  the set H of all vectors xy⎡ ⎤⎢ ⎥⎣ ⎦  that are orthogonal to v is the subspace of vectors whose 
+entries satisfy ax + by = 0. If a ≠ 0, then x = – (b/a)y with y a free variable, and H is a line through 
+the origin. A natural choice for a basis for H in this case is .ba⎧ ⎫−⎡ ⎤⎪ ⎪⎨ ⎬⎢ ⎥⎪ ⎪⎣ ⎦⎩⎭  If a = 0 and b ≠ 0, then by = 0. 
+Since b ≠ 0, y = 0 and x is a free variable. The subspace H is again a line through the origin. A 
+natural choice for a basis for H in this case is 1 ,0⎧ ⎫⎡ ⎤⎪ ⎪⎨ ⎬⎢ ⎥⎪ ⎪⎣ ⎦⎩⎭  but ba⎧ ⎫−⎡ ⎤⎪ ⎪⎨ ⎬⎢ ⎥⎪ ⎪⎣ ⎦⎩⎭  is still a basis for H since a = 0 
+and b ≠ 0. If a = 0 and b = 0, then H = 2 since the equation 0x + 0y = 0 places no restrictions on x or 
+y. 
+ 26. Theorem 2 in Chapter 4 may be used to show that W is a subspace of 3, because W is the null space 
+of the 1 × 3 matrix .Tu  Geometrically, W is a plane through the origin. 
+ 27. If y is orthogonal to u and v, then y ⋅ u = y ⋅ v = 0, and hence by a property of the inner product,  
+y ⋅ (u + v) = y ⋅ u + y ⋅ v = 0 + 0 = 0. Thus y is orthogonal to u + v. 
+ 28. An arbitrary w in Span{u, v} has the form 12cc=+wuv . If y is orthogonal to u and v, then  
+u ⋅ y = v ⋅ y = 0. By Theorem 1(b) and 1(c),  
+   12 1 2() ( ) ( ) 0 0 0cc c c⋅= + ⋅= ⋅ + ⋅ =+=wy u v y uy vy  
+ 29. A typical vector in W has the form 11 .ppcc=+ … +wv v  If x is orthogonal to each ,jv  then by 
+Theorems 1(b) and 1(c),  
+   11 1 1() ( ) ( ) 0 pp p pccc c⋅ = +…+ ⋅ = ⋅ +…+ ⋅ =wx v v x v x v x  
+  So x is orthogonal to each w in W. 
+ 30. a. If z is in ,W ⊥  u is in W, and c is any scalar, then (cz) ⋅ u = c(z ⋅ u) = c 0 = 0. Since u is any 
+element of W, c z is in .W ⊥  
+b. Let 1z  and 2z  be in .W ⊥  Then for any u in W, 12 1 2() 0 0 0 .+⋅ = ⋅ + ⋅ = + =zzu z u z u  Thus 
+12+zz  is in .W ⊥  
+c. Since 0 is orthogonal to every vector, 0 is in .W ⊥  Thus W ⊥  is a subspace.  
+ 31. Suppose that x is in W and .W ⊥  Since x is in ,W ⊥  x is orthogonal to every vector in W, including x 
+itself. So x ⋅ x = 0, which happens only when x = 0.
+----- pagina 5 -----
+6.2  Solutions   361  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 32. [M]  
+ a. One computes that 1234|| || || || || || || || 1====aa aa  and that 0ij⋅=aa  for i ≠ j.  
+ b. Answers will vary, but it should be that || Au || = || u || and || Av || = || v ||.  
+ c. Answers will again vary, but the cosines should be equal.  
+ d. A conjecture is that multiplying by A does not change the lengths of vectors or the angles 
+between vectors.  
+ 33. [M] Answers to the calculations will vary, but will demonstrate that the mapping 
+()T ⋅⎛⎞= ⎜⎟ ⋅⎝⎠xvxx v vv6  (for v ≠ 0) is a linear transformation. To confirm this, let x and y be in n, and 
+let c be any scalar. Then  
+   () ( ) ( )()T +⋅ ⋅+⋅⎛⎞ ⎛ ⎞+= = ⎜⎟ ⎜ ⎟ ⋅⋅⎝⎠ ⎝ ⎠xyv x v y vxy v v vv vv () ()TT⋅⋅⎛⎞ ⎛⎞=+= +⎜⎟ ⎜⎟⋅⋅⎝⎠ ⎝⎠xv yv vv x yvv vv  
+  and  
+   () ( )() ( ) ccTc c c T ⋅⋅⋅⎛⎞ ⎛⎞ ⎛ ⎞=== =⎜⎟ ⎜⎟ ⎜ ⎟⋅⋅⋅⎝⎠ ⎝⎠ ⎝ ⎠xv x v x vxv v v xvv vv vv  
+ 34. [M] One finds that  
+   
+51
+1050 1 / 314
+,0 1 1 0 4 / 310
+0001 1 / 301
+03
+NR
+−⎡⎤
+⎢⎥ −− ⎡⎤⎢⎥ ⎢⎥⎢⎥== − ⎢⎥⎢⎥ ⎢⎥− ⎣⎦⎢⎥
+⎢⎥⎣⎦
+ 
+  The row-column rule for computing RN produces the 3 × 2 zero matrix, which shows that the rows of 
+R are orthogonal to the columns of N. This is expected by Theorem 3 since each row of R is in Row 
+A and each column of N is in Nul A. 
+6.2 SOLUTIONS 
+Notes: The nonsquare matrices in Theorems 6 and 7 are needed for the QR factorization in Section 6.4. It 
+is important to emphasize that the term orthogonal matrix applies only to certain square matrices. The 
+subsection on orthogonal projections not only sets the stage for the general case in Section 6.3, it also 
+provides what is needed for the orthogonal diagonalization exercises in Section 7.1, because none of the 
+eigenspaces there have dimension greater than 2. For this reason, the Gram-Schmidt process (Section 6.4) 
+is not really needed in Chapter 7. Exercises 13 and 14 are good preparation for Section 6.3. 
+ 1. Since 
+13
+44 2 0 ,
+37
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⋅− = ≠⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+ the set is not orthogonal. 
+----- pagina 6 -----
+362 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 2. Since 
+10 1 5 0 5
+2 1 2212 0 ,
+12 1 1 2 1
+−−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥−⋅ = −⋅ −= ⋅ −=⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦
+ the set is orthogonal. 
+ 3. Since 
+63
+313 0 0 ,
+91
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−⋅ = − ≠⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦
+ the set is not orthogonal. 
+ 4. Since 
+20 2 4 0 4
+5 0 5202 0 ,
+30 3 6 0 6
+⎡⎤ ⎡ ⎤⎡⎤ ⎡⎤⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥⎢ ⎥ ⎢⎥−⋅ = −⋅ −= ⋅ −=⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥⎢ ⎥ ⎢⎥−−⎣⎦ ⎣ ⎦⎣⎦ ⎣⎦⎣ ⎦ ⎣⎦
+ the set is orthogonal. 
+ 5. Since 
+31 3 3 1 3
+23 2 8 3 8 0,13 1 7 3 7
+34 3 0 4 0
+−−⎡⎤ ⎡⎤⎡⎤ ⎡ ⎤⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−−⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⋅ = ⋅= ⋅=⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−−
+⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦⎣⎦ ⎣ ⎦⎣⎦ ⎣ ⎦
+ the set is orthogonal. 
+ 6. Since 
+43
+13 32 0,35
+81
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⋅= − ≠⎢⎥ ⎢⎥−
+⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ the set is not orthogonal. 
+ 7. Since 12 12 12 0,⋅=−=uu  12{, }uu  is an orthogonal set. Since the vectors are non-zero, 1u  and 2u  
+are linearly independent by Theorem 4. Two such vectors in 2 automatically form a basis for 2. So 
+12{, }uu  is an orthogonal basis for 2. By Theorem 5,  
+   12 12 1 2
+11 2 2
+13 2⋅⋅=+ = +⋅⋅xu xuxu u u uuu u u  
+ 8. Since 12 660 ,⋅= − + =uu  12{, }uu  is an orthogonal set. Since the vectors are non-zero, 1u  and 2u  
+are linearly independent by Theorem 4. Two such vectors in 2 automatically form a basis for 2. So 
+12{, }uu  is an orthogonal basis for 2. By Theorem 5,  
+   12 12 1 2
+11 2 2
+33
+24
+⋅⋅=+ = − +⋅⋅xu xuxu u u uuu u u  
+ 9. Since 12 13 23 0,⋅=⋅=⋅=uu uu u u  ,123{, }uuu  is an orthogonal set. Since the vectors are non-zero, 
+1,u  2 ,u  and 3u  are linearly independent by Theorem 4. Three such vectors in 3 automatically form 
+a basis for 3. So 123{, , }uu u  is an orthogonal basis for 3. By Theorem 5,  
+   312 123 1 2 3
+11 2 2 3 3
+53 222⋅⋅⋅=+ + = − +⋅⋅ ⋅ xuxu xuxu u u u u uuu u u uu  
+----- pagina 7 -----
+6.2  Solutions   363  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 10. Since 12 13 23 0,⋅=⋅=⋅=uu uu u u  ,123{, }uuu  is an orthogonal set. Since the vectors are non-zero, 
+1,u  2 ,u  and 3u  are linearly independent by Theorem 4. Three such vectors in 3 automatically form 
+a basis for 3. So 123{, , }uu u  is an orthogonal basis for 3. By Theorem 5,  
+   312 123 1 2 3
+11 2 2 3 3
+411
+333
+⋅⋅⋅=+ + = + +⋅⋅ ⋅ xuxu xuxu u u u u uuu u u uu  
+ 11. Let 17⎡⎤= ⎢⎥⎣⎦y  and 4 .2−⎡ ⎤= ⎢ ⎥⎣ ⎦u  The orthogonal projection of y onto the line through u and the origin is 
+the orthogonal projection of y onto u, and this vector is  
+   21ˆ 12 −⎡⎤⋅== = ⎢⎥⋅ ⎣⎦yuyu uuu  
+ 12. Let 11⎡⎤= ⎢⎥−⎣⎦y  and 1 .3−⎡ ⎤= ⎢ ⎥⎣ ⎦u  The orthogonal projection of y onto the line through u and the origin is 
+the orthogonal projection of y onto u, and this vector is  
+   2/52ˆ 6/55 ⎡⎤⋅== − = ⎢⎥−⋅ ⎣⎦yuyu uuu  
+ 13. The orthogonal projection of y onto u is  
+   4/513ˆ 7/565 −⎡⎤⋅== − = ⎢⎥⋅ ⎣⎦yuyuuuu  
+  The component of y orthogonal to u is  
+   ˆ 14/5⎡⎤−= ⎢⎥8/5⎣⎦yy  
+  Thus ˆˆ −4/5 14/5⎡ ⎤⎡ ⎤=+ ( − ) = + ⎢ ⎥⎢ ⎥7/5 8/5⎣ ⎦⎣ ⎦yy yy . 
+ 14. The orthogonal projection of y onto u is  
+   14/ 52ˆ 2/55 ⎡⎤⋅== = ⎢⎥⋅ ⎣⎦yuyu uuu  
+  The component of y orthogonal to u is  
+   ˆ −4/5⎡⎤−= ⎢⎥28/5⎣⎦yy  
+  Thus ˆˆ .14/5 −4/5⎡ ⎤⎡ ⎤=+ ( − ) = + ⎢ ⎥⎢ ⎥2/5 28/5⎣ ⎦⎣ ⎦yy yy  
+ 15. The distance from y to the line through u and the origin is ||y – ˆy ||. One computes that  
+   38 3 / 53ˆ 16 4 / 510⎡⎤ ⎡⎤ ⎡ ⎤⋅−=− = − = ⎢⎥ ⎢⎥ ⎢ ⎥ −⋅ ⎣⎦ ⎣⎦ ⎣ ⎦yuyyy u uu  
+----- pagina 8 -----
+364 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  so ˆ|| − ||= 9/25 +16/25 =1yy  is the desired distance. 
+ 16. The distance from y to the line through u and the origin is ||y – ˆy ||. One computes that  
+   316ˆ 3923−−⎡⎤ ⎡ ⎤⎡⎤⋅−=− = − = ⎢⎥ ⎢ ⎥⎢⎥⋅ ⎣⎦ ⎣ ⎦⎣⎦yuyyy u uu  
+  so ˆ|| − ||=3 6 + 9 = 3 5yy  is the desired distance. 
+ 17. Let 
+1/3
+1/3 ,
+1/3
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  
+1/2
+0.
+1/2
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  Since u ⋅ v = 0, {u, v} is an orthogonal set. However, 2|| || 1/ 3=⋅=uu u  
+and 2|| || 1/ 2,=⋅=vv v  so {u, v} is not an orthonormal set. The vectors u and v may be normalized to 
+form the orthonormal set  
+   
+3/3 2/2
+,3 / 3 , 0|| || || ||
+3/3 2/2
+⎧ ⎫⎡⎤ ⎡⎤−⎪ ⎪⎢⎥ ⎢⎥⎧⎫ ⎪ ⎪= ⎢⎥⎨⎬ ⎨ ⎬ ⎢⎥⎩⎭ ⎢⎥⎪ ⎪⎢⎥⎢⎥ ⎣⎦⎪ ⎪⎣⎦⎩⎭uvuv  
+ 18. Let 
+0
+1,
+0
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  
+0
+1.
+0
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+v  Since u ⋅ v = –1 ≠ 0, {u, v} is not an orthogonal set.  
+ 19. Let .6 ,.8−⎡⎤= ⎢⎥⎣⎦u  .8 ..6⎡⎤= ⎢⎥⎣⎦v  Since u ⋅ v = 0, {u, v} is an orthogonal set. Also, 2|| || 1 =⋅=uu u  and 
+2|| || 1,=⋅=vv v  so {u, v} is an orthonormal set.  
+ 20. Let 
+2/3
+1/3 ,
+2/3
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+u  
+1/3
+2/3 .
+0
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  Since u ⋅ v = 0, {u, v} is an orthogonal set. However, 2|| || 1 =⋅=uu u  
+and 2|| || 5/ 9,=⋅=vv v  so {u, v} is not an orthonormal set. The vectors u and v may be normalized 
+to form the orthonormal set  
+   
+1/ 52/3
+,1 / 3 , 2 / 5|| || || || 2/3 0
+⎧ ⎫⎡⎤−⎡⎤⎪ ⎪⎢⎥⎧⎫ ⎪ ⎪⎢⎥= ⎢⎥⎨⎬ ⎨ ⎬ ⎢⎥⎩⎭ ⎢⎥⎪ ⎪⎢⎥⎣⎦ ⎢⎥⎪ ⎪⎣⎦⎩⎭uvuv  
+ 21. Let 
+1/ 10
+3/ 20 ,
+3/ 20
+⎡⎤
+⎢⎥
+= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  
+3/ 10
+1/ 20 ,
+1/ 20
+⎡ ⎤
+⎢ ⎥
+=−⎢ ⎥
+⎢ ⎥−⎢ ⎥⎣ ⎦
+v  and 
+0
+1/ 2 .
+1/ 2
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+w  Since u ⋅ v = u ⋅ w = v ⋅ w = 0, {u, v, w} is an 
+orthogonal set. Also, 2|| || 1,=⋅=uu u  2|| || 1,=⋅=vv v  and 2|| || 1, =⋅=ww w  so {u, v, w} is an 
+orthonormal set.  
+----- pagina 9 -----
+6.2  Solutions   365  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 22. Let 
+1/ 18
+4/ 18 ,
+1/ 18
+⎡⎤
+⎢⎥
+= ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+u  
+1/ 2
+0,
+1/ 2
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+v  and 
+2/3
+1/3 .
+2/3
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+w  Since u ⋅ v = u ⋅ w = v ⋅ w = 0, {u, v, w} is an 
+orthogonal set. Also, 2|| || 1,=⋅=uu u  2|| || 1,=⋅=vv v  and 2|| || 1, =⋅=ww w  so {u, v, w} is an 
+orthonormal set.  
+ 23.  a. True. For example, the vectors u and y in Example 3 are linearly independent but not orthogonal.  
+ b. True. The formulas for the weights are given in Theorem 5.  
+ c. False. See the paragraph following Example 5.  
+ d. False. The matrix must also be square. See the paragraph before Example 7.  
+ e. False. See Example 4. The distance is ||y – ˆy ||.  
+ 24.  a. True. But every orthogonal set of nonzero vectors is linearly independent. See Theorem 4.  
+ b. False. To be orthonormal, the vectors is S must be unit vectors as well as being orthogonal to each 
+other.  
+ c. True. See Theorem 7(a).  
+ d. True. See the paragraph before Example 3.  
+ e. True. See the paragraph before Example 7.  
+ 25. To prove part (b), note that  
+   () ( ) () ( ) TT T TUU UU U U⋅= = = = ⋅xy xy x y x y x y  
+  because TUU I = . If y = x in part (b), (Ux) ⋅ (Ux) = x ⋅ x, which implies part (a). Part (c) of the 
+Theorem follows immediately fom part (b). 
+ 26. A set of n nonzero orthogonal vectors must be linearly independent by Theorem 4, so if such a set 
+spans W it is a basis for W. Thus W is an n-dimensional subspace of n, and W = n. 
+ 27. If U has orthonormal columns, then TUU I =  by Theorem 6. If U is also a square matrix, then the 
+equation TUU I =  implies that U is invertible by the Invertible Matrix Theorem. 
+ 28. If U is an n × n orthogonal matrix, then 1 TIU U U U−== . Since U is the transpose of ,TU  Theorem 
+6 applied to TU  says that TU  has orthogonal columns. In particular, the columns of TU  are linearly 
+independent and hence form a basis for n by the Invertible Matrix Theorem. That is, the rows of U 
+form a basis (an orthonormal basis) for n. 
+ 29. Since U and V are orthogonal, each is invertible. By Theorem 6 in Section 2.2, UV is invertible and 
+11 1() () , TT TUV V U V U UV−− −== =  where the final equality holds by Theorem 3 in Section 2.1. Thus 
+UV is an orthogonal matrix. 
+ 30. If U is an orthogonal matrix, its columns are orthonormal. Interchanging the columns does not 
+change their orthonormality, so the new matrix – say, V – still has orthonormal columns. By 
+Theorem 6, .TVV I =  Since V is square, 1TVV −=  by the Invertible Matrix Theorem. 
+----- pagina 10 -----
+366 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 31. Suppose that ˆ .⋅= ⋅yuyu uu  Replacing u by cu with c ≠ 0 gives  
+   
+2
+22
+( ) () () ˆ() ( )() () () ()cc c cccc cc⋅⋅ ⋅ ⋅ == = =⋅⋅ ⋅⋅y u yu yu yuuu u u yuu u u uu uu  
+  So ˆy  does not depend on the choice of a nonzero u in the line L used in the formula. 
+ 32. If 12 0⋅=vv , then by Theorem 1(c) in Section 6.1,  
+   1 1 22 1 1 22 1 2 1 2 1 2( ) ( ) [ ( ) ]()0 0c c c c cc cc⋅= ⋅ = ⋅ = =vv v v v v  
+ 33. Let L = Span{u}, where u is nonzero, and let ()T ⋅= ⋅xuxu uu . For any vectors x and y in n and any 
+scalars c and d, the properties of the inner product (Theorem 1) show that  
+   ()() cdTc d +⋅+= ⋅xy uxy u uu  
+   cd⋅+ ⋅= ⋅xu yu uuu  
+   cd⋅⋅=+ ⋅⋅xu yuuuuu uu  
+   () ()cT dT=+ xy  
+  Thus T is a linear transformation. Another approach is to view T as the composition of the following 
+three linear mappings: x 6 a = x ⋅ v, a 6 b = a / v ⋅ v, and b 6 bv. 
+ 34. Let L = Span{u}, where u is nonzero, and let ( ) refl 2projLLT == −xy y y . By Exercise 33, the 
+mapping projLyy6  is linear. Thus for any vectors y and z in n and any scalars c and d,  
+   () 2 p r o j () () LTc d c d c d+= +− +yz yz yz  
+   2( proj proj )LLcd c d=+ − − yz y z  
+   2 proj 2 projLLcc dd=− +− yy z z  
+   (2 proj ) (2 proj )LLcd=− +− yy zz  
+   () ()cT dT=+ yz  
+  Thus T is a linear transformation.  
+ 35. [M] One can compute that 4100 .TAA I=  Since the off-diagonal entries in TAA  are zero, the columns 
+of A are orthogonal.
+----- pagina 11 -----
+6.3  Solutions   367  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 36. [M]  
+a. One computes that 4 ,TUU I =  while  
+   
+8 2 02 0 8 62 02 4 0
+04 22 4 02 0 62 03 2
+20 24 58 20 0 32 0 6
+8 0 20 82 24 20 6 01
+6 20 0 24 18 0 8 20100
+2 0 63 22 0 05 8 02 4
+24 20 0 6 8 0 18 20
+03 2 6 02 02 42 04 2
+TUU
+−⎡⎤
+⎢⎥ −−⎢⎥
+⎢⎥−
+⎢⎥ −⎛⎞ ⎢⎥= ⎜⎟ ⎢⎥ −−⎝⎠ ⎢⎥ −⎢⎥
+⎢⎥ −−⎢⎥
+−−⎢⎥⎣⎦
+ 
+  The matrices TUU  and TUU  are of different sizes and look nothing like each other.  
+b. Answers will vary. The vector TUU=py  is in Col U because () TUU=py . Since the columns of 
+U are simply scaled versions of the columns of A, Col U = Col A. Thus each p is in Col A.  
+c. One computes that TU =z0 .  
+d. From (c), z is orthogonal to each column of A. By Exercise 29 in Section 6.1, z must be 
+orthogonal to every vector in Col A; that is, z is in (Col ) .A ⊥  
+6.3 SOLUTIONS 
+Notes: Example 1 seems to help students understand Theorem 8. Theorem 8 is needed for the Gram-
+Schmidt process (but only for a subspace that itself has an orthogonal basis). Theorems 8 and 9 are 
+needed for the discussions of least squares in Sections 6.5 and 6.6. Theorem 10 is used with the QR 
+factorization to provide a good numerical method for solving least squares problems, in Section 6.5. 
+Exercises 19 and 20 lead naturally into consideration of the Gram-Schmidt process. 
+ 1. The vector in 4Span{ }u  is  
+   4 44 4
+44
+10
+672 2 236
+2
+⎡⎤
+⎢⎥−⋅ ⎢⎥== = ⎢⎥−⋅
+⎢⎥⎢⎥⎣⎦
+xu uu uuu  
+  Since 411 2 2 3 3 4
+44
+,cc c ⋅=+ + + ⋅xuxu u u u uu  the vector  
+   4 4
+44
+10 10 0
+862
+224
+022
+⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−−−⋅ ⎢ ⎥⎢ ⎥⎢ ⎥− =−= ⎢ ⎥⎢ ⎥⎢ ⎥−⋅
+⎢ ⎥⎢ ⎥⎢ ⎥ −⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦
+xuxu uu  
+  is in 123Span{ , , }.uu u  
+  
+----- pagina 12 -----
+368 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 2. The vector in 1Span{ }u  is  
+   1 11 1
+11
+2
+414 2 27
+2
+⎡⎤
+⎢⎥⋅ ⎢⎥== = ⎢⎥⋅
+⎢⎥⎢⎥⎣⎦
+vu uu uuu  
+  Since 1 12 23 34 4
+11
+,ccc⋅=+ + +⋅vux uuuuuu  the vector  
+   1 1
+11
+42 2
+54 1
+32 5
+32 1
+⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥⋅ ⎢ ⎥⎢ ⎥⎢ ⎥−= − = ⎢ ⎥⎢ ⎥⎢ ⎥−−⋅
+⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦
+vuvu uu  
+  is in 234S p a n {,,} .uuu  
+ 3. Since 12 110 0 ,⋅= − + + =uu  12{, }uu  is an orthogonal set. The orthogonal projection of y onto 
+12Span{ , }uu  is  
+   12 12 1 2
+11 2 2
+11 1
+35 3 5ˆ 11 422 2 2 00 0
+−−⎡ ⎤⎡ ⎤ ⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥=+ = + = + = ⎢ ⎥⎢ ⎥ ⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦yu yuyu u u uuu u u  
+ 4. Since 12 12 12 0 0,⋅= − ++ =uu  12{, }uu  is an orthogonal set. The orthogonal projection of y onto 
+12Span{ , }uu  is  
+   12 12 1 2
+11 2 2
+34 6
+30 15 6 3ˆ 43 325 25 5 5 00 0
+−⎡ ⎤⎡ ⎤ ⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥=+ = − = − = ⎢ ⎥⎢ ⎥ ⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦yu yuyu u u uuu u u  
+ 5. Since 12 314 0 ,⋅= + − =uu  12{, }uu  is an orthogonal set. The orthogonal projection of y onto 
+12Span{ , }uu  is  
+   12 12 1 2
+11 2 2
+31 1
+71 51 5ˆ 11 214 6 2 2 22 6
+−⎡ ⎤⎡ ⎤ ⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥=+ = − = − − − = ⎢ ⎥⎢ ⎥ ⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥−⎣ ⎦⎣ ⎦ ⎣ ⎦yu yuyu u u uuu u u  
+ 6. Since 12 0110 ,⋅= − + =uu  12{, }uu  is an orthogonal set. The orthogonal projection of y onto 
+12Span{ , }uu  is  
+   12 12 1 2
+11 2 2
+40 6
+27 5 3 5ˆ 11 418 2 2 2 11 1
+−⎡ ⎤⎡ ⎤ ⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥=+ = − + = − − + = ⎢ ⎥⎢ ⎥ ⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦yu yuyu u u uuu u u  
+ 7. Since 12 5380 ,⋅= + − =uu  12{, }uu  is an orthogonal set. By the Orthogonal Decomposition 
+Theorem,  
+----- pagina 13 -----
+6.3  Solutions   369  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+   12 12 1 2
+11 2 2
+10 / 3 7 / 3
+2ˆˆ 02 / 3 , 7 / 33 8/3 7/3
+−⎡ ⎤⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥= + = + = =−= ⎢ ⎥⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦yu yuyu u u u z y yuu u u  
+  and y = ˆy + z, where ˆy  is in W and z is in .W ⊥  
+ 8. Since 12 132 0 ,⋅= − + − =uu  12{, }uu  is an orthogonal set. By the Orthogonal Decomposition 
+Theorem,  
+   12 12 1 2
+11 2 2
+3/2 5/2
+1ˆˆ 2 7/2 , 1/22 12
+−⎡ ⎤⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥= + = + = =−= ⎢ ⎥⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦yu yuyu u u u z y yuu u u  
+  and y = ˆy + z, where ˆy  is in W and z is in .W ⊥  
+ 9. Since 12 13 23 0,⋅=⋅=⋅=uu uu u u  123{, , }uu u  is an orthogonal set. By the Orthogonal 
+Decomposition Theorem,  
+   312 123 1 2 3
+11 2 2 3 3
+22
+4122ˆˆ 2, 0333
+01
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥ −⋅⋅⋅ ⎢ ⎥⎢ ⎥=+ + = + − = = − = ⎢ ⎥⎢ ⎥⋅⋅ ⋅
+⎢ ⎥⎢ ⎥ −⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+yuyu yuyu u u u u u z y yuu uu uu  
+  and y = ˆy + z, where ˆy  is in W and z is in .W ⊥  
+ 10. Since 12 13 23 0,⋅=⋅=⋅=uu uu u u  123{, , }uu u  is an orthogonal set. By the Orthogonal 
+Decomposition Theorem,  
+   312 123 1 2 3
+11 2 2 33
+52
+2211 4 5ˆˆ ,32333
+60
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⋅⋅⋅ ⎢ ⎥⎢ ⎥=+ + = + − = = − = ⎢ ⎥⎢ ⎥⋅⋅ ⋅
+⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+yuyu yuyu u u u u u z y yuu u u uu  
+  and y = ˆy + z, where ˆy  is in W and z is in .W ⊥  
+ 11. Note that 1v  and 2v  are orthogonal. The Best Approximation Theorem says that ˆy , which is the 
+orthogonal projection of y onto 12Span{ , },W = vv  is the closest point to y in W. This vector is  
+   12 12 1 2
+11 2 2
+3
+113ˆ
+122
+1
+⎡ ⎤
+⎢ ⎥−⋅⋅ ⎢ ⎥=+ = + = ⎢ ⎥⋅⋅
+⎢ ⎥−⎢ ⎥⎣ ⎦
+yv yvyv v v vvv v v  
+ 12. Note that 1v  and 2v  are orthogonal. The Best Approximation Theorem says that ˆy , which is the 
+orthogonal projection of y onto 12Span{ , },W = vv  is the closest point to y in W. This vector is  
+----- pagina 14 -----
+370 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   12 12 1 2
+11 2 2
+1
+5ˆ 31 3
+9
+−⎡ ⎤
+⎢ ⎥−⋅⋅ ⎢ ⎥=+ = + = ⎢ ⎥−⋅⋅
+⎢ ⎥⎢ ⎥⎣ ⎦
+yv yvyv v v vvv v v
+ 
+ 13. Note that 1v  and 2v  are orthogonal. By the Best Approximation Theorem, the closest point in 
+12Span{ , }vv  to z is  
+   12 12 1 2
+11 2 2
+1
+327ˆ
+233
+3
+−⎡ ⎤
+⎢ ⎥−⋅⋅ ⎢ ⎥=+ = − = ⎢ ⎥−⋅⋅
+⎢ ⎥⎢ ⎥⎣ ⎦
+zv zvzv v v vvv v v  
+ 14. Note that 1v  and 2v  are orthogonal. By the Best Approximation Theorem, the closest point in 
+12Span{ , }vv  to z is  
+   12 12 1 2
+11 2 2
+1
+01ˆ 0 1/ 22
+3/2
+⎡ ⎤
+⎢ ⎥⋅⋅ ⎢ ⎥=+ = + = ⎢ ⎥−⋅⋅
+⎢ ⎥−⎢ ⎥⎣ ⎦
+zv zvzv v v vvv v v  
+ 15. The distance from the point y in 3 to a subspace W is defined as the distance from y to the closest 
+point in W. Since the closest point in W to y is ˆ proj ,W=yy  the desired distance is || y – ˆy ||. One 
+computes that 
+32
+ˆˆ 90 ,
+16
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− , − =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+yy y  and ˆ|| 40 10.−| | = = 2yy  
+ 16. The distance from the point y in 4 to a subspace W is defined as the distance from y to the closest 
+point in W. Since the closest point in W to y is ˆ proj ,W=yy  the desired distance is || y – ˆy ||. One 
+computes that ˆˆ ,
+−1 4⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−5 4⎢⎥ ⎢ ⎥=, − =⎢⎥ ⎢ ⎥−3 4
+⎢⎥ ⎢ ⎥94⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+yy y  and || y – ˆy || = 8. 
+ 17. a. 
+8/9 2/9 2/910 , 2/9 5/9 4/901 2/9 4/9 5/9TTUU U U −⎡⎤⎡⎤ ⎢⎥== −⎢⎥ ⎢⎥⎣⎦ ⎢⎥⎣⎦  
+ b. Since 2 ,TUU I =  the columns of U form an orthonormal basis for W, and by Theorem 10 
+8/9 2/9 2/9 4 2
+proj 2 / 9 5/ 9 4 / 9 8 4 .
+2/9 4/9 5/9 1 5
+T
+W UU
+−⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== − = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+yy  
+----- pagina 15 -----
+6.3  Solutions   371  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 18. a. [] 1/10 3/1011 , 3/10 9/10TTUU U U −⎡⎤== = ⎢⎥−⎣⎦   
+ b. Since 1,TUU =  1{}u  forms an orthonormal basis for W, and by Theorem 10 
+1/10 3/10 7 2proj . 3/10 9/10 9 6TW UU −−⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥−⎣ ⎦⎣ ⎦ ⎣ ⎦yy  
+ 19. By the Orthogonal Decomposition Theorem, 3u  is the sum of a vector in 12Span{ , }W = uu  and a 
+vector v orthogonal to W. This exercise asks for the vector v:  
+   33 3 1 2
+00 0
+11proj 0 2 / 5 2 / 5 31 5 14 / 5 1 / 5W
+⎡ ⎤⎡ ⎤⎡ ⎤
+⎛⎞ ⎢ ⎥⎢ ⎥⎢ ⎥=− =− − + = − − = ⎜⎟ ⎢ ⎥⎢ ⎥⎢ ⎥⎝⎠ ⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦vu u u u u  
+  Any multiple of the vector v will also be in .W ⊥  
+ 20. By the Orthogonal Decomposition Theorem, 4u  is the sum of a vector in 12Span{ , }W = uu  and a 
+vector v orthogonal to W. This exercise asks for the vector v:  
+   4 4 412
+00 0
+11proj 1 1/ 5 4 / 5 63 0 02 / 5 2 / 5W
+⎡ ⎤⎡ ⎤⎡ ⎤
+⎛⎞ ⎢ ⎥⎢ ⎥⎢ ⎥=− =− − = − = ⎜⎟ ⎢ ⎥⎢ ⎥⎢ ⎥⎝⎠ ⎢ ⎥⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦⎣ ⎦vu u u u u  
+  Any multiple of the vector v will also be in .W ⊥  
+ 21. a. True. See the calculations for 2z  in Example 1 or the box after Example 6 in Section 6.1.  
+ b. True. See the Orthogonal Decomposition Theorem.  
+ c. False. See the last paragraph in the proof of Theorem 8, or see the second paragraph after the 
+statement of Theorem 9.  
+ d. True. See the box before the Best Approximation Theorem.  
+ e. True. Theorem 10 applies to the column space W of U because the columns of U are linearly 
+independent and hence form a basis for W.  
+ 22. a. True. See the proof of the Orthogonal Decomposition Theorem.  
+ b. True. See the subsection “A Geometric Interpretation of the Orthogonal Projection.”  
+ c. True. The orthgonal decomposition in Theorem 8 is unique.  
+ d. False. The Best Approximation Theorem says that the best approximation to y is proj .W y  
+ e. False. This statement is only true if x is in the column space of U. If n > p, then the column space 
+of U will not be all of n, so the statement cannot be true for all x in n.  
+ 23. By the Orthogonal Decomposition Theorem, each x in n can be written uniquely as x = p + u, with 
+p in Row A and u in (Row ) .A ⊥  By Theorem 3 in Section 6.1, (Row ) Nul ,AA⊥ =  so u is in Nul A. 
+  Next, suppose Ax = b is consistent. Let x be a solution and write x = p + u as above. Then  
+Ap = A(x – u) = Ax – Au = b – 0 = b, so the equation Ax = b has at least one solution p in Row A. 
+  Finally, suppose that p and 1p  are both in Row A and both satisfy Ax = b. Then 1−pp  is in 
+Nul (Row ) ,AA ⊥=  since 11()AA A− = − =−=pp p p bb0 . The equations 1 ()=+− 1pp pp  and 
+----- pagina 16 -----
+372 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+p = p + 0 both then decompose p as the sum of a vector in Row A and a vector in (Row )A ⊥ . By 
+the uniqueness of the orthogonal decomposition (Theorem 8), 1,=pp  and p is unique. 
+ 24. a. By hypothesis, the vectors 1w , …, pw  are pairwise orthogonal, and the vectors 1v , …, qv  are 
+pairwise orthogonal. Since iw  is in W for any i and jv  is in W ⊥  for any j, 0ij⋅=wv  for any i 
+and j. Thus 11{,, ,,,} pq……ww vv  forms an orthogonal set.  
+  b . For any y in n, write y = ˆy + z as in the Orthogonal Decomposition Theorem, with ˆy  in  
+W and z in W ⊥ . Then there exist scalars 1,, pcc…  and 1,, qdd…  such that ˆ=+=yyz  
+11 1 1 pp q qcc d d+…+ + +…+ww vv . Thus the set 11{,, ,,,} pq……ww vv  spans n.  
+ c. The set 11{,, ,,,} pq……ww vv  is linearly independent by (a) and spans n by (b), and is thus a 
+basis for n. Hence dim dim dimWW p q ⊥+= + = n. 
+ 25. [M] Since 4TUU I = , U has orthonormal columns by Theorem 6 in Section 6.2. The closest point to 
+y in Col U is the orthogonal projection ˆy  of y onto Col U. From Theorem 10,  
+   ˆ UU Τ
+1.2⎡⎤
+⎢⎥.4⎢⎥
+⎢⎥1.2
+⎢⎥1.2⎢⎥== ⎢⎥.4⎢⎥1.2⎢⎥
+⎢⎥.4⎢⎥
+.4⎢⎥⎣⎦
+yy  
+ 26. [M] The distance from b to Col U is || b – ˆb ||, where ˆ .UU Τ=bb  One computes that  
+   ˆˆ ˆUU Τ
+.2 .8⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥.92 .08⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥.44 .56
+⎢⎥ ⎢⎥10 112⎢⎥ ⎢⎥= = , − = , || − ||=⎢⎥ ⎢⎥−.2 −.8 5⎢⎥ ⎢⎥−.44 −.56⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥.6 −1.6⎢⎥ ⎢⎥
+−.92 −.08⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+bb b b b b  
+  which is 2.1166 to four decimal places.
+----- pagina 17 -----
+6.4  Solutions   373  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+6.4 SOLUTIONS 
+Notes: The QR factorization encapsulates the essential outcome of the Gram-Schmidt process, just as the 
+LU factorization describes the result of a row reduction process. For practical use of linear algebra, the 
+factorizations are more important than the algorithms that produce them. In fact, the Gram-Schmidt 
+process is not the appropriate way to compute the QR factorization. For that reason, one should consider 
+deemphasizing the hand calculation of the Gram-Schmidt process, even though it provides easy exam 
+questions.  
+The Gram-Schmidt process is used in Sections 6.7 and 6.8, in connection with various sets of 
+orthogonal polynomials. The process is mentioned in Sections 7.1 and 7.4, but the one-dimensional 
+projection constructed in Section 6.2 will suffice. The QR factorization is used in an optional subsection 
+of Section 6.5, and it is needed in Supplementary Exercise 7 of Chapter 7 to produce the Cholesky 
+factorization of a positive definite matrix. 
+ 1. Set 11=vx  and compute that 2122 12 1
+11
+1
+35 .
+3
+−⎡ ⎤⋅ ⎢ ⎥=− =− = ⎢ ⎥⋅ ⎢ ⎥−⎣ ⎦xvvx v x v vv  Thus an orthogonal basis for W 
+is 
+31
+0, 5 .
+13
+⎧⎫ −⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦⎩⎭  
+ 2. Set 11=vx  and compute that 2122 12 1
+11
+5
+1 4.2 8⎡ ⎤⋅ ⎢ ⎥=− =− = ⎢ ⎥⋅ ⎢ ⎥−⎣ ⎦xvvx v x v vv  Thus an orthogonal basis for W 
+is 
+05
+4, 4 .
+28
+⎧⎫⎡⎤⎡ ⎤
+⎪⎪⎢⎥⎢ ⎥⎨⎬⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥ −⎣⎦⎣ ⎦⎩⎭  
+ 3. Set 11=vx  and compute that 2122 12 1
+11
+3
+1 3/2 .2 3/2⎡ ⎤⋅ ⎢ ⎥=− =− = ⎢ ⎥⋅ ⎢ ⎥⎣ ⎦xvvx v x v vv  Thus an orthogonal basis for 
+W is 
+23
+5,3 / 2 .
+13 / 2
+⎧⎫⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥−⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎩⎭  
+ 4. Set 11=vx  and compute that 2122 12 1
+11
+3
+(2 ) 6.
+3
+⎡ ⎤⋅ ⎢ ⎥=− =− − = ⎢ ⎥⋅ ⎢ ⎥⎣ ⎦xvvx v x v vv  Thus an orthogonal basis for 
+W is 
+33
+4,6 .
+53
+⎧⎫⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥−⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎩⎭  
+----- pagina 18 -----
+374 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. Set 11=vx  and compute that 2122 12 1
+11
+5
+12. 4
+1
+⎡ ⎤
+⎢ ⎥⋅ ⎢ ⎥=− =− = ⎢ ⎥−⋅
+⎢ ⎥−⎢ ⎥⎣ ⎦
+xvvx vx v vv  Thus an orthogonal basis for W 
+is 
+15
+41,.04
+11
+⎧⎫⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥ −⎪⎪⎢⎥ ⎢⎥⎪⎪ −⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭  
+ 6. Set 11=vx  and compute that 2122 12 1
+11
+4
+6(3 ) . 3
+0
+⎡ ⎤
+⎢ ⎥⋅ ⎢ ⎥=− =− − = ⎢ ⎥−⋅
+⎢ ⎥⎢ ⎥⎣ ⎦
+xvvx v x v vv  Thus an orthogonal basis for 
+W is 
+34
+16,.23
+10
+⎧⎫⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥ −⎪⎪⎢⎥ ⎢⎥⎪⎪ −⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭  
+ 7. Since 1|| || 30=v  and 2|| || 27 / 2 3 6 / 2,==v  an orthonormal basis for W is  
+12
+12
+2/ 3 0 2/ 6
+,5 / 3 0 , 1 / 6 .|| || || ||
+1/ 30 1/ 6
+⎧⎫⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥⎧⎫ ⎪⎪=− ⎢⎥ ⎢ ⎥⎨⎬ ⎨ ⎬
+⎢⎥ ⎢ ⎥⎩⎭ ⎪⎪
+⎢⎥ ⎢ ⎥⎪⎪⎣⎦ ⎣ ⎦⎩⎭
+vv
+vv  
+ 8. Since 1|| || 50=v  and 2|| || 54 3 6,==v  an orthonormal basis for W is  
+12
+12
+3/ 50 1/ 6
+,4 / 5 0 , 2 / 6 .|| || || ||
+5/ 50 1/ 6
+⎧⎫⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥⎧⎫ ⎪⎪=− ⎢⎥ ⎢ ⎥⎨⎬ ⎨ ⎬
+⎢⎥ ⎢ ⎥⎩⎭ ⎪⎪
+⎢⎥ ⎢ ⎥⎪⎪⎣⎦ ⎣ ⎦⎩⎭
+vv
+vv  
+ 9. Call the columns of the matrix 1x , 2x , and 3x  and perform the Gram-Schmidt process on these 
+vectors:  
+   11=vx  
+   2122 12 1
+11
+1
+3(2 ) 3
+1
+⎡ ⎤
+⎢ ⎥⋅ ⎢ ⎥=− =− − = ⎢ ⎥⋅
+⎢ ⎥−⎢ ⎥⎣ ⎦
+xvvx v x v vv  
+----- pagina 19 -----
+6.4  Solutions   375  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+   31 3233 1 23 1 2
+11 2 2
+3
+131
+122
+3
+−⎡ ⎤
+⎢ ⎥⋅⋅ ⎛⎞ ⎢ ⎥=− − =− − − = ⎜⎟ ⎢ ⎥⋅⋅ ⎝⎠ ⎢ ⎥⎢ ⎥⎣ ⎦xv xvvx v vx v vvv v v  
+  Thus an orthogonal basis for W is 
+313
+13 1,, .13 1
+313
+⎧⎫ −⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪ −⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 10. Call the columns of the matrix 1x , 2x , and 3x  and perform the Gram-Schmidt process on these 
+vectors:  
+   11=vx  
+   2122 12 1
+11
+3
+1(3 ) 1
+1
+⎡ ⎤
+⎢ ⎥⋅ ⎢ ⎥=− =− − = ⎢ ⎥⋅
+⎢ ⎥−⎢ ⎥⎣ ⎦
+xvvx v x v vv  
+   31 3233 1 23 1 2
+11 2 2
+1
+115
+322
+1
+−⎡ ⎤
+⎢ ⎥−⋅⋅ ⎢ ⎥=− − =− − = ⎢ ⎥⋅⋅
+⎢ ⎥−⎢ ⎥⎣ ⎦
+xv xvvx v vx v vvv vv  
+  Thus an orthogonal basis for W is 
+131
+311,, .113
+111
+⎧⎫ −−⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥ −⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪ −−⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 11. Call the columns of the matrix 1x , 2x , and 3x  and perform the Gram-Schmidt process on these 
+vectors:  
+   11=vx  
+   2122 12 1
+11
+3
+0
+(1 ) 3
+3
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥⋅ ⎢ ⎥=− =− − =⋅ ⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+xvvx v x v vv  
+   31 3233 1 23 1 2
+11 2 2
+2
+0
+14 23 2
+2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥⋅⋅ ⎛⎞ ⎢ ⎥=− − =− − − = ⎜⎟⋅⋅ ⎝⎠ ⎢ ⎥
+⎢ ⎥
+⎢ ⎥−⎣ ⎦
+xv xvvx v vx v vvv v v  
+----- pagina 20 -----
+376 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus an orthogonal basis for W is 
+132
+100
+,, .132
+132
+132
+⎧⎫⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥−⎨⎬⎢⎥ ⎢⎥ ⎢⎥⎪⎪ −⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥ −⎪⎪⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 12. Call the columns of the matrix 1x , 2x , and 3x  and perform the Gram-Schmidt process on these 
+vectors:  
+   11=vx  
+   2122 12 1
+11
+1
+1
+4 2
+1
+1
+−⎡⎤
+⎢⎥
+⎢⎥⋅ ⎢⎥=− =− = ⋅ ⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+xvvx vx v vv  
+   31 3233 1 23 1 2
+11 2 2
+3
+3
+73 022 3
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥⋅⋅ ⎢ ⎥=− − =− − =⋅⋅ ⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+xv xvvx v vx v vvv v v  
+  Thus an orthogonal basis for W is 
+113
+113
+,, .020
+113
+113
+⎧⎫ −⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥ ⎢⎥⎪⎪ −⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 13. Since A and Q are given,  
+   
+59
+5/6 1/6 3/6 1/6 1 7 6 12
+1/6 5/6 1/6 3/6 3 5 0 6
+15
+TRQ A
+⎡⎤
+⎢⎥−⎡⎤ ⎡ ⎤ ⎢⎥== = ⎢⎥ ⎢ ⎥ ⎢⎥−− −⎣⎦ ⎣ ⎦ ⎢⎥⎢⎥⎣⎦  
+ 14. Since A and Q are given,  
+   
+23
+2/7 5/7 2/7 4/7 5 7 7 7
+5 / 72 / 7 4 / 72 / 7 2 2 07
+46
+TRQ A
+−⎡⎤
+⎢⎥−⎡⎤ ⎡ ⎤ ⎢⎥== = ⎢⎥ ⎢ ⎥ ⎢⎥−−⎣⎦ ⎣ ⎦ ⎢⎥⎢⎥⎣⎦  
+ 15. The columns of Q will be normalized versions of the vectors 1v , 2v , and 3v  found in Exercise 11. 
+Thus  
+----- pagina 21 -----
+6.4  Solutions   377  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+   
+1/ 5 1/2 1/2
+1/ 5 0 0 55 4 5
+,0 6 21/ 5 1/2 1/2
+0041/ 5 1/2 1/2
+1/ 5 1/2 1/2
+TQR Q A
+⎡⎤
+⎢⎥
+⎡ ⎤−⎢⎥ −
+⎢ ⎥⎢⎥== = −− ⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥ − ⎣ ⎦⎢⎥
+⎢⎥ −⎣⎦
+ 
+ 16. The columns of Q will be normalized versions of the vectors 1v , 2v , and 3v  found in Exercise 12. 
+Thus  
+   
+1/ 2 1/(2 2) 1/2
+2871/ 2 1/(2 2) 1/2
+,0 2 2 3 201 / 20
+0061/ 2 1/(2 2) 1/2
+1/ 2 1/(2 2) 1/2
+TQR Q A
+⎡⎤ −
+⎢⎥
+⎡ ⎤−⎢⎥
+⎢ ⎥⎢⎥== = ⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥ − ⎣ ⎦⎢⎥
+⎢⎥⎣⎦
+ 
+ 17. a. False. Scaling was used in Example 2, but the scale factor was nonzero.  
+ b. True. See (1) in the statement of Theorem 11.  
+ c. True. See the solution of Example 4.  
+ 18. a. False. The three orthogonal vectors must be nonzero to be a basis for a three-dimensional 
+subspace. (This was the case in Step 3 of the solution of Example 2.)  
+ b. True. If x is not in a subspace w, then x cannot equal projW x , because projW x  is in W. This idea 
+was used for 1k+v  in the proof of Theorem 11.  
+ c. True. See Theorem 12.  
+ 19. Suppose that x satisfies Rx = 0; then Q Rx = Q0 = 0, and Ax = 0. Since the columns of A are linearly 
+independent, x must be 0. This fact, in turn, shows that the columns of R are linearly indepedent. 
+Since R is square, it is invertible by the Invertible Matrix Theorem. 
+ 20. If y is in Col A, then y = Ax for some x. Then y = QRx = Q(Rx), which shows that y is a linear 
+combination of the columns of Q using the entries in Rx as weights. Conversly, suppose that y = Qx 
+for some x. Since R is invertible, the equation A = QR implies that 1QA R −= . So 
+11 () ,AR A R−−==yx x  which shows that y is in Col A. 
+ 21. Denote the columns of Q by 1{, , } n…qq . Note that n ≤ m, because A is m × n and has linearly 
+independent columns. The columns of Q can be extended to an orthonormal basis for m as follows.  
+Let 1f  be the first vector in the standard basis for m that is not in 1Span{ , , },nnW =… qq  let 
+11 1 proj nW=−uf f , and let 11 1 / || || .n+ =qu u  Then 11{, , , } nn +…qq q  is an orthonormal basis for 
+11 1 Span{ , , , }.nn nW ++ =… qq q  Next let 2f  be the first vector in the standard basis for m that is  
+not in 1nW + , let 122 2 proj ,nW +=−uf f  and let 22 2 / || || .n+ =qu u  Then 11 2{, , , , } nn n ++…qq q q  is an 
+orthogonal basis for 21 1 2Span{ , , , , }.nn n nW ++ +=… qq q q  This process will continue until m – n vectors 
+have been added to the original n vectors, and 11{, , , , , }nn m +……qq q q  is an orthonormal basis for m.  
+----- pagina 22 -----
+378 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Let []01 nmQ +=…qq  and []10QQ Q= . Then, using partitioned matrix multiplication, 
+1 .RQQ R AO⎡⎤ ==⎢⎥⎣⎦  
+ 22. We may assume that 1{, , } p…uu  is an orthonormal basis for W, by normalizing the vectors in the 
+original basis given for W, if necessary. Let U be the matrix whose columns are 1,, . p…uu  Then, by 
+Theorem 10 in Section 6.3, ( ) proj ( ) TWTU U==xxx  for x in n. Thus T is a matrix transformation 
+and hence is a linear transformation, as was shown in Section 1.8. 
+ 23. Given A = QR, partition [] 12AAA= , where 1A  has p columns. Partition Q as [] 12QQQ=  
+where 1Q  has p columns, and partition R as 11 12
+22
+,RRR OR⎡ ⎤= ⎢ ⎥⎣ ⎦  where 11R  is a p × p matrix. Then  
+   [][] [ ] 11 1212 12 1 1 11 1 2 2 2 2
+22
+RRAAA Q RQQ Q R Q R Q R OR⎡⎤== = = + ⎢⎥⎣⎦  
+  Thus 11 1 1 .AQ R=  The matrix 1Q  has orthonormal columns because its columns come from Q. The 
+matrix 11R  is square and upper triangular due to its position within the upper triangular matrix R. The 
+diagonal entries of 11R  are positive because they are diagonal entries of R. Thus 11 1QR  is a QR 
+factorization of 1A . 
+24. [M] Call the columns of the matrix 1x , 2x , 3x , and 4x  and perform the Gram-Schmidt process on 
+these vectors:  
+   11=vx  
+   2122 12 1
+11
+3
+3
+(1 ) 3
+0
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥⋅ ⎢ ⎥=− =− − = −⋅ ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+xvvx v x v vv
+ 
+   31 3233 1 23 1 2
+11 2 2
+6
+0
+14 623 6
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥⋅⋅ ⎛⎞ ⎛⎞ ⎢ ⎥= − − = −− −− = ⎜⎟ ⎜⎟⋅⋅ ⎝⎠ ⎝⎠ ⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+xv xvvx v vx v vvv v v
+ 
+   4341 4244 1 2 34 1 2 3
+11 2 2 33
+11 (1 )22⋅⋅⋅ ⎛⎞=− − − =− − − − − ⎜⎟⋅⋅ ⋅ ⎝⎠xvxv xvvx v v vx v v vvv v v vv
+0
+5
+0
+0
+5
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥=
+⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+----- pagina 23 -----
+6.5  Solutions   379  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+  Thus an orthogonal basis for W is 
+10 3 6 0
+23 05
+,, , .63 60
+16 0 6 0
+23 05
+⎧⎫ −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−⎨⎬⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −⎪⎪⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦⎩⎭  
+ 25. [M] The columns of Q will be normalized versions of the vectors 1v , 2v , and 3v  found in Exercise 
+24. Thus  
+   
+1/2 1/2 1/ 3 0
+20 20 10 10
+1/10 1/2 0 1/ 2 06 8 6
+,3/10 1/2 1/ 3 0 00 6 3 3 3
+4/5 0 1/ 3 0 00 0 5 2
+1/10 1/2 0 1/ 2
+TQR Q A
+⎡⎤−
+⎢⎥ −−⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥== =−−⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣ ⎦⎢⎥ −⎣⎦
+ 
+ 26. [M] In MATLAB, when A has n columns, suitable commands are  
+  Q = A(:,1)/norm(A(:,1)) 
+   %  The first column of Q 
+   for j=2: n 
+    v=A(:,j) – Q*(Q’*A(:,j)) 
+    Q(:,j)=v/norm(v) 
+    % Add a new column to Q 
+   end 
+6.5 SOLUTIONS 
+Notes: This is a core section – the basic geometric principles in this section provide the foundation 
+for all the applications in Sections 6.6–6.8. Yet this section need not take a full day. Each example 
+provides a stopping place. Theorem 13 and Example 1 are all that is needed for Section 6.6. Theorem 15, 
+however, gives an illustration of why the QR factorization is important. Example 4 is related to Exercise 
+17 in Section 6.6. 
+ 1. To find the normal equations and to find ˆx , compute  
+   
+12121 61 1 23233 1 1 2 2 13TAA −⎡⎤−− −⎡⎤ ⎡ ⎤ ⎢⎥=− =⎢⎥ ⎢ ⎥ ⎢⎥−−⎣⎦ ⎣ ⎦ ⎢⎥−⎣⎦  
+   
+4121 4 1233 1 1 2TA ⎡⎤−− −⎡⎤ ⎡ ⎤ ⎢⎥==⎢⎥ ⎢ ⎥ ⎢⎥−⎣⎦ ⎣ ⎦ ⎢⎥⎣⎦b  
+----- pagina 24 -----
+380 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+a. The normal equations are () TTAA A =xb : 1
+2
+61 1 4 .11 22 11 xx−− ⎡⎤⎡ ⎤⎡ ⎤ =⎢⎥⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦⎣⎦  
+b. Compute  
+   
+1
+1 6 11 4 22 11 4 1ˆx( ) 11 22 11 11 6 11 11TTAA A
+−
+− −− −⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡⎤== = ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥−⎣ ⎦ ⎣⎦ ⎣ ⎦ ⎣⎦b  
+   33 31 22 211 ⎡⎤⎡ ⎤== ⎢⎥⎢ ⎥⎣⎦⎣ ⎦  
+ 2. To find the normal equations and to find ˆ ,x  compute  
+   
+2122 2 1 2 8 2010 3 8 1 0 23TAA ⎡⎤−⎡⎤ ⎡ ⎤ ⎢⎥=− =⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎢⎥⎣⎦  
+   
+522 2 2 4 810 3 2 1TA −⎡⎤−−⎡⎤ ⎡ ⎤ ⎢⎥==⎢⎥ ⎢ ⎥ ⎢⎥ −⎣⎦ ⎣ ⎦ ⎢⎥⎣⎦b  
+a. The normal equations are () TTAA A =xb : 1
+2
+12 8 24 .81 0 2 xx −⎡⎤⎡ ⎤⎡ ⎤ =⎢⎥⎢ ⎥⎢ ⎥ −⎣ ⎦⎣ ⎦⎣⎦  
+b. Compute  
+   
+1
+1 12 8 24 10 8 24 1ˆx( ) 81 0 2 8 1 2 2 56TTAA A
+−
+− −− −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦b  
+   224 41 168 356 −−⎡⎤ ⎡ ⎤== ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+ 3. To find the normal equations and to find ˆx , compute  
+   
+12
+11 0 212 66
+22 3 5 03 6 4 2
+25
+TAA
+−⎡⎤
+⎢⎥−−⎡⎤ ⎡ ⎤ ⎢⎥==⎢⎥ ⎢ ⎥ ⎢⎥−⎣⎦ ⎣ ⎦ ⎢⎥⎢⎥⎣⎦  
+   
+3
+11 0 21 6
+22 3 54 6
+2
+TA
+⎡⎤
+⎢⎥−⎡⎤ ⎡ ⎤ ⎢⎥==⎢⎥ ⎢ ⎥ ⎢⎥−− −⎣⎦ ⎣ ⎦ ⎢⎥⎢⎥⎣⎦b  
+a. The normal equations are () TTAA A =xb : 1
+2
+66 6
+64 2 6
+x
+x
+⎡⎤⎡ ⎤⎡ ⎤ =⎢⎥⎢ ⎥⎢ ⎥ −⎣ ⎦⎣ ⎦⎣⎦  
+b. Compute  
+----- pagina 25 -----
+6.5  Solutions   381  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+   66 6 4 266 1ˆ 64 2 6 6 6 6 216TT
+−1
+−1 −⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡⎤=( Α Α ) Α = = ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ −− −⎣ ⎦ ⎣⎦ ⎣ ⎦ ⎣⎦xb  
+   288 4/ 31 72 1/ 3216 ⎡⎤ ⎡ ⎤== ⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦  
+ 4. To find the normal equations and to find ˆx , compute  
+   
+1311 1 3 3 1131 1 3 1 1 11TAA ⎡⎤⎡⎤ ⎡ ⎤ ⎢⎥=− =⎢⎥ ⎢ ⎥ ⎢⎥−⎣⎦ ⎣ ⎦ ⎢⎥⎣⎦  
+   
+511 1 6 131 1 1 4 0TA ⎡⎤⎡⎤ ⎡ ⎤ ⎢⎥==⎢⎥ ⎢ ⎥ ⎢⎥−⎣⎦ ⎣ ⎦ ⎢⎥⎣⎦b  
+a. The normal equations are () TTAA A =xb : 1
+2
+33 6
+31 1 1 4
+x
+x
+⎡⎤⎡ ⎤⎡ ⎤ =⎢⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣⎦  
+b. Compute  
+   6ˆ 11 14 14TT
+−1
+−1 33 1 1 − 36⎡ ⎤⎡⎤ ⎡ ⎤ ⎡⎤ 1=( Α Α ) Α = = ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢⎥3− 3 3 24⎣ ⎦⎣⎦ ⎣ ⎦ ⎣⎦xb  
+   24 11 24 124 ⎡⎤⎡ ⎤== ⎢⎥⎢ ⎥⎣⎦⎣ ⎦  
+ 5. To find the least squares solutions to Ax = b, compute and row reduce the augmented matrix for the 
+system TTAA A =xb :  
+   
+4221 4 10 1 5
+220 4 01 1 3
+2021 0 00 0 0
+TTAA A
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎡⎤ =∼ − −⎣⎦ ⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+b  
+  so all vectors of the form 
+51
+ˆ 31
+01
+x3
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=− +⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+x  are the least-squares solutions of Ax = b. 
+ 6. To find the least squares solutions to Ax = b, compute and row reduce the augmented matrix for the 
+system TTAA A =xb :  
+   
+6332 7 10 1 5
+3301 2 01 1 1
+3031 5 00 0 0
+TTAA A
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎡⎤ =∼ − −⎣⎦ ⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+b  
+  so all vectors of the form 
+51
+ˆ 11
+01
+x3
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=− +⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+x  are the least-squares solutions of Ax = b. 
+----- pagina 26 -----
+382 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 7. From Exercise 3, 
+12
+12 ,03
+25
+A
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+3
+1 ,4
+2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+b  and ˆ .4/3⎡ ⎤= ⎢ ⎥−1/3⎣ ⎦x  Since  
+   ˆ 0
+2
+A
+1− 2 3 2 3 − 1⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎢⎥−1 2 4/3 1 −2 1 −3⎡⎤⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎢⎥− = −=−= ⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎢⎥3− 1 / 3 − 4 − 1 − 4 3⎣⎦⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎢⎥25 2 1 − 1⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥⎢⎥⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦⎣⎦xb  
+  the least squares error is ˆ|| .A − ||=2 0 = 2 5xb  
+ 8. From Exercise 4, 
+13
+11 ,
+11
+A
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+5
+1,
+0
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+b  and ˆ .1⎡ ⎤= ⎢ ⎥1⎣ ⎦x  Since  
+   
+13 5 4 5 11ˆ 11 1 0 1 1111 0 2 0 2A −⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤⎡⎤⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥− = − −=−= − ⎢⎥⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦xb  
+  the least squares error is ˆ|| .A − ||=6xb  
+ 9. (a) Because the columns 1a  and 2a  of A are orthogonal, the method of Example 4 may be used to 
+find ˆb , the orthogonal projection of b onto Col A:  
+   12 12 1 2
+11 2 2
+15 1
+21 2 1ˆ 31 177 7 7 24 0⎡ ⎤⎡ ⎤ ⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥=+ = + = + = ⎢ ⎥⎢ ⎥ ⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥−⎣ ⎦⎣ ⎦ ⎣ ⎦ba baba a a aaa a a  
+(b) The vector ˆx  contains the weights which must be placed on 1a  and 2a  to produce ˆb . These 
+weights are easily read from the above equation, so ˆ .2/7⎡ ⎤= ⎢ ⎥1/7⎣ ⎦x  
+ 10. (a) Because the columns 1a  and 2a  of A are orthogonal, the method of Example 4 may be used to 
+find ˆb , the orthogonal projection of b onto Col A:  
+   12 12 1 2
+11 2 2
+12 4
+11ˆ 33 1 4 122 12 4⎡ ⎤⎡ ⎤ ⎡ ⎤⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥=+ = + = − + = − ⎢ ⎥⎢ ⎥ ⎢ ⎥⋅⋅ ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦ba baba a a aaa a a  
+(b) The vector ˆx  contains the weights which must be placed on 1a  and 2a  to produce ˆb . These 
+weights are easily read from the above equation, so ˆ .3⎡ ⎤= ⎢ ⎥1/ 2⎣ ⎦x  
+ 11. (a) Because the columns 1a , 2a  and 3a  of A are orthogonal, the method of Example 4 may be used 
+to find ˆb , the orthogonal projection of b onto Col A:  
+----- pagina 27 -----
+6.5  Solutions   383  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+   312 123 1 2 3
+11 2 2 33
+21ˆ 033⋅⋅⋅=+ + = + +⋅⋅ ⋅ baba baba a a a a aaa aa aa  
+   
+40 1 3
+15 1 121 0610 433
+115 1
+⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥=+ + =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+(b) The vector ˆx  contains the weights which must be placed on 1a , 2a , and 3a  to produce ˆb . These 
+weights are easily read from the above equation, so ˆ .
+2/3⎡ ⎤
+⎢ ⎥=0⎢ ⎥
+⎢ ⎥1/3⎣ ⎦
+x  
+ 12. (a) Because the columns 1a , 2a  and 3a  of A are orthogonal, the method of Example 4 may be used 
+to find ˆb , the orthogonal projection of b onto Col A:  
+   312 123 1 2 3
+11 2 2 3 3
+11 4 5ˆ
+33 3
+⋅⋅⋅ ⎛⎞=+ + = + + − ⎜⎟⋅⋅ ⋅ ⎝⎠baba baba a a a a aaa a a aa  
+   
+11 0 5
+10 1 211 4 5
+01 1 333 3
+11 1 6
+⎡⎤ ⎡ ⎤ ⎡⎤⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢⎥⎢ ⎥ −⎢⎥ ⎢ ⎥ ⎢⎥⎢ ⎥=+−=⎢⎥ ⎢ ⎥ ⎢⎥⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢⎥⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢⎥⎢ ⎥⎣⎦ ⎣ ⎦ ⎣⎦⎣ ⎦
+ 
+(b) The vector ˆx  contains the weights which must be placed on 1a , 2a , and 3a  to produce ˆb . These 
+weights are easily read from the above equation, so ˆ .
+1/3⎡ ⎤
+⎢ ⎥= 14/3⎢ ⎥
+⎢ ⎥−5/3⎣ ⎦
+x  
+ 13. One computes that  
+   
+11 0
+11 , 2 , || || 40
+11 6
+AAA
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− − = − =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ub ub u  
+   
+74
+12 , 3 , || || 29
+72
+AAA
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− − = − =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+vb vb v  
+  Since Av is closer to b than Au is, Au is not the closest point in Col A to b. Thus u cannot be a least-
+squares solution of Ax = b. 
+ 14. One computes that  
+   
+32
+8 , 4 , || || 24
+22
+AA A
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− = − − =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ub u b u  
+----- pagina 28 -----
+384 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+72
+2, 2, | | | | 2 4
+84
+AA A
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− = − =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+vb v b v  
+  Since Au and Au are equally close to b, and the orthogonal projection is the unique closest point in 
+Col A to b, neither Au nor Av can be the closest point in Col A to b. Thus neither u nor v can be a 
+least-squares solution of Ax = b. 
+ 15. The least squares solution satisfies ˆ .TRQ=xb  Since 3501R ⎡ ⎤= ⎢ ⎥⎣ ⎦  and 71TQ ⎡⎤= ⎢⎥−⎣⎦b , the augmented 
+matrix for the system may be row reduced to find  
+   35 7 10 401 1 01 1TRQ ⎡⎤ ⎡⎤⎡⎤ =∼⎢⎥ ⎢⎥⎣⎦ −−⎣⎦ ⎣⎦b  
+  and so ˆ 4⎡⎤= ⎢⎥−1⎣⎦x  is the least squares solution of Ax = b. 
+ 16. The least squares solution satisfies ˆ .TRQ=xb  Since 2305R ⎡ ⎤= ⎢ ⎥⎣ ⎦  and 17 / 29/2TQ ⎡⎤= ⎢⎥⎣⎦b , the augmented 
+matrix for the system may be row reduced to find  
+   2 3 17 / 2 1 0 2.905 9 / 2 01 . 9TRQ ⎡⎤ ⎡ ⎤⎡⎤ =∼⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦b  
+  and so ˆ 2.9⎡⎤= ⎢⎥ .9⎣⎦x  is the least squares solution of Ax = b. 
+ 17. a. True. See the beginning of the section. The distance from Ax to b is || Ax – b ||.  
+ b. True. See the comments about equation (1).  
+ c. False. The inequality points in the wrong direction. See the definition of a least-squares solution.  
+ d. True. See Theorem 13.  
+ e. True. See Theorem 14.  
+ 18. a. True. See the paragraph following the definition of a least-squares solution.  
+ b. False. If ˆx  is the least-squares solution, then A ˆx  is the point in the column space of A closest to 
+b. See Figure 1 and the paragraph preceding it.  
+ c. True. See the discussion following equation (1).  
+ d. False. The formula applies only when the columns of A are linearly independent. See Theorem 
+14.  
+ e. False. See the comments after Example 4.  
+ f. False. See the Numerical Note.  
+ 19. a. If Ax = 0, then .TTAA A ==x0 0  This shows that Nul A is contained in Nul . TAA  
+ b. If ,TAA =x0  then 0.TT TAA ==xx x 0  So () () 0 ,TAA =xx  which means that 2|| || 0,A =x  and 
+hence Ax = 0. This shows that Nul TAA  is contained in Nul A. 
+----- pagina 29 -----
+6.6  Solutions   385  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 20. Suppose that Ax = 0. Then .TTAA A ==x0 0  Since TAA  is invertible, x must be 0. Hence the 
+columns of A are linearly independent. 
+ 21. a. If A has linearly independent columns, then the equation Ax = 0 has only the trivial solution. By 
+Exercise 19, the equation TAA =x0  also has only the trivial solution. Since TAA  is a square 
+matrix, it must be invertible by the Invertible Matrix Theorem.  
+ b. Since the n linearly independent columns of A belong to m, m could not be less than n.  
+ c. The n linearly independent columns of A form a basis for Col A, so the rank of A is n.  
+ 22. Note that TAA  has n columns because A does. Then by the Rank Theorem and Exercise 19,  
+   rank dim Nul dim Nul rankTTAA n AA n A A=− =− =  
+ 23. By Theorem 14, ˆ ˆ .TTAA A A A −1== ( )bx b  The matrix 1() TTAAA A −  is sometimes called the hat-
+matrix in statistics. 
+ 24. Since in this case ,TAA I=  the normal equations give ˆ .TA=xb  
+ 25. The normal equations are 22 6 ,22 6 xy⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦  whose solution is the set of all (x, y) such that x + y = 
+3. The solutions correspond to the points on the line midway between the lines x + y = 2 and x + y = 
+4. 
+ 26. [M] Using .7 as an approximation for 2/2 ,  02 .353535aa =≈  and 1 .5.a =  Using .707 as an 
+approximation for 2/2 , 02 .35355339aa =≈ , 1 .5.a =  
+6.6 SOLUTIONS 
+Notes: This section is a valuable reference for any person who works with data that requires statistical 
+analysis. Many graduate fields require such work. Science students in particular will benefit from 
+Example 1. The general linear model and the subsequent examples are aimed at students who may take a 
+multivariate statistics course. That may include more students than one might expect. 
+ 1. The design matrix X and the observation vector y are  
+   
+10 1
+11 1 ,,12 2
+13 2
+X
+⎡⎤⎡ ⎤
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥==⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥⎢⎥⎢ ⎥⎣⎦⎣ ⎦
+y  
+  and one can compute  
+   146 6 . 9 ˆ,, ( )61 4 1 1 . 4TTT TXX X XX X −⎡⎤ ⎡ ⎤ ⎡ ⎤== = =⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ yy β  
+  The least-squares line 01yx ββ=+  is thus y = .9 + .4x. 
+ 2. The design matrix X and the observation vector y are  
+----- pagina 30 -----
+386 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+11 0
+12 1 ,,14 2
+15 3
+X
+⎡⎤⎡ ⎤
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥==⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥⎢⎥⎢ ⎥⎣⎦⎣ ⎦
+y  
+  and one can compute  
+   141 2 6 . 6 ˆ,, ( )12 46 25 .7TT T TXX X XX X − −⎡⎤ ⎡ ⎤ ⎡ ⎤== = =⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ yy β  
+  The least-squares line 01yx ββ=+  is thus y = –.6 + .7x. 
+ 3. The design matrix X and the observation vector y are  
+   
+11 0
+10 1 ,,11 2
+12 4
+X
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+y  
+  and one can compute  
+   142 7 1 . 1 ˆ,, ( )26 1 0 1 . 3TT T TXX X XX X −⎡⎤ ⎡ ⎤ ⎡ ⎤== ==⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦ yy β  
+  The least-squares line 01yx ββ=+  is thus y = 1.1 + 1.3x. 
+ 4. The design matrix X and the observation vector y are  
+   
+12 3
+13 2 ,,15 1
+16 0
+X
+⎡⎤⎡ ⎤
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥==⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥⎢⎥⎢ ⎥⎣⎦⎣ ⎦
+y  
+  and one can compute  
+   141 6 6 4 . 3 ˆ,, ( )16 74 17 .7TT T TXX X XX X −⎡⎤ ⎡ ⎤ ⎡ ⎤== = =⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦ yy β  
+  The least-squares line 01yx ββ=+  is thus y = 4.3 – .7x. 
+ 5. If two data points have different x-coordinates, then the two columns of the design matrix X cannot 
+be multiples of each other and hence are linearly independent. By Theorem 14 in Section 6.5, the 
+normal equations have a unique solution. 
+ 6. If the columns of X were linearly dependent, then the same dependence relation would hold for the 
+vectors in 3 formed from the top three entries in each column. That is, the columns of the matrix 
+2
+11
+2
+22
+2
+33
+1
+1
+1
+xx
+xx
+xx
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ would also be linearly dependent, and so this matrix (called a Vandermonde matrix) 
+would be noninvertible. Note that the determinant of this matrix is 21 31 32() () () 0xx xx xx−−− ≠  
+since  1x , 2x , and 3x  are distinct.  Thus this matrix is invertible, which means that the columns of X 
+----- pagina 31 -----
+6.6  Solutions   387  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+are in fact linearly independent. By Theorem 14 in Section 6.5, the normal equations have a unique 
+solution. 
+ 7. a. The model that produces the correct least-squares fit is y = Xβ + ε where  
+   
+1
+2
+1
+3
+2
+4
+5
+11 1 . 8
+24 2 . 7
+,,, a n d39 3 . 4
+41 6 3 . 8
+52 5 3 . 9
+X ββ
+⎡ ⎤⎡⎤ ⎡ ⎤
+⎢ ⎥⎢⎥ ⎢ ⎥
+⎢ ⎥⎢⎥ ⎢ ⎥ ⎡⎤ ⎢ ⎥⎢⎥ ⎢ ⎥== == ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎣⎦
+⎢ ⎥⎢⎥ ⎢ ⎥
+⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+y
+ε
+ε
+ε
+ε
+ε
+εβ  
+b. [M] One computes that (to two decimal places) 1.76ˆ ,.20⎡ ⎤= ⎢ ⎥−⎣ ⎦β  so the desired least-squares equation 
+is 21.76 .20yx x=− .  
+ 8. a. The model that produces the correct least-squares fit is y = Xβ + ϵ  where  
+   
+23
+11 1 1 1 1
+2
+23
+3
+,, , a n d
+nnnnn
+xx x y
+X
+yxxx
+β
+β
+β
+⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥== = =⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦⎣⎦ y### # # εε εβ  
+ b. [M] For the given data,  
+   
+41 6 6 4 1 . 5 8
+6 36 216 2.08
+8 64 512 2.5
+10 100 1000 2.8 and12 144 1728 3.1
+14 196 2744 3.4
+16 256 4096 3.8
+18 324 5832 4.32
+X
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+y  
+  so 1
+.5132
+ˆ ( ) .03348 ,
+.001016
+TTXX X −
+⎡⎤
+⎢⎥== − ⎢⎥
+⎢⎥⎣⎦
+yβ  and the least-squares curve is 
+23.5132 .03348 .001016 .yx x x=− +  
+ 9. The model that produces the correct least-squares fit is y = Xβ + ϵ  where  
+   
+1
+2
+3
+cos 1 sin 1 7.9
+cos 2 sin 2 , 5.4 , , and
+cos 3 sin 3 .9
+AX B ⎡ ⎤⎡⎤ ⎡ ⎤ ⎡⎤ ⎢ ⎥⎢⎥ ⎢ ⎥== = = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎣⎦ ⎢ ⎥⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦y εεε εβ  
+  
+----- pagina 32 -----
+388 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 10. a. The model that produces the correct least-squares fit is y = Xβ + ϵ  where  
+   
+.02(10) .07(10)
+1
+.02(11) .07(11)
+2
+.02(12) .07(12)
+3
+.02(14) .07(14) 4
+.02(15) .07(15) 5
+21.34
+20.68
+,, , a n d ,20.05
+18.87
+18.30
+A
+B
+ee
+ee
+MX ee M
+ee
+ee
+−−
+−−
+−−
+−−
+−−
+⎡⎤ ⎡ ⎤⎡⎤⎢⎥ ⎢ ⎥⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎡⎤⎢⎥ ⎢ ⎥⎢⎥== = = ⎢⎥⎢⎥ ⎢ ⎥⎢⎥ ⎣⎦⎢⎥ ⎢ ⎥⎢⎥⎢⎥ ⎢ ⎥⎢⎥⎣⎦ ⎣ ⎦⎢⎥⎣⎦ y εεεε εεβ  
+ b. [M] One computes that (to two decimal places) 19.94ˆ ,10.10⎡ ⎤= ⎢ ⎥⎣ ⎦β  so the desired least-squares 
+equation is .02 .0719.94 10.10 .ttye e −−=+  
+ 11. [M] The model that produces the correct least-squares fit is y = Xβ + ϵ  where  
+   
+1
+2
+3
+4
+5
+13 c o s . 8 8 3
+1 2.3 cos1.1 2.3
+,, , a n d1 1.65 cos1.42 1.65
+1 1.25 cos 1.77 1.25
+1 1.01cos 2.14 1.01
+X eβ
+⎡ ⎤⎡⎤ ⎡ ⎤
+⎢ ⎥⎢⎥ ⎢ ⎥
+⎢ ⎥⎢⎥ ⎢ ⎥ ⎡⎤ ⎢ ⎥⎢⎥ ⎢ ⎥== = = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎣⎦
+⎢ ⎥⎢⎥ ⎢ ⎥
+⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+y
+ε
+ε
+εε
+ε
+ε
+β  
+  One computes that (to two decimal places) 1.45ˆ .811⎡ ⎤= ⎢ ⎥⎣ ⎦β . Since e = .811 < 1 the orbit is an ellipse. The 
+equation r = β / (1 – e cos ϑ) produces r = 1.33 when ϑ = 4.6. 
+ 12. [M] The model that produces the correct least-squares fit is y = Xβ + ,ε  where  
+   
+1
+2
+0
+3
+1
+4
+5
+13 . 7 8 9 1
+14 . 1 1 9 8
+,, , a n d14 . 3 9 1 0 3
+14 . 7 3 1 1 0
+14 . 8 8 1 1 2
+X ββ
+⎡ ⎤⎡⎤ ⎡ ⎤
+⎢ ⎥⎢⎥ ⎢ ⎥
+⎢ ⎥⎢⎥ ⎢ ⎥ ⎡⎤ ⎢ ⎥⎢⎥ ⎢ ⎥== = = ⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎣⎦
+⎢ ⎥⎢⎥ ⎢ ⎥
+⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+y β
+ε
+ε
+εε
+ε
+ε
+ 
+  One computes that (to two decimal places) 18.56ˆ 19.24⎡ ⎤= ⎢ ⎥⎣ ⎦β , so the desired least-squares equation is  
+p = 18.56 + 19.24 ln w. When w = 100, p ≈ 107 millimeters of mercury. 
+  
+  
+----- pagina 33 -----
+6.6  Solutions   389  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+13. [M] 
+a. The model that produces the correct least-squares fit is y = Xβ + ϵ  where  
+   
+23
+23
+23
+23
+23
+23
+23
+23
+23
+23
+23
+10 0 0
+011 1 1
+8.8122 2
+29.9
+133 3 62.0
+144 4 104.7
+155 5 159.1
+166 6 , 222.0
+294.5177 7
+380.4188 8
+471.1199 9
+571.711 01 0 1 0
+686.811 11 1 1 1 809.2
+11 21 2 1 2
+X
+⎡⎤
+⎢⎥ ⎡
+⎢⎥ ⎢
+⎢⎥ ⎢
+⎢⎥ ⎢
+⎢⎥ ⎢
+⎢⎥ ⎢
+⎢⎥ ⎢
+⎢⎥ ⎢
+⎢⎥
+⎢⎥==⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥ ⎣
+⎢⎥⎣⎦
+y
+0
+1
+2
+3
+4
+0
+5
+1
+6
+2
+7
+3
+8
+9
+10
+11
+12
+,, a n d
+β
+β
+β
+β
+⎡ ⎤⎤
+⎢ ⎥⎥
+⎢ ⎥⎥
+⎢ ⎥⎥
+⎢ ⎥⎥
+⎢ ⎥⎥
+⎢ ⎥⎥
+⎢ ⎥⎥ ⎡⎤
+⎢ ⎥⎢⎥ ⎢⎥
+⎢ ⎥⎢⎥ ⎢⎥== ⎢ ⎥⎢⎥ ⎢⎥
+⎢ ⎥⎢⎥ ⎢⎥
+⎣⎦ ⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢ ⎥⎢⎥
+⎢⎥ ⎢ ⎥⎦ ⎣ ⎦
+β
+ε
+ε
+ε
+ε
+ε
+ε
+ε ε
+ε
+ε
+ε
+ε
+ε
+ε
+ 
+  One computes that (to four decimal places) 
+.8558
+4.7025ˆ ,5.5554
+.0274
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎢ ⎥⎣ ⎦
+β  so the desired least-squares 
+polynomial is 23( ) .8558 4.7025 5.5554 .0274 .yt t t t=− + + −  
+b. The velocity v(t) is the derivative of the position function y(t), so 
+2( ) 4.7025 11.1108 .0822 ,vt t t=+ −  and v(4.5) = 53.0 ft/sec.  
+ 14. Write the design matrix as [] .1x  Since the residual vector ϵ  = y – X ˆβ  is orthogonal to Col X,  
+   ˆˆ0( ) ( ) TTXX=⋅=⋅ − = −11 y 1 y 1ε ββ  
+   010 1 0 1
+1
+ˆ ˆˆ ˆ ˆ() ˆnyy n x y n x n y n n x β ββ β ββ⎡⎤⎡⎤=+ … +− = − − = − − ⎢⎥⎣⎦ ⎢⎥⎣⎦∑∑ ∑  
+  This equation may be solved for y  to find 01ˆˆ .yx ββ=+  
+ 15. From equation (1) on page 369,  
+   
+1
+2
+1
+111
+1
+T
+n
+n
+x nx
+XX xx xxx
+⎡⎤ ⎡ ⎤…⎡⎤ ⎢⎥== ⎢ ⎥⎢⎥ ⎢⎥… ⎢ ⎥⎣⎦ ⎣ ⎦⎢⎥⎣⎦ ∑∑ ∑##  
+   
+1
+1
+11T
+n
+n
+y yX xyxx y⎡⎤ ⎡⎤…⎡⎤ ⎢⎥== ⎢⎥⎢⎥ ⎢⎥…⎣⎦ ⎣⎦⎢⎥⎣⎦ ∑∑y #  
+----- pagina 34 -----
+390 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The equations (7) in the text follow immediately from the normal equations .TTXX X = yβ  
+ 16. The determinant of the coefficient matrix of the equations in (7) is 22 () .nx x −∑ ∑  Using the 2 × 2 
+formula for the inverse of the coefficient matrix,  
+   
+2
+0
+22
+1
+ˆ 1
+ˆ ()
+yxx
+xyxnnx x
+β
+β
+⎡⎤ ⎡⎤ ⎡ ⎤−=⎢⎥ ⎢⎥ ⎢ ⎥−− ⎢⎥⎢⎥ ⎣ ⎦⎣⎦⎣⎦ ∑∑∑ ∑∑∑∑  
+  Hence  
+   
+2
+01 22 22
+( ) () () ( ) () ()ˆˆ ,
+() ()
+xy x x y n x yx y
+nx x nx x
+ββ −−==
+−−
+∑∑ ∑ ∑ ∑ ∑ ∑
+∑∑ ∑∑
+ 
+  Note: A simple algebraic calculation shows that 10ˆˆ() ,yx n ββ−=∑ ∑  which provides a simple 
+formula for 0ˆβ  once 1ˆβ  is known  
+ 17. a. The mean of the data in Example 1 is 5.5,x =  so the data in mean-deviation form are (–3.5, 1),  
+(–.5, 2), (1.5, 3), (2.5, 3), and the associated design matrix is 
+13 . 5
+1. 5 .11 . 5
+12 . 5
+X
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ The columns of X are 
+orthogonal because the entries in the second column sum to 0.  
+ b. The normal equations are ,TTXX X = yβ  or 0
+1
+40 9 .02 1 7 . 5ββ⎡⎤⎡ ⎤⎡ ⎤ =⎢⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣⎦  One computes that 
+9/4ˆ ,5/14⎡⎤= ⎢⎥⎣⎦β  so the desired least-squares line is *(9/ 4) (5/14) (9/ 4) (5/14)( 5.5).yx x=+ =+ −  
+ 18. Since  
+   
+1
+2
+1
+111
+1
+T
+n
+n
+x nx
+XX xx xxx
+⎡⎤ ⎡ ⎤…⎡⎤ ⎢⎥== ⎢ ⎥⎢⎥ ⎢⎥… ⎢ ⎥⎣⎦ ⎣ ⎦⎢⎥⎣⎦ ∑∑ ∑##  
+  TXX  is a diagonal matrix when 0.x =∑  
+ 19. The residual vector ϵ  = y – ˆXβ  is orthogonal to Col X, while ˆy =X ˆβ  is in Col X. Since ϵ  and ˆy  are 
+thus orthogonal, apply the Pythagorean Theorem to these vectors to obtain  
+   22 2 2 2 2 ˆˆˆˆS S ( T )| || | | | | | | || | | | | | | | | | | | | | S S ( R )S S ( E )XXββ== + = + = + − = +yy y y εε  
+ 20. Since ˆβ  satisfies the normal equations, ˆ ,TTXX X = yβ  and  
+   2ˆˆ ˆ ˆ ˆ ˆ|| || ( ) ( ) TT T T TXX X X XX== = yββ β β β β  
+  Since 2ˆ|| || SS(R)X =β  and 2|| || SS(T)T ==yy y , Exercise 19 shows that  
+   ˆSS(E) SS(T) SS(R) TT T X=−= − yy y β
+----- pagina 35 -----
+6.7  Solutions   391  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+6.7 SOLUTIONS 
+Notes: The three types of inner products described here (in Examples 1, 2, and 7) are matched by 
+examples in Section 6.8. It is possible to spend just one day on selected portions of both sections. 
+Example 1 matches the weighted least squares in Se ction 6.8. Examples 2–6 are applied to trend analysis 
+in Seciton 6.8. This material is aimed at students who have not had much calculus or who intend to take 
+more than one course in statistics.  
+For students who have seen some calculus, Example 7 is needed to develop the Fourier series in  
+Section 6.8. Example 8 is used to motivate the inner product on C[a, b]. The Cauchy-Schwarz and 
+triangle inequalities are not used here, but they should be part of the training of every mathematics 
+student. 
+ 1. The inner product is 11 2 2,4 5xy x y xy〈〉 =+ . Let x = (1, 1), y = (5, –1).  
+ a . Since 2|| || , 9, xx= 〈〉 =x  || x || = 3. Since 2|| || , 105,yy= 〈〉 =y  || || 105.=y  Finally, 
+22|, |1 5 2 2 5 .xy〈〉 ==  
+ b . A vector z is orthogonal to y if and only if 〈x, y〉 = 0, that is, 1220 5 0,zz −=  or 124.zz =  Thus 
+all multiples of 14⎡ ⎤⎢ ⎥⎣ ⎦  are orthogonal to y.  
+ 2. The inner product is 11 2 2,4 5 .xy x y xy〈〉 =+  Let x = (3, –2), y = (–2, 1). Compute that 
+2|| || , 56,xx= 〈〉 =x  2|| || , 21, yy= 〈〉 =y  22|| || || || 56 21 1176=⋅=xy , 〈x, y〉 = –34, and 2| , | 1156xy〈〉 = . 
+Thus 22 2|, | | | | | | | | | ,xy〈〉 ≤ xy  as the Cauchy-Schwarz inequality predicts. 
+ 3. The inner product is 〈 p, q〉 = p(–1)q(–1) + p(0)q(0) + p(1)q(1), so 
+24 , 5 4 3(1) 4(5) 5(1) 28tt〈 +− 〉 =+ += . 
+ 4. The inner product is 〈 p, q〉 = p(–1)q(–1) + p(0)q(0) + p(1)q(1), so 223, 3 2tt t〈 −+ 〉 =  
+( 4)(5) 0(3) 2(5) 10.−+ += −  
+ 5. The inner product is 〈 p, q〉 = p(–1)q(–1) + p(0)q(0) + p(1)q(1), so 
+222, 4 , 4 3455 0pp t t〈〉 = 〈 ++ 〉 =++=  and || || , 50 5 2pp p= 〈〉 == . Likewise 
+22 2 2 2,5 4 , 5 4 1 5 1 2 7qq t t〈〉 = 〈 −− 〉 =+ +=  and || || , 27 3 3qq q= 〈〉 == . 
+ 6. The inner product is 〈 p, q〉 = p(–1)q(–1) + p(0)q(0) + p(1)q(1), so 22,3 , 3p p tt tt〈 〉 = 〈 −− 〉 =  
+222(4 ) 0 2 2 0−+ +=  and || || , 20 2 5.pp p= 〈〉 ==  Likewise 22,3 2 , 3 2qq t t〈 〉 = 〈 ++ 〉 =  
+2225355 9++=  and || || , 59.qq q= 〈〉 =  
+ 7. The orthogonal projection ˆq  of q onto the subspace spanned by p is  
+   ,2 8 5 6 1 4ˆ (4 ),5 0 2 5 2 5qpqp t tpp〈〉== + = +〈〉  
+ 8. The orthogonal projection ˆq  of q onto the subspace spanned by p is  
+----- pagina 36 -----
+392 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   22,1 0 3 1ˆ (3 ),2 0 2 2qpqpt t t tpp〈〉== − − = − +〈〉  
+ 9. The inner product is 〈p, q〉 = p(–3)q(–3) + p(–1)q(–1) + p(1)q(1) + p(3)q(3).  
+a. The orthogonal projection ˆp2  of 2p  onto the subspace spanned by 0p  and 1p  is  
+   20 2120 1
+00 1 1
+, ,2 0 0ˆ (1) 5,, 4 2 0pp pppp p t pp pp〈〉 〈〉=+ = + =〈〉 〈 〉  
+b. The vector 2 ˆqp p t 22=−= − 5  will be orthogonal to both 0p  and 1p  and 01{,, }pp q  will be an 
+orthogonal basis for 012Span{ , , }.ppp  The vector of values for q at (–3, –1, 1, 3) is (4, –4, –4, 4), 
+so scaling by 1/4 yields the new vector 2(1/ 4)( 5).qt=−  
+ 10. The best approximation to 3pt=  by vectors in 01Span{ , , }Wp p q=  will be  
+   
+2
+0 1
+01
+00 1 1
+, , , 0 164 0 5 41ˆ proj (1) ( ) ,, , 4 2 0 4 4 5W pp pp p q tpp p p q t t pp pp q q ⎛⎞〈〉 〈〉 〈 〉 −== + + = + + = ⎜⎟〈〉 〈 〉 〈 〉 ⎝⎠  
+ 11. The orthogonal projection of 3pt=  onto 012Span{ , , }Wp p p=  will be  
+   20 1201 2
+00 1 1 22
+, ,, 0 3 4 0 1 7ˆ proj (1) ( ) ( 2),,, 5 1 0 1 4 5W pp pp pppp p p p t t t pp pp pp〈〉 〈〉 〈 〉== + + = + + − =〈〉 〈 〉 〈〉  
+ 12. Let 012Span{ , , }.Wp p p=  The vector 33 proj (17 / 5)Wpp p t t=− =−  will make 0123{,, ,}pppp  
+an orthogonal basis for the subspace 3 of 4. The vector of values for 3p  at (–2, –1, 0, 1, 2) is  
+(–6/5, 12/5, 0, –12/5, 6/5), so scaling by 5/6 yields the new vector 33 (5/ 6)( (17 / 5) )ptt=−=  
+3( 5/6 ) ( 1 7/6 ) .tt −  
+ 13. Suppose that A is invertible and that 〈u, v〉 = (Au) ⋅ (Av) for u and v in n. Check each axiom in the 
+definition on page 376, using the properties of the dot product.  
+i. 〈u, v〉 = (Au) ⋅ (Av) = (Av) ⋅ (Au) = 〈v, u〉  
+ii. 〈u + v, w〉 = (A(u + v)) ⋅ (Aw) = (Au + Av) ⋅ (Aw) = (Au) ⋅ (Aw) + (Av) ⋅ (Aw) = 〈u, w〉 + 〈v, w〉  
+iii. 〈c u, v〉 = (A( cu)) ⋅ (Av) = (c(Au)) ⋅ (Av) = c((Au) ⋅ (Av)) = c〈u, v〉  
+iv. 2,( ) ( ) | | | | 0 ,AA A〈〉 =⋅= ≥uu u u u  and this quantity is zero if and only if the vector Au is 0. But  
+Au = 0 if and only u = 0 because A is invertible.  
+ 14. Suppose that T is a one-to-one linear transformation from a vector space V into n and that 〈u, v〉 =  
+T(u) ⋅ T(v) for u and v in n. Check each axiom in the definition on page 376, using the properties of 
+the dot product and T. The linearity of T is used often in the following.  
+i. 〈u, v〉 = T(u) ⋅ T(v) = T(v) ⋅ T(u) = 〈v, u〉  
+ii. 〈u + v, w〉 = T(u + v) ⋅ T(w) = (T(u) + T(v)) ⋅ T(w) = T(u) ⋅ T(w) + T(v) ⋅ T(w) = 〈u, w〉 + 〈v, w〉  
+iii. 〈cu, v〉 = T(cu) ⋅ T(v) = (cT(u)) ⋅ T(v) = c(T(u) ⋅ T(v)) = c〈u, v〉  
+iv. 2,( ) ( ) | | ( ) | | 0 ,TT T〈〉 =⋅= ≥uu u u u  and this quantity is zero if and only if u = 0 since T is a one-
+to-one transformation.  
+----- pagina 37 -----
+6.7  Solutions   393  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ 15. Using Axioms 1 and 3, 〈u, c v〉 = 〈c v, u〉 = c〈v, u〉 = c〈u, v〉. 
+ 16. Using Axioms 1, 2 and 3,  
+   2|| || , , ,−= 〈 −− 〉 = 〈 − 〉 − 〈 − 〉uv uv uv u uv v uv  
+   ,,,,, 2 ,,= 〈〉 − 〈〉 − 〈〉 + 〈〉 = 〈〉 − 〈〉 + 〈〉uu uv vu vv uu uv vv  
+   22|| || 2 , || ||=− 〈〉 +uu v v  
+  Since { u, v} is orthonormal, 22|| || || || 1==uv  and 〈u, v〉 = 0. So 2|| || 2.−=uv  
+ 17. Following the method in Exercise 16,  
+   2|| || , , ,+= 〈 ++ 〉 = 〈 + 〉 + 〈 + 〉uv uv uv u uv v uv  
+   ,,,,, 2 ,,= 〈〉 + 〈〉 + 〈〉 + 〈〉 = 〈〉 + 〈〉 + 〈〉uu uv vu vv uu uv vv  
+   22|| || 2 , || ||=+ 〈〉 +uu v v  
+  Subtracting these results, one finds that 22|| || || || 4 , ,+− − = 〈〉uv uv u v  and dividing by 4 gives the 
+desired identity. 
+ 18. In Exercises 16 and 17, it has been shown that 22 2|| || || || 2 , || ||−= − 〈〉 +uv u u v v  and 2|| || +=uv  
+22|| || 2 , || || .+ 〈〉 +uu v v  Adding these two results gives 22 2 2|| || || || 2 || || 2 || || .++ − = +uv uv u v  
+ 19. let a
+b
+⎡⎤
+= ⎢⎥
+⎢⎥⎣⎦
+u  and .b
+a
+⎡ ⎤
+= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  Then 2|| || , ab=+u  2|| || , ab=+v  and ,2 . ab〈〉 =uv  Since a and b are 
+nonnegative, || || , ab=+u  || || . ab=+v  Plugging these values into the Cauchy-Schwarz 
+inequality gives  
+   2 | , | || || || ||a b ab ab ab= 〈〉 ≤= + + = +uv u v  
+  Dividing both sides of this equa tion by 2 gives the desired inequality. 
+ 
+ 20. The Cauchy-Schwarz inequality may be altered by dividing both sides of the inequality by 2 and then 
+squaring both sides of the inequality. The result is  
+   
+2 22,| | | | | | | |
+24
+〈〉⎛⎞ ≤⎜⎟⎝⎠ uv u v  
+  Now let ab⎡⎤= ⎢⎥⎣⎦u  and 11⎡⎤= ⎢⎥⎣⎦v . Then 22 2|| || , ab=+u  2|| || 2 =v , and 〈u, v〉 = a + b. Plugging these 
+values into the inequality above yields the desired inequality. 
+ 21. The inner product is 
+1
+0
+,( ) ( ) .fg ft g t d t〈〉 = ∫  Let 2() 1 3 ,ft t =−  3() .gt t t=−  Then  
+   
+11 23 5 3
+00
+,( 1 3 ) ( )3 4 0fg t t t d t t t t d t〈〉 =− − = − + =∫∫  
+ 22. The inner product is 
+1
+0
+,( ) ( ) .fg ft g td t〈〉 = ∫  Let f (t) = 5t – 3, 32() .gt t t=−  Then  
+----- pagina 38 -----
+394 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+11 32 4 3 2
+00
+,( 5 3 ) ( ) 5 8 3 0fg t t t d t t t t d t〈〉 =− − = − + =∫∫  
+ 23. The inner product is 
+1
+0
+,( ) ( ) ,fg ft g td t〈〉 = ∫  so 
+11 22 4 2
+00
+,( 1 3 ) 9 6 1 4 / 5 ,ff t d t t t d t〈〉 =− = − + =∫∫  and 
+|| || , 2 / 5.ff f= 〈〉 =  
+ 24. The inner product is 
+1
+0
+,( ) ( ) ,fg ft g td t〈〉 = ∫  so 
+11 32 2 6 54
+00
+, ( ) 2 1/105,gg t t d t t t td t〈〉 =− = − + =∫∫  and 
+|| || , 1/ 105.gg g= 〈〉 =  
+ 25. The inner product is 
+1
+1
+,( ) ( ) .fg ft g t d t
+−
+〈〉 = ∫  Then 1 and t are orthogonal because 
+1
+1
+1, 0.tt d t
+−
+〈〉 ==∫  
+So 1 and t can be in an orthogonal basis for 2Span{ 1, , }.tt  By the Gram-Schmidt process, the third 
+basis element in the orthogonal basis can be  
+   
+22
+2 ,1 ,11,1 ,tt ttt tt〈〉〈〉−−〈〉 〈〉  
+  Since 
+122
+1
+,1 2 / 3,tt d t
+−
+〈〉 ==∫  
+1
+1
+1,1 1 2, dt
+−
+〈〉 ==∫  and 
+123
+1
+,0 ,tt t d t
+−
+〈 〉 ==∫  the third basis element can 
+be written as 2 (1 / 3).t −  This element can be scaled by 3, which gives the orthogonal basis as 
+2{1, , 3 1} .tt −  
+ 26. The inner product is 
+2
+2
+,( ) ( ) .fg ft g t d t
+−
+〈〉 = ∫  Then 1 and t are orthogonal because 
+2
+2
+1, 0.tt d t
+−
+〈〉 ==∫  
+So 1 and t can be in an orthogonal basis for 2Span{ 1, , }.tt  By the Gram-Schmidt process, the third 
+basis element in the orthogonal basis can be 
+   
+22
+2 ,1 ,11,1 ,tt ttt tt〈〉〈〉−−〈〉 〈〉  
+  Since 
+222
+2
+,1 16/3 ,tt d t
+−
+〈〉 ==∫  
+2
+2
+1, 1 1 4, dt
+−
+〈〉 ==∫  and 
+223
+2
+,0 ,tt t d t
+−
+〈 〉 ==∫  the third basis element can 
+be written as 2 (4/3).t −  This element can be scaled by 3, which gives the orthogonal basis as 
+2{1, , 3 4} .tt −  
+ 27. [M] The new orthogonal polynomials are multiples of 317 5tt−+  and 2472 155 35 .tt−+  These 
+polynomials may be scaled so that their values at –2, –1, 0, 1, and 2 are small integers. 
+ 28. [M] The orthogonal basis is 0 () 1 ,ft =  1() c o s ,ft t =  22 ( ) cos (1/ 2) (1/ 2)cos 2 ,ft t t =−=  and 
+3
+3 ( ) cos (3/ 4)cos (1/ 4)cos 3 .ft t t t=− =
+----- pagina 39 -----
+6.8  Solutions   395  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+6.8 SOLUTIONS 
+Notes: The connections between this section and Section 6.7 are described in the notes for that section. 
+For my junior-senior class, I spend three days on the following topics: Theorems 13 and 15 in Section 6.5, 
+plus Examples 1, 3, and 5; Example 1 in Secti on 6.6; Examples 2 and 3 in Section 6.7, with the 
+motivation for the definite integral; and Fourier series in Section 6.8. 
+ 1. The weighting matrix W, design matrix X, parameter vector β, and observation vector y are:  
+   
+0
+1
+10000 1 2 0
+02000 1 1 0
+,, ,00200 1 0 2
+00020 1 1 4
+00001 1 2 4
+WX ββ
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎡⎤⎢⎥ ⎢ ⎥ ⎢ ⎥== = = ⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎣⎦
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+yβ  
+  The design matrix X and the observation vector y are scaled by W:  
+   
+12 0
+22 0
+,20 4
+22 8
+12 4
+WX W
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥==
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+y  
+  Further compute  
+   14 0 28() , () 01 6 2 4TTWX WX WX W⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ y  
+  and find that  
+   1 1/14 0 28 2ˆ (( ) ) ( ) 01 / 1 62 4 3 / 2TTWX WX WX W− ⎡⎤ ⎡ ⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦yβ  
+  Thus the weighted least-squares line is y = 2 + (3/2)x. 
+ 2. Let X be the original design matrix, and let y be the original observation vector. Let W be the 
+weighting matrix for the first method. Then 2W is the weighting matrix for the second method. The 
+weighted least-squares by the first method is equivalent to the ordinary least-squares for an equation 
+whose normal equation is  
+   ˆ() () TTWX WX WX W= yβ  (1) 
+  while the second method is equivalent to the ordinary least-squares for an equation whose normal 
+equation is   
+ ˆ(2 ) (2 ) (2 ) (2 )TTWX W X WX W= yβ  (2) 
+  Since equation (2) can be written as ˆ4( ) 4( ) ,TTWX WX WX Wβ = y  it has the same solutions as  
+equation (1). 
+----- pagina 40 -----
+396 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3. From Example 2 and the statement of the problem, 0 () 1 ,pt =  1() ,pt t =  22 () 2 ,pt t =−  
+3
+3 () ( 5 / 6 ) ( 1 7 / 6 ),pt t t =−  and g = (3, 5, 5, 4, 3). The cubic trend function for g is the orthogonal 
+projection ˆp  of g onto the subspace spanned by 0 ,p 1,p 2 ,p and 3 :p  
+   03 1201 2 3
+00 1 1 22 33
+,, ,,ˆ
+,,,,
+gp gp gp gppp p p ppp pp pp pp〈〉 〈〉 〈〉 〈 〉=+ ++〈〉 〈 〉 〈〉 〈〉  
+   ()2320 1 7 2 5 17(1) 251 0 1 4 1 0 6 6tt t t−− ⎛⎞=+ + − + − ⎜⎟⎝⎠  
+   ()23 2 311 1 5 1 7 2 1 142 510 2 5 6 6 3 2 6tt t t t tt ⎛⎞=− − − + − =− − + ⎜⎟⎝⎠  
+  This polynomial happens to fit the data exactly. 
+ 4. The inner product is 〈 p, q〉 = p(–5)q(–5) + p(–3)q(–3) + p(–1)q(–1) + p(1)q(1) + p(3)q(3) + p(5)q(5).  
+a. Begin with the basis 2{1, , }tt  for 2. Since 1 and t are orthogonal, let 0 () 1pt =  and 1() .pt t =  
+Then the Gram-Schmidt process gives  
+   
+22
+22 2
+2
+,1 , 70 35() 1 1,1 , 6 3tt tpt t t t t tt〈〉〈〉=− − =− =−〈〉 〈〉  
+  The vector of values for 2p  is (40/3, –8/3, –32/3, –32/3, –8/3, 40/3), so scaling by 3/8 yields the 
+new function 222 (3/8)( (35/ 3)) (3/8) (35/8).pt t=− = −  
+b. The data vector is g = (1, 1, 4, 4, 6, 8). The quadratic trend function for g is the orthogonal 
+projection ˆp  of g onto the subspace spanned by 0p , 1p  and 2p :  
+   20 1201 2
+00 1 1 22
+, , , 24 50 6 3 35ˆ (1),,, 6 7 0 8 4 8 8gp gp gppp p p t tpp pp pp〈〉 〈〉 〈 〉 ⎛⎞=+ += + + − ⎜⎟〈〉 〈 〉 〈〉 ⎝⎠  
+   2251 3 3 5 5 9 5 34 71 4 8 8 1 6 71 1 2tt t t ⎛⎞=+ + − = + + ⎜⎟⎝⎠  
+ 5. The inner product is 
+2
+0
+,( ) ( ) .fg f t g t d t
+π
+〈〉 = ∫  Let m ≠ n. Then  
+   
+22
+00
+1sin , sin sin sin cos(( ) ) cos(( ) ) 0 2mt nt mt nt dt m n t m n t dtππ〈〉 == − − + =∫∫  
+  Thus sin mt and sin nt are orthogonal. 
+ 6. The inner product is 
+2
+0
+,( ) ( ) .fg ft g t d t
+π
+〈〉 = ∫  Let m and n be positive integers. Then  
+   
+22
+00
+1sin ,cos sin cos sin(( ) ) sin(( ) ) 0 2mt nt mt nt dt m n t m n t dtππ〈〉 == + + − =∫∫  
+  Thus sin mt and cosnt are orthogonal. 
+ 7. The inner product is 
+2
+0
+,( ) ( ) .fg ft g t d t
+π
+〈〉 = ∫  Let k be a positive integer. Then  
+   
+2222
+00
+1|| cos || cos ,cos cos 1 cos 2 2kt kt kt kt dt kt dt ππ π= 〈〉 == + =∫∫  
+----- pagina 41 -----
+6.8  Solutions   397  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+  and  
+   
+2222
+00
+1|| sin || sin ,sin sin 1 cos 2 2kt kt kt kt dt kt dt ππ π= 〈〉 == − =∫∫  
+ 8. Let f(t) = t – 1. The Fourier coefficients for f are:  
+   
+220
+00
+11 1 () 1 122 2a ftd t t d tππ πππ== − = − +∫∫  
+  and for k > 0,  
+   
+22
+00
+11 ( )cos ( 1)cos 0kaf t k t d t t k t d tππππ== − =∫∫  
+   
+22
+00
+11 2 ( )sin ( 1)sinkbf t k t d t t k t d t kππππ== − = −∫∫  
+  The third-order Fourier approximation to f is thus  
+   0 12 3 2sin sin 2 sin 3 1 2 sin sin 2 sin 323a bt b t b t t t t π++ + = − + −− −  
+ 9. Let f(t) = 2π  – t. The Fourier coefficients for f are:  
+   
+220
+00
+11 1 () 222 2a ftd t t d tππ ππππ== − =∫∫  
+  and for k > 0,  
+   
+22
+00
+11 () c o s ( 2 ) c o s 0kaf t k t d t t k t d tππ πππ== − =∫∫  
+   
+22
+00
+11 2 () s i n ( 2 ) s i nkbf t k t d t t k t d t kππ πππ== − =∫∫  
+  The third-order Fourier approximation to f is thus  
+   0 12 3 2sin sin 2 sin 3 2 sin sin 2 sin 323a bt b t b t t t t π++ + = ++ +  
+ 10. Let 1f o r 0() . 1f o r 2 tft t πππ≤<⎧= ⎨−≤ <⎩  The Fourier coefficients for f are:  
+   
+220
+00
+11 1 1 () 022 2 2a f t dt dt dtππ π πππ π== − =∫∫ ∫  
+  and for k > 0,  
+   
+22
+00
+11 1 ( ) cos cos cos 0ka f t k td t k td t k td tππ π πππ π== − =∫∫ ∫  
+   
+22
+00
+4 /( ) for odd11 1 ( ) sin sin sin 0 for evenk kkb f t k td t k td t k td t kππ π π πππ π ⎧== − = ⎨⎩∫∫ ∫  
+  The third-order Fourier approximation to f is thus  
+   13
+44sin sin 3 sin sin 3 3bt b t t t ππ+= +  
+----- pagina 42 -----
+398 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 11. The trigonometric identity 2cos 2 1 2 sintt=−  shows that  
+   2 11sin cos 222tt=−  
+  The expression on the right is in the subspace sp anned by the trigonometric polynomials of order 3 or 
+less, so this expression is the third-order Fourier approximation to 2sin t . 
+ 12. The trigonometric identity 3cos 3 4 cos 3 costt t=−  shows that  
+   3 31cos cos cos 344tt t=+  
+  The expression on the right is in the subspace sp anned by the trigonometric polynomials of order 3 or 
+less, so this expression is the third-order Fourier approximation to 3cos .t  
+ 13. Let f and g be in C [0, 2π] and let m be a nonnegative integer. Then the linearity of the inner product 
+shows that  
+  〈( f + g), cos mt〉 = 〈 f, cos mt〉 + 〈g, cos mt〉, 〈( f + g), sin mt〉 = 〈 f, sin mt〉 + 〈 g, sin mt〉 
+  Dividing these identities respectively by 〈cos mt, cos mt〉 and 〈sin mt, sin mt〉 shows that the Fourier 
+coefficients ma  and mb  for f + g are the sums of the corresponding Fourier coefficients of f and of g. 
+ 14. Note that g and h are both in the subspace H spanned by the trigonometric polynomials of order 2 or 
+less. Since h is the second-order Fourier approximation to f, it is closer to f than any other function in 
+the subspace H. 
+ 15. [M] The weighting matrix W is the 13 × 13 diagonal matrix with diagonal entries 1, 1, 1, .9, .9, .8, .7, 
+.6, .5, .4, .3, .2, .1. The design matrix X, parameter vector β, and observation vector y are:  
+   
+23
+23
+23
+23 0
+23 1
+223
+323
+23
+23
+23
+23
+10 0 0
+0.011 1 1
+8.8122 2
+29.9
+133 3 62.0
+144 4 104.7
+155 5 159.1
+166 6 ,, 222.0
+294.5177 7
+380.4188 8
+199 9
+11 01 0 1 0
+11 11 1 1 1
+11 21 2 1 2
+X
+β
+β
+β
+β
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥== =⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎢⎥⎢⎥ ⎣⎦
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+yβ
+471.1
+571.7
+686.8
+809.2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+  The design matrix X and the observation vector y are scaled by W:  
+----- pagina 43 -----
+6.8  Solutions   399  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+   
+1.0 0.0 0.0 0.0
+1.0 1.0 1.0 1.0
+1.0 2.0 4.0 8.0
+.9 2.7 8.1 24.3
+.9 3.6 14.4 57.6
+.8 4.0 20.0 100.0
+.7 4.2 25.2 151.2
+.6 4.2 29.4 205.8
+.5 4.0 32.0 256.0
+.4 3.6 32.4 291.6
+.3 3.0 30.0 300.0
+.2 2.2 24.2 266.2
+.1 1.2 14.4 172.8
+WX
+⎡⎤
+⎢⎥
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢= ⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢
+⎢⎣⎦
+0.00
+8.80
+29.90
+55.80
+94.23
+127.28
+, 155.40
+176.70
+190.20
+188.44
+171.51
+137.36
+80.92
+W
+⎡ ⎤
+⎢ ⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥=⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥
+⎥ ⎢⎥⎣ ⎦
+y  
+  Further compute  
+   
+6.66 22.23 120.77 797.19 747.844
+22.23 120.77 797.19 5956.13 4815.438() , () 120.77 797.19 5956.13 48490.23 35420.468
+797.19 5956.13 48490.23 420477.17 285262.440
+T TWX WX WX W
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+y  
+  and find that   
+ 1
+0.2685
+3.6095ˆ (( ) ) ( ) 5.8576
+0.0477
+TTWX WX WX W−
+−⎡⎤
+⎢⎥
+⎢⎥== ⎢⎥
+⎢⎥−⎢⎥⎣⎦
+yβ  
+  Thus the weighted least-squares cubic is 23( ) .2685 3.6095 5.8576 .0477 .yg t t t t== − + + −  The 
+velocity at t = 4.5 seconds is g'(4.5) = 53.4 ft./sec. This is about 0.7% faster than the estimate 
+obtained in Exercise 13 of Section 6.6. 
+ 16. [M] Let 1f o r 0() . 1f o r 2 tft t πππ≤<⎧= ⎨−≤ <⎩  The Fourier coefficients for f have already been found to be 
+0ka =  for all k ≥ 0 and 4/( ) f or od d .0f o r e v e nk kkb kπ⎧= ⎨⎩  Thus  
+   45
+44 44 4( ) sin sin 3 and ( ) sin sin 3 sin 533 5f t tt f t tttππ ππ π=+ =+ +  
+  A graph of 4f  over the interval [0, 2π] is 
+----- pagina 44 -----
+400 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 
+  A graph of 5f  over the interval [0, 2π] is  
+ 
+  A graph of 5f  over the interval [–2π, 2π] is 
+ 
+Chapter 6 SUPPLEMENTARY EXERCISES 
+ 1. a. False. The length of the zero vector is zero.  
+ b . True. By the displayed equation before Example 2 in Section 6.1, with c = –1, 
+   || –x || = || (–1)x || =| –1 ||| x || = || x ||.  
+ c . True. This is the definition of distance.  
+ d . False. This equation would be true if r|| v || were replaced by | r ||| v ||.  
+ e . False. Orthogonal nonzero vectors are linearly independent.  
+ f . True. If x ⋅ u = 0 and x ⋅ v = 0, then x ⋅ (u – v) = x ⋅ u – x ⋅ v = 0.  
+ g . True. This is the “only if” part of the Pythagorean Theorem in Section 6.1.  
+ h . True. This is the “only if” part of the Pythagorean Theorem in Section 6.1 where v is replaced  
+by –v, because 2|| ||−v  is the same as 2|| ||v .  
+ i . False. The orthogonal projection of y onto u is a scalar multiple of u, not y (except when y 
+itself is already a multiple of u).  
+1
+1
+0.5
+–0.5
+–1
+2345 6
+1
+0.5
+–0.5
+–1
+123456
+1
+0.5
+–0.5
+–1
+–6 –4 –2 246
+----- pagina 45 -----
+Chapter 6  Supplementary Exercises   401  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+ j . True. The orthogonal projection of any vector y onto W is always a vector in W.  
+ k . True. This is a special case of the statemen t in the box following Example 6 in Section 6.1 (and 
+proved in Exercise 30 of Section 6.1).  
+ l . False. The zero vector is in both W and .W ⊥  
+ m . True. See Exercise 32 in Section 6.2. If 0,ij⋅=vv  then 
+() ( ) ( ) 0 0 .ii j j ij i j ijcc c c c c⋅= ⋅ = =vv v v   
+ n . False. This statement is true only for a square matrix. See Theorem 10 in Section 6.3.  
+ o . False. An orthogonal matrix is square and has orthonormal columns. 
+ p . True. See Exercises 27 and 28 in Section 6.2. If U has orthonormal columns, then .TUU I =  If 
+U is also square, then the Invertible Matrix Theorem shows that U is invertible and 1 .TUU− =  
+In this case, ,TUU I =  which shows that the columns of TU  are orthonormal; that is, the rows 
+of U are orthonormal.  
+ q . True. By the Orthogonal Decomposition Theorem, the vectors projW v  and projW−vv  are 
+orthogonal, so the stated equality follows from the Pythagorean Theorem.  
+ r . False. A least-squares solution is a vector ˆx  (not A ˆx ) such that A ˆx  is the closest point to b  
+in Col A.  
+ s . False. The equation ˆ AA AΤ− 1 Τ=( )xb  describes the solution of the normal equations, not the 
+matrix form of the normal equations. Furthermore, this equation makes sense only when TAA  
+is invertible.  
+ 2. If 12{, }vv  is an orthonormal set and 11 2 2 ,cc=+xv v  then the vectors 11c v  and 22c v  are orthogonal 
+(Exercise 32 in Section 6.2). By the Pythagorean Theorem and properties of the norm  
+   22 2 2 2 2 2 211 2 2 11 2 2 1 1 2 2 1 2|| || || || || || || || ( || ||) ( || ||) | | | |cc c c c c c c=+ = + = + = +xv v v v v v  
+  So the stated equality holds for p = 2. Now suppose the equality holds for p = k, with k ≥ 2. Let 
+11{, , } k +…vv  be an orthonormal set, and consider 11 1 1 1 1 ,kk k k k k kcc c c ++ ++=+ … + + = +xv v v u v  
+where 11 .kk k cc=+ … +uv v  Observe that ku  and 11kkc ++v  are orthogonal because 1 0jk +⋅=vv  for j 
+= 1,…,k. By the Pythagorean Theorem and the assumption that the stated equality holds for k, and 
+because 22 2 211 1 1 1|| || | | || || | | ,kk k k kcc c++ + + + ==vv  
+   22 2 2 2 2 11 11 1 1|| || || || || || || || | | | |kk k k k k kcc c c++ ++ +=+ = + = + … +xu v u v  
+  Thus the truth of the equality for p = k implies its truth for p = k + 1. By the principle of induction, 
+the equality is true for all integers p ≥ 2. 
+ 3. Given x and an orthonormal set 1{, , } p…vv  in n, let ˆx  be the orthogonal projection of x onto the 
+subspace spanned by 1,, p…vv . By Theorem 10 in Section 6.3, 11ˆ () ( ) . pp=⋅ + … +⋅xx v v x v v  By 
+Exercise 2, 22 2 1ˆ|| || | | | | . p=⋅ + … +⋅xx v x v  Bessel’s inequality follows from the fact that 
+22ˆ|| || || || ,≤xx  which is noted before the proof of the Cauchy-Schwarz inequality in Section 6.7. 
+ 4. By parts (a) and (c) of Theorem 7 in Section 6.2, 1{, , } kUU …vv  is an orthonormal set in n. Since 
+there are n vectors in this linearly independent set, the set is a basis for n. 
+----- pagina 46 -----
+402 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. Suppose that ( U x)⋅(U y) = x⋅y for all x, y in n, and let 1,, n…ee  be the standard basis for n. For  
+j = 1, …, n, jUe  is the jth column of U. Since 2|| || ( ) ( ) 1,jj j j jUU U =⋅= ⋅ =ee e e e  the columns of U 
+are unit vectors; since () () 0jk j kUU ⋅= ⋅ =ee e e  for j ≠ k, the columns are pairwise orthogonal. 
+ 6. If Ux = λx for some x ≠ 0, then by Theorem 7(a) in Section 6.2 and by a property of the norm,  
+|| x || = || Ux || = || λx || = | λ ||| x ||, which shows that | λ | = 1, because x ≠ 0. 
+ 7. Let u be a unit vector, and let 2. TQI=− uu  Since () , TT T T T T==uu u u uu  
+   (2 ) 2 ( ) 2TT TT T TQI I I Q= − =− =− =uu uu uu  
+  Then  
+   22 ( 2) 2 2 4 () ()TT T T T TQQ Q I I= = − = −−+ uu uu uu uu uu  
+  Since u is a unit vector, 1,T =⋅=uu uu  so () () ( ) ( ) ,TT T T T ==uu uu u u u u uu  and  
+   224TT T TQQ I I=− − + =uu uu uu  
+  Thus Q is an orthogonal matrix. 
+ 8 . a. Suppose that x ⋅ y = 0. By the Pythagorean Theorem, 22 2|| || || || || || .+= +xy x y  Since T preserves 
+lengths and is linear,  
+   22 2 2|| ( ) || || ( ) || || ( ) || || ( ) ( ) ||TT T T T+= + = +xy x y x y  
+  This equation shows that T(x) and T(y) are orthogonal, because of the Pythagorean Theorem. 
+Thus T preserves orthogonality.  
+ b. The standard matrix of T is [] 1() ( ) nTT …ee , where 1,, n…ee  are the columns of the identity 
+matrix. Then 1{( ) , , ( ) } nTT …ee  is an orthonormal set because T preserves both orthogonality and 
+lengths (and because the columns of the identity matrix form an orthonormal set). Finally, a 
+square matrix with orthonormal columns is an orthogonal matrix, as was observed in Section 6.2.  
+ 9. Let W = Span{u, v}. Given z in n, let ˆ proj .W=zz  Then ˆz  is in Col A, where [] .A = uv  Thus 
+there is a vector, say, ˆx  in 2, with A ˆx = ˆz . So, ˆx  is a least-squares solution of Ax = z. The normal 
+equations may be solved to find ˆx , and then ˆz  may be found by computing A ˆ.x  
+ 10. Use Theorem 14 in Section 6.5. If c ≠ 0, the least-squares solution of Ax = c b is given by 
+1() ( ) ,TTAA A c− b  which equals 1() ,TTcAA A − b  by linearity of matrix multiplication. This solution is 
+c times the least-squares solution of Ax = b. 
+ 11. Let ,
+x
+y
+z
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+x  ,
+a
+b
+c
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+b  
+1
+2,
+5
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+v  and 
+12 5
+12 5 .
+12 5
+T
+T
+T
+A
+⎡⎤ −⎡ ⎤⎢⎥ ⎢ ⎥== −⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥−⎣ ⎦⎢⎥⎣⎦vvv  Then the given set of equations is  
+Ax = b, and the set of all least-squares solutions coincides with the set of solutions of the normal 
+equations TTAA A =xb . The column-row expansions of TAA  and TA b  give  
+   3, ( )TT T T T TA A A a b c abc= + + = =++=+ +vv vv vv vv b v v v v  
+----- pagina 47 -----
+Chapter 6  Supplementary Exercises   403  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley 
+  Thus 3( ) 3 ( ) 3( )TT T TAA ===xv v x v v x v x v  since Tvx  is a scalar, and the normal equations have 
+become 3( ) ( ) ,T abc=+ +vxv v  so 3( ) ,T abc=++vx  or () / 3 .T abc=+ +vx  Computing Tvx  gives 
+the equation x – 2y + 5z = (a + b + c)/3 which must be satisfied by all least-squares solutions to Ax = 
+b. 
+ 12. The equation (1) in the exercise has been written as Vλ = b, where V is a single nonzero column 
+vector v, and b = Av. The least-squares solution ˆλ  of Vλ = b is the exact solution of the normal 
+equations .TTVV Vλ= b  In the original notation, this equation is .TT Aλ=vv v v  Since Tvv  is 
+nonzero, the least squares solution ˆλ  is /() .TTAvv v v  This expression is the Rayleigh quotient 
+discussed in the Exercises for Section 5.8. 
+ 13. a. The row-column calculation of Au shows that each row of A is orthogonal to every u in Nul A. So 
+each row of A is in (Nul ) .A ⊥  Since (Nul )A ⊥  is a subspace, it must contain all linear 
+combinations of the rows of A; hence (Nul )A ⊥  contains Row A.  
+ b. If rank A = r, then dim Nul A = n – r by the Rank Theorem. By Exercsie 24(c) in Section 6.3, 
+dimNul dim(Nul ) ,AA n ⊥+=  so dim(Nul )A ⊥  must be r. But Row A is an r-dimensional 
+subspace of (Nul )A ⊥  by the Rank Theorem and part (a). Therefore, Row (Nul ) .AA ⊥=  
+ c. Replace A by TA  in part (b) and conclude that Row (Nul ) .TTAA ⊥=  Since Row Col ,TAA=  
+Col (Nul ) . TAA ⊥=  
+ 14. The equation Ax = b has a solution if and only if b is in Col A. By Exercise 13(c), Ax = b has a 
+solution if and only if b is orthogonal to Nul . TA  This happens if and only if b is orthogonal to all 
+solutions of .TA =x0  
+ 15. If TAU R U=  with U orthogonal, then A is similar to R (because U is invertible and 1TUU −= ), so A 
+has the same eigenvalues as R by Theorem 4 in Section 5.2. Since the eigenvalues of R are its n real 
+diagonal entries, A has n real eigenvalues. 
+ 16. a. If [] 12 ,nU =…uu u  then [] 11 2 .nAU A A=λ …uu u  Since 1u  is a unit vector and 
+2 ,, n…uu  are orthogonal to 1,u  the first column of TUA U  is 11 1 1 1 1() .TTUU λ= λ = λuu e  
+ b. From (a),  
+   
+1
+1
+*** *
+0
+0
+TUA U A
+λ⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+#  
+  View TUA U  as a 2 × 2 block upper triangular matrix, with 1A  as the (2, 2)-block. Then from 
+Supplementary Exercise 12 in Chapter 5,  
+  11 1 11 1 1d e t ( )d e t ( ( ) ) d e t ( )( ) d e t ( )T nn nUA U I I A I A I −−−λ = λ −λ ⋅ −λ = λ −λ ⋅ −λ  
+  This shows that the eigenvalues of ,TUA U  namely, 1,, , nλ… λ  consist of 1λ  and the eigenvalues 
+of 1A . So the eigenvalues of 1A  are 2 ,,. nλ… λ  
+----- pagina 48 -----
+404 CHAPTER 6  Orthogonality and Least Squares  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 17. [M] Compute that || Δx ||/|| x || = .4618 and 4cond( ) (|| || / || ||) 3363 (1.548 10 ) .5206A −×= × × =bbΔ . In 
+this case, || Δx ||/|| x || is almost the same as cond(A) × || Δb ||/|| b ||. 
+ 18. [M] Compute that || Δx ||/|| x || = .00212 and cond(A) × (|| Δb ||/|| b ||) = 3363 × (.00212) ≈ 7.130. In 
+this case, || Δx ||/|| x || is almost the same as || Δb ||/|| b ||, even though the large condition number 
+suggests that || Δx ||/|| x || could be much larger. 
+ 19. [M] Compute that 8|| || / || || 7.178 10 −=×xxΔ  and 4cond( ) (|| || / || ||) 23683 (2.832 10 )A −×= × × =bbΔ  
+6.707. Observe that the relative change in x is much smaller than the relative change in b. In fact the 
+theoretical bound on the relative change in x is 6.707 (to four significant figures). This exercise 
+shows that even when a condition number is large, the relative error in the solution need not be as 
+large as you suspect. 
+ 20. [M] Compute that || Δx ||/|| x || = .2597 and 5cond( ) (|| || / || ||) 23683 (1.097 10 ) .2598A −×= × × =bbΔ . 
+This calculation shows that the relative change in x, for this particular b and Δb, should not exceed 
+.2598. In this case, the theoretical maximum change is almost acheived. 

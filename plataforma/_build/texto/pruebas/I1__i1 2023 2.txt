@@ -1,0 +1,541 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Segundo Semestre 2023
+´Algebra Lineal - MAT1203
+Interrogaci´ on 1 - PAUTA
+1. Determinar, usando matrices, qu´ e condici´ on o condiciones deben cumplir a, b, cpara
+que el siguiente sistema de variables x1, x2, x3 tenga infinitas soluciones:
+x1 + ax2 + a2x3 = 0
+x1 + bx2 + b2x3 = 0
+x1 + cx2 + c2x3 = 0
+Soluci´ on A la matriz de coeficientes del sistema homog´ eneo le aplicamos dos opera-
+ciones elementales: 
+
+1 a a 2
+1 b b 2
+1 c c 2
+
+ ∼
+
+
+1 a a 2
+0 b − a b 2 − a2
+0 c − a c 2 − a2
+
+
+Si a = b o a = c, al menos una fila se anula por lo que el sistema tiene infinitas
+soluciones. Supongamos que a ̸= b y a ̸= c. Se tiene:
+
+
+1 a a 2
+0 b − a b 2 − a2
+0 c − a c 2 − a2
+
+ ∼
+
+
+1 a a 2
+0 1 b + a
+0 1 c + a
+
+ ∼
+
+
+1 a a 2
+0 1 b + a
+0 0 c − b
+
+ .
+Nuevamente, si c = b, la tercera fila se anula, por lo que el sistema tiene infinitas
+soluciones.
+En conclusi´ on, el sistema del enunciado tiene infinitas soluciones si y s´ olo si a = b o
+a = c o b = c.
+Puntaje (6 puntos en total)
+• 2 puntos por plantear correctamente el problema usando matrices.
+• 2 puntos por obtener una forma escalonada correcta de la matriz.
+• 2 puntos por obtener las condiciones correctas sobre a, b, cque garantizan que el
+sistema tenga infinitas soluciones.2. Encuentre el valor o los valores de h de manera que el vector y est´ e afuera del plano
+generado por {v1, v2} donde
+v1 =
+
+
+1
+−1
+−2
+
+ , v2 =
+
+
+5
+−4
+−7
+
+ , y =
+
+
+−4
+3
+h
+
+ .
+Soluci´ on Necesitamos determinar para qu´ e valores de h el vector y es linealmente
+independiente de v1 y v2. Esto es equivalente a estudiar la consistencia del sistema
+dado por la matriz aumentada
+
+
+1 5
+−1 −4
+−2 −7
+ −43h  .
+La forma escalonada es
+
+
+1 5 −4
+0 1 −1
+0 0 h − 5
+
+ por lo que el sistema es inconsistente, o equiv-
+alentemente, el vector y est´ a fuera del plano generado porv1 y v2, si y s´ olo sih ̸= 5.
+Puntaje (6 puntos en total)
+• 2 puntos por plantear una manera de determinar los valores buscados de h.
+• 2 puntos por entregar valores de h, aunque no sean correctos.
+• 2 puntos por encontrar los valores correctos de h.
+3. Determine si las siguientes afirmaciones son verdaderas y/o falsas. Si es verdadera,
+demu´ estrelo en general y si es falsa, d´ e un contraejemplo.
+(a) Si w es una soluci´ on del problema no homog´ eneoAx = b, entonces existe un vector
+q tal que w − q es una soluci´ on no nula del problema homog´ eneoAx = 0.
+(b) Si el sistema lineal Ax =
+
+
+1
+3
+2
+
+ tiene infinitas soluciones, entonces Ax = 0 tambi´ en
+tiene infinitas soluciones.
+Soluci´ on
+(a) Falso. Defina A =
+
+1 0
+0 1
+
+y b =
+
+1
+0
+
+. El problema no homog´ eneo Ax = b
+´ unicamente tiene la soluci´ onw =
+
+1
+0
+
+y el sistema homog´ eneoAx = 0 ´ unicamente
+la soluci´ on nula. Por lo tanto no existe q tal que w − q sea soluci´ on no nula de
+Ax = 0.(b) Verdadero. Por el teorema de soluciones de sistemas lineales no homog´ eneos, el
+conjunto soluci´ on deAx =
+
+
+1
+3
+2
+
+ es una translaci´ on del conjunto soluci´ on deAx = 0.
+Por lo tanto, si el problema no homog´ eneo tiene infinitas soluciones, el homog´ eneo
+tambi´ en.
+Puntaje (6 puntos en total)
+• 1 punto por indicar correctamente el valor de verdad en cada proposici´ on y entrega
+un argumento, sea correcto o no. (2 puntos en total)
+• 2 puntos si el argumento entregado es correcto en cada ´ ıtem. (4 puntos en total)
+4. Determine si la transformaci´ onT : R2 → R3 definida por
+T
+
+x1
+x2
+
+=
+
+
+x1 − 2x2
+x1 − 3
+2x1 − 5x2
+
+
+es lineal o no.
+Soluci´ on Demostraremos que T no es lineal. Para ello basta notar que
+T
+
+2
+2
+
+̸= 2T
+
+1
+1
+
+.
+En efecto:
+T
+
+2
+2
+
+=
+
+
+−2
+−1
+−6
+
+ , T
+
+1
+1
+
+=
+
+
+−1
+−2
+−3
+
+
+=⇒ 2T
+
+1
+1
+
+=
+
+
+−2
+−4
+−6
+
+ ̸=
+
+
+−2
+−1
+−6
+
+ = T
+
+2
+2
+
+.
+Puntaje (6 puntos en total)
+• 2 puntos por establecer una manera de demostrar que T no es lineal.
+• 2 puntos verificar correctamente que T no es lineal.
+• 2 puntos por concluir que T no es lineal.
+5. Determine la matriz est´ andar de la transformaci´ on lineal deR2 en R2 que consiste en
+una reflexi´ on en la rectay = x, seguida por rotaci´ on de 30◦ en sentido contrario al de
+las manecillas del reloj, seguida por reflexi´ on con respecto del eje Y (Debe calcular las
+funciones trigonom´ etricas que correspondan).Soluci´ on La matriz est´ andar de una transformaci´ on lineal en el plano se calcula como
+T (e1) T (e2) .
+El vector e1 primero es transformado en el vector e2 a trav´ es de la reflexi´ on en la recta
+y = x. Posterior a la rotaci´ on de 30° dicho vector se transforma en
+
+cos(90 + 30)
+sin(90 + 30)
+
+=
+
+− cos(60)
+sin(60)
+
+=
+−1/2√
+3/2
+
+.
+Finalmente dicho vector se refleja con respecto al eje Y y termina en
+ 1/2√
+3/2
+
+.
+De manera similar, el vector e2 primero se refleja hacia el vector e1 por la recta y = x,
+luego se rota en 30 ° convirti´ endose en
+
+cos(30)
+sin(30)
+
+y finalmente se refleja en torno al eje
+Y obteniendo el vector
+
+− cos(30)
+sin(30)
+
+=
+
+−
+√
+3/2
+1/2
+
+.
+En conclusi´ on, la matriz est´ andar deT es
+
+1/2 −
+√
+3/2√
+3/2 1 /2
+
+.
+Puntaje (6 puntos en total)
+• 1 punto por indicar, impl ´ ıcita o expl ´ ıcitamente, c´ omo se define la matriz est´ andar.
+• 3 puntos por determinar correctamente en cu´ al vector se transforma finalmente
+cada vector can´ onico.
+• 1 punto por calcular las funciones trigonom´ etricas correspondientes
+• 1 punto por escribir la matriz est´ andar.
+6. Encuentre la f´ ormula de definici´ on de la transformaci´ on linealT : R2 → R2 tal que
+T
+
+1
+1
+
+=
+
+2
+3
+
+y T
+
+1
+−1
+
+=
+
+0
+5
+
+Soluci´ on Primero notamos que
+
+1
+1
+
++
+
+1
+−1
+
+=
+
+2
+0
+
+y 
+1
+1
+
+−
+
+1
+−1
+
+=
+
+0
+2
+
+lo que implica
+T
+
+2
+0
+
+=
+
+2
+3
+
++
+
+0
+5
+
+=
+
+2
+8
+y
+T
+
+0
+2
+
+=
+
+2
+3
+
+−
+
+0
+5
+
+=
+
+2
+−2
+
+.
+Por otro lado
+T
+
+x
+y
+
+= x2 T 20 + y2 T 02 .
+Por lo tanto
+T
+
+x
+y
+
+= x2 28 + y2  2−2 =  x + y4x − y .
+Puntaje (6 puntos en total)
+• 2 puntos por establecer la relaci´ on entre los vectores dados y el vector
+
+x
+y
+
+.
+• 2 puntos por aplicar correctamente la transformaci´ on T a la relaci´ on encontrada
+usando la linealidad.
+• 2 puntos por escribir expl ´ ıcitamente la f´ ormula de definici´ on correcta.
+7. Determine si la siguiente transformaci´ on lineal es inyectiva y/o sobreyectiva
+T
+
+
+x1
+x2
+x3
+x4
+
+ =
+
+
+x1 + 2x2
+2x2 + x4
+x2 − x4
+
+ .
+Soluci´ on La transformaci´ onT tiene dominio en R4 y codominio en R3. Por lo tanto
+no puede ser inyectiva. Otra manera de ver esto es mirar la matriz est´ andar de T :
+T (e1) T (e2) T (e3) T (e4) =
+
+
+1 2 0 0
+0 2 0 1
+0 1 0 −1
+
+
+Ya que la matriz est´ andar tiene una columna sin pivote, el problema homog´ eneo tiene
+infinitas soluciones, por lo que la transformaci´ onT no es inyectiva.
+De igual manera, una forma escalonada de dicha matriz es
+
+
+1 2 0 0
+0 2 0 1
+0 0 0 −3/2
+
+ la cual si
+presenta un pivote en cada fila. Por lo tanto, la transformaci´ on T es sobreyectiva.
+Puntaje (6 puntos en total)
+• 3 puntos por argumentar y concluir correctamente si T es inyectiva.
+• 3 puntos por argumentar y concluir correctamente si T es sobreyectiva.8. Encuentre la matriz X sabiendo que X T − B2 = (ABT − 3X)T y
+A =
+
+
+−1 0 1
+0 0 0
+1 0 −1
+
+ , B =
+
+
+1 1 0
+0 1 0
+1 0 1
+
+ .
+Soluci´ on Reescribimos la ecuaci´ on matricial:
+X T − B2 = (ABT − 3X)T ⇐ ⇒X T − B2 = BAT − 3X T
+⇐ ⇒4X T = B2 + BAT
+Adem´ as:B2 =
+
+
+1 1 0
+0 1 0
+1 0 1
+
+
+
+
+1 1 0
+0 1 0
+1 0 1
+
+ =
+
+
+1 2 0
+0 1 0
+2 1 1
+
+ y BAT = BA =
+
+
+−1 0 1
+0 0 0
+0 0 0
+
+.
+Es decir,
+4X T =
+
+
+1 2 0
+0 1 0
+2 1 1
+
+ +
+
+
+−1 0 1
+0 0 0
+0 0 0
+
+ =
+
+
+0 2 1
+0 1 0
+2 1 1
+
+
+lo cual implica que X T =
+
+
+0 1 /2 1 /4
+0 1 /4 0
+1/2 1 /4 1 /4
+
+ y por lo tanto X =
+
+
+0 0 1 /2
+1/2 1 /4 1 /4
+1/4 0 1 /4
+
+.
+Puntaje (6 puntos en total)
+• 2 puntos por establecer una manera correcta de encontrar X aunque no logre
+terminarlo.
+• 1 punto por tener todas las operaciones de potencias y multiplicaciones de matrices
+correctas.
+• 1 punto por tener todas las operaciones de matrices transpuestas correctas.
+• 2 puntos si determina la matrix X de manera correcta.

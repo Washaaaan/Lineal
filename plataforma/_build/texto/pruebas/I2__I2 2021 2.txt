@@ -1,0 +1,190 @@
+PONTIFICIA UNIVERSIDAD CAT ´OLICA DE CHILE
+FACULTAD DE MATEM´ATICAS
+DEPARTAMENTO DE MATEM´ATICA
+Interrogaci´ on 2 MAT1203 - 27 de octubre
+Esta prueba tiene 4 preguntas.
+Decida si las siguientes aﬁrmaciones son verdaderas o falsas. Si es verdadera, demu´ estrela.
+Si es falsa d´ e un contraejemplo.
+1. a) Sean A y B matrices de 2× 2. Si A y B son antisim´ etricas, entoncesAB es
+antisim´ etrica.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Sea A =
+[ 0 1
+−1 0
+]
+y B =
+[ 0 1
+−1 0
+]
+, entonces AB =
+[−1 0
+0 −1
+]
+.
+A y B son antisim´ etricas, pero:
+−(AB)T =
+[ 1 0
+0 1
+]
+⁄= AB.
+b) Sea A una matriz cuadrada. Si C(A)⊆ Nul(A− I), entonces A2 = A.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Como C(A)⊆ Nul(A− I), entonces para todo v∈ C(A) se tiene que v∈
+Nul(A− I).
+En particular si v es una columna de A, se tiene que v∈ Nul(A− I).
+Entonces (A− I)v = ⃗0 para todo vector v columna de A.
+Por deﬁnici´ on de producto de matrices se tiene (A− I)A es la matriz nula.
+Es decir A2− A es la matriz nula, luego A2 = A.
+12. a) Sea L una matriz de 4× 2 tal que C(L) = Gen
+
+
+
+
+
+1
+0
+0
+0
+
+ ,
+
+
+0
+0
+0
+1
+
+
+
+
+. Si u y v
+son vectores tales que Lu = Lv, entonces u = v.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Como L es de 4× 2 su rango m´ aximo es 2.
+Como C(L) est´ a generado por dos vectores L.I. (can´ onicos), entoncesL es in-
+yectiva.
+Por lo tanto si Lu = Lv se tiene que u = v.
+b) Sea A una matriz de 2×2. Si A− I es invertible, entonces A2 es la matriz nula.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Si A = 2I =
+[ 2 0
+0 2
+]
+, entonces A− I =
+[ 1 0
+0 1
+]
+que es invertible.
+A2 = 4I =
+[ 4 0
+0 4
+]
+es distinta a la matriz nula.
+23. a) Sea P una matriz tal que P 2 = P . Si R = 2P− I, entonces R es invertible.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Tomando R2 = (2P− I)(2P− I) = 4P 2− 2P− 2P + I.
+Pero P 2 = P , entonces R2 = 4P− 2P− 2P + I = I.
+Luego R2 = I y R es invertible. De hecho su inversa es R.
+b) Sean A y B matrices de 2 × 2. Si B es la matriz que resulta de sumarle a
+la segunda columna cinco veces la primera columna en la matriz A, entonces[ 1 5
+0 1
+]
+B = A.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Si A =
+[ 1 0
+0 1
+]
+, entonces B =
+[ 1 0 + 5 · 1
+0 1 + 5 · 0
+]
+=
+[ 1 5
+0 1
+]
+.
+Luego
+[ 1 5
+0 1
+]
+B =
+[ 1 10
+0 1
+]
+⁄= A.
+34. a) Sea A =
+
+
+a1 a2 a3
+a4 a5 a6
+a7 a8 a9
+
+ con a1,··· , a9∈ R.
+Si las matrices [ a1 ] y
+[ a1 a2
+a4 a5
+]
+son invertibles, entonces A admite A = LU.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Como [ a1 ] es invertible, entonces a1⁄= 0 por lo tanto la primera ﬁla de A no
+necesita ser intercambiada con ninguna ﬁla para obtener U.
+Adem´ as es posible hacer la operaci´ on elementalF2→ F2− a4
+a1
+F 1 y se obtiene:
+
+
+a1 a2 a3
+0 a5− a4
+a1
+a2 a6− a4
+a1
+a3
+a7 a8 a9
+
+ .
+Pero como
+[ a1 a2
+a4 a5
+]
+es invertible se tiene que a5− a4
+a1
+a2 es diatinto de cero,
+luego la segunda ﬁla de A no necesita ser intercambiada con ninguna ﬁla para
+obtener U.
+Finalmente, como la ﬁla 1 y la ﬁla 2 no necesitan ser intercambiadas, entonces
+la ﬁla 3 no necesita ser intercambiada para obtener U y la matriz A admite la
+descomposici´ onA = LU.
+4b) Sea A una matriz de 3× 3 que admite A = LU. Si L =
+
+
+1 0 0
+0 1 0
+0 3 1
+
+, entonces
+el primer elemento de la tercera ﬁla de A es cero.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Dado que L =
+
+
+1 0 0
+0 1 0
+0 3 1
+
+, entonces para obtener U s´ olo se hizo la operaci´ on
+elemental F3→ F3 + (−2)F2.
+Como U est´ a en forma escalonada, la segunda ﬁla no puede tener pivotes en la
+primera columna, luego el primer elemento de la segunda ﬁla de A es cero.
+Por lo tanto en la operaci´ on elemental F3→ F3 + (−2)F2, no fue alterado el
+primer elemento de la tercera ﬁla y, de nuevo, comoU est´ a en forma escalonada,
+entonces ese elemento debe ser cero.
+5

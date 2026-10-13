@@ -1,0 +1,86 @@
+
+----- pagina 1 -----
+Clase 16 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 8
+----- pagina 2 -----
+Recordatorio
+Una matriz es un arreglo rectangular de números reales, A = [aij]
+Las matrices se pueden sumar y multiplicar por escalar.
+Multiplicar AB significa multiplicar A por cada columna de B.
+Se puede multiplicar AB con el producto punto entre filas de A y
+columnas de B.
+AT se obtiene intercambiando filas con columnas de A
+2 / 8
+----- pagina 3 -----
+La inversa de una matriz
+Inversa de una matriz
+Se dice que una matriz A de n × n es invertible si existe otra matriz C de
+n × n tal que
+CA = I y AC = I
+donde I = In, la matriz identidad de n × n. En este caso, C es una inversa
+de A.
+A solo puede tener una única inversa, y se denota mediante A−1
+3 / 8
+----- pagina 4 -----
+La inversa de una matriz
+Ejemplo: Sean
+A =
+[ 2 5
+−3 −7
+]
+y C =
+[ −7 −5
+3 2
+]
+Compruebe si C es la inversa de A.
+4 / 8
+----- pagina 5 -----
+La inversa de una matriz
+Teorema
+Sea A =
+[ a b
+c d
+]
+. Si ad − bc ̸= 0, entonces A es invertible y
+A−1 = 1ad − bc [ d −b−c a ]
+Si ad − bc = 0, entonces A no es invertible.
+Ejemplo: Encuentre la inversa de:
+A =
+[ 3 4
+5 6
+]
+5 / 8
+----- pagina 6 -----
+La inversa de una matriz
+Teorema
+Si A es una matriz invertible de n × n, entonces, para cada b en Rn, la
+ecuación Ax = b tiene la solución única x = A−1b.
+Nota: Sólo las matrices cuadradas pueden tener inversas.
+Ejemplo: Use la inversa de la matriz A del ejemplo anterior para resolver
+el sistema:
+3x1 + 4x2 = 3
+5x1 + 6x2 = 7
+6 / 8
+----- pagina 7 -----
+La inversa de una matriz
+Teorema
+Si A es una matriz invertible, entonces A−1 es invertible y
+(A−1)−1 = A
+Si A y B son matrices invertibles de n × n entonces también lo es AB,
+y la inversa de AB es el producto de las inversas de A y B en el orden
+opuesto. Es decir,
+(AB)−1 = B−1A−1
+Si A es una matriz invertible, también lo es AT, y la inversa de AT es
+la transpuesta de A−1. Es decir,
+(AT)−1 = (A−1)T
+7 / 8
+----- pagina 8 -----
+La inversa de una matriz
+Nota: El producto de matrices invertibles de n × n es invertible, y la
+inversa es el producto de sus inversas en orden opuesto.
+8 / 8

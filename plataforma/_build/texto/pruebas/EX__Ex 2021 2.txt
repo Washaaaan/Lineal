@@ -1,0 +1,273 @@
+PONTIFICIA UNIVERSIDAD CAT ´OLICA DE CHILE
+FACULTAD DE MATEM´ATICAS
+DEPARTAMENTO DE MATEM´ATICA
+Examen MAT1203 - 17 de diciembre
+1. a) Sean A y B matrices. Si Im(B) est´ a contenida en Nul(A), entonces el producto
+AB es la matriz nula.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Sea v un vector columna de B. Se tiene que v∈ Im(B).
+Como Im(B) est´ a contenida en Nul(A), entonces v∈ Nul(A).
+Luego Av es el vector cero.
+Entonces AB es una matriz tal que todas sus columnas son el vector cero, por
+lo tanto es la matriz nula.
+1b) En el espacio de los polinomios con coeﬁcientes reales de grado menor o igual
+a tres, el conjunto
+{1− t + t3, 1 + t + 2t2− t3, 1− t− 4t2, 3t3},
+es un conjunto linealmente independiente.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Se construye una matriz cuyas columnas son los vectores coordenados de los
+polinomios del conjunto respecto a la base can´ onica{1, t, t2, t3}:
+
+
+1 1 1 0
+−1 1 −1 0
+0 2 −4 0
+0 0 0 3
+
+.
+Se escalona esta matriz para contar el n´ umero de pivotes:
+
+
+1 1 1 0
+−1 1 −1 0
+0 2 −4 0
+0 0 0 3
+
+∼
+
+
+1 0 0 0
+0 1 0 0
+0 0 1 0
+0 0 0 1
+
+.
+Como quedan 4 pivotes, los vectores coordenados de los polinomios son L.I.
+por lo tanto los polinomios del conjunto son L.I.
+22. a) Sea A matriz cuadrada de 2× 2. Si Det( A) = 5, entonces Det(3 A) = 15.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Si A =
+[ 5 0
+0 1
+]
+se tiene que Det( A) = 5.
+Entonces 3A =
+[ 15 0
+0 3
+]
+y Det(3A) = 45⁄= 15.
+b) Sea a∈ R. Si a > 1, entonces la matriz
+
+
+a 1 1
+1 a 1
+1 1 1
+
+ es deﬁnida positiva.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Los determinantes de las submatrices principales son:
+Det(A1) = a, Det(A2) = a2− 1 y Det( A3) = (a− 1)2.
+Si a > 1 entonces a > 0, a2− 1 > 0 y ( a− 1)2 > 0.
+Por lo tanto A es deﬁnida positiva.
+33. a) Sean a, b, c∈ R y A =
+[ a b
+0 c
+]
+. Si b⁄= 0, entonces A es diagonalizable.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Sea A =
+[ 0 1
+0 0
+]
+con a = c = 0 y b⁄= 0.
+Det(A− xI) = x2 y entonces A tiene solo el valor propio 0.
+El espacio propio es Nul( A− 0I) = Nul(A) = Gen
+{( 1
+0
+)}
+.
+Como solo hay un vector propio L.I. y la matriz es de 2× 2, entonces la matriz
+no es diagonalizable.
+b) Sea A una matriz de 3× 3. Si
+A
+
+
+1
+1
+1
+
+ =
+
+
+2
+2
+2
+
+ y A
+
+
+1
+1
+2
+
+ = A
+
+
+0
+1
+0
+
+ =
+
+
+0
+0
+0
+
+ ,
+entonces A es diagonalizable.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Del enunciado el vector
+
+
+1
+1
+1
+
+ es vector propio asociado al valor propio 2 y
+los vectores
+
+
+1
+1
+2
+
+ y
+
+
+0
+1
+0
+
+ son vectores propios asociados al valor propio 0.
+Entonces se tiene tres vectores propios L.I. pues:
+
+
+1 1 0
+1 1 1
+1 2 0
+
+ tiene determinante−1⁄= 0.
+44. a) Sea U subespacio de dimensi´ on 1 enR3. Si P es la matriz de proyecci´ on sobre
+U, entonces P es invertible.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Sea U = Gen
+
+
+
+
+
+1
+0
+0
+
+
+
+
+ subespacio de R3. U tiene dimensi´ on 1.
+Sea A la matriz cuyas columnas forman una base de U, es decir A =
+
+
+1
+0
+0
+
+.
+Entonces la matriz de proyecci´ on sobreU es P = A(AT A)−1AT :
+P =
+
+
+1
+0
+0
+
+ (1)−1[ 1 0 0 ] =
+
+
+1 0 0
+0 0 0
+0 0 0
+
+,
+que es no invertible pues tiene determinante 0.
+5b) El m´ ınimo de la norma entre el vector cero y todos los vectores del hiperplano
+de ecuaci´ onx1 + x2− x4 = 1, es 1.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+El m´ ınimo de la norma entre el vector cero y todos los vectores del hiperplano de
+ecuaci´ onx1 + x2− x4 = 1, se escribe como:
+m´ ın
+x1+x2−x4=1
+‖‖‖‖‖‖‖‖ x1x2x3x4 − 0000 ‖‖‖‖‖‖‖‖ .
+Es decir:
+m´ ın
+‖‖‖‖‖‖‖‖ x1x2x3x1 + x2− 1 − 0000 ‖‖‖‖‖‖‖‖ .
+Escribiendo el problema como un problema de m´ ınimos cuadrados queda:
+m´ ın
+‖‖‖‖‖‖‖‖ 1 0 00 1 00 0 11 1 0  x1x2x3 − 0001 ‖‖‖‖‖‖‖‖ .
+Entonces el sistema inconsistente es Ax = b con A =
+
+
+1 0 0
+0 1 0
+0 0 1
+1 1 0
+
+ y b =
+
+
+0
+0
+0
+1
+
+.
+Se resuelve AT A
+
+
+x1
+x2
+x3
+
+ = AT b:
+
+
+2 1 0
+1 2 0
+0 0 1
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+1
+1
+0
+
+.
+6La soluci´ on esx1 = 13, x2 = 13 y x3 = 0. Reemplazando:
+‖‖‖‖‖‖‖‖ 1 0 00 1 00 0 11 1 0  1/31/30 − 0001 ‖‖‖‖‖‖‖‖ =√13⁄= 1.
+7

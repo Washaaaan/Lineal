@@ -1,0 +1,128 @@
+
+----- pagina 1 -----
+Clase 36 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 9
+----- pagina 2 -----
+Recordatorio
+Si W es un subespacio vectorial de Rn y y ∈ Rn es la proyección
+ortogonal de y sobre W.
+Eso significa descomponer y = ˆy + z, donde ˆy ∈ W y z ∈ W⊥.
+Para encontrar proy W(y) necesitamos una base ortogonal de W.
+2 / 9
+----- pagina 3 -----
+Proceso de Gram-Schmidt
+Ejemplo: Sea W = Gen{x1, x2}, donde x1 =
+
+
+3
+6
+0
+
+ y x2 =
+
+
+1
+2
+2
+
+.
+Encuentre la proyección de y =
+
+
+0
+4
+2
+
+ sobre W.
+3 / 9
+----- pagina 4 -----
+Proceso de Gram-Schmidt
+Para encontrar una base ortogonal de
+W = Gen
+{
+(x1, x2)
+}
+dejamos
+v1 = x1
+y
+v2 = x2 − p,
+donde p = proyv1(x2).
+4 / 9
+----- pagina 5 -----
+Proceso de Gram-Schmidt
+Ejemplo: Sean
+x1 =
+
+
+1
+1
+1
+1
+
+ , x2 =
+
+
+0
+1
+1
+1
+
+ , x3 =
+
+
+0
+0
+1
+1
+
+
+Entonces {x1, x2, x3} es linealmente independiente y genera un subespacio
+W de tres dimensiones de R4. Construya una base ortogonal para W.
+5 / 9
+----- pagina 6 -----
+Proceso de Gram-Schmidt
+Teorema: El proceso de Gram-Schmidt
+Dada una base {x1, . . . ,xp} para un subespacio W ̸= {0} de Rn, defina
+v1 = x1
+v2 = x2 − proyv1(x2)
+v3 = x3 − proy{v1,v2}(x3)
+...
+vp = xp − proy{v1,...,vp−1}(xp)
+Entonces {v1, . . . ,vp} es una base ortogonal para W. Además,
+Gen{v1, . . . ,vk} = Gen{x1, . . . ,xk} para 1 ≤ k ≤ p
+6 / 9
+----- pagina 7 -----
+Proceso de Gram-Schmidt
+Definición: Base Ortonormal
+Para construir una base ortonormal, simplemente se normaliza cada vector
+vk obtenido mediante el proceso de Gram-Schmidt:
+uk = 1||vk|| vk
+Ejemplo: Encuentre una base ortonormal para el espacio generado por los
+vectores del ejemplo anterior.
+7 / 9
+----- pagina 8 -----
+Factorización QR
+Teorema: Factorización QR
+Si A es una matriz de m × n con columnas linealmente independientes,
+entonces A se puede factorizar como A = QR, donde Q es una matriz de
+m × n cuyas columnas forman una base ortonormal para Col A, y R es una
+matriz triangular superior invertible de n × n con entradas positivas en su
+diagonal.
+8 / 9
+----- pagina 9 -----
+Factorización QR
+Ejemplo: Encuentre una factorización QR de A =
+
+
+1 0 0
+1 1 0
+1 1 1
+1 1 1
+
+.
+9 / 9

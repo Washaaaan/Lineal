@@ -1,0 +1,813 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2015
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on de la Interrogaci´ on N◦ 1
+1. [Problema 1.4.16 del texto]
+Sean A =
+
+
+1 −2 −1
+−2 2 0
+4 −1 3
+
+ y b =
+
+
+b1
+b2
+b3
+
+.
+a) Demuestre que existe al menos un b∈ R3 para el que la la ecuaci´ on Ax = b no tiene
+soluci´ on.
+Soluci´ on:
+Para esto tomemos la matriz ampliada asociada
+
+
+1 −2 −1 b1
+−2 2 0 b2
+4 −1 3 b3
+
+
+Aplicando operaciones elementales ﬁla podemos ver que
+
+
+1 −2 −1 b1
+−2 2 0 b2
+4 −1 3 b3
+
+∼
+
+
+1 −2 −1 b1
+0 −2 −2 b2 + 2b1
+0 7 7 b3− 4b1
+
+∼
+
+
+1 −2 −1 b1
+0 −2 −2 b2 + 2b1
+0 0 0 3b1 + 72b2 +b3
+
+
+Ahora en la ´ ultima matriz es f´ acil ver que para
+b =
+
+
+1
+0
+0
+
+
+(o cualquier b tal que 3b1 + 72b2 +b3⁄= 0) la ecuaci´ onAx = b no tiene soluciones.
+Puntaje:
+Por usar alg´ un m´ etodorazonable para encontrar un b como el buscado, 2 ptos.
+Nota: El m´ etodo del tanteoNO ES razonable.
+Por exhibir un b como el pedido, 1 pto.
+b) Describa el conjunto de todos los b∈ R3 para los cuales la ecuaci´ on Ax = b s´ ı tiene
+soluci´ on.
+Primera Soluci´ on:
+Dado lo desarrollado en la parte anterior podemos ver que los vectores para los cuales la ecuaci´ on
+tiene soluci´ on satisfacen
+3b1 + 72b2 +b3 = 0
+(o, equivalentemente, 6b1 + 7b2 + 2b3 = 0) que representa un plano por el origen.O sea, el conjunto pedido es
+
+
+
+
+
+b1
+b2
+b3
+
+ : 3b1 + 72b2 +b3 = 0
+
+
+ =
+
+
+
+
+
+b1
+b2
+b3
+
+ : 6b1 + 7b2 + 2b3 = 0
+
+
+.
+Segunda Soluci´ on:
+Vectorialmente, si despejamos b3 podemos describirlo con
+b =b1
+
+
+1
+0
+−3
+
+ +b2
+
+
+0
+1
+− 72
+
+
+Luego el conjunto que buscamos es
+Gen
+
+
+
+
+
+1
+0
+−3
+
+,
+
+
+0
+1
+− 72
+
+
+
+
+ = Gen
+
+
+
+
+
+1
+0
+−3
+
+,
+
+
+0
+2
+−7
+
+
+
+
+
+Tercera Soluci´ on:
+Dado que
+Ax =
+
+
+1 −2 −1
+−2 2 0
+4 −1 3
+
+
+
+
+x1
+x2
+x3
+
+ =x1
+
+
+1
+−2
+4
+
+ +x2
+
+
+−2
+2
+−1
+
+ +x3
+
+
+−1
+0
+3
+
+,
+otra forma de describir el conjunto pedido es como “el conjunto generado por los vectores columna
+de la matriz”, es decir,
+Gen
+
+
+
+
+
+1
+−2
+4
+
+,
+
+
+−2
+2
+−1
+
+,
+
+
+−1
+0
+3
+
+
+
+
+.
+Cuarta Soluci´ on:
+Finalmente, un reﬁnamiento de la soluci´ on anterior consiste en darse cuenta de que el tercer vector
+columna de la matriz (y en realidadcualquiera de los tres vectores columna) es combinaci´ on lineal
+de los otros dos, por lo que el conjunto pedido puede ser descrito como
+Gen
+
+
+
+
+
+1
+−2
+4
+
+,
+
+
+−2
+2
+−1
+
+
+
+
+ = Gen
+
+
+
+
+
+1
+−2
+4
+
+,
+
+
+−1
+0
+3
+
+
+
+
+ = Gen
+
+
+
+
+
+−2
+2
+−1
+
+,
+
+
+−1
+0
+3
+
+
+
+
+.
+Puntaje:
+Por usar alg´ un m´ etodo razonable para hallar la descripci´ on del conjunto, 1 punto.
+Ejemplos de m´ etodos “razonables”:
+• hacer referencia a la parte (a) del ejercicio,
+• despejar b3 en t´ erminos deb1 y b2,
+• mencionar (materia vista en clases) que las columnas de A generan el conjunto soluci´ on
+del sistema, etc.
+Por llegar a cualquiera de las descripciones dadas (o alguna otra correcta): 2 puntos.
+A lo anterior (m´ aximo 3 puntos en cada parte de la pregunta) se le suma el punto base.2. [Problema 1.7.10 del texto]
+Sean
+v1 =
+
+
+1
+−2
+3
+
+, v2 =
+
+
+2
+5
+−1
+
+, v3 =
+
+
+10
+7
+h
+
+.
+¿Para qu´ e valores deh est´ a el vectorv3 en el Gen{v1, v2}?
+Soluci´ on:
+v3 pertenece a Gen {v1, v2} si y solo si el sistema de ecuaciones (presentado como ecuaci´ on
+vectorial)
+x1v1 +x2v2 = v3
+tiene soluciones.
+La matriz extendida asociada a este sistema de ecuaciones es
+
+
+1 2 10
+−2 5 7
+3 −1 h
+
+.
+Usando operaciones elementales podemos ver que
+
+
+1 2 10
+−2 5 7
+3 −1 h
+
+∼
+
+
+1 2 10
+0 9 27
+0 −7 h− 30
+
+∼
+
+
+1 2 10
+0 9 27
+0 0 h− 9
+
+
+Ahora es f´ acil ver que el sistema tiene soluciones si y solo sih = 9.
+Puntaje:
+Por transformar la condici´ onv3∈ Gen{v1, v2} en t´ erminos de un sistema de ecuaciones, o
+como ecuaci´ on vectorial, o como ecuaci´ on matricial: 2 puntos.
+Por llevar el sistema mencionado en el punto anterior a forma escalonada, de manera tal
+que quede en evidencia en qu´ e casos hay soluci´ on y en cu´ ales no, 3 puntos.
+Por interpretar el resultado anterior y concluir que el sistema tiene soluciones (y por lo
+tanto la pregunta de si v3∈ Gen{v1, v2}) si y solo si h = 9, 1 punto.
+A lo anterior se le suma el punto base.3. [Problema 1.8.36 del texto]
+Sea T : Rn → Rn una transformaci´ on lineal. Sean u, v dos vectores de Rn, y suponga que
+{u, v} es un conjunto linealmente independiente, pero {T (u),T (v)} es un conjunto linealmente
+dependiente.
+Demuestre que T (x) = 0 tiene una soluci´ on no trivial.
+Soluci´ on:
+Por ser {u, v} l.i., debe tenerse u⁄= 0⁄= v, por lo que si T (u) = 0 o T (v) = 0 entonces
+claramente la ecuaci´ on dada tiene una soluci´ on no trivial, por lo que podemos centrarnos en el
+caso en que T (u)⁄= 0⁄=T (v).
+Por ser{T (u),T (v)} l.d., existe una combinaci´ on lineal no trivial (o sea, donde α y β no son
+ambos cero) αT (u) +βT (v) = 0.
+Pero entonces T (αu +βv) = αT (u) +βT (v) = 0, o sea, el vector w =αu +βv es soluci´ on de
+la ecuaci´ onT (x) = 0.
+Como α y β no son ambos cero, w =αu +βv es una combinaci´ on no trivial deu y v. Ya que
+{u, v} es l.i., w⁄= 0, por lo que w es una soluci´ on no trivial de la ecuaci´ onT (x) = 0.
+Puntaje:
+Por argumentar que existe una combinaci´ on lineal no trivial deT (u) y T (v), 1 punto.
+Por exhibir una soluci´ on no trivial de la ecuaci´ onT (x) = 0 (en nuestro ejemplo, w), 2
+puntos.
+Por argumentar que dicho vector es efectivamente soluci´ on de la ecuaci´ on, 1,5 puntos.
+Por argumentar que dicho vector es ⁄= 0, 1,5 puntos.
+A lo anterior se le suma el punto base.
+Nota: Algunos plantean una soluci´ on m´ as o menos como la siguiente:
+“Como u y v son vectores l.i., puedo escribir la matriz asociada a la matriz comoA = [T (u)T (v)],
+y resolver el sistema T (x) = 0 ser´ a equivalente a resolverAx = 0. Dado que T (u) y T (v) son
+l.d., la matriz A tendr´ a una variable libre en su forma reducida, por lo que habr´ a soluciones no
+nulas para Ax = 0 y por ende no nulas para T (x) = 0”.
+Esto no es correcto, ya que el paso “habr´ a soluciones no nulas paraAx = 0 y por ende no nulas
+para T (x) = 0” supone justamente lo que se desea demostrar.
+La matriz A reducida no entrega directamente informaci´ on sobreT .4. [Problema 1.9.22 del texto]
+Sea T : R2→ R3 una transformaci´ on lineal tal que
+T
+([ x1
+x2
+])
+=
+
+
+2x1−x2
+−3x1 +x2
+2x1− 3x2
+
+.
+Encuentre x tal que
+T (x) =
+
+
+0
+−1
+−4
+
+.
+Soluci´ on:
+De la deﬁnici´ on deT , vemos que T
+([ x1
+x2
+])
+=A
+[ x1
+x2
+]
+donde A es la matriz
+A =
+
+
+2 −1
+−3 1
+2 −3
+
+.
+As´ ı, el problema planteado corresponde a encontrar una soluci´ on del sistema
+
+
+2 −1
+−3 1
+2 −3
+
+
+[ x1
+x2
+]
+=
+
+
+0
+−1
+−4
+
+,
+o sea, al sistema que tiene por matriz aumentada a
+
+
+2 −1 0
+−3 1 −1
+2 −3 −4
+
+.
+Llevando esta matriz a forma escalonada reducida, vemos que
+
+
+2 −1 0
+−3 1 −1
+2 −3 −4
+
+∼
+
+
+1 0 1
+0 1 2
+0 0 0
+
+,
+de donde el sistema planteado tiene por ´ unica soluci´ on ax1 = 1, x2 = 2; vale decir, el ´ unicox
+que cumple la condici´ on pedida es
+x =
+[ 1
+2
+]
+.
+Puntaje:
+Por plantear el problema en t´ erminos de encontrar la soluci´ on de un sistema, 1 punto.
+Por encontrar la matriz aumentada del sistema, 1 punto.
+Por llevar la matriz aumentada a su forma escalonada reducida, 2 puntos.
+Por interpretar la soluci´ on del sistema en t´ erminos del problema planteado originalmente,
+2 puntos.
+A lo anterior se le suma el punto base.Nota: Algunos resuelven esta pregunta simplemente resolviendo el sistema de ecuaciones “con
+los m´ etodos del colegio”, por ejemplo despejando x1 en una ecuaci´ on, resolviendo otra y com-
+probando que la tercera ecuaci´ on tambi´ en se satisface. Este m´ etodo es correcto, por lo que si no
+hay otros errores debe tener puntaje m´ aximo.
+5. [Problema 2.1.25 del texto]
+Suponga que A es una matriz de m×n, y que existen las matrices C y D de n×m, tales que
+CA =In y AD =Im. Demuestre que m =n y C =D.
+Soluci´ on:
+Consideremos el producto de las tres matricesC,A yD en ese orden, o sea,CAD. Este producto
+puede, en principio, ser calculado de dos maneras distintas, a saber ( CA)D y C(AD).
+Pero sabemos que el producto de matrices es asociativo, porlo que ambas formas de calcular
+este producto dan el mismo resultado; en otras palabras, ( CA)D = C(AD). Pero por hip´ otesis
+CA =In y AD =Im, por lo que tenemos
+(CA)D = InD =D
+=
+C(AD) = CI m =C
+As´ ı,C =D.
+Para probar que m = n, vemos que la ecuaci´ onAx = 0 tiene ´ unicamente la soluci´ on trivial
+x = 0 (en efecto: si Ax = 0 entoncesC(Ax) =C0 por lo que (CA)x =C0, de donde x =Inx =
+C0 = 0).
+Pero entonces (Teorema 2, sec. 1.2) la ecuaci´ on Ax = 0 no tiene variables libres, o sea, al
+escalonar A en cada columna hay un pivote. Esto implica que A tiene —al menos— tantas ﬁlas
+como columnas, o sea, m≥n.
+Por otra parte, dado b∈ Rm, la ecuaci´ onAx = b debe tener al menos una soluci´ on (en efecto:
+b =Imb = (AD)b =A(Db)
+por lo que el vector x =Db es tal que Ax = b).
+Pero entonces (Teorema 4, sec. 1.4) la matriz A tiene un pivote en cada ﬁla. Esto implica que A
+tiene —al menos— tantas columnas como ﬁlas , o sea, m≤n.
+Ya quem≥n y m≤n, concluimos que m =n.
+Puntaje:
+Por demostrar que C =D, 2 puntos.
+Por demostrar que m =n, 4 puntos.
+En particular, si siguen un esquema similar al aqu´ ı presentado, estos 4 puntos se dividen
+en dos partes: por probar que m≤n, 2 puntos, y por probar que m≥n, 2 puntos.
+A lo anterior se suma el punto base.6. [Problema 2.3.28 del texto]
+SeanA yB dos matrices de n×n. Demuestre que si AB es invertible, entoncesB tambi´ en lo es.
+Primera Soluci´ on:
+Por ser AB invertible, existe una matriz F tal que F (AB) =I.
+Pero entonces (FA )B =I, por lo que B es invertible.
+Nota: en ambos pasos usamos la equivalencia (a) ⇐⇒ (j) del teorema 8.
+Segunda Soluci´ on:
+Por ser AB invertible, la ecuaci´ onABx = 0 tiene solamente la soluci´ on trivial.
+Pero entonces la ecuaci´ onBx = 0 debe tener solamente la soluci´ on trivial, ya que siv es soluci´ on
+no trivial de Bx = 0 entonces es soluci´ on no trivial deABx = 0.
+En el fondo, demostramos el contrarrec´ ıproco: siB no es invertible, entonces AB tampoco lo es.
+Tercera Soluci´ on:
+Por ser AB invertible, la transformaci´ on linealx→ ABx es uno a uno.
+Pero entonces la transformaci´ on linealx→ Bx debe ser uno a uno, ya que de no ser as´ ı, dos
+vectores distintos v1 y v2 tales que Bv1 = Bv2 tambi´ en satisfacenABv1 = ABv2.
+En el fondo, demostramos el contrarrec´ ıproco: siB no es invertible, entonces AB tampoco lo es.
+Puntaje:
+En cualquiera de las soluciones (u otras correctas que se les ocurran a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada (por ejemplo, directa o por
+contradicci´ on), 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.
+Nota: Los alumnos que usaron determinantes para responder la pregunta recibieron 0 puntos,
+ya que determinantes es una materia que ni siquiera se hab´ ıa mencionado al momento de dar la
+I1.
+Si alguien hubiera usado formas bilineales, transformaciones semi-lineales o espacios vectoriales
+de dimensi´ on inﬁnita para responder esta pregunta (u otra) el criterio ser´ ıa el mismo.7. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) [Problema 1.9.23 a del texto]
+Si A es una matriz de 3 × 2, entonces la transformaci´ onx→A x no puede ser uno a uno.
+b) [Problema Complementario 1, cap. 1g del texto]
+Si A es una matriz de m×n y la ecuaci´ onA x = b es consistente para alg´ unb∈ Rm,
+entonces las columnas de A generan a Rm.
+Soluci´ on:
+a) Falso.
+Contraejemplo: cualquier matriz con dos columnas linealmente independientes, argumen-
+tando que no poseen variables libres y as´ ı tiene soluci´ on ´ unica para cualquier elemento del
+recorrido.
+b) Falso.
+Contraejemplo: cualquier matriz con menos de m columnas l.i., ya que la ecuaci´ onAx = 0
+es siempre consistente.Tambien pueden argumentar que para una matriz dada por ellos la
+ecuaci´ on matricialAx =b es inconsitente para alg´ unb.
+Puntaje:
+En cada parte, se dan 3 puntos por la respuesta correcta con una justiﬁcaci´ on adecuada.
+En particular, en este caso cada respuesta FALSO debe ir acompa˜ nada de un contraejemplo que
+efectivamente refute la aﬁrmaci´ on.
+As´ ı, responder FALSO sin realmente justiﬁcar obtiene 0 puntos de 3.
+Responder FALSO con una justiﬁcaci´ on muy vaga (por ejemplo, en la parte (b) dar como argu-
+mento que “debe ser consistente para todo b), obtiene 1 punto de 3.
+Si explican MUY bien C´OMO construir un contraejemplo, sin llegar a dar uno espec´ ıﬁco obtienen
+2 puntos de 3.
+Nota: si mencionan el hecho de que “la matriz podr´ ıa tener ﬁlas l.d.” lo consideramos como
+indicio de que entienden lo que se necesita para construir el contraejemplo, y se asign´ o 2 puntos
+de 3.8. Exprese la matriz
+A =
+
+
+1 −2 0
+0 1 1
+0 3 1
+
+
+como el producto de matrices elementales. Escriba cada una de las matrices elementales en forma
+expl´ ıcita con todos sus elementos.
+Soluci´ on:
+La idea general para resolver este problema es:
+Mediante operaciones elementales ﬁla llevamosA a la identidad. Esto equivale a multiplicar
+por la izquierda por matrices elementales.
+Obtenemos entonces Ep··· E2 E1A =I, y por lo tanto A−1 =Ep··· E2 E1
+EntoncesA = (Ep··· E2 E1)−1 = (E1)−1 (E2)−1··· (Ep)−1
+A =
+
+
+1 −2 0
+0 1 1
+0 3 1
+
+ F3←F3−3F2−→
+
+
+1 −2 0
+0 1 1
+0 0 −2
+
+
+F3←− 12 F3
+−→
+
+
+1 −2 0
+0 1 1
+0 0 1
+
+
+F2←F2−F3
+−→
+
+
+1 −2 0
+0 1 0
+0 0 1
+
+
+F1←F1+2F2
+−→
+
+
+1 0 0
+0 1 0
+0 0 1
+
+
+Entonces tenemos en t´ erminos matriciales:
+E4E3E2E1A =
+
+
+1 2 0
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 −1
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −12
+
+
+
+
+1 0 0
+0 1 0
+0 −3 1
+
+A =I (1)
+Por lo tanto
+A−1 =
+
+
+1 2 0
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 −1
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −12
+
+
+
+
+1 0 0
+0 1 0
+0 −3 1
+
+ (2)Entonces
+A =
+
+
+
+
+1 2 0
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 −1
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −12
+
+
+
+
+1 0 0
+0 1 0
+0 −3 1
+
+
+
+
+−1
+=
+
+
+
+
+1 0 0
+0 1 0
+0 −3 1
+
+
+
+
+−1
+
+
+
+1 0 0
+0 1 0
+0 0 −12
+
+
+
+
+−1
+
+
+
+1 0 0
+0 1 −1
+0 0 1
+
+
+
+
+−1
+
+
+
+1 2 0
+0 1 0
+0 0 1
+
+
+
+
+−1
+=
+
+
+1 0 0
+0 1 0
+0 3 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −2
+
+
+
+
+1 0 0
+0 1 1
+0 0 1
+
+
+
+
+1 −2 0
+0 1 0
+0 0 1
+
+
+Nota: Es posible realizar las operaciones elementales en un orden diferente y por lo tanto la
+factorizaci´ on que a la que se llegue puede ser distinta a la mostrada aqu´ ı.

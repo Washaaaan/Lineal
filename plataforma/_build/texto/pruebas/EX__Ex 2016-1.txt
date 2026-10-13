@@ -1,0 +1,917 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on y pauta de correcci´ on del Examen
+1. a) [Texto, S 12.5.60]
+Encuentre la ecuaci´ on cartesiana del plano formado por todos los puntos que
+equidistan de los puntos (1, 1,−2) y (2, 4, 1).
+Soluci´ on:
+Sea P el punto de coordenadas (x,y,z ).
+La distancia de P a (1, 1,−2) es
+√
+(x− 1)2 + (y− 1)2 + (z + 2)2, y la distancia
+de P a (2, 4, 1) es
+√
+(x− 2)2 + (y− 4)2 + (z− 1)2. Si P equidista de estos dos
+puntos entonces
+√
+(x− 1)2 + (y− 1)2 + (z + 2)2 =√(x− 2)2 + (y− 4)2 + (z− 1)2,
+de donde
+(x− 1)2 + (y− 1)2 + (z + 2)2 = (x− 2)2 + (y− 4)2 + (z− 1)2,
+lo que simpliﬁcado queda
+2x + 6y + 6z = 15.
+b) [Texto, S 12.4.50 a y b]
+Dados tres vectores no coplanaresv1, v2, v3 en R3, deﬁnimos los vectoresk1, k2, k3
+por
+k1 = v2× v3
+v1· (v2× v3), k2 = v3× v1v2· (v3× v1), k3 = v1× v2v3· (v1× v2).
+Demuestre que vi· ki = 1 para i = 1, 2, 3 y que vi· kj = 0. si i,j ∈{ 1, 2, 3} e
+i⁄=j.
+Soluci´ on:
+Seani,j ∈{ 1, 2, 3} tales quei⁄=j, y seak el tercer elemento de{1, 2, 3}. Vemos
+que
+vi· ki = vi· vj× vk
+vi· (vj× vk) = vi· (vj× vk)vi· (vj× vk) = 1.
+Adem´ as
+vi· kj = vi· vk× vi
+vj· (vk× vi) = vi· (vk× vi)vj· (vk× vi).
+Pero vk× vi es un vector perpendicular a vi, por lo que vi· (vk× vi) = 0, de
+donde vi· kj = 0.
+Otra forma de justiﬁcar que vi· kj = 0 es que vi· (vk× vi) es el determinante
+que tiene por columnas a vi, vk, vi; y como dos de estas columnas son iguales el
+determinante vale cero.Puntaje:
+1) Por calcular correctamente las distancias entre P (x,y,z ) y cada uno de
+los puntos dados: 0,5 puntos (en total, 1 punto por ambas distancias).
+Por plantear que ambas distancias deben ser iguales: 1 punto.
+Por llegar a la ecuaci´ oncartesiana del plano (la dada en la soluci´ on u
+otra equivalente): 1 punto.
+Si dan otra ecuaci´ on correcta del plano (param´ etrica, normal, etc.): 0,5
+puntos.
+2) Por mostrar que alg´ un parde vectores{vi, ki} satisface vi· ki = 1, 1
+punto.
+Por mostrar que alg´ un parde vectores{vi, kj} con i⁄= j satisface vi·
+kj = 0, 1 punto.
+Por mostrar que estas aﬁrmaciones en realidad se aplican a todos los
+posibles pares de vectores que nos interesan, se da el ´ ultimo punto (si
+solo generalizan una se da 0,5 puntos).
+A lo anterior se le suma el punto base.
+22. a) [Texto, 6.2.29]
+SeanU yV dos matrices ortogonales de n×n. Demuestre que UV es invertible
+y que su inversa es (UV )T .
+Soluci´ on:
+Para probar lo pedido basta probar que ( UV )(UV )T =I.
+En efecto:
+Que U y V sean ortogonales signiﬁca que UU T =VV T =I, por lo que
+(UV )(UV )T = (UV )(V TU T ) =U(VV T )U T =UIU T =UU T =I.
+b) [Texto, 6.2.25]
+Demuestre que una matriz B de n×n es ortogonal si y solo si, para todo par
+de vectores u, v∈ Rn, se cumple u· v = (Bu)· (Bv).
+Soluci´ on:
+⇒) Si B es ortogonal entonces BTB =I, de donde, dados u, v∈ Rn, se tiene
+(Bu)·(Bv) = (Bu)T (Bv) = (uTBT )(Bv) = uT (BTB)v = uTIv = uTv = u·v.
+⇐) Si u· v = (Bu)· (Bv) para todo par de vectores u, v∈ Rn, entonces en
+particular ei· ej = (Bei)· (Bej) (donde ei es el i-´ esimo vector de la base
+can´ onica, o sea, lai-´ esima columna de la matriz identidad).
+Pero —si llamamos ci a la i-´ esima columna deB— esto signiﬁca que
+ci = cj = (Bei)· (Bej) = ei· ej =
+{
+1 si i =j,
+0 si i⁄=j,
+por lo queB tiene columnas ortonormales, o sea,B es una matriz ortogonal.
+Puntaje:
+1) Por dar una demostraci´ on correcta (esta, u otra), 3 puntos.
+Si la demostraci´ on est´ a esencialmente buena, pero tiene algunos errores
+menores, 2 puntos.
+2) En cada direcci´ on (⇒ o⇐):
+Por dar una demostraci´ on correcta (esta, u otra), 1,5 puntos.
+Si la demostraci´ on est´ a esencialmente buena, pero tiene algunos errores
+menores, 1 punto.
+A lo anterior se le suma el punto base.
+33. [Texto, 6.3.12; 6.4.11, 15]
+Sea y =
+
+
+2
+1
+−3
+4
+
+, y sea W el espacio columna de la matriz A =
+
+
+−1 4
+2 −1
+1 0
+−2 3
+
+.
+a) Encuentre una base ortogonal para W .
+b) Determine el punto de W m´ as cercano ay.
+c) Sea Q la matriz cuyas columnas son (en orden) los elementos de la base encon-
+trada en (a). Encuentre una matriz R triangular superior tal que A =QR.
+Soluci´ on:
+a) Para encontrar una base ortogonal {v1, v2} de W , aplicamos Gram-Schmidt al
+conjunto{(−1, 2, 1,−2), (4,−1, 0, 3)}. Para ello, debemos:
+Tomar v1 = (−1, 2, 1,−2).
+Considerar p la proyecci´ on ortogonal de (4,−1, 0, 3) sobre Gen{v1}.
+Tomar v2 = (4,−1, 0, 3)− p.
+Haciendo los c´ alculos,
+ˆv1 = 1√10(−1, 2, 1,−2),
+p = ((4 ,−1, 0, 3)· ˆv1)ˆv1 = 110 ((4,−1, 0, 3)· v1) v1
+= 110 ((4,−1, 0, 3)· (−1, 2, 1,−2)) (−1, 2, 1,−2)
+= −1210(−1, 2, 1,−2) =−65(−1, 2, 1,−2),
+v2 = (4 ,−1, 0, 3)− p = (4,−1, 0, 3) + 65(−1, 2, 1,−2) = 15(14, 7, 6, 3);
+As´ ı, una base ortogonal1 de W est´ a dada por cualquier ponderado no nulo de
+v1 = (−1, 2, 1,−2) y cualquier ponderado no nulo de 5 v2 = (14, 7, 6, 3).
+De hecho, es m´ as simple renombrarv2 = (14, 7, 6, 3) y tomar como base
+{v1, v2} ={(−1, 2, 1,−2), (14, 7, 6, 3)} .
+En cualquier caso, si se quiere tener una base ortonormal de W , los vectores
+adecuados ser´ ıanˆv1 =± 1√10(−1, 2, 1,−2), ˆv2 =± 1290(14, 7.6, 3).
+1En todo caso, no toda base ortogonal de W se obtiene de esta forma. Pero esta es quiz´ as la forma m´ as
+f´ acil de obtener una.
+4b) Buscamos la proyecci´ on ortogonal dey sobre W .
+De acuerdo al teorema 6.10, si normalizamos la base de (a), la proyecci´ on buscada
+es
+proyWy = (y· ˆv1)ˆv1 + (y· ˆv2)ˆv2.
+Una forma equivalente de escribir esto es
+proyWy = (y· v1)||v1||2 v1 + (y· v2)||v2||2 v2
+= (2, 1,−3, 4)· (−1, 2, 1,−2)
+||(−1, 2, 1,−2)||2 (−1, 2, 1,−2) + (2, 1,−3, 4)· (14, 7, 6, 3)||(14, 7, 6, 3)||2 (14, 7, 6, 3)
+= −1110 (−1, 2, 1,−2) + 29290(14, 7, 6, 3) =−1110 (−1, 2, 1,−2) + 110(14, 7, 6, 3)
+= 110(11 + 14,−22 + 7,−11 + 6, 22 + 3) = 110(25,−15,−5, 25) = 12(5,−3,−1, 5)
+Otra forma de resolver este problema es planteando el sistema que resulta de
+considerar proyWy como combinaci´ on lineal dev1 y v2 (o de las dos columnas
+de A), digamos proy Wy =αv1 +βv2, y a partir de aqu´ ı plantear el sistema de
+ecuaciones
+(proyWy− y)· v1 = 0 ,
+(proyWy− y)· v2 = 0 .
+o equivalentemente
+(αv1 +βv2)· v1 = y· v1,
+(αv1 +βv2)· v2 = y· v2.
+que es lo mismo que
+α||v1||2 +β(v1· v2) = y· v1,
+α(v1· v2) +β||v1||2 = y· v2.
+Resolviendo para α y β y reemplazando en proy Wy = αv1 +βv2 se obtiene la
+proyecci´ on ortogonal.
+5c) La respuesta a esta parte depende de la base encontrada en a). Si dicha base es
+ortonormal (ˆv1 = 1√10(−1, 2, 1,−2), ˆv2 = 1√290(14, 7.6, 3)), entonces
+Q =
+
+− 1√10 14√2902√10 7√2901√10 6√290
+− 2√10 3√290
+
+
+LlamemosQ1 a esta matriz. En este caso, la matriz R puede ser obtenida como
+R =QT1A =
+
+− 1√10 2√10 1√10 − 2√1014√
+290
+7√
+290
+6√
+290
+3√
+290
+
+
+
+
+−1 4
+2 −1
+1 0
+−2 3
+
+ =
+
+
+√
+10 −6
+√
+10
+5
+0
+√
+290
+5
+
+.
+¿Qu´ e pasa siQ no tiene columnas ortonormales? Por ejemplo, si
+Q =
+
+
+−1 14
+2 7
+1 6
+−2 3
+
+ =
+
+− 1√10 14√2902√10 7√2901√10 6√290
+− 2√10 3√290
+
+[√10 00 √290 ] =Q1D
+(dondeD =
+[√10 0
+0
+√
+290
+]
+) entonces el R adecuado no es QTA ya que en este
+caso
+QQTA = (Q1D)(DTQT1 )A =Q1D2QT1A,
+o sea, aparece un factor D2 que cambia el producto.
+Pero si en lugar de QTA tomamos R = (D−1)2QTA entonces
+QR = ( Q1D)R = (Q1D)(D−1)2QTA =Q1(DD−1)D−1QTA
+= Q1D−1QTA =Q1(QD−1)TA =Q1QT1A =A.
+6As´ ı,
+R = ( D−1)2QTA =
+
+
+1
+10 0
+0 1290
+
+
+[−1 2 1 −2
+14 7 6 3
+]
+
+
+−1 4
+2 −1
+1 0
+−2 3
+
+
+=
+
+
+1
+10 0
+0 1290
+
+
+[ 10 −12
+0 58
+]
+=
+
+ 1 −65
+0 15
+
+
+Puntaje:
+a) Por encontrar una base ortogonal (cualquiera, no necesariamente ortogonal) de
+W , 2 puntos.
+Si se equivocan al aplicar Gram-Schmidt, cometiendo alg´ un peque˜ no error de
+c´ alculo, pero queda en evidencia que tienen claro c´ omo aplicar el m´ etodo, 1
+punto.
+b) Por plantear correctamente una forma de encontrar la proyecci´ on ortogonal,
+1 punto.
+Por realizar los c´ alculos en la forma correcta, 1 punto. Si cometenpeque˜ nos
+errores de c´ alculo, reciben 0,5 puntos.
+c) Por plantear correctamente alguna forma de calcular R (que sea acorde a la
+base hallada en a)), 1 punto.
+Si la matriz R no es consistente con la base encontrada en a), sino que
+corresponde a otra elecci´ on de ponderados de la base, se descuentan 0,5
+puntos.
+Por realizar los c´ alculos en la forma correcta, 1 punto. Si cometenpeque˜ nos
+errores de c´ alculo, reciben 0,5 puntos.
+A lo anterior se le suma el punto base.
+74. [Texto, 6.6.9]
+Un cierto experimento genera los datos (1 , 3), (2, 5) y (3, 4). Describa el modelo que
+da un ajuste de m´ ınimos cuadrados de esos puntos mediante una recta de la forma
+y =Ax +B.
+Nota: Basta que describa el modelo, no es necesario que lo resuelva.
+Soluci´ on:
+Se busca una recta de la forma y =B +Ax.
+La matriz de dise˜ noX y el vector de observaciones y est´ an dados por las ecuaciones
+X =
+
+
+1 1
+1 2
+1 3
+
+, y =
+
+
+3
+5
+4
+
+.
+Nos interesa encontrar el vector de par´ ametrosβ =
+[ B
+A
+]
+que es la soluci´ on de
+m´ ınimos cuadrados deXβ = y.
+Para esto, es necesario resolver las ecuaciones normales X TXβ =X Ty, o sea,
+[ 1 1 1
+1 2 3
+]
+
+1 1
+1 2
+1 3
+
+
+[ B
+A
+]
+=
+[ 1 1 1
+1 2 3
+]
+
+3
+5
+4
+
+.
+Esto es suﬁciente para describir completamente el modelo .
+Si se desea resolver completamente el problema, basta realizar las multiplicaciones
+expresadas en la ´ ultima ecuaci´ on:
+[ 3 6
+6 14
+][ B
+A
+]
+=
+[ 12
+25
+]
+.
+La soluci´ on de este sistema es
+[ B
+A
+]
+=
+[ 3 6
+6 14
+]−1[ 12
+25
+]
+=
+[ 7/3 −1
+−1 1 /2
+][ 12
+25
+]
+=
+[ 3
+1/2
+]
+.
+O sea, la recta de m´ ınimos cuadrados es la recta de ecuaci´ ony = 12x + 3.
+Puntaje:
+Por identiﬁcar correctamente la matriz de dise˜ noX, 2 puntos.
+Por identiﬁcar correctamente el vector de observaciones y, 1 punto.
+Por indicar que las ecuaciones normales que debe cumplir la soluci´ on buscada
+son X TXβ =X Ty, 1 punto.
+8Por escribir expl´ ıcitamente las ecuaciones normales, por ejemplo
+[ 1 1 1
+1 2 3
+]
+
+1 1
+1 2
+1 3
+
+
+[ B
+A
+]
+=
+[ 1 1 1
+1 2 3
+]
+
+3
+5
+4
+
+,
+2 puntos.
+A lo anterior se le suma el punto base.
+95. [Texto, 7.1.28]
+Demuestre que si A es una matriz de n×n que satisface que para todo x, y en Rn se
+tiene (Ax)· y = x· (Ay), entonces A es sim´ etrica.
+Soluci´ on:
+Dados i,j ∈{ 1, 2,...,n }, consideremos el caso en que x = ei, y = ej (aqu´ ıei es el
+i-´ esimo vector de la base can´ onica, o sea, lai-´ esima columna de la matriz identidad).
+As´ ı,Ax =Aei es ci, la i-´ esima columna deA, y el resultado de ( Ax)· y = ci· ej es
+el j-´ esimo elemento deci, o sea, es el elemento aji de la matriz A.
+Por otra parte, x· (Ay) = ei· (Aej) = ei· cj es el i-´ esimo elemento decj, o sea, es el
+elementoaij de la matriz A.
+De esta forma, la condici´ on (Ax)· y = x· (Ay) para todo x, y en Rn implica que
+aij =aji para todo i,j ∈{ 1, 2,...,n }, de donde A es sim´ etrica.
+Puntaje:
+Por dar una demostraci´ on correcta (esta, u otra), 6 puntos.
+Si la demostraci´ on est´ a esencialmente buena, pero tiene algunos errores menores,
+recibe 5 puntos.
+Una demostraci´ on “a medias” (en que est´ a la idea general, pero falta justiﬁcar
+algunos pasos, o hay algunos mal justiﬁcados) recibe 3 puntos.
+Una demostraci´ on que evidencia que “se tiene la idea” pero no llega ni siquiera
+a mitad de camino recibe 2 puntos.
+Finalmente, una demostraci´ on que no evidencia ni siquiera que se tenga claro
+qu´ e hay que demostrar o que no hay una idea para demostrarlo, recibe 0 puntos.
+A lo anterior se le suma el punto base.
+106. Sea A =
+[ 1 −3
+−3 9
+]
+.
+a) Encuentre una matriz L cuadrada, triangular inferior con n´ umeros 1 en la dia-
+gonal, y una matriz diagonal D tal que A =LDLT .
+Primera Soluci´ on:
+Una idea es usar la factorizaci´ onA =LU, que nos da
+L =
+[ 1 0
+−3 1
+]
+, U =
+[ 1 −3
+0 0
+]
+.
+Necesitamos expresar U de la forma U = DLT , con D diagonal. Como LT es
+invertible,
+D =U(LT )−1 =
+[ 1 −3
+0 0
+][ 1 −3
+0 1
+]−1
+=
+[ 1 −3
+0 0
+][ 1 3
+0 1
+]
+=
+[ 1 0
+0 0
+]
+.
+As´ ı,A =
+[ 1 0
+−3 1
+][ 1 0
+0 0
+][ 1 0
+−3 1
+]T
+=LDLT .
+Segunda Soluci´ on:
+Una segunda idea es usar fuerza bruta (s´ ı, a veces resulta).
+Si es posible escribir A como A = LDLT con L triangular inferior y 1s en la
+diagonal, y D diagonal, entonces existen x,y,z ∈ R que satisfacen
+[ 1 −3
+−3 9
+]
+=LDLT =
+[ 1 0
+x 1
+][ y 0
+0 z
+][ 1 x
+0 1
+]
+=
+[ y 0
+xy z
+][ 1 x
+0 1
+]
+=
+[ y xy
+xy x 2y +z
+]
+.
+De aqu´ ı se deduce quey = 1, x =−3 y ﬁnalmente z = 0, de donde
+L =
+[ 1 0
+−3 1
+]
+y D =
+[ 1 0
+0 0
+]
+, o sea, A =
+[ 1 0
+−3 1
+][ 1 0
+0 0
+][ 1 0
+−3 1
+]T
+.
+b) Realice un cambio de variable x =Py que transforme la forma cuadr´ atica
+Q
+([ x1
+x2
+])
+=
+[
+x1 x2
+]
+A
+[ x1
+x2
+]
+en una sin t´ erminos con producto cruzado (o sea, sin t´ erminos conx1x2).
+Primera Soluci´ on:
+Como A =LDLT ,
+Q(x) = xT (LDLT )x = (bfx TL)D(LTx) = (LTx)TD(LTx).
+As´ ı, si tomamosy = LTx =
+[ 1 −3
+0 1
+][ x1
+x2
+]
+=
+[ x1− 3x2
+x2
+]
+, o equivalente-
+mente [ x1
+x2
+]
+= x = (LT )−1y =
+[ 1 3
+0 1
+][ y1
+y2
+]
+=
+[ y1 + 3y2
+y1
+]
+,
+11tenemos que
+Q(x) = (LTx)TD(LTx) = yTDy =[ y1 y2 ][ 1 00 0 ][ y1y2 ] =y21
+que es una expresi´ on sin t´ ermino cruzado.
+Segunda Soluci´ on:
+Siguiendo el m´ etodo esbozado en el libro, comenzamos buscando los vectores y
+valores propios de A.
+Los vectores propios son v1 =
+[ 1
+−3
+]
+con valor propio 10 y v2 =
+[ 3
+1
+]
+con
+valor propio 0.
+Normalizando estos dos vectores, obtenemos la base ortonormal formada por
+u1 =
+[ 1/√10
+−3/
+√
+10
+]
+con valor propio 10 y u2 =
+[ 3/√10
+1/
+√
+10
+]
+con valor propio 0.
+As´ ı, tomandoP =
+[ 1/√10 3 /√10
+−3/
+√
+10 1 /
+√
+10
+]
+yD =
+[ 10 0
+0 0
+]
+se tieneA =PDP −1 =
+PDP T yD =P −1AP =P TAP , por lo que —tomandox =Py =
+
+
+y1 + 3y2√
+10−3y1 +y2√
+10
+
+,
+o equivalentemente y =P −1x =P Tx =
+
+
+x1− 3x2√
+103x1 +x2√
+10
+
+— llegamos a
+Q(x) = xTAx = xTPDP Tx = (P Tx)TD(P Tx) = yTDy =[ y1 y2 ][ 10 00 0 ][ y1y2 ] = 10y21.
+Tercera Soluci´ on:
+Podemos seguir la misma idea que en la soluci´ on anterior, pero sin normalizar
+los vectores propios v1 y v2.
+As´ ı, teniendo como matriz diagonalD =
+[ 10 0
+0 0
+]
+,P ser´ ıa la matriz
+[ 1 3
+−3 1
+]
+,
+de donde vemos que
+P −1 =
+[ 1/10 −3/10
+3/10 1 /10
+]
+= 110[ 1 −33 1 ] = 110P T
+y por lo tanto podemos expresar
+A =PDP −1 = 110PDP T =P( 110D)P T =P[ 1 00 0 ]P T.
+Aqu´ ı el cambio de variable est´ a dado porx = Py =
+[ y1 + 3y2
+−3y1 +y2
+]
+, o equiva-
+12lentemente y =P −1x = 110P Tx =
+
+
+x1− 3x2
+103x1 +x2
+10
+
+. por lo que
+Q(x) = xTAx = xTP
+[ 1 0
+0 0
+]
+P Tx = (P Tx)T
+[ 1 0
+0 0
+]
+(P Tx) = yT
+[ 1 0
+0 0
+]
+y
+=
+[
+y1 y2
+][ 1 0
+0 0
+][ y1
+y2
+]
+=y21.
+En resumen:
+Este problema no tiene una soluci´ on ´ unica. De partida cualquiera de estas facto-
+rizaciones puede ser re-escrita cambiando el orden de las columnas de la matriz
+P e intercambiando los elementos de la diagonal de D. Por ejemplo, podemos
+tomar:
+P =
+[ 1 3
+−3 1
+]
+,D =
+[ 1 0
+0 0
+]
+o P =
+[ 3 1
+1 −3
+]
+,D =
+[ 0 0
+0 1
+]
+(estas matrices son la tercera soluci´ on presentada m´ as arriba).
+Una soluci´ on puede ser transformada multiplicando P por un escalar c⁄= 0,
+y dividiendo D por c2. Esto por ejemplo se logra dividiendo P en la soluci´ on
+anterior por
+√
+10 y multiplicando D por 10:
+P =
+[ 1/√10 3 /√10
+−3/
+√
+10 1 /
+√
+10
+]
+,D =
+[ 10 0
+0 0
+]
+(segunda soluci´ on).
+Otra posible soluci´ on est´ a dada por la primera soluci´ on a la parte (b) (y todas
+sus variantes):
+P =
+[ 1 3
+0 1
+]
+,D =
+[ 1 0
+0 0
+]
+.
+Cualquiera de estas factorizaciones nos permite transformar la forma cuadr´ atica
+en otra sin t´ erminos con producto cruzado, mediante el cambio de variablex =
+Py.
+c) Clasiﬁque la forma cuadr´ aticaQ. ¿Es esta forma deﬁnida positiva, deﬁnida ne-
+gativa, semi-deﬁnida positiva, semi-deﬁnitiva negativa o indeﬁnida?
+Soluci´ on:
+Claramente, en todas las soluciones presentadas a la parte (b), la matriz diagonal
+correspondiente tiene un elemento diagonal a > 0 y otro b = 0. As´ ı,Q(x) =
+ay21 +b· 0 =ay21, que es > 0 cuando y1 > 0 y es = 0 cuando y1 = 0.
+En otras palabras, Q(x)≥ 0 para todo x∈ R2, pero existen x∈ R2, x⁄= 0 para
+los que Q(x) = 0, por lo que esta forma es semi-deﬁnida positiva.
+13Puntaje:
+a) Cualquier soluci´ on correcta (y completa) recibe 2 puntos.
+Si la soluci´ on est´ a esencialmente correcta, pero hay erroresmenores de
+c´ alculo, o faltan detalles importantes, recibe 1 punto.
+b) Una soluci´ on correcta (y completa, que muestre que la expresi´ on ﬁnal no
+tiene t´ ermino mixto) recibe 2 puntos.
+Si la soluci´ on est´ a esencialmente correcta, pero hay erroresmenores de
+c´ alculo, o faltan detalles importantes, recibe 1 punto.
+c) Por decir que la forma es semi-deﬁnida positiva, 1 punto.
+Por justiﬁcar correctamente la aﬁrmaci´ on, 1 punto.
+A lo anterior se le suma el punto base.
+147. Sea A =
+[ 1 0 1
+1 1 0
+]
+. Encuentre una descomposici´ on en valores singulares deA.
+Soluci´ on:
+Seguimos los pasos indicados en la secci´ on 7.4 del texto.
+Paso 1: Encuentre una diagonalizaci´ on ortogonal deATA.
+Para ello, calculamos los valores propios de ATA =
+
+
+2 1 1
+1 1 0
+1 0 1
+
+.
+Como detATA−λI =−λ3+4λ2−3λ =−λ(λ2−4λ+3) =−λ(λ−3)(λ−1),
+los valores propios de ATA son —en orden descendente— 3, 1 y 0.
+Tres vectores propios correspondientes a estos valores propios son, respec-
+tivamente, v1 = (2, 1, 1), v2 = (0,−1, 1) y v3 = (−1, 1, 1). Note que estos
+vectores propios son mutuamente ortogonales.
+Normalizando estos vectores, obtenemos los vectores propios unitarios
+ˆv1 = 1√6(2, 1, 1),ˆv2 = 1√2(0,−1, 1) y ˆv3 = 1√3(−1, 1, 1).
+Paso 2: Obtenga V y Σ.
+En nuestro caso,
+V = [ˆv1 ˆv2 ˆv3] =
+
+
+2√
+6 0 −1√3
+1√
+6 − 1√2 1√3
+1√
+6
+1√
+2
+1√
+3
+
+.
+Los valores singulares son σ1 =
+√
+3,σ2 =
+√
+1 = 1 y σ3 =
+√
+0 = 0, por lo que
+D =
+[√
+3 0
+0 1
+]
+y Σ = [ D 0] =
+[√
+3 0 0
+0 1 0
+]
+.
+Paso 3: Construya U.
+ComoA tiene 2 ﬁlas, necesitamos una base ortonormal{u1, u2} de R2. Como
+el rango de A es 2, estos vectores est´ an dados por
+u1 = 1σ1Aˆv1 = 1√3
+
+
+√
+6
+2
+√
+6
+2
+
+ =
+
+
+√
+2
+2
+√
+2
+2
+
+, u2 = 1σ2Aˆv2 = 1
+
+
+1√
+2
+− 1√2
+
+ =
+
+
+1√
+2
+− 1√2
+
+.
+15As´ ı,
+A =UΣV T =
+
+
+√
+2
+2
+1√
+2
+√
+2
+2 − 1√2
+
+[√3 0 00 1 0 ]
+
+
+2√
+6 0 −1√3
+1√
+6 − 1√2 1√3
+1√
+6
+1√
+2
+1√
+3
+
+
+T
+.
+Puntaje:
+Cada uno de los siguientes indicadores tiene 0,5 puntos, excepto c) y d) (marcados
+en negrita) que tienen 1 punto cada uno.
+a) Calcular correctamente ATA.
+b) Encontrar correctamente los valores propios de ATA.
+c) Encontrar correctamente los vectores propios de ATA.
+d) Normalizar correctamente dichos vectores.
+e) Calcular correctamente los valores singulares de A.
+f ) Determinar correctamente V (o, equivalentemente,V T ).
+g) Determinar correctamente Σ.
+h) Calcular correctamente u1.
+i) Calcular correctamente u2.
+j ) Determinar correctamente U.
+A lo anterior se le suma el punto base.
+168. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su
+respuesta (el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene
+puntos):
+a) Toda matriz que es diagonalizable ortogonalmente debe ser sim´ etrica.
+b) Si A es una matriz sim´ etrica e invertible, entonces la forma cuadr´ atica
+Q(x) = xT (ATA)x es deﬁnida positiva.
+c) Si A y B son dos matrices sim´ etricas den×n, y{v1, v2,..., vn} es una base
+ortonormal de Rn con la propiedad de que cada vector vi de esta base es vector
+propio tanto de A como de B, entonces AB =BA.
+Soluci´ on:
+a) Verdadero.
+Si A es diagonalizable, entonces A = PDP −1 con D diagonal. Si adem´ asA es
+diagonalizable ortogonalmente entonces P −1 =P T (P es una matriz ortogonal)
+y por lo tanto A =PDP T .
+Pero entonces
+AT = (PDP T )T = (P T )TDTP T =PD TP T =A,
+por lo que A es sim´ etrica.
+b) Verdadero.
+Sea A de n×n, y sea x∈ Rn, x⁄= 0. Debemos probar que Q(x)> 0.
+En efecto: por ser A invertible, y =Ax⁄= 0. Pero entonces
+Q(x) = xT (ATA)x = (xTAT )(Ax) = (Ax)T (Ax) = yTy = y· y =||y||2 > 0
+ya que y⁄= 0→|| y||> 0.
+c) Verdadero.
+Para probar que AB =BA, debemos probar que dado cualquier vector x∈ Rn,
+ABx =BAx. Para esto es suﬁciente que ABvi =BAvi para cada vi de la base
+ortonormal (¿por qu´ e?).
+Sea v cualquiera de los vectores de la bae dada. Como v es vector propio tanto
+de A como de B, existen escalares λ,µ tales que Av =λv, Bv =µv.
+Pero entonces
+ABv =A(Bv) =A(µv) =µ(Av) =µ(λv) =λ(µv) =λ(Bv) =B(λv) =B(Av) =BAv.
+Puntaje:
+Cada parte vale dos puntos, los que se dan solo si est´ a la respuesta correcta con una
+justiﬁcaci´ on adecuada.
+A lo anterior se le suma el punto base.
+17

@@ -1,0 +1,561 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Primer Semestre 2023
+´Algebra Lineal - MAT1203
+PAUTA Examen
+1. Sea A =
+
+
+1 −4 7
+0 3 −5
+−2 5 −9
+
+ y z =
+
+
+a
+b
+c
+
+.
+(a) Encuentre una condici´ on para a, by c que permita que el sistema Ax = z sea
+consistente e indique, en ese caso, cu´ antas soluciones existen.
+(b) Determine las dimensiones de Col( A), Fil(A) y Nul( A).
+Soluci´ on
+(a) Determinamos una forma escalonada de la matriz ampliada [ A|z]:
+[A|z] =
+
+
+1 −4 7
+0 3 −5
+−2 5 −9
+ abc  ∼  1 −4 70 3 −50 0 0  ab2a + b + c  .
+Por el teorema de existencia y unicidad de soluciones, el sistema de ecuaciones es
+consistente si y s´ olo si
+2a + b + c = 0.
+M´ as a´ un, como la matriz ampliada tiene 2 pivotes pero el sistema tiene 3 variables,
+en el caso que el sistema sea consistente, ´ este tendr´ a infinitas soluciones.
+(b) De la FE de la matriz A vemos que el rango deA es 2 y hay una variable libre. Como
+rank(A) = dim Col( A) = dim Fil( A), entonces dim Col( A) = 2, dim Fil( A) = 2 y
+dim Nul(A) = 1.
+Puntaje
+(a) • 1 punto por escalonar correctamente la matriz
+• 1 punto por determinar una condici´ on correcta sobrea, b, cpara que el sistema
+sea consistente.
+• 1 punto por indicar que si el sistema es consistente, tiene infinitas soluciones.
+(b) • 1 punto por determinar que dim Col( A) = 2.
+• 1 punto por determinar que dim Fil( A) = 2.
+• 1 punto por determinar que dim Nul( A) = 1.2. Sea A una matriz de 4 × 4 definida por
+
+
+a a a a
+2 a a a
+3 2 a a
+4 3 2 a
+
+
+(a) Calcule el determinante de A. (4 pts)
+(b) Determine los valores de a para que la matriz sea invertible. (2 pts)
+Soluci´ on
+(a)  a a a a2 a a a3 2 a a4 3 2 a  =  a − 2 0 0 0−1 a − 2 0 0−1 −1 a − 2 04 3 2 a  = a(a − 2)3.
+(b) A es invertible si y s´ olo si|A| ̸= 0, es decir, a ̸= 0 y a ̸= 2.
+Puntaje
+(a) • 4 puntos si aplica correctamente operaciones elementales, o bien definici´ on por
+cofactores, y obtiene el determinante correcto.
+• Asignar s´ olo 2 puntos si comete errores en las operaciones y/o c´ alculos, pero
+obtiene un resultado de determinante.
+(b) • 2 puntos por encontrar los valores correctos de a, en funci´ on del determinante
+obtenido.3. (a) Despeje la matriz X de la ecuaci´ on matricial sabiendo queA y B son invertibles:
+(AX −1B)T = AB.
+(b) Determine la descomposici´ onLU de la matriz X si A =
+
+
+2 0 0
+0 4 0
+0 0 6
+
+ y B =
+
+
+1 0 0
+0 1 0
+1 0 1
+
+.
+Soluci´ on
+(a)
+(AX −1B)T = AB ⇔ AX −1B = BT AT
+⇔ X −1 = A−1BT AT B−1
+⇔ X = B(A−1)T (B−1)T A
+(b) Notar que A−1 =
+
+
+1/2 0 0
+0 1 /4 0
+0 0 1 /6
+
+ y B−1 =
+
+
+1 0 0
+0 1 0
+−1 0 1
+
+. As ´ ı:
+X =
+
+
+1 0 0
+0 1 0
+1 0 1
+
+
+
+
+1/2 0 0
+0 1 /4 0
+0 0 1 /6
+
+
+
+
+1 0 −1
+0 1 0
+0 0 1
+
+
+
+
+2 0 0
+0 4 0
+0 0 6
+
+
+=
+
+
+1 0 0
+0 1 0
+1 0 1
+
+
+
+
+1 0 −3
+0 1 0
+0 0 1
+
+ = LU
+Puntaje
+(a) • 3 puntos por despejar correctamente X en cualquier expresi´ on equivalente a la
+mostrada en la pauta.
+• Restar 1 punto por cada error de c´ alculo en operaciones de matrices.
+(b) • Asignar 3 puntos si calcula la factorizaci´ onLU correcta.
+• Asignar s´ olo 2 puntos si determina una factorizaci´ onLU , pero comete errores
+aritm´ eticos en las operaciones entre matrices.
+• Asignar s´ olo 1 punto por calcular correctamente las inversas y las transpuestas
+de las matrices involucradas, a pesar de no encontrar una factorizaci´ onLU .4. Determine si las siguientes afirmaciones son verdaderas o falsas. En caso de ser ver-
+dadero, haga una demostraci´ on en general. En caso de ser falso, compruebe con un
+contraejemplo.
+(a) El conjunto de matrices reales de 2 × 2 de determinante 0 es un espacio vectorial.
+(b) La transformaci´ on definida porT : R → R, T (x) = 2x es lineal.
+Soluci´ on
+(a) Falso. Soluci´ on Sea
+A =
+
+1 0
+0 0
+
+y B =
+
+0 0
+0 1
+
+Entonces det A = det B = 0, de modo que A y B est´ an enW . Pero
+A + B =
+
+1 0
+0 1
+
+de modo que det( A + B) = 1 ̸= 0, y por tanto A + B no est´ a enW . Por tanto, W
+no es cerrado para la suma y en consecuencia no es un espacio vectorial.
+(b) Falso. Sean x = 1 y y = 2. Entonces
+T (x + y) = T (3) = 23 = 8 ̸= 6 = 21 + 22 = T (x) + T (y)
+de modo que T no es lineal.
+Puntaje
+• Asignar 3 puntos si identifica correctamente si la afirmaci´ on es verdadera o falsa y
+justifica correctamente su respuesta.
+• Asignar s´ olo 1 punto si identifica correctamente si la afirmaci´ on es verdadera o falsa
+y justifica pero lo hace de manera incorrecta.
+• Asignar 0 puntos si no hay justificaci´ on a la respuesta.5. Sea T : P2 → P2 la transformaci´ on lineal tal que
+T (x2) = x, T (x − 1) = x + 1, T (1) = 2.
+(a) Calcule T (x).
+(b) Encuentre la matriz de T con respecto a la base est´ andarE = {x2, x,1} de P2.
+(c) Determine si la matriz obtenida en el ´ ıtem anterior es diagonalizable.
+Soluci´ on
+(a) T (x) = T ((x − 1) + 1) = T (x − 1) + T (1) = (x + 1) + 2 = x + 3.
+(b)
+[T ]E =
+ [T (x2)]E [T (x)]E [T (1)]E  =  [x]E [x + 3]E [2]E  =
+
+
+0 0 0
+1 1 0
+0 3 2
+
+ .
+(c) La matriz es triangular inferior por lo que sus valores propios son los elementos
+de su diagonal, esto es, 0, 1 y 2. Como son todos distintos, entonces la matriz es
+diagonalizable.
+Puntaje
+(a) • 1 punto por descomponer el polinomio x2 − x respecto de x − 1 y 1
+• 1 punto por calcular correctamente T (x2 − x)
+(b) • 1 punto por establecer, expl ´ ıcita o impl ´ ıcitamente, una forma de calcular [T ]E.
+• 1 punto por calcular correctamente [ T ]E.
+(c) • 2 puntos por justificar correctamente si la matriz es diagonalizable, independi-
+ente si la matriz del ´ ıtem anterior sea la correcta.
+• Asignar s´ olo 1 punto si no justifica correctamente si la matriz es diagonalizable,
+independiente si la matriz del ´ ıtem anterior sea la correcta.6. (a) Encuentre una soluci´ on de m ´ ınimos cuadrados para el sistema inconsistenteAx = b,
+donde
+A =
+
+
+1 2
+2 −2
+−1 1
+
+ y b =
+
+
+3
+−2
+−4
+
+ .
+(b) Encuentre la mejor aproximaci´ on al vectorb en el espacio columna de A.
+Soluci´ on 1
+(a) Calculamos AT A y AT b:
+AT A =
+
+1 2 −1
+2 −2 1
+ 
+
+1 2
+2 −2
+−1 1
+
+ =
+
+6 −3
+−3 9
+
+,
+AT b =
+
+1 2 −1
+2 −2 1
+ 
+
+3
+−2
+−4
+
+ =
+
+3
+6
+
+.
+Una soluci´ on de m ´ ınimos cuadrados deAx = b es una soluci´ on deAT Ax = AT b.
+As ´ ı:
+[AT A|AT b] =
+
+6 −3
+−3 9
+ 36  ∼  0 11 0  11  .
+Por lo tanto una soluci´ on de m ´ ınimos cuadrados esˆx =
+
+1
+1
+
+.
+(b) La mejor aproximaci´ on al vectorb en el espacio columna de A es el vector
+Aˆx =
+
+
+1 2
+2 −2
+−1 1
+
+
+
+1
+1
+
+=
+
+
+3
+0
+0
+
+ .
+Soluci´ on 2
+(a) Buscamos una base ortogonal de Col( A). Por el proceso de ortogonalizaci´ on de
+Gram Schmidt basta definir
+v1 =
+
+
+1
+2
+−1
+
+ , v2 =
+
+
+2
+−2
+1
+
+ −
+
+
+1
+2
+−1
+
+ ·
+
+
+2
+−2
+1
+
+
+ 12−12
+
+
+1
+2
+−1
+
+ =
+
+
+5/2
+−1
+1/2
+
+
+Calculamos la proyecci´ on proyCol(A)(b) usando la base ortogonal {v1, 2v2}:
+proyCol(A)(b) =
+
+
+1
+2
+−1
+
+ ·
+
+
+3
+−2
+−4
+
+
+ 12−12
+
+
+1
+2
+−1
+
+ +
+
+
+5
+−2
+1
+
+ ·
+
+
+3
+−2
+−4
+
+
+ 5−21 2
+
+
+5
+−2
+1
+
+ =
+
+
+3
+0
+0
+
+ .Ahora buscamos una soluci´ on del sistemaAx = proyCol(A)(b):
+
+
+1 2
+2 −2
+−1 1
+
+
+
+x1
+x1
+
+=
+
+
+3
+0
+0
+
+ ⇔
+
+x1
+x1
+
+=
+
+1
+1
+
+.
+Por lo tanto ˆx =
+
+1
+1
+
+es la soluci´ on de m ´ ınimos cuadrados buscada.
+(b) La mejor aproximaci´ on al vectorb del espacio Col( A) es proy Col(A)(b) =
+
+
+3
+0
+0
+
+.
+Puntaje
+(a) • 2 puntos por establecer una manera apropiada de encontrar una soluci´ on de
+m ´ ınimos cuadrados del sistema.
+• 2 puntos por determinar una soluci´ on de m ´ ınimos cuadrados.
+(b) • 1 punto por identificar c´ omo encontrar la mejor aproximaci´ on al vectorb.
+• 1 punto por calcular el vector buscado
+
+
+3
+0
+0
+
+.7. Suponga que la siguiente factorizaci´ on es una DVS de una matriz A.
+A =
+
+
+1/3 2 /
+√
+5 −2/
+√
+45
+−2/3 1 /
+√
+5 4 /
+√
+45
+2/3 0 5 /
+√
+45
+
+
+
+
+σ 0
+0 0
+0 0
+
+
+
+1/
+√
+2 −1/
+√
+2
+1/
+√
+2 1 /
+√
+2
+
+donde σ es alg´ un n´ umero real distinto de 0. Sin calcularA expl ´ ıcitamente, responda:
+(a) ¿Cu´ al es el rango deA?
+(b) Encuentre una diagonalizaci´ on ortogonal para la matriz sim´ etricaAAT .
+(c) Clasifique la forma cuadr´ atica de la matrizAAT .
+Soluci´ on
+(a) El rango de A corresponde a la cantidad de valores singulares no nulos. Puesto que
+la matriz Σ tiene s´ olo una entrada no nula, entonces rank(A) = 1.
+(b) Ya que A = U ΣV T y V T V = I por ser una matriz ortogonal, entonces
+AAT = (U ΣV T )(U ΣV T )T = (U ΣV T )(V ΣT U T ) = U Σ(V T V )ΣT U T = U ΣΣT U T
+= U
+
+
+σ 0
+0 0
+0 0
+
+
+
+σ 0 0
+0 0 0
+
+U T = U
+
+
+σ2 0 0
+0 0 0
+0 0 0
+
+ U T .
+Ya que U tambi´ en es una matriz ortogonal, entonces la diagonalizaci´ on buscada es
+AAT = P
+
+
+σ2 0 0
+0 0 0
+0 0 0
+
+ P T ,
+donde P = U =
+
+
+1/3 2 /
+√
+5 −2/
+√
+45
+−2/3 1 /
+√
+5 4 /
+√
+45
+2/3 0 5 /
+√
+45
+
+.
+(c) Por la diagonalizaci´ on anterior, los valores propios de AAT son σ2 > 0 y 0 (de
+multiplicidad algebraica 2), por lo que la forma cuadr´ atica correspondiente es
+semidefinida positiva.
+Puntaje
+(a) 2 puntos por determinar correctamente el rango de A.
+(b) 2 puntos por diagonalizar correctamente la matriz AAT .
+(c) 2 puntos por clasificar correctamente la forma cuadr´ atica, seg´ un los c´ alculos del
+´ ıtem anterior.

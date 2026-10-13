@@ -1,0 +1,224 @@
+
+----- pagina 1 -----
+Clase 07 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 12
+----- pagina 2 -----
+Recordatorio
+Una ecuación lineal en n variables x1, . . . ,xn es una igualdad de la
+forma
+a1x1 + a2x2 +··· + anxn = b,
+donde los coeficientes ai y el término independiente b son números
+reales.
+Una ecuación lineal corresponde a una recta en R2, un plano en R3 o
+un hiperplano en Rn.
+Resolver un Sistema de ecuaciones lineales corresponde a
+intersectar estos planos, rectas, etc.
+2 / 12
+----- pagina 3 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Recordemos el sistema de la clase anterior:
+{
+3x− 2y + z = 1,
+x + y− 3z = 2.
+Al trabajar con muchos coeficientes y variables, podemos simplificar la
+notación usando matrices: arreglos rectangulares de números.
+Podemos tomar la matriz de coeficientes A =
+[3 −2 1
+1 1 −3
+]
+,el vector
+de resultados b =
+[1
+2
+]
+y la matriz ampliada
+[
+A b
+]
+=
+[ 3 −2 1 1
+1 1 −3 2
+]
+3 / 12
+----- pagina 4 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Al momento de trabajar con matrices ampliadas, la interpretación es:
+Filas (horizontales)↔ ecuaciones.
+Columnas (verticales)↔ variables.
+La línea vertical representa la igualdad.
+Ejemplo: Resuelva el sistema anterior, e identifique cómo las operaciones
+realizadas se traducen en operaciones de filas de la matriz .
+4 / 12
+----- pagina 5 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Operaciones elementales de filas
+Dadas dos filas Fi y Fj de una matriz, las operaciones elementales
+permitidas son:
+(1) Intercambio de filas: Fi←→ Fj
+(2) Multiplicar una fila por un escalar no nulo:
+Fi−→ c Fi, c̸= 0
+(3) Sumar a una fila un múltiplo de otra fila: Fi−→ Fi + c Fj
+Estas operaciones corresponden a reemplazar una ecuación del sistema por
+una ecuación equivalente. No alteran el conjunto solución del SEL.
+5 / 12
+----- pagina 6 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Ejemplo: Considere
+a1 =
+[3
+1
+]
+, a2 =
+[−2
+1
+]
+, a3 =
+[ 1
+−3
+]
+, b =
+[1
+2
+]
+.
+¿Está b en Gen{a1, a2, a3}? Si es así, ¿Qué combinaciones lineales de
+a1, a2 y a3 llegan a b?
+Equivalencia entre SEL y ecuaciones vectoriales
+La ecuación lineal x1a1 + x2a2 +··· + xnan = b es equivalente al SEL con
+matriz ampliada [
+a1 a2 . . . an b
+]
+6 / 12
+----- pagina 7 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Finalmente, podemos trabajar el concepto de matriz en general.
+Definición (Matriz)
+Una matriz es un arreglo rectangular de números reales,
+A =
+
+
+a11 a12 ··· a1n
+...
+am1 am2 ··· amn
+
+
+con m filas (horizontales) y n columnas (verticales).
+Se dice que el tamaño de A es m× n, y se escribe A∈ Mm×n(R).
+Las matrices no solo se usan para resolver SEL, tienen aplicaciones
+importantes que trabaján en este y otros cursos.
+7 / 12
+----- pagina 8 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Ejemplo: Indique tamaño, filas y columnas de la matriz
+A =
+[3 −2 1
+1 1 −3
+]
+.
+8 / 12
+----- pagina 9 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Producto matriz–vector
+Si A∈ Mm×n(R) y x∈ Rn, definimos
+Ax = x1a1 + x2a2 +··· + xnan,
+donde aj es la columna j-ésima de A.
+Observaciones:
+Ax es una combinación lineal de las columnas de A, con los pesos
+de x.
+Ax solo está definido si el número de entradas en x coincide con el
+número de columnas de x.
+Ejemplo: Calcule
+[1 2 −1
+0 −5 3
+] 
+
+4
+3
+7
+
+
+Ejemplo: Para v1, v2, v3∈ Rn, escriba la combinación lineal
+3v1− 5v2 + 7v3 como una matriz multiplicada por un vector.
+9 / 12
+----- pagina 10 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Ejemplo: Si A =
+[3 −2 1
+1 1 −3
+]
+, ¿existe x∈ R3 tal que Ax =
+[1
+2
+]
+?
+¿Cuántos?
+10 / 12
+----- pagina 11 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+Equivalencias fundamentales
+Si A =
+
+
+a11 a12 ··· a1n
+...
+am1 am2 ··· amn
+
+, b =
+
+
+b1
+...
+bm
+
+ y x =
+
+
+x1
+...
+xn
+
+ , las ecuaciones
+(1) Ax = b
+(2) x1a1 +··· + xnan = b
+(3)
+
+
+
+a11x1 +··· + a1nxn = b1
+...
+am1x1 +··· + amnxn = bm
+son equivalente, y se resuelven con la matriz ampliada
+[
+A b
+]
+Nota: El sistema Ax = b tiene solución si y solo si b está en el conjunto
+generado por las columnas de A.
+11 / 12
+----- pagina 12 -----
+Sistemas de ecuaciones, matrices y combinaciones lineales
+La multiplicación matriz-vector se usará muchas veces en el curso.
+Algunas cosas importantes de saber son:
+Teorema
+Si A es una matriz de m× n, u y v son vectores en Rn, y c es un escalar,
+entonces:
+A(u + v) = Au + Av,
+A(cu) = c(Au).
+Regla fila–vector para calcular Ax
+Si el producto Ax está definido, entonces la i-ésima entrada de Ax es el
+producto punto entre la fila i de A y el vector x.
+Ejemplo: Calcule
+[1 2 −1
+0 −5 3
+] 
+
+4
+3
+7
+
+
+12 / 12

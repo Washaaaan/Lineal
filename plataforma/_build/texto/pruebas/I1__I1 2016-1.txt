@@ -1,0 +1,670 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on a la Interrogaci´ on N◦ 1
+1. Sean
+u =
+
+
+0
+4
+4
+
+ y A =
+
+
+3 −5
+−2 6
+1 1
+
+.
+¿Pertenece u al plano generado por las columnas de la matriz A?
+Primera Soluci´ on:
+El vector u pertenece al plano generado por las columnas de A si y solo si es combi-
+naci´ on lineal de ellas; o sea, si y solo si existen escalaresα,β tales que
+α
+
+
+3
+−2
+1
+
+ +β
+
+
+−5
+6
+1
+
+ =
+
+
+0
+4
+4
+
+,
+o sea, si y solo si 
+
+3α + 5β
+−2α + 6β
+α +β
+
+ =
+
+
+0
+4
+4
+
+.
+para algunos valores de α y β.
+Pero esto es equivalente a exigir que el sistema
+Ax =
+
+
+3 −5
+−2 6
+1 1
+
+
+[ α
+β
+]
+=
+
+
+0
+4
+4
+
+ = u
+sea consistente.
+Para veriﬁcar si este es el caso, consideramos la matriz ampliada del sistema, y apli-
+camos el m´ etodo de eliminaci´ on Gaussiana:
+
+
+3 −5 0
+−2 6 4
+1 1 4
+
+∼
+
+
+1 1 4
+−2 6 4
+3 −5 0
+
+∼
+
+
+1 1 4
+0 8 12
+0 −8 −12
+
+∼
+
+
+1 1 4
+0 1 3 /2
+0 −8 −12
+
+∼
+
+
+1 1 4
+0 1 3 /2
+0 0 0
+
+
+Como la matriz escalonada tiene todos los pivotes antes de la ´ ultima columna, el
+sistema es consistente, por lo que la respuesta a la pregunta original es “s´ ı”.Segunda Soluci´ on:
+Otra forma de resolver este ejercicio es como sigue:
+El vector u pertenece al espacio generado por las columnas de A si y solo si el sistema
+Ax = u es consistente. Para veriﬁcar esto ´ ultimo, aplicamos el mismo m´ etodo que en
+la primera soluci´ on.
+Puntaje:
+Por argumentar (en cualquiera de las dos formas mostradas, o en otra forma
+v´ alida), que el problema es equivalente a determinar si el sistema Ax = u es
+consistente, 2 puntos.
+Por escalonar la matriz ampliada del sistema (o llegar a alguna otra forma que
+permita determinar si el sistema es consistente), 2 puntos.
+Por llegar a la conclusi´ on correcta, 2 puntos.
+A lo anterior se le suma el punto base.2. Determine todas las matrices A tales que
+A
+[ 3
+2
+]
+=
+[ 2
+1
+]
+.
+Soluci´ on:
+Claramente, ya que el dominio de la transformaci´ onx→ Ax es R2, A debe tener 2
+columnas; asimismo, como su recorrido es parte de R2, A debe tener 2 ﬁlas.
+As´ ı,
+A =
+[ α β
+γ δ
+]
+.
+De la condici´ on dada (A
+[ 3
+2
+]
+=
+[ 2
+1
+]
+) se desprende que 3α + 2β = 2 y 3γ + 2δ = 1.
+Resolviendo el sistema, llegamos a que α = 2/3− 2β/3 y γ = 1/3− 2δ/3.
+Finalmente, llegamos a la conclusi´ on de que
+A =
+[ 2/3− 2β/3 β
+1/3− 2δ/3 δ
+]
+,
+donde β y δ pueden tomar cualquier valor real.
+Puntaje:
+Por concluir (con una buena justiﬁcaci´ on) queA debe ser de 2× 2, 1 punto.
+Por plantear correctamente el problema, 2 puntos.
+Por llegar a la forma general que debe tener A, 3 puntos.
+A lo anterior se le suma el punto base.3. Sea T : R2→ R3 la transformaci´ on lineal deﬁnida por
+T
+([ x1
+x2
+])
+=
+
+
+5x1− 3x2
+4x1−x2
+2x1 + 3x2
+
+.
+Encuentre x =
+[ x1
+x2
+]
+tal que T (x) =
+
+
+13
+9
+1
+
+.
+Soluci´ on:
+T
+([ x1
+x2
+])
+=
+
+
+5 −3
+4 −1
+2 3
+
+
+[ x1
+x2
+]
+.
+As´ ı, buscamos un vector
+[ x1
+x2
+]
+que sea soluci´ on del sistema de ecuaciones que tiene
+por matriz ampliada a 
+
+5 −3 13
+4 −1 9
+2 3 1
+
+.
+Para encontrar esta soluci´ on, escalonamos la matriz:
+
+
+5 −3 13
+4 −1 9
+2 3 1
+
+∼
+
+
+1 − 35 135
+0 75 − 75
+0 215 − 215
+
+∼
+
+
+1 − 35 135
+0 1 −1
+0 215 − 215
+
+∼
+
+
+1 − 35 135
+0 1 −1
+0 0 0
+
+∼
+
+
+1 0 2
+0 1 −1
+0 0 0
+
+
+De aqu´ ı, vemos que el sistema tiene soluci´ on ´ unica,x1 = 2, x2 =−1, por lo que el
+vector buscado es x =
+[ 2
+−1
+]
+.
+Nota: no es necesario llegar a la forma escalonada reducida; el sistema puede ser
+resuelto aplicando sustituci´ on hacia atr´ as a partir de la escalonada (pen´ ultimo paso
+del proceso mostrado).
+Puntaje:
+Por indicar que el vector buscado debe ser soluci´ on del sistema de ecuaciones
+que se menciona: 2 puntos.
+Por escalonar correctamente la matriz, llegando a la forma escalonada o a la
+forma escalonada reducida por ﬁlas: 2 puntos.
+Por resolver el sistema, llegando a la ´ unica soluci´ on posible: 2 puntos.
+A lo anterior se le suma el punto base.4. Sean A =
+
+
+1 0 1
+−1 2 8
+0 3 2
+
+ y B =
+
+
+2 1 4 2
+0 2 1 −1
+−3 1 0 −1
+
+, y sea T la transformaci´ on lineal
+deﬁnida por T (x) =Ax.
+a) ¿Es T inyectiva?
+b) ¿Es T sobreyectiva?
+c) ¿Son linealmente independientes las columnas de B? ¿Qu´ e implica esto en t´ ermi-
+nos de la cantidad de soluciones del sistema Bx = 0?
+Soluci´ on:
+a) Sabemos (teorema 8, secc. 2.3) que T es inyectiva⇐⇒ A es invertible ⇐⇒ A
+es equivalente por ﬁlas a la matriz identidad de 3× 3 ⇐⇒ A tiene 3 posiciones
+pivote ⇐⇒ la ecuaci´ onAx = 0 tiene solamente la soluci´ on trivial⇐⇒ las
+columnas de A forman un conjunto linealmente independiente.
+As´ ı, veriﬁcando cualquiera de estas propiedades sabremos siT es inyectiva o no.
+En particular, lo m´ as f´ acil parece ser veriﬁcar siA tiene 3 posiciones pivote.
+Para esto escalonamos:
+A =
+
+
+1 0 1
+−1 2 8
+0 3 2
+
+∼
+
+
+1 0 1
+0 2 9
+0 3 2
+
+∼
+
+
+1 0 1
+0 1 9 /2
+0 3 2
+
+∼
+
+
+1 0 1
+0 1 9 /2
+0 0 −23/2
+
+∼
+
+
+1 0 1
+0 1 9 /2
+0 0 1
+
+
+lo que nos muestra que efectivamente A tiene 3 posiciones pivote, por lo que T
+es inyectiva.
+b) S´ ı: por el mismo teorema 8,T es inyectiva⇐⇒ T “mapea” R3 sobre R3, o sea,
+es sobreyectiva.
+c) Las columnas de B no son linealmente independientes; esto puede comprobarse
+de varias maneras:
+Al llevar la matriz a forma escalonada reducida, obtenemos
+B =
+
+
+2 1 4 2
+0 2 1 −1
+−3 1 0 −1
+
+∼
+
+
+1 0 0 119
+0 1 0 − 1619
+0 0 1 1319
+
+
+De aqu´ ı se obtiene directamente (llamandob1 a la primera columna deB,b2
+a la segunda, etc.) queb4 = 119(b1−16b2+13b3), por lo queb4 es combinaci´ on
+lineal de b1, b2 y b3, de donde{b1,b 2,b 3,b 4} es linealmente dependiente.Si transponemos la matriz B, y escalonamos dicha transpuesta, podemos
+obtener un m´ aximo de tres pivotes (uno por columna), por lo que alguna
+ﬁla no contendr´ a pivotes y estar´ a formada solo por ceros.
+En efecto: en este caso concreto obtenemos
+BT =
+
+
+2 0 −3
+1 2 1
+4 1 0
+2 −1 −1
+
+∼
+
+
+1 2 1
+2 0 −3
+4 1 0
+2 −1 −1
+
+∼
+
+
+1 2 1
+0 −4 −5
+0 −7 −4
+0 −5 −3
+
+∼
+
+
+1 2 1
+0 1 5 /4
+0 −7 −4
+0 −5 −3
+
+
+∼
+
+
+1 2 1
+0 1 5 /4
+0 0 19 /4
+0 0 13 /4
+
+∼
+
+
+1 2 1
+0 1 5 /4
+0 0 1
+0 0 13 /4
+
+∼
+
+
+1 2 1
+0 1 5 /4
+0 0 1
+0 0 0
+
+
+¿Qu´ e signiﬁca que una ﬁla (en este caso, la cuarta) se haya transformado
+en puros ceros?
+En cada paso del proceso de escalonamiento en que a una ﬁla se le suma un
+m´ ultiplo de otra, estamos sum´ andole a dicha ﬁla una combinaci´ on lineal de
+las ﬁlas originales.
+As´ ı, en este caso, esa ﬁla de ceros es el resultado de sumarle a la cuarta ﬁla
+original una combinaci´ on lineal de las otras ﬁlas originales, por lo que la
+cuarta ﬁla original ES combinaci´ on lineal de las otras. As´ ı, las ﬁlas deBT
+son l.d.
+Una vez que hemos establecido que las columnas de B son l.d., concluimos que
+alguna combinaci´ on no trivial de las columnas da como resultado el vector de
+puros ceros, por lo que existe una soluci´ on no trivial de Bx = 0. Pero este
+sistema adem´ as admite la soluci´ on trivialB0 = 0, por lo que tiene soluci´ on pero
+no ´ unica. De lo anterior se desprende que dicho sistema tiene inﬁnitas soluciones.
+Puntaje:
+a) Por establecer alguna propiedad equivalente a la inyectividad deT : 1 punto.
+Por justiﬁcar la equivalencia entre la propiedad usada y la inyectividad de
+T : 1 punto.
+b) Si usan directamente la equivalencia entre inyectividad y sobreyectividad, 2 pun-
+tos. Si no, se asigna puntaje como en la parte a).
+c) Por establecer correctamente que las columnas de A no son independientes:
+1 punto.
+Por concluir (con una buena justiﬁcaci´ on) que la ecuaci´ on dada tiene inﬁ-
+nitas soluciones: 1 punto.
+A lo anterior se le suma el punto base.5. Sean A y B dos matrices de m×n y n×p respectivamente. Demuestre que si las
+columnas de B son linealmente dependientes, entonces tambi´ en lo son las columnas
+de AB.
+Primera Soluci´ on:
+Si las columnas deB son linealmente dependientes, entonces hay alguna combinaci´ on
+lineal no trivial de ellas que da como resultado 0. Esto a su vez se traduce en que
+existe un vector u⁄= 0 tal que Bu = 0.
+Pero entonces (AB)u = A(Bu) = A0 = 0, por lo que existe un vector no nulo (a
+saber, el mismo u) tal que (AB)u = 0. Pero esto a su vez es equivalente a que existe
+una combinaci´ on lineal no trivial de las columnas de AB que da como resultado 0,
+por lo que las columnas de AB son linealmente dependientes.
+Segunda Soluci´ on:
+Si las columnas de B son linealmente dependientes, entonces la transformaci´ on lineal
+x→Bx no es uno a uno; o sea, existen u⁄= v tales que Bu =Bv.
+Pero entonces (AB)u = A(Bu) = A(Bv) = (AB)v, por lo que la transformaci´ on
+lineal x→ (AB)x no es uno a uno, o lo que es equivalente, las columnas de AB
+tambi´ en son linealmente dependientes.
+Puntaje:
+En cualquiera de las soluciones (u otras correctas que se les ocurran a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada, 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.6. Sea A =
+
+
+1 2 3
+0 1 a
+1 3 4
+
+.
+a) Demuestre que A es invertible si y solo si a⁄= 1.
+b) Calcule la inversa de A para a = 2.
+Soluci´ on:
+a) Si a = 1, la matriz se transforma en
+A =
+
+
+1 2 3
+0 1 1
+1 3 4
+
+∼
+
+
+1 2 3
+0 1 1
+0 1 1
+
+∼
+
+
+1 2 3
+0 1 1
+0 0 0
+
+
+por lo que —en este caso— A no tiene 3 posiciones pivote, y por el teorema 8
+(Secc. 2.3) no es invertible.
+Por otra parte, si a⁄= 1, se tiene
+A =
+
+
+1 2 3
+0 1 a
+1 3 4
+
+∼
+
+
+1 2 3
+0 1 a
+0 1 1
+
+∼
+
+
+1 2 3
+0 1 1
+0 0 1 −a
+
+
+donde —como 1−a⁄= 0— la matriz tiene 3 posiciones pivote, y por lo tanto es
+invertible.
+b) Si a = 2, la matriz se transforma en
+A =
+
+
+1 2 3
+0 1 2
+1 3 4
+
+
+y podemos calcular su inversa llevando a forma escalonada reducida por ﬁlas a
+la matriz
+[A|I] =
+
+
+1 2 3 | 1 0 0
+0 1 2 | 0 1 0
+1 3 4 | 0 0 1
+
+∼
+
+
+1 2 3 | 1 0 0
+0 1 2 | 0 1 0
+0 1 1 | −1 0 1
+
+
+∼
+
+
+1 2 3 | 1 0 0
+0 1 2 | 0 1 0
+0 0 −1 | −1 −1 1
+
+∼
+
+
+1 2 3 | 1 0 0
+0 1 2 | 0 1 0
+0 0 1 | 1 1 −1
+
+
+∼
+
+
+1 0 −1 | 1 −2 0
+0 1 2 | 0 1 0
+0 0 1 | 1 1 −1
+
+∼
+
+
+1 0 0 | 2 −1 −1
+0 1 0 | −2 −1 2
+0 0 1 | 1 1 −1
+
+
+de donde
+A−1 =
+
+
+2 −1 −1
+−2 −1 2
+1 1 −1
+
+Puntaje:
+a) Por demostrar que para a = 1 la matriz no es invertible: 1 punto.
+Por demostrar que para a⁄= 1 la matriz es invertible (por cualquier m´ etodo
+v´ alido): 2 puntos.
+b) Si calculan correctamente la inversa: 3 puntos.
+Si se equivocan en uno o dos entradas de la inversa (por errores de c´ alculo)
+se descuenta 1 punto por cada entrada err´ onea de la inversa.
+A lo anterior se le suma el punto base.
+Nota: Los alumnos que usaron determinantes para responder la pregunta recibieron
+0 puntos, ya que determinantes es una materia que ni siquiera se hab´ ıa mencionado
+al momento de dar la I 1.
+Si alguien hubiera usado formas bilineales, transformaciones semi-lineales o espacios
+vectoriales de dimensi´ on inﬁnita para responder esta pregunta (u otra) el criterio ser´ ıa
+el mismo.7. Sean A yB dos matrices invertibles. Demuestre que si (A +B) es invertible entonces
+(A−1 +B−1) es invertible, y su inversa es B(A +B)−1A.
+Soluci´ on:
+Bajo las hip´ otesis dadas, tantoA +B como A−1, B−1 y (A−1 +B−1) son matrices
+cuadradas del mismo tama˜ no.
+Adem´ as:
+(
+A−1 +B−1)B(A +B)−1A = A−1B(A +B)−1A +B−1B(A +B)−1A
+= A−1B(A +B)−1A + (A +B)−1A
+=
+(
+A−1B +I) (A +B)−1A =(A−1B +A−1A) (A +B)−1A
+= A−1(B +A)(A +B)−1A =A−1[(B +A)(A +B)−1]A
+= A−1IA =A−1A =I
+As´ ı, si llamamosX = (A−1 +B−1), Y = B(A +B)−1A, entonces tenemos que X e
+Y son matrices cuadradas del mismo tama˜ no, yXY =I.
+Esto es suﬁciente para probar queX −1 =Y , por lo que claramenteX = (A−1 +B−1)
+es invertible.
+Puntaje:
+Por plantear una demostraci´ on correctamente estructurada, 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su
+respuesta (el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene
+puntos):
+a) Si el conjunto de vectores{v1, v2, v3, v4} es linealmente independiente, entonces
+{v1, v2, v4} tambi´ en lo es.
+b) Si A es una matriz de 3× 5, y T es la transformaci´ on deﬁnida porT (x) =Ax,
+entoncesT tiene dominio R3.
+c) Un sistema con m´ as ecuaciones que inc´ ognitas es siempre consistente.
+Soluci´ on:
+a) Verdadero.
+Supongamos que{v1, v2, v3, v4} es linealmente independiente pero {v1, v2, v4}
+es linealmente dependiente.
+Entonces existe una combinaci´ on linealα1v1 +α2v2 +α4v4 = 0 que es no trivial
+(vale decir, α1,α 2,α 4 no son todos cero).
+Pero entonces, tomando α3 = 0, vemos que α1v1 +α2v2 +α3v3 +α4v4 = 0
+que es una combinaci´ on no trivial, por lo que {v1, v2, v3, v4} es linealmente
+dependiente, lo que contradice la hip´ otesis.
+b) Falso.
+SiA es una matriz de 3× 5 (o sea, tiene 3 ﬁlas y 5 columnas), entonces para que
+Ax tenga sentido, x debe tener tantas ﬁlas como columnas tiene A, vale decir
+5. As´ ı, el dominio deT es R5, no R3.
+Otra forma de justiﬁcar esto es dar un contraejemplo, vale decir, exhibir cual-
+quier matriz de 3 × 5 y mostrar que —para esa matriz— la transformaci´ on T
+tiene dominio R5.
+c) Falso.
+Contraejemplo: el sistema
+2x + y = 4
+x− 3y =−3
+3x + 5y = 1
+⏐⏐⏐⏐⏐⏐⏐
+tiene 3 ecuaciones y 2 inc´ ognitas, y no es consistente.
+Nota: por supuesto, hay inﬁnitos contraejemplos posibles.
+Puntaje:
+Cada parte vale dos puntos, los que se dan solo si esta la respuesta correcta con una
+justiﬁcaci´ on adecuada.

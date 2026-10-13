@@ -1,0 +1,608 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer Semestre 2019
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 3
+1. Demuestre que B = {1 − t2, t− t2, 2 − t2} es una base para el espacio vectorial de los polinomios
+de grado menor a igual a dos P2. Encuentre el vector de coordenadas de p(t) = 1 + 3 t + 6t2
+respecto a la base B.
+Soluci´ on.
+Los vectores coordenadas de B en la base canonica C = {t2, t, 1} son
+
+
+
+
+
+−1
+0
+1
+
+ ,
+
+
+−1
+1
+0
+
+ ,
+
+
+−1
+0
+2
+
+
+
+
+.
+Como 
+
+−1 −1 −1
+0 1 0
+1 0 2
+
+ ∼
+
+
+−1 −1 −1
+0 1 0
+0 0 1
+
+
+estos vectores coordenadas de B son linealmente independientes, lo que implica que los vectores
+de B son linealmente independientes. Luego, como Dim(P2) = 3 concluimos que B es una base
+para P2.
+El vector [ p(t)]B =
+
+
+x1
+x2
+x3
+
+, si x1, x2, x3 satisfacen que
+x1(1 − t2) + x2(t − t2) + x3(2 − t2) = 1 + 3 t + 6t2
+(x1 + 2x3) + (x2)t + (−x1 − x2 − x3) = 1 + 3 t + 6t2
+x1 + 2x3 = 1, x 2 = 3, −x1 − x2 − x3 = 6
+As ´ ıx1 = −19, x2 = 3, x3 = 10. Con lo que obtenemos [ p(t)]B =
+
+
+−19
+3
+10
+
+
+Puntaje:
+1.5 pto por demostrar que los vectores de B son linealmente independientes .
+1.5 pto por argumentar que la cantidad de vectores de B coincide con Dim(P2) .
+1 por encontrar cada componente del vector [ p(t)]B. (3 ptos)2. Sean V un espacio vectorial, B1 = {⃗ v1, ⃗ v2, ⃗ v3} y B2 = {⃗ v1 − ⃗ v2 + 2⃗ v3, ⃗ v2, ⃗ v3} bases de V .
+a) [4 ptos] Encuentre la matriz de cambio de base de coordenadas de la base B2 a la base
+B1.
+b) [2 ptos] Si ⃗ wes un vector en V tal que [ ⃗ w]B1 =
+
+
+2
+1
+3
+
+. Encuentre [ ⃗ w]B2.
+Soluci´ on.
+a) Por deﬁnici´ on
+PB1←B2 = ([ ⃗ v1 − ⃗ v2 + 2⃗ v3]B1 [⃗ v2]B1 [⃗ v3]B1)
+=
+
+
+1 0 0
+−1 1 0
+2 0 1
+
+ .
+b) Por teorema
+PB2←B1 = (PB1←B2)−1 =
+
+
+1 0 0
+1 1 0
+−2 0 1
+
+ .
+Por teorema
+[ ⃗ w]B2 = PB2←B1[ ⃗ w]B1 =
+
+
+1 0 0
+1 1 0
+−2 0 1
+
+
+
+
+2
+1
+3
+
+ =
+
+
+2
+3
+−1
+
+ .
+Puntaje:
+4 ptos por determinar PB1←B2.
+2 ptos por determinar correctamente [ ⃗ w]B23. Sea
+A =
+
+
+−1 a b
+0 1 0
+0 2 −1
+
+
+Determine condiciones en a y b para que la matriz A sea diagonalizable.
+Soluci´ on.
+El polinomio caracteristico de A es
+det
+
+
+−1 − λ a b
+0 1 − λ 0
+0 2 −1 − λ
+
+ = (−1 − λ)2(1 − λ)
+luego los valores propios de A son λ1 = −1 y λ2 = 1, como la multiplicidad algebraica de −1
+es dos, para que la matriz A sea diagonalizable se necesita que la dimensi´ on del espacio de
+vectores propios asociado al valor propio −1 ( E−1) sea 2.
+E−1 = N ul
+
+
+0 a b
+0 2 0
+0 2 0
+
+
+y esto ocurre si y s´ olo si b = 0 y a puede tomar cualquier valor.
+Puntaje:
+0.5 ptos por determinar correctamente cada valor propio de A. (1 pto)
+2 pto por argumentar que la matriz A ser´ a diagonalizable si y s´ olo si la dimensi´ on del
+espacio de vectores propios asociado al valor propio −1 es 2.
+1.5 ptos por dterminar que b debe ser 0.
+1.5 ptos por dterminar que a debe ser puede tomar cualquier valor4. Sean M2, el espacio vectorial de las matrices de 2 × 2, P2,el espacio vectorial de los polinomios
+de grado menor a igual a dos y la transformaci´ on lineal T : P2 → M2 deﬁnida por la matriz
+[T ] =
+
+
+−1 0 −1
+0 −1 −1
+2 −1 1
+1 2 3
+
+
+respecto a la base
+BP = {x2, x − 1, −1} de P2
+y a la base canonica
+C =
+{[ 1 0
+0 0
+]
+,
+[ 0 1
+0 0
+]
+,
+[ 0 0
+1 0
+]
+,
+[ 0 0
+0 1
+]}
+de M2.
+Determine una base para el n´ ucleo y para la imagen de T .
+Soluci´ on.
+Una forma escalonada de la matriz [ T ] es la matriz
+
+1 0 1
+0 1 1
+0 0 0
+0 0 0
+
+
+Por lo tanto una base para el Col ([T ]) es el conjunto
+
+
+
+
+
+−1
+0
+2
+1
+
+ ,
+
+
+0
+−1
+−1
+2
+
+
+
+
+
+Luego, la imagen de la transformaci´ on tiene como base el conjunto
+{[ −1 0
+2 1
+]
+,
+[ 0 −1
+−1 2
+]}
+Y la
+N ul([T ]) =
+
+
+
+
+
+x
+y
+z
+
+ | x + z = 0, y + z = 0
+
+
+ = Gen
+
+
+
+
+
+1
+1
+−1
+
+
+
+
+
+Luego, la n´ ucleo de la transformaci´ on tiene como base el conjunto {x2 + x}
+Puntaje:
+1 pto por determinar una base para Col ([T ])
+2 ptos por determinar una base para Im(T )
+1 pto por determinar una base para N ul([T ])
+2 ptos por determinar una base para n´ ucleo de T .
+Contin´ ua en la siguiente p´ agina.5. Sea A una matriz de 3 × 3 tal que A
+[ 1
+−1
+0
+]
+=
+[ −3
+3
+0
+]
+y la forma escalonada reducida de A es
+[ 2 3 −1
+0 0 0
+0 0 0
+]
+. Determine si A es diagonalizable y si lo es encuentre una matriz P invertible y
+una matriz D diagonal tal que A = P−1DP .
+Soluci´ on.
+Como A
+[ 1
+−1
+0
+]
+=
+[ −3
+3
+0
+]
+implica que λ1 = −3 es valor propio de matriz, y un vector propio
+asociado a este valor es
+[ 1
+−1
+0
+]
+.
+Como la forma escalonada reducida de A es
+[ 2 3 −1
+0 0 0
+0 0 0
+]
+implica que λ2 = 0 es un valor propio
+de la matriz y el espacio de vectores propios asociados a este valor es
+E0 = N ul(A) =
+
+
+
+
+
+x
+y
+z
+
+ | 2x + 3y − z = 0
+
+
+ = Gen
+
+
+
+
+
+1
+0
+2
+
+ ,
+
+
+0
+1
+3
+
+
+
+
+ .
+Con esto concluimos que el conjunto
+
+
+
+
+
+1
+−1
+0
+
+ ,
+
+
+1
+0
+2
+
+ ,
+
+
+0
+1
+3
+
+
+
+
+ es una base de vectores pro-
+pios de A para R3, luego la matriz A es diagonalizable.
+Si P =
+
+
+1 1 0
+−1 0 1
+0 2 3
+
+ y D =
+
+
+−3 0 0
+0 0 0
+0 0 0
+
+, tenemos que A = P−1DP
+Puntaje:
+1 pto determinar cada valor propio de A.(2 ptos)
+1 pto determinar cada vector propio de A.(3 ptos)
+0.5 ptos por calcular correctamante D.
+0.5 ptos por calcular correctamante P .6. Sea A =
+( 2 1
+−2 0
+)
+una matriz que act´ ua sobre C2. Determine los valores propios y una base
+de vectores propios de A en C2.
+Soluci´ on.
+El polinomio caract´ eristico deA es
+PA(λ) =
+2 − λ 1−2 −λ = (2 − λ)(−λ) + 2 = λ2 − 2λ + 2.
+El polinomio PA tiene dos raices complejas conjugadas 1 ± i, as ´ ı los valores propios de A son
+1 ± i .
+Luego el espacio propio asociado a λ1 = 1 + i, se determina por
+N ul
+(1 − i 1
+−2 −1 − i
+)
+= Gen
+{( −1
+1 − i
+)}
+y el espacio propio asociado a λ2 = 1 − i, se determina por
+N ul
+(1 + i 1
+−2 −1 + i
+)
+= Gen
+{( −1
+1 + i
+)}
+.
+Luego una base de vectores propios para A es
+{( −1
+1 − i
+)
+,
+( −1
+1 + i
+)}
+Puntaje:
+1 pto por cada valor propio.(2 ptos)
+2 ptos cada vector de la base de vectores propios.(4 ptos)7. Sea H = {(x, y, z, w) ∈ R4 : 2x + y − z + w = 0, −2x + z − 3w = 0}. Determine una base para
+el complemento ortogonal ( H⊥) de H.
+Soluci´ on.
+Primero notamos que
+H = gen
+
+
+
+
+
+1
+0
+2
+0
+
+ ,
+
+
+0
+2
+3
+1
+
+
+
+
+ .
+Luego, v =
+
+
+v1
+v2
+v3
+v4
+
+ ∈ H⊥ si y s´ olo si
+
+
+v1
+v2
+v3
+v4
+
+ ·
+
+
+1
+0
+2
+0
+
+ = 0 y
+
+
+v1
+v2
+v3
+v4
+
+ ·
+
+
+0
+2
+3
+1
+
+ = 0.
+As ´ ı,v1 + 2v3 = 0 y 2 v2 + 3v3 + v4 = 0 lo que implica que
+v =
+
+
+−2v3
+− 32 v3 − 12 v4
+v3
+v4
+
+ = v3
+
+
+−2
+− 32
+1
+0
+
+ + v4
+
+
+0
+− 12
+0
+1
+
+
+lo que implica H⊥ = gen
+
+
+
+
+
+−2
+− 32
+1
+0
+
+ ,
+
+
+0
+− 12
+0
+1
+
+
+
+
+. As ´ ı una base paraH⊥ es
+
+
+
+
+
+−2
+− 32
+1
+0
+
+ ,
+
+
+0
+− 12
+0
+1
+
+
+
+
+
+Puntaje:
+2 ptos por enunciar que deben cumplir los vectores que pertenecen a H⊥.
+2 por encontrar cada vector que genera H⊥.(4 ptos)8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. Justiﬁque sus respuestas.
+a) Si M es una matriz de 7 × 5 no inyectiva entonces su forma escalonada reducida no posee
+2 ﬁlas nulas.
+b) Si A y B son matrices ortogonales reales entonces AB es una matriz ortogonal.
+c) Si A es una matriz de 2 × 2 con valores propios 1 y −1 el polinomio caracter ´ ıstico de la
+matriz A2 − I es ( λ − 1)2 .
+Soluci´ on.
+a) Falso .
+Por el teorema de las dimensiones, tenemos que
+5 = dim(N ul(A)) + rang(A).
+Si A es no inyectiva, entonces su nulidad tiene a lo menos dimensi´ on 1 por lo que su
+rango es a lo m´ as 4. Si la F.E.R de A tiene 2 ﬁlas nulas, entonces A tiene 5 pivotes,
+por lo que rang(A) = 5, lo que es una contradicci´ on. En conclusi´ on, la aﬁrmaci´ on es
+falsa.
+b) Verdadero .
+A y B son matrices ortogonales reales si y s´ olo si A−1 = At, B−1 = Bt luego
+(AB)−1 = B−1A−1 = BtAt = (AB)t
+as ´ ıAB es una matriz ortogonal.
+c) Falso
+Si v es vector propio de A asociado a el valor propio λ entonces
+(A2 − I)v = A(Av) − Iv = A(λv) − v = λ2v − v = (λ2 − 1)v
+luego el ´ unico valor propio de la matriz A2 − I es λ = 0, si tuviera polinomio ca-
+racter ´ ıstico (λ − 1)2 = 0 tendria como valor propio a 1. Tambien sirve dar un contra
+ejemplo.
+Puntaje:
+2 ptos por argumentar cada alternativa correctamente.

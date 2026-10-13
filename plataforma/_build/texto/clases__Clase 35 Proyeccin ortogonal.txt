@@ -1,0 +1,148 @@
+
+----- pagina 1 -----
+Clase 35 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 10
+----- pagina 2 -----
+Recordatorio
+Dos vectores u y v son ortogonales si u · v = 0.
+Si W es un subespacio de Rn, el conjunto de todos los vectores z que
+son ortogonales a W se llama complemento ortogonal de W y se
+denota mediante W⊥.
+Un conjunto de vectores {u1, . . . ,up} se denomina conjunto
+ortogonal si cada par de distintos vectores del conjunto es ortogonal,
+y ortonormal si además son unitarios.
+Sea {u1, . . . ,up} una base ortogonal para un subespacio W. Para
+cada y en W, los pesos en la combinación lineal
+y = c1u1 + · · · + cpup
+están dados por
+cj = y · ujuj · uj (j = 1, . . . ,p)
+2 / 10
+----- pagina 3 -----
+Proyecciones ortogonales
+Si W es un subespacio vectorial de Rn y y ∈ Rn, ¿cuál es el vector de W
+más cercano a y?
+3 / 10
+----- pagina 4 -----
+Proyecciones ortogonales
+Proyección Ortogonal, caso una dimensión
+Dado un vector y diferente de cero y un vector u en Rn, es posible
+descomponer y en la suma de dos vectores, uno múltiplo de u y otro
+ortogonal a u:
+y = ˆy + z
+donde ˆy = αu = y·uu·u u es la proyección ortogonal de y sobre u , y
+z = y − ˆy es la componente de y ortogonal a u .
+Ejemplo: Sean y =
+[ 7
+6
+]
+y u =
+[ 4
+2
+]
+. Encuentre la proyección
+ortogonal de y sobre u. Luego escriba y como la suma de dos vectores
+ortogonales, uno en Gen {u} y otro ortogonal a u.
+4 / 10
+----- pagina 5 -----
+Proyecciones ortogonales
+Teorema: Teorema de la descomposición ortogonal
+Sea W un subespacio de Rn. Entonces cada y en Rn puede escribirse
+únicamente en la forma
+y = ˆy + z
+donde ˆy está en W y z está en W⊥. Si {u1, . . . ,up} es cualquier base
+ortogonal de W, entonces
+ˆy = y · u1
+u1 · u1
+u1 + · · · + y · upup · up up
+y z = y − ˆy.
+5 / 10
+----- pagina 6 -----
+Proyecciones ortogonales
+El vector ˆy se denomina proyección ortogonal de y sobre W y a menudo
+se escribe como proy Wy. Note que si y ∈ W, entonces proy Wy = y, y si
+y ∈ W⊥, entonces proy Wy = 0.
+Ejemplo: Sea W el subespacio generado por los vectores ortogonales
+u1 =
+
+
+3
+−1
+2
+
+ y u2 =
+
+
+1
+−1
+−2
+
+, y sea y =
+
+
+−1
+2
+6
+
+. Escriba y como la
+suma de un vector en W y un vector ortogonal a W.
+6 / 10
+----- pagina 7 -----
+Proyecciones ortogonales
+7 / 10
+----- pagina 8 -----
+Proyecciones ortogonales
+Teorema: Teorema de la mejor aproximación
+Sea W un subespacio de Rn, sea y cualquier vector en Rn, y sea ˆy la
+proyección ortogonal de y sobre W. Entonces ˆy es el punto más cercano en
+W a y, en el sentido de que
+||y − ˆy|| < ||y − v||
+para toda v en W distinta de ˆy.
+Esta distancia ||y − ˆy|| se conoce como la distancia de y a W.
+8 / 10
+----- pagina 9 -----
+Proyecciones ortogonales
+Ejemplo: Considere los vectores del ejemplo anterior: u1 =
+
+
+3
+−1
+2
+
+,
+u2 =
+
+
+1
+−1
+−2
+
+ y y =
+
+
+−1
+2
+6
+
+. Determine la distancia de y a
+W = Gen{u1, u2}.
+9 / 10
+----- pagina 10 -----
+Proyecciones ortogonales
+Si la base de W es ortonormal, la fórmula de la proyección se simplifica.
+Teorema
+Si {u1, . . . ,up} es una base ortonormal para un subespacio W de Rn,
+entonces
+proyWy = (y · u1)u1 + (y · u2)u2 + · · · + (y · up)up
+Si U =
+[
+u1 u2 . . . up
+]
+, entonces
+proyWy = UUTy
+para toda y en Rn.
+10 / 10

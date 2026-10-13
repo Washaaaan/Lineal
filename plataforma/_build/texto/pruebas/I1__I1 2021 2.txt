@@ -1,0 +1,379 @@
+PONTIFICIA UNIVERSIDAD CAT ´OLICA DE CHILE
+FACULTAD DE MATEM´ATICAS
+DEPARTAMENTO DE MATEM´ATICA
+Interrogaci´ on 1 MAT1203 - 16 de septiembre
+Decida si las siguientes aﬁrmaciones son verdaderas o falsas. Si es verdadera, demu´ estrela.
+Si es falsa d´ e un contraejemplo.
+1. a) Si u,v∈ R2, entonces‖u +v‖ =‖u‖ +‖v‖.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Si u =
+( 1
+0
+)
+y v =
+( 0
+1
+)
+, entonces u +v =
+( 1
+1
+)
+.
+Se tiene que ‖u‖ = 1, ‖v‖ = 1 y ‖u + v‖ =
+√
+2, y no se cumple que
+‖u +v‖ =‖u‖ +‖v‖.
+1b) Sean u,v ∈ Rn. Si{u +v,v} es linealmente independiente, entonces {u,v} es
+linealmente independiente.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Sean α,β ∈ R tales que α(u) + β(v) = ⃗0. Se probar´ a que necesariamente
+α =β = 0.
+Comoα(u)+β(v) =⃗0 se intentar´ a construir una combinaci´ on lineal deu+v yv.
+Sumando y restando el vector α(v) se obtiene
+α(u) +α(v)−α(v) +β(v) =⃗0.
+Reordenando se tiene α(u +v) + (β−α)(v) =⃗0.
+Se tiene entonces una combinaci´ on lineal de los vectoresu +v y v. Pero ellos
+son linealmente independientes, por lo tanto esta combinaci´ on debe ser trivial.
+Luego α = 0 y β−α = 0, reemplazando se obtiene α =β = 0 que era lo que
+se quer´ ıa probar.
+Otra forma:
+Tambi´ en es posible demostrar la aﬁrmaci´ on por contradicci´ on:
+Si el conjunto{u,v} es linealmente dependiente, entonces existen α,β ∈ R no
+ambos nulos tal que αu +βv =⃗0.
+Si α⁄= 0, entonces u =−βαv, luego el conjunto{u +v,v} ={(α−β)α v,v}.
+Como est´ a formado por dos vectores m´ ultiplos del mismo vector, entonces es
+linealmente dependiente.
+Siβ⁄= 0, entoncesv =−αβu, luego el conjunto{u+v,v} ={(β−α)β u,−αβu}.
+Como est´ a formado por dos vectores m´ ultiplos del mismo vector, entonces es
+linealmente dependiente.
+22. a) Sean u, v y w vectores distintos y no nulos en Rn. Si u·v =u·w =v·w = 0,
+entonces el conjunto{u,v,w} es linealmente independiente.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Sean α,β,γ ∈ R tales que α(u) +β(v) +γ(w) =⃗0. Se probar´ a que necesaria-
+menteα =β =γ = 0.
+• Como u·⃗0 = 0, entonces reemplazando se tiene:
+u· (α(u) +β(v) +γ(w) ) = 0, es decir:
+α(u·u) +β(u·v) +γ(u·w) = 0, reemplazando:
+α(u·u) + 0 + 0 = 0, perou es no nulo, luego (u·u)⁄= 0, por lo tanto α = 0.
+• Como v·⃗0 = 0, entonces reemplazando se tiene:
+v· (α(u) +β(v) +γ(w) ) = 0, es decir:
+α(v·u) +β(v·v) +γ(v·w) = 0, reemplazando:
+0 +β(v·v) + 0 = 0, pero v es no nulo, luego (v·v)⁄= 0, por lo tanto β = 0.
+• Como w·⃗0 = 0, entonces reemplazando se tiene:
+w· (α(u) +β(v) +γ(w) ) = 0, es decir:
+α(w·u) +β(w·v) +γ(w·w) = 0, reemplazando:
+0 + 0 +γ(w·w) = 0, pero w es no nulo, luego (w·w)⁄= 0, por lo tanto γ = 0.
+3b) El conjunto
+
+
+u∈ R4 tal que u·
+
+
+1
+0
+1
+2
+
+ = 0
+
+
+ es un conjunto generado por 3
+vectores linealmente independientes.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Primero se escribe la condici´ on de producto punto como una ecuaci´ on:
+
+
+u =
+
+
+x1
+x2
+x3
+x4
+
+ tal que x1 +x3 + 2x4 = 0 con x1,x 2,x 3,x 4∈ R
+
+
+.
+Entonces el conjunto es la soluci´ on de un sistema de ecuaciones lineales con
+una ecuaci´ on y cuatro variables, las variables libres sonx2, x3 y x4:
+
+
+u =
+
+
+−x3− 2x4
+x2
+x3
+x4
+
+ con x2,x 3,x 4∈ R
+
+
+.
+Se escribe como conjunto generado:
+
+
+u =x2
+
+
+0
+1
+0
+0
+
+ +x3
+
+
+−1
+0
+1
+0
+
+ +x4
+
+
+−2
+0
+0
+1
+
+ con x2,x 3,x 4∈ R
+
+
+.
+Por ´ ultimo se muestra que el conjunto generador es linealmente independiente:
+La forma escalonada reducida de
+
+
+0 1 0 0
+−1 0 1 0
+−2 0 0 1
+
+ tiene tres pivotes:
+
+
+0 1 0 0
+−1 0 1 0
+−2 0 0 1
+
+∼
+
+
+1 0 0 −1/2
+0 1 0 0
+0 0 1 −1/2
+
+
+43. a) Si
+L1 =
+
+
+x∈ R3 tal que x =
+
+
+1
+2
+1
+
+ +α
+
+
+1
+0
+2
+
+ con α∈ R
+
+
+ y
+L2 =
+
+
+x∈ R3 tal que x =
+
+
+0
+1
+1
+
+ +α
+
+
+2
+1
+1
+
+ con α∈ R
+
+
+,
+entoncesL1 y L2 no tienen puntos en com´ un.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Si existiera un punto en com´ un, entonces existeα y β tal que:
+
+
+1
+2
+1
+
+ +α
+
+
+1
+0
+2
+
+ =
+
+
+0
+1
+1
+
+ +β
+
+
+2
+1
+1
+
+.
+Es decir, el sistema
+
+
+1 −2
+0 −1
+2 −1
+
+
+( α
+β
+)
+=
+
+
+−1
+−1
+0
+
+ tiene soluci´ on paraα y β.
+Se escalona entonces la matriz ampliada:
+
+
+1 −2 −1
+0 −1 −1
+2 −1 0
+
+∼
+
+
+1 −2 −1
+0 −1 −1
+0 0 −1
+
+.
+De la ´ ultima ﬁla se obtiene que el sistema no tiene soluci´ on, por lo tanto
+efectivamente las rectas no tienen puntos en com´ un.
+5b) Sea A =
+[ 1 2 3
+1 3 0
+]
+. El sistema Ax =b tiene soluci´ on para todob∈ R2.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Sea b =
+( b1
+b2
+)
+∈ R2. Se forma la matriz ampliada del sistema y se escalona:
+[ 1 2 3 b1
+1 3 0 b2
+]
+∼
+[ 1 2 3 b1
+0 1 −3 b2−b1
+]
+.
+Como esta ´ ultima matriz tiene pivote en cada una de sus ﬁlas, entonces el
+sistema tiene soluci´ on independiente de los valores deb1 y b2.
+64. a) Si u y v son vectores en R3, entonces Gen{u,v} = Gen{u,v + 5u}.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+• Six =au +bv para algunos a,b∈ R es un elemento de Gen{u,v}, entonces:
+x = (a− 5b)(u) +b(v + 5u) y por lo tanto pertenece a Gen{u,v + 5u}.
+• Siy =cu+d(v +5u) para algunosc,d∈ R es un elemento de Gen{u,v +5u},
+entonces:
+y = (c + 5d)(u) +d(v) y por lo tanto pertenece a Gen{u,v}.
+Otra forma:
+• u = (1)u + (0)(v + 5u) y v = (−5)u + (1)(v + 5u) por lo tanto
+Gen{u,v}⊆ Gen{u,v + 5u}.
+• u = (1)u + (0)(v) y v + 5u = (5)u + (1)(v) por lo tanto
+Gen{u,v + 5u}⊆ Gen{u,v}.
+Otra forma:
+• El conjunto Gen{u,v + 5u} es igual a Gen{u,v + 5u,v}
+pues v = (−5)u + (1)(v + 5u).
+• El conjunto Gen{u,v + 5u,v} es igual a Gen{u,v}
+pues v + 5u = (1)v + (5)u.
+7b) El sistema
+
+
+1 2
+1 3
+1 r
+
+x =
+
+
+4
+5
+6
+
+ es tal que existen valores de r∈ R tal que el
+sistema tiene soluci´ on ´ unica y existen valores der∈ R tal que el sistema no
+tiene soluci´ on.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Se escalona la matriz ampliada del sistema:
+
+
+1 2 4
+1 3 5
+1 r 6
+
+∼
+
+
+1 2 4
+0 1 1
+0 r− 2 2
+
+.
+De la ´ ultima ﬁla se tiene que sir = 2, entonces el sistema no tiene soluci´ on.
+Tambi´ en de la ´ ultima ﬁla se tiene que sir = 4, entonces la tercera ﬁla es un
+m´ ultiplo de la segunda y la forma escalonada queda:
+
+
+1 2 4
+0 1 1
+0 2 2
+
+∼
+
+
+1 2 4
+0 1 1
+0 0 0
+
+.
+Por lo tanto en este caso el sistema tiene soluci´ on ´ unica dada por
+( 2
+1
+)
+.
+8

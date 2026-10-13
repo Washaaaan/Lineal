@@ -1,0 +1,6195 @@
+
+----- pagina 1 -----
+ 
+ Copyright © 2012 Pear
+ 
+ 
+5.1 SOLUTIONS 
+Notes: Exercises 1–6 reinforce the d e
+eigenvectors and difference equations, a
+example and anticipates discussions of d
+ 1. The number 2 is an eigenvalue of A
+This equation is equivalent to ( −A
+   32 202 38 02AI ⎡⎤ ⎡⎤ ⎡−= − =⎢⎥ ⎢⎥ ⎢⎣⎦ ⎣⎦ ⎣
+  The columns of A are obviously line
+so 2 is an eigenvalue of A. 
+ 2. The number − 3 is an eigenvalue of
+This equation is equivalent to (A +
+   14 303 69 03AI −⎡⎤ ⎡ ⎤+= + =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+  The columns of A are obviously line
+so 3−  is an eigenvalue of A. 
+ 3. Is Ax  a multiple of x? Compute 16⎡⎢⎣
+eigenvalue 2− . 
+ 4. Is Ax  a multiple of x? Compute 53⎡⎢⎣
+eigenvalue3 .
+rson Education, Inc. Publishing as Addison-Wesley. 
+ 
+ 
+efinitions of eigenvalues and eigenvectors. The s u
+along with Exercises 33 and 34, refers to the chapter 
+dynamical systems in Sections 5.2 and 5.6. 
+A if and only if the equation 2A =xx  has a nontrivial s
+2) . =xI 0  Compute 
+12
+36
+⎡ ⎤
+⎥⎣ ⎦  
+early dependent, so (2 )AI−= x 0  has a nontrivial solu
+f A if and only if the equation 3A =−xx  has a nontrivi
+3) .I =x 0  Compute 
+24
+61 2
+⎡⎤
+⎢⎥⎣⎦  
+early dependent, so (3 )AI+= x 0  has a nontrivial solu
+1 11 2 1 2.6 43 6 3−−⎤⎡ ⎤ ⎡ ⎤ ⎡ ⎤== −⎥⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−⎦⎣ ⎦ ⎣ ⎦ ⎣ ⎦  So 13⎡⎤⎢⎥⎣⎦  is an eigenvector 
+5 21 3 1 33 61 3 1 ⎡⎤⎢⎥⎢⎥⎢⎥⎣⎦−− −⎤⎡ ⎤ ⎡ ⎤==⎥⎢ ⎥ ⎢ ⎥⎦⎣ ⎦ ⎣ ⎦    So 11−⎡⎤⎢⎥⎣⎦  is an eigenvector
+273 
+ubsection on 
+introductory 
+solution. 
+ution, and 
+ial solution. 
+ution, and 
+of A with 
+r of A with 
+
+----- pagina 2 -----
+274 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. Is Ax  a multiple of x? Compute 
+433 3 1 5 3
+232 2 1 0 5 2 .
+1021 5 1
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−− = = − −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ So 
+3
+2
+1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ is an eigenvector 
+of A for the eigenvalue 5− . 
+ 6. Is Ax  a multiple of x? Compute 
+367 1 5 1
+327 2 1 3 2
+564 2 1 2
+λ
+⎡ ⎤ ⎡⎤⎡ ⎤ ⎡⎤
+⎢ ⎥ ⎢⎥⎢ ⎥ ⎢⎥ −= ≠ −⎢ ⎥ ⎢⎥⎢ ⎥ ⎢⎥
+⎢ ⎥ ⎢⎥⎢ ⎥ ⎢⎥⎣ ⎦ ⎣⎦⎣ ⎦ ⎣⎦
+ So 
+1
+2
+2
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ is not 
+  an eigenvector of A. 
+ 7. To determine if 4 is an eigenvalue of A, decide if the matrix 4AI−  is invertible. 
+   
+30 1 400 1 0 1
+4 23 1 040 2 1 1
+34 5 004 3 4 1
+AI
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−= − = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Invertibility can be checked in several ways, but since an eigenvector is needed in the event that one 
+exists, the best strategy is to row reduce the augmented matrix for (4 )AI−= x0 : 
+   
+10 1 0 10 1 0 10 1 0
+211 0 011 0 011 0
+341 0 044 0 000 0
+−− −−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥−− − − −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−⎣⎦ ⎣⎦ ⎣ ⎦
+∼∼     
+  The equation (4 )AI−= x0  has a nontrivial solution, so 4 is an eigenvalue. Any nonzero solution of 
+(4 )AI−= x0  is a corresponding eigenvector. The entries in a solution satisfy 13 0xx+=  and 
+23 0,−− =xx  with 3x  free. The general solution is not requested, so to save time, simply take any 
+nonzero value for 3x  to produce an eigenvector. If 3 1,=x  then (1 1 1 ) .=− , −,x  
+Note: The answer in the text is (1 1 1),,, −  written in this form to make the students wonder whether the 
+more common answer given above is also correct. This may initiate a class discussion of what answers 
+are “correct.” 
+ 8. To determine if 1 is an eigenvalue of A, decide if the matrix AI−  is invertible. 
+   
+423 1 0 0 323
+0130 1 0 023
+122 0 0 1 123
+AI
+−−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥−= − − = −⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥−− −−⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  Row reducing the augmented matrix [(A )   ]I− 0  yields: 
+   
+323 0 123 0 1 00 0 1 0 0 0
+023 0 023 0 0 23 0 0 13 / 2 0
+1 2 30 0 4 60 00 00 00 00
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− − −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+     ∼∼ ∼  
+  The equation ()AI−= x0  has a nontrivial solution, so 1 is an eigenvalue. Any nonzero solution of 
+()AI−= x0  is a corresponding eigenvector. The entries in a solution satisfy 1 0x =  and 
+----- pagina 3 -----
+5.1  Solutions   275  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+23 (3 / 2) 0,xx −=  with 3x  free. The general solution is not requested, so to save time, simply take 
+any nonzero value for 3x  to produce an eigenvector. If 3 2,x =  then 
+0
+3.
+2
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+x  
+ 9. For 30 10 2011 21 01 20AIλ ⎡ ⎤⎡ ⎤⎡ ⎤=: − = − = ⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦  
+  The augmented matrix for ()AI−= x0  is 200 .200⎡ ⎤⎢ ⎥⎣ ⎦  Thus 1 0x =  and 2x  is free. The general 
+solution of ()AI−= x0  is 22 ,ex  where 2
+0 ,1⎡ ⎤= ⎢ ⎥⎣ ⎦e  and so 2e  is a basis for the eigenspace 
+corresponding to the eigenvalue 1. 
+  For 30 30 0 033 21 03 2 2AIλ ⎡ ⎤⎡ ⎤⎡ ⎤=: − = − = ⎢ ⎥⎢ ⎥⎢ ⎥ −⎣ ⎦⎣ ⎦⎣ ⎦  
+  The equation (3 )AI−= x0  leads to 1222 0 ,xx−=  so that 12xx=  and 2x  is free. The general 
+solution is 
+12
+2
+22
+1 .1xx xxx⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎡⎤== ⎢⎥⎣⎦  So 11⎡⎤⎢⎥⎣⎦  is a basis for the eigenspace. 
+Note: For simplicity, the answer omits the set brackets when listing a basis. I permit my students to 
+list a basis without the set brackets. Some instructors may prefer to include brackets. 
+ 10. For 42 10 1255 5 . 31 0 1 3 6AIλ −⎡ ⎤⎡ ⎤ ⎡ ⎤= − : + =+= ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦  
+  The augmented matrix for (5 )AI+= x0  is 120 120 .360 000⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦  ∼  Thus 12 2xx=−  and 2x  is 
+free. The general solution is 
+12
+2
+22
+2 2 .1xx xxx⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ − −⎡ ⎤== ⎢ ⎥⎣ ⎦  A basis for the eigenspace corresponding to 5−  
+is 2 .1−⎡⎤⎢⎥⎣⎦  
+ 11. For 1λ =− :  13 1 0 2345 0 1 46AI −−⎡ ⎤⎡ ⎤⎡ ⎤+= + =⎢ ⎥⎢ ⎥⎢ ⎥−−⎣ ⎦⎣ ⎦⎣ ⎦  
+  The augmented matrix for ()AI+= x0  is 23 0 13 / 2 0  .4 6 0 000−−⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦∼  Thus 12 (3 / 2)xx=  and 
+2x  is free.  The general solution is 
+12
+2
+22
+(3 / 2) 3/2 .1xx xxx ⎡⎤⎢⎥⎢⎥⎢⎥⎣⎦⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦  A basis for the eigenspace 
+corresponding to 1−  is 3/2 .1⎡⎤⎢⎥⎣⎦  Another choice is 3 .2⎡ ⎤⎢ ⎥⎣ ⎦  
+----- pagina 4 -----
+276 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   For 7λ = :  13 7 0 637 45 0 7 42AI −− −⎡ ⎤⎡ ⎤⎡ ⎤−= − =⎢ ⎥⎢ ⎥⎢ ⎥−− −⎣ ⎦⎣ ⎦⎣ ⎦  
+The augmented matrix for (7 )AI−= x0  is 63 01 1 / 2 0  .42 0 000−−⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥−−⎣ ⎦⎣ ⎦∼  Thus 12 (1 / 2 )xx=−  and 2x  
+is free. The general solution is 
+12
+2
+22
+(1 / 2 ) 1/ 2 .1xx xxx ⎡⎤⎢⎥⎢⎥⎢⎥⎣⎦ − −⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦  A basis for the eigenspace 
+corresponding to 7 is 1/2 .1−⎡ ⎤⎢ ⎥⎣ ⎦  Another choice is 1 .2−⎡ ⎤⎢ ⎥⎣ ⎦  
+ 12. For 41 30 1 133 36 03 33AIλ ⎡ ⎤⎡ ⎤⎡ ⎤=: − = − = ⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦  
+  The augmented matrix for (3 )AI−= x0  is 110 110 .330 000⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦∼  Thus 12xx=−  and 2x  is free. 
+ A basis for the eigenspace corresponding to 1 is 1 .1−⎡ ⎤⎢ ⎥⎣ ⎦   
+  For 41 70 3 177 . 36 07 3 1AIλ −⎡ ⎤⎡ ⎤⎡ ⎤= : − =−= ⎢ ⎥⎢ ⎥⎢ ⎥ −⎣ ⎦⎣ ⎦⎣ ⎦  
+  The augmented matrix for (7 )AI−= x0  is 31 0 11 / 3 0  .31 0 0 0 0−−⎡ ⎤⎡ ⎤⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦∼  Thus 12 (1 / 3)xx=  and 
+2x  is free. The general solution is 
+12
+2
+22
+(1 / 3) 1/3 .1xx xxx⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎡ ⎤== ⎢ ⎥⎣ ⎦  A basis for the eigenspace 
+corresponding to 7 is 1/3 .1⎡ ⎤⎢ ⎥⎣ ⎦  Another choice is 1 .3⎡ ⎤⎢ ⎥⎣ ⎦  
+ 13. For λ = 1: 
+   
+401 100 301
+12 1 0 0 1 02 0 0
+201 001 200
+AI
+⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥−= − − = −⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥−−⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  The equations for ()AI−= x0  are easy to solve: 13
+1
+30
+2        0
+xx
+x
++=⎧ ⎫
+⎨ ⎬−=⎩⎭  
+  Row operations hardly seem necessary. Obviously 1x  is zero, and hence 3x  is also zero. There are  
+three-variables, so 2x  is free. The general solution of ()AI−= x0  is 22 ,ex  where 2
+0
+1,
+0
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+e  and  
+so 2e  provides a basis for the eigenspace. 
+  For λ = 2: 
+----- pagina 5 -----
+5.1  Solutions   277  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+401 200 2 0 1
+22 1 0 0 2 02 1 0
+201 002 2 0 1
+AI
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−= − − = − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+   
+201 0 20 1 0 0 1 2 0
+[( 2 )  ] 2 1 0 0 0 1 1 0 0 1 0
+201 0 00 0 0 0 0 0 0
+AI
+1/⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−= − − − 1 −⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥−−⎣ ⎦⎣ ⎦⎣ ⎦
+∼∼0  
+  So 13 2 3 (1 2) ,xx x x=− / , =  with 3x  free. The general solution of (2 )AI−= x0  is 3
+12
+1.
+1
+−/⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+x  A nice 
+basis vector for the eigenspace is 
+1
+2.
+2
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  For λ = 3: 
+   
+401 300 1 0 1
+3 2 1 0 0 3 0 220
+2 0 10 0 3 202
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−= − − = − −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+AI  
+   
+1 0 10 1 0 10 0 10
+[( 3 )  ] 2 2 0 0 0 2 2 0 0 1 0
+2 0 20 0 000 00 00
+1⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−= − − − 1 −⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥−−⎣ ⎦⎣ ⎦⎣ ⎦
+0 ∼∼AI  
+  So 13 2 3 ,=− , =xx x x  with 3x  free. A basis vector for the eigenspace is 
+1
+1.
+1
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+ 14. For 
+4 0 1 300 1 0 1
+3 ( 3 ) 3 303 0 3 0 333 .
+2 2 5 003 2 2 2
+AI A Iλ
+−−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥=: − = − = − = − ⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥−−⎣⎦ ⎣ ⎦ ⎣⎦
+ 
+  The augmented matrix for (3 )AI−= x0  is 
+   
+1 0 10 1 0 10 10 10
+[ ( 3 ) ] 3 3 30   0 3 60   01 20
+2 2 20 0 0 00 00 00
+AI
+−− −⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥−= − − − ⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦⎣ ⎦
+0 ∼∼  
+  Thus 13 2 3 2,xx x x=, =  with 3x  free. The general solution of (3 )AI−= x0  is 3
+1
+2.
+1
+x
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  A basis for the eigenspace corresponding to 2 is 
+1
+2
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+. 
+----- pagina 6 -----
+278 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 15. For 
+1110 1110
+5 [ ( 5 )   ] 2220   0000 .
+3330 0000
+AIλ
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥=− : + = ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+0 ∼  Thus 123 0,xx x++= with 2x  and 
+3x  free. The general solution of (5 )AI+= x0  is
+23
+232
+3
+11
+10
+01
+xx
+xx x
+x
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+−− − − ⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥== + . ⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+x A basis for the 
+eigenspace corresponding to 5−  is 
+11
+10
+01
+⎧⎫ −−⎡ ⎤⎡ ⎤
+⎪⎪⎢ ⎥⎢ ⎥,⎨⎬⎢ ⎥⎢ ⎥⎪⎪⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎩⎭  
+Note: For simplicity, the text answer omits the set brackets. I permit my students to list a basis without 
+the set brackets. Some instructors may prefer to include brackets. 
+ 16. For []
+1 0 10 1 0 10 10 10
+11 0 0 01 1 0 0 11 04(4 ) . 211 0 01 1 0 0 0 0 0
+4 2 2 0 0 220 0 000
+AIλ
+−− −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ⎢ ⎥=: − = = ⎢⎥ ⎢ ⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+0 ∼  
+So 13 23 ,xx x x=, =  with 3x  and 4x   
+  free variables. The general solution of (4 )AI−= x0  is 
+   
+13
+23
+34
+33
+44
+10 1 0
+10 1 0 Basis for the eigenspace10 1 0
+01 0 1
+xx
+xx xxxx
+xx
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+⎧ ⎫⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎪ ⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎪ ⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥=== + . : , ⎨ ⎬⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎪ ⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎪ ⎪⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎩⎭x  
+Note: I urge my students always to include the extra column of zeros when solving a homogeneous 
+system. Exercise 16 provides a situation in which failing to add the column is likely to create problems 
+for a student, because the matrix 4AI−  itself has a column of zeros. 
+ 17. The eigenvalues of 
+00 0
+03 4
+00 2
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥ −⎣⎦
+ are 0, 3, and 2− , the numbers on the main diagonal, by Theorem 
+1. 
+ 18. The eigenvalues of 
+500
+000
+103
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+ are 5, 0, and 3, the numbers on the main diagonal, by Theorem 1. 
+ 19. The matrix 
+123
+123
+123
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ is not invertible because its columns are linearly dependent. So the number 0 
+is an eigenvalue of the matrix. See the discussion following Example 5. 
+----- pagina 7 -----
+5.1  Solutions   279  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 20. The matrix 
+222
+222
+222
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ is not invertible because its columns are linearly dependent. So the 
+number 0 is an eigenvalue of A. Eigenvectors for the eigenvalue 0 are solutions of A =x0  and 
+therefore have entries that produce a linear dependence relation among the columns of A. Any 
+nonzero vector (in 3R ) whose entries sum to 0 will work. Find any two such vectors that are not 
+multiples; for instance,  
+  
+1
+1
+2
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−⎣⎦
+ and 
+1
+1.
+0
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ 
+ 21. a. False. The equation A =λxx  must have a nontrivial solution. 
+ b. True. See the paragraph after Example 5. 
+ c. True. See the discussion of equation (3). 
+ d. True. See Example 2 and the paragraph preceding it. Also, see the Numerical Note. 
+ e. False. See the warning after Example 3. 
+ 22. a. False. The vector x in A =λxx  must be nonzero. 
+ b. False. See Example 4 for a two-dimensional eigenspace, which contains two linearly independent 
+eigenvectors corresponding to the same eigenvalue. The statement given is not at all the same as 
+Theorem 2. In fact, it is the converse of Theorem 2 (for the case 2r = ). 
+ c. True. See the paragraph after Example 1. 
+ d. False. Theorem 1 concerns a triangular matrix. See Examples 3 and 4 for counterexamples. 
+ e. True. See the paragraph following Example 3. The eigenspace of A corresponding to λ  is the null 
+space of the matrix .−λAI  
+ 23. If a 22×  matrix A were to have three distinct eigenvalues, then by Theorem 2 there would 
+correspond three linearly independent eigenvectors (one for each eigenvalue). This is impossible 
+because the vectors all belong to a two-dimensional vector space, in which any set of three vectors is 
+linearly dependent. See Theorem 8 in Section 1.7. In general, if an nn×  matrix has p distinct 
+eigenvalues, then by Theorem 2 there would be a linearly independent set of p eigenvectors (one for 
+each eigenvalue). Since these vectors belong to an n-dimensional vector space, p cannot exceed n. 
+ 24. A simple example of a 22×  matrix with only one distinct eigenvalue is a triangular matrix with the 
+same number on the diagonal. By experimentation, one finds that if such a matrix is actually a 
+diagonal matrix then the eigenspace is two dimensional, and otherwise the eigenspace is only one 
+dimensional. 
+  Examples: 4104⎡⎤⎢⎥⎣⎦  and 45 .04⎡⎤⎢⎥⎣⎦  
+ 25. If λ  is an eigenvalue of A, then there is a nonzero vector x  such that λ .=xxA  Since A is invertible, 
+11 (λ ),−− =xxAA A  and so 1λ () .−=xx A  Since ≠x0  (and since A is invertible), λ  cannot be zero. 
+Then 11λ ,A−− =xx  which shows that 1λ −  is an eigenvalue of 1.−A  
+----- pagina 8 -----
+280 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Note: The Study Guide  points out here that the relation between the eigenvalues of A and 1A−  is 
+important in the so-called inverse power method for estimating an eigenvalue of a matrix. See Section 5.8. 
+ 26. Suppose that 2A  is the zero matrix. If λA =xx  for some ,≠x0  then 
+22 () ( λ ) λλ .AA AA A== = =xx x x x  Since x is nonzero, λ  must be zero. Thus each eigenvalue of A is 
+zero. 
+ 27. Use the Hint in the text to write, for any λ ( λ )( λ ) λ .TT TTAI A I A I, − =− =−  Since ( λ )TAI−  is 
+invertible if and only if λAI−  is invertible (by Theorem 6(c) in Section 2.2), it follows that λTAI −  
+is not invertible if and only if λAI−  is not invertible. That is, λ  is an eigenvalue of TA  if and only 
+if λ  is an eigenvalue of A. 
+Note: If you discuss Exercise 27, you might ask students on a test to show that A and TA  have the same 
+characteristic polynomial (discussed in Section 5.2). Since det det ,= TAA  for any square matrix A, 
+  det( λ )d e t ( λ )d e t ( ( λ )) d e t ( λ )TT TAI AI A I AI−= − = − = − .  
+ 28. If A is lower triangular, then TA  is upper triangular and has the same diagonal entries as A. Hence, 
+by the part of Theorem 1 already proved in the text, these diagonal entries are eigenvalues of .TA  By 
+Exercise 27, they are also eigenvalues of A. 
+ 29. Let v be the vector in nR  whose entries are all ones. Then .As =vv  
+ 30. Suppose the column sums of an nn×  matrix A all equal the same number s. By Exercise 29 applied 
+to TA  in place of A, the number s is an eigenvalue of .TA  By Exercise 27, s is an eigenvalue of A. 
+ 31. Suppose T reflects points across (or through) a line that passes through the origin. That line consists 
+of all multiples of some nonzero vector v. The points on this line do not move under the action of A. 
+So () . =vvT  If A is the standard matrix of T, then .=vvA  Thus v is an eigenvector of A 
+corresponding to the eigenvalue 1. The eigenspace is Span{} .v  Another eigenspace is generated by 
+any nonzero vector u that is perpendicular to the given line. (Perpendicularity in 2R  should be a 
+familiar concept even though orthogonality in nR  has not been discussed yet.) Each vector x on the 
+line through u is transformed into the vector .−x  The eigenvalue is 1.−  
+ 32. Since T rotates points around a given line, the points on the line are not moved at all.  Hence 1 is an 
+eigenvalue of the standard matrix A of T, and the corresponding eigenspace is the line the points are 
+being rotated around. 
+ 33. (The solution is given in the text.) 
+a. Replace k by 1k +  in the definition of ,xk  and obtain 1111 2 .kkk ccλμ+++ =+xu v  
+b. 12
+12
+12
+1
+()
+by linearity
+since  and  are eigenvectors
++
+=+
+=+
+=+
+=
+xu v
+uv
+uv u v
+x
+kk
+k
+kk
+kk
+k
+AA c c
+cA c A
+cc
+λμ
+λμ
+λλ μ μ
+ 
+----- pagina 9 -----
+5.1  Solutions   281  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 34. You could try to write 0x  as linear combination of eigenvectors, 1 .,,vv p…  If 1λ, , λ p…  are 
+corresponding eigenvalues, and if 01 1 ,ppcc=+ + "xv v  then you could define 
+   11 1kkkp p pccλλ=+ +xv v "  
+  In this case, for 012 ,=, ,,k…  
+   
+11 1
+11 1
+11
+11 1
+1
+()
+ Linearity
+ The  are eigenvectors
+ 
+kk
+kp p p
+kk
+pp p
+kk
+pp p i
+k
+AA c c
+cA c A
+cc
+λλ
+λλ
+λλ++
++
+=+ +
+=+ +
+=+ + .
+=
+xv v
+vv
+vv v
+x
+"
+"
+"
+ 
+ 35. Using the figure in the exercise, plot ()T u  as 2,u  because u is an eigenvector for the eigenvalue 2 of 
+the standard matrix A. Likewise, plot ()T v  as 3,v  because v is an eigenvector for the eigenvalue 3. 
+Since T is linear, the image of w is () ( ) ( ) ( ) .=+ = +wu vuvTT T T  
+ 36. As in Exercise 35, ()T =−uu  and () 3T =vv  because u and v are eigenvectors for the eigenvalues  
+1−  and 3, respectively, of the standard matrix A. Since T is linear, the image of w is 
+() ( ) ( ) ( ) .TT T T=+ = +wu vuv  
+Note: The matrix programs supported by this text all have an eigenvalue command. In some cases, such 
+as MATLAB, the command can be structured so it provides eigenvectors as well as a list of the 
+eigenvalues. At this point in the course, students should not use the extra power that produces 
+eigenvectors. Students need to be reminded frequently that eigenvectors of A are null vectors of a 
+translate of A. That is why the instructions for Exercises 35–38 tell students to use the method of Example 
+4. 
+It is my experience that nearly all students need manual practice finding eigenvectors by the method 
+of Example 4, at least in this section if not also in Sections 5.2 and 5.3. However, [M] exercises do create 
+a burden if eigenvectors must be found manually. For this reason, the data files for the text include a 
+special command, nulbasis for each matrix program (MATLAB, Maple, etc.). The output of 
+nulbasis (A) is a matrix whose columns provide a basis for the null space of A, and these columns 
+are identical to the ones a student would find by row reducing the augmented matrix [ ] . 0A  With 
+nulbasis, student answers will be the same (up to multiples) as those in the text. I encourage my students 
+to use technology to speed up all numerical homework here, not just the []M  exercises, 
+ 37. [M] Let A be the given matrix. Use the MATLAB commands eig and nulbasis (or equivalent 
+commands). The command ev=eig(A)  computes the three eigenvalues of A and stores them in a 
+vector ev. In this exercise, (10 15 5).=, ,ev  The eigenspace for the eigenvalue 10 is the null space 
+of 10 .AI−  Use nulbasis to produce a basis for each null space: 
+   
+3
+2.
+1
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+nulbasis(A-ev(1)*eye(3))=  
+  Basis for the eigenspace for 
+3
+10   2
+1
+λ
+⎧ ⎫−⎡ ⎤
+⎪ ⎪⎢ ⎥=: ⎨ ⎬⎢ ⎥⎪ ⎪⎢ ⎥⎣ ⎦⎩⎭  
+----- pagina 10 -----
+282 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  For the next eigenvalue, 15, compute nulbasis
+2
+2.
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+(A-ev(2)*eye(3))=  
+  Basis for the eigenspace for 
+2
+15 2
+1
+λ
+⎧⎫⎡ ⎤
+⎪⎪⎢ ⎥=: ⎨⎬⎢ ⎥⎪⎪⎢ ⎥⎣ ⎦⎩⎭ . 
+  For the next eigenvalue, 5, compute nulbasis
+1/2
+1/2 .
+1
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+(A-ev(3)*eye(3))=  
+  Scaling this vector by 2 to eliminate the fractions provides a basis for the eigenspace for 
+1
+51
+2
+λ
+⎧⎫ −⎡⎤
+⎪⎪⎢⎥=: − ⎨⎬⎢⎥⎪⎪⎢⎥⎣⎦⎩⎭ . 
+ 38. [M] (2 2 1 1).=, − , − ,ev=eig(A)  
+  For 2λ = :  
+22
+22 Basis:  11
+11
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥ ⎪ ⎪⎢ ⎥⎢ ⎥. ⎨ ⎬⎢ ⎥⎢ ⎥ ⎪ ⎪⎢ ⎥⎢ ⎥ ⎪ ⎪⎣ ⎦⎣ ⎦ ⎩⎭nulbasis (A-ev(1)*eye(4))=  
+  For 2λ =− :  nulbasis
+0
+1 .1
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+(A-ev(2)*eye(4))=  Basis: 
+0
+1
+1
+0
+⎧ ⎫⎡ ⎤
+⎪ ⎪⎢ ⎥⎪ ⎪⎢ ⎥⎨ ⎬⎢ ⎥⎪ ⎪⎢ ⎥⎪ ⎪⎣ ⎦⎩⎭  
+  For 1λ =− :  nulbasis
+1
+1 .0
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+(A-ev(3)*eye(4))=  Basis: 
+1
+1
+0
+1
+⎧ ⎫⎡ ⎤
+⎪ ⎪⎢ ⎥⎪ ⎪⎢ ⎥⎨ ⎬⎢ ⎥⎪ ⎪⎢ ⎥⎪ ⎪⎣ ⎦⎩⎭  
+  For 1λ = :  nulbasis
+2
+2 .0
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+(A-ev(4)*eye(4))=  Basis: 
+2
+2
+0
+1
+⎧ ⎫⎡ ⎤
+⎪ ⎪⎢ ⎥⎪ ⎪⎢ ⎥⎨ ⎬⎢ ⎥⎪ ⎪⎢ ⎥⎪ ⎪⎣ ⎦⎩⎭  
+ 39. [M] For 4λ =− , basis: 
+0
+1
+.2
+0
+1
+⎧⎫⎡⎤
+⎪⎪⎢⎥
+⎪⎪⎢⎥⎪⎪⎢⎥⎨⎬⎢⎥⎪⎪⎢⎥⎪⎪⎢⎥⎪⎪⎣⎦⎩⎭  For 12,λ=  basis: 
+02
+01
+12
+10
+01
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥
+⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥,−⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭ . For 8λ=− , basis: 
+60
+30
+31
+20
+01
+⎧⎫⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥
+⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥, −⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎣⎦ ⎣ ⎦⎩⎭ .
+----- pagina 11 -----
+5.2  Solutions   283  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 40. [M] For 14λ =− , basis: 
+11 0
+06
+,.10
+05
+01
+⎧⎫ −⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥
+⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦⎩⎭  For 42,λ=  basis: 
+05
+11
+23
+50
+05
+⎧ ⎫−⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥,−−⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭ . 
+Note: Since so many eigenvalues in text problems are small integers, it is easy for students to form a 
+habit of entering a value for λ  in nulbasis λ(A- I) based on a visual examination of the eigenvalues 
+produced by eig(A)when only a few decimal places for λ  are displayed.  Using ev=eig(A)  and: 
+nulbasis(A-ev(j)*eye(n)) help avoid problems caused by roundoff errors.  
+5.2 SOLUTIONS 
+Notes: Exercises 9–14 can be omitted, unless you want your students to have some facility with 
+determinants of 33×  matrices. In later sections, the text will provide eigenvalues when they are needed 
+for matrices larger than 22 .×  If you discussed partitioned matrices in Section 2.4, you might wish to 
+bring in Supplementary Exercises 12–14 in Chapter 5. (Also, see Exercise 14 of Section 2.4.) 
+Exercises 25 and 27 support the subsection on dynamical systems. The calculations in these exercises 
+and Example 5 prepare for the discussion in Section 5.6 about eigenvector decompositions. 
+ 1. 27 27 0 2 7 .72 72 0 7 2 −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤=, − =− =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦AA I λλλ λλ  The characteristic polynomial is 
+   22 2 2det( ) (2 ) 7 4 4 49 4 45AI−λ = −λ − = − λ+λ − =λ − λ−  
+  In factored form, the characteristic equation is ( 9)( 5) 0,λ− λ+ =  so the eigenvalues of A are 9 and 
+5.−  
+ 2. 41 4 1 .61 6 1AA I λλ λ−− − − −⎡⎤ ⎡ ⎤=, − =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  The characteristic polynomial is 
+   2det( ) ( 4 )(1 ) 6 ( 1) 3 2AI λλ λ λ λ−= − − − − ⋅ − = + +  
+  Since 2 32 (2 ) (1 ) ,λλ λ λ++ =+ +  the eigenvalues of A are 2−  and 1− . 
+ 3. 42 4 2 .67 6 7AA I λλ λ−− −⎡⎤ ⎡ ⎤=, − =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  The characteristic polynomial is 
+   2det( ) ( 4 )(7 ) (2)(6) 40AI−λ = − −λ −λ − =λ −3 λ−  
+  Use the quadratic formula to solve the characteristic equation and find the eigenvalues: 
+   
+2 4 3 9 160 3 13 8, 522 2bb a caλ −± − ± + ±== = = −  
+  
+  
+----- pagina 12 -----
+284 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+4. 82 8 2    .33 3 3AA I λλ λ−⎡⎤ ⎡ ⎤=, − =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  The characteristic polynomial of A is 
+   2det( ) (8 )(3 ) (3)(2) 11 18 ( 9)( 2).AI λλ λ λ λ λ λ−= − − − = −+ = − −   The eigenvalues of A  are 
+9 and 2. 
+  5. 84 8 4 .48 4 8AA I −λ⎡⎤ ⎡ ⎤=, − λ =⎢⎥ ⎢ ⎥ −λ⎣⎦ ⎣ ⎦  The characteristic polynomial of A is 
+   2det( ) (8 )(8 ) (4)(4) 16 48 ( 4)( 12)AI λ−λ = −λ −λ − =λ − λ+ = λ− −  
+  Thus, A has eigenvalues 4 and 12. 
+ 6. 92 9 2 .25 2 5AA I λλ λ−− −⎡⎤ ⎡ ⎤=, − =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  The characteristic polynomial is 
+   2det( ) (9 )(5 ) ( 2)(2) 14 49 ( 7)( 7)AI λλ λ λ λ λ λ−= − − − − = −+ = − −  
+  Thus A has only one eigenvalue, 7, with multiplicity 2. 
+ 7. 53 5 3 .44 4 4 −⎡⎤ ⎡ ⎤=, − =⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦AA I λλ λ  The characteristic polynomial is 
+   2det( ) (5 )(4 ) (3)( 4) 9 32AI λλ λ λ λ−= − − −− = − +  
+  Use the quadratic formula to solve det () 0AI λ−= : 
+   98 1 4 ( 3 2 ) 94 722λ ±− ±−==  
+  These values are complex numbers, not real numbers, so A has no real eigenvalues. There is no 
+nonzero vector x in 2R  such that ,=xxA λ  because a real vector Ax  cannot equal a complex 
+multiple of x. 
+ 8. 43 4 3 .21 2 1AA I λλ λ−− −⎡⎤ ⎡ ⎤=, − =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  The characteristic polynomial is 
+   2det( ) ( 4 )(1 ) (2)(3) 3 10 ( 5)( 2)AI λλ λ λ λ λ λ−= − − − − = + − = + −  
+  Thus, A has eigenvalues 5−  and 2. 
+ 
+ 9 . 
+40 1
+det( ) det 0 4 1 .
+10 2
+AI
+λ
+λλ
+λ
+−−⎡⎤
+⎢⎥−= − − ⎢⎥
+⎢⎥ −⎣⎦
+ Using cofactor expansion down column 1, the 
+characteristic polynomial is 
+   2
+2
+32
+(4 ) 1 0 1det( ) (4 ) det 0 1 det 0( 2 ) ( 4 ) 1
+(4 )( 6 8) (4 )
+(4 )( 6 9) (4 )(3 )(3 )
+10 33 36
+AI λλλ λλ
+λλ λ λ
+λ λ λ λλλ
+λλλ
+−− −⎡⎤ ⎡ ⎤−= − ⋅ + + ⋅ ⎢⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦
+=− − ++−
+=− − +=− − −
+=− + − +
+ 
+----- pagina 13 -----
+5.2  Solutions   285  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  This matrix has eigenvalue 4 with multiplicity 1, and eigenvalue 3 with multiplicity 2. 
+ 10. 
+31 1
+det( ) det 0 5 0 .
+20 7
+AI
+λ
+λλ
+λ
+−⎡⎤
+⎢⎥−= − ⎢⎥
+⎢⎥ −−⎣⎦
+ Using cofactor expansion down the first column, the 
+characteristic polynomial is 
+   2
+2
+32
+(5 ) 0 1 1det( ) (3 ) det 0 ( 2)det 0( 7 ) ( 5 ) 0
+(5 )( 10 21) 2(5 )
+(5 )( 10 23)
+15 73 115
+AI λλλ λλ
+λλ λ λ
+λλ λ
+λλλ
+−⎡⎤ ⎡ ⎤−= − ⋅ + + − ⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+=− − + + −
+=− − +
+=− + − +
+ 
+ 11. The special arrangements of zeros in A makes a cofactor expansion along the first row highly 
+effective. 
+   
+23 2
+30 0 14det( ) det 2 1 4 (3 )det 0410 4
+(3 )(1 )(4 ) (3 )( 5 4) 8 19 12
+AI
+λ λλλ λ λλ
+λλ λ λ λ λ λ λ
+−⎡⎤ −⎡⎤⎢⎥−= − = − ⎢⎥⎢⎥ −⎣⎦⎢⎥ −⎣⎦
+=− − λ − =− − += −+ − +
+ 
+  If only the eigenvalues were required, there would be no need here to write the characteristic 
+polynomial in expanded form. 
+ 12. Make a cofactor expansion along the third row: 
+   
+32
+10 2 12 1 0det( ) det 3 1 0 1 det (2 ) det 30 3101 2
+6( 2 ) ( 1 ) ( 1 ) 2 4
+AI
+λ λλλλ λ λλ
+λ λλλλ λ
+−−⎡⎤ −− −−⎡ ⎤⎡⎤⎢⎥−= − = − ⋅ + − ⋅ ⎢ ⎥⎢⎥⎢⎥ −⎣ ⎦⎣⎦⎢⎥ −⎣⎦
+= + − − −− = − ++ +
+ 
+ 13. Make a cofactor expansion down the third column: 
+   2
+32
+62 0 62det( ) det 2 9 0 (3 ) det 2958 3
+(3 )[(6 )(9 ) ( 2)( 2)] (3 )( 15 50)
+18 95 150 or (3 )( 5)( 10)
+AI
+λ λλλ λ λλ
+λλ λ λ λ λ
+λλλ λ λ λ
+−−⎡⎤ −−⎡ ⎤⎢⎥−= − − = − ⋅ ⎢ ⎥⎢⎥ −−⎣ ⎦⎢⎥ −⎣⎦
+=− − − − −− =− − +
+=− + − + − − −
+ 
+ 14. Make a cofactor expansion along the second column: 
+   32
+32
+40 1 41 4 1det( ) det 1 4 ( ) det 2 det 03 1402 3
+( ) [(4 )(3 )] 2[(4 )4 1] 7 12 8 30
+74 3 0  
+AI
+λ λλλλ λ λλ
+λλ λ λ λ λ λ λ
+λλλ
+−−⎡⎤ −− − −⎡ ⎤⎡ ⎤⎢⎥−= − − = − ⋅ − ⋅ ⎢ ⎥⎢ ⎥⎢⎥ −−⎣ ⎦⎣ ⎦⎢⎥ −⎣⎦
+=− ⋅ − − − − − = − + − + −
+=− + − −  
+ 15. Use the fact that the determinant of a triangular matrix is the product of the diagonal entries: 
+----- pagina 14 -----
+286 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   2
+55 0 2
+02 3 6det( ) det (5 ) (2 )(3 )00 3 2
+000 5
+AI
+λ
+λλλ λ λ λ
+λ
+−⎡⎤
+⎢⎥ −−⎢⎥−= = − − − ⎢⎥ −−
+⎢⎥ −⎣⎦
+ 
+  The eigenvalues are 5, 5, 2, and 3. 
+ 16. The determinant of a triangular matrix is the product of its diagonal entries: 
+   
+30 0 0
+62 0 0det( ) det (3 )(2 )(6 )( 5 )03 6 0
+233 5
+AI
+λ
+λλλ λ λ λ λ
+λ
+−⎡⎤
+⎢⎥ −⎢⎥−= = − − − − −⎢⎥ −
+⎢⎥ −−⎣⎦
+ 
+  The eigenvalues are 3, 2, 6, and 5.−  
+ 17. The determinant of a triangular matrix is the product of its diagonal entries: 
+   22
+3 0000
+51 0 0 0
+(3 ) (1 ) ( )38 0 00
+07 2 1 0
+41 9 2 3
+λ
+λ
+λλ λλ
+λ
+λ
+−⎡⎤
+⎢⎥ −−⎢⎥
+⎢⎥ =− − −−
+⎢⎥ −−⎢⎥
+⎢⎥−− −⎣⎦
+ 
+  The eigenvalues are 3, 3, 1, 1, and 0. 
+ 18. Row reduce the augmented matrix for the equation (4 )AI−= x0 : 
+   
+02 33 0 0 2 3 3 0 0 2 3 0 0
+0 2 30 00 360 00 300    0 001 40 00 0 10 00 0 10
+0 00 20 00 0 00 00 0 00
+hh h
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−+ +⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦
+∼∼  
+  For a two-dimensional eigenspace, the system above needs two free variables. This happens if and 
+only if 3.h =−  
+ 19. Since the equation 12det( ) ( )( ) ( )−λ = λ −λ λ −λ λ −λ " nAI  holds for all λ , set 0λ=  and conclude 
+that 12det . =λλ λ " nA  
+ 20. det( ) det( )TT TAI AI−λ = −λ  
+  
+----- pagina 15 -----
+5.2  Solutions   287  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   det( ) Transpose property=− λ TAI  
+   det( ) Theorem 3(c)=− AI λ  
+ 21. a. False. See Example 1. 
+ b. False. See Theorem 3. 
+ c. True. See Theorem 3. 
+ d. False. See the solution of Example 4. 
+ 22. a. False. See the paragraph before Theorem 3. 
+ b. False. See Theorem 3. 
+ c. True. See the paragraph before Example 4. 
+ d. False. See the warning after Theorem 4. 
+ 23. If ,=AQ R  with Q invertible, and if 1 ,=AR Q  then write 111 ,−−==AQ Q R Q Q A Q  which shows that  
+1A  is similar to A. 
+ 24. First, observe that if P is invertible, then Theorem 3(b) shows that 
+   111 det det( ) (det )(det )IP P P P −−== =  
+  Use Theorem 3(b) again when 1,−=AP B P  
+   111det det( ) (det )(det )(det ) (det )(det )(det ) detA P B P PBP BPP B−−−= ===  
+ 25. Example 5 of Section 4.9 showed that 11 ,=vvA  which means that 1v  is an eigenvector of A 
+corresponding to the eigenvalue 1. 
+a. Since A is a 22×  matrix, the eigenvalues are easy to find, and factoring the characteristic 
+polynomial is easy when one of the two factors is known. 
+   263d e t (6 ) (7 ) (3 ) (4 ) 13 3 ( 1 ) ( 3 )47λ λλ λ λ λ λλ.− .⎡⎤ =. − . − −. . = −. + . = − − .⎢⎥ .. −⎣⎦  
+  The eigenvalues are 1 and .3. For the eigenvalue .3, solve (3 )AI−. = x0 : 
+   63 3 0 3 30 110   4 730 4 40 000.− . . . .⎡⎤ ⎡ ⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥ ⎢ ⎥.. − . . .⎣⎦ ⎣ ⎦ ⎣ ⎦ ∼  
+  Here 12 0,xx+=  with 2x  free. The general solution is not needed. Set 2 1x =  to find an 
+eigenvector 2
+1 .1−⎡ ⎤= ⎢ ⎥⎣ ⎦v  A suitable basis for 2R  is 12{} .,vv  
+b. Write 01 2 c=+xv v : 12 37 1 .12 47 1//−⎡⎤ ⎡ ⎤ ⎡ ⎤=+⎢⎥ ⎢ ⎥ ⎢ ⎥//⎣⎦ ⎣ ⎦ ⎣ ⎦ c  By inspection, c is 11 4 .−/  (The value of c depends 
+on how 2v  is scaled.) 
+c. For 12 ,=, ,k…  define 0.=xx kk A  Then 11 212 1 2() ( 3 ) ,Ac A c A c=+ = += + .xv vvv v v  because 
+1v  and 2v  are eigenvectors. Again 
+   21 1 2 1 2 1 2 ( ( 3) ) ( 3) ( 3)( 3)AA c A c A c== + . =+ . = + . . .xx v v v v v v  
+----- pagina 16 -----
+288 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Continuing, the general pattern is 12 (3 ) .kk c=+ .xv v  As k increases, the second term tends to 0 
+and so kx  tends to 1.v  
+ 26. If 0,≠a  then 1 ,0 −
+⎡⎤⎡⎤== ⎢⎥⎢⎥ −⎣⎦ ⎣⎦∼ ababAU cd dc a b  and 1det ( )( ) . −=− = −Aa d c a ba d b c  If 0,=a  
+then 0 0bc dAU cd b⎡⎤ ⎡⎤==⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ∼  (with one interchange), so 1det ( 1) ( ) 0 .=− = − = −Ac b b c a d b c  
+ 27. a. 11 ,A =vv  22 5,A =.vv  33 2.A =.vv  
+ b. The set 123{} ,,vv v  is linearly independent because the eigenvectors correspond to different 
+eigenvalues (Theorem 2). Since there are three vectors in the set, the set is a basis for 3. So there 
+exist unique constants such that 01 12 23 3 ,cc c=+ +xvvv  and 01 12 23 3 .TTT T cc c=+ +wx wv wv wv  
+Since 0x  and 1v  are probability vectors and since the entries in 2v  and 3v  sum to 0, the above 
+equation shows that 1 1.c =  
+c. By (b), 01 12 23 3 .=+ +xvvvcc c  Using (a), 
+  01 12 23 3 12 23 3 1 (5 ) (2 ) a s== + + = + .+ .→ → ∞xx v v v v v v vkkkk k kk Ac A c Ac A c c k  
+ 28. [M] Answers will vary, but should show that the eigenvectors of A are not the same as the 
+eigenvectors of ,TA  unless, of course, .=TAA  
+ 29. [M] Answers will vary. The product of the eigenvalues of A should equal det A. 
+ 30. [M] The characteristic polynomials and the eigenvalues for the various values of a are given in the 
+following table: 
+a Characteristic Polynomial Eigenvalues 
+31.8 2342 6 4 ttt−. − . + −  3 1279 1 1279., , − .  
+31.9 2383 8 4 ttt.−. + −  2.7042, 1, .2958 
+32.0 2325 4 ttt−+ −  2, 1, 1 
+32.1 2332 62 4 ttt.−. + −  1 5 9747 1i.± . ,  
+32.2 2344 74 4 ttt.−. + −  1 5 1 4663 1i.±. ,  
+   The graphs of the characteristic polynomials are:
+----- pagina 17 -----
+Copyright © 2012 Pear
+Notes: An appendix in Section 5.3 of t h
+with integer coefficients, in case you w
+perhaps 44×  matrices. 
+The MATLAB box for Section 5.3 
+of the characteristic polynomial of the m
+the characteristic polynomial. (This is n
+have corresponding information. The a p
+list the coefficients of the characteristic p
+ 
+5.3 SOLUTIONS 
+ 1. 57 2023 01 −⎡⎤⎡⎤=, =, =⎢⎥⎢⎥⎣⎦⎣⎦PDA P D P
+14 37 1 6 0,,25 0 1− −⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦PD  a
+ 2. 12 1023 03PDA P D P −⎡⎤⎡⎤=, =, =⎢⎥⎢⎥⎣⎦⎣⎦
+14 32 10 ,21 0 8 1PD− −⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  an
+ 3. 1 10 021 0kkk kaAP D P b⎡⎤⎢⎥− ⎢⎥⎢⎥⎣⎦⎡⎤ ⎡== ⎢⎥ ⎢ −⎣⎦ ⎣
+ 4. 1 32 ( 3 )21 0(kkkAP D P ⎡⎢− ⎢⎢⎣−−⎡⎤== ⎢⎥ −⎣⎦
+ 5. By the Diagonalization Theorem, ei
+correspond respectively to the eigen
+5.3  Sol u
+rson Education, Inc. Publishing as Addison-Wesley. 
+he Study Guide gives an example of factoring a cubi c
+want your students to find integer eigenvalues of si m
+introduces the command poly (A), which lists th e
+matrix A, and it gives MATLAB code that will produ c
+needed for Exercise 30.) The Maple and Mathematic a
+ppendices for the TI calculators contain only the co m
+polynomial. 
+1,−  and 44 1 .−=AP D P  We compute 
+nd 4 5 7 16 0 3 7 226 5252 3 0 1 2 5 90 209A −−⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤==⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥ −−⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦  
+1,−  and 44 1 .−=AP D P  We compute 
+nd 4 1 2 1 0 3 2 321 1602 3 0 81 2 1 480 239A −−⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤==⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥ −−⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦  
+10 0 .21 22 kkk kaab b⎡⎤⎢⎥⎢⎥⎢⎥⎣⎦⎤ =⎥− −⎦  
+0 1 2 3(3 ) 4(2 ) 6(3 ) 6
+232) 2(3 ) 2(2 ) 4(3 ) 3
+kk
+k kk
+k
+k
+⎤
+⎥
+⎥
+⎥
+⎦
+⎡−− ⋅ − + ⋅ − ⋅ − − ⋅⎡⎤ ⎢=⎢⎥− ⎢− ⎣⎦ − ⋅− + ⋅− ⋅− − ⋅⎣
+igenvectors form the columns of the left factor, and th
+nvalues on the diagonal of the middle factor. 
+utions   289  
+ 
+c polynomial 
+mple 33×  or 
+e coefficients 
+ce a graph of 
+a appendices 
+mmands that 
+(2 ) .
+(2 )
+k
+k
+⎤⋅ − ⎥
+⎥⋅ − ⎦  
+hey 
+
+----- pagina 18 -----
+290 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+11 0
+λ 2 1 λ 31 1
+10 1
+−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=: ;=: −, −⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−⎣⎦ ⎣⎦ ⎣⎦
+ 
+ 6. As in Exercise 5, inspection of the factorization gives: 
+   
+03 1
+λ 41 λ 30 3
+01 0
+−⎡⎤ ⎡⎤⎡ ⎤
+⎢⎥ ⎢⎥⎢ ⎥=: ;=: , −⎢⎥ ⎢⎥⎢ ⎥
+⎢⎥ ⎢⎥⎢ ⎥⎣⎦ ⎣⎦⎣ ⎦
+ 
+ 7. Since A is triangular, its eigenvalues are obviously 1.±  
+  For λ = 1: 001. 62⎡⎤−= ⎢⎥ −⎣⎦AI  The equation (1 )AI−= x0  amounts to 1262 0 ,xx−=  so 12 (1 3)xx=/  
+with 2x  free. The general solution is 2
+13 ,1/⎡ ⎤⎢ ⎥⎣ ⎦x  and a nice basis vector for the eigenspace is 1 1 .3⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  For λ = −1: 201. 60⎡ ⎤+= ⎢ ⎥⎣ ⎦AI  The equation (1 )AI+= x0  amounts to 120 ,=x  so 1 0x =  with 2x  
+free. The general solution is 2
+0 ,1⎡⎤⎢⎥⎣⎦x  and a basis vector for the eigenspace is 2 0 .1⎡⎤= ⎢⎥⎣⎦v  
+  From 1v  and 2v  construct 1 2
+10 .31⎡⎤⎢⎥⎣⎦ ⎡ ⎤== ⎢ ⎥⎣ ⎦vvP  Then set 10 ,01⎡ ⎤= ⎢ ⎥−⎣ ⎦D  where the eigenvalues 
+in D correspond to 1v  and 2v  respectively. 
+ 8. Since A is triangular, its only eigenvalue is obviously 3. 
+  For λ = 3: 023. 00AI ⎡⎤−= ⎢⎥⎣⎦  The equation (3 )AI−= x0  amounts to 2 0,=x  so 2 0x =  with 1x  free. 
+The general solution is 1
+1 .0⎡⎤⎢⎥⎣⎦x  Since we cannot generate an eigenvector basis for 2, A is not 
+diagonalizable. 
+ 9. To find the eigenvalues of A, compute its characteristic polynomial: 
+  222 λ 1det( λ )d e t ( 2 λ )(4 λ )( 1 ) ( 1 ) λ 6λ 9( λ 3)14 λAI −−⎡⎤− = = − − − − =−+ =−⎢⎥ −⎣⎦  
+  Thus the only eigenvalue of A is 3. 
+  For λ = 3: 114. 11−−⎡⎤−= ⎢⎥⎣⎦AI  The equation (3 )AI−= x0  amounts to 12 0,+=xx  so 12xx=−  with 
+2x  free. The general solution is 2
+1 .1−⎡⎤⎢⎥⎣⎦x  Since we cannot generate an eigenvector basis for 2, A is 
+not diagonalizable. 
+  
+  
+----- pagina 19 -----
+5.3  Solutions   291  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+10. To find the eigenvalues of A, compute its characteristic polynomial: 
+  21 λ 3det( λ )d e t ( 1 λ )(2 λ )( 3 ) ( 4 ) λ 3λ 10 ( λ 5)(λ 2)42 λAI −⎡⎤−= = − − − = − − = − +⎢⎥ −⎣⎦  
+  Thus the eigenvalues of A are 5 and 2− . 
+  For λ = −2: 332. 44AI ⎡ ⎤+= ⎢ ⎥⎣ ⎦  The equation (1 )AI+= x0  amounts to 12 0,xx+=  so 12xx=−  with 
+2x  free. The general solution is 2
+1 ,1x −⎡⎤⎢⎥⎣⎦  and a nice basis vector for the eigenspace is 1 1 .1−⎡⎤= ⎢⎥⎣⎦v  
+  For λ = 5: 435. 43AI −⎡⎤−= ⎢⎥ −⎣⎦  The equation (3 )AI−= x0  amounts to 1243 0 ,xx−+ =  so 
+12 (3 / 4)xx=  with 2x  free. The general solution is 2
+3/4 ,1x ⎡ ⎤⎢ ⎥⎣ ⎦  and a basis vector for the eigenspace is 
+2
+3 .4⎡⎤= ⎢⎥⎣⎦v  
+  From 1v  and 2v  construct 1 2
+13 .14P ⎡⎤⎢⎥⎣⎦ −⎡ ⎤== ⎢ ⎥⎣ ⎦vv  Then set 20 ,05D −⎡ ⎤= ⎢ ⎥⎣ ⎦  where the eigenvalues 
+in D correspond to 1v  and 2v  respectively. 
+ 11. The eigenvalues of A are given to be -1, and 5. 
+  For λ = -1: 
+111
+222 ,
+333
+AI
+⎡⎤
+⎢⎥+= ⎢⎥
+⎢⎥⎣⎦
+ and row reducing []AI+ 0  yields 
+1110
+0000 .
+0000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The general 
+solution is 23
+11
+10 ,
+01
+xx
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ +⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ and a nice basis for the eigenspace is {}12
+11
+,1 , 0
+01
+⎧⎫−−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥= ⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭vv . 
+  For λ = 5: 
+511
+52 4 2 ,
+333
+AI
+−⎡⎤
+⎢⎥−= − ⎢⎥
+⎢⎥ −⎣⎦
+ and row reducing [] 5AI− 0  yields 
+10 1 30
+01 2 / 30 .
+00 00
+−/⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 3
+13
+2/3 ,
+1
+x
+/⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a nice basis vector for the eigenspace is 3
+1
+2.
+3
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  From 12,vv  and 3v  construct 1 23
+11 1
+10 2 .
+01 3
+P ⎡⎤⎢⎥⎣⎦
+−−⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+vvv  Then set D =
+100
+01 0 ,
+00 5
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+ 
+where the eigenvalues in D correspond to 12,vv  and 3v  respectively.  Note that if changing the 
+order of the vectors in P  also changes the order of the diagonal elements in D, and results in the 
+answer given in the text.   
+----- pagina 20 -----
+292 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. The eigenvalues of A are given to be 2 and 5. 
+  For λ = 2: 
+111
+21 1 1 ,
+111
+AI
+⎡⎤
+⎢⎥−= ⎢⎥
+⎢⎥⎣⎦
+ and row reducing [] 2AI− 0  yields 
+1110
+0000 .
+0000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The general 
+solution is 23
+11
+10 ,
+01
+xx
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ +⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ and a nice basis for the eigenspace is {}12
+11
+,1 , 0 .
+01
+⎧⎫−−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥= ⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭vv . 
+  For λ = 5: 
+21 1
+51 2 1 ,
+11 2
+AI
+−⎡⎤
+⎢⎥−= − ⎢⎥
+⎢⎥ −⎣⎦
+ and row reducing [] 5AI− 0  yields 
+10 10
+01 1 0 .
+00 00
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+ The 
+general solution is 3
+1
+1,
+1
+x
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a basis for the eigenspace is 3
+1
+1.
+1
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  
+  From 12,vv  and 3v  construct 1 23
+11 1
+10 1 .
+01 1
+P ⎡⎤⎢⎥⎣⎦
+−−⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+vvv  Then set 
+200
+020 ,
+005
+D
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ where 
+the eigenvalues in D correspond to 12,vv  and 3v  respectively. 
+ 13. The eigenvalues of A are given to be 5 and 1. 
+  For λ = 5: 
+321
+51 2 1 ,
+123
+AI
+−−⎡⎤
+⎢⎥−= − −⎢⎥
+⎢⎥−−−⎣⎦
+ and row reducing [] 5AI− 0  yields 
+1010
+0110 .
+0000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 3
+1
+1,
+1
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+x  and a basis for the eigenspace is 1
+1
+1.
+1
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  
+  For λ = 1: 
+121
+11 2 1 ,
+121
+−⎡⎤
+⎢⎥−= − ⎢⎥
+⎢⎥−−⎣⎦
+AI  and row reducing []AI− 0  yields 
+12 10
+00 00 .
+00 00
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 23
+21
+10 ,
+01
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+xx  and a basis for the eigenspace is 23
+21
+{} 1 0 .
+01
+⎧⎫ −⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥,= , ⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎩⎭vv  
+  From 12,vv  and 3v  construct 1 23
+12 1
+11 0 .
+10 1
+⎡⎤
+⎢⎥⎣⎦
+−−⎡ ⎤
+⎢ ⎥== − ⎢ ⎥
+⎢ ⎥⎣ ⎦
+vvvP  Then set 
+500
+010 ,
+001
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+D  
+where the eigenvalues in D correspond to 12,vv  and 3v  respectively. 
+  
+----- pagina 21 -----
+5.3  Solutions   293  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 14. The eigenvalues of A are given to be 2 and 3. 
+  For λ = 2: 
+00 2
+21 1 2 ,
+00 1
+AI
+−⎡⎤
+⎢⎥−= ⎢⎥
+⎢⎥⎣⎦
+ and row reducing [ ]2AI− 0  yields 
+1100
+0010 .
+0000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 2
+1
+1,
+0
+x
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a basis for the eigenspace is 1
+1
+1
+0
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v . 
+  For λ = 3: 
+10 2
+31 0 2 ,
+00 0
+AI
+−−⎡⎤
+⎢⎥−= ⎢⎥
+⎢⎥⎣⎦
+ and row reducing [] 3AI− 0  yields 
+1020
+0000 .
+0000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 23
+02
+10 ,
+01
+xx
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+ and a nice basis for the eigenspace is 23
+02
+{}1 0 .
+01
+⎧⎫ −⎡⎤⎡ ⎤
+⎪⎪⎢⎥⎢ ⎥,= , ⎨⎬⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥⎣⎦⎣ ⎦⎩⎭vv  
+  From 12,vv  and 3v  construct 1 23
+10 2
+11 0 .
+00 1
+P ⎡⎤⎢⎥⎣⎦
+−−⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+vvv  Then set 
+200
+030 ,
+003
+D
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+where the eigenvalues in D correspond to 12,vv  and 3v  respectively. 
+ 15. The eigenvalues of A are given to be 0 and 1. 
+  For λ = 0: 
+011
+01 2 1 ,
+110
+AI
+−−⎡⎤
+⎢⎥−= ⎢⎥
+⎢⎥−−⎣⎦
+ and row reducing [ ]0AI− 0  yields 
+10 10
+01 1 0 .
+00 0 0
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 3
+1
+1,
+1
+x
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a basis for the eigenspace is 1
+1
+1
+1
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  
+  For λ = 1: 
+111
+111 ,
+111
+AI
+−−−⎡⎤
+⎢⎥−= ⎢⎥
+⎢⎥−−−⎣⎦
+ and row reducing []AI− 0  yields 
+1110
+0000 .
+0000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 23
+11
+10 ,
+01
+xx
+−−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+ and a basis for the eigenspace is 23
+11
+{} 1 0 .
+01
+⎧⎫ −−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥,= , ⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭vv  
+  From 12,vv  and 3v  construct 1 23
+111
+110 .
+10 1
+P ⎡⎤⎢⎥⎣⎦
+−−⎡ ⎤
+⎢ ⎥== − ⎢ ⎥
+⎢ ⎥⎣ ⎦
+vvv  Then set 
+000
+010 ,
+001
+D
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+where the eigenvalues in D correspond to 12,vv  and 3v  respectively.  Note that the answer for P 
+given in the text has the first column scaled by 1− , which is also a correct answer, since any nonzero 
+multiple of an eiegnvector is an eigenvector.   
+ 16. The only eigenvalue of A given is 0. 
+----- pagina 22 -----
+294 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  For λ = 0: 
+12 3
+02 5 2 ,
+13 1
+AI
+−⎡⎤
+⎢⎥−= − ⎢⎥
+⎢⎥⎣⎦
+ and row reducing [ ]0AI− 0  yields 
+10 1 10
+01 4 0 .
+00 0 0
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 2
+11
+4,
+1
+x
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a basis for the eigenspace is 1
+11
+4.
+1
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  
+  Since λ 0=  has only a one-dimensional eigenspace, we can find at most one linearly independent 
+eigenvector for A, so A is not diagonalizable over the real numbers.  The remaining eigenvalues are 
+complex, and this situation is dealt with in Section 5.   
+ 17. Since A is triangular, its eigenvalue is obviously 2. 
+  For λ = 2: 
+000
+22 0 0 ,
+220
+AI
+⎡⎤
+⎢⎥−= ⎢⎥
+⎢⎥⎣⎦
+ and row reducing [] 2AI− 0  yields 
+1000
+0100 .
+0000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The general 
+solution is 3
+0
+0,
+1
+x
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ and a basis for the eigenspace is 1
+0
+0.
+1
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  
+  Since λ 2=  has only a one-dimensional eigenspace, we can find at most one linearly independent 
+eigenvector for A, so A is not diagonalizable. 
+ 18. The eigenvalues of A are given to be -2, -1 and 0. 
+  For λ = -2: 
+422
+23 1 2 ,
+220
+AI
+−−⎡ ⎤
+⎢ ⎥+= − −⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ and row reducing [] 2AI+ 0  yields 
+10 10
+01 10 .
+00 0 0
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 3
+1
+1,
+1
+x
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a basis for the eigenspace is 1
+1
+1
+1
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v . 
+  For λ = -1: 
+322
+322 ,
+221
+AI
+−−⎡⎤
+⎢⎥+= − −⎢⎥
+⎢⎥ −−⎣⎦
+ and row reducing []AI+ 0  yields 
+10 1 0
+01 1 / 20 .
+00 0 0
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 3
+1
+1/2 ,
+1
+x
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a basis for the eigenspace is 2
+2
+1
+2
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v . 
+  For λ = 0: 
+222
+03 3 2 ,
+222
+AI
+−−⎡⎤
+⎢⎥−= − −⎢⎥
+⎢⎥ −−⎣⎦
+ and row reducing [] 0AI− 0  yields 
+11 0 0
+00 1 0 .
+0 000
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ The 
+general solution is 2
+1
+1,
+0
+x
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and a nice basis vector for the eigenspace is 3
+1
+1.
+0
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+----- pagina 23 -----
+5.3  Solutions   295  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  From 12,vv  and 3v  construct 1 23
+12 1
+111 .
+120
+P ⎡⎤⎢⎥⎣⎦
+⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+vvv  Then set 
+200
+01 0 ,
+00 0
+D
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ where 
+the eigenvalues in D correspond to 12,vv  and 3v  respectively. 
+ 19. Since A is triangular, its eigenvalues are 2, 3, and 5. 
+  For λ  = 2:   
+33 09
+01 1 22, 00 00
+00 00
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥−= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+AI  and row reducing [] 2  AI− 0  yields 
+10 1 10
+011 20 .000 00
+000 00
+⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+The general solution is 34
+11
+12 ,10
+01
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−⎢⎥ ⎢⎥ +⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+xx  and a nice basis for the eigenspace is 
+12
+11
+12{} . 10
+01
+⎧⎫ −−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥,= , ⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭vv  
+  For λ = 3:   
+2309
+00123, 0010
+0001
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥−= ⎢ ⎥−
+⎢ ⎥−⎢ ⎥⎣ ⎦
+AI  and row reducing [] 3  AI− 0  yields 
+1 3 2000
+00 1 0 0 .00 0 1 0
+00 0 0 0
+−/⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ The general solution is 2
+32
+1 ,0
+0
+/⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+x  and a nice basis for the eigenspace is 
+3
+3
+2 .0
+0
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+v  
+  For λ = 5:   
+0309
+02125, 0030
+0003
+−⎡ ⎤
+⎢ ⎥−−⎢ ⎥−= ⎢ ⎥−
+⎢ ⎥−⎢ ⎥⎣ ⎦
+AI  and row reducing [] 5  AI− 0  yields 
+01000
+00100 .00010
+00000
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+The general solution is 1
+1
+0 ,0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+x  and a basis for the eigenspace is 4
+1
+0 .0
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+v  
+----- pagina 24 -----
+296 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  From 123,,vv v  and 4v  construct 1234
+11 3 1
+1 220 .1 000
+01 0 0
+⎡⎤
+⎣⎦
+−−⎡ ⎤
+⎢ ⎥−⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+vv vvP  Then set 
+2000
+0200 ,0030
+0005
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+D  where the eigenvalues in D correspond to 12,vv , 3v  and 4v  respectively. 
+Note that this answer differs from the text. There, [] 4312   P = vvv v  and the entries in D are 
+rearranged to match the new order of the eigenvectors. According to the Diagonalization Theorem, 
+both answers are correct. 
+ 20. Since A is triangular, its eigenvalues are 2 and 3. 
+  For λ = 2: 
+1000
+00002, 0000
+100 1
+AI
+⎡⎤
+⎢⎥
+⎢⎥−= ⎢⎥
+⎢⎥
+⎣⎦
+ and row reducing [] 2  AI− 0  yields 
+10000
+00010 .00000
+00000
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+ The 
+general solution is 23
+00
+10 ,01
+00
+xx
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥
+⎣ ⎦⎣ ⎦
+ and a basis for the eigenspace is {}12
+00
+10 .01
+00
+⎧⎫⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥,= , ⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦⎩⎭vv  
+  For λ = 3: 
+00 00
+01 0 03, 00 1 0
+10 00
+AI
+⎡⎤
+⎢⎥ −⎢⎥−= ⎢⎥ −
+⎢⎥
+⎣⎦
+ and row reducing [] 3  AI− 0  yields 
+10000
+01000 .00100
+00000
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+ 
+The general solution is 4
+0
+0 ,0
+1
+x
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎣⎦
+ and a basis for the eigenspace is 3
+0
+0 .0
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+v  
+ Since λ 3=  has only a one-dimensional eigenspace, we can find at most three linearly independent 
+eigenvectors for A, so A is not diagonalizable. 
+ 21. a. False. The symbol D does not automatically denote a diagonal matrix. 
+ b. True. See the remark after the statement of the Diagonalization Theorem. 
+ c. False. The 33×  matrix in Example 4 has 3 eigenvalues, counting multiplicities, but it is not 
+diagonalizable. 
+ d. False. Invertibility depends on 0 not being an eigenvalue. (See the Invertible Matrix Theorem.)  
+A diagonalizable matrix may or may not have 0 as an eigenvalue. See Examples 3 and 5 for both 
+possibilities. 
+ 22. a. False. The n eigenvectors must be linearly independent. See the Diagonalization Theorem. 
+----- pagina 25 -----
+5.3  Solutions   297  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. False. The matrix in Example 3 is diagonalizable, but it has only 2 distinct eigenvalues. (The 
+statement given is the converse of Theorem 6.) 
+ c. True. This follows from AP PD=  and formulas (1) and (2) in the proof of the Diagonalization 
+Theorem. 
+ d. False. See Example 4. The matrix there is invertible because 0 is not an eigenvalue, but the matrix 
+is not diagonalizable. 
+ 23. A is diagonalizable because you know that five linearly independent eigenvectors exist: three in the 
+three-dimensional eigenspace and two in the two-dimensional eigenspace. Theorem 7 guarantees that 
+the set of all five eigenvectors is linearly independent. 
+ 24. No, by Theorem 7(b). Here is an explanation that does not appeal to Theorem 7: Let 1v  and 2v  be 
+eigenvectors that span the two one-dimensional eigenspaces. If v is any other eigenvector, then it 
+belongs to one of the eigenspaces and hence is a multiple of either 1v  or 2.v  So there cannot exist 
+three linearly independent eigenvectors. By the Diagonalization Theorem, A cannot be 
+diagonalizable. 
+ 25. Let 1{}v  be a basis for the one-dimensional eigenspace, let 2v  and 3v  form a basis for the two-
+dimensional eigenspace, and let 4v  be any eigenvector in the remaining eigenspace. By Theorem 7, 
+1234{   },,,vv vv  is linearly independent. Since A is 44 ,×  the Diagonalization Theorem shows that  
+A is diagonalizable. 
+ 26. Yes, if the third eigenspace is only one-dimensional. In this case, the sum of the dimensions of the 
+eigenspaces will be six, whereas the matrix is 77 .×  See Theorem 7(b). An argument similar to that 
+for Exercise 24 can also be given. 
+ 27. If A is diagonalizable, then 1AP D P −=  for some invertible P and diagonal D. Since A is invertible, 0 
+is not an eigenvalue of A. So the diagonal entries in D (which are eigenvalues of A) are not zero, and 
+D is invertible. By the theorem on the inverse of a product, 
+   11 1 1 1 1 1 1 1() ( )AP D P P D P P D P−− − − − − − − −== =  
+  Since 1D−  is obviously diagonal, 1A−  is diagonalizable. 
+ 28. If A has n linearly independent eigenvectors, then by the Diagonalization Theorem, 1AP D P −=  for 
+some invertible P and diagonal D. Using properties of transposes, 
+   
+11
+11
+() ( )
+()
+−−
+−−
+==
+==
+TT T T T
+TT
+AP D P P D P
+PD P Q D Q
+ 
+  where 1() . −= TQP  Thus TA  is diagonalizable. By the Diagonalization Theorem, the columns of Q 
+are n linearly independent eigenvectors of .TA  
+ 29. The diagonal entries in 1D  are reversed from those in D. So interchange the (eigenvector) columns of  
+P to make them correspond properly to the eigenvalues in 1.D  In this case,  
+   11
+11 3 0 and21 0 5PD ⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦  
+----- pagina 26 -----
+298 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Although the first column of P must be an eigenvector corresponding to the eigenvalue 3, there is 
+nothing to prevent us from selecting some multiple of 1 ,2⎡ ⎤⎢ ⎥−⎣ ⎦  say 3 ,6−⎡ ⎤⎢ ⎥⎣ ⎦  and letting 2 31 .61−⎡⎤= ⎢⎥ −⎣⎦P  
+We now have three different factorizations or “diagonalizations” of A:  
+   11 1 11 1 21 2AP D P P D P P D P−− −== =  
+30. A nonzero multiple of an eigenvector is another eigenvector. To produce 2 ,P  simply multiply one or 
+both columns of P by a nonzero scalar other than 1. 
+31. For a 22×  matrix A to be invertible, its eigenvalues must be nonzero. A first attempt at a 
+construction might be something such as 23 ,04⎡ ⎤⎢ ⎥⎣ ⎦  whose eigenvalues are 2 and 4. Unfortunately, a
+22×  matrix with two distinct eigenvalues is diagonalizable (Theorem 6). So, adjust the construction 
+to 23 ,02⎡⎤⎢⎥⎣⎦  which works. In fact, any matrix of the form 0ab a⎡ ⎤⎢ ⎥⎣ ⎦  has the desired properties when a 
+and b are nonzero. The eigenspace for the eigenvalue a is one-dimensional, as a simple calculation 
+shows, and there is no other eigenvalue to produce a second eigenvector.  
+32. Any 22×  matrix with two distinct eigenvalues is diagonalizable, by Theorem 6. If one of those 
+eigenvalues is zero, then the matrix will not be invertible. Any matrix of the form 00ab⎡⎤⎢⎥⎣⎦  has the 
+desired properties when a and b are nonzero. The number a must be nonzero to make the matrix 
+diagonalizable; b must be nonzero to make the matrix not diagonal. Other solutions are 00ab⎡⎤⎢⎥⎣⎦   
+and 0 .0⎡⎤⎢⎥⎣⎦ ab  
+ 33. 
+9424
+56 32 28 44 ,14 14 6 14
+42 33 21 45
+A
+−−−⎡⎤
+⎢⎥−−⎢⎥= ⎢⎥−− −
+⎢⎥ −−⎣⎦
+ ev=eig(A)=(13,-12,-12, 13), 
+  nulbasis(A-ev(1)*eye(4))
+0.5000 0.3333
+0 1.3333 .1.0000 0
+0 1.0000
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+ 
+  A basis for the eigenspace of 
+11
+0413 is , . 20
+03
+⎧ ⎫−⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥λ= ⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  
+----- pagina 27 -----
+5.3  Solutions   299  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  nulbasis(A-ev(2)*eye(4))
+0.2857 0
+1 0000 1.0000
+1 0000 0
+0 1.0000
+⎡⎤
+⎢⎥ .−⎢⎥
+⎢⎥ .
+⎢⎥
+⎣⎦
+, 
+  A basis for the eigenspace of 
+20
+7112 is , . 70
+01
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥λ=− ⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭   Thus we construct 
+11 2 0
+04 7 1 ,20 7 0
+03 0 1
+P
+−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+ 
+and 
+1 3 000
+01 3 0 0 .00 1 2 0
+00 0 1 2
+D
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥ −
+⎢⎥ −⎣⎦
+  Notice that the anwer in the text lists the eigenvector in an different 
+order in P, and hence the eigenvalues are listed in a different order in D.  Both answers are correct.   
+ 34. 
+49 7 82
+79 0 7 1 4
+,51 0551 0
+23 7 04
+3 13 7 10 11
+A
+−−⎡⎤
+⎢⎥−−⎢⎥
+⎢⎥= −−
+⎢⎥−⎢⎥
+⎢⎥−− −⎣⎦
+ ev = eig(A)=(5,-2,-2,5,5), 
+  nulbasis(A-ev(1)*eye(5))
+2.0000 1.0000 2.0000
+1.0000 1.0000 0
+1.0000 0 0
+0 1.0000 0
+0 0 1.0000
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥=,
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+  A basis for the eigenspace of 
+21 2
+11 0
+5 is , . 10 0
+01 0
+00 1
+⎧ ⎫−⎡ ⎤⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥λ= , ⎨ ⎬⎢ ⎥⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎣ ⎦⎩⎭  
+  nulbasis(A-ev(2)*eye(5))
+0.4000 0.6000
+1.4000 1.4000
+1 0000 1.0000
+1 0000 0
+0 1.0000
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥= −. −
+⎢ ⎥.⎢ ⎥
+⎢ ⎥⎣ ⎦
+, 
+----- pagina 28 -----
+300 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  A basis for the eigenspace of 
+23
+77
+2 is , . 55
+50
+05
+⎧ ⎫−⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥
+⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥λ=− −−⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  
+  Thus we construct 
+21 223
+11 077
+10 0 5 5
+01 050
+00 105
+P
+−−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥= −−
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and 
+500 0 0
+050 0 0
+.005 0 0
+000 2 0
+000 0 2
+D
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥=
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+ 35. 
+1 31 291 59
+6 591 59
+,61 25 69
+61 29 89
+61 2 1 2 62
+A
+−−⎡⎤
+⎢⎥ −−⎢⎥
+⎢⎥= −−
+⎢⎥ −−⎢⎥
+⎢⎥−− −⎣⎦
+ ev = eig(A) −=(7, 14,-14,7,7), 
+  nulbasis(A-ev(1)*eye(5))
+2 0000 1 0000 1 5000
+1 0000 0 0
+0 1 0000 0
+0 1 0000 0
+0 0 1 0000
+.. − .⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥=, .
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+  A basis for the eigenspace of 
+21 3
+10 0
+7 is , . 01 0
+01 0
+00 2
+⎧ ⎫−⎡ ⎤⎡⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢⎥⎢ ⎥
+⎪ ⎪⎢ ⎥⎢⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢⎥⎢ ⎥λ= , ⎨ ⎬⎢ ⎥⎢⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣⎦⎣ ⎦⎩⎭  
+  nulbasis(A-ev(2)*eye(5))
+10
+10
+01
+10
+01
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥=, −
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+  A basis for the eigenspace of 
+10
+10
+14 is , . 01
+10
+01
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥
+⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥λ=− −⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  
+----- pagina 29 -----
+5.3  Solutions   301  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus we construct 
+21 31 0
+10 0 1 0
+,01 00 1
+01 01 0
+00 20 1
+P
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥= −
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and 
+700 0 0
+070 0 0
+.007 0 0
+000 1 4 0
+000 0 1 4
+D
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥=
+⎢ ⎥−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ 
+ 36. 
+24 6 2 6 2
+72 51 9 99 9
+,06 3 1 56 36 3
+72 15 9 63 9
+06 3 2 16 32 7
+A
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥= −
+⎢⎥ −⎢⎥
+⎢⎥ −−⎣⎦
+ev = eig(A)=(24,-48,36,-48,36), 
+  nulbasis(A-ev(1)*eye(5))
+1
+1
+0
+1
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥=,
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+  A basis for the eigenspace of 
+1
+1
+24 is . 0
+1
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥λ=
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+  nulbasis(A-ev(2)*eye(5)), 
+  A basis for the eigenspace of 
+00
+10
+48 is . 01
+10
+01
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥
+⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥λ=− , −⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  
+  nulbasis(A-ev(3)*eye(5))
+1 0000 0 3333
+0 0000 1 0000
+3 0000 0 0000
+1 0000 0
+0 1 0000
+.− .⎡ ⎤
+⎢ ⎥..⎢ ⎥
+⎢ ⎥= ..
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+, 
+  A basis for the eigenspace of 
+11
+03
+36 is , . 30
+10
+03
+⎧ ⎫−⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥
+⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥λ= ⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  
+----- pagina 30 -----
+302 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus we construct 
+10 0 1 1
+11 00 3
+00 13 0
+11 01 0
+00 10 3
+P
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥= −
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ and 
+.
+24 0 0 0 0
+04 8 00 0
+00 4 8 0 0
+00 0 3 6 0
+00 00 3 6
+D
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥= −
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+.  Notice that 
+the anwer in the text lists the eigenvector in an different order in P, and hence the eigenvalues are listed 
+in a different order in D.  Both answers are correct.   
+Notes: For your use, here is another matrix with five distinct real eigenvalues. To four decimal places, 
+they are 11.0654, 9.8785, 3.8238, 3 7332,−.  and 6 0345.−.  
+ 
+6853 0
+7353 0
+3753 5
+0417 5
+5320 8
+−−⎡⎤
+⎢⎥−−⎢⎥
+⎢⎥−− −
+⎢⎥ −−⎢⎥
+⎢⎥−−−⎣⎦
+ 
+The MATLAB box in the Study Guide  encourages students to use eig (A)  and nulbasis to 
+practice the diagonalization procedure in this section.  It also remarks that in later work, a student may 
+automate the process, using the command [] =PD  eig (A). You may wish to permit students to use 
+the full power of eig in some problems in Sections 5.5 and 5.7. 
+5.4 SOLUTIONS 
+ 1. Since 11 2 1
+3()3 5 [ () ] . 5⎡⎤=−, = ⎢⎥−⎣⎦bd db DTT  Likewise 21 2() 6T =− +bd d  implies that 2 1[( ) ] 6DT −⎡ ⎤= ⎢ ⎥⎣ ⎦b  
+and 32()4T =bd  implies that 3
+0[( ) ] . 4⎡ ⎤= ⎢ ⎥⎣ ⎦b DT  Thus the matrix for T relative to B  and 
+123
+31 0 is [ ( )] [ ( )] [ ( )] . 56 4⎡⎤⎣⎦ −⎡⎤= ⎢⎥−⎣⎦bbbDDDDT T T  
+ 2.Since 11 21
+3()3 3 [ () ] . 3BTT ⎡⎤=−, = ⎢⎥−⎣⎦db bd  Likewise 21 2() 2 5T =− +db b  implies that 2 2[( ) ] . 5BT −⎡ ⎤= ⎢ ⎥⎣ ⎦d  
+Thus the matrix for T relative to D  and 12
+32i s  [( ) ] [( ) ] . 35BBBT T⎡⎤⎣⎦ −⎡ ⎤= ⎢ ⎥−⎣ ⎦dd  
+----- pagina 31 -----
+5.4  Solutions   303  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3 . a. 1 12 3 2 123 3 123() 0 0 ( ) 2 0 () 2 0 3TT T =−+ , = − −+ , =++eb b b e b b b eb b b  
+ b. 12 3
+01 2
+[( ) ] 0 [( ) ] 2 [( ) ] 0
+10 3
+BB BTT T
+−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥=, = − , =⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦
+ee e .    
+ c. The matrix for T relative to E  and 123
+01 2
+is [ [ ( )] [ ( )] [ ( )] ] 0 2 0 .
+10 3
+BBBBT T T
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ee e  
+ 4. Let 12{}=, eeE  be the standard basis for . Since 11 2 2
+23[ ( )] ( ) [ ( )] ( ) , 20TT TT −⎡ ⎤⎡ ⎤== , == ⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦bb bbEE   
+and 33
+1[( ) ] ( ) , 5TT ⎡⎤== ⎢⎥⎣⎦bb E  the matrix for T relative to B  and 
+123i s  [ [ ( ) ][ ( ) ][ ( ) ] ] =bb bTT T EEEE  23 1 .205−⎡ ⎤⎢ ⎥−⎣ ⎦  
+ 5. a. 22 3( ) ( 3)(3 2 ) 9 3T t tt tt t=+ − + = −++p  
+ b. Let p  and q  be polynomials in 2, and let c  be any scalar. Then 
+   ( () () ) ( 3 ) [ () () ] ( 3 ) () ( 3 ) ()(( ) ) (( ) )T t t t t t tt tt Tt Tt+= + += + + +=+pq pq p q pq   
+   ( ( )) ( 3)[ ( )] ( 3) ( )[( ) ]Tc t t c t c t tcT t⋅= + ⋅= ⋅ +=⋅pp p p  
+  and T is a linear transformation. 
+c. Let 2{1 }Bt t=, ,  and 23{1 } .=, ,,Ct t t  Since 11
+3
+1( ) (1) ( 3)(1) 3  [ ( )] . 0
+0
+CTT t t T
+⎡⎤
+⎢⎥
+⎢⎥== + = + , = ⎢⎥
+⎢⎥
+⎣⎦
+bb  
+Likewise since 222
+0
+3( ) ( ) ( 3)( ) 3  [ ( )] , 1
+0
+CTT t t t t t T
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥== + = + , = ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+bb  and since 
+----- pagina 32 -----
+304 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+22 3 2
+33
+0
+0( ) ( ) ( 3)( ) 3  [ ( )] . 3
+1
+CTT t t t t t T
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥== + = + , = ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+bb  Thus the matrix for T  relative to B  and 
+123
+300
+130 is [ [ ( )] [ ( )] [ ( )] ] . 013
+001
+CCCCT T T
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+bb b  
+ 6. a. 22 2 2 3 4() ( 3 2 ) 2 ( 3 2 ) 3 2 7 4 2Tt t t t t t t t t=−+ + −+ = −+ − +p  
+b. Let p  and q  be polynomials in 2, and let c  be any scalar. Then 
+   
+2
+22
+2
+2
+(( ) ( ) ) [( ) ( ) ] 2 [( ) ( ) ]
+[( ) 2 ( ) ] [( ) 2 ( ) ]
+(( ) ) (( ) )
+(( ) ) [( ) ] 2 [( ) ]
+[( ) 2 ( ) ]
+[( ) ]
+Tt t t t t t t
+tt t tt t
+Tt Tt
+Tc t c t t c t
+ct t t
+cT t
++=++ +
+=+ ++
+=+
+⋅= ⋅+ ⋅
+=⋅ +
+=⋅
+pq pq pq
+pp qq
+pq
+pp p
+pp
+p
+ 
+   and T is a linear transformation. 
+c. Let 2{1 }Bt t=, ,  and 234{1 } .=, ,,,Ct t t t  Since 2211
+1
+0
+() ( 1 )12 ( 1 )12 [ () ] . 2
+0
+0
+CTT t t T
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥== + = + , =
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+bb  
+Likewise since 2322
+0
+1
+( ) ( ) (2 )( ) 2 [ ( )] , 0
+2
+0
+CTT t t t t t t T
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥== + = + , =
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+bb  and  
+since 22 2 22 433
+0
+0
+( ) ( ) (2 )( ) 2 [ ( )] . 1
+0
+2
+CTT t t t t t t T
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥== + = + , =
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+bb  Thus the matrix for T relative to  
+B  and 123
+100
+010
+ is [ [ ( )] [ ( )] [ ( )] ] . 201
+020
+002
+CCCCT T T
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥=
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+bbb  
+----- pagina 33 -----
+5.4  Solutions   305  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 7. Since 11
+3
+() ( 1 )35 [ () ] 5 .
+0
+⎡ ⎤
+⎢ ⎥== + , = ⎢ ⎥
+⎢ ⎥⎣ ⎦
+bb BTT t T  Likewise since 
+2
+22
+0
+() ( ) 2 4[ () ] 2 ,
+4
+⎡⎤
+⎢⎥== − + , = − ⎢⎥
+⎢⎥⎣⎦
+bb BTT t t t T  and since 2233
+0
+() ( ) [ () ] 0 .
+1
+⎡⎤
+⎢⎥== , = ⎢⎥
+⎢⎥⎣⎦
+bb BTT t t T  Thus the 
+matrix representation of T relative to the basis  
+B  is 123
+30 0
+[ ( )] [ ( )] [ ( )] 5 2 0 .
+04 1
+⎡⎤
+⎣⎦
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+bb bBBBTT T  Perhaps a faster way is to realize that the 
+information given provides the general form of ()T p  as shown in the figure below: 
+  
+22
+01 2 0 0 1 12
+coordinate coordinate
+mapping mapping
+00 multiplication
+10 1
+by[ ]
+21 2
+3( 52 ) ( 4 )
+3
+52
+4
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+++ ⎯ ⎯ → + − + +
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯→ −
++
+BT
+T
+aa t a t a a a t aa t
+aa
+aa a
+aa a
+ 
+  The matrix that implements the multiplication along the bottom of the figure is easily filled in by 
+inspection: 
+   
+00
+10 1
+21 2
+33 0 0
+5 2  implies that [ ] 5 2 0
+40 4 1
+B
+aa
+aa a T
+aa a
+⎡⎤⎡ ⎤
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥
+⎢⎥⎢ ⎥⎣⎦⎣ ⎦
+???⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥??? = − = −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥??? +⎣⎦ ⎣ ⎦
+ 
+ 8. Since 12
+4
+[4 3 ] 3 ,
+0
+B
+⎡ ⎤
+⎢ ⎥−= − ⎢ ⎥
+⎢ ⎥⎣ ⎦
+bb  12 12
+00 1 4 0
+[( 4 3 ) ] [] [ 4 3 ] 2 1 2 3 5
+13 1 0 5
+BB BTT
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥−= − = − − = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥ −⎣ ⎦⎣ ⎦ ⎣ ⎦
+bb bb  
+  and 12 23(4 3 ) 5 5 .T −= −bb b b  
+ 9. a. 
+53 ( 1 ) 2
+() 5 3 ( 0 ) 5
+53 ( 1 ) 8
+T
++−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=+ =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥+⎣⎦ ⎣ ⎦
+p  
+ b. Let p and q be polynomials in 2, and let c be any scalar. Then 
+   
+( ) (1 ) (1 ) (1 ) (1 ) (1 )
+() () ( 0 ) ( 0 ) ( 0 ) ( 0 ) ( 0 ) ( ) ( )
+( )(1) (1) (1) (1) (1)
++− − + − − −⎡ ⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥+= + = + = + = +⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢ ⎥ ⎢⎥ ⎢⎥++⎣ ⎦ ⎣ ⎦ ⎣⎦ ⎣⎦
+pq p q p q
+pq pq p q p q p q
+pq p q p q
+TT T  
+   
+((1 ) ) (1 )() ( 1 )
+() ( ( 0 ) ) ( 0 ) ( ) () ( 0 )
+( (1)) (1)() ( 1 )
+cc
+Tc c c cT c
+cc
+⋅− −⋅− ⎡⎤ ⎡ ⎤⎡⎤
+⎢⎥ ⎢ ⎥⎢⎥⋅ = = ⋅ =⋅ =⋅⋅ ⎢⎥ ⎢ ⎥⎢⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⋅⋅⎣⎦ ⎣⎦ ⎣ ⎦
+ppp
+pp p p p
+ppp
+ 
+----- pagina 34 -----
+306 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  and T is a linear transformation. 
+c. Let 2{1 }=, ,Bt t  and 123{}=, ,ee eE  be the standard basis for 3. Since 
+11 2 2
+11
+[( ) ] ( ) ( 1 ) 1  [( ) ] ( ) ( ) 0 ,
+11
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥== = , = = = ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+bb b bTT T T T T tEE  and 
+2
+33
+1
+[( ) ] ( ) ( ) 0 ,
+1
+⎡⎤
+⎢⎥== = ⎢⎥
+⎢⎥⎣⎦
+bbTT T t E  the matrix for T relative to B  and E  is 
+123
+11 1
+[ ( )] [ ( )] [ ( )] 1 0 0 .
+11 1
+⎡⎤
+⎣⎦
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+bb bTT T EEE  
+ 10. a. Let p and q be polynomials in 3, and let c be any scalar. Then 
+   
+( ) (2 ) (2 ) (2 )
+( )(3) (3) (3)() ( )(1)  (1) (1)
+() ( 0 ) ( 0 ) ( 0 )
+T
++− − + − ⎡ ⎤⎡⎤
+⎢ ⎥⎢⎥ ++ ⎢ ⎥⎢⎥+= = ⎢ ⎥⎢⎥ ++
+⎢ ⎥⎢⎥ ++⎣⎦ ⎣ ⎦
+pq p q
+pq p qpq pq p q
+pq p q
+(2 ) (2 )
+(3) (3) () ()(1) (1)
+(0) (0)
+TT
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥=+= +⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦
+pq
+pq pqpq
+pq
+ 
+    
+( ) (2 ) ((2 ) ) (2 )
+( )(3) ( (3)) (3)() ( ) ( )(1) ( (1)) (1)
+( )(0) ( (0)) (0)
+cc
+ccTc c cT cc
+cc
+⋅− ⋅− −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥⋅⋅⎢⎥ ⎢⎥ ⎢ ⎥⋅= = = ⋅ = ⋅⎢⎥ ⎢⎥ ⎢ ⎥⋅⋅
+⎢⎥ ⎢⎥ ⎢ ⎥⋅⋅⎣⎦ ⎣⎦ ⎣ ⎦
+pp p
+pp ppp pp p
+pp p
+ 
+   and T is a linear transformation. 
+b. Let 23{1 }=, ,,Bt t t  and 1234{}=, , ,ee eeE  be the standard basis for 4. Since 
+2
+11 2 2 3 3
+124
+13 9[( ) ] ( ) ( 1 )  [( ) ] ( ) ( )  [( ) ] ( ) ( ) ,11 1
+100
+TT T TT T t TT T t
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥== = , = = = , ===⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦ ⎣ ⎦
+bb b b bbEE E  
+and 344
+8
+27[( ) ] ( ) ( ) , 1
+0
+TT T t
+−⎡⎤
+⎢⎥
+⎢⎥== = ⎢⎥
+⎢⎥
+⎣⎦
+bb E  the matrix for T relative to B  and E  is 
+1234
+12 48
+13 9 2 7[ ( )] [ ( )] [ ( )] [ ( )] . 11 11
+10 00
+TT TT⎡⎤⎣⎦
+−−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+bb bbEEEE  
+ 11. Following Example 4, if 1 2
+11 ,21P ⎡⎤⎢⎥⎣⎦ −−⎡ ⎤== ⎢ ⎥⎣ ⎦bb  then the B-matrix is 
+----- pagina 35 -----
+5.4  Solutions   307  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1 11 41 11 2221 61 21 0 1PA P− −− −− −−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤==⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦  
+ 12. Following Example 4, if 1 2
+01 ,12P ⎡⎤⎢⎥⎣⎦ −⎡ ⎤== ⎢ ⎥⎣ ⎦bb  then the B-matrix is 
+   1 2 1 62 01 401 040 1 2 22PA P− −− − −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦  
+ 13. Start by diagonalizing A. The characteristic polynomial is 2λ 4λ 3( λ 1)(λ 3),−+ = − −  so the 
+eigenvalues of A are 1 and 3. 
+  For λ = 1: 11 .33−⎡⎤−= ⎢⎥−⎣⎦AI  The equation ()AI−= x0  amounts to 12 0,xx−+ =  so 12xx=  with 2x  
+free. A basis vector for the eigenspace is thus 1
+1 .1⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  For λ = 3: 313. 31−⎡⎤−= ⎢⎥−⎣⎦AI  The equation (3 )AI−= x0  amounts to 1230 ,xx−+ =  so 12 (1 3)xx=/  
+with 2x  free. A nice basis vector for the eigenspace is thus 2
+1 .3⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  From 1v  and 2v  we may construct 1 2
+11
+13P ⎡⎤⎢⎥⎣⎦ ⎡ ⎤== ⎢ ⎥⎣ ⎦vv  which diagonalizes A. By Theorem 8, the 
+basis 12{}B =, vv  has the property that the B-matrix of the transformation Axx6  is a diagonal 
+matrix. 
+ 14. Start by diagonalizing A. The characteristic polynomial is 2λ 4λ 5( λ 5)(λ 1),−− = − +  so the 
+eigenvalues of A are 5 and 1.−  
+  For λ = 5: 335. 33AI −⎡⎤−= ⎢⎥ −⎣⎦  The equation (5 )AI−= x0  amounts to 12 0,xx−=  so 12xx=  with 
+2x  free. A basis vector for the eigenspace is thus 1
+1 .1⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  For λ = 1− : 33 .33AI ⎡⎤+= ⎢⎥⎣⎦  The equation ()AI+= x0  amounts to 12 0,xx+=  so 12xx=−  with 2x  
+free. A nice basis vector for the eigenspace is thus 2
+1 .1−⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  From 1v  and 2v  we may construct 1 2
+11
+11P ⎡⎤⎢⎥⎣⎦ −⎡ ⎤== ⎢ ⎥⎣ ⎦vv  which diagonalizes A. By Theorem 8, 
+the basis 12{}B =, vv  has the property that the B-matrix of the transformation Axx6  is a diagonal 
+matrix. 
+----- pagina 36 -----
+308 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 15. Start by diagonalizing A. The characteristic polynomial is 2λ 3λ 10 ( λ +5)(λ 2),+−= −  so the 
+eigenvalues of A are − 5 and 2. 
+  For λ = 5: 625. 31AI ⎡⎤+= ⎢⎥⎣⎦  The equation (5 )AI+= x0  amounts to 1230 ,xx+=  so 12 (1 / 3 )xx=−  
+with 2x  free. A basis vector for the eigenspace is thus 1
+1 .3−⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  For λ = 2: 122. 36AI −⎡⎤−= ⎢⎥ −⎣⎦  The equation (2 )AI−= x0  amounts to 12 20 ,xx−=  so 12 2xx=  
+with 2x  free. A basis vector for the eigenspace is thus 2
+2 .1⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  From 1v  and 2v  we may construct 1 2
+12
+31P ⎡⎤⎢⎥⎣⎦ −⎡ ⎤== ⎢ ⎥⎣ ⎦vv  which diagonalizes A. By Theorem 8, 
+the basis 12{}B =, vv  has the property that the B-matrix of the transformation Axx6  is a diagonal 
+matrix.  Note that the solution in the text lists the vectors in the reverse order, which is also correct. 
+ 16. Start by diagonalizing A. The characteristic polynomial is 2λ 9λ +18 ( λ 3)(λ 6),−= − −  so the 
+eigenvalues of A are 3 and 6. 
+  For λ = 3: 123. 12AI −⎡⎤−= ⎢⎥−⎣⎦  The equation (3 )AI−= x0  amounts to 12 20 ,xx−=  so 12 2xx=  
+with 2x  free. A basis vector for the eigenspace is thus 1
+2 .1⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  For λ = 6: 226. 11AI −−⎡⎤−= ⎢⎥−−⎣⎦  The equation (6 )AI−= x0  amounts to 12 0,xx+=  so 12xx=−  with  
+2x  free. A basis vector for the eigenspace is thus 2
+1 . 1−⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  From 1v  and 2v  we may construct 1 2
+21
+11P ⎡⎤⎢⎥⎣⎦ −⎡ ⎤== ⎢ ⎥⎣ ⎦vv  which diagonalizes A. By Theorem 8, 
+the basis 12{}B =, vv  has the property that the B-matrix of the transformation Axx6  is a diagonal 
+matrix. 
+ 17. a. We compute that 
+   11
+411 3 312 1 3A ⎡⎤ ⎡ ⎤ ⎡ ⎤== =⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦bb  
+  so 1b  is an eigenvector of A corresponding to the eigenvalue 3. The characteristic polynomial of 
+A is 22λ 6λ 9( λ 3) ,−+ = −  so 3 is the only eigenvalue for A. Now 113, 11AI ⎡⎤−= ⎢⎥−−⎣⎦  which 
+implies that the eigenspace corresponding to the eigenvalue 3 is one-dimensional. Thus the matrix 
+A is not diagonalizable. 
+----- pagina 37 -----
+5.4  Solutions   309  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ b. Following Example 4, if 1 2 ,⎡⎤⎢⎥⎣⎦= bbP  then the B-matrix for T is 
+   1 21 4 1 1 1 3111 12 1 2 0 3PA P− −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+ 18. If there is a basis B  such that [] BT  is diagonal, then A is similar to a diagonal matrix, by the second 
+paragraph following Example 3. In this case, A would have three linearly independent eigenvectors. 
+However, this is not necessarily the case, because A has only two distinct eigenvalues. 
+ 19. If A is similar to B, then there exists an invertible matrix P such that 1 .− =PA P B  Thus B is invertible 
+because it is the product of invertible matrices. By a theorem about inverses of products, 
+11 1 1 11 1 () ,−− − − −− −==BP A P P A P  which shows that 1A−  is similar to 1.−B  
+ 20. If 1,−=AP B P  then 21 1 1 1 1 2 1() () ( ) .−− − − − −== = ⋅ ⋅ =A PBP PBP PB P P BP PB I BP PB P  So 2A  is  
+similar to 2.B  
+ 21. By hypothesis, there exist invertible P and Q such that 1PB P A− =  and 1 .− =QC Q A  Then 
+11 .−− =PB P QC Q  Left-multiply by Q and right-multiply by 1Q−  to obtain 
+11 1 1 .−− − − =QP BPQ QQ CQQ   
+So 11 1 1 1 () () ,−− − − −==CQ P B P Q P Q B P Q  which shows that B is similar to C. 
+ 22. If A is diagonalizable, then 1AP D P −=  for some P. Also, if B is similar to A, then 1BQ A Q −=   
+for some Q. Then 11 1 1 1( ) () ( ) () ()B Q PDP Q QP D P Q QP D QP−− − − −== =  
+  So B is diagonalizable. 
+ 23. If λ 0,=, ≠xx xA  then 11 λ .PA P−− =xx  If 1 ,−=BP A P  then 
+   11 11 1() () λBP P A PP P A P−− −− −== =xx x x  (*) 
+  by the first calculation. Note that 1 0,− ≠xP  because 0≠x  and 1P−  is invertible. Hence (*) shows 
+that 1P− x  is an eigenvector of B corresponding to λ . (Of course, λ  is an eigenvalue of both A and B 
+because the matrices are similar, by Theorem 4 in Section 5.2.) 
+ 24. If 1,−=AP B P  then 11rank rank ( ) rank , −−==A P BP BP  by Supplementary Exercise 13 in Chapter 
+4. Also, 1rank rank ,− =BP B  by Supplementary Exercise 14 in Chapter 4, since 1P−  is invertible. 
+Thus rank rank .=AB  
+ 25. If 1,−=AP B P  then 
+   
+11
+1
+tr( ) tr(( ) ) tr( ( )) By the trace property
+tr( ) tr( ) tr( )
+AP B P P P B
+P P BI BB
+−−
+−
+==
+== =
+ 
+  If B is diagonal, then the diagonal entries of B must be the eigenvalues of A, by the Diagonalization 
+Theorem (Theorem 5 in Section 5.3). So tr tr {sum of the eigenvalues of }.==AB A  
+ 26. If 1AP D P −=  for some P, then the general trace property from Exercise 25 shows that 
+1tr tr [( ) ]AP D P −== 1tr [ ] tr .− =PP D D  (Or, one can use the result of Exercise 25 that since A is 
+----- pagina 38 -----
+310 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+similar to D, tr tr .=AD ) Since the eigenvalues of A are on the main diagonal of D, tr D is the sum 
+of the eigenvalues of A. 
+ 27. For each () .,= bbjjjI  Since the standard coordinate vector of any vector in n is just the vector 
+itself, [( ) ] . =bbjjI ε  Thus the matrix for I relative to B  and the standard basis E  is simply 
+1 2 .⎡⎤⎢⎥⎣⎦bb b n…  This matrix is precisely the change-of-coordinates matrix BP  defined in Section 
+4.4. 
+ 28. For each () ,,= bbjjjI  and [( ) ] [ ]. =bbjC j CI  By formula (4), the matrix for I relative to the bases 
+B  and C is 1 2[] [] [ ]Cn C CM… ⎡⎤⎢⎥⎣⎦= bb b .  In Theorem 15 of Section 4.7, this matrix was 
+denoted by 
+CB
+P
+←
+ and was called the change-of-coordinates matrix from B  to .C  
+ 29. If 1{} ,=, ,bb nB…  then the B-coordinate vector of jb  is ,e j  the standard basis vector for n. For 
+instance, 
+   11 2 10 0=⋅ + ⋅ + + ⋅bbb b n…  
+  Thus jj j[( ) ] [ ] ,==bb eBBI  and 
+   11[] [( ) ] [( ) ] [ ]BB n B nII I I ⎡⎤⎣⎦== = bb e e""  
+ 30. [M] If P is the matrix whose columns come from ,B  then the B-matrix of the transformation 
+Axx6  is 1 .−=DP A P  From the data in the text, 
+   1 23
+622 1 21
+31 2 1 1 1
+222 1 30
+AP ⎡⎤⎢⎥⎣⎦
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− , = = − ,⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+bbb  
+   
+3 31 6 2 2 12 1 2 10
+11 0 3 12 1 11 03 0
+21 1 222 1 30 01 4
+D
+−− − − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥=− − − =⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+ 
+ 31. [M] If P is the matrix whose columns come from ,B  then the B-matrix of the transformation 
+Axx6  is 1 .−=DP A P  From the data in the text, 
+  
+1 23
+74 81 6 323
+11 4 6 111
+34 51 9 330
+131 3 74 81 6 323 726
+13 011 4 6111 046
+01 1 3 34 51 9 33 0 001
+⎡⎤
+⎢⎥⎣⎦
+−− − −−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=, = = − ,⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− − −−⎣⎦ ⎣ ⎦
+−−− /−− − −− −−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥=− = − −⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥−− /−− − −− −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦
+bbbAP
+D
+ 
+ 32. [M] 
+64 0 9
+30 1 6 ,12 1 0
+44 0 7
+A
+−⎡⎤
+⎢⎥−⎢⎥= ⎢⎥−−
+⎢⎥−⎣⎦
+ 
+----- pagina 39 -----
+5.4  Solutions   311  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  ev =eig(A) =(5, 1, -2, -2) 
+  nulbasis(A-ev(1)*eye(4))
+1 0000
+0 5000
+0 5000
+1 0000
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥= ⎢ ⎥−.
+⎢ ⎥.⎣ ⎦
+ 
+  A basis for the eigenspace of λ 5=  is 1
+2
+1 .1
+2
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+b  
+  nulbasis(A-ev(2)*eye(4))
+1 0000
+0 5000 .3.5000
+1.0000
+.⎡ ⎤
+⎢ ⎥−.⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+ 
+  A basis for the eigenspace of λ 1=  is 2
+2
+1 .7
+2
+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+b  
+  nulbasis(A-ev(3)*eye(4))
+1 0000 1.5000
+1 0000 0.7500
+1 0000 0
+0 1.0000
+.⎡ ⎤
+⎢ ⎥.−⎢ ⎥= ⎢ ⎥.
+⎢ ⎥
+⎣ ⎦
+ 
+  A basis for the eigenspace of λ 2=−  is {}34
+16
+13,, . 10
+04
+⎧ ⎫⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥−⎪ ⎪⎢ ⎥⎢ ⎥= ⎨ ⎬⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭bb  
+  The basis 1234{}B =, , ,bbbb  is a basis for 4 with the property that [] BT  is diagonal. 
+Note: The Study Guide comments on Exercise 26 and tells students that the trace of any square matrix A 
+equals the sum of the eigenvalues of A, counted according to multiplicities. This provides a quick check 
+on the accuracy of an eigenvalue calculation. You could also refer students to the property of the 
+determinant described in Exercise 19 of Section 5.2. 
+----- pagina 40 -----
+312 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+5.5 SOLUTIONS _____________________________________________  
+1. 12 1 213 13AA I λλ λ−− −⎡⎤ ⎡ ⎤=, − =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+   2det( λ )( 1 λ )(3 λ )( 2 ) λ 4λ 5AI−= − − − − = − +  
+  Use the quadratic formula to find the eigenvalues: 41 6 2 0 2.2±−== ± iλ  Example 2 gives a 
+shortcut for finding one eigenvector, and Example 5 shows how to write the other eigenvector with 
+no effort. 
+  For λ = 2 + i:   12(2 ) . 11−− −⎡⎤−+ = ⎢⎥ −⎣⎦ iAi I i  The equation ( λ )AI−= x0  gives 
+   12
+12
+(1 ) 2 0
+(1 ) 0
+ix x
+xi x
+−− − =
++− =  
+  As in Example 2, the two equations are equivalent—each determines the same relation between 1x  
+and 2.x  So use the second equation to obtain 12 (1 ) ,=− −xi x  with 2x  free. The general solution is 
+2
+1 ,1−+⎡⎤⎢⎥⎣⎦ ix  and the vector 1 11 i−+⎡⎤= ⎢⎥⎣⎦v  provides a basis for the eigenspace. 
+  For  λ = 2 – i:   Let 12
+1 .1−−⎡⎤== ⎢⎥⎣⎦vv i  The remark prior to Example 5 shows that 2v  is 
+automatically an eigenvector for 2.+ i  In fact, calculations similar to those above would show that 
+2{}v  is a basis for the eigenspace. (In general, for a real matrix A, it can be shown that the set of 
+complex conjugates of the vectors in a basis of the eigenspace for λ  is a basis of the eigenspace for 
+λ .) 
+ 2. 33 .33A −⎡⎤= ⎢⎥⎣⎦  The characteristic polynomial is 2λ 6λ 18,−+  so the eigenvalues of A are 
+63 6 7 2λ 33 .2 i±−== ±  
+  For λ = 3 + 3i:   33(3 3 ) . 33iAi I i−−⎡⎤−+ = ⎢⎥ −⎣⎦  The equation (( 3 3 ) )Ai I−+ = x0  amounts to 
+12 0,xi x−=  so 12xi x=  with 2x  free. A basis vector for the eigenspace is thus 1 .1i⎡⎤= ⎢⎥⎣⎦v  
+  For λ = 3 – 3i:   A basis vector for the eigenspace is 12 .1i−⎡ ⎤== ⎢ ⎥⎣ ⎦vv  
+----- pagina 41 -----
+5.5  Solutions   313  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3. 51 .81A ⎡⎤= ⎢⎥−⎣⎦  The characteristic polynomial is 2λ 6λ 13,−+  so the eigenvalues of A are 
+63 6 5 2λ 32 .2 i±−== ±  
+  For λ = 3 + 2i:   22 1(3 2 ) . 82 2iAi I i−⎡⎤−+ = ⎢⎥ −− −⎣⎦  The equation (( 3 2 ) )Ai I−+ = x0  amounts to 
+128( 2 2 ) 0 ,xi x−+ − − =  so 12
+1
+4
+ixx −−=  with 2x  free. A nice basis vector for the eigenspace is thus 
+1
+1 .4 i−−⎡⎤= ⎢⎥⎣⎦v  
+  For λ = 3 – 2i:   A basis vector for the eigenspace is 12
+1 .4 i−+⎡ ⎤== ⎢ ⎥⎣ ⎦vv  
+ 4. 12 .13A −⎡⎤= ⎢⎥⎣⎦  The characteristic polynomial is 2λ 4λ 5,−+  so the eigenvalues of A are 
+44λ 2.2 i±−== ±  
+  For λ = 2 + i:   12(2 ) . 11iAi I i−− −⎡⎤−+ = ⎢⎥ −⎣⎦  The equation (( 2 ) )Ai I−+ = x0  amounts to 
+12 (1 ) 0,xi x+− =  so 12 (1 )xi x=− −  with 2x  free. A basis vector for the eigenspace is thus 
+1
+1 .1 i−+⎡⎤= ⎢⎥⎣⎦v  
+  For λ = 2 – i:   A basis vector for the eigenspace is 12
+1 .1 i−−⎡ ⎤== ⎢ ⎥⎣ ⎦vv  
+ 5. 31 .25A ⎡⎤= ⎢⎥−⎣⎦  The characteristic polynomial is 2λ 8λ 17,−+  so the eigenvalues of A are 
+84λ 4.2 i±−== ±  
+  For λ = 4 + i:   11(4 ) . 21iAi I i−−⎡⎤−+ = ⎢⎥ −−⎣⎦  The equation (( 4 ) )Ai I−+ = x0  amounts to 
+122( 1 ) 0 ,xi x−+ − =  so 12
+(1 )
+2
+ixx −=  with 1x  free. A basis vector for the eigenspace is thus 
+1
+1 .2 i−⎡⎤= ⎢⎥⎣⎦v  
+  For λ = 4 – i:   A basis vector for the eigenspace is 12
+1 .2 i+⎡ ⎤== ⎢ ⎥⎣ ⎦vv  
+----- pagina 42 -----
+314 CHAPTER 5  Eigenvalues and Eigen v
+Copyright © 2012 Pear
+ 6. 75 .13A −⎡⎤= ⎢⎥⎣⎦  The characteristic po
+10 4λ 5.2 i±−== ±  
+  For λ = 5 + i: 2(5 ) 1iAi I −⎡−+ = ⎢⎣
+12 (2 ) 0,xi x−+ =  so 12 (2 )xi x=+  
+1
+2 .1 i+⎡⎤= ⎢⎥⎣⎦v  
+  For λ = 5 – i:   A basis vector for th
+ 7. 31 .
+13
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+−=A  From Example 6, th
+Axx6  is 22λ (3 ) 1 2r =|| =+ =
+xy-plane and use trigonometry: 
+   ϕ = arctan ()ba/=  arctan (1/
+Note: Your students will want to kno w
+matrix of the form abba −⎡⎤⎢⎥⎣⎦  and simply
+the corresponding eigenvectors, 1i⎡⎤⎢⎥−⎣⎦  a
+may have trouble keeping track of the co
+ 8. 33 3 .
+33 3
+A
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+=
+−
+ The eigenvalue
+is 22λ (3) (3 3) 6.r =| |= + =  Fro
+(33 / 3 ) 3−= − π /  radians. 
+vectors 
+rson Education, Inc. Publishing as Addison-Wesley. 
+olynomial is 2λ 10λ 26,−+  so the eigenvalues of A ar
+5 .2 i− ⎤⎥−− ⎦  The equation (( 5 ) )Ai I−+ = x0 amounts to 
+with 2x  free. A basis vector for the eigenspace is thus
+he eigenspace is 12
+2 .1 i−⎡⎤== ⎢⎥⎣⎦vv  
+he eigenvalues are 3.± i  The scale factor for the tran
+2.  For the angle of rotation, plot the point () ( 3ab,= ,
+3) 6/ =π /  radians. 
+ 
+w whether you permit them on an exam to omit calc u
+y write the eigenvalues .±ab i  A similar question may
+and 1 ,⎡⎤⎢⎥⎣⎦i  which are announced in the Practice Probl e
+orrespondence between eigenvalues and eigenvectors. 
+es are 3( 3 3 ) . i±  The scale factor for the transformatio
+om trigonometry, the angle of rotation ϕ  is arctan (ba/
+re 
+s 
+nsformation 
+1)  in the  
+ulations for a 
+y arise about 
+em. Students 
+on Axx6  
+) =  arctan
+----- pagina 43 -----
+5.5  Solutions   315  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. 02 .20A ⎡⎤= ⎢⎥−⎣⎦  The eigenvalues are 2.i±  The scale factor for the transformation Axx6  is 
+22λ (0) (2) 2.r = || =+ =  From trigonometry, the angle of rotation ϕ  is arctan ()ba/=  arctan
+() 2−∞ = −π /  radians. 
+ 10. 0. 5 ..5 0A ⎡⎤= ⎢⎥−⎣⎦  The eigenvalues are .5 .i±  The scale factor for the transformation Axx6  is 
+22λ (0) .5 .5.r = || =+ =  From trigonometry, the angle of rotation ϕ  is 
+   arctan ()ba/=  arctan () 2−∞ = −π/  radians. 
+ 11. 31 .
+13
+A
+⎡⎤−= ⎢⎥
+−−⎢⎥⎣⎦
+ The eigenvalues are 3. i−±  The scale factor for the transformation Axx6  is 
+22λ (3 ) ( 1 ) 2 .r = || =+ =  From trigonometry, the angle of rotation ϕ  is  
+  arctan ()ba/=  arctan (1 3 ) 5 6/= − π /  radians. 
+ 12. 33 .
+33
+A
+⎡⎤ −= ⎢⎥
+⎢⎥⎣⎦
+ The eigenvalues are 3( 3 ) . i±  The scale factor for the transformation Axx6  is 
+22λ 3( 3 ) 2 3 .r =| |= + =  From trigonometry, the angle of rotation ϕ  is  
+  arctan ()ba/=  arctan (3 / 3 ) / 6π=  radians. 
+ 13. From Exercise 1, λ 2,=± i  and the eigenvector 11 i−−⎡ ⎤= ⎢ ⎥⎣ ⎦v  corresponds to λ 2.=− i  Since Re 
+1
+1
+−⎡⎤= ⎢⎥⎣⎦v  and Im 1 , 0−⎡ ⎤= ⎢ ⎥⎣ ⎦v  take 11 .10−−⎡ ⎤= ⎢ ⎥⎣ ⎦P  Then compute 
+   1 01 1211 0131 2111 1310 112 1 12CP A P− −−− −− −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤== = = ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥−− −− −⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣ ⎦  
+  Actually, Theorem 9 gives the formula for C. Note that the eigenvector v corresponds to ab i−  
+instead of .+ab i  If, for instance, you use the eigenvector for 2,+ i  your C will be 21 .12⎡⎤⎢⎥−⎣⎦  
+Notes: The Study Guide points out that the matrix C is described in Theorem 9 and the first column of C 
+is the real part of the eigenvector corresponding to ,−ab i  not ,+ab i  as one might expect. Since students 
+may forget this, they are encouraged to compute C from the formula 1 ,−=CP A P  as in the solution above. 
+The Study Guide also comments that because there are two possibilities for C in the factorization of a 
+22×  matrix as in Exercise 13, the measure of rotation of the angle associated with the transformation 
+Axx6  is determined only up to a change of sign. The “orientation” of the angle is determined by the 
+change of variable .=xu P  See Figure 4 in the text. 
+----- pagina 44 -----
+316 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 14. 33 .11A −⎡⎤= ⎢⎥⎣⎦  The eigenvalues of A are λ 2( 2 ) , i=±  and the eigenvector 2 ii⎡⎤ += ⎢⎥⎣⎦v  corresponds 
+to λ 2( 2 ) . i=−  By Theorem 9, 21[Re   Im ]
+01
+P ⎡ ⎤== ⎢ ⎥
+⎣ ⎦
+vv  and  
+  1 33 2 22/2 2/2 2 1 1101 0 1 22CP A P− ⎡ ⎤⎡⎤ ⎡ ⎤ −−⎡⎤−== = ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦  There are two choices for whice 
+eigenvalues to use and many choices for the muliple of the eigenvector to use,.  The solutions can 
+look quite different.  For example, for  22 iλ =+  an eigenvector is 
+21 ( 2 )
+1
+ii ii
+i
+⎡⎤ ⎡ ⎤−+ +− = =⋅ =⋅⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+vw   Using w in Theorem 9, results in  
+  [Re   Im ]P == ww 12
+10
+⎡ ⎤
+⎢ ⎥
+⎣ ⎦
+ and 
+1 01 33 2 2 12 .112/2 2/2 1 0 22CP A P− ⎡ ⎤⎡⎤ ⎡ ⎤ −⎡⎤== = ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢⎥− −⎣⎦ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦  
+ 15. 05 .22A ⎡⎤= ⎢⎥−⎣⎦   The eigenvalues of A are λ 13 , i=±  and the eigenvector 32 ii+⎡⎤= ⎢⎥⎣⎦v  corresponds to 
+λ 13 . i=+  By Theorem 9, [Re   Im ]P == vv 3102⎡ ⎤⎢ ⎥⎣ ⎦ and 
+  1 21 0 5 3 1 1 31 .0 3 22 02 316CP A P− −⎡⎤ ⎡⎤ ⎡ ⎤ ⎡⎤== = ⎢⎥ ⎢⎥ ⎢ ⎥ ⎢⎥−−⎣⎦ ⎣⎦ ⎣ ⎦ ⎣⎦   There are many choices for the muliple of the 
+eigenvector to use, and the solutions can look quite different.  For example, 
+31 3
+22
+ii iii+−⎡⎤ ⎡ ⎤== ⋅ = ⋅⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦vw .  Using w in Theorem 9, results in [Re   Im ]P == ww 1320 −⎡⎤⎢⎥⎣⎦  and 
+1 03 051 3 131 .21 22 2 0 316CP A P− −⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤== = ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦  
+ 16. 42 .16A −⎡⎤= ⎢⎥⎣⎦  The eigenvalues of A are λ 5, i=±  and the eigenvector 1 ii+⎡ ⎤= ⎢ ⎥−⎣ ⎦v  corresponds to 
+λ 5. i=+  By Theorem 9, [] 11Re Im 01P ⎡ ⎤== ⎢ ⎥−⎣ ⎦vv  and  
+  1 11 42 11 5 101 16 01 1 5CP A P− −⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤== = ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ .  There are many choices for the muliple of the 
+eigenvector to use, and the solutions can look quite different.  For example, 
+----- pagina 45 -----
+5.5  Solutions   317  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+11
+1
+ii iii+− +⎡⎤ ⎡ ⎤== − ⋅ = − ⋅⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦vw .  Using w in Theorem 9, results in [Re   Im ]P == ww 1110−⎡⎤⎢⎥⎣⎦  and 
+1 014 2 11 5 1 .111 6 10 15CP A P− −−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+ 17. 11 4 .20 5A −−⎡⎤= ⎢⎥⎣⎦  The eigenvalues of A are λ 34 , i=− ±  and the eigenvector  
+12
+5
+i
+i
++⎡⎤= ⎢⎥−⎣⎦v  corresponds to λ 34 . i=− +  By Theorem 9, [] 12Re Im 05P ⎡⎤== ⎢⎥ −⎣⎦vv  and 
+  1 521 14 12 341 01 2 05 05 435CP A P− −− −⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦ .  There are many choices for the muliple 
+of the eigenvector to use, and the solutions can look quite different.  For example, 
+12 2
+55
+ii iii+− +⎡⎤ ⎡ ⎤== − ⋅ = − ⋅⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦vw .  Using w in Theorem 9, results in [Re   Im ]P == ww 2150−⎡⎤⎢⎥⎣⎦  
+and 1 01 1 1 4 21 3 41 .52 2 0 5 50 4 35CP A P− −− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+ 18. 35 .25A −⎡⎤= ⎢⎥⎣⎦  The eigenvalues of A are λ 43 , i=±  and the eigenvector 3 2ii+⎡⎤= ⎢⎥−⎣⎦v  corresponds to 
+λ 43 . i=+  By Theorem 9, [] 31Re Im 02P ⎡ ⎤== ⎢ ⎥−⎣ ⎦vv  and  
+  1 21 35 31 4 31 03 25 02 3 46CP A P− −⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤== = ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−− −⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦ .  There are many choices for the muliple of 
+the eigenvector to use, and the solutions can look quite different.  For example, 
+31 3
+22
+ii iii+− +⎡⎤ ⎡ ⎤== = − ⋅ = − ⋅⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦vw .  Using w in Theorem 9, results in  
+  [Re   Im ]P == ww 1320−⎡ ⎤⎢ ⎥⎣ ⎦  and 1 033 5 13 431 .21 2 5 20 346CP A P− −−⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥ −⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦  
+ 19. 15 2 7 .56 4.− .⎡⎤= ⎢⎥..⎣⎦A  The characteristic polynomial is 2λ 19 2λ 1,−. +  so the eigenvalues of A are 
+λ 96 28 .=. ±. i  To find an eigenvector corresponding to 96 28 ,.− . i  we compute 
+   56 28 7(9 6 2 8) 56 56 28iAi I i.+ . − .⎡⎤−. − . = ⎢⎥ .− . + .⎣⎦  
+----- pagina 46 -----
+318 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The equation ( ( 96 28 ) )Ai I−. − . = x0  amounts to 1256 ( 56 28 ) 0,.+ − . + . =xi x  so 12 ((2 ) 2)xi x=− /  
+with 2x  free. A nice eigenvector corresponding to 96 28 i.− .  is thus 2 .2−⎡ ⎤= ⎢ ⎥⎣ ⎦v i  By Theorem 9, 
+[]
+21Re Im 20P −⎡ ⎤== ⎢ ⎥⎣ ⎦vv  and 1 0 1 1 52 7 2 1 96 281 22 5 6 42 0 2 8 9 62CP A P− .− . −.− .⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥−. . . .⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦  
+ 20. 38 .45A −−⎡⎤= ⎢⎥⎣⎦  The eigenvalues of A are λ 14 , i=±  and the eigenvector 1 ii+⎡⎤= ⎢⎥−⎣⎦v  corresponds to 
+λ 14 . i=+  By Theorem 9,By Theorem 9, [] 11Re Im 01P ⎡ ⎤== ⎢ ⎥−⎣ ⎦vv  and 
+ 1 11 38 11 1 401 45 01 4 1CP A P− −−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤== = ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−− −⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦ .  There are many choices for the muliple 
+of the eigenvector to use, and the solutions can look quite different.  For example, 
+11
+1
+ii iii+− +⎡⎤ ⎡ ⎤== − ⋅ = − ⋅⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦vw .  Using w in Theorem 9, results in  
+  [Re   Im ]P == ww 1110−⎡ ⎤⎢ ⎥⎣ ⎦  and 1 01 3 8 11 14 .11 4 5 10 4 1CP A P− −−−⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥ −⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦  
+21. The first equation in (2) is 12(3 6 ) 6 0 .−. + . − . =ix x  We solve this for 2x  to find that 
+21 1 ( ( 3 6 )6 ) ( (1 2 ) 2 ) .=− . + . / . =− + /xi x i x  Letting 1 2,=x  we find that 212 i⎡ ⎤= ⎢ ⎥−+⎣ ⎦y  is an eigenvector 
+for the matrix A. Since 1
+22 4 12 12
+12 5 55
+iii
+i
+−−⎡⎤ ⎡⎤ −+ −+== =⎢⎥ ⎢⎥−+⎣⎦ ⎣⎦yv  the vector y is a complex 
+multiple of the vector 1v  used in Example 2. 
+ 22. Since () ( ) ( λ ) λ ()== = ,xx xx xAAμμ μ μ μ  is an eigenvector of A. 
+ 23.  (a) properties of conjugates and the fact that TT=xx  
+(b) =xxAA  and A is real 
+(c) T Axx  is a scalar and hence may be viewed as a 11×  matrix 
+(d) properties of transposes 
+(e) TAA =  and the definition of q 
+ 24. ()TT TA =λ = λ ⋅xx x x x x  because x is an eigenvector. It is easy to see that Txx  is real (and positive) 
+because zz  is nonnegative for every complex number z. Since T Axx  is real, by Exercise 23, so is λ . 
+Next, write ,=+xu v i  where u and v are real vectors. Then 
+  () a n d λλ λAA i Ai A i=+ = + = +xu vu v x u v  
+  The real part of Ax is Au because the entries in A, u, and v are all real. The real part of λ x  is λ u  
+because λ  and the entries in u and v are real. Since Ax and λ x  are equal, their real parts are equal, 
+----- pagina 47 -----
+5.5  Solutions   319  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+too. (Apply the corresponding statement about complex numbers to each entry of Ax.) Thus 
+λ ,=uuA  which shows that the real part of x is an eigenvector of A. 
+ 25. Write Re (Im ),=+xx x i  so that (Re ) (Im ).=+xx xAA i A  Since A is real, so are (Re )A x  and 
+(Im ).xA  Thus (Re )A x  is the real part of Ax and (Im )A x  is the imaginary part of Ax. 
+ 26. a. If λ ,=−ab i  then 
+  
+Re Im 
+λ () ( R e   I m  )
+(  Re  Im ) (  Im  Re )
+Av Av
+Aa b i i
+ab i ab
+== − +
+=++ −
+vv v v
+vv vv	  
+   	  
+  
+  By Exercise 25, 
+  (Re ) Re  Re  Im (Im ) Im  Re  Im AA a bAA b a == +== −+vv v vvv v v  
+b. Let []Re Im .= vvP  By (a), 
+  (Re ) (Im ) abAP AP ba −⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦vv  
+  So 
+  
+[] (Re ) (Im )=
+⎡⎤ −−⎡⎤ ⎡ ⎤ ⎡ ⎤== =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦⎣⎦
+vvAP A A
+ab a bPP P P Cba b a  
+ 27. 
+26 33 23 20
+681 1 3[] 14 19 16 3
+20 20 20 14
+A
+⎡⎤
+⎢⎥ −−− −⎢⎥= ⎢⎥−−−
+⎢⎥−−−−⎣⎦
+M  
+  The MATLAB command [V D] = eig(A) returns 
+    V = -0.5709 - 0.4172i    -0.5709 + 0.4172i     -0.3708 + 0.0732i     -0.3708 - 0.0732i 
+         0.4941 - 0.0769i      0.4941 + 0.0769i      0.4440 + 0.2976i      0.4440 - 0.2976i 
+         0.0769 + 0.4941i      0.0769 - 0.4941i        -0.4440 - 0.2976i      -0.4440 + 0.2976i 
+         -0.0000 - 0.0000i         -0.0000 + 0.0000i      0.2976 - 0.4440i       0.2976 + 0.4440i 
+D =  -2.0000 + 5.0000i        0                         0                         0            
+            0                     -2.0000 - 5.0000i       0                         0           
+            0                         0                     -4.0000 +10.0000i     0            
+            0                         0                         0                      -4.0000 -10.0000i 
+The eigenvalues of A are the elements listed on the diagonal of D.    The corresponding 
+eigenvectors are listed in the corresponding columns of V.  To get a nice eigenvector for  
+  25 iλ =− + take v1=V(1:4,1)/V(3,1), resulting in 1
+1
+1
+0
+i
+i
+−+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+v  
+  For 41 0 ,iλ=− +  take v2=V(1:4,3)/V(4,3), and then multiply the vector by 2 resulting in 
+----- pagina 48 -----
+320 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  v2 =
+1
+2
+2
+2
+i
+i
+i
+−−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−
+⎢⎥
+⎣⎦
+. 
+  Hence by Theorem 9, 1 122
+1111
+01 02Re Im Re Im 100 2
+0020
+P ⎡⎤⎢⎥⎣⎦
+−− −⎡ ⎤
+⎢ ⎥−⎢ ⎥== ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+vvvv  and 
+25 00
+52 00 .00 4 1 0
+001 04
+C
+−⎡⎤
+⎢⎥−−⎢⎥= ⎢⎥ −
+⎢⎥ −−⎣⎦
+ Other choices are possible, but C must equal 1 .−PA P  
+ 28. 
+71 1 2 01 7
+20 40 86 74[] 0 5 10 10
+10 28 60 53
+A
+⎡⎤
+⎢⎥−−−−⎢⎥= ⎢⎥ −− −
+⎢⎥
+⎣⎦
+M  
+  The matlab command [V D] = eig(A) returns 
+ 
+V= -0.2132 + 0.2132i    -0.2132 - 0.2132i     0.1085 - 0.3254i     0.1085 + 0.3254i 
+          0 - 0.8528i           0 + 0.8528i        0.3254 + 0.1085i     0.3254 - 0.1085i 
+           0                       0                    0 - 0.5423i            0 + 0.5423i 
+        0 + 0.4264i           0 - 0.4264i       -0.2169 + 0.6508i    -0.2169 - 0.6508i 
+ 
+D = 2.0000 + 5.0000i       0                       0                         0           
+         0                     2.0000 - 5.0000i     0                         0           
+           0                        0                     3.0000 + 1.0000i      0 
+           0                                0                             0                      3.0000 - 1.0000 
+The eigenvalues of A are the elements listed on the diagonal of D.    The corresponding 
+eigenvectors are listed in the corresponding columns of V.  To get a nice eigenvector for  
+25 iλ =+ take v1=V(1:4,1)/V(4,1), and then multiply the vector by 2 resulting in 1
+1
+4
+0
+2
+i+⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+v  
+  For λ 3, i=+  take v2=V(1:4,3)/V(4,3), and then multiply the vector by 4 resulting in 2
+2
+2
+3
+4
+i
+i
+−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥−+
+⎢⎥
+⎣⎦
+v  
+----- pagina 49 -----
+5.6  Solutions   321  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Hence by Theorem 9, 1 122
+11 2 0
+40 0 2Re Im Re Im 00 3 1
+20 4 0
+P ⎡⎤⎢⎥⎣⎦
+−⎡ ⎤
+⎢ ⎥−−⎢ ⎥== ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+vvvv  and 
+25 00
+52 00 .00 31
+00 13
+C
+⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥ −⎣⎦
+ Other choices are possible, but C must equal 1 .−PA P  
+5.6 SOLUTIONS 
+ 1. The exercise does not specify the matrix A, but only lists the eigenvalues 3 and 1/3, and the 
+corresponding eigenvectors 1
+1
+1
+⎡⎤= ⎢⎥⎣⎦v  and 2 1 .1−⎡ ⎤= ⎢ ⎥⎣ ⎦v  Also, 0 9 .1⎡ ⎤= ⎢ ⎥⎣ ⎦x  
+a. To find the action of A on 0 ,x  express 0x  in terms of 1v  and 2.v  That is, find 1c  and 2c  such 
+that 01 12 2 .=+xvv cc  This is certainly possible because the eigenvectors 1v  and 2v  are linearly 
+independent (by inspection and also because they correspond to distinct eigenvalues) and hence 
+form a basis for 2 .R  (Two linearly independent vectors in 2R  automatically span 2 .R ) The row 
+reduction 1 20
+11 9 1 05
+11 1 0 14
+⎡⎤
+⎢⎥⎣⎦
+−⎡⎤ ⎡ ⎤= ⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦vvx ∼  shows that 012 54 .=−xv v  Since 1v  and 
+2v  are eigenvectors (for the eigenvalues 3 and 1/3): 
+   1 012 1 2
+15 4 3 49 354 5 3 4 ( 1 3 ) 15 4 3 41 3AAA −/ /⎡ ⎤⎡ ⎤⎡ ⎤== − = ⋅ − ⋅ /=− = ⎢ ⎥⎢ ⎥⎢ ⎥ //⎣ ⎦⎣ ⎦⎣ ⎦xx v v v v  
+b. Each time A acts on a linear combination of 1v  and 2 ,v  the 1v  term is multiplied by the 
+eigenvalue 3 and the 2v  term is multiplied by the eigenvalue 1/3: 
+   2221 1 2 1 2 [5 3 4(1 3) ] 5(3) 4(1 3)AA== ⋅ − / = − /xx v v v v  
+  In general, 125(3) 4(1 3) ,=− /xv v kkk  for 0.≥k  
+ 2. The vectors 123
+123
+01 3
+357
+−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=, =, = −⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦ ⎣⎦
+vv v  are eigenvectors of a 33×  matrix A, corresponding to 
+eigenvalues 3, 4/5, and 3/5, respectively. Also, 0
+2
+5.
+3
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+x  To describe the solution of the equation 
+1 (1 2 ) ,+ == , ,xxkk Ak …  first write 0x  in terms of the eigenvectors. 
+   1 01 23230
+1 2 3 2 1002
+0 1 3 5 0101 2 2
+3573 0 0 0 2
+⎡⎤
+⎢⎥⎣⎦
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− − ⇒ =+ +⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+∼vvvx x v v v  
+----- pagina 50 -----
+322 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Then, 11 2 31 2 31 2 3(2 2 ) 2 2 2 3 (4 5) 2 (3 5) .AA A A=+ + = + + = ⋅ + / + ⋅ /xv v vv v vv v v  In general, 
+12 323 ( 4 5 ) 2( 3 5 ) .kk kk =⋅ + / +⋅/xv v v  For all k sufficiently large, 
+   1
+1
+23 23 0
+3
+kk
+k
+⎡⎤
+⎢⎥≈⋅ =⋅ ⎢⎥
+⎢⎥−⎣⎦
+xv  
+ 3. 254 det( ) ( 5 )(1 1 ) 08 1 6 63.21 1..⎡⎤=, − = . − . − + . = − . + .⎢⎥−. .⎣⎦AA I λλ λ λ λ  This characteristic polynomial 
+factors as (9 ) (7 ) ,−. −.λλ  so the eigenvalues are .9 and .7. If 1v  and 2v  denote corresponding 
+eigenvectors, and if 01 12 2 ,=+xvv cc  then 
+   1 1 12 2 1 12 21 12 2() ( 9 ) ( 7 )Ac c cA c A c c=+ = += . + .xv vv v v v   
+  and for 1,≥k  
+   11 2 2(9 ) (7 )kkk cc=. + .xvv  
+  For any choices of 1c  and 2 ,c  both the owl and wood rat populations decline over time. 
+ 4. 254 det( ) ( 5 )(1 1 ) ( 4)( 125) 1 6 6.125 1 1..⎡⎤=, − = . − . − − . . = − . + .⎢⎥−. .⎣⎦AA I λλ λ λ λ  This characteristic 
+polynomial factors as (1 ) ( 6 ) ,−− .λλ  so the eigenvalues are 1 and .6. For the eigenvalue 1, solve 
+5 40 540() 0 . 125 1 0 0 0 0−. . −⎡⎤ ⎡ ⎤−= : ⎢⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦x ∼AI  A basis for the eigenspace is 1 4 .5⎡⎤= ⎢⎥⎣⎦v  Let 2v  be an 
+eigenvector for the eigenvalue .6. (The entries in 2v  are not important for the long-term behavior of 
+the system.) If 01 12 2 ,=+xvv cc  then 11 12 21 12 2 (6 ) ,=+ = + .xvv v vcA c A c c  and for k sufficiently 
+large, 
+   12 2 1
+44 (6 )55 kk cc c⎡⎤ ⎡⎤=+ .≈⎢⎥ ⎢⎥⎣⎦ ⎣⎦xv  
+  Provided that 1 0,≠c  the owl and wood rat populations each stabilize in size, and eventually the 
+populations are in the ratio of 4 owls for each 5 thousand rats. If some aspect of the model were to 
+change slightly, the characteristic equation would change slightly and the perturbed matrix A might 
+not have 1 as an eigenvalue. If the eigenvalue becomes slightly larger than 1, the two populations 
+will grow; if the eigenvalue becomes slightly less than 1, both populations will decline. 
+ 5. 243 det( ) 1 6 5775.325 1 2..⎡⎤=, − = − . + .⎢⎥−. .⎣⎦AA I λλ λ  The quadratic formula provides the roots of the 
+characteristic equation: 
+   
+21 6 1 6 4( 5775) 16 2 5 10 5  a n d  5 522λ .± . − . .± .== = . .  
+  Because one eigenvalue is larger than one, both populations grow in size. Their relative sizes are 
+determined eventually by the entries in the eigenvector corresponding to 1.05. Solve 
+(1 0 5 ) :−. = x0AI  
+   1
+65 3 0 13 6 0 6 An eigenvector is 325 15 0 0 0 0 13−. . −⎡⎤ ⎡ ⎤ ⎡ ⎤ .= .⎢⎥ ⎢ ⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦ ⎣ ⎦ v∼  
+----- pagina 51 -----
+5.6  Solutions   323  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Eventually, there will be about 6 spotted owls for every 13 (thousand) flying squirrels. 
+ 6. When 435, 51 2..⎡⎤=. , = ⎢⎥−. .⎣⎦pA  and 2det( ) 1 6 63 ( 9)( 7).−= − . + . = − . − .AI λλ λ λ λ  
+  The eigenvalues of A are .9 and .7, both less than 1 in magnitude. The origin is an attractor for the 
+dynamical system and each trajectory tends toward 0. So both populations of owls and squirrels 
+eventually perish. 
+  The calculations in Exercise 4 (as well as those in Exercises 27 and Exercise 33 in Section 5.2) show 
+that if the largest eigenvalue of A is 1, then in most cases the population vector kx  will tend toward a 
+multiple of the eigenvector corresponding to the eigenvalue 1. [If 1v  and 2v  are eigenvectors, with 
+1v  corresponding to 1,=λ  and if 01 12 2 ,=+xvv cc  then kx  tends toward 11 ,vc  provided 1c  is not 
+zero.] So the problem here is to determine the value of the predation parameter p such that the largest 
+eigenvalue of A is 1. Compute the characteristic polynomial: 
+   243d e t ( 4) ( 1 2) 3 1 6( 4 8 3 )12 pppλ λλ λ λλ.− .⎡⎤ =. − . − + . = −. +. + .⎢⎥−. −⎣⎦  
+  By the quadratic formula, 
+   
+216 16 4 (4 8 3 )
+2
+pλ .± . − . + .=  
+  The larger eigenvalue is 1 when 
+   21 6 1 6 4( 48 3 ) 2 and 2 56 1 92 1 2 4pp.+ . − . + . = . −. −. = .  
+  In this case, 64 1 2 16,.− . = . p  and 4.p =.  
+ 7. a. The matrix A in Exercise 1 has eigenvalues 3 and 1/3. Since 31|| >  and 13 1 ,| / | <  the origin is a 
+saddle point. 
+ b. The direction of greatest attraction is determined by 2
+1 ,1−⎡ ⎤= ⎢ ⎥⎣ ⎦v  the eigenvector corresponding to 
+the eigenvalue with absolute value less than 1. The direction of greatest repulsion is determined 
+by 1
+1 ,1⎡⎤= ⎢⎥⎣⎦v  the eigenvector corresponding to the eigenvalue greater than 1. 
+ c. The drawing below shows: (1) lines through the eigenvectors and the origin, (2) arrows toward 
+the origin (showing attraction) on the line through 2v  and arrows away from the origin (showing 
+repulsion) on the line through 1,v  (3) several typical trajectories (with arrows) that show the 
+general flow of points. No specific points other than 1v  and 2v  were computed. This type of 
+----- pagina 52 -----
+324 CHAPTER 5  Eigenvalues and Eigen v
+Copyright © 2012 Pear
+drawing is about all that one can
+Note: If you wish your class to sketch t
+beyond the discussion in the text. The fo
+Sketching trajectories for a dynami c
+difficult than the sketch in Exercise 7
+trajectories “bend” as they move towar d
+Section 5.6 through a quarter-turn and r
+figure corresponds to the matrix A with 
+diagonal matrix, with positive diagonal 
+or on curves whose equations have th e
+initial point 0.x  (See Encounters with Ch
+150.) 
+ 8. The matrix from Exercise 2 has eige
+and the others are less than one in m
+repulsion is the line through the orig
+direction of greatest attraction is the
+smallest eigenvalue 3/5. 
+ 9. 217 3 det( ) λ12 8AA I .− .⎡⎤=, − λ = −⎢⎥−. .⎣⎦
+   
+225 25 4 ( 1 ) 25λ 2.± . − .±==
+  The origin is a saddle point becaus e
+than 1 in magnitude. The direction o
+found below. Solve (2 )AI ⎡−= : ⎢⎣x0
+1
+1 .1−⎡⎤= ⎢⎥⎣⎦v  The direction of greates
+vectors 
+rson Education, Inc. Publishing as Addison-Wesley. 
+n make without using a computer to plot points.
+ 
+trajectories for anything except saddle points, you wi l
+ollowing remarks from the Study Guide are relevant. 
+cal system in which the origin is an attractor or a rep e
+7. There has been no discussion of the direction i n
+d or away from the origin. For instance, if you rotat e
+relabel the axes so that 1x  is on the horizontal axis, t
+the diagonal entries .8 and .64 interchanged. In gen e
+entries a and d, unequal to 1, then the trajectories li e
+e form 21 () ,= sxr x  where (ln ) (ln )sd a=/  and r dep
+Chaos, by Denny Gulick, New York: McGraw-Hill, 19
+envalues 3, 4/5, and 3/5. Since one eigenvalue is great
+magnitude, the origin is a saddle point. The direction o
+gin and the eigenvector (1 0 3),, −  for the eigenvalue 3. 
+e line through the origin and the eigenvector (3 3 7 )−, −,
+25 λ 10− .+ =  
+22 5 25 15 2 and 522 .. ± .== .  
+e one eigenvalue is greater than 1 and the other eigenv
+of greatest repulsion is through the origin and the eige
+33 0 1 1 0 ,1 2 1 20 000−. −.⎡ ⎤⎡ ⎤⎥⎢ ⎥−. −.⎣ ⎦⎣ ⎦∼  so x1 = –x2, and x2 is
+t attraction is through the origin and the eigenvector v
+ll need to go 
+ellor is more 
+n which the 
+e Figure 1 of 
+then the new 
+eral, if A is a 
+e on the axes 
+pends on the 
+92, pp. 147–
+ter than 1 
+of greatest 
+The 
+)  for the 
+alue is less 
+envector 1v  
+s free. Take 
+2v  found 
+----- pagina 53 -----
+5.6  Solutions   325  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+below. Solve 12 3 0 1 2 5 0(5 ) , 12 3 0 0 0 0.− . − .⎡⎤ ⎡ ⎤−. = : ⎢⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦x0 ∼AI  so 12 25 ,xx=.  and 2x  is free. Take 
+2
+1 .4⎡⎤= ⎢⎥⎣⎦v  
+ 10. 234 det( λ ) λ 14 λ 45 031 1AA I ..⎡⎤=, − = − . + . =⎢⎥−. .⎣⎦  
+   
+214 14 4 (4 5 ) 14 1 6 14 4λ 5 and 922 2.± . − . .± . .± .== = = . .  
+  The origin is an attractor because both eigenvalues are less than 1 in magnitude. The direction of 
+greatest attraction is through the origin and the eigenvector 1v  found below. Solve 
+24 0 1 2 0(5 ) , 36 0 0 0 0−. . −⎡⎤ ⎡ ⎤−. = : ⎢⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦x0 ∼AI  so 12 2,=xx  and 2x  is free. Take 1 2 .1⎡⎤= ⎢⎥⎣⎦v  
+ 11. 245 det( λ ) λ 17 λ 72 041 3AA I ..⎡⎤=, − = − . + . =⎢⎥−. .⎣⎦  
+   
+21 7 1 7 4( 72) 17 0 1 17 1λ 8 and 922 2.± . − . .± . .± .== = = . .  
+  The origin is an attractor because both eigenvalues are less than 1 in magnitude. The direction of 
+greatest attraction is through the origin and the eigenvector 1v  found below. Solve 
+45 0 1 1 2 5 0(8 ) , 45 0 0 0 0−. . − .⎡⎤ ⎡ ⎤−. = : ⎢⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦x0 ∼AI  so 12 12 5 ,=.xx  and 2x  is free. Take 1 5 .4⎡⎤= ⎢⎥⎣⎦v  
+ 12. 256 det( λ ) λ 19 λ 88 031 4AA I ..⎡⎤=, − = − . + . =⎢⎥−. .⎣⎦  
+   
+219 19 4 (8 8 ) 19 0 9 19 3λ 8 and 1 122 2.± . − . .± . .± .== = = . .  
+  The origin is a saddle point because one eigenvalue is greater than 1 and the other eigenvalue is less 
+than 1 in magnitude. The direction of greatest repulsion is through the origin and the eigenvector 1v  
+found below. Solve 66 0 1 1 0(1 1 ) , 33 0 0 0 0−. . −⎡⎤ ⎡ ⎤−. = : ⎢⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦x0 ∼AI  so 12 ,=xx  and 2x  is free. Take 
+1
+1 .1⎡⎤= ⎢⎥⎣⎦v  The direction of greatest attraction is through the origin and the eigenvector 2v  found 
+below. Solve 36 0 1 2 0(8 ) , 36 0 0 0 0−. . −⎡⎤ ⎡ ⎤−. = : ⎢⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦x0 ∼AI  so 12 2,=xx  and 2x  is free. Take 
+2
+2 .1⎡⎤= ⎢⎥⎣⎦v  
+----- pagina 54 -----
+326 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 13. 283 det( λ ) λ 23 λ 13 2 041 5AA I ..⎡⎤=, − = − . + . =⎢⎥−. .⎣⎦  
+   
+223 23 4 ( 13 2 ) 23 0 1 23 1λ 11  a n d  1222 2.± . − . .± . .± .== = = . .  
+  The origin is a repellor because both eigenvalues are greater than 1 in magnitude. The direction of 
+greatest repulsion is through the origin and the eigenvector 1v  found below. Solve 
+43 0 1 7 5 0(1 2 ) , 43 0 0 0 0−. . −.⎡⎤ ⎡ ⎤−. = : ⎢⎥ ⎢ ⎥−. .⎣⎦ ⎣ ⎦x0 ∼AI  so 12 75 ,=.xx  and 2x  is free. Take 1 3 .4⎡⎤= ⎢⎥⎣⎦v  
+ 14. 217 6 det( λ ) λ 24 λ 14 3 047AA I ..⎡⎤=, − = − . + . =⎢⎥−. .⎣⎦  
+   
+224 24 4 ( 14 3 ) 24 0 4 24 2λ 11  a n d  1322 2.± . − . .± . .± .== = = . .  
+  The origin is a repellor because both eigenvalues are greater than 1 in magnitude. The direction of 
+greatest repulsion is through the origin and the eigenvector 1v  found below. Solve 
+46 01 1 5 0(1 3 ) , 46 00 0 0.. .⎡⎤ ⎡ ⎤−. = : ⎢⎥ ⎢ ⎥−. −.⎣⎦ ⎣ ⎦x0 ∼AI  so 12 15 ,=− .xx  and 2x  is free. Take 1 3 .2−⎡⎤= ⎢⎥⎣⎦v  
+ 15. 
+40 2
+383 .
+325
+..⎡⎤
+⎢⎥=. . .⎢⎥
+⎢⎥...⎣⎦
+A  Given eigenvector 1
+1
+6
+3
+.⎡ ⎤
+⎢ ⎥=.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+v  and eigenvalues .5 and .2. To find the eigenvalue for 
+1,v  compute 
+   11 1
+40 21 1
+3 8 3 6 6 1 Thus is an eigenvector for 1
+3253 3
+A λ
+.. . .⎡ ⎤ ⎡⎤ ⎡⎤
+⎢ ⎥ ⎢⎥ ⎢⎥= . . . .= .= ⋅ = .⎢ ⎥ ⎢⎥ ⎢⎥
+⎢ ⎥ ⎢⎥ ⎢⎥.... .⎣ ⎦ ⎣⎦ ⎣⎦
+vv v  
+  
+13
+23 2
+3
+102 0 1 0 2 0 2 2
+For 5 3 3 3 0 0 1 3 0 3 .  Set 3
+3 2 00 00 00 i s f r e e 1
+−. . − =⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=. : . . . , =− = − .⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥..⎣⎦ ⎣ ⎦ ⎣ ⎦
+v∼
+xx
+xx
+x
+λ  
+  
+13
+23
+3
+2 0 20 1010 1
+For 2 3 6 3 0 0 1 0 0 , 0 . Set 0
+3 2 30 0000  i s  f r e e 1
+.. = − −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=. : . . . = =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥...⎣⎦ ⎣ ⎦ ⎣ ⎦
+v∼
+xx
+x
+x
+λ  
+  Given 0 (0 3 7),=, . , .x  find weights such that 01 1 23 3 .=+ +xv vvcc c  
+   1 230
+12 1 0 1 0 0 1
+6 3 03 0 1 01 .
+3 1 1 7 000 3
+⎡⎤
+⎢⎥⎣⎦
+.−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=. − . .⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥.. .⎣⎦ ⎣ ⎦
+vvvx ∼  
+----- pagina 55 -----
+5.6  Solutions   327  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+01 2 3
+11 2 3 1 2 3
+12 3 1
+13
+13 1 ( 5 ) 3 ( 2 )  a n d
+1( 5) 3( 2) As  increases   approaches kkkk
+AA A
+k
+=+ . + .
+=+ . + . = + . .+ . . ,
+=+ .. + .. . , .
+xv v v
+xv v v v v v
+xv v v x v
+ 
+ 16. [M] 
+   
+90 01 09 1 0000
+01 90 01 0 8900 To f our decimal places
+09 09 90 8100
+0 9192 91 99
+0 1919  Exact  19 99
+1 0000 1
+... .⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=. . . ⋅ = . . ,⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥... .⎣⎦ ⎣ ⎦
+./⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥.. : /⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥.⎣⎦ ⎣ ⎦
+1
+2
+ev=eig(A)
+v =nulbasis(A-eye(3))=
+v =nulbasis(A-ev(2)
+A
+1
+1
+0
+1
+0
+1
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+3
+*eye(3))=
+v =nulbasis(A-ev(3)*eye(3))=
+ 
+  The general solution of the dynamical system is 11 2 2 3 3 (8 9 ) (8 1 ) .=+ . + .x vvv kkk cc c  
+Note: When working with stochastic matrices and st arting with a probability vector (having nonnegative 
+entries whose sum is 1), it helps to scale 1v  to make its entries sum to 1. If 
+1 (91 209 19 209 99 209),=/, /, /v  or ( 435 091 474)., ., .  to three decimal places, then the weight 1c  above 
+turns out to be 1. See the text’s discussion of Exercise 27 in Section 5.2. 
+ 17. a. 01 638A .⎡⎤= ⎢⎥..⎣⎦  
+ b. 216det 8 48 0.38−.⎡⎤ =− . − . =⎢⎥.. −⎣⎦ λ λλλ  The eigenvalues of A are given by 
+   
+28( 8 ) 4 ( 4 8 ) 82 5 6 8 1 6 1 2 and 422 2λ .± − . − − . .± . .±.== = = . − .  
+  The numbers of juveniles and adults are increasing because the largest eigenvalue is greater than 
+1. The eventual growth rate of each age class is 1.2, which is 20% per year. 
+  To find the eventual relative population sizes, solve (1 2 ) :−. = x0AI  
+   
+12
+1          2
+(4 3)12 16 0 1 43 0 4   Set is free34 0000 3 xxx =/−. . −/⎡⎤ ⎡ ⎤ ⎡ ⎤ .. = .⎢⎥ ⎢ ⎥ ⎢ ⎥.− .⎣⎦ ⎣ ⎦ ⎣ ⎦ v∼  
+  Eventually, there will be about 4 juveniles for every 3 adults.
+----- pagina 56 -----
+328 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+c. [M] Suppose that the initial populations are given by 0 (15 10).=,x  The Study Guide describes 
+how to generate the trajectory for as many years as desired and then to plot the values for each 
+population. Let (j a ) .=,xkk k  Then we need to plot the sequences {j } {a } {j a },,, +kk k k  and 
+{j a }./kk  Adjacent points in a sequence can be connected with a line segment. When a sequence is 
+plotted, the resulting graph can be captured on the screen and printed (if done on a computer) or 
+copied by hand onto paper (if working with a graphics calculator). 
+ 18. a. 
+004 2
+60 0
+07 5 9 5
+A
+.⎡⎤
+⎢⎥=.⎢⎥
+⎢⎥ ..⎣⎦
+ 
+ b. 
+0 0774 0 4063
+0 0774 0 4063
+1 1048
+i
+i
+.+ .⎡⎤
+⎢⎥ .− .⎢⎥
+⎢⎥.⎣⎦
+ev=eig(A)=  
+  The long-term growth rate is 1.105, about 10.5 % per year. 
+  
+03 8 0 1
+0 2064
+1 0000
+.⎡ ⎤
+⎢ ⎥=.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+v=nulbasis(A-ev(3)*eye(3))  
+  For each 100 adults, there will be approximately 38 calves and 21 yearlings. 
+Note: The MATLAB box in the Study Guide and the various technology appendices all give directions 
+for generating the sequence of points in a trajectory of a dynamical system. Details for producing a 
+graphical representation of a trajectory are also given, with several options available in MATLAB, Maple, 
+and Mathematica. 
+5.7 SOLUTIONS 
+ 1. From the “eigendata” (eigenvalues and corresponding eigenvectors) given, the eigenfunctions for the 
+differential equation A′=xx  are 41 tev  and 22 .v te  The general solution of A′=xx  has the form 
+   4212 3111 ttce ce−−⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  The initial condition 6(0) 1−⎡⎤= ⎢⎥⎣⎦x  determines 1c  and 2 :c  
+   
+4(0) 2(0)
+12
+31 6
+11 1
+316 1 05 2
+111 0 13 2
+−− −⎡⎤ ⎡⎤ ⎡⎤ +=⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+−−− /⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −/⎣⎦ ⎣ ⎦ ∼
+ce ce
+ 
+  Thus 12 52 32 ,=/ , = − /cc  and 423153() . 1122−−⎡ ⎤⎡ ⎤=− ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦x ttte e  
+----- pagina 57 -----
+5.7  Solutions   329  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 2. From the eigendata given, the eigenfunctions for the differential equation A′=xx  are 31 te−v  and 
+1
+2 .−v te  The general solution of A′=xx  has the form 
+   3112 1111 ttce c e −−−⎡⎤ ⎡ ⎤ +⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦  
+  The initial condition 2(0) 3⎡⎤= ⎢⎥⎣⎦x  determines 1c  and 2c : 
+   
+3(0) 1(0)
+12
+11 2
+11 3
+112 1 0 1 2
+1 13 015 2
+ce c e −−−⎡⎤ ⎡ ⎤ ⎡ ⎤ +=⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+−/⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ /⎣⎦ ⎣ ⎦ ∼
+ 
+  Thus 12 12 52 ,=/, = /cc  and 31115() . 1122 −−−⎡⎤ ⎡ ⎤=+ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦x tttee  
+ 3. 223 det( λ ) λ 1( λ 1)(λ 1) 0.12⎡⎤=, − = − = − + =⎢⎥−−⎣⎦AA I  Eigenvalues: 1 and 1.−  
+  For λ = 1: 13 0 1 3 0 ,1 30 000⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ∼  so 12 3xx=−  with 2x  free. Take 2 1x =  and 1 3 .1−⎡⎤= ⎢⎥⎣⎦v  
+  For λ = –1: 33 0 1 1 0 ,1 10 000⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ∼  so 12xx=−  with 2x  free. Take 2 1x =  and 2 1 .1−⎡⎤= ⎢⎥⎣⎦v  
+  For the initial condition 3(0) , 2⎡⎤= ⎢⎥⎣⎦x  find 1c  and 2c  such that 11 2 2 (0) :+=vv xcc  
+   1 2
+31 3 1 05 2(0) 11 2 0 19 2−− − /⎡⎤ ⎡ ⎤=⎡⎤ ⎢⎥ ⎢ ⎥⎣⎦ /⎣⎦ ⎣ ⎦vvx ∼  
+  Thus 12 52 92 ,=− / , = /cc  and 3159() . 22 11 −−−⎡⎤ ⎡⎤=− + ⎢⎥ ⎢⎥⎣⎦ ⎣⎦x ttte e  
+  Since one eigenvalue is positive and the other is negative, the origin is a saddle point of the 
+dynamical system described by .′=xx A  The direction of greatest attraction is the line through 2v  
+and the origin. The direction of greatest repulsion is the line through 1v  and the origin. 
+ 4. 225 det( λ ) λ 2λ 3( λ 1)(λ 3) 0.14AA I −−⎡⎤=, − = − − = + − =⎢⎥⎣⎦  Eigenvalues: 1−  and 3. 
+  For λ = 3:  55 0 1 1 0 ,11 0 0 0 0−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ∼  so 12xx=−  with 2x  free. Take 2 1x =  and 1 1 .1−⎡⎤= ⎢⎥⎣⎦v  
+  For λ = –1:  15 0 1 5 0 ,15 0 0 0 0−−⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ∼  so 12 5xx=−  with 2x  free. Take 2 1x =  and 2 5 .1−⎡⎤= ⎢⎥⎣⎦v  
+----- pagina 58 -----
+330 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  For the initial condition 3(0) , 2⎡⎤= ⎢⎥⎣⎦x  find 1c  and 2c  such that 11 2 2 (0)cc +=vv x : 
+   1 2
+15 3 1 0 1 3 4(0) 11 2 0 15 4−− /⎡⎤ ⎡ ⎤=⎡⎤ ⎢⎥ ⎢ ⎥⎣⎦ −/⎣⎦ ⎣ ⎦vvx ∼  
+  Thus 12 13 4 5 4,=/ ,= − /cc  and 31513 5() . 1144 −−−⎡⎤ ⎡⎤=− ⎢⎥ ⎢⎥⎣⎦ ⎣⎦x tttee  
+  Since one eigenvalue is positive and the other is negative, the origin is a saddle point of the 
+dynamical system described by .′=xx A  The direction of greatest attraction is the line through 2v  
+and the origin. The direction of greatest repulsion is the line through 1v  and the origin. 
+ 5. 71 ,33 −⎡⎤= ⎢⎥⎣⎦A  det 2( λ ) λ 10λ 24 ( λ 4)(λ 6) 0.−= −+ = − − =AI  Eigenvalues: 4 and 6. 
+  For λ = 4: 31 0 11 3 0 ,31 0 0 0 0−− /⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ∼  so 12 (1 3)xx=/  with 2x  free. Take 2 3x =  and 1 1 .3⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  For λ = 6: 11 0 11 0 ,33 0 00 0−−⎡⎤ ⎡⎤⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦ ∼  so 12xx=  with 2x  free. Take 2 1x =  and 2 1 .1⎡⎤= ⎢⎥⎣⎦v  
+  For the initial condition 3(0) , 2⎡⎤= ⎢⎥⎣⎦x  find 1c  and 2c  such that 11 2 2 (0) :+=vv xcc  
+   1 2
+113 10 1 2(0) 312 0 1 7 2 −/⎡⎤ ⎡ ⎤=⎡⎤ ⎢⎥ ⎢ ⎥⎣⎦ /⎣⎦ ⎣ ⎦vvx ∼  
+  Thus 12 12 72 ,=− / , = /cc  and 461117() . 3122⎡ ⎤⎡ ⎤=− + ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦x ttte e  
+  Since both eigenvalues are positive, the origin is  a repellor of the dynamical system described by 
+.′=xx A  The direction of greatest repulsion is the line through 2v  and the origin. 
+ 6. 12 ,34 −⎡⎤= ⎢⎥ −⎣⎦A  det 2( λ ) λ 3λ 2( λ 1)(λ 2) 0.−= + + = + + =AI  Eigenvalues: 1−  and 2.−  
+  For λ = –2: 32 0 12 3 0 ,32 0 0 0 0−− /⎡⎤ ⎡ ⎤⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ∼  so 12 (2 3)xx=/  with 2x  free. Take 2 3x =  and 1 2 .3⎡ ⎤= ⎢ ⎥⎣ ⎦v  
+  For λ = –1: 22 0 11 0 ,33 0 00 0−−⎡⎤ ⎡⎤⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦ ∼  so 12xx=  with 2x  free. Take 2 1x =  and 2 1 .1⎡⎤= ⎢⎥⎣⎦v  
+  For the initial condition 3(0) , 2⎡⎤= ⎢⎥⎣⎦x  find 1c  and 2c  such that 11 2 2 (0)cc +=vv x : 
+   1 2
+213 10 1[( 0 ) ] 312 0 1 5 −⎡⎤ ⎡ ⎤= ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦vvx ∼  
+----- pagina 59 -----
+5.7  Solutions   331  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus 12 15 ,=− , =cc  and 221() 5 . 31 −−⎡⎤ ⎡ ⎤=− +⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦x ttte e  
+  Since both eigenvalues are negative, the origin is an attractor of the dynamical system described by 
+.′=xx A  The direction of greatest attraction is the line through 1v  and the origin. 
+ 7. From Exercise 5, 71 ,33 −⎡ ⎤= ⎢ ⎥⎣ ⎦A  with eigenvectors 1 13⎡ ⎤= ⎢ ⎥⎣ ⎦v  and 2 11⎡ ⎤= ⎢ ⎥⎣ ⎦v  corresponding to 
+eigenvalues 4 and 6 respectively. To decouple the equation ,′=xx A  set 12
+11[] 31⎡⎤== ⎢⎥⎣⎦vvP  and let 
+40 ,06⎡⎤= ⎢⎥⎣⎦D  so that 1AP D P −=  and 1 .−=DP A P  Substituting () ()tP t=xy  into A′=xx  we have 
+   1() () () −== =yy y yd PA PP D P PP Ddt  
+  Since P has constant entries, ( ) ( ( )),=yydddt dtPP  so that left-multiplying the equality 
+(( ) ) =yyddtPP D  by 1P−  yields ,′=yy D  or 
+   11
+22
+() () 40
+() () 06
+′⎡⎤ ⎡⎤ ⎡⎤=⎢⎥ ⎢⎥ ⎢⎥′ ⎣⎦⎣⎦ ⎣⎦yt ytyt yt  
+ 8. From Exercise 6, 12 ,34 −⎡ ⎤= ⎢ ⎥−⎣ ⎦A  with eigenvectors 1 23⎡ ⎤= ⎢ ⎥⎣ ⎦v  and 2 11⎡ ⎤= ⎢ ⎥⎣ ⎦v  corresponding to 
+eigenvalues 2−  and 1−  respectively. To decouple the equation ,′=xx A  set 1 2
+21
+31P ⎡⎤⎢⎥⎣⎦ ⎡⎤== ⎢⎥⎣⎦vv  
+and let 20 ,01−⎡⎤= ⎢⎥ −⎣⎦D  so that 1AP D P −=  and 1 .−=DP A P  Substituting () ()tP t=xy  into A′=xx  
+we have 
+   1() () ()d PA PP D P PP Ddt −== =yy y y  
+  Since P has constant entries, ()() ( ) ,=yydddt dtPP  so that left-multiplying the equality 
+() ()ddtPP D =yy  by 1P−  yields ,′=yy D  or 
+   11
+22
+() () 20
+() () 01
+′ −⎡⎤ ⎡⎤ ⎡⎤=⎢⎥ ⎢⎥ ⎢⎥′ −⎣⎦⎣⎦ ⎣⎦yt ytyt yt  
+ 9. 32 .11−⎡⎤= ⎢⎥−−⎣⎦A  An eigenvalue of A is 2 i−+  with corresponding eigenvector 1 .1−⎡⎤= ⎢⎥⎣⎦v i  The 
+complex eigenfunctions teλv  and λv te  form a basis for the set of all complex solutions to .′=xx A  
+The general complex solution is 
+   (2 ) (2 )12 1111 it itiice c e −+ −−−+⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+----- pagina 60 -----
+332 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  where 1c  and 2c  are arbitrary complex numbers. To build the general real solution, rewrite (2 ) ite −+v  
+as: 
+   
+(2 ) 2 2
+2
+2
+22
+11 (cos sin )11
+cos cos sin sin
+cos sin
+cos sin sin cos
+cos sin
+−+ − −
+−
+−−
+−−⎡⎤ ⎡⎤== +⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+⎡⎤ −+ −= ⎢⎥ +⎣⎦
++−⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦
+v it t i t t
+t
+tt
+iiee e e t i t
+ti ti ti t e
+ti t
+tt tt ei ett
+ 
+  The general real solution has the form 
+   2212 cos sin sin coscos sin tttt ttce ce tt −−+−⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  now are real numbers. The trajectories are spirals because the eigenvalues are 
+complex. The spirals tend toward the origin because the real parts of the eigenvalues are negative. 
+ 10. 31 .21⎡⎤= ⎢⎥−⎣⎦A  An eigenvalue of A is 2 i+  with corresponding eigenvector 1 .2+⎡⎤= ⎢⎥−⎣⎦v i  The complex 
+eigenfunctions λ tev  and λ tev  form a basis for the set of all complex solutions to .A′=xx  The 
+general complex solution is 
+   (2 ) (2 )12 1122 it itiice ce +−+−⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦  
+  where 1c  and 2c  are arbitrary complex numbers. To build the general real solution, rewrite (2 ) ite +v  
+as: 
+   
+(2 ) 2 2
+2
+2
+22
+11 (cos sin )22
+cos cos sin sin
+2cos 2 sin
+cos sin sin cos
+2cos 2sin
+it t i t t
+t
+tt
+iiee e e t i t
+ti ti ti t e
+tit
+tt t t ei ett
++ ++⎡⎤ ⎡⎤== +⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+⎡⎤ ++ += ⎢⎥ −−⎣⎦
+−+⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦
+v
+ 
+  The general real solution has the form 
+   2212 cos sin sin cos2cos 2sin tttt t tce c e tt−+⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥−−⎣⎦ ⎣⎦  
+  where 1c  and 2c  now are real numbers. The trajectories are spirals because the eigenvalues are 
+complex. The spirals tend away from the origin because the real parts of the eigenvalues are positive. 
+ 11. 39 .23−−⎡⎤= ⎢⎥⎣⎦A  An eigenvalue of A is 3i with corresponding eigenvector 33 .2−+⎡⎤= ⎢⎥⎣⎦v i  The 
+complex eigenfunctions λ tev  and λ tev  form a basis for the set of all complex solutions to .A′=xx  
+The general complex solution is 
+----- pagina 61 -----
+5.7  Solutions   333  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   (3 ) ( 3 )12 33 3322 it itiice ce −−+ −−⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  are arbitrary complex numbers. To build the general real solution, rewrite (3 )itev  
+as: 
+   
+(3 ) 33 (cos3 sin 3 )2
+3cos3 3sin3 3sin3 3cos3
+2cos3 2sin3
+it iet i t
+tt t t itt
+−+⎡⎤=+⎢⎥⎣⎦
+−− − +⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+v
+ 
+  The general real solution has the form 
+   12
+3cos3 3sin3 3sin3 3cos3
+2cos3 2sin3
+tt t tcc tt−− − +⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  now are real numbers. The trajectories are ellipses about the origin because the real 
+parts of the eigenvalues are zero. 
+ 12. 71 0 .45−⎡⎤= ⎢⎥−⎣⎦A  An eigenvalue of A is 12 i−+  with corresponding eigenvector 3 .2−⎡⎤= ⎢⎥⎣⎦v i  The 
+complex eigenfunctions λ tev  and λ tev  form a basis for the set of all complex solutions to .A′=xx  
+The general complex solution is 
+   (12 ) (12 )12 3322 it itiice c e −+ −−−+⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  are arbitrary complex numbers. To build the general real solution, rewrite (12 ) ite −+v  
+as: 
+   
+(12 ) 3 (cos 2 sin 2 )2
+3cos2 sin2 3sin2 cos2
+2cos2 2sin2
+it t
+tt
+iee t i t
+tt t t ei ett
+−+ −
+−−
+−⎡⎤=+⎢⎥⎣⎦
++−⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+v
+ 
+  The general real solution has the form 
+   12
+3cos2 sin2 3sin2 cos2
+2cos2 2sin2
+tttt ttce ce tt −−+−⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  now are real numbers. The trajectories are spirals because the eigenvalues are 
+complex. The spirals tend toward the origin because the real parts of the eigenvalues are negative. 
+ 13. 43 .62 −⎡⎤= ⎢⎥ −⎣⎦A  An eigenvalue of A is 13 i+  with corresponding eigenvector 1 .2+⎡⎤= ⎢⎥⎣⎦v i  The 
+complex eigenfunctions λ tev  and λ tev  form a basis for the set of all complex solutions to .A′=xx  
+The general complex solution is 
+   (1 3 ) (1 3 )12 1122 it itiicece +−+−⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+----- pagina 62 -----
+334 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  where 1c  and 2c  are arbitrary complex numbers. To build the general real solution, rewrite (1 3 )ite +v  
+as: 
+   
+(1 3 ) 1 (cos3 sin 3 )2
+cos3 sin 3 sin 3 cos3
+2cos3 2sin3
+it t
+tt
+iee t i t
+tt t t ei ett
++ +⎡⎤=+⎢⎥⎣⎦
+−+⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+v
+ 
+  The general real solution has the form 
+   12
+cos3 sin 3 sin 3 cos3
+2cos3 2sin3
+tttt t tce c e tt−+⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  now are real numbers. The trajectories are spirals because the eigenvalues are 
+complex. The spirals tend away from the origin because the real parts of the eigenvalues are positive. 
+ 14. 21 .82−⎡⎤= ⎢⎥−⎣⎦A  An eigenvalue of A is 2i with corresponding eigenvector 1 .4−⎡⎤= ⎢⎥⎣⎦v i  The complex 
+eigenfunctions λ tev  and λ tev  form a basis for the set of all complex solutions to .A′=xx  The 
+general complex solution is 
+   (2 ) ( 2 )12 1144 it itiice c e −−+⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  are arbitrary complex numbers. To build the general real solution, rewrite (2 )itev  
+as: 
+   
+(2 ) 1 (cos 2 sin 2 )4
+cos2 sin 2 sin 2 cos 2
+4cos2 4sin2
+it iet i t
+tt t t itt
+−⎡⎤=+⎢⎥⎣⎦
++−⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+v
+ 
+  The general real solution has the form 
+   12
+cos2 sin 2 sin 2 cos2
+4cos2 4sin2
+tt t tcc tt+−⎡⎤ ⎡⎤ +⎢⎥ ⎢⎥⎣⎦ ⎣⎦  
+  where 1c  and 2c  now are real numbers. The trajectories are ellipses about the origin because the real 
+parts of the eigenvalues are zero. 
+ 15. [M] 
+81 26
+21 2 .
+71 25
+−− −⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+A  The eigenvalues of A are: 
+  ev=eig(A)=  
+   1.0000 
+  -1.0000 
+  -2.0000 
+  nulbasis(A-ev(1)*eye(3)) = 
+----- pagina 63 -----
+5.7  Solutions   335  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  -1.0000 
+   0.2500 
+   1.0000 
+  so that 1
+4
+1
+4
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis(A-ev(2)*eye(3)) = 
+  -1.2000 
+   0.2000 
+   1.0000 
+  so that 2
+6
+1
+5
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis (A-ev(3)*eye(3)) = 
+  -1.0000 
+   0.0000 
+   1.0000 
+  so that 3
+1
+0
+1
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  Hence the general solution is 212 3
+46 1
+() 1 1 0 .
+45 1
+tt ttc ec e c e −−
+−− −⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥=+ +⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦
+x  The origin is a saddle point.  
+A solution with 1 0c =  is attracted to the origin while a solution with 23 0cc ==  is repelled. 
+  
+  
+----- pagina 64 -----
+336 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+16. [M] 
+61 1 1 6
+25 4 .
+45 1 0
+−−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥−−⎣⎦
+A  The eigenvalues of A are: 
+  ev=eig(A)=  
+  4.0000 
+  3.0000 
+  2.0000 
+  nulbasis(A-ev(1)*eye(3)) = 
+   2.3333 
+  -0.6667 
+   1.0000 
+  so that 1
+7
+2
+3
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis(A-ev(2)*eye(3)) = 
+   3.0000 
+  -1.0000 
+   1.0000 
+  so that 2
+3
+1
+1
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis(A-ev(3)*eye(3))= 
+  2.0000 
+  0.0000 
+  1.0000 
+  so that 3
+2
+0
+1
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  Hence the general solution is 43 212 3
+73 2
+() 2 1 0 .
+31 1
+tt ttc e c e c e
+⎡ ⎤⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥⎢ ⎥=− + − +⎢ ⎥⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦
+x  The origin is a repellor, 
+because all eigenvalues are positive. All trajectories tend away from the origin. 
+  
+----- pagina 65 -----
+5.7  Solutions   337  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 17. [M] 
+30 64 23
+11 23 9 .
+61 54
+⎡⎤
+⎢⎥=− − −⎢⎥
+⎢⎥⎣⎦
+A  The eigenvalues of A are: 
+  ev=eig(A)=  
+  5.0000 + 2.0000i  
+  5.0000 - 2.0000i  
+  1.0000 
+  nulbasis(A-ev(1)*eye(3)) = 
+  7.6667 - 11.3333i  
+  -3.0000 + 4.6667i  
+  1.0000 
+  so that 1
+23 34
+91 4
+3
+i
+i
+−⎡⎤
+⎢⎥=−+⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis (A-ev(2)*eye(3)) = 
+  7.6667 + 11.3333i  
+  -3.0000 - 4.6667i  
+  1.0000 
+  so that 2
+23 34
+91 4
+3
+i
+i
++⎡⎤
+⎢⎥=−−⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis (A-ev(3)*eye(3)) = 
+  -3.0000 
+   1.0000 
+   1.0000 
+  so that 3
+3
+1
+1
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  Hence the general complex solution is 
+   (5 2 ) (5 2 )123
+23 34 23 34 3
+() 9 1 4 9 1 4 1
+33 1
+it it t
+ii
+tc i e c i e c e +−
+−+ −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥=− + +− − +⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+x  
+  Rewriting the first eigenfunction yields 
+   55 5
+23 34 23cos 2 34sin 2 23sin 2 34cos 2
+9 14 (cos 2 sin 2 ) 9cos 2 14sin 2 9sin 2 14cos 2
+33 c o s 2 3 s i n 2
+tt t
+it t t t
+ie t i t t te i t te
+tt
+−+ −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−+ + =− − + − +⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+ 
+  Hence the general real solution is 
+----- pagina 66 -----
+338 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   55123
+23cos 2 34sin 2 23sin 2 34cos 2 3
+( ) 9cos 2 14sin 2 9sin 2 14cos 2 1
+3cos2 3sin2 1
+tt t
+tt tt
+t c t t ec t t ec e
+tt
++− −⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥=− − +− + +⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+x  
+  where 12 ,,cc  and 3c  are real. The origin is a repellor, because the real parts of all eigenvalues are 
+positive. All trajectories spiral away from the origin. 
+ 18. [M] 
+53 30 2
+90 52 3 .
+20 10 2
+A
+−−⎡⎤
+⎢⎥=− −⎢⎥
+⎢⎥ −⎣⎦
+ The eigenvalues of A are: 
+  ev=eig(A)=  
+  -7.0000 
+   5.0000 + 1.0000i  
+   5.0000 - 1.0000i  
+  nulbasis(A-ev(1)*eye(3)) = 
+  0.5000 
+  1.0000 
+  0.0000 
+  so that 1
+1
+2
+0
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis(A-ev(2)*eye(3)) = 
+  0.6000 + 0.2000i  
+  0.9000 + 0.3000i  
+  1.0000 
+  so that 2
+62
+93
+10
+i
+i
++⎡⎤
+⎢⎥=+⎢⎥
+⎢⎥⎣⎦
+v  
+  nulbasis(A-ev(3)*eye(3))= 
+  0.6000 - 0.2000i  
+  0.9000 - 0.3000i  
+  1.0000 
+  so that 3
+62
+93
+10
+i
+i
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+v  
+  Hence the general complex solution is 
+   7( 5 )( 5 )12 3
+16 2 6 2
+() 2 9 3 9 3
+01 0 1 0
+ti ti t
+ii
+tc e c i e c i e−+ −
++−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=+ + + −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+x  
+----- pagina 67 -----
+5.7  Solutions   339  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Rewriting the second eigenfunction yields 
+   55 5
+6 2 6cos 2sin 6sin 2cos
+9 3 (cos sin ) 9cos 3sin 9sin 3cos
+10 10cos 10sin
++− +⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥++ = − + +⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+tt t
+it t t t
+ie t i t t te i t te
+tt
+ 
+  Hence the general real solution is 
+   75512 3
+1 6cos 2sin 6sin 2cos
+( ) 2 9cos 3sin 9sin 3cos
+0 10cos 10sin
+ttt
+tt t t
+tc e c t t e c t t e
+tt
+−
+−+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=+−+ +⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+x  
+  where 12 ,,cc  and 3c  are real. When 23 0cc ==  the trajectories tend toward the origin, and in other 
+cases the trajectories spiral away from the origin. 
+ 19. [M] Substitute 121 15 13 4 ,=/, =/, =RRC  and 2 3C =  into the formula for A given in Example 1, and 
+use a matrix program to find the eigenvalues and eigenvectors: 
+   11 2 1
+23 4 1 3 λ 5 λ 2511 2 2A −/ −⎡⎤ ⎡ ⎤ ⎡ ⎤= , =− . : = , =− . : =⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦ vv  
+  The general solution is thus 52 512 13() . 22 −. − . −⎡⎤ ⎡ ⎤=+ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦x tttc e c e  The condition 4(0) 4⎡⎤= ⎢⎥⎣⎦x  implies that 
+1
+2
+13 4 .22 4 ⎡⎤⎢⎥⎢⎥⎢⎥⎣⎦−⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ cc  By a matrix program, 1 52c =/  and 2 12 ,=− /c  so that 
+ 1 52 5
+2
+() 1351()() 2222 ttvt te evt −. − . −⎡⎤ ⎡ ⎤ ⎡ ⎤== −⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎣⎦ x  
+ 20. [M] Substitute 12 1 11 5 13 9 ,RR C=/ , =/, =  and 2 2C =  into the formula for A given in Example 1, 
+and use a matrix program to find the eigenvalues and eigenvectors: 
+   11 2 2
+21 3 1 2 λ 1 λ 2532 32 3 3A −/ −⎡⎤ ⎡ ⎤ ⎡ ⎤=, = − : = , = − . : =⎢⎥ ⎢ ⎥ ⎢ ⎥/− /⎣⎦ ⎣ ⎦ ⎣ ⎦ vv  
+  The general solution is thus 2512 12() . 33 −− . −⎡⎤ ⎡ ⎤=+ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦x tttc e c e  The condition 3(0) 3⎡⎤= ⎢⎥⎣⎦x  implies  
+that 
+1
+2
+12 3 .33 3 ⎡⎤⎢⎥⎢⎥⎢⎥⎣⎦−⎡⎤ ⎡ ⎤ =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ cc  By a matrix program, 1 53c =/  and 2 23 ,=− /c  so that 
+   1 25
+2
+() 1252()() 3333 ttvt te evt −− . −⎡⎤ ⎡ ⎤ ⎡ ⎤== −⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎣⎦ x  
+ 21. [M] 18 .55−−⎡⎤= ⎢⎥ −⎣⎦A  Using a matrix program we find that an eigenvalue of A is 36 i−+  with 
+corresponding eigenvector 26 .5+⎡⎤= ⎢⎥⎣⎦v i  The conjugates of these form the second 
+  eigenvalue-eigenvector pair. The general complex solution is 
+----- pagina 68 -----
+340 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   (36 ) (36 )12 26 26() 55 it itiitc e c e −+ −−+−⎡⎤ ⎡⎤=+ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦x  
+  where 1c  and 2c  are arbitrary complex numbers. Rewriting the first eigenfunction and taking its real 
+and imaginary parts, we have 
+   
+(36 ) 3
+33
+26 (cos 6 sin 6 )5
+2cos6 6sin6 2sin6 6cos6
+5cos6 5sin6
+−+ −
+−−
++⎡⎤=+⎢⎥⎣⎦
+−+⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+v it t
+tt
+iee t i t
+tt t t ei ett
+ 
+  The general real solution has the form 
+   3312 2cos6 6sin6 2sin6 6cos6() 5cos6 5sin6 tttt t ttc e c e tt −−−+⎡⎤ ⎡⎤=+ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦x  
+  where 1c  and 2c  now are real numbers. To satisfy the initial condition 0(0) , 15⎡⎤= ⎢⎥⎣⎦x  we solve 
+12
+26 0
+50 1 5cc⎡⎤ ⎡⎤ ⎡ ⎤+=⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦  to get 12 31 .=, = −cc  We now have 
+   33 3  () 2cos 6 6sin 6 2sin 6 6cos 6 20sin 6() 3   () 5cos6 5sin 6 15cos6 5sin 6−− −−+ −⎡⎤ ⎡⎤ ⎡⎤ ⎡ ⎤== − =⎢⎥ ⎢⎥ ⎢⎥ ⎢ ⎥ −⎣⎦ ⎣⎦ ⎣ ⎦⎣⎦ xL tt tCit tt t t ttee evt tt t t  
+ 22. [M] 02 .48⎡⎤= ⎢⎥−. −.⎣⎦A  Using a matrix program we find that an eigenvalue of A is 48 i−. + .  with 
+corresponding eigenvector 12 .1−−⎡⎤= ⎢⎥⎣⎦v i  The conjugates of these form the second eigenvalue-
+eigenvector pair. The general complex solution is 
+   (48 ) (48 )12 12 12() 11 it itiitc e c e −. +. −. −.−− −+⎡⎤ ⎡⎤=+ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦x  
+  where 1c  and 2c  are arbitrary complex numbers. Rewriting the first eigenfunction and taking its real 
+and imaginary parts, we have 
+   
+(48 ) 4
+44
+12 (cos 8 sin 8 )1
+cos 8 2sin 8 sin 8 2cos 8
+cos 8 sin 8
+it t
+tt
+iee t i t
+tt t t ei ett
+−. +. −.
+−. −.
+−−⎡⎤=. + .⎢⎥⎣⎦
+−. + . − . − .⎡⎤ ⎡⎤=+⎢⎥ ⎢⎥ ..⎣⎦ ⎣⎦
+v
+ 
+  The general real solution has the form 
+   4412 cos 8 2sin 8 sin 8 2cos 8() cos 8 sin 8 tttt tttc e c e tt −. −.−. + . − . − .⎡⎤ ⎡⎤=+ ⎢⎥ ⎢⎥ ..⎣⎦ ⎣⎦x
+----- pagina 69 -----
+5.8  Solutions   341  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  where 1c  and 2c  now are real numbers. To satisfy the initial condition 0(0) , 12⎡⎤= ⎢⎥⎣⎦x  we solve 
+12
+12  0
+10 1 2cc −− ⎡⎤⎡⎤ ⎡⎤ += ⎢⎥⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎣⎦  to get 12 12 6.=,= −cc  We now have 
+  
+ 
+44 4() cos 8 2sin 8 sin 8 2cos 8        30sin 8() 1 2 6() cos 8 sin 8 12cos 8 6sin 8L tt tCit tt tt tte eevt tt t t −. −. −.−. + . − . − . .⎡⎤ ⎡⎤⎡⎤ ⎡⎤== − =⎢⎥ ⎢⎥⎢⎥ ⎢⎥ .. . − .⎣⎦ ⎣⎦ ⎣ ⎦⎣⎦ x  
+ 
+5.8 SOLUTIONS 
+ 1. The vectors in the given sequence approach an eigenvector 1.v  The last vector in the sequence, 
+4
+1 ,3326⎡⎤= ⎢⎥.⎣⎦x  is probably the best estimate for 1.v  To compute an estimate for 1,λ  examine 
+4
+4 9978 .1 6652.⎡⎤= ⎢⎥.⎣⎦xA  This vector is approximately 11 .λ v  From the first entry in this vector, an estimate  
+of 1λ  is 4.9978. 
+ 2. The vectors in the given sequence approach an eigenvector 1.v  The last vector in the sequence, 
+4
+2520 ,1−.⎡⎤= ⎢⎥⎣⎦x  is probably the best estimate for 1.v  To compute an estimate for 1,λ  examine 
+4
+1 2536 .50 0 6 4−.⎡⎤= ⎢⎥ .⎣⎦xA  This vector is approximately 11 .λ v  From the second entry in this vector, an 
+estimate of 1λ  is 5.0064. 
+ 3. The vectors in the given sequence approach an eigenvector 1.v  The last vector in the sequence, 
+4
+5188 ,1.⎡⎤= ⎢⎥⎣⎦x  is probably the best estimate for 1.v  To compute an estimate for 1,λ  examine 
+4
+4594 .9075.⎡⎤= ⎢⎥.⎣⎦xA  This vector is approximately 11 .λ v  From the second entry in this vector, an estimate 
+of 1λ  is .9075. 
+ 4. The vectors in the given sequence approach an eigenvector 1.v  The last vector in the sequence, 
+4
+1 ,7502⎡⎤= ⎢⎥.⎣⎦x  is probably the best estimate for 1.v  To compute an estimate for 1,λ  examine 
+4
+4012 .3009−.⎡⎤= ⎢⎥−.⎣⎦xA  This vector is approximately 11 .λ v  From the first entry in this vector, an estimate 
+of 1λ  is 4012.−.  
+----- pagina 70 -----
+342 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. Since 5 2499131241A ⎡⎤= ⎢⎥−⎣⎦x  is an estimate for an eigenvector, the vector 
+24991 79991
+31241 131241
+−.⎡⎤ ⎡ ⎤=− = ⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦v  is a vector with a 1 in its second entry that is close to an 
+eigenvector of A. To estimate the dominant eigenvalue 1λ  of A, compute 4 0015 .5 0020.⎡⎤= ⎢⎥−.⎣⎦vA  From the 
+second entry in this vector, an estimate of 1λ  is 5 0020.−.  
+ 6. Since 5 20454093A −⎡⎤= ⎢⎥⎣⎦x  is an estimate for an eigenvector, the vector 2045 49961 4093 14093 −− .⎡⎤ ⎡ ⎤== ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦v  is  
+a vector with a 1 in its second entry that is close to an eigenvector of A. To estimate the dominant 
+eigenvalue 1λ  of A, compute 2 0008 .4 0024−.⎡⎤= ⎢⎥ .⎣⎦vA  From the second entry in this vector, an estimate of 
+1λ  is 4.0024. 
+ 7. [M] 0
+67 1 .85 0⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ xA  The data in the table below was calculated using Mathematica, which 
+carried more digits than shown here. 
+k 0 1 2 3 4 5 
+kx  
+1
+0
+⎡⎤
+⎢⎥⎣⎦  751.⎡⎤⎢⎥⎣⎦  19565⎡⎤⎢⎥.⎣⎦  99321.⎡ ⎤⎢ ⎥⎣ ⎦  19990⎡ ⎤⎢ ⎥.⎣ ⎦  .99981⎡⎤⎢⎥⎣⎦  
+kAx  
+6
+8
+⎡⎤
+⎢⎥⎣⎦  11 511 0.⎡⎤⎢⎥ .⎣⎦  12 695712 7826.⎡⎤⎢⎥ .⎣⎦  12 959212 9456.⎡ ⎤⎢ ⎥.⎣ ⎦  12 992712 9948.⎡ ⎤⎢ ⎥.⎣ ⎦  12 999012 9987.⎡⎤⎢⎥ .⎣⎦  
+kμ  8 11.5 12.7826 12.9592 12.9948 12.9990 
+  The actual eigenvalue is 13. 
+ 8. [M] 0
+21 1 .45 0⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ xA  The data in the table below was calculated using Mathematica, which 
+carried more digits than shown here. 
+k 0 1 2 3 4 5 
+kx  10⎡⎤⎢⎥⎣⎦  51.⎡⎤⎢⎥⎣⎦  28571.⎡⎤⎢⎥⎣⎦  25581.⎡ ⎤⎢ ⎥⎣ ⎦  25101.⎡ ⎤⎢ ⎥⎣ ⎦  .25021⎡ ⎤⎢ ⎥⎣ ⎦  
+kAx  24⎡⎤⎢⎥⎣⎦  27⎡⎤⎢⎥⎣⎦  1 57146 1429.⎡⎤⎢⎥ .⎣⎦  15 1 1 66 0233.⎡ ⎤⎢ ⎥.⎣ ⎦  1 50196 0039.⎡ ⎤⎢ ⎥.⎣ ⎦  1 50036 0006.⎡ ⎤⎢ ⎥.⎣ ⎦  
+kμ  4 7 6.1429 6.0233 6.0039 6.0006 
+  The actual eigenvalue is 6. 
+----- pagina 71 -----
+5.8  Solutions   343  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. [M] 0
+80 1 2 1
+121 0 .
+03 0 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− , =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+xA  The data in the table below was calculated using Mathematica, 
+which carried more digits than shown here. 
+k 0 1 2 3 4 5 6 
+kx  
+1
+0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+1
+125
+0
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥⎣⎦
+ 
+1
+0938
+0469
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+1
+1004
+0328
+⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+1
+0991
+0359
+⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+1
+0994
+0353
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+1
+0993
+0354
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+kAx  
+8
+1
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+8
+75
+375
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+85 6 2 5
+8594
+2812
+.⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+83 9 4 2
+8321
+3011
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+84 3 0 4
+8376
+2974
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+84 2 3 3
+8366
+2981
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+84 2 4 6
+8368
+2979
+.⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+kμ  8 8 8.5625 8.3942 8.4304 8.4233 8.4246 
+  Thus 5 8 4233μ =.  and 6 8 4246.=.μ  The actual eigenvalue is (7 97) 2,+/  or 8.42443 to five 
+decimal places. 
+ 10. [M] 0
+12 2 1
+11 9 0 .
+01 9 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=, =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+xA  The data in the table below was calculated using Mathematica, 
+which carried more digits than shown here. 
+k 0 1 2 3 4 5 6 
+kx  
+1
+0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+1
+1
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+1
+6667
+3333
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+3571
+1
+7857
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+0932
+1
+9576
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+0183
+1
+9904
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+0038
+1
+9982
+.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥.⎣⎦
+ 
+kAx  
+1
+1
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+3
+2
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+1 6667
+4 6667
+36 6 6 7
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .⎣⎦
+ 
+7857
+84 2 8 6
+80 7 1 4
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+1780
+9 7119
+9 6186
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+0375
+9 9319
+9 9136
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+0075
+9 9872
+9 9834
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .⎣⎦
+ 
+kμ  1 3 4.6667 8.4286 9.7119 9.9319 9.9872 
+  Thus 5 9 9319=.μ  and 6 9 9872.=.μ  The actual eigenvalue is 10. 
+ 11. [M] 0
+52 1 .22 0⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ xA  The data in the table below was calculated using Mathematica, which 
+carried more digits than shown here. 
+k 0 1 2 3 4 
+kx  10⎡⎤⎢⎥⎣⎦  14⎡⎤⎢⎥.⎣⎦  14828⎡ ⎤⎢ ⎥.⎣ ⎦  14971⎡ ⎤⎢ ⎥.⎣ ⎦  14995⎡ ⎤⎢ ⎥.⎣ ⎦  
+----- pagina 72 -----
+344 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+kAx  52⎡⎤⎢⎥⎣⎦  5828.⎡⎤⎢⎥ .⎣⎦  5 96552 9655.⎡⎤⎢⎥ .⎣⎦  59 9 4 22 9942.⎡ ⎤⎢ ⎥.⎣ ⎦  59 9 9 02 9990.⎡ ⎤⎢ ⎥.⎣ ⎦  
+kμ  5 5.8 5.9655 5.9942 5.9990 
+() kR x  5 5.9655 5.9990 5.99997 5.9999993 
+  The actual eigenvalue is 6. The bottom two columns of the table show that () kR x  estimates the 
+eigenvalue more accurately than .kμ  
+ 12. [M] 0
+32 1 .22 0−⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ xA  The data in the table below was calculated using Mathematica,  
+which carried more digits than shown here. 
+k 0 1 2 3 4 
+kx  10⎡⎤⎢⎥⎣⎦  16667⎡⎤⎢⎥−.⎣⎦  14615⎡ ⎤⎢ ⎥−.⎣ ⎦  15098⎡ ⎤⎢ ⎥−.⎣ ⎦  14976⎡⎤⎢⎥−.⎣⎦  
+kAx  32−⎡⎤⎢⎥⎣⎦  4 33332 0000−.⎡ ⎤⎢ ⎥.⎣ ⎦  39 2 3 120 0 0 0−.⎡ ⎤⎢ ⎥.⎣ ⎦  4 01962 0000−.⎡ ⎤⎢ ⎥.⎣ ⎦  39 9 5 120 0 0 0−.⎡⎤⎢⎥ .⎣⎦  
+kμ  3−  4 3333−.  3 9231−.  4 0196−.  3 9951−.  
+() kR x  3−  3 9231−.  3 9951−.  3 9997−.  3 99998−.  
+  The actual eigenvalue is 4.−  The bottom two columns of the table show that () kR x  estimates the 
+eigenvalue more accurately than .kμ  
+ 13. If the eigenvalues close to 4 and 4−  have different absolute values, then one of these is a strictly 
+dominant eigenvalue, so the power method will work. But the power method depends on powers of 
+the quotients 21λ/ λ  and 31λ/ λ  going to zero. If 21| λ/ λ |  is close to 1, its powers will go to zero 
+slowly, and the power method will converge slowly. 
+ 14. If the eigenvalues close to 4 and 4−  have the same absolute value, then neither of these is a strictly 
+dominant eigenvalue, so the power method will not work. However, the inverse power method may 
+still be used. If the initial estimate is chosen near the eigenvalue close to 4, then the inverse power 
+method should produce a sequence that estimates the eigenvalue close to 4. 
+ 15. Suppose ,=λxxA  with 0.≠x  For any () .,− = λ −xx xAIαα α  If α  is not an eigenvalue of A, then 
+AI α−  is invertible and αλ−  is not 0; hence 
+  11 1( ) ()  a n d  ()( )AI AIαα α α−− −= − λ− λ− = −xx x x  
+  This last equation shows that x is an eigenvector of 1()AI α −−  corresponding to the eigenvalue 
+1() . −λ− α  
+ 16. Suppose that μ  is an eigenvalue of 1()AI α −−  with corresponding eigenvector x. Since 
+1() , −−= xxAI α μ  
+   ( ) () () ( ) () ()AI A I Aα μμ α μμ αμ=− = − = −xx x x x x  
+----- pagina 73 -----
+5.8  Solutions   345  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Solving this equation for Ax, we find that 
+   11 ()⎛⎞ ⎛ ⎞=+ = +⎜⎟ ⎜ ⎟⎝⎠ ⎝ ⎠xx x xA αμ αμμ  
+  Thus (1 )α μλ= + /  is an eigenvalue of A with corresponding eigenvector x. 
+ 17. [M] 0
+10 8 4 1
+81 3 4 0 3 3 .
+454 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− , = , =.⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+xA α  The data in the table below was calculated using 
+Mathematica, which carried more digits than shown here. 
+k 0 1 2 
+kx  
+1
+0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+1
+7873
+0908
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.⎣⎦
+ 
+1
+7870
+0957
+⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+ky  
+26 0552
+20 5128
+23 6 6 9
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .⎣⎦
+ 
+47 1975
+37 1436
+45 1 8 7
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .⎣⎦
+ 
+47 1233
+37 0866
+45 0 8 3
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+kμ  26.0552 47.1975 47.1233 
+kν  3.3384 3.32119 3.3212209 
+  Thus an estimate for the eigenvalue to four decimal places is 3.3212. The actual eigenvalue is 
+(25 337) 2,−/  or 3.3212201 to seven decimal places. 
+ 18. [M] 0
+80 1 2 1
+121 0 1 4 .
+03 0 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− , = , = − .⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+xA α  The data in the table below was calculated using 
+Mathematica, which carried more digits than shown here. 
+k 0 1 2 3 4 
+kx  
+1
+0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+1
+3646
+7813
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥−.⎣⎦
+ 
+1
+3734
+7855
+⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.⎣ ⎦
+ 
+1
+3729
+7854
+⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.⎣ ⎦
+ 
+1
+3729
+7854
+⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.⎣ ⎦
+ 
+ky  
+40
+14 5833
+31 25
+⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥−.⎣⎦
+ 
+38 125
+14 2361
+29 9479
+−.⎡⎤
+⎢⎥−.⎢⎥
+⎢⎥ .⎣⎦
+ 
+41 1134
+15 3300
+32 2888
+−.⎡ ⎤
+⎢ ⎥−.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+40 9243
+15 2608
+32 1407
+−.⎡ ⎤
+⎢ ⎥−.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+40 9358
+15 2650
+32 1497
+−.⎡ ⎤
+⎢ ⎥−.⎢ ⎥
+⎢ ⎥.⎣ ⎦
+ 
+kμ  40 38 125−.  41 1134−.  40 9243−.  40 9358−.  
+kν  1 375−.  1 42623−.  1 42432−.  1 42444−.  1 42443−.  
+----- pagina 74 -----
+346 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus an estimate for the eigenvalue to four decimal places is 1 4244.−.  The actual eigenvalue is 
+(7 97) 2,−/  or 1 424429−.  to six decimal places. 
+ 19. [M] 0
+10 7 8 7 1
+756 5 0 .86 1 09 0
+7591 0 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥=, =⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+xA  
+(a) The data in the table below was calculated using Mathematica, which carried more digits than 
+shown here. 
+k 0 1 2 3 
+kx  
+1
+0
+0
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+1
+7
+8
+7
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥.
+⎢⎥.⎢⎥⎣⎦
+ 
+988679
+709434
+1
+932075
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+961467
+691491
+1
+942201
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kAx  
+10
+7
+8
+7
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+26 2
+18 8
+26 5
+24 7
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .
+⎢⎥ .⎢⎥⎣⎦
+ 
+29 3774
+21 1283
+30 5547
+28 7887
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+29 0505
+20 8987
+30 3205
+28 6097
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kμ  10 26.5 30.5547 30.3205 
+ 
+k 4 5 6 7 
+kx  
+958115
+689261
+1
+943578
+.⎡⎤
+⎢⎥.⎢⎥
+⎢⎥
+⎢⎥.⎢⎥⎣⎦
+ 
+957691
+688978
+1
+943755
+.⎡⎤
+⎢⎥.⎢⎥
+⎢⎥
+⎢⎥.⎢⎥⎣⎦
+ 
+957637
+688942
+1
+943778
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+957630
+688938
+1
+943781
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kAx  
+29 0110
+20 8710
+30 2927
+28 5889
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .
+⎢⎥ .⎢⎥⎣⎦
+ 
+29 0060
+20 8675
+30 2892
+28 5863
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .
+⎢⎥ .⎢⎥⎣⎦
+ 
+29 0054
+20 8671
+30 2887
+28 5859
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+29 0053
+20 8670
+30 2887
+28 5859
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kμ  30.2927 30.2892 30.2887 30.2887 
+  Thus an estimate for the eigenvalue to four decimal places is 30.2887. The actual eigenvalue is 
+30.2886853 to seven decimal places. An estimate for the corresponding eigenvector is 
+957630
+688938 .1
+943781
+.⎡⎤
+⎢⎥.⎢⎥
+⎢⎥
+⎢⎥.⎢⎥⎣⎦
+ 
+  
+----- pagina 75 -----
+5.8  Solutions   347  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+(b) The data in the table below was calculated using Mathematica, which carried more digits than 
+shown here. 
+k 0 1 2 3 4 
+kx  
+1
+0
+0
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+609756
+1
+243902
+146341
+−.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−.
+⎢⎥.⎢⎥⎣⎦
+ 
+604007
+1
+251051
+148899
+−.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+603973
+1
+251134
+148953
+−.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+603972
+1
+251135
+148953
+−.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+ky  
+25
+41
+10
+6
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥−⎢⎥⎣⎦
+ 
+59 5610
+98 6098
+24 7561
+14 6829
+−.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥−.
+⎢⎥ .⎢⎥⎣⎦
+ 
+59 5041
+98 5211
+24 7420
+14 6750
+−.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+59 5044
+98 5217
+24 7423
+14 6751
+−.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+59 5044
+98 5217
+24 7423
+14 6751
+−.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kμ  41−  98.6098 98.5211 98.5217 98.5217 
+kν  0243902−.  .0101410 .0101501 .0101500 .0101500 
+  Thus an estimate for the eigenvalue to five decimal places is .01015. The actual eigenvalue is 
+.01015005 to eight decimal places. An estimate for the corresponding eigenvector is 
+603972
+1 .251135
+148953
+−.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−.
+⎢⎥.⎢⎥⎣⎦
+ 
+ 20. [M] 0
+1232 1
+21 21 31 1 0 .2302 0
+4572 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥=, =⎢⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+xA  
+(a) The data in the table below was calculated using Mathematica, which carried more digits than 
+shown here. 
+k 0 1 2 3 4 
+kx  
+1
+0
+0
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+25
+5
+5
+1
+.⎡⎤
+⎢⎥.⎢⎥
+⎢⎥−.
+⎢⎥⎢⎥⎣⎦
+ 
+159091
+1
+272727
+181818
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+187023
+1
+170483
+442748
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+184166
+1
+180439
+402197
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kAx  
+1
+2
+2
+4
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+17 5
+11
+3
+2
+.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+3 34091
+17 8636
+3 04545
+7 90909
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+3 58397
+19 4606
+3 51145
+7 82697
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+3 52988
+19 1382
+3 43606
+7 80413
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kμ  4 11 17.8636 19.4606 19.1382 
+----- pagina 76 -----
+348 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+k 5 6 7 8 9 
+kx  
+184441
+1
+179539
+407778
+.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥.
+⎢⎥.⎢⎥⎣⎦
+ 
+184414
+1
+179622
+407021
+.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥.
+⎢⎥.⎢⎥⎣⎦
+ 
+184417
+1
+179615
+407121
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+184416
+1
+179615
+407108
+.⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+184416
+1
+179615
+407110
+.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥.
+⎢⎥.⎢⎥⎣⎦
+ 
+kAx  
+3 53861
+19 1884
+3 44667
+7 81010
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥.
+⎢⎥ .⎢⎥⎣⎦
+ 
+3 53732
+19 1811
+3 44521
+7 80905
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .
+⎢⎥ .⎢⎥⎣⎦
+ 
+3 53750
+19 1822
+3 44541
+7 80921
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+3 53748
+19 1820
+3 44538
+7 80919
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+3 53748
+19 1820
+3 44539
+7 80919
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥ .
+⎢⎥ .⎣⎦
+ 
+kμ  19.1884 19.1811 19.1822 19.1820 19.1820 
+  Thus an estimate for the eigenvalue to four decimal places is 19.1820. The actual eigenvalue is 
+19.1820368 to seven decimal places. An estimate for the corresponding eigenvector is 
+184416
+1 .179615
+407110
+.⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥.
+⎢⎥.⎢⎥⎣⎦
+ 
+(b) The data in the table below was calculated using Mathematica, which carried more digits than 
+shown here. 
+k 0 1 2 
+kx  
+1
+0
+0
+0
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+1
+226087
+921739
+660870
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥−.
+⎢⎥.⎢⎥⎣⎦
+ 
+1
+222577
+917970
+660496
+⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+ky  
+115
+26
+106
+76
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+81 7304
+18 1913
+75 0261
+53 9826
+.⎡⎤
+⎢⎥ .⎢⎥
+⎢⎥−.
+⎢⎥ .⎢⎥⎣⎦
+ 
+81 9314
+18 2387
+75 2125
+54 1143
+.⎡ ⎤
+⎢ ⎥.⎢ ⎥
+⎢ ⎥−.
+⎢ ⎥.⎢ ⎥⎣ ⎦
+ 
+kμ  115 81.7304 81.9314 
+kν  .00869565 .0122353 .0122053 
+  Thus an estimate for the eigenvalue to four decimal places is .0122. The actual eigenvalue is 
+.01220556 to eight decimal places. An estimate for the corresponding eigenvector is 
+1
+222577 .917970
+660496
+⎡⎤
+⎢⎥.⎢⎥
+⎢⎥−.
+⎢⎥.⎢⎥⎣⎦
+----- pagina 77 -----
+Chapter 5  Supplementary  Exercises   349  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 21. (a) 80 5 .02 5..⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥ ..⎣⎦ ⎣ ⎦ xA  Here is the sequence kA x  for 15 :=,k…  
+   4 32 256 2048 163841 02 004 0008 00016.. . . .⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤,, , ,⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥.. . . .⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  Notice that 5A x  is approximately 48( ).. xA  
+  Conclusion: If the eigenvalues of A are all less than 1 in magnitude, and if 0,≠x  then kA x  is 
+approximately an eigenvector for large k. 
+(b) 10 5 .08 5 .⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥..⎣⎦ ⎣ ⎦ xA  Here is the sequence kA x  for 15 :=,k…  
+   55 5 5 54 32 256 2048 16384.. . . .⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤,, , ,⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥.. . . .⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  Notice that kA x  seems to be converging to 5 .0.⎡ ⎤⎢ ⎥⎣ ⎦  
+  Conclusion: If the strictly dominant eigenvalue of A is 1, and if x has a component in the 
+direction of the corresponding eigenvector, then {} kA x  will converge to a multiple of that 
+eigenvector. 
+c. 80 5 .02 5 .⎡⎤ ⎡ ⎤=, =⎢⎥ ⎢ ⎥ .⎣⎦ ⎣ ⎦ xA  Here is the sequence kA x  for 15 :=,k…  
+   4 32 256 2048 1638412 4 8 1 6⎡⎤⎡ ⎤⎡ ⎤⎡ ⎤⎡ ⎤,, , ,⎢⎥⎢ ⎥⎢ ⎥⎢ ⎥⎢ ⎥⎣⎦⎣ ⎦⎣ ⎦⎣ ⎦⎣ ⎦  
+  Notice that the distance of kA x  from either eigenvector of A is increasing rapidly as k increases. 
+  Conclusion: If the eigenvalues of A are all greater than 1 in magnitude, and if x is not an 
+eigenvector, then the distance from kA x  to the nearest eigenvector will increase as .→∞k  
+Chapter 5 SUPPLEMENTARY EXERCISES 
+ 1 .  a. True. If A is invertible and if 1A =⋅xx  for some nonzero x, then left-multiply by 1A−  to obtain 
+1 ,−=xx A  which may be rewritten as 1 1.− =⋅xxA  Since x is nonzero, this shows 1 is an 
+eigenvalue of 1.−A  
+ b. False. If A is row equivalent to the identity matrix, then A is invertible. The matrix in Example 4 
+of Section 5.3 shows that an invertible matrix need not be diagonalizable. Also, see Exercise 31 
+in Section 5.3. 
+ c. True. If A contains a row or column of zeros, then A is not row equivalent to the identity matrix 
+and thus is not invertible. By the Invertible Matrix Theorem (as stated in Section 5.2), 0 is an 
+eigenvalue of A. 
+----- pagina 78 -----
+350 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ d. False. Consider a diagonal matrix D whose eigenvalues are 1 and 3, that is, its diagonal entries 
+are 1 and 3. Then 2D  is a diagonal matrix whose eigenvalues (diagonal entries) are 1 and 9. In 
+general, the eigenvalues of 2A  are the squares of the eigenvalues of A. 
+ e. True. Suppose a nonzero vector x satisfies ,=xxA λ  then 
+  22 () ( )AA AA A λλ λ== = =xx x x x  
+  This shows that x is also an eigenvector for 2A  
+ f. True. Suppose a nonzero vector x satisfies ,=xxA λ  then left-multiply by 1A−  to obtain 
+11() .−−==xxxAA λλ  Since A is invertible, the eigenvalue λ  is not zero. So 11 ,−−λ= xx A  which 
+shows that x is also an eigenvector of 1.−A  
+ g. False. Zero is an eigenvalue of each singular square matrix. 
+ h. True. By definition, an eigenvector must be nonzero. 
+ i. False.  Let 2002A ⎡⎤= ⎢⎥⎣⎦ then  and  are eigenvectors of A  for the eigenvalue 2, 
+and they are linearly independent. 
+ j. True. This follows from Theorem 4 in Section 5.2 
+ k. False. Let A be the 33×  matrix in Example 3 of Section 5.3. Then A is similar to a diagonal 
+matrix D. The eigenvectors of D are the columns of 3 ,I  but the eigenvectors of A are entirely 
+different. 
+ l. False. Let 20 .03⎡⎤= ⎢⎥⎣⎦A  Then 1 10⎡ ⎤= ⎢ ⎥⎣ ⎦e  and 2 01⎡ ⎤= ⎢ ⎥⎣ ⎦e  are eigenvectors of A, but 12+ee  is not. 
+(Actually, it can be shown that if two eigenvectors of A correspond to distinct eigenvalues, then 
+their sum cannot be an eigenvector.) 
+ m. False. All the diagonal entries of an upper triangular matrix are the eigenvalues of the matrix 
+(Theorem 1 in Section 5.1). A diagonal entry may be zero. 
+ n. True. Matrices A and TA  have the same characteristic polynomial, because 
+det( ) det( ) det( ),−λ = −λ = −λTTAI A I A I  by the determinant transpose property. 
+ o. False. Counterexample: Let A be the 55×  identity matrix. 
+ p. True. For example, let A be the matrix that rotates vectors through 2π/  radians about the origin. 
+Then Ax is not a multiple of x when x is nonzero. 
+ q. False. If A is a diagonal matrix with 0 on the diagonal, then the columns of A are not linearly 
+independent. 
+ r. True. If 1A λ=xx  and 2 ,=xxA λ  then 12λλ =xx  and 12() . −= x0λλ  If ,≠x0  then 1λ  must equal 
+2.λ  
+ s. False. Let A be a singular matrix that is diagonalizable. (For instance, let A be a diagonal matrix 
+with 0 on the diagonal.) Then, by Theorem 8 in Section 5.4, the transformation Axx6  is 
+represented by a diagonal matrix relative to a coordinate system determined by eigenvectors of 
+A. 
+  
+1
+1
+0
+⎡ ⎤= ⎢ ⎥⎣ ⎦e 2 01⎡ ⎤= ⎢ ⎥⎣ ⎦e
+----- pagina 79 -----
+Chapter 5  Supplementary  Exercises   351  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ t. True. By definition of matrix multiplication, 
+  11 22[] [ ] nnAA I A A A A== = ee e e e e""  
+  If =eejj jAd  for 1,=, ,j… n  then A is a diagonal matrix with diagonal entries 1 .,, nd… d  
+ u. True. If 1,−=BP D P  where D is a diagonal matrix, and if 1,−=AQ B Q  then 
+11 1() ( ) ( ) ,AQ P D PQ Q P D Q P−− −==  which shows that A is diagonalizable. 
+ v. True. Since B is invertible, AB is similar to 1(), −BA BB  which equals BA. 
+ w. False. Having n linearly independent eigenvectors makes an nn×  matrix diagonalizable (by the 
+Diagonalization Theorem 5 in Section 5.3), but not necessarily invertible. One of the eigenvalues  
+of the matrix could be zero. 
+ x. True. If A is diagonalizable, then by the Diagonalization Theorem, A has n linearly independent 
+eigenvectors 1,,vv n…  in .Rn  By the Basis Theorem, 1{} ,,vv n…  spans .Rn  This means that 
+each vector in nR  can be written as a linear combination of 1 .,,vv n…  
+ 2. Suppose B ≠x0  and =λxxAB  for some λ . Then () . =λxxAB  Left-multiply each side by B and 
+obtain () () () .=λ = λxxxBA B B B  This equation says that Bx is an eigenvector of BA, because 
+.≠x0B  
+ 3. a. Suppose ,=λxxA  with .≠x0  Then (5 ) 5 5 (5 ) .−= − = − λ = − λxx xxx xIA A  The eigenvalue  
+is 5.−λ  
+b. 22 2(5 3 ) 5 3 ( ) 5 3( ) (5 3 ) .−+ =− + =− λ + λ = − λ + λxx x x x x x xIA A AA A  The eigenvalue is 
+253 .−λ + λ  
+ 4. Assume that A λ=xx  for some nonzero vector x. The desired statement is true for 1,=m  by the 
+assumption about λ . Suppose that for some 1,≥k  the statement holds when .=mk  That is, suppose  
+that .=xxkkA λ  Then 1 ()( )kk kAA A A λ+ ==xx x  by the induction hypothesis. Continuing, 
+11 ,++ ==xxxkkkAA λλ  because x is an eigenvector of A corresponding to A. Since x is nonzero, this 
+equation shows that 1kλ +  is an eigenvalue of 1,+kA  with corresponding eigenvector x. Thus the 
+desired statement is true when 1.=+mk  By the principle of induction, the statement is true for each 
+positive integer m. 
+ 5. Suppose ,=λxxA  with .≠x0  Then 
+  
+2
+01 2
+2
+01 2
+2
+01 2
+() ( )
+()
+=+ + + +
+=+ + + +
+= + λ +λ ++λ = λ
+xx
+xx x x
+xx x x x
+n
+n
+n
+n
+n
+n
+pA cI c A cA … cA
+cc A c A… c A
+cc c … c p
+ 
+  So ()λp  is an eigenvalue of () .pA  
+ 6. a. If 1,−=AP D P  then 1,−=kkAP D P  and 
+   
+21 1 2 1
+21
+53 5 3
+(5 3 )
+−−−
+−
+=− + = − +
+=− +
+BIA A P I P P D P P D P
+PI D DP
+ 
+   Since D is diagonal, so is 253 .−+ID D  Thus B is similar to a diagonal matrix. 
+----- pagina 80 -----
+352 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b.
+ 
+12 1 1
+01 2
+21
+01 2
+1
+()
+()
+()
+−− −
+−
+−
+=+ + + +
+=+ + + +
+=
+"
+"
+n
+n
+n
+n
+pA cI c P D P cP DP cP DP
+PcI c D cD cD P
+Pp D P
+ 
+  This shows that ()pA  is diagonalizable, because ()pD  is a linear combination of diagonal 
+matrices and hence is diagonal. In fact, because D is diagonal, it is easy to see that 
+  (2) 0() 0( 7 )ppD p⎡⎤= ⎢⎥⎣⎦  
+ 7. If 1,−=AP D P  then 1() () , −=pA P pDP  as shown in Exercise 6. If the () ,jj  entry in D is λ , then the 
+() ,jj  entry in kD  is ,λk  and so the () ,jj  entry in ()pD  is () .λp  If p is the characteristic 
+polynomial of A, then () 0λ=p  for each diagonal entry of D, because these entries in D are the 
+eigenvalues of A. Thus ()pD  is the zero matrix. Thus 1() 0 0 . −=⋅ ⋅ =pA P P  
+ 8 . a. If λ  is an eigenvalue of an nn×  diagonalizable matrix A, then 1AP D P −=  for an invertible 
+matrix P and an nn×  diagonal matrix D whose diagonal entries are the eigenvalues of A. If the 
+multiplicity of λ  is n, then λ  must appear in every diagonal entry of D. That is, .=DI λ  In this 
+case, 11 1() . −− −== = =A P I PP I PP PIλλλ λ  
+b. Since the matrix 3103A ⎡⎤= ⎢⎥⎣⎦  is triangular, its eigenvalues are on the diagonal. Thus 3 is an 
+eigenvalue with multiplicity 2. If the 22×  matrix A were diagonalizable, then A would be 3I, by  
+part (a). This is not the case, so A is not diagonalizable. 
+ 9. If IA−  were not invertible, then the equation ().−= x0IA  would have a nontrivial solution x. Then 
+A−=xx 0  and 1,=⋅xxA  which shows that A would have 1 as an eigenvalue. This cannot happen if 
+all the eigenvalues are less than 1 in magnitude. So IA−  must be invertible. 
+ 10. To show that kA  tends to the zero matrix, it suffices to show that each column of kA  can be made as 
+close to the zero vector as desired by taking k sufficiently large. The jth column of A is ,e jA  where 
+je  is the jth column of the identity matrix. Since A is diagonalizable, there is a basis for n 
+consisting of eigenvectors 1 ,,,vv n…  corresponding to eigenvalues 1 .λ, , λ n…  So there exist scalars 
+1 ,,, nc… c  such that 
+  11 (an eigenvector decomposition of )=+ +ev v ejn n j …cc  
+  Then, for 12 ,=,,k…  
+  11 1() ( ) ( )=λ ++λ ∗ev v "kk kjn n nAc c  
+  If the eigenvalues are all less than 1 in absolute value, then their kth powers all tend to zero. So ()∗  
+shows that k jA e tends to the zero vector, as desired. 
+ 11. a. Take x in H. Then c=xu  for some scalar c. So () ( ) ( )() ,=== λ = λxu u u uAA c c A c c  which 
+shows that Ax  is in H. 
+----- pagina 81 -----
+Chapter 5  Supplementary  Exercises   353  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. Let x be a nonzero vector in K. Since K is one-dimensional, K must be the set of all scalar 
+multiples of x. If K is invariant under A, then Ax  is in K and hence Ax  is a multiple of x. Thus x 
+is an eigenvector of A. 
+ 12. Let U and V be echelon forms of A and B, obtained with r and s row interchanges, respectively, and 
+no scaling. Then det ( 1) det rAU=−  and det ( 1) det sBV=−  
+  Using first the row operations that reduce A to U, we can reduce G to a matrix of the form 
+.0⎡⎤′= ⎢⎥⎣⎦UYG B  Then, using the row operations that reduce B to V, we can further reduce G′  to 
+.0⎡⎤′′ = ⎢⎥⎣⎦UYG V  There will be rs+  row interchanges, and so 
+ det det ( 1) det 00 +⎡⎤ ⎡⎤== − ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ rsAX UYG BV  Since 0⎡ ⎤⎢ ⎥⎣ ⎦UY V  is upper triangular, its determinant 
+equals the product of the diagonal entries,  
+and since U and V are upper triangular, this product also equals (det U ) (det V ). Thus 
+  det ( 1) (det )(det ) (det )(det )+=− = rsGU V A B  
+  For any scalar λ , the matrix −λGI  has the same partitioned form as G, with −λAI  and −λBI  as 
+its diagonal blocks. (Here I  represents various identity matrices of appropriate sizes.) Hence the 
+result about det G shows that det( ) det( ) det( )−λ = −λ ⋅ −λGI AI BI  
+ 13. By Exercise 12, the eigenvalues of A are the eigenvalues of the matrix [ ]3  together with the 
+eigenvalues of 52 .43 −⎡⎤⎢⎥−⎣⎦  The only eigenvalue of [ ]3  is 3, while the eigenvalues of 5243 −⎡⎤⎢⎥−⎣⎦  are 
+1 and 7. Thus the eigenvalues of A are 1, 3, and 7. 
+ 14. By Exercise 12, the eigenvalues of A are the eigenvalues of the matrix 1524⎡ ⎤⎢ ⎥⎣ ⎦  together with the 
+eigenvalues of 74 .31−−⎡⎤⎢⎥⎣⎦  The eigenvalues of 1524⎡ ⎤⎢ ⎥⎣ ⎦  are 1−  and 6, while the eigenvalues of 
+74
+31
+−−⎡⎤
+⎢⎥⎣⎦  are 5−  and 1.−  Thus the eigenvalues of A are 15 ,−, −  and 6, and the eigenvalue 1−  has 
+multiplicity 2. 
+ 15. Replace a by a λ−  in the determinant formula from Exercise 16 in Chapter 3 Supplementary 
+Exercises. 
+  1det( ) ( ) [ ( 1) ] −−λ = − −λ −λ+ − nAI a b a n b  
+  This determinant is zero only if 0−− λ =ab  or (1 ) 0 .−λ+ − =an b  Thus λ  is an eigenvalue of A if 
+and only if λ= −ab  or (1 ) .λ= + −an  From the formula for det( ) −λAI  above, the algebraic 
+multiplicity is 1n −  for ab−  and 1 for (1 ) .+−an b  
+ 16. The 33×  matrix has eigenvalues 12−  and 1( 2 ) ( 2 ) ,+  that is, 1−  and 5. The eigenvalues of the 55×  
+matrix are 73−  and 7 (4)(3),+  that is 4 and 19. 
+----- pagina 82 -----
+354 CHAPTER 5  Eigenvalues and Eigenvectors  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 17. Note that 211 22 12 21 11 22 11 22 12 21det( ) ( )( ) ( ) ( )−λ = −λ −λ − =λ − + λ+ −AI a a a a a a a a a a  
+2 (tr ) det ,=λ − λ+ AA  and use the quadratic formula to solve the characteristic equation: 
+   
+2tr (tr ) 4det 
+2
+±−= AA Aλ  
+  The eigenvalues are both real if and only if the discriminant is nonnegative, that is, 
+2(tr ) 4det 0.−≥AA  This inequality simplifies to 2(tr ) 4detAA ≥  and 
+2
+det .2⎛⎞ ≥⎜⎟⎝⎠trA A  
+ 18. The eigenvalues of A are 1 and .6. Use this to factor A and .kA  
+  
+13 1 0 23 1
+22 0 6 21 4
+13 1 0 23 1
+22 21 406
+23131
+224 2( 6 ) ( 6 )
+26 ( 6 ) 3 3 ( 6 )1
+4 4 4( 6) 6 2( 6)
+231  as 464
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+−−⎡⎤ ⎡ ⎤ ⎡⎤=⋅⎢⎥ ⎢ ⎥ ⎢⎥ .− −⎣⎦ ⎣ ⎦ ⎣⎦
+−−⎡⎤ ⎡⎤=⋅⎢⎥ ⎢⎥ −−.⎣⎦ ⎣⎦
+−−⎡⎤= ⎢⎥ −⋅ . − .⎣⎦
+−+ . − +.=
+−. −.
+−−⎡⎤→→⎢⎥
+⎣⎦
+k
+k
+k
+k k
+k k
+kk
+A
+A
+k ∞
+ 
+ 19. 201 det( ) 6 5 ( )65⎡⎤=; − λ = − λ + λ = λ⎢⎥−⎣⎦ppCC I p  
+ 20. 
+01 0
+00 1 ;
+24 26 9
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥ −⎣⎦
+pC  
+  23det( ) 24 26 9 ( )− λ = − λ +λ− λ= λpCI p  
+ 21. If p is a polynomial of order 2, then a calculation such as in Exercise 19 shows that the characteristic 
+polynomial of pC  is 2() (1 ) () ,λ=− λpp  so the result is true for 2.=n  Suppose the result is true for 
+nk=  for some 2,≥k  and consider a polynomial p of degree 1.+k  Then expanding det( ) −λpCI   
+by cofactors down the first column, the determinant of −λpCI  equals 
+   1 0
+1 2
+10
+() d e t ( 1 )01 +
+−λ⎡⎤
+⎢⎥
+⎢⎥−λ + − ⎢⎥
+⎢⎥−− − − λ⎢⎥⎣⎦
+"
+##
+"
+k
+k
+a
+aa a
+ 
+----- pagina 83 -----
+Chapter 5  Supplementary  Exercises   355  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  The kk×  matrix shown is ,−λqCI  where 112() . −=+ ++ + " kkkqt a at at t  By the induction 
+assumption, the determinant of −λqCI  is (1 ) () .−λ k q  Thus 
+  
+1
+0
+11
+01
+1
+det( ) ( 1) ( )( 1) ( )
+(1 ) [ ( ) ]
+(1 ) ()
++
++−
++
+−λ = − + − λ − λ
+=− + λ + + λ + λ
+=− λ
+"
+kk
+p
+kk k
+k
+k
+CI a q
+aa a
+p
+ 
+  So the formula holds for 1nk=+  when it holds for .=nk  By the principle of induction, the formula 
+for det( ) −λpCI  is true for all 2.≥n  
+ 22. a. 
+0 12
+010
+001pC
+aa a
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+=
+−− −
+ 
+b. Since λ  is a zero of p, 2301 2 0+λ +λ + λ =aa a  and 2301 2 .−− λ −λ = λaa a  Thus 
+   22
+22
+01 2
+1
+pC
+aa a
+⎡⎤ ⎡ ⎤⎡⎤
+⎢⎥ ⎢ ⎥⎢⎥
+⎢⎥ ⎢ ⎥⎢⎥
+⎢⎥ ⎢ ⎥⎢⎥
+⎢⎥ ⎢ ⎥⎢⎥
+⎢⎥ ⎢ ⎥⎢⎥ 3⎢⎥ ⎢ ⎥⎢⎥⎣⎦ ⎣⎦ ⎣ ⎦
+λλ
+λ= λ = λ
+−− λ −λλλ
+ 
+  That is, 22(1 ) (1 ),,λ,λ = ,λ,λpC λ  which shows that 2(1 ),λ,λ  is an eigenvector of pC  
+corresponding to the eigenvalue λ . 
+ 23. From Exercise 22, the columns of the Vandermonde matrix V are eigenvectors of ,pC  corresponding 
+to the eigenvalues 123λ, λ , λ  (the roots of the polynomial p). Since these eigenvalues are distinct, the 
+eigenvectors from a linearly independent set, by Theorem 2 in Section 5.1. Thus V has linearly 
+independent columns and hence is invertible, by the Invertible Matrix Theorem. Finally, since the 
+columns of V are eigenvectors of ,pC  the Diagonalization Theorem (Theorem 5 in Section 5.3) 
+shows that 1 pVC V−  is diagonal. 
+ 24. [M] The MATLAB command roots(p) requires as input a row vector p whose entries are the 
+coefficients of a polynomial, with the highest order coefficient listed first. MATLAB constructs a 
+companion matrix pC  whose characteristic polynomial is p, so the roots of p are the eigenvalues of 
+.pC  The numerical values of the eigenvalues (roots) are found by the same QR algorithm used by 
+the command eig(A). 
+ 25. [M] The MATLAB command [P D]=eig(A)  produces a matrix P, whose condition number is 
+816 1 0 ,.×  and a diagonal matrix D, whose entries are almost 2, 2, 1. However, the exact eigenvalues  
+of A are 2, 2, 1, and A is not diagonalizable. 
+ 26. [M] This matrix may cause the same sort of trouble as the matrix in Exercise 25. A matrix program 
+that computes eigenvalues by an interative process may indicate that A has four distinct eigenvalues, 
+all close to zero. However, the only eigenvalue is 0, with multiplicity 4, because 4 0.=A  
+ 
+----- pagina 84 -----
+ 
+ 
+ 
+ 

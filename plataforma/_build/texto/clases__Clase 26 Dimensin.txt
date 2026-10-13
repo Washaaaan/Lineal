@@ -1,0 +1,232 @@
+
+----- pagina 1 -----
+Clase 26 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 18
+----- pagina 2 -----
+Recordatorio
+Dado un subespacio H, una base de H es un conjunto B LI que
+genera H.
+Dada una base B de un e.v. V, podemos representar cada vector x
+como un vector de coordenadas [x]B.
+El espacio nulo de una matriz A el el espacio de soluciones de
+Ax = b. Una base se obtiene resolviendo el sistema. El espacio
+columna de una matriz A es el espacio generado por las columnas de
+A. Una base se obtiene encontrando las columnas pivotes.
+2 / 18
+----- pagina 3 -----
+La dimensión de un espacio vectorial
+Teorema
+Si un espacio vectorial V tiene una base B = {b1, . . . ,bn}, entonces
+cualquier conjunto en V que contenga más de n vectores debe ser
+linealmente dependiente, y ningún conjunto con menos de n vectores
+puede generar a V.
+Demostración: Pasar a coordenadas.
+3 / 18
+----- pagina 4 -----
+La dimensión de un espacio vectorial
+Teorema
+Si un espacio vectorial V tiene una base de n vectores, entonces todas las
+bases de V debe consistir exactamente en n vectores.
+Definición: Dimensión
+Si V es generado por un conjunto finito, entonces se dice que V tiene
+dimensión finita , y la dimensión de V, representada como dim V, es el
+número de vectores en una base para V. La dimensión del espacio vectorial
+cero {0} se define como cero. Si V no es generado por un conjunto finito,
+entonces se dice que V tiene dimensión infinita .
+4 / 18
+----- pagina 5 -----
+La dimensión de un espacio vectorial
+Ejemplo: Encuentre la dimensión de Rn y determine la dimensión de Pn
+(el espacio de polinomios de grado n o menor).
+Ejemplo: Sea H = Gen{v1, v2}, donde
+v1 =
+
+
+3
+6
+2
+
+ y v2 =
+
+
+−1
+0
+1
+
+
+Determine dim H.
+5 / 18
+----- pagina 6 -----
+La dimensión de un espacio vectorial
+Ejemplo: Encuentre la dimensión del subespacio
+H =
+
+
+
+
+
+a − 3b + 6c
+5a + 4d
+b − 2c − d
+5d
+
+ : a, b, c, d en R
+
+
+
+6 / 18
+----- pagina 7 -----
+La dimensión de un espacio vectorial
+Ejemplo: Los subespacios de R3 se pueden clasificar por dimensiones:
+Subespacios de dimensión 0.
+Subespacios de dimensión 1.
+Subespacios de dimensión 2.
+Subespacios de dimensión 3.
+7 / 18
+----- pagina 8 -----
+La dimensión de un espacio vectorial
+Teorema
+Sea H un subespacio de un espacio vectorial de dimensión finita V.
+Cualquier conjunto linealmente independiente en H se puede expandir, si
+es necesario, a una base de H. Además, H tiene dimensión finita y
+dim H ≤ dim V
+8 / 18
+----- pagina 9 -----
+La dimensión de un espacio vectorial
+Teorema: El teorema base
+Sea V un espacio vectorial de dimensión p, donde p ≥ 1. Cualquier
+conjunto linealmente independiente de exactamente p elementos en V es,
+de forma automática, una base para V. Cualquier conjunto de exactamente
+p elementos que genera a V es, de manera automática, una base para V.
+9 / 18
+----- pagina 10 -----
+La dimensión de un espacio vectorial
+Dimensiones de Nul A y Col A
+La dimensión de Nul A es el número de variables libres en la ecuación
+Ax = 0, y la dimensión de Col A es el número de columnas pivote de A.
+Ejemplo: Determine las dimensiones del espacio nulo y el espacio columna
+de
+A =
+
+
+−3 6 −1 1 −7
+1 −2 2 3 −1
+2 −4 5 8 −4
+
+
+Nota: La matriz aumentada [A|0] es equivalente por fila a
+
+1 −2 2 3 −1 0
+0 0 1 2 −2 0
+0 0 0 0 0 0
+
+.
+10 / 18
+----- pagina 11 -----
+Rango
+Definición: Espacio Fila
+Si A es una matriz de m × n, cada fila de A tiene n entradas y se puede
+identificar con un vector en Rn. El conjunto de todas las combinaciones
+lineales de los vectores fila se denomina espacio fila de A y se denota
+como Fila A.
+Ya que las filas de A se identifican con las columnas de AT, también
+podríamos escribir Col AT en lugar de Fila A.
+11 / 18
+----- pagina 12 -----
+Rango
+Ejemplo: Sea
+A =
+
+
+−2 −5 8 0 −17
+1 3 −5 1 5
+3 11 −19 7 1
+1 7 −13 5 −3
+
+
+y sean r1, r2, r3, r4 las filas de A. Describa el espacio fila de A.
+12 / 18
+----- pagina 13 -----
+Rango
+Teorema
+Si dos matrices A y B son equivalentes por filas, entonces sus espacios fila
+son iguales. Si B está en forma escalonada, las filas de B diferentes de
+cero forman una base para el espacio fila de A, así como para el de B.
+13 / 18
+----- pagina 14 -----
+Rango
+Ejemplo: Encuentre bases para el espacio fila, el espacio columna y el
+espacio nulo de la matriz
+A =
+
+
+−2 −5 8 0 −17
+1 3 −5 1 5
+3 11 −19 7 1
+1 7 −13 5 −3
+
+
+Nota: La matriz A es equivalente por filas a
+B =
+
+
+1 3 −5 1 5
+0 1 −2 2 −7
+0 0 0 −4 20
+0 0 0 0 0
+
+.
+Nota: Para el espacio nulo, la matriz se reduce a
+C =
+
+
+1 0 1 0 1
+0 1 −2 0 3
+0 0 0 1 −5
+0 0 0 0 0
+
+.
+14 / 18
+----- pagina 15 -----
+Rango
+Definición: Rango
+El rango de A es la dimensión del espacio columna de A.
+Teorema: El teorema del rango
+Las dimensiones del espacio columna y del espacio fila de una matriz A de
+m × n son iguales. Esta dimensión común, el rango de A, también es igual
+al número de posiciones pivote en A y satisface la ecuación:
+rango A + dim Nul A = n
+15 / 18
+----- pagina 16 -----
+Rango
+Ejemplo:
+Si A es una matriz de 7 × 9 con un espacio nulo de dimensión 2,
+¿cuál es el rango de A?
+¿Podría una matriz de 6 × 9 tener un espacio nulo de dimensión 2?
+16 / 18
+----- pagina 17 -----
+Rango
+Ejemplo: Un científico encontró dos soluciones para un sistema
+homogéneo de 40 ecuaciones con 42 variables. No son múltiplos las dos
+soluciones, y todas las demás soluciones se pueden desarrollar sumando
+múltiplos adecuados de estas dos soluciones. ¿Puede el científico estar
+seguro de que un sistema no homogéneo asociado (con los mismos
+coeficientes) tiene una solución?
+17 / 18
+----- pagina 18 -----
+Rango
+Teorema: El teorema de la matriz invertible (continuación)
+Sea A una matriz de n × n. Cada uno de los siguientes enunciados es
+equivalente a la afirmación de que A es una matriz invertible.
+Las columnas de A forman una base de Rn.
+Col A = Rn.
+dim Col A = n.
+rango A = n.
+Nul A = {0}.
+dim Nul A = 0.
+18 / 18

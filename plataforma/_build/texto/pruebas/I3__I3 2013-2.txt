@@ -1,0 +1,252 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+FACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+I3 MAT1203 - Algebra Lineal
+Noviembre 7, 2013
+1. a) [ 3 pts.] Use la Regla de Cramer para determinar los valores de a,b para los
+cuales el sistema de ecuaciones
+ax +y +z = 2
+bx +y−z = 0
+2x +y = 0
+tiene una soluci´ on ´ unica conx = 1, z = 2
+b) [ 3 pts.] SeanB yC bases de un espacio vectorial V y P =
+[
+4 −1
+6 −1
+]
+la
+matriz de cambio de coordenadas tal que [ v]C =P [v]B para v∈V .
+i) Demuestre que el conjuntoW ={v∈V : [ v]C = 2[v]B } es un subespacio
+de V .
+ii) Si B ={v1,v 2} determine una base para W en t´ erminos de la baseB.
+Soluci´ on:
+a) La regla de Cramer aplica para sistemas que tienen una matriz de coeﬁcientes
+invertible. Puesto que se pide que la soluci´ on sea ´ unica se puede aplicar Cramer
+y no es necesario analizar la posibilidad de existencia de soluciones con x1 = 1,
+x3 = 3, pero con A no invertible.
+Puesto que|A| =a +b− 4 [ 0.6 pts.] , aplicando Cramer obtenemos
+x1 =
+⏐⏐⏐⏐⏐⏐⏐⏐ 2 1 10 1 −10 1 0 ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ a 1 1b 1 −12 1 0 ⏐⏐⏐⏐⏐⏐⏐⏐ [0,6pts.] = 2a +b− 4 = 1 [ 0,4pts.]x3 =
+⏐⏐⏐⏐⏐⏐⏐⏐ a 1 2b 1 02 1 0 ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ a 1 1b 1 −12 1 0 ⏐⏐⏐⏐⏐⏐⏐⏐ [0,6pts.] = 2b− 4a +b− 4 = 2 [ 0,4pts.]
+Resolviendo el sistema para las inc´ ognitasa,b se obtiene a = 2, b = 4 [ 0.4
+pts.] .
+b) 1bi) W ={v∈V : [ v]C = 2[v]B }. Para demostrar que W es subespacio de-
+bemos demostrar que
+(*) ⃗0V∈W ,
+(**) u,v∈W , α,β ∈ R implica αu +βv∈W .
+Puesto que [⃗0V ]C =⃗0 y 2[⃗0V ]B = 2⃗0 =⃗0, tenemos que [⃗0V ]C = 2[⃗0V ]B =⃗0,
+y por lo tanto ⃗0V∈W . [ 0.5 pts.]
+Para demostrar (**) usamos que [αu +βv] =α[u] +β[v].
+Sean u,v ∈ W entonces [v]C = 2[v]B y [u]C = 2[u]B. Por lo tanto [ αu +
+βv]C =α[u]C +β[u]C =α (2 [u]B) +β (2 [u]C)2(α [u]B +β [v]C) = 2([αu +
+βv]B) y por lo tanto αu +βv∈W . [ 1.0 pts.]
+Por (*) y (**) W es subespacio
+1bii) Debemos encontrar un conjunto li que genera a W . Sea v =x1v1 +x2v2∈
+W y x = [x1,x 2]T = [v]. Entonces [v]C = 2[v]B implica 2x = Px y por lo
+tanto (P−2I)x = 0 [ 0.5 pts.] . Resolviendo el sistema se obtiene 2x1 =
+x2 [ 0.3 pts.] y por lo tanto v = 2x1v1 +x2v2 =x2(2v1 +v2). Entonces
+W =⟨2v1 +v2⟩. Como 2v1 +v2⁄=⃗0, pues sus vector coordenadas es un
+vector distinto de cero, obtenemos que una base de W esBW ={2v1 +v2}
+[ 0.7 pts.]2. Sea T : P2−→ P2 una transformaci´ on lineal yA =
+
+
+1 1 2
+2 0 1
+−1 2 2
+
+ la matriz que
+representa a T con respecto a la base B ={1,x + 1,x 2 + 1} de P2.
+a) [ 3 pts.] Determine el polinomonio T (1 +x−x2) y decida justiﬁcadamente
+si T es 1-1 y/o sobre.
+b) [ 3 pts.] Determine la matriz que representa a T con respecto a la base
+can´ onicaC ={1,x,x 2} de P2 (en dominio y recorrido).
+Soluci´ on:
+a)
+1 +x−x2 = α· 1 +β· (1 +x) +γ· (x2 + 1)
+= ( α +β +γ +βx +γx2
+implica
+α +β +γ = 1
+β = 1
+γ = −1
+Por lo tantoα = 1,β = 1,γ =−1. Entonces el vector coordenado de 1 +x−x2
+con respecto a la base B ={1,x + 1,x 2 + 1} es
+[1 +x−x2]B =
+
+
+1
+1
+−1
+
+ [0,5pts.]
+Por lo tanto
+[T (1 +x−x2)]B =
+
+
+1 1 2
+2 0 1
+−1 2 2
+
+
+
+
+1
+1
+−1
+
+ =
+
+
+0
+1
+−1
+
+ [1,0pts.]
+Finalmente,
+T (1 +x−x2) = 0· 1 + (1)· (x + 1) + (−1)· (x2 + 1) =x−x2 [0,5pts.]
+T es 1-1 y/o sobre sii A es 1-1 y/o sobre. Puesto que det(A) = 1, A tiene
+inversa y entonces es 1-1 y sobre y por lo tanto T es 1-1 y sobre [ 1.0 pts.] .
+b) Usando la notaci´ on del texto Lay, sea
+C ={1,x,x 2}, B ={1,x + 1,x 2 + 1}
+entonces la matriz de cambio de coordenadas de B aC es
+P =PC←B = [[1]C [x + 1]C [x2 + 1]C] =
+
+
+1 1 1
+0 1 0
+0 0 1
+
+ [1pts.]La matriz que presenta a T con respectoC es B = PAP−1 [ 1.0 pts.] Puesto
+que
+P−1 =
+
+
+1 −1 −1
+0 1 0
+0 0 1
+
+ [0,5pts.]
+tenemos
+B =PAP−1 =
+
+
+1 1 1
+0 1 0
+0 0 1
+
+
+
+
+1 1 2
+2 0 1
+−1 2 2
+
+
+
+
+1 −1 −1
+0 1 0
+0 0 1
+
+ =
+
+
+2 1 3
+2 −2 −1
+−1 3 3
+
+ [0,5pts.]
+Otro m´ etodo alternativo consiste en decir queB = [[T (1)] [T (x + 1)]T (x2 + 1)] y
+calcular los vectores coordenados. Asignar [ 1.5 pts.] por el m´ etodo correcto y
+[ 0.5 pts.] por cada columna correcta.3. a) [ 3 pts.] Diagonalice A =
+
+
+−1 −2 2
+0 −1 0
+0 −2 1
+
+ y diagonalice B =A10 +A−I
+b) [ 3 pts.] Sean A,B matrices invertibles de n×n. Demuestre que AB y BA
+tienen los mismos valores propios y que si AB es diagonalizable entonces BA
+es tambi´ en diagonalizable
+Soluci´ on:
+a)
+|A−λI| =
+⏐⏐⏐⏐⏐⏐⏐⏐−1−λ −2 20 −1−λ 00 −2 1 −λ ⏐⏐⏐⏐⏐⏐⏐⏐ = (λ + 1)2(1−λ) = 0
+Entonces los valores propios de A son λ = 1 con multiplicidad algebraica 1,
+λ =−1 con multiplicada algebraica 2 [ 0.3 pts.] .
+Paraλ = 1 tenemosKer(A−I) =⟨
+
+
+1
+0
+1
+
+⟩ [ 0.5 pts.] y paraλ =−1 tenemos
+Ker(A +I) = ⟨
+
+
+1
+0
+0
+
+,
+
+
+0
+1
+1
+
+⟩ [ 0.5 pts.] . Entonces las multiplicidades
+algebraicas de los valores propios son iguales a las multiplicidades geom´ etricas
+y A es diagonalizable, con
+A =PDP−1 P =
+
+
+1 11 0
+0 0 1
+1 0 1
+
+ D =
+
+
+1 0 0
+0 −1 0
+0 0 −1
+
+ [0,7pts.]
+Ahora,A10+A−I =P (D10+D−I)P−1 =PD 2P−1 dondeD2 =D10+D−I =
+D, por lo tanto A10 +A−I se diagonaliza con P y D.
+b)
+|AB−λI| =|AB−λAA−1| =|A(B−λA−1)| =|A||B−λA−1| =|(B−λA−1)A| =|BA−λI| [1,5pts.]
+Entonces los polinomios caracter´ ısticos deAB yBA son iguales y por lo tanto
+AB y BA tienen los mismos valores propios [ 0.5 pts.] .
+SiAB es diagonalizable entoncesAB =PDP−1 y por lo tantoB =A−1PDP−1
+y BA = A−1PDP−1A = QDQ−1, donde Q = A−1P . Por lo tanto AB diago-
+nalizable y A invertible implican que BA es diagnalizable. [ 1.0 pts.]
+Otra posible soluci´ on es la siguiente: siE =AB yF =BA entoncesA−1EA =
+A−1ABA = BA = F . Entonces AB y BA son similares y por lo tanto tie-
+nen los mismos valores propios y E = AB es diagonalizable sii F = BA es
+diagonalizable [ 3 pts.] .4. Determine si la aﬁrmaci´ on es VERDADERA o FALSA y justiﬁque su respuesta.
+a) [ 1.5 pts.] SiA es de 3× 3 con dim(Ker(A)) = 2 y λ = 1 es valor propio de
+A entoncesA es diagonalizable.
+b) [ 1.5 pts.] Si A de 2× 2 es invertible entonces Adj(A2) = (Adj(A))2
+c) [ 1.5 pts.] Si A y B son similares y v es vector propio de A entonces v es
+tambi´ en vector propio deB.
+d) [ 1.5 pts.] El espacio ﬁla de AB es subespacio del espacio ﬁla de B.
+a) Es verdadera.
+dim(Ker(A)) = 2 implica queλ = 0 es valor propio con multiplicidad geom´ etri-
+ca 2 [ 0.7 pts.] y por enunciado λ = 1 es un valor propio con multiplicidad
+geom´ etrica≥ 1 [ 0.3 pts.] . Como A es de 3 × 3 y A tiene 3 vectores
+propios li, dos asociados a λ = 0 y uno asociado a λ = 1, tenemos que A es
+diagonalizable [ 0.5 pts.]
+b) Es verdadera.
+A−1 = A|A|⇒Adj(A) =|A|A−1[0,5pts.]
+Por lo tanto
+Adj(A2) =|A2|(A−1)2 = (|A|A−1) (|A|A−1) =Adj(A)Adj(A) = (Adj(A))2[1,0pts.]
+c) Es Falso. Un contraejemplo basta [ 1.5 pts.] . Tambi´ en se puede argumentar
+que si A y B son similares entonces B = P−1AP y Ax = λx es equivalente a
+Bv =λv, dondev =P−1x. Entonces los vectores propios de B no son vectores
+propios de A a menos ue P =I [ 1.5 pts.]
+d) Verdadero.
+C =AB⇒C T =BTAT⇒Im(C T )⊂Im(BT ),
+de donde, Fila (C)⊂Fila (B). [ 1.5 pts.]

@@ -1,0 +1,470 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer semestre de 2022
+MAT1203 – ´Algebra Lineal
+Soluci´ on Interrogaci´ on 3
+1. Sea V un espacio vectorial de dimensi´ on 3 que est´ a generado por el conjunto S = {v1, v2, v3}.
+Si T : V → V es una transformaci´ on lineal tal que
+T (v1) = v1 , T (v2) = 0 , y T (v3) = −v3 ,
+encuentre la dimensi´ on del espacio nulo (o n´ ucleo) deT . Justiﬁque su respuesta.
+Soluci´ on.Si v es un elemento de V entonces, como S es un conjunto generador, existen
+c1, c2, c3 ∈ R tal que v = c1v1 + c2v2 + c3v3. Entonces v pertenece al espacio nulo de T si y
+solo si
+0 = T (v) = c1T (v1) + c2T (v2) + c3T (v3) = c1v1 − c3v3 .
+Ahora bien, como S tiene tres elementos y genera a V que es de dimensi´ on tres,S debe ser base
+de V y, en particular, S es linealmente independiente. Por lo tanto, si se satisface la ecuaci´ on
+anterior debemos tener que c1 = 0 y c3 = 0.
+Por lo tanto, v pertenece al espacio nulo de T si y solo si v = c2v2 ∈ Gen{v2} . Es decir, el
+espacio nulo de T es el generado por v2 y, en particular, es entonces de dimension 1.
+Otra forma: Como S tiene tres elementos y genera a V que es de dimensi´ on tres, S debe ser
+base de V . Entonces, la S-matriz de T es [ T ]S =
+
+
+1 0 0
+0 0 0
+0 0 −1
+
+ . Se sigue que el espacio nulo de
+la S-matriz est´ a generado por el vector
+
+
+0
+1
+0
+
+. Por lo tanto, el espacio nulo de T tiene dimensi´ on
+1.
+Puntaje Pregunta 1.
+1,5 puntos por argumentar que S es base de V .
+3 puntos por hallar un conjunto generado para el espacio nulo.
+1,5 puntos por concluir que la dimensi´ on del espacio nulo es 1.2. Sea A una matriz tal que la dim(Fil( A)) = 3 y
+A
+
+
+−1
+0
+1
+2
+1
+
+ = 000 , A
+
+
+4
+2
+−2
+0
+1
+
+ = 000 .
+a) Determine una base para el Nul( A). [4 puntos]
+b) Demuestre que Col( A) = R3. [2 puntos]
+Soluci´ on.
+a) Como A
+
+
+−1
+0
+1
+2
+1
+
+ = 000 y A
+
+
+4
+2
+−2
+0
+1
+
+ = 000 entonces Gen
+
+
+
+
+
+−1
+0
+1
+2
+1
+
+ ,
+
+
+4
+2
+−2
+0
+1
+
+
+
+
+ ⩽ Nul(A) .
+Adem´ as, tenemos que la matriz A tiene 5 columnas y 3 ﬁlas.
+Como rango( A) = dim(Fil( A)) = 3, en virtud del teorema del rango tenemos que
+rango(A) + dim(Nul(A)) = 5 =⇒ dim(Nul(A)) = 2
+Por lo cual una base una base para Nul( A) es
+
+
+
+
+
+−1
+0
+1
+2
+1
+
+ ,
+
+
+4
+2
+−2
+0
+1
+
+
+
+
+
+b) Tenemos que Col( A) ⩽ R3 y dim(Fil( A)) = dim(Col( A)) = 3 luego Col( A) = R3.
+Puntaje Pregunta 2.
+1 punto por ver que los vectores
+
+
+−1
+0
+1
+2
+1
+
+ y
+
+
+4
+2
+−2
+0
+1
+
+ est´ an en el espacio nulo.
+1 punto por saber que rango( A) = dim(Fil( A)).
+1 punto por usar el teorema del rango y concluir que el espacio nulo tiene dimensi´ on 2.
+1 punto por exhibir una base para el espacio nulo de A.
+1 puntos por saber que dim(Fil( A)) = dim(Col( A))
+1 punto por concluir que Col( A) = R33. Considere los vectores v1 =
+
+
+−2
+2
+3
+
+ , v2 =
+
+
+−8
+5
+2
+
+ y v3 =
+
+
+−7
+2
+6
+
+ y la matriz
+P =
+
+
+1 0 2
+0 1 1
+−3 1 1
+
+ .
+Encuentre una base B = {u1, u2, u3} de R3 tal que la matriz P sea la matriz de cambio de
+coordenadas de B a la base C = {v1, v2, v3}.
+Soluci´ on.La matriz de cambio de base de B a C est´ a dada por P =
+[
+[u1]C [u2]C [u3]C
+]
+.
+Luego, los vectores u1, u2 y u3 deben cumplir que
+[u1]C =
+
+
+1
+0
+−3
+
+ , [u2]C =
+
+
+0
+1
+1
+
+ , [u3]C =
+
+
+2
+1
+1
+
+ .
+Por lo tanto, los vectores buscados son
+u1 = 1v1 − 3v3 =
+
+
+19
+−4
+−15
+
+ , u2 = v2 + v3 =
+
+
+−15
+7
+8
+
+ , u3 = 2v1 + v2 + v3 =
+
+
+−19
+11
+14
+
+ .
+Puntaje Pregunta 3.
+3 puntos por concluir que [ uk]C se corresponden con las columnas de la matriz cambio de
+base.
+3 puntos por encontrar los vectores uk.4. Sea A una matriz de n × n. Demuestre que A y AT tienen la misma ecuaci´ on caracter ´ ıstica.
+Soluci´ on.Usando que el determinante de una matriz es igual al determinante de su transpuesta
+y la propiedad ( A + B)T = AT + BT se tiene
+0 = det( A − λI)
+1
+= det(A − λI)T 2= det(AT − λI T ) 3= det(AT − λI) .
+Puntaje Pregunta 4.
+2 puntos por la igualdad 1
+2 puntos por la igualdad 2
+2 puntos por la igualdad 35. Diagonalice, si es posible, la siguiente matriz A =
+
+
+4 0 −1
+0 4 −1
+1 0 2
+
+.
+Soluci´ on.La ecuaci´ on caracter ´ ıstica deA es
+0 = det( A − λI) =
+⏐⏐⏐⏐⏐⏐4 − λ 0 −10 4 − λ −11 0 2 − λ⏐⏐⏐⏐⏐⏐ = (4 − λ) ⏐⏐⏐⏐4 − λ −10 2 − λ⏐⏐⏐⏐ − ⏐⏐⏐⏐0 4 − λ1 0 ⏐⏐⏐⏐
+= (4 − λ)(4 − λ)(2 − λ) + (4 − λ) = (4 − λ)[(4 − λ)(2 − λ) + 1]
+= (4 − λ)[λ2 − 6λ + 9] = (4 − λ)(λ − 3)2
+Los valores propios son λ = 3 y λ = 4. Los espacios propios son:
+Base para λ = 3 : v1 =
+
+
+1
+1
+1
+
+
+Base para λ = 4 : v2 =
+
+
+0
+1
+0
+
+
+Se sigue que, es imposible construir una base en R3 utilizando vectores propios de A. Por lo
+tanto, A no es diagonalizable.
+Puntaje Pregunta 5.
+2 puntos por encontrar los valores propios de A.
+2 puntos por encontrar los vectores propios de A.
+2 puntos por concluir que A no es diagonalizable.6. Encuentre una matriz invertible P y una matriz C de la forma
+[a −b
+b a
+]
+tal que la matriz
+A =
+[ 1 −5
+1/2 0
+]
+tenga la forma A = P CP −1.
+Soluci´ on.Los valores propios de A son λ = 1 ± 3i2 , y v = [1 − 3i1 ] es el vector propio
+correspondiente al valor propio λ = 1 − 3i2 .
+Luego, sabemos que simplemente podemos tomar P =
+[
+Rev Imv
+]
+=
+[1 −3
+1 0
+]
+y
+C = P −1AP =
+[ 0 1
+−1/3 1 /3
+] [ 1 −5
+1/2 0
+] [1 −3
+1 0
+]
+=
+[1/2 −3/2
+3/2 1 /2
+]
+.
+Otra forma. Para λ = 1 + 3i2 un vector propio es w = v = [1 + 3i1 ]. Entonces, podemos
+obtener la matriz P =
+[
+Rew Imw
+]
+=
+[1 3
+1 0
+]
+y
+C = P −1AP =
+[ 0 1
+1/3 −1/3
+] [ 1 −5
+1/2 0
+] [1 3
+1 0
+]
+=
+[ 1/2 3 /2
+−3/2 1 /2
+]
+.
+Puntaje Pregunta 6.
+1,5 puntos por encontrar los valores propios de A.
+1,5 puntos por encontrar el vector propio de A asociado a λ = a − bi.
+1,5 puntos por encontrar la matriz P .
+1,5 puntos por encontrar la matriz C.7. Sea A =
+
+
+1 −1 0 1
+2 2 2 0
+−1 1 −1 1
+2 2 1 2
+
+. Determine una base para (Col( A))⊥.
+Soluci´ on.Sabemos que (Col( A))⊥ = Nul (AT )
+AT =
+
+
+1 2 −1 2
+−1 2 1 2
+0 2 −1 1
+1 0 1 2
+
+ ∼
+
+
+1 0 0 1
+0 1 0 1
+0 0 1 1
+0 0 0 0
+
+ .
+Luego el Nul
+(
+AT ) = Gen
+
+
+
+
+
+−1
+−1
+−1
+1
+
+
+
+
+ as ´ ı una base para (Col(A))⊥ es
+
+
+
+
+
+−1
+−1
+−1
+1
+
+
+
+
+ .
+Puntaje Pregunta 7.
+2 puntos por saber que (Col( A))⊥ = Nul (AT )
+2 puntos por encontrar la forma escalonada reducida de AT .
+2 puntos por encontrar el generado del espacio nulo de AT . (Cualquier m´ ultiplo del vector
+
+−1
+−1
+−1
+1
+
+ es una respuesta correcta).8. Sean y =
+
+
+4
+8
+1
+
+, u1 =
+
+
+2/3
+1/3
+2/3
+
+, u2 =
+
+
+−2/3
+2/3
+1/3
+
+ y W = Gen{u1, u2}. Calcule proy W y.
+Soluci´ on.Como U T U = I, entonces la columnas de U forman una base ortonormal para W y
+luego
+proyW y = U UT y =
+
+
+8/9 −2/9 2 /9
+−2/9 5 /9 4 /9
+2/9 4 /9 5 /9
+
+
+
+
+4
+8
+1
+
+ =
+
+
+2
+4
+5
+
+ .
+Puntaje Pregunta 8.
+2 puntos por veriﬁcar que U T U = I
+2 puntos por saber que proy W y = U UT
+2 puntos por calcular U UT y.
+En caso de no usar que las columnas de U forman una base ortonormal de W , entonces otorgar
+6 puntos por obtener correctamente la proyecci´ on de y sobre W .

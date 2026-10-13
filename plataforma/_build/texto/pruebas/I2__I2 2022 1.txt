@@ -1,0 +1,464 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer semestre de 2022
+MAT1203 – ´Algebra Lineal
+Soluci´ on Interrogaci´ on 2
+1. Sea A =
+
+
+1 −2 1
+−1 1 2
+1 −2 3
+
+. Encontrar (expl ´ ıcitamente), si es que existe, una matriz B tal que
+AB = A2 + 3A.
+Soluci´ on.Si la matriz A es invertible, entonces multiplicando por A−1 a la izquierda obtenemos
+AB = A2 + 3A ⇐ ⇒A−1(AB) = A−1(A2 + 3A) ⇐ ⇒B = A + 3I .
+Luego la matriz B existe si A es invertible y puesto que
+A =
+
+
+1 −2 1
+−1 1 2
+1 −2 3
+
+ ∼
+
+
+1 −2 1
+0 −1 3
+0 0 2
+
+ ,
+A es equivalente a la identidad y, por lo tanto es invertible. As ´ ı que la ma triz B existe y
+est´ a dada por
+B = A + 3I =
+
+
+4 −2 1
+−1 4 2
+1 −2 6
+
+ .
+Puntaje Pregunta 1.
+2 puntos por encontrar una expresi´ on algebraica para la matriz B.
+2 puntos por mostrar que A es invertible.
+2 puntos por exhibir expl ´ ıcitamente la matriz B.2. Sea A =
+
+
+3 −7 −2 2
+−3 5 1 0
+6 −4 0 −5
+−9 5 −5 12
+
+. Encuentre una factorizaci´ on de la forma A = LU, con L trian-
+gular inferior (con unos en la diagonal) y U triangular superior.
+Soluci´ on.Buscaremos la forma escalonada de A solo usando operaciones elementales de re-
+emplazo de ﬁlas
+A =
+
+
+3 −7 −2 2
+−3 5 1 0
+6 −4 0 −5
+−9 5 −5 12
+
+ ∼
+
+
+3 −7 −2 2
+0 −2 −1 2
+0 10 4 −9
+0 −16 −11 18
+
+ ∼
+
+
+3 −7 −2 2
+0 −2 −1 2
+0 0 −1 1
+0 0 −3 2
+
+ ∼
+
+
+3 −7 −2 2
+0 −2 −1 2
+0 0 −1 1
+0 0 0 −1
+
+ = U .
+Las entradas resaltadas en la reducci´ on a la forma escalonada, de terminan la reducci´ on por
+ﬁlas de A a U. En cada columna pivote, divida las entradas resaltadas entre el piv ote y coloque
+el resultado en L: 
+
+3
+−3
+6
+−9
+
+ −210
+−16
+
+[ −1
+−3
+]
+[
+−1
+]
+÷3 ÷(−2) ÷(−1) ÷(−1)
+↓ ↓ ↓ ↓
+
+1
+−1 1
+2 −5 1
+−3 8 3 1
+
+ =⇒ L =
+
+
+1 0 0 0
+−1 1 0 0
+2 −5 1 0
+−3 8 3 1
+
+
+Un c´ alculo f´ acil comprueba que estasL y U satisfacen que LU = A.
+Puntaje Pregunta 2.
+3 puntos por encontrar la matriz U.
+3 puntos por encontrar la matriz L.3. Suponga que A = BU con
+B =
+
+
+−1 1 0 0
+2 0 −1 0
+1 −1 3 2
+−1/2 0 0 0
+
+ y U =
+
+
+1/9 0 −1 0
+0 1 −1 0
+0 0 3 −8
+0 0 0 1 /7
+
+
+Calcule det(3 A).
+Soluci´ on.Como U es triangular superior, entonces det( U) = 19 · 1 · 3 · 17 = 121 .Por otra parte, tres intercambios de ﬁla reducen B en una matriz triangular inferior
+B ∼
+
+
+−1/2 0 0 0
+−1 1 0 0
+2 0 −1 0
+1 −1 3 2
+
+ = B1
+por lo que det( B) = − det(B1) = −
+(
+−12 · 1 · (−1) · 2) = −1. Entonces
+det(3A) = 3 4 det(BU ) = 81 det( B) det(U) = −8121 = −277 .
+Puntaje Pregunta 3.
+1,5 puntos por obtener el determinante de la matriz U.
+1,5 puntos por obtener el determinante de la matriz B.
+1,5 puntos por usar las propiedades del determinante para obtene r que det(A) = det( B) det(U).
+1,5 puntos por usar la propiedades del determinante para obtener que det(3A) = 3 4 det(A).4. Utilizando el m´ etodo de Cramer determine la segunda columna de lainversa de A =
+
+
+2 4 6
+4 5 6
+3 1 −2
+
+.
+Soluci´ on.Para determinar la segunda columna de la inversa de A, se debe resolver el sistema
+matricial Ax = e2. Como det( A) = 6 ⁄= 0, este sistema tiene soluci´ on ´ unica. Luego aplicando
+la regla de Cramer al vector x =
+
+
+x1
+x2
+x3
+
+ es soluci´ on de este sistema y sus componentes son:
+x1 = det A1(x)det A =
+⏐⏐⏐⏐⏐⏐0 4 61 5 60 1 −2⏐⏐⏐⏐⏐⏐
+6 = 146 = 73
+x2 = det A2(x)det A =
+⏐⏐⏐⏐⏐⏐2 0 64 1 63 0 −2⏐⏐⏐⏐⏐⏐
+6 = −226 = −113
+x3 = det A3(x)det A =
+⏐⏐⏐⏐⏐⏐2 4 04 5 13 1 0 ⏐⏐⏐⏐⏐⏐
+6 = 106 = 53
+luego la segunda columna de la inversa de A es x =
+
+
+7/3
+−11/3
+5/3
+
+.
+Puntaje Pregunta 4.
+1,5 puntos por establecer que determinar la segunda columna de la inv ersa de A es
+equivalente a resolver el sistema Ax = e2.
+1,5 puntos por determinar el valor de x1.
+1,5 puntos por determinar el valor de x2.
+1,5 puntos por determinar el valor de x3.5. Sea W el conjunto de todos los vectores de la forma
+
+
+2s + 4t
+2s
+2s − 3t
+5t
+
+, donde s y t son n´ umeros reales.
+Demuestre que W es un subespacio de R4.
+Soluci´ on.Notemos que
+W =
+
+
+
+
+
+2s + 4t
+2s
+2s − 3t
+5t
+
+ | s, t ∈ R
+
+
+ =
+
+
+s
+
+
+2
+2
+2
+0
+
+ + t
+
+
+4
+0
+−3
+5
+
+ | s, t ∈ R
+
+
+ = Gen
+
+
+
+
+
+2
+2
+2
+0
+
+ ,
+
+
+4
+0
+−3
+5
+
+
+
+
+
+Luego W es un subespacio vectorial de R4.
+Puntaje Pregunta 5.
+6 puntos por mostrar que W es el conjunto generado de dos vectores.6. Sea P el paralelep ´ ıpedo enR3 que est´ a determinado por los vectores e1, e2 y e3 y sea P ′ el
+paralelep ´ ıpedo que est´ a determinado por los vectoresv1 =
+
+
+2
+1
+0
+
+, v2 =
+
+
+0
+2
+1
+
+ y v3 =
+
+
+1
+1
+2
+
+. V´ ease
+la ﬁgura.
+x
+y
+z
+e1
+e2
+e3
+P
+0
+x
+y
+z
+v1
+v2
+v3
+P ′
+0
+a) Determine una matriz A que representa la transformaci´ on lineal tal que T (e1) = v1,
+T (e2) = v2 y T (e3) = v3.
+b) Suponga que T (P ) = P ′. Determine el volumen del paralelep ´ ıpedo P ′.
+Soluci´ on.
+a) Tenemos que Ae1 = v1, Ae2 = v2 y Ae3 = v3. Entonces
+A = AI = A
+[
+e1 e2 e3
+]
+=
+[
+Ae1 Ae2 Ae3
+]
+=
+[
+v1 v2 v3
+]
+=
+
+
+2 0 1
+1 2 1
+0 1 2
+
+ .
+b) Tenemos que el determinante de la matriz A es
+det(A) =
+⏐⏐⏐⏐⏐⏐2 0 11 2 10 1 2 ⏐⏐⏐⏐⏐⏐ = 2 ⏐⏐⏐⏐2 11 2 ⏐⏐⏐⏐ + ⏐⏐⏐⏐1 20 1 ⏐⏐⏐⏐ = 2(4 − 1) + 1 = 7 .
+Se sabe que
+Vol(P ′) = Vol(P ) · | det(A)| = 1 · 7 = 7 .
+Puntaje Pregunta 6.
+3 puntos por determinar la matriz A.
+3 puntos por encontrar el Vol( S′).7. Determine una matriz A de manera que el espacio columna de A sea
+Col A =
+
+
+
+
+
+b − c
+2b − 5d
+b − 3c + 3d
+−c + d
+
+ | b, c, d ∈ R
+
+
+ .
+Soluci´ on.Un elemento en este conjunto se puede escribir como
+b
+
+
+1
+2
+1
+0
+
+ + c
+
+
+−1
+0
+−3
+−1
+
+ + d
+
+
+0
+−5
+3
+1
+
+ =
+
+
+1 −1 0
+2 0 −5
+1 −3 3
+0 −1 1
+
+
+
+
+b
+c
+d
+
+
+donde b, c y d son n´ umeros reales. Luego el conjunto es Col A donde A =
+
+
+1 −1 0
+2 0 −5
+1 −3 3
+0 −1 1
+
+.
+Puntaje Pregunta 7.
+6 puntos por encontrar la matriz A.8. Sea M2×2 el espacio vectorial de las matrices de 2 × 2, y se deﬁne T : M2×2 → M2×2 mediante
+T (A) = BA, donde B =
+[1 0
+3 1
+]
+.
+a) Demuestre que T es una transformaci´ on lineal.
+b) Encuentre el n´ ucleo de la transformaci´ on linealT .
+Soluci´ on.
+a) Debemos probar que, si α ∈ R, A1, A2 ∈ M2×2 entonces:
+T (A1 + A2) = T (A1) + T (A2).
+T (αA1) = αT (A1).
+En efecto, usando las propiedades distributivas de la multiplicaci´ on d e matrices vemos que
+T (A1 + A2) = B(A1 + A2) = BA1 + BA2 = T (A1) + T (A2)
+Adem´ as, se tiene que
+T (αA1) = B(αA1) = α(BA1) = αT (A1) .
+b) A est´ a en el n´ ucleo deT si T (A) = 0 (matriz cero) o equivalentemente
+BA =
+[0 0
+0 0
+]
+⇐ ⇒
+[1 0
+3 1
+] [a11 a12
+a21 a22
+]
+=
+[0 0
+0 0
+]
+⇐ ⇒
+[ a11 a12
+3a11 + a21 3a12 + a22
+]
+=
+[0 0
+0 0
+]
+Es sencillo ver que a11 = a12 = a21 = a22, por lo tanto Nul( T ) = {0}.
+Otra forma: Como B es invertible, multiplicando por B a la izquierda obtenemos
+BA = 0 ⇐ ⇒B−1(BA) = B−10 ⇐ ⇒A = 0 ,
+por lo que Nul( T ) = {0}.
+Puntaje Pregunta 8.
+1,5 puntos por mostrar que T (A1 + A2) = T (A1) + T (A2).
+1,5 puntos por mostrar que T (αA1) = αT (A1).
+3 puntos por mostrar que Nul( T ) = {0}.

@@ -1,0 +1,503 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+FACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+I2 MAT1203 - Algebra Lineal
+Octubre 3, 2013
+1. a) [ 3 pts.] Sean P =
+[
+0 1
+1 0
+]
+, L =
+[
+1 0
+3 1
+]
+, U =
+[
+−1 2
+0 −1
+]
+y P A = LU.
+Sin calcular A, AT , ni inversas ni productos de matrices obtenga solamente
+i) La soluci´ on deAx = [1, 2]T .
+ii) La soluci´ on de deAAT x = [1, 2]T .
+b) [ 3 pts.] Sea A matriz de 3× 4 tal que en una factorizaci´ on P A = LU la
+matriz U es sobreyectiva. Demuestre que A es sobreyectiva
+Soluci´ on:
+a) i) Para resolver Ax = b usando los factores P, L, U se resuelve primero Ly =
+P b y luego se resuelve U x = y [ 0.7 pts.]
+◦ Ly = P b⇔
+[
+1 0
+3 1
+][
+y1
+y2
+]
+=
+[
+0 1
+1 0
+][
+1
+2
+]
+=
+[
+2
+1
+]
+⇒ y1 = 2, y2 =−5
+[ 0.4 pts.]
+◦ U x = y ⇔
+[
+−1 2
+0 −1
+][
+x1
+x2
+]
+=
+[
+2
+−5
+]
+⇒ x1 = 5, x2 = 8 [ 0.4
+pts.]
+ii) ◦ A
+u
+z}|{
+AT x =
+[ 1
+2
+]
+⇔ Au =
+[ 1
+2
+]
+, A T x = u
+◦ La soluci´ on deAu =
+[ 1
+2
+]
+es u =
+[ 8
+5
+]
+por la parte (i).
+◦ Para resolver AT x = u se resuelve U T y = b y luego LT z = y y entonces
+x = P T z [ 0.9 pts.]
+◦ La soluci´ on deU T y =
+[ 8
+5
+]
+es y1 =−8, y2 =−21 [ 0.3 pts.]
+◦ La soluci´ on deLT z =
+[
+−8
+−21
+]
+es z1 = 55, z2 =−21. Por lo tanto
+[
+x1
+x2
+]
+= P T
+[
+55
+−21
+]
+=
+[
+−21
+55
+]
+[ 0.3 pts.]b) Una posible l´ ınea de argumentaci´ on es la siguiente:
+Si P A = LU entonces A y U son ﬁla equivalentes [ 1.0 pts.] y por lo tanto
+F er(A) = F er(U) [ 1.0 pts.] . Si U es sobreyectiva entonces F ER(U) tiene
+3 pivotes distintos de cero, uno en cada ﬁla, y por lo tanto F ER(A)) tiene 3
+pivotes distintos de cero, uno en cada ﬁla y por lo tanto A es sobreyectiva.
+Otra posible demostraci´ on es la siguiente:
+• Ax = b (*)⇔ P Ax = P b⇔ LU x = P b⇔ U x = L(− 1)P b(∗∗) [ 2.0
+pts.]
+• Como U es sobreyectiva, el sistema (**) siempre tiene soluci´ on y por lo
+tanto (*) tiene soluci´ on y entoncesU sobre implica A sobre. [ 1.0 pts.]2. a) [ 3 pts.] Escriba la forma cuadr´ atica
+F (x1, x2, x3) =−2 x12 + 4 x1x2− 8 x1x3− 3 x22 + 4 x2x3− 14x32
+en una forma diagonal F (x1, x2, x3) = d1y21 + d2y22 + d3y23 indicando expl´ ıci-
+tamente la matriz B de cambio de variables y = Bx que diagonaliza a F .
+Clasiﬁque la forma cuadr´ atica. Justiﬁque.
+b) [ 3 pts.] Demuestre que si A es sim´ etrica positiva deﬁnida yB es sim´ etrica
+invertible entonces A3 + 2B2 es sim´ etrica deﬁnida positiva.
+Soluci´ on:
+a) • F (x1, x2, x3) =
+
+
+x1
+x2
+x3
+
+
+T
+
+−2 2 −4
+2 −3 2
+−4 2 −14
+
+
+| {z }
+A sim´ etrica
+
+
+x1
+x2
+x3
+
+ [ 0.5 pts.]
+• Por Eliminaci´ on Gaussiana
+
+
+−2 2 −4
+2 −3 2
+−4 2 −14
+
+⇒
+
+
+−2 2 −4
+0 −1 −2
+0 −2 −6
+
+⇒
+
+
+−2 2 −4
+0 −1 −2
+0 0 −2
+
+
+Por lo tanto A = LDLT con L =
+
+
+1 0 0
+−1 1 0
+2 2 1
+
+, D =
+
+
+−2 0 0
+0 −1 0
+0 0 −2
+
+
+[ 1.0 pts.]
+• Entonces xT Ax = xT LDLT x = (LT x)T D
+y
+z}|{
+LT x = yT Dy =−2y21− y22− 2y23
+[ 0.5 pts.]
+• La matriz pedida es B = LT =
+
+
+1 −1 2
+0 1 2
+0 0 1
+
+ [ 0.5 pts.]
+• Puesto que la diagonal de D tiene todos sus elementos negativos, A es
+negativa deﬁnida [ 0.5 pts.]
+b) Sea C = A3 + 2B2, donde A es sim´ etrica deﬁnida positiva yB es sim´ etrica e
+invertible.
+• Demostramos que C es sim´ etrica.
+C T = (A3 + B2)T = (A3)T + (2B2)T = (AT )3 + 2(BT )2
+Pero AT = A y BT = B y por lo tanto C T = A3 + 2B2 = C y entonces C
+es sim´ etrica [ 1.0 pts.]
+• Demostramos que C es deﬁnida positiva. Suponemos que x⁄= ⃗0 y demos-
+tramos que xT Cx > 0◦ xT Cx = xT (A3 + 2B2)x = xT A3x + 2xT B2x [ 0.4 pts.]
+⋄ xT A3x = xT AAAx = xT AT AAx = ( Ax)T A(Ax) = uT Au, donde
+u = Ax [ 0.4 pts.]
+⋄ xT B2x = xT BBx = xT BT Bx = (Bx)T (Bx) = vT v, donde v = Bx
+[ 0.4 pts.]
+◦ Pero A deﬁnida positiva implica A invertible y entonces u = Ax⁄= ⃗0,
+pues x⁄= ⃗0 [ 0.2 pts.]
+◦ Similarmente B invertible y x⁄= ⃗0 implica v = Bx⁄= ⃗0 [ 0.2 pts.]
+◦ Pero
+⋄ u⁄= ⃗0 y A deﬁnida positiva implica uT Au > 0.
+⋄ v⁄= ⃗0⇒ vT v =∑ vi > 0
+◦ Por lo tanto xT Cx = uT Au|{z}
+>0
++2 vT v|{z}
+>0
+> 0 [ 0.4 pts.]3. a) [ 3 pts.] Sean F1, F2, F3 las ﬁlas primera, segunda y tercera, respectivamente
+de una matriz A de 3× 3. Si det(A) =−2 calcule justiﬁcadamente:
+i) El determinante de 2( AAT )2A−1.
+ii) El determinante de la matriz cuyas primera, segunda y tercera columnas
+son respectivamente 6F T1 − 2F T3 , 2F T3 ,−F T2 .
+b) [ 3 pts.] Escriba A y A−1 como el producto de matrices elementales, escri-
+biendo expl´ ıcitamente las matrices elementales y sus inversas, donde
+A =
+
+
+1 1 0
+2 2 1
+0 2 0
+
+
+Soluci´ on:
+a) i)
+C = 2(AAT )2A−1⇒| C| = |2(AAT )2A−1|
+= 2 3(|AAT|)2|A−1| [0,8pts.]
+= 2 3(|A||AT|)2 1|A| [0,4pts.]
+= 2 3 (|A|2)2
+|A| = 23|A|2
+= 8 ( −8) =−64 [ 0,3pts.]
+ii)
+|C| = |6F T1 − 2F T3 2F T3 − F T2|
+= 2 ( −1)|6F T1 − 2F T3 F T3 F T2| [0,5pts.]
+Sumando dos veces la columna 2 a la columna 1 se obtiene
+|C| = −2|6F T1 F T3 F T2| [0,5pts.]
+= −2· 6|F T1 F T3 F T2|
+= −12|F T1 F T3 F T2|
+= −8|F T1 F T2 F T3| intercambiando columnas
+= −8|AT|
+= −8|A|
+= −12 · 2 =−24 [ 0,5pts.]
+b) 
+
+1 1 0
+2 2 1
+0 2 0
+
+
+[ 1 0 0
+−2 1 0
+0 0 1
+]
+−→
+
+
+1 1 0
+0 0 1
+0 2 0
+
+
+[ 1 0 0
+0 0 1
+0 1 0
+]
+−→
+
+
+1 1 0
+0 2 0
+0 0 1
+
+[ 1 0 0
+0 1 /2 0
+0 0 1
+]
+−→
+
+
+1 1 0
+0 1 0
+0 0 1
+
+
+[ 1 −1 0
+0 1 0
+0 0 1
+]
+−→
+
+
+1 0 0
+0 1 0
+0 0 1
+
+ [1,0pts.]
+(0.5 puntos por el escalonado, 0.5 puntos por identiﬁcar correctamente las
+elementales)
+Por lo tanto
+
+
+1 −1 0
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 /2 0
+0 0 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+
+
+1 0 0
+−2 1 0
+0 0 1
+
+ A = I [0,5pts.]
+y
+A−1 =
+
+
+1 −1 0
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 /2 0
+0 0 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+
+
+1 0 0
+−2 1 0
+0 0 1
+
+ [0,5pts.]
+Entonces
+A =
+
+
+1 0 0
+−2 1 0
+0 0 1
+
+
+−1
+
+1 0 0
+0 0 1
+0 1 0
+
+
+−1
+
+1 0 0
+0 1 /2 0
+0 0 1
+
+
+−1
+
+1 −1 0
+0 1 0
+0 0 1
+
+
+−1
+=
+
+
+1 0 0
+2 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+
+
+1 0 0
+0 2 0
+0 0 1
+
+
+
+
+1 1 0
+0 1 0
+0 0 1
+
+ [1,0pts.]4. Determine si la aﬁrmaci´ on es VERDADERA o FALSA y justiﬁque su respuesta.
+a) [ 1.5 pts.] Si A es sim´ etrica yB es antisim´ etrica conAB = BA, entonces
+B3A + AB es antisim´ etrica.
+b) [ 1.5 pts.] El determinante de la matriz de n× n
+A =
+
+
+a b 0 0 ··· 0 0
+0 a b 0 ··· 0 0
+0 0 a b ··· 0 0
+0 0 0 a ··· 0 0
+... ... ... ... ... ... ...
+0 0 0 0 ··· a b
+b 0 0 0 ··· 0 a
+
+ Ai,i = a, i = 1, . . . , nAi,i+1 = b, i = 1, . . . , n− 1An,1 = bAp,q = 0, otros casos
+es det(A) = an + (−1)n+1bn.
+c) [ 1.5 pts.] Si A, B son sim´ etricas negativas deﬁnidas entoncesC =−2A−3B
+es sim´ etrica positiva deﬁnida.
+d) [ 1.5 pts.] Si A es de n× n de coeﬁcientes reales y A2 + I = O entonces n
+es un n´ umero par.
+Soluci´ on:
+a) VERDADERA. Sea C = B3A + AB
+C T = ( B3A + AB)T
+= ( B3A)T + (AB)T
+= AT (B3)T + BT AT
+= AT (BT )3 + BT AT
+= A(−B)3 + (−B)A
+= −
+(
+AB3 + BA) [0,7pts.]
+Pero AB = BA y entonces
+AB3 = ABB ” = BAB 2 = B(AB)B = B(BA)B = B2(AB) = B2(BA) = B3A
+Entonces C T =− (AB3 + BA) =−(B3A + AB) =−C [ 0.8 pts.] y por lo
+tanto C es antisim´ etrica.b) VERDADERA. desarrollando por cofactores por la primera columna se obtiene
+|A| =
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ a b 0 0 ··· 0 00 a b 0 ··· 0 00 0 a b ··· 0 00 0 0 a ··· 0 0... ... ... ... ... ... ...0 0 0 0 ··· a bb 0 0 0 ··· 0 a ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐
+= a
+es triangular superior
+de (n− 1)× (n− 1)
+z }| {⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ a b 0 ··· 0 00 a b ··· 0 00 0 a ··· 0 0... ... ... ... ... ...0 0 0 ··· a b0 0 0 ··· 0 a ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ +(−1)n+1b
+es triangular inferior
+de (n− 1)× (n− 1)
+z }| {⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ b 0 0 ··· 0 0a b 0 ··· 0 00 a b ··· 0 00 0 a ··· 0 0... ... ... ... ... ...0 0 0 ··· a b ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ [1,0pts.]
+= a· an−1 + (−1)n+1b· bn−1
+= an + (−1)n+1bn [0,5pts.]
+c) VERDADERO
+• C =−2A− 3B⇒ C T =−2At− 3BT =−2A− 3B = C y por lo tanto C
+es sim´ etrica [ 0.5 pts.]
+• Sea x⁄= ⃗0. Entonces
+xT Cx = xT (−2A− 3B) x
+= −2 xT Ax|{z}
+<0
+−3 xT Bx|{z}
+<0
+> 0 [ 1,0pts.]
+y entonces C es positiva deﬁnida
+d) VERDADERO
+A2 + I = O ⇒ A2 =−I
+⇒ |A2| =|− I|
+⇒ |A|2 = (−1)n [1,0pts.]
+Si n fuera impar entonces, A real implica|A| es un n´ umero real y por lo tanto
+se tendr´ ıa 0<|A|2 =−1, lo que es contradictorio. Por lo tanto, n es par. [
+0.5 pts.]

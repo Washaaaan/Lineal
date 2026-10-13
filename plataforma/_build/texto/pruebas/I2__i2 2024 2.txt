@@ -1,0 +1,311 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Segundo semestre 2024
+Pauta Interrogaci´ on 2 - MAT1203
+1. Sea T : R3 → R2 una transformaci´ on lineal tal que:
+T
+
+
+
+
+1
+1
+1
+
+
+
+ =
+ 2
+2
+
+, T
+
+
+
+
+0
+1
+1
+
+
+
+ =
+ 0
+4
+
+, T
+
+
+
+
+0
+0
+1
+
+
+
+ =
+ 6
+4
+
+.
+a) Determine la matriz de la transformaci´ on.
+b) ¿Es cierto que T transforma conjuntos linealmente en conjuntos linealmente independi-
+entes?.
+Soluci´ on:
+Observe que e2 =
+
+
+0
+1
+1
+
+ −
+
+
+0
+0
+1
+
+, por lo tanto T (e2) =
+ −6
+0
+
+, de manera an´ aloga tenemos
+que e1 =
+
+
+1
+1
+1
+
+ −
+
+
+0
+1
+1
+
+ y por lo tanto T (e1) =
+ 2
+−2
+
+, luego la matriz de la transformaci´ on
+es  2 −6 6
+−2 0 4
+
+.
+Observe que la matriz de la transformaci´ on tiene dos pivotes por lo que NO es inyectiva, luego
+NO todo conjunto l.i. es l.i. De hecho,
+
+
+
+
+
+12
+10
+6
+
+
+
+
+ es linealmente independiente pero su imagen
+es el vector nulo, por lo tanto no lo es.
+Distribuci´ on de puntajes:
+• (1 punto) Por determinar la imagen de e2
+• (1 punto) Por determinar la imagen de e1
+• (1 punto) Por determinar la matriz.
+• (1 punto) Por decir que NO.
+• (2 punto) Por justificar correctamente lo anterior, ya sea por argumento o ejemplo.2. Escriba la inversa de la matriz A =
+
+
+−6 2 1
+0 −3 0
+1 0 0
+
+ como producto de matrices elementales.
+Soluci´ on:
+Observe que al escalonar la matriz A tenemos lo siguiente
+
+
+−6 2 1
+0 −3 0
+1 0 0
+
+ F1 ↔ F3
+
+
+1 0 0
+0 −3 0
+−6 2 1
+
+
+F2 → −13 F2
+
+
+1 0 0
+0 1 0
+−6 2 1
+
+
+F3 → F3 + 6F1
+
+
+1 0 0
+0 1 0
+0 2 1
+
+
+F3 → F3 − 2F2
+
+
+1 0 0
+0 1 0
+0 0 1
+
+
+de lo anterior tenemos que
+
+
+1 0 0
+0 1 0
+0 −2 1
+
+ ·
+
+
+1 0 0
+0 1 0
+6 0 1
+
+ ·
+
+
+1 0 0
+0 −1/3 0
+0 0 1
+
+ ·
+
+
+0 0 1
+0 1 0
+1 0 0
+
+ · A = Id
+por lo tanto
+A−1 =
+
+
+1 0 0
+0 1 0
+0 −2 1
+
+ ·
+
+
+1 0 0
+0 1 0
+6 0 1
+
+ ·
+
+
+1 0 0
+0 −1/3 0
+0 0 1
+
+ ·
+
+
+0 0 1
+0 1 0
+1 0 0
+
+ .
+Distribuci´ on de puntajes:
+• (1 punto) Por escalonar hasta llegar a la identidad.
+• (1 punto x4) Por cada matriz elemental del escalonamiento
+• (1 punto) Por escribir explic ´ ıtamente la inversa de A como productos de elementales.3. a) Sea A una matriz de 3 × 3 con determinante -3 y sean B, Cdos matrices de 3 × 3 tales
+que:
+. B es la matriz que se obtiene al realizar la siguiente operaci´ on en A: A la fila tres se
+le suma dos veces la fila 1.
+. C es la matriz que se obtiene al realizar la siguiente operaci´ on en A: Se intercambia
+la fila 2 con la fila 3.
+Determine el determinante de la matriz D = 2A−1CB T .
+Soluci´ on:
+Del enunciado tenemos que|B| = |A| = 3, ya que esa operaci´ on no cambia el determinante,
+|C| = −|A| = 3, por propiedades sabemos que |A−1| = |A|−1 = − 13 y que |B| = |BT |, porlo tanto
+|D| = 23|A|−1|C| · |B| = 8 · −13 · 3 · −3 = 24.
+Distribuci´ on de puntajes:
+– (0.5 punto) Por determinar el determinante de B.
+– (0.5 punto) Por determinar el determinante de C.
+– (0.5 punto) Por 2 3.
+– (0.5 punto) Por determinante de la inversa.
+– (0.5 punto) Por determinante de la traspuesta.
+– (0.5 punto) Por respuesta final.
+b) Use la regla de Cramer para encontrar la segunda columna de la inversa de la matriz
+
+
+−1 0 1
+3 2 1
+1 1 −1
+
+
+Soluci´ on:
+Si A =
+
+
+−1 0 1
+3 2 1
+1 1 −1
+
+, tenemos que la segunda columna de la inversa de A es la soluci´ on
+del sistema Ax = e2. Observe que |A| = 4 y entonces usando la regla de Cramer para
+resolver el sistema tenemos que
+xi = 14 |Ai(e2)|.
+Al calcular obtenemos que
+x1 =
+ 0 0 11 2 10 1 −1 
+4 = 14 , x2 =
+ −1 0 13 1 11 0 −1 
+4 = 0, x1 =
+ −1 0 03 2 11 1 0 
+4 = 14 ,por lo tanto la segunda columna de la inversa de la matriz A es
+
+
+1/4
+0
+1/4
+
+ .
+Distribuci´ on de puntajes:
+– (0.5 punto) Por plantear correctamente el sistema.
+– (0.5 punto) Por determinar el determinante de A.
+– (0.5 punto) Por x1
+– (0.5 punto) Por x2
+– (0.5 punto) Por x3
+– (0.5 punto) Por respuesta final.
+4. Demuestre las siguientes afirmaciones:
+a) Si el conjunto {u, v, w} de vectores en Rn es linealmente independiente, entonces el con-
+junto {u − v, u + v, w} tambi´ en es linealmente independiente.
+Soluci´ on:
+Si α(u − v) +β(u + v) +γw = 0, tenemos que ( α + β)u + (β − α)v + γw = 0, como u, v, w
+es l.i. tendremos que α + β = 0, β− α = 0, γ= 0 y por lo tanto
+α = β = γ = 0
+por lo tanto el conjunto {u − v, u + v, w} es linealmente independiente.
+b) Si A y B son matrices de n × n tales que ABT es invertible entonces B es invertible.
+Soluci´ on:
+Como ABT es invertible, existe C tal que C(ABT ) = Id, entonces (CA)BT = Id, es decir
+CA es la inversa de BT , entonces BT es invertible, luego B tambi´ en lo es.
+c) Si A es una matriz de n × n y las columnas de A2 generan Rn entonces las columnas de
+A son linealmente independientes.
+Soluci´ on:
+Si las columnas de A2 generan Rn tenemos que A es invertible y por lo tanto |A2| ̸= 0,
+como |A2| = |A|2 tenemos que |A| ̸= 0 y por lo tanto A es invertible y de este forma las
+columnas son l.i.
+Distribuci´ on de puntajes:
+• (2 puntos) Por demostraci´ on correcta de a).
+• (2 puntos) Por demostraci´ on correcta de b).
+• (2 puntos) Por demostraci´ on correcta de c).

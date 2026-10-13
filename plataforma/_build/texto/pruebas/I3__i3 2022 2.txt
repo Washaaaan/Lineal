@@ -1,0 +1,293 @@
+Pontificia Universidad Cat´olica De Chile
+F acultad De Matem´aticas
+Departamento De Matem´atica
+Segundo Semestre 2022
+´Algebra Lineal - MAT1203
+PAUTA Interrogaci´ on 3
+1. Determine si las siguientes afirmaciones son verdaderas o falsas.
+(a) La dimensi´ on del espacio vectorial de los polinomios de coeficientes reales de grado
+a lo m´ as 4 es 4 .
+(b) Si el espacio vectorial V se genera con el conjunto {v1, v2, v3} entonces dim V = 3.
+Soluci´ on :
+(a) Falso. El espacio tiene dimensi´ on 5 ya que una base del espacio vectorial es
+{1, x, x2, x3, x4} que tiene 5 elementos.
+(b) Falso. Si v1 = v2 = v3 y V = Gen{v1, v2, v3} entonces dim V = 1.
+Puntaje
+• 1 puntos por decidir correctamente si cada ´ ıtem es verdadero o falso (2 en total).
+• 2 puntos por justificar correctamente cada ´ ıtem (4 en total).
+2. Si una matriz A de 7 × 5 tiene rango 2 , determine dim(Nul( A)), dim(Fil(A)), el rango
+de AT y dim(Nul(AT)).
+Soluci´ on Por el teorema del rango,
+dim NulA + rango ( A) = 5,
+por lo que dim Nul(A) = 3.
+Adem´ as, dim Fil(A) = rango(A) = 2.
+Por otro lado, rango( AT ) = rango(A) = 2.Finalmente, por el teorema del rango pero ahora aplicado a AT (matriz de 5 × 7) se
+tiene
+dim Nul(AT ) + rango ( AT ) = 7
+lo que implica que dim Nul( AT ) = 5.
+Puntaje
+• 2 puntos por determinar dim Nul( A).
+• 1 punto por determinar dim Fil( A).
+• 1 punto por determinar rango de AT .
+• 2 puntos por determinar dim Nul( AT ).
+3. En P2, el espacio de los polinomios de grado a lo m´ as dos, encuentre la matriz de cambio
+de coordenadas de la base
+B =
+
+1 − 2t + t2, 3 − 5t + 4t2, 2t + 3t2	
+a la base est´ andar deC = {1, t, t2}. Luego, encuentre el vector de B-coordenadas para
+−1 + 2t
+Soluci´ on La matriz de cambio de coordenadas desde B a C es
+MB→C =
+[1 − 2t + t2]B [3 − 5t + 4t2]B [2t + 3t2]B =
+
+
+1 3 0
+−2 −5 2
+1 4 3
+
+ .
+Se tiene que
+MB→C[−1 + 2t]B = [−1 + 2t]C
+es decir 
+
+1 3 0
+−2 −5 2
+1 4 3
+
+ ⃗ x=
+
+
+−1
+2
+0
+
+ , ⃗ x= [−1 + 2t]B.
+Resolviendo el sistema de ecuaciones se tiene [ −1 + 2t]B = ⃗ x=
+
+
+5
+−2
+1
+
+ .
+Puntaje
+• 2 puntos por determinar la matriz MB→C.
+• 2 puntos por establecer la relaci´ on que cumple M y los vectores de coordenadas.
+Esto puede ser a trav´ es de la ecuaci´ on matricial que se ve en la soluci´ on o directa-
+mente a trav´ es de un sistema de ecuaciones.
+• 2 puntos por determinar el vector de B-coordenadas de −1 + 2t.4. Sea A una matriz cuadrada invertible que cumple que A4 − 7A3 = 0. Explique porqu´ e
+7 es un valor propio de A.
+(Pista: Puede aplicar determinante a la ecuaci´ on del enunciado)
+Soluci´ on 1 Como A4 − 7A3 = 0 entonces A3(A − 7I) = 0. Aplicando determinante:
+det(A3(A − 7I)) = 0 =⇒ |A|3|A − 7I| = 0
+Como A es invertible, entonces |A| ̸= 0, por lo que |A − 7I| = 0, lo que implica que 7
+es ra ´ ız del polinomio caracter ´ ıstico deA y por lo tanto un valor propio.
+Soluci´ on 2 Como A es invertible existe la matriz ( A−1)3 y por lo tanto para un vector
+v ̸= 0 se tiene:
+(A−1)3(A4 − 7A3)v = 0
+=⇒ (A − 7I)v = 0
+=⇒ Av = 7v
+lo que implica que 7 es valor propio de A.
+Puntaje
+• 2 puntos por establecer una condici´ on necesaria para que 7 sea un valor propio.
+(aunque no la demuestre)
+• 2 puntos por demostrar correctamente la condici´ on que implica que 7 es valor
+propio.
+• 2 puntos usar de manera correcta el hecho que A sea invertible.
+5. Determine h en la matriz A, tal que el espacio propio para λ = 4 tenga dimensi´ on 2:
+A =
+
+
+4 2 3 3
+0 2 h 3
+0 0 4 14
+0 0 0 2
+
+
+Soluci´ on El espacio propio E(4) es por definici´ on Nul(A − 4I). Analizamos la matriz
+ampliada (A − 4I|0):
+
+
+0 2 3 3
+0 −2 h 3
+0 0 0 14
+0 0 0 −2
+ 0000  ∼  0 2 3 00 0 h + 3 00 0 0 10 0 0 0  0000 
+Para que dim Nul(A − 7I) = 2, matriz ampliada debe tener 2 variables libres, lo que se
+cumple si y s´ olo sih = −3.Puntaje
+• 2 puntos por establecer (expl ´ ıcita o impl ´ ıcitamente) queE(4) = Nul(A − 7I).
+• 2 puntos por relacionar las variables libres del sistema con la dimensi´ on del espacio
+propio.
+• 2 puntos por concluir correctamente que h = −3.
+6. Determine si la siguiente matriz es diagonalizable. En caso afirmativo, determine una
+matriz P invertible y una matriz D diagonal tal que A = P DP−1.
+A =
+
+
+2 −3 7
+0 5 1
+0 0 −1
+
+
+Soluci´ on Los valores propios de A son 2, 5 y −1. Como son todos distintos, A es
+diagonalizable. Determinamos los vectores propios de A:
+(A − 2I|0) ∼
+
+
+0 −3 7
+0 3 1
+0 0 −3
+ 000  ∼  0 1 00 0 10 0 0  000  =⇒ E(2) = Gen 100
+(A − 5I|0) ∼
+
+
+−3 −3 7
+0 0 1
+0 0 −6
+ 000  ∼  1 1 00 0 10 0 0  000  =⇒ E(5) = Gen −110 
+(A + I|0) ∼
+
+
+3 −3 7
+0 6 1
+0 0 0
+ 000  ∼  2 0 50 6 10 0 0  000  =⇒ E(−1) = Gen −1516 
+Luego las matrices P =
+
+
+1 −1 −15
+0 1 1
+0 0 6
+
+ y D =
+
+
+2 0 0
+0 5 0
+0 0 −1
+
+ satisfacen que A =
+P DP−1.
+Puntaje
+• 1 punto por justificar correctamente que A si es diagonalizable.
+• 1 punto por encontrar un vector propio de cada valor propio (3 puntos en total)
+• 1 punto por escribir expl ´ ıcitamente la matrizP .
+• 1 punto por escribir expl ´ ıcitamente la matrizD.7. Sea B = {b1, b2, b3} una base para un espacio vectorial V . Encuentre T (4b1 − 3b2)
+cuando T es una transformaci´ on lineal deV a V cuya matriz respecto a B es
+[T ]B =
+
+
+0 0 1
+2 1 −2
+1 3 1
+
+
+Soluci´ on 1 Para encontrar T (4b1 − 3b2) calculamos su B-coordenadas usando la rep-
+resentaci´ on matricial deT :
+[T (4b1 − 3b2)]B = [T ]B[4b1 − 3b2]B =
+
+
+0 0 1
+2 1 −2
+1 3 1
+
+
+
+
+4
+−3
+0
+
+ =
+
+
+0
+5
+5
+
+ .
+Esto implica que T (4b1 − 3b2) = 5b2 − 5b3.
+Soluci´ on 2 De la definici´ on de [T ]B se tiene que:
+[T (b1)]B =
+
+
+0
+2
+1
+
+ =⇒ T (b1) = 2b2 + b3
+[T (b2)]B =
+
+
+0
+1
+3
+
+ =⇒ T (b2) = b2 + 3b3
+Por lo tanto
+T (4b1 − 3b2) = 4T (b1) − 3T (b2) = 4(2b2 + b3) − 3(b2 + 3b3) = 5b2 − 5b3.
+Puntaje
+• 2 puntos por concluir correctamente informaci´ on acerca de la matriz [ T ]B. Puede
+ser que cumple con una determinada ecuaci´ on o definir sus columnas.
+• 2 puntos por establecer una manera de encontrar T (4b1 − 3b2) (no es necesario
+que lo resuelva).
+• 2 puntos por determinar T (4b1 − 3b2).
+8. Considere la matriz A =
+
+2 −1
+2 0
+
+. Determine matrices P invertible y C =
+
+a −b
+b a
+
+tales que A = P CP−1.Soluci´ on Determinamos los valores propios de A:
+det(A − λI) = det
+
+2 − λ −1
+2 −λ
+
+= λ2 − 2λ + 2 = 0 ⇔ λ = 1 ± i.
+Determinamos vectores propios:
+(A − (1 − i)I|0) ∼
+
+1 + i −1
+2 −1 + i
+ 00  ∼  1 + i −10 0  00 
+Esto implica que los vectores propios asociados a 1 − i son generados por el vector
+v =
+
+1
+1 + i
+
+=
+
+1
+1
+
++ i
+
+0
+1
+
+donde la parte real y la parte imaginaria son vectores linealmente independientes. Por
+lo tanto, si definimos P =
+
+1 0
+1 1
+
+y C =
+
+1 −1
+1 1
+
+se tiene que A = P CP−1.
+Puntaje
+• 1 punto por encontrar los valores propios de A.
+• 2 puntos por determinar un vector propio complejo de A.
+• 1 punto por determinar correctamente la parte real y la parte imagina del vector
+propio anterior.
+• 1 punto por definir P usando la parte real y la parte imaginaria del vector propio.
+• 1 punto por definir correctamente C.

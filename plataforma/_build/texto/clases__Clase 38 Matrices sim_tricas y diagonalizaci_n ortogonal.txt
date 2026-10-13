@@ -1,0 +1,182 @@
+
+----- pagina 1 -----
+Clase 38 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 8
+----- pagina 2 -----
+Recordatorio
+Una matriz cuadrada se dice diagonalizable si A = PDP−1 para
+alguna matriz invertible P y matriz diagonal D.
+Una matriz A de n × n es diagonalizable si y solo si tiene n vectores
+propios LI. En tal caso, P tiene como columnas tales vectores propios,
+y D tiene en la diagonal los valores propios asociados.
+Un conjunto {u1, . . . ,up} se dice ortogonal si cada par de vectores
+distintos en el conjunto es ortogonal.
+2 / 8
+----- pagina 3 -----
+Diagonalización de matrices simétricas
+Definición: Matriz simétrica
+Una matriz simétrica es una matriz A tal que AT = A. Esta matriz es
+necesariamente cuadrada. Sus entradas en la diagonal principal son
+arbitrarias, pero sus otras entradas se presentan por pares, en lados
+opuestos de la diagonal principal.
+Ejemplo: De las siguientes matrices, identifique cuáles son simétricas y
+cuáles no.
+[ 1 −3
+−3 5
+]
+,
+
+
+1 −4 0
+−6 1 −4
+0 −6 1
+
+ ,
+[ 5 4
+3 2
+]
+,
+
+
+0 −1 0
+−1 5 8
+0 8 −7
+
+
+3 / 8
+----- pagina 4 -----
+Diagonalización de matrices simétricas
+Ejemplo: Si es posible, diagonalice la matriz
+A =
+
+
+6 −2 −1
+−2 6 −1
+−1 −1 5
+
+
+Nota: Los valores propios de la matriz son 8, 6 y 3, con vectores propios
+asociados v1 =
+
+
+−1
+1
+0
+
+, v2 =
+
+
+−1
+−1
+2
+
+ y v3 =
+
+
+1
+1
+1
+
+.
+4 / 8
+----- pagina 5 -----
+Diagonalización de matrices simétricas
+Teorema
+Si A es una matriz simétrica, entonces cualesquiera dos vectores propios de
+diferentes espacios propios son ortogonales.
+Definición: Diagonalización ortogonal
+Una matriz A de n × n es diagonalizable ortogonalmente si existe una
+matriz ortogonal P (con P−1 = PT) y una matriz diagonal D tales que
+A = PDPT = PDP−1
+5 / 8
+----- pagina 6 -----
+Diagonalización de matrices simétricas
+Teorema
+Una matriz A de n × n es diagonalizable ortogonalmente si y solo si A es
+una matriz simétrica.
+Ejemplo: Diagonalice ortogonalmente la matriz
+A =
+
+
+3 −2 4
+−2 6 2
+4 2 3
+
+
+Nota: Los valores propios de la matriz son 7 y −2. Los vectores propios
+son v1 =
+
+
+1
+0
+1
+
+ y v2 =
+
+
+−1
+2
+0
+
+ asociados a λ = 7, y v3 =
+
+
+−1
+−1
+1
+
+
+asociado a λ = −2.
+6 / 8
+----- pagina 7 -----
+Diagonalización de matrices simétricas
+Teorema: El Teorema Espectral para matrices simétricas
+Una matriz A simétrica de n × n tiene las siguientes propiedades:
+A tiene n valores propios reales, contando las multiplicidades.
+La dimensión del espacio propio para cada valor propio λ es igual a la
+multiplicidad aritmética de λ.
+Los espacios propios son mutuamente ortogonales, en el sentido de
+que los vectores propios correspondientes a valores propios diferentes
+son ortogonales.
+A es diagonalizable ortogonalmente.
+7 / 8
+----- pagina 8 -----
+Diagonalización de matrices simétricas
+Descomposición Espectral
+Suponga que A = PDP−1, donde las columnas de P son vectores propios
+ortonormales u1, . . . ,un de A y los elementos diagonales correspondientes
+de D son los valores propios λ1, . . . , λn. Entonces
+A = λ1u1uT1 + λ2u2uT2 + · · · + λnunuTn
+Esta representación de A se llama descomposición espectral de A.
+Ejemplo: Construya una descomposición espectral de la matriz A que
+tiene la diagonalización ortogonal
+A =
+[ 7 2
+2 4
+]
+Nota:
+[ 7 2
+2 4
+]
+=
+[ 2/√5 −1/√5
+1/
+√
+5 2 /
+√
+5
+] [ 8 0
+0 3
+] [ 2/√5 1 /√5
+−1/
+√
+5 2 /
+√
+5
+]
+8 / 8

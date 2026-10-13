@@ -1,0 +1,448 @@
+PONTIFICIA UNIVERSIDAD CAT ´OLICA DE CHILE
+FACULTAD DE MATEM´ATICAS
+DEPARTAMENTO DE MATEM´ATICA
+I3 MAT1203 - ´Algebra Lineal
+Junio 17, 2013
+1. a) Sean B,C bases de P2 (el espacio vectorial de los polinomios de grado menor o
+igual a 2) dondeB ={1 +t, 1 +t2,t +t2} y
+Q =
+
+
+1 0 1
+0 2 1
+0 1 1
+
+
+es la matriz de cambio de coordenadas tal que para p∈ P2 se tiene
+[p]C =Q [p]B.
+Determine la baseC
+b) Si la matriz que representa a la transformaci´ on linealT : P2→ P2 con respecto
+a la base
+B ={1, 1 +t, 1 +t +t2}
+es
+A = [T ]B =
+
+
+1 −1 0
+2 1 1
+0 1 1
+
+,
+determine T (a0 +a1t +a2t2).
+Soluci´ on
+a) Si [ p]C = Q [p]B entonces Q−1[p]C = [ p]B. Por lo tanto PB←C = Q−1 y las
+columnas de Q−1 indican como combinar los elementos de la base en B para
+obtener la baseC
+Como
+Q−1 =
+
+
+1 0 1
+0 2 1
+0 1 1
+
+
+−1
+=
+
+
+1 1 −2
+0 1 −1
+0 −1 2
+
+tenemos queC ={p1,p 2,p 3} donde
+p1 = 1 · (1 +t) + 0· (1 +t2) + 0· (t +t2) = 1 +t
+p2 = 1 · (t + 1) + 1· (1 +t2)− 1· (t +t2) = 2
+p3 = ( −2)· (t + 1) + (−1)· (1 +t2) + (2)· (t +t2) =t2− 3
+Asignaci´ on de puntos:
+2.5 pts. por el m´ etodo correcto y 0.5 pts. por c´ alculos aritm´ eti-
+cos.
+Si combinan los elementos de B usando los elementos de las columnas de
+Q en vez de las columnas de Q−1 1.0 pts.
+b) Sean p1 = 1,p 2 = 1 + t,p 3 = 1 + t +t2. Sea p = a0 +a1t +a2t2. Entonces
+p = (a0−a1) + (a1−a2)p2 +a2p3 y por lo tanto
+[p]B =
+
+
+a0−a1
+a1−a2
+a2
+
+ 1.0 pts.
+Entonces,
+[T (p)]B =A[p]B =
+
+
+1 −1 0
+2 1 1
+0 1 1
+
+
+
+
+a0−a1
+a1−a2
+a2
+
+ =
+
+
+a0− 2 a1 + a2
+2 a0− a1
+a1
+
+ 1.0 pts.
+Entonces
+T (p) = ( a0− 2a1 +a2)·p1 + (2a0−a1)p2 +a1p3
+= ( a0− 2a1 +a2) + (2a0−a1)(1 +t) +a1(1 +t +t2)
+= (3 a0− 2a1 +a2) + (2a0)t +a1t2 1.0 pts.
+Criterio general: Asignar 2.5 puntos por el m´ etodo correcto y 0.5 por la aritm´ eti-
+ca. Por ejemplo, si el m´ etodo est´ a correcto y nombran los resultados interme-
+dios usando correctamente a ´ estos en las f´ ormulas posteriores sin evaluar las
+expresiones, asignar 2.5 pts y 0.5 por la evaluaci´ on.
+Otra manera de resolver el problema es la siguiente:
+La matriz de cambio de coordenadas de B a la base can´ onica es
+Q =
+
+
+1 1 1
+0 1 1
+0 0 1
+
+ [0,5pts.]La matriz que representa a la transformaci´ on lineal con respecto de la base
+can´ onica es entonces
+B = QAQ−1 =
+
+
+1 1 1
+0 1 1
+0 0 1
+
+
+
+
+1 −1 0
+2 1 1
+0 1 1
+
+
+
+
+1 1 1
+0 1 1
+0 0 1
+
+
+−1
+1.0 pts.
+Evaluando esta expresi´ on se obtiene
+B =
+
+
+3 −2 1
+2 0 0
+0 1 0
+
+ 0.5 pts.
+Entonces
+B
+
+
+a0
+a1
+a2
+
+ =
+
+
+3a0− 2a1 +a2
+2a0
+a1
+
+
+Por lo tanto T (p) = (3a0− 2a1 +a2) + (2a0)t + (a1)t2 1.0 pts.
+El criterio general para este m´ etodo es similar al primer m´ etodo: Si el m´ etodo
+es correcto asignar 2.5 puntos y 0.5 por que la aritm´ etica es correcta. Si usan
+err´ oneamente la formulaB =Q−1AQ y todo el resto est´ a correcto asignar 1.5
+puntos.
+Notar que tambi´ en es correctoB =P−1AP , etc...
+2. a) Sea A =
+
+
+0 −2 2
+−2 0 2
+−2 −2 4
+
+. Diagonalice A y use esta factorizaci´ on para calcular
+A2013.
+b) Si los valores propios de A son reales y Av = λv, con v⁄= ⃗0 demuestre que
+A2 +I tiene inversa y que (λ2− 2λ + 3)/(λ2 + 1) es valor propio de
+C = (A2− 2A + 3I)(A2 +I)−1
+con vector propio v.
+Soluci´ on
+a) La ecuaci´ on caracter´ ıstica es
+PA(λ) =
+
+
+−λ −2 2
+−2 −λ 2
+−2 −2 4 −λ
+
+ =−λ3 + 4λ2− 4λ =−λ (λ− 2)2 = 0Los valores propios son λ1 = 0 y λ2 = 2 1.0 pts.
+Paraλ1 = 0, el subespacio propio es Wλ1 =Nul(A− 0·I) = Nul(A). Puesto
+que la escalonada reducida de A es
+rref (A) =
+
+
+1 0 −1
+0 1 −1
+0 0 0
+
+
+tenemos que Nul(A) =Gen{
+
+
+1
+1
+1
+
+} 0.5 pts. .
+Paraλ2 = 2, el subespacio propio es Wλ2 =Nul(A− 2·I). Puesto que
+Bλ2 =A− 2I =
+
+
+−2 −2 2
+−2 −2 2
+−2 −2 2
+
+
+tenemos que
+Wλ2 =Gen{
+
+
+1
+0
+1
+
+,
+
+
+−1
+1
+0
+
+} 0.5 pts.
+Como para λ1,λ 2, las multiplicidades algebraicas son iguales a las multiplici-
+dades geom´ etricasA es diagonalizable y
+A =VDV −1 =
+
+
+1 1 −1
+1 0 1
+1 1 0
+
+
+
+
+0 0 0
+0 2 0
+0 0 2
+
+
+
+
+1 1 −1
+1 0 1
+1 1 0
+
+
+−1
+0.5 pts.
+Entonces
+A2013 =VD 2013V−1A =VDV −1 =
+
+
+1 1 −1
+1 0 1
+1 1 0
+
+
+
+
+0 0 0
+0 2 2013 0
+0 0 2 2013
+
+
+
+
+1 1 −1
+1 0 1
+1 1 0
+
+
+−1
+0.5 pts.
+b) Sea v⁄=⃗0 y Av =λv. Entonces
+(A2 +I)v =A2v +v =λ2v +v = (λ2 + 1)v 0.6 pts.• Suponiendo A diagonalizable: (no descontar puntos si no suponen es-
+to), puesto que λ∈ R, λ2 > 0 y tenemos que los valores propios de
+(A2 +I) son de la forma λ2 + 1 > 0 y entonces A2 +I tiene inversa
+pues 0 no es valor propio. 0.6 pts.
+• Adem´ as de (*) se tiene (A2 +I)−1v = 1λ2 + 1v 0.6 pts.
+Tambi´ en (A2−2A+3I)v =A2v−2Av+3v =λ2v−2λv+3v = (λ2−2λ+3)v
+0.6 pts.
+Por lo tanto
+(A2− 2A + 3I)(A2 +I)−1v = ( A2− 2A + 3I)( 1λ2 + 1)v
+= 1λ2 + 1(A2− 2A + 3I)(v)
+= 1λ2 + 1(λ2− 2λ + 3)(v)
+= λ2− 2λ + 3λ2 + 1 (v) 0.6 pts.
+Entoncesλ2− 2λ + 3λ2 + 1 es valor propio de (A2− 2A + 3I)(A2 +I)−1 con vector
+propio v.3. a) Sea A una matriz de coeﬁcientes reales de 2 × 2 tal que λ = 1−i es valor
+propio con vector propio v =
+[ 1
+1−i
+]
+. Determine A.
+b) Sean ⃗ x,⃗ y,⃗ zson vectores de longitud 1 tales que ⃗ x⊥⃗ y,⃗ x·⃗ z= 1/3,⃗ y·⃗ z= 1/2.
+Demuestre que{⃗ x,⃗ y,⃗ z} es linealmente independiente.
+Soluci´ on:
+a) Hay dos posibles maneras de calcular A. El primer m´ etodo es que siA es real
+de 2× 2 y λ =a−bi es un valor propio complejo con vector propio v =p +iq
+entonces para V = [p q] y C =
+[ a −b
+b a
+]
+se tiene A =VCV −1 1.5 pts.
+(ya sea expl´ ıcito o impl´ ıcito, con el prop´ osito de usarlo para resolver el problema
+(es la estrategia)).
+Puesto que λ = 1−i tenemos que a =b = 1. Adem´ asv == [1, 1−i]T implica
+que p = [1, 1]T,q = [0,−1]T y por lo tanto
+A =
+[ 1 0
+1 −1
+][ 1 −1
+1 1
+][ 1 0
+1 −1
+]−1
+1.0 pts.
+Pero [ 1 0
+1 −1
+]−1
+=
+[
+1 0
+1 −1
+]
+Evaluando el producto se obtiene
+A =
+[
+0 1
+−2 2
+]
+[0,5pts.]
+El segundo m´ etodo es que siA es real de 2× 2 y λ = 1−i es un valor propio
+complejo con vector propio v = [1, 1−i]T entonces su otro valor propio es
+λ = 1 + i con vector propio v = [1,i +i]T 1.0 pts. . Entonces A es
+diagonalizable en los complejos pues tiene dos valores propios distintos y
+A =VDV −1 =
+[ 1 1
+1−i 1 +i
+][ 1−i 0
+0 1 + i
+][ 1 1
+1−i 1 +i
+]−1
+1.5 pts.
+Pero
+[ 1 1
+1−i 1 +i
+]−1
+=
+[
+1−i i
+1 +i −i
+]
+2 0.5 pts.
+Evaluando el producto se obtiene
+A =
+[
+0 1
+−2 2
+]b) En el enunciado hubo un error. Los datos dados fueron ⃗ x,⃗ y,⃗ zson vectores de
+longitud 1 tales que ⃗ x⊥⃗ y,⃗ x·⃗ z= 3,⃗ y·⃗ z= 2.(era 1/3 y 1/2 respectivamente)
+Si un alumno dijera que los datos en el enunciado son inconsistentes, pues el
+producto punto de dos vectores de longitud 1 no puede exceder 1 en valor
+absoluto pues u·v =||u||||v||cos(∠(u,v )) y entonces|u·v|≤|| u||||v|| = 1, y
+luego dice que puesto que la hip´ otesis es falsa se puede concluir cualquier cosa
+de ella. Entonces ser´ ıa cierto que los vectores son LI 3 pts.
+Si un alumno no se da cuenta de la inconsistencia de los datos y resuelve
+correctamente el problema usando los datos dados tiene 3 pts.
+Soluci´ on: ( usando los datos dados en el enunciado)
+Hay que demostrar que α⃗ x+β⃗ y+γ⃗ z=⃗0(∗)⇒α =β =γ = 0(∗∗).
+Tomando el producto punto en (*) por⃗ xy luego por⃗ y,⃗ zse obtiene un sistema
+de 3 ecuaciones para las 3 inc´ ognitasα,β,γ .
+α⃗ x+β⃗ y+γ⃗ z=⃗0⇒
+
+
+
+α⃗ x·⃗ x+β⃗ x·⃗ y+γ⃗ x·⃗ z= 0
+α⃗ y·⃗ x+β⃗ y·⃗ y+γ⃗ y·⃗ z= 0
+α⃗ z·⃗ x+β⃗ z·⃗ y+γ⃗ z·⃗ z= 0
+⇒
+α + 3γ = 0
+β + 2γ = 0
+3α + 2β +γ = 0
+[2,0pts.]
+⇒
+α = −3γ
+β = −2γ
+3α + 2β +γ = 0
+⇒− 4γ = 0 ⇒ γ =α =β = 0
+y por lo tanto (*) implica (**) y los vectores son LI. 1.0 pts.
+4. Determine si la aﬁrmaci´ on es VERDADERA o FALSA y justiﬁque demostrando su
+respuesta.
+a) Si la distancia de u a v es igual a la distancia de u a−v entonces u y v son
+perpendiculares.
+b) Si A = (ai,j) es una matriz de coeﬁcientes reales de 2× 2 y Tr (A) =a1,1 +a2,2
+entoncesA tiene valores propios reales distintos sii det(A)<
+(Tr (A)
+2
+)2
+.
+c) Si A de 6× 6 tiene 3 valores propios distintos de los cuales uno tiene 2 vectores
+propios LI y otro tiene 3 vectores propios LI entonces A es diagonalizable.
+d) Si A den×n tienen vectores propios linealmente independientes entonces AT
+tambi´ en.Soluci´ on
+a) VERDADERO: La distancia de u a v es igual a la distancia de u a−v sii
+||u−v|| =||u+v|| 0.5 pts. sii||u−v||2 =||u+v||2 sii||u||2−2u·v+||v||2 =
+||u||2 + 2u·v +||v||2 0.5 pts. sii 4u·v = 0 sii u·v = 0 sii u y v son
+perpendiculares. 0.5 pts.
+b) VERDADERO: La ecuaci´ on caracter´ ıstica para los valores propios de una ma-
+triz A de 2× 2 es
+|A−λI| =
+⏐⏐⏐⏐ a1,1−λ a 1,2a2,1 a2,2−λ ⏐⏐⏐⏐
+= ( a1,1−λ)(a2,2−λ)−a1,2a2, 1
+= λ2− (a1,1 +a2,2)λ +a1,1a2,2−a1,2a2,1
+= λ2−Tr (A)λ +det(A)
+= 0 0.8 pts.
+Los valores propios ser´ an entonces λ = Tr (A)±
+√
+Tr (A)2− 4det(A)
+2 . Lasra´ ıces ser´ an reales y distintas sii el discriminante de la ecuaci´ on cuadr´ atica
+es positivo sii (Tr (A))2− 4det(A)> 0 sii det(A)<
+(Tr (A)
+2
+)2
+0.7 pts. .
+c) VERDADERO: De los valores propios de multiplicidades geom´ etricas 2 y 3
+se obtienen 5 vectores propios LI. El tercer valor propio tiene por lo menos
+multiplicidad geom´ etrica 1. Al unir las bases de los 3 subespacios propios se
+obtendr´ an 6 vectores propios LI 1.0 pts. . Como la matriz es de 6 ×
+6 se tendr´ a entonces una base de vectores propios LI y por lo tanto A es
+diagonalizable. 0.5 pts.
+d) VERDADERO: A tienen vectores propios LI siiA es diagonalizable 0.5 pts.
+sii existen V de n× n invertible y D diagonal tal que A = VDV −1 sii
+AT = (V−1TDTVT 0.5 pts. sii AT = (P )−1DP , P = VT sii AT es
+diagonalizable 0.5 pts. sii AT tiene n vectores propios LI.
+TIEMPO: 2 horas

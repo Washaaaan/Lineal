@@ -1,0 +1,665 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Segundo semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on a laInterrogaci´ on N◦ 2
+1. Sean A y B matrices de n×n tales que A−B es invertible, y sea C una matriz de n×p.
+Demuestre que la ecuaci´ onAX = BX +C tiene soluci´ on ´ unica, y exprese esta soluci´ on en la
+forma m´ as simple posible.
+Soluci´ on:
+Vemos que, para que la igualdad AX =BX +C tenga sentido, X debe ser una matriz de n×p
+(as´ ı, las tres matricesAX, BX y C ser´ an den×p).
+De AX = BX +C deducimos que (A−B)X = C. Como A−B es invertible, podemos pre-
+multiplicar ambos lados de esta igualdad por ( A−B)−1, obteniendo
+(A−B)−1 [(A−B)X] = (A−B)−1C.
+Por ser la multiplicaci´ on de matrices asociativa, tenemos (A−B)−1 [(A−B)X] =X, de donde
+—necesariamente—X = (A−B)−1C (que es, por lo tanto, la ´ unica soluci´ on posible).
+En estricto rigor, deber´ ıamos comprobar que X = (A− B)−1C es una soluci´ on, vale decir,
+reemplazar X por (A−B)−1C en la ecuaci´ on y veriﬁcando que la igualdad se cumple:
+AX
+?
+= BX +C
+A
+(
+(A−B)−1C) ?= B((A−B)−1C) +C
+A
+(
+(A−B)−1C)−B((A−B)−1C) ?= C
+(A−B)
+(
+(A−B)−1C) ?= C
+(
+(A−B)(A−B)−1)C ?= C
+InC
+?
+= C
+C
+✓
+= C
+Puntaje:
+Por expresar la ecuaci´ on como (A−B)X =C, 2 puntos.
+Por usar el hecho de que (A−B)−1 existe, 2 puntos.
+Por llegar a que X debe ser (A−B)−1C, 2 puntos.
+A lo anterior se le suma el punto base.2. Sea A una matriz de n×n. Demuestre que si las columnas de A2 generan a Rn entonces las
+columnas de A son linealmente independientes.
+Primera Soluci´ on:
+Supongamos que las columnas de A son linealmente dependientes.
+Entonces la ecuaci´ onA x→ = 0→ tiene una soluci´ on no trivial (dada por los ponderadores de la
+combinaci´ on lineal no trivial de columnas deA que da como resultado 0→).
+Pero entonces A2 x→ =A(A x→) =A 0→ = 0→, por lo que la ecuaci´ onA2 x→ = 0→ tiene una soluci´ on
+no trivial, o sea, las columnas de A2 son linealmente dependientes.
+Segunda Soluci´ on:
+Si las columnas de A2 generan a Rn, A2 es una matriz invertible, por lo que det( A2)⁄= 0. As´ ı,
+detA⁄= 0, por lo que A es invertible, y por lo tanto sus columnas generan a Rn.
+Tercera Soluci´ on:
+Si las columnas deA2 generan Rn, entonces es invertible. Por lo tanto existe una matrizB tal que
+A2B = I, lo que se puede escribir como A(AB) = I. Pero esto quiere decir que A es invertible
+(con inversa AB) y as´ ı sus columnas son l.i.
+Puntaje: En cualquiera de las soluciones (u otras correctas que se les ocurran a los alumnos):
+Por plantear una demostraci´ on correctamente estructurada, 2 puntos.
+Por llegar a la conclusi´ on deseada, usando argumentos correctos, 2 puntos.
+Por justiﬁcar adecuadamente los argumentos, 2 puntos.
+A lo anterior se le suma el punto base.
+Soluci´ on err´ onea:
+La siguiente “soluci´ on” (o alguna variaci´ on sobre el mismo tema) apareci´ o en varias respuestas:
+“ComoA2 es invertible, existe (A2)−1, y como la inversa de un producto es el producto
+de las inversas, se tiene (A2)−1 =A−1·A−1, por lo que A es invertible y por lo tanto
+sus columnas son l.i.”
+Esta soluci´ on es err´ onea (la inversa de un producto es el producto de las inversas siempre que
+dichas inversas existan . Pero el que dichas inversas existen es justamente lo que hay que demos-
+trar.
+Por lo anterior, una respuesta como la aqu´ ı presentada no obtiene puntaje.3. Sea A =
+
+
+2 −4 4 −2
+6 −9 7 −3
+−1 −4 8 0
+
+.
+a) Encuentre una factorizaci´ on de la formaA =LU, con L triangular inferior unitaria (o sea,
+con 1s en la diagonal), y U triangular superior.
+b) Use la factorizaci´ on anterior para resolver
+A x→ =
+
+
+3
+2
+1
+
+.
+Soluci´ on:
+a) La factorizaci´ on buscada es
+L =
+
+
+1 0 0
+3 1 0
+− 12 −2 1
+
+, U =
+
+
+2 −4 4 −2
+0 3 −5 3
+0 0 0 5
+
+.
+b) La forma de utilizar esta factorizaci´ on para resolver un sistema de la forma A x→ = b→
+consiste en:
+(i) Resolver la ecuaci´ onL y→ = b→.
+(ii) Resolver la ecuaci´ onU x→ = y→.
+En nuestro caso:
+(i) L y→ = b→ es 
+
+1 0 0
+3 1 0
+− 12 −2 1
+
+
+
+
+y1
+y2
+y3
+
+ =
+
+
+3
+2
+1
+
+,
+que tiene por soluci´ on:
+y1 = 3,
+y2 = 2− 3y1 = 2− 9 =−7,
+y3 = 1 + 12y1 + 2y2 = 1 + 32− 14 =− 232 .
+(ii) U x→ = y→ es
+
+
+2 −4 4 −2
+0 3 −5 3
+0 0 0 5
+
+
+
+
+x1
+x2
+x3
+x4
+
+ =
+
+
+3
+−7
+− 232
+
+,
+que tiene por soluci´ on:
+x4 = 15·− 232 =− 2310,
+x3 es libre,
+x2 = 13 (−7 + 5x3− 3x4) =− 73 + 53x3−x4 =− 73 + 53x3 + 2310 = 53x3− 130.
+x1 = 12 (3 + 4x2− 4x3 + 2x4) = 12(3 + 4( 53x3− 130)− 4x3− 235)
+= 12(3 + 203x3− 430− 4x3− 235) = 12( 83x3− 2615) = 43x3− 1315.Puntaje:
+a) Por calcular correctamente L, 1,5 puntos.
+Por calcular correctamente U, 1,5 puntos.
+b) Por plantear el sistema como las dos ecuaciones L y→ = b→, U x→ = y→, 0,5 puntos.
+Por resolver correctamente el sistema L y→ = b→, 1 punto.
+Por resolver correctamente el sistema U x→ = y→, 1,5 puntos.
+A lo anterior se le suma el punto base.4. Sea T : R3→ R3 la transformaci´ on lineal determinada por la matrizA =
+
+
+1 1 −2
+3 −2 1
+−1 0 2
+
+. Sea
+S el paralelep´ ıpedo determinado por los vectores
+
+
+−1
+2
+1
+
+,
+
+
+1
+0
+2
+
+ y
+
+
+0
+1
+0
+
+.
+Calcule el volumen de S y el volumen de T (S).
+Soluci´ on:
+Sean v→1 =
+
+
+−1
+2
+1
+
+, v→2 =
+
+
+1
+0
+2
+
+ y v→3 =
+
+
+0
+1
+0
+
+.
+Sabemos que el volumen de S est´ a dado por
+vol(S) =
+⏐⏐det[ v→1 v→2 v→3 ]⏐⏐ =
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐−1 1 02 0 11 2 0 ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ =|3| = 3.
+Otra forma de calcularlo es
+vol(S) =
+⏐⏐( v→1× v→2)· v→3⏐⏐ =⏐⏐⏐([−1 2 1 ]T×[ 1 0 2 ]T )·[ 0 1 0 ]⏐⏐⏐
+=
+⏐⏐⏐[ 4 3 −2 ]T·[ 0 1 0 ]⏐⏐⏐ =|3| = 3.
+El volumen de T (S) puede ser calculado de (al menos) dos maneras:
+(i) vol(T (S)) =|detA· detS| =|−7· 3| =|−21| = 21.
+(ii) vol(T (S)) =
+⏐⏐det[ T ( v→1)T ( v→2)T ( v→3) ]⏐⏐ =
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐−1 −3 1−6 5 −23 3 0 ⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐ =|−21| = 21.
+Puntaje:
+Por indicar que el volumen de S se calcula usando el valor absoluto del determinante de
+
+−1 1 0
+2 0 1
+1 2 0
+
+ (o, equivalentemente, como⏐⏐( v→1× v→2)· v→3⏐⏐), 1 punto.
+Por calcular correctamente el volumen de S, 2 puntos.
+Por indicar alguna de las formas de calcular el volumen de T (S), 1 punto.
+Por calcular correctamente el volumen de T (S), 2 puntos.
+A lo anterior se le suma el punto base.5. Dados dos subespacios H yK de un espacio vectorialV , la intersecci´ ondeH yK (que se denota
+por H∩K) es el conjunto de todos los vectores en V que pertenecen tanto a H como a K; es
+decir,
+H∩K =
+{
+w→∈V : w→∈H y w→∈K}.
+Demuestre que H∩K es un subespacio de V .
+Primera Soluci´ on:
+Debemos demostrar que:
+a) 0→∈H∩K.
+b) H∩K es cerrado bajo suma de vectores.
+c) H∩K es cerrado bajo ponderaci´ on de vectores por escalares.
+En efecto:
+a) Como 0→∈H y 0→∈K (por el hecho de que H y K son subespacios de V ), 0→∈H∩K.
+b) Sean u→, v→∈H∩K. Entonces u→, v→∈H, por lo que u→+ v→∈H (ya queH es subespacio de
+V ). An´ alogamente,u→+ v→∈K, lo que, junto con lo anterior, implica queu→+ v→∈HH∩K.
+c) Sean u→∈H∩K, λ∈ R. Entonces u→∈H, por lo que λ u→∈H (ya que H es subespacio
+de V ). An´ alogamente,λ u→∈K, lo que, junto con lo anterior, implica que λ u→∈H∩K.
+Segunda Soluci´ on:
+Una forma alternativa de demostrar los dos ´ ultimos puntos es probar queH∩K es cerrado bajo
+“combinaciones lineales de dos de sus elementos”: en otras palabras, siα,β ∈ R y u→, v→∈H∩K
+entoncesα u→ +β v→∈H∩K.
+En efecto: sean u→, v→∈ H∩K. Entonces u→∈ H, u→∈ K, v→∈ H y v→∈ K. Como H es
+subespacio de V , es cerrado bajo ponderaci´ on por un escalar, por lo que α u→∈ H y β v→∈ H;
+del mismo modo, α u→∈K yβ v→∈K. PeroH es cerrado bajo suma, por lo que α u→ +β v→∈H;
+del mismo modo, α u→ +β v→∈K, por lo que α u→ +β v→∈H∩K.
+Puntaje:
+Por mencionar que se debe demostrar que0→∈H∩K (o, m´ as generalmente, queH∩K⁄= ∅),
+y que H∩K es cerrado bajo suma y bajo ponderaci´ on (o, equivalente a estos ´ ultimos dos,
+que H∩K es cerrado bajo combinaciones lineales de dos de sus elementos), 1 punto.
+Nota: este punto se da incluso si no se menciona expl´ ıcitamenteque hay que demostrar las
+tres condiciones, siempre y cuando demuestren las tres (o al menos intenten demostrarlas).
+Por ejemplo, si demuestran queH∩K es cerrado bajo suma y ponderaci´ on (ver m´ as abajo),
+pero omiten demostrar que 0→∈H∩K, reciben solo 4 puntos, no 5.
+Por demostrar que 0→∈H∩K, 1 punto.
+Por demostrar que H∩K es cerrado bajo suma, 2 puntos.
+Por demostrar que H∩K es cerrado bajo ponderaci´ on, 2 puntos.
+O, equivalente a estos ´ ultimos dos, por demostrar queH∩K es cerrado bajo combinaciones
+lineales de dos de sus elementos), 4 puntos.
+A lo anterior se le suma el punto base.6. Sea M2×2 el espacio vectorial de todas las matrices de 2 × 2, y deﬁna T :M2×2 → M2×2
+medianteT (A) = 2A− 3AT (donde A es una matriz de 2× 2).
+a) Demuestre que T es una transformaci´ on lineal.
+b) Encuentre una matriz A =
+[ x y
+z w
+]
+tal que T (A) =
+[ 1 0
+−5 −5
+]
+.
+Soluci´ on:
+a) Para probar que T es una transformaci´ on lineal, debemos probar que, dadosA,B∈M 2×2
+y c∈ R, se cumple que T (A +B) =T (A) +T (B) y T (cA) =cT (A).
+En efecto: ya que (A +B)T =AT +BT y (cA)T =c(AT ), tenemos que
+T (A +B) = 2( A +B)− 3(A +B)T = 2A + 2B− 3(AT +BT )
+= 2 A + 2B− 3AT− 3BT = (2A− 3AT ) + (2B− 3BT ) =T (A) +T (B)
+y
+T (cA) = 2(cA)− 3(cA)T = (2c)A− (3c)AT =c(2A)−c(3AT ) =c(2A− 3AT ) =cT (A).
+b) Sea A =
+[ x y
+z w
+]
+. Entonces
+T (A) = 2 A− 3AT = 2
+[ x y
+z w
+]
+− 3
+[ x y
+z w
+]T
+= 2
+[ x y
+z w
+]
+− 3
+[ x z
+y w
+]
+=
+[ 2x− 3x 2y− 3z
+2z− 3y 2w− 3w
+]
+=
+[ −x 2y− 3z
+2z− 3y −w
+]
+.
+As´ ı,T (A) =
+[ 1 0
+−5 −5
+]
+signiﬁca que
+[ −x 2y− 3z
+2z− 3y −w
+]
+=
+[ 1 0
+−5 −5
+]
+, por lo que
+−x = 1
+2y− 3z = 0
+− 3y + 2z =−5
+−w =−5
+⏐⏐⏐⏐⏐⏐⏐⏐⏐⏐
+Resolviendo el sistema, tenemos que x =−1, y = 3, z = 2, w = 5, por lo que
+A =
+[−1 3
+2 5
+]
+.
+Segunda Soluci´ on:
+Una forma alternativa de demostrar que T es una transformaci´ on lineal es probar que, dadas
+A,B∈M 2×2 y α,β ∈ R, se cumple que
+T (αA +βB) =αT (A) +βT (B).Puntaje:
+a) Por demostrar que T (A +B) =T (A) +T (B), 1,5 puntos.
+Por demostrar que T (cA) =cT (A), 1,5 puntos.
+Alternativamente, si prueban correctamente queT (αA +βB) =αT (A) +βT (B), se les dan
+los tres puntos de esta parte.
+b) Por llegar a que T (A) =
+[ −x 2y− 3z
+2z− 3y −w
+]
+, 0,3 puntos.
+Por plantear el sistema de ecuaciones, 0,2 puntos.
+Por resolver el sistema, 0,8 puntos.
+Por llegar a que A =
+[−1 3
+2 5
+]
+, 0,2 puntos.
+Si resuelven el sistema llegando a un valor err´ oneo, se les da en total 1,0 punto. Si plantearon
+correctamente el sistema pero al resolver llegan a dos valores err´ oneos, no reciben puntaje
+por la resoluci´ on del sistema.7. Sea W el subespacio deM2×2 deﬁnido por
+W =
+{
+A∈M 2×2 :AT =A}.
+a) Demuestre que B =
+{[ 1 2
+2 −3
+]
+,
+[ 1 0
+0 0
+]
+,
+[ 0 3
+3 1
+]}
+es una base de W .
+Primera Soluci´ on:
+Debemos demostrar queB genera W y que es l.i.
+Para demostrar queB generaW , consideramos un elemento gen´ erico deW , y mostramos
+c´ omo representarlo como combinaci´ on lineal de los elementos deB.
+Sea A =
+[ a b
+b c
+]
+.
+Buscamos x,y,z tales que
+A =
+[ a b
+b c
+]
+=x
+[ 1 2
+2 −3
+]
++y
+[ 1 0
+0 0
+]
++z
+[ 0 3
+3 1
+]
+=
+[ x +y 2x + 3z
+2x + 3z z − 3x
+]
+.
+Debemos resolver el sistema
+x +y =a
+2x + 3z =b
+−3x + z =c
+⏐⏐⏐⏐⏐⏐⏐
+Este sistema tiene como ´ unica soluci´ on
+x = b− 3c11 ,y = 11a−b + 3c11 ,z = 2c + 3b11 .
+As´ ı,A es combinaci´ on lineal de los elementos deB, por lo que B genera W .
+Para demostrar que B es l.i., debemos probar que
+[ 0 0
+0 0
+]
+puede ser escrito como
+combinaci´ on lineal de elementos deB en una ´ unica manera, a saber, como
+0
+[ 1 2
+2 −3
+]
++ 0
+[ 1 0
+0 0
+]
++ 0
+[ 0 3
+3 1
+]
+.
+Pero, por lo discutido en el punto anterior, cada matriz deW puede ser escrita en forma
+´ unica como combinaci´ on lineal de elementos deB. En particular, esto es cierto para[ 0 0
+0 0
+]
+.
+Segunda Soluci´ on:
+Otra forma de demostrar que B es base de W consiste en probar que B genera W y que
+dimW≥ 3.
+La primera parte ya fue demostrada. Que dim W ≥ 3 puede ser probado, por ejemplo,
+argumentando que el conjunto
+{[ 1 0
+0 0
+]
+,
+[ 0 1
+1 0
+]
+,
+[ 0 0
+0 1
+]}
+es l.i., por lo que toda base
+debe tener al menos 3 elementos.
+Los detalles de c´ omo demostrar que el conjunto
+{[ 1 0
+0 0
+]
+,
+[ 0 1
+1 0
+]
+,
+[ 0 0
+0 1
+]}
+es l.i. se
+dejan como ejercicio.Tercera Soluci´ on:
+Una tercera forma de demostrar que B es base de W consiste en probar queB es l.i. y que
+dimW≤ 3.
+La primera parte ya fue demostrada. Que dim W ≤ 3 puede ser probado, por ejemplo,
+argumentando que el conjunto
+{[ 1 0
+0 0
+]
+,
+[ 0 1
+1 0
+]
+,
+[ 0 0
+0 1
+]}
+genera W , por lo que toda
+base debe tener a lo m´ as 3 elementos.
+Los detalles de c´ omo demostrar que el conjunto
+{[ 1 0
+0 0
+]
+,
+[ 0 1
+1 0
+]
+,
+[ 0 0
+0 1
+]}
+generaW
+se dejan como ejercicio.
+b) Sea M =
+[−2 3
+3 1
+]
+. Determine
+[
+M
+]
+B, vale decir, el vector de coordenadas de M en la
+baseB.
+Soluci´ on:
+Aprovechamos el trabajo hecho en la parte anterior para expresar M como combinaci´ on
+lineal de los elementos de B,
+M =
+[−2 3
+3 1
+]
+=x
+[ 1 2
+2 −3
+]
++y
+[ 1 0
+0 0
+]
++z
+[ 0 3
+3 1
+]
+.
+Aqu´ ı, tomandoa =−2, b = 3, z = 1, obtenemos
+x = b− 3c11 = 0,y = 11a−b + 3c11 =−2,z = 2c + 3b11 = 1,
+por lo que
+M =
+[−2 3
+3 1
+]
+= 0·
+[ 1 2
+2 −3
+]
+− 2·
+[ 1 0
+0 0
+]
++ 1·
+[ 0 3
+3 1
+]
+.
+En otras palabras,
+[
+M
+]
+B =
+
+
+0
+−2
+1
+
+.
+Puntaje:
+a) Por plantear una demostraci´ on correctamente estructurada, 1 punto.
+N´ otese que una demostraci´ on correcta consiste, en general, de dos aﬁrmaciones que
+deben ser demostradas independientemente (o bien que B genera W y es l.i., o bien
+queB genera W y dimw≥ 3, o bien queB es l.i. y dim w≥ 3, etc.).
+Por demostrar queB genera W (o queB es l.i.), 1 punto.
+Por demostrar la restante (o las restantes) aﬁrmaciones que deben cumplirse para
+queB sea una base de W , 1 punto.
+b) Por calcular correctamente los coeﬁcientes de la combinaci´ on lineal de elementos deB
+que da como resultado
+[−2 3
+3 1
+]
+, 2 puntos.
+Por escribir correctamente el vector de coordenadas pedido, 1 punto.
+A lo anterior se le suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) Si B es una matriz invertible y A = BC, entonces cualquier sucesi´ on de operaciones ﬁla
+que transforma A en C debe reducir B a I.
+Soluci´ on:
+FALSO.
+Si A =C = 0 entonces A se reduce a C con cero operaciones ﬁla, pero esto no reduce B a
+I.
+b) Si A es una matriz cuadrada tal que det( A4) = 0, entonces A no puede ser invertible.
+Soluci´ on:
+VERDADERO.
+Si det(A4) = 0, entonces detA = 0, por lo que A no es invertible.
+c) Si B es una forma escalonada de una matriz A, entonces las columnas pivote de B forman
+una base para Col A.
+Soluci´ on:
+FALSO.
+Consid´ erese por ejemplo la matrizA =
+
+
+1 2
+1 3
+1 3
+
+. La matriz B =
+
+
+1 2
+0 1
+0 0
+
+ es una forma
+escalonada de A, y sus dos columnas son columnas pivote.
+Pero dichas columnas no generan Col A: no existen escalares α y β tales que
+α
+
+
+1
+0
+0
+
+ +β
+
+
+2
+1
+0
+
+ =
+
+
+1
+1
+1
+
+
+(es imposible lograr que la tercera coordenada sea ⁄= 0).
+Puntaje:
+En cada parte, se dan los dos puntos si se da una justiﬁcaci´ on correcta. En las partes (a) y
+(c), una justiﬁcaci´ on correcta es un contraejemplo; en la (b) es una breve demostraci´ on.
+A lo anterior se le suma el punto base.

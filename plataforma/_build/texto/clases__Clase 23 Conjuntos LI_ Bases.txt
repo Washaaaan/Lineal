@@ -1,0 +1,264 @@
+
+----- pagina 1 -----
+Clase 23 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Un espacio vectorial es un conjunto de objetos (llamados vectores)
+que se pueden sumar y multiplicar por escalar de forma ”razonable” .
+Un subespacio vectorial es un espacio vectorial dentro de otro.
+Todos los espacios generados son espacios vectoriales.
+¿Existirá algo similar a los ”ejes coordenados”?
+2 / 11
+----- pagina 3 -----
+Conjuntos linealmente independientes; bases
+La idea clave es la de independencia lineal, definida como en Rn.
+Definición: Independencia Lineal
+Se dice que un conjunto indexado de vectores {v1, . . . ,vp} en V es
+linealmente independiente si la ecuación vectorial
+c1v1 + c2v2 + · · · + cpvp = 0
+tiene solamente la solución trivial, c1 = 0, . . . ,cp = 0.
+Definición: Dependencia Lineal
+Se dice que el conjunto {v1, . . . ,vp} es linealmente dependiente si la
+ecuación anterior tiene una solución no trivial, es decir, si hay algunos
+pesos, c1, . . . ,cp, no todos cero, tales que la ecuación sea válida.
+3 / 11
+----- pagina 4 -----
+Conjuntos linealmente independientes; bases
+Ejemplo: Sean p1(t) = 1, p2(t) = t y p3(t) = 4 − t. Determine si el
+conjunto {p1, p2, p3} es linealmente dependiente en P.
+4 / 11
+----- pagina 5 -----
+Conjuntos linealmente independientes; bases
+Al igual que en Rn:
+Un conjunto que contiene un único vector v es linealmente
+independiente si y solo si v ̸= 0.
+Un conjunto de dos vectores es linealmente dependiente si y solo si
+uno de los vectores es un múltiplo del otro.
+Cualquier conjunto que contenga al vector cero es linealmente
+dependiente.
+Teorema
+Un conjunto indexado {v1, . . . ,vp} de dos o más vectores, con v1 ̸= 0, es
+linealmente dependiente si y solo si alguna vj (con j > 1) es una
+combinación lineal de los vectores anteriores, v1, . . . ,vj−1.
+5 / 11
+----- pagina 6 -----
+Conjuntos linealmente independientes; bases
+Definición: Base
+Sea H un subespacio de un espacio vectorial V. Un conjunto indexado de
+vectores B = {b1, . . . ,bp} en V es una base de H si:
+B es un conjunto linealmente independiente, y
+el subespacio generado por B coincide con H, es decir,
+H = Gen{b1, . . . ,bp}
+Esta definición se aplica también cuando H = V. Una base de V es un
+conjunto linealmente independiente que genera a V.
+6 / 11
+----- pagina 7 -----
+Conjuntos linealmente independientes; bases
+Ejemplo: Sean e1, . . . ,en las columnas de la matriz identidad In. Es decir:
+e1 =
+
+
+1
+0
+...
+0
+
+ , e2 =
+
+
+0
+1
+...
+0
+
+ , . . . , en =
+
+
+0
+...
+0
+1
+
+
+El conjunto {e1, . . . ,en} se llama la base estándar para Rn.
+7 / 11
+----- pagina 8 -----
+Conjuntos linealmente independientes; bases
+Ejemplo: Sean
+v1 =
+
+
+3
+0
+−6
+
+ , v2 =
+
+
+−4
+1
+7
+
+ , v3 =
+
+
+−2
+1
+5
+
+
+Determine si {v1, v2, v3} es una base para R3.
+Nota: La matriz A = [v1 v2 v3] =
+
+
+3 −4 −2
+0 1 1
+−6 7 5
+
+ es equivalente por
+fila a
+
+
+3 −4 −2
+0 1 1
+0 0 2
+
+.
+8 / 11
+----- pagina 9 -----
+Conjuntos linealmente independientes; bases
+Ejemplo: Sea A una matriz invertible de n × n. Verifique que las
+columnas de A forman una base para Rn.
+Ejemplo: Sea S = {1, t, t2, . . . ,tn}. Compruebe que S es una base para
+Pn. Esta base se llama la base estándar para Pn.
+9 / 11
+----- pagina 10 -----
+Conjuntos linealmente independientes; bases
+Ejemplo: Sean
+v1 =
+
+
+0
+2
+−1
+
+ , v2 =
+
+
+2
+2
+0
+
+ , v3 =
+
+
+6
+16
+−5
+
+
+y H = Gen{v1, v2, v3}. Considere que v3 = 5v1 + 3v2. Encuentre una base
+para el subespacio H.
+Teorema del conjunto generador
+Sea S = {v1, . . . ,vp} un conjunto en V, y sea H = Gen{v1, . . . ,vp}.
+Si uno de los vectores de S, por ejemplo vk, es una combinación lineal
+de los vectores restantes en S, entonces el conjunto formado a partir
+de S al eliminar vk aún genera a H.
+Si H ̸= {0}, algún subconjunto de S es una base para H.
+10 / 11
+----- pagina 11 -----
+Conjuntos linealmente independientes; bases
+Dos perspectivas de una base
+Una base es un conjunto generador que es lo más pequeño posible.
+Una base también es un conjunto linealmente independiente lo más
+grande posible.
+Ejemplo:
+
+
+
+
+
+1
+0
+0
+
+ ,
+
+
+2
+3
+0
+
+
+
+
+: Linealmente independiente, pero no genera a R3.
+
+
+
+
+
+1
+0
+0
+
+ ,
+
+
+2
+3
+0
+
+ ,
+
+
+4
+5
+6
+
+
+
+
+: Una base para R3.
+
+
+
+
+
+1
+0
+0
+
+ ,
+
+
+2
+3
+0
+
+ ,
+
+
+4
+5
+6
+
+ ,
+
+
+7
+8
+9
+
+
+
+
+: Genera a R3, pero es linealmente
+dependiente.
+11 / 11

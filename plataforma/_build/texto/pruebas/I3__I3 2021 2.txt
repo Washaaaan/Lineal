@@ -1,0 +1,260 @@
+PONTIFICIA UNIVERSIDAD CAT ´OLICA DE CHILE
+FACULTAD DE MATEM´ATICAS
+DEPARTAMENTO DE MATEM´ATICA
+Interrogaci´ on 3 MAT1203 - 2 de diciembre
+1. a) Sea A matriz sim´ etrica den×n. Si A2 es deﬁnida positiva, entonces A es
+deﬁnida positiva.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Basta tomar A =
+[−1 0
+0 −1
+]
+que es deﬁnida negativa pues es diagonal con
+elementos de la diagonal negativos.
+Se tiene entonces que A2 =
+[ 1 0
+0 1
+]
+es deﬁnida positiva pues es diagonal con
+elementos de la diagonal positivos.
+b) Si a y b son reales positivos, entones la funci´ onq : R2→ R dada por
+q
+( x1
+x2
+)
+= (a + 1)2x21 + 2ax1x2 + (a +b)2x22,
+alcanza un m´ ınimo absoluto en
+( 0
+0
+)
+.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Primero se tiene que q
+( x1
+x2
+)
+= (x1 x2)
+[ a + 1 a
+a a +b
+]( x1
+x2
+)
+.
+Det[a + 1]> 0 pues a> 0.
+Det
+[ a + 1 a
+a a +b
+]
+=a(b + 1) +b> 0 pues a,b> 0.
+Luego la matriz
+[ a + 1 a
+a a +b
+]
+es positiva deﬁnida y entonces q alcanza un
+m´ ınimo absoluto en
+( 0
+0
+)
+.
+12. a) Para todo n∈ N se tiene que
+Det
+
+
+1 0 0 ... 0 0 1
+0 12 0 ... 0 0 1
+0 0 13 ... 0 0 1... ... ...
+0 0 0 ... 0 1n−1 1
+1 1 1 ... 1 1 1n
+
+ = 11· 2· 3·... · (n− 1)( 1n− (n− 1)n2 ).
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Se hacen las operaciones elementales Fn → Fn−F1, Fn → Fn− 2F2, ... ,
+Fn→ Fn− (n− 1)Fn−1 y el determinante no cambia. Luego se calcula el de-
+terminante una matriz diagonal y queda:
+Det
+
+
+1 0 0 ... 0 0 1
+0 12 0 ... 0 0 1
+0 0 13 ... 0 0 1... ... ...
+0 0 0 ... 0 1n−1 1
+0 0 0 ... 0 0 1n− 1− 2−... − (n− 1)
+
+
+= 11· 2· 3·... · (n− 1)( 1n− (n− 1)n2 ).
+b) Sea k∈ R. Si k >0, entonces la matriz
+
+
+k2 4 1
+k −2 −1
+1 1 1
+
+ es invertible.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+El determinante de la matriz es −(k + 1)(k + 2).
+Este se hace cero enk =−1 y enk =−2, perok es positivo, entonces la matriz
+es siempre invertible.
+23. a) El conjunto U =
+{
+A∈M2(R) tal que A
+[ 1 2
+3 4
+]
+=
+[ 1 2
+3 4
+]
+A
+}
+es un subes-
+pacio de M2(R).
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+• El conjunto es no vac´ ıo pues la matriz nula pertenece aU.
+[ 0 0
+0 0
+][ 1 2
+3 4
+]
+=
+[ 1 2
+3 4
+][ 0 0
+0 0
+]
+=
+[ 0 0
+0 0
+]
+.
+• El conjunto es cerrado bajo la suma de matrices. Si A y B pertenecen a U
+se tiene que:
+A
+[ 1 2
+3 4
+]
+=
+[ 1 2
+3 4
+]
+A y B
+[ 1 2
+3 4
+]
+=
+[ 1 2
+3 4
+]
+B.
+Entonces:
+(A +B)
+[ 1 2
+3 4
+]
+= A
+[ 1 2
+3 4
+]
++B
+[ 1 2
+3 4
+]
+=
+[ 1 2
+3 4
+]
+A +
+[ 1 2
+3 4
+]
+B
+=
+[ 1 2
+3 4
+]
+(A +B)
+.
+Por lo tanto (A +B) pertenece a U.
+• El conjunto es cerrado bajo la multiplicaci´ on por escalar de matrices. Si
+α∈ R y A pertenece a U se tiene que:
+A
+[ 1 2
+3 4
+]
+=
+[ 1 2
+3 4
+]
+A.
+Entonces:
+3(αA)
+[ 1 2
+3 4
+]
+= ( α)A
+[ 1 2
+3 4
+]
+= ( α)
+[ 1 2
+3 4
+]
+A
+=
+[ 1 2
+3 4
+]
+((α)A)
+.
+Por lo tanto (αA) pertenece a U.
+Finalmente entonces U es un subespacio del espacio M2(R).
+b) Sean B1 ={u,v} y B2 ={u + 3v, 2u + 4v} bases de R2 y x∈ R2. Si el vector
+coordenado de x con respecto a la base B2 NO es un vector can´ onico, entonces
+el vector coordenado de x con respecto a la base B1 NO es un vector can´ onico.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Sea x∈ R2 tal que su vector coordenado con respecto a B2 es
+( 1
+−1/2
+)
+que
+no es un vector can´ onico.
+Interpretando el vector coordenado se tiene que x = (1)(u + 3v) + (−1/2)(2u +
+4v) = (0)u + (1)v.
+Entonces el vector coordenado de x con respecto a B1 es
+( 0
+1
+)
+que s´ ı es un
+vector can´ onico.
+44. a) La funci´ onT : M2(R)→ R dada por T (A) = Det(A) es una transformaci´ on
+lineal.
+Soluci´ on:
+La aﬁrmaci´ on es falsa.
+Si A =
+[ 1 0
+0 1
+]
+, entonces 2A =
+[ 2 0
+0 2
+]
+.
+SI T es una transformaci´ on lineal debe cumplirse queT (2A) = 2T (A).
+PeroT (2A) = 4 y 2T (A) = 2· 1 = 2.
+b) Si T : V → W es una transformaci´ on lineal entre los espacios V y W de
+dimensiones 3 y 2, respectivamente, entonces T no es inyectiva.
+Soluci´ on:
+La aﬁrmaci´ on es verdadera.
+Se tiene que Dim(V ) = Dim(Nul(T )) + Dim(Im(T )).
+La dimensi´ on deV es 3 y si T es inyectiva, entonces la dimensi´ on de Nul(T )
+es 0, reemplazando se tiene:
+3 = Dim(Im(T )).
+Pero Im(T ) es un subespacio de W , luego su dimensi´ on no puede ser mayor
+que la dimensi´ on deW que es 2.
+Por lo tanto T no es inyectiva.
+5

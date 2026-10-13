@@ -1,0 +1,164 @@
+
+----- pagina 1 -----
+Clase 19 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 12
+----- pagina 2 -----
+Recordatorio
+Buscamos un número que nos diga cuándo una matriz es invertible, y
+nos permita calcular la inversa.
+det A se puede calcular mediante un desarrollo por cofactores a lo
+largo de cualquier fila o columna.
+El desarrollo a lo largo de la i-ésima fila es:
+det A = ai1Ci1 + ai2Ci2 + · · · + ainCin
+El desarrollo por cofactores a lo largo de la j-ésima columna es:
+det A = a1jC1j + a2jC2j + · · · + anjCnj
+Donde Cij = det Aij·(signo que corresponda)
+Conviene usar filas o columnas con muchos ceros.
+Si A es triangular, entonces det A es la múltiplicación de los
+elementos en su diagonal.
+2 / 12
+----- pagina 3 -----
+Propiedades de los determinantes
+El secreto de los determinantes reside en cómo cambian cuando se
+efectúan operaciones de fila.
+Teorema: Operaciones de fila
+Sea A una matriz cuadrada.
+Si un múltiplo de una fila de A se suma a otra fila para producir una
+matriz B, entonces det B = det A.
+Si dos filas de A se intercambian para producir B, entonces
+det B = − det A.
+Si una fila de A se multiplica por k para producir B, entonces
+det B = k · det A.
+3 / 12
+----- pagina 4 -----
+Propiedades de los determinantes
+Ejemplo: Calcule det A, donde
+A =
+
+
+1 −4 2
+−2 8 −9
+−1 7 0
+
+
+4 / 12
+----- pagina 5 -----
+Propiedades de los determinantes
+Un uso común del teorema anterior en cálculos a mano es factorizar un
+múltiplo común de una fila de una matriz.
+⏐⏐⏐⏐⏐⏐ ∗ ∗ ∗5k −2k 3k∗ ∗ ∗ ⏐⏐⏐⏐⏐⏐ = k ⏐⏐⏐⏐⏐⏐ ∗ ∗ ∗5 −2 3∗ ∗ ∗ ⏐⏐⏐⏐⏐⏐
+Ejemplo: Calcule det A, donde
+A =
+
+
+2 −8 6 8
+3 −9 5 10
+−3 0 1 −2
+1 −4 0 6
+
+
+5 / 12
+----- pagina 6 -----
+Propiedades de los determinantes
+Suponga que una matriz cuadrada A se redujo a una forma escalonada U
+mediante reemplazos de fila e intercambios de fila. Si hay r intercambios,
+entonces:
+det A = (−1)r det U
+Como U es triangular, det U es el producto de las entradas diagonales.
+Fórmula
+det A =
+{
+(−1)r · (producto de pivotes en U) cuando A es invertible
+0 cuando A no es invertible
+6 / 12
+----- pagina 7 -----
+Propiedades de los determinantes
+La fórmula anterior no solo da una interpretación concreta de det A, sino
+que también demuestra el principal teorema de esta sección.
+Teorema
+Una matriz cuadrada A es invertible si y solo si det A ̸= 0.
+Un útil corolario es que det A = 0 cuando las columnas de A son
+linealmente dependientes. Además, det A = 0 cuando las filas de A son
+linealmente dependientes.
+7 / 12
+----- pagina 8 -----
+Propiedades de los determinantes
+Ejemplo: Calcule det A, donde
+A =
+
+
+3 −1 2 −5
+0 5 −3 −6
+−6 7 −7 4
+−5 −8 0 9
+
+
+8 / 12
+----- pagina 9 -----
+Propiedades de los determinantes
+No es necesario llegar hasta la forma escalonada reducida, basta combinar
+operaciones de fila con desarrollo por cofactores.
+Ejemplo: Calcule det A, donde
+A =
+
+
+0 1 2 −1
+2 5 −7 3
+0 3 6 2
+−2 −5 4 −2
+
+
+9 / 12
+----- pagina 10 -----
+Propiedades de los determinantes
+Es posible realizar operaciones sobre las columnas de una matriz en forma
+análoga a las operaciones de fila.
+Teorema: Operaciones de columna
+Si A es una matriz de n × n, entonces det AT = det A.
+Las operaciones de columna tienen los mismos efectos sobre los
+determinantes que las operaciones de fila.
+Ejemplo: Determine para qué valores de α, la siguiente matriz es
+invertible.
+A =
+
+
+1 − α 3 3
+−3 −5 − α −3
+3 3 1 − α
+
+
+10 / 12
+----- pagina 11 -----
+Propiedades de los determinantes
+Teorema: Propiedad multiplicativa
+Si A y B son matrices de n × n, entonces det AB = (det A)(det B).
+Ejemplo: Compruebe el teorema anterior para
+A =
+[ 6 1
+3 2
+]
+y B =
+[ 4 3
+1 2
+]
+Advertencia: En general, det(A + B) no es igual a det A + det B.
+11 / 12
+----- pagina 12 -----
+Propiedades de los determinantes
+Propiedad de linealidad de la función determinante
+Suponga que a la j-ésima columna de A se le permite variar, mientras las
+demás se mantienen fijas. Definimos una transformación T de Rn a R
+mediante:
+T(x) = det
+[
+a1 . . . aj−1 x a j+1 . . . an
+]
+Entonces:
+T(cx) = cT(x) para todos los escalares c, y todas las x en Rn.
+T(u + v) = T(u) + T(v) para toda u, v en Rn.
+12 / 12

@@ -1,0 +1,510 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2016
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on y pauta de correcci´ on de la Interrogaci´ on N◦ 3
+1. [Texto, 4.6.27–28]
+Sea A una matriz de m×n.
+a) ¿Cu´ ales de los subespacios FilaA, ColA, NulA, FilaAT , ColAT y NulAT est´ an
+en Rm y cu´ ales est´ an enRn? ¿Cu´ antos subespacios distintos hay en esta lista?
+b) Justiﬁque las siguientes igualdades:
+1) dim FilaA + dim NulA =n (n´ umero de columnas deA).
+2) dim ColA + dim NulAT =m (n´ umero de ﬁlas deA).
+Soluci´ on:
+a) Las ﬁlas de A (que son las columnas de AT ) son vectores de Rn y las columnas
+de A (que son las ﬁlas de AT ) son vectores de Rm.
+Por su parte, Nul A es el conjunto de vectores x tales que Ax = 0. Para que
+esto tenga sentido, se necesita que x∈ Rn, por lo que Nul A est´ a enRn (y
+an´ alogamente NulAT est´ a enRm).
+As´ ı:
+FilaA = ColAT⊆ Rn,
+ColA = FilaAT⊆ Rm,
+NulA⊆ Rn y
+NulAT⊆ Rm;
+por lo que entre los espacios indicados hay cuatro distintos.
+b) La dimensi´ on de FilaA corresponde a la cantidad de ﬁlas l.i. en A, que es igual
+al n´ umero de columnas pivote enA.
+Por su parte, la dimensi´ on de NulA es igual al n´ umero de variables indepen-
+dientes en (x1,x 2,...,x n), o sea, el n´ umero de columnas que no son columnas
+pivote en A.
+Como (# de cols. pivote en A)+(# de cols. que no son pivote en A) = (# de cols. de A),
+tenemos dim FilaA + dim NulA =n.
+Para probar que dim ColA + dim NulAT =m, basta aplicar el resultado reci´ en
+probado reemplazando A por AT .Puntaje:
+a) Por argumentar que FilaA⊆ Rn, 0,5 ptos.
+Por argumentar que NulA⊆ Rn, 0,5 ptos.
+Por argumentar que FilaA = ColAT , 0,3 ptos.
+Por argumentar que ColA⊆ Rm, 0,5 ptos.
+Por argumentar que NulAT⊆ Rm, 0,5 ptos.
+Por argumentar que ColA = FilaAT , 0,3 ptos.
+Por concluir que hay 4 espacios distintos entre los 6 listados, 0,4 ptos.
+b) Por argumentar una de las dos igualdades, 2 puntos.
+c) Por argumentar la otra (partiendo de cero, o como lo hacemos aqu´ ı), 1 punto.
+A lo anterior se le suma el punto base.2. [Texto, 4.8, ejemplos 2 y 4, ejercicio 15]
+a) Encuentre todas las soluciones de la forma yk = rk, con r⁄= 0, de la ecuaci´ on
+yk+2− 2yk+1− 8yk = 0.
+b) Demuestre que las soluciones encontradas en a) son l.i.
+c) Indique la forma de la soluci´ on general de la ecuaci´ onyk+2− 2yk+1− 8yk = 0.
+Soluci´ on:
+a) Supongamos que yk =rk (con r⁄= 0) es soluci´ on de la ecuaci´ on.
+Entonces, para todok≥ 0, se tienerk+2−2rk+1−8rk = 0, por lo quer2−2r−8 =
+0.
+As´ ı,r = 4 or =−2, por lo que las soluciones buscadas sonyk = 4k eyk = (−2)k.
+b) Supongamos que una combinaci´ on lineal de las se˜ nalesyk = 4k yzk = (−2)k da
+como resultado la se˜ nal nula:αyk +βzk = 0.
+Esto quiere decir que, para todo k≥ 0, α4k +β(−2)k = 0.
+En particular, esto debe ser cierto para k = 1 y k = 2, o sea:
+4α− 2β = 0, 16α + 4β = 0.
+Pero los ´ unicos valores deα y β que satisfacen esto son α = β = 0, por lo que
+las se˜ nalesyk = 4k y zk = (−2)k son l.i.
+Note que el proceso realizado es equivalente a probar que la matriz de Casorati
+correspondiente a k = 0
+⏐⏐⏐⏐ y0 z0y1 z1 ⏐⏐⏐⏐ =⏐⏐⏐⏐ 40 (−2)041 (−2)1 ⏐⏐⏐⏐ =⏐⏐⏐⏐ 1 14 −2 ⏐⏐⏐⏐− 6⁄= 0
+(tambi´ en puede ser la matriz de Casorati correspondiente ak = 1):
+⏐⏐⏐⏐ y1 z1y2 z2 ⏐⏐⏐⏐ =⏐⏐⏐⏐ 41 (−2)142 (−2)2 ⏐⏐⏐⏐ =⏐⏐⏐⏐ 4 −216 4 ⏐⏐⏐⏐ = 48⁄= 0.
+c) La forma general de la soluci´ on de la ecuaci´ on es
+yk =α· 4k +β· (−2)k.
+Puntaje:
+a) Por llegar a la ecuaci´ onr2− 2r− 8 = 0, 1 punto.
+Por resolver la ecuaci´ on, 0,5 puntos.
+Por llegar a que las soluciones buscadas son yk = 4 k e yk = (−2)k, 0,5
+puntos.
+b) Una demostraci´ on correcta de independencia lineal (usando alguna matriz de
+Casorati, o dando un argumento directo) recibe 2 puntos. No se asigna puntaje
+intermedio.
+c) Por escribir correctamente la forma de la soluci´ on general, 2 puntos.
+A lo anterior se le suma el punto base.3. [Texto, 6.1.20b]
+Sean u, v∈ Rn. Demuestre que
+||u + v||2 +||u− v||2 = 2||u||2 + 2||v||2.
+Soluci´ on:
+||u + v||2 +||u− v||2 = ( u + v)· (u + v) + (u− v)· (u− v)
+= [ u· u + 2u· v + v· v] + [u· u− 2u· v + v· v]
+= 2 u· u + 2v· v = 2||u||2 + 2||v||2.
+Puntaje:
+Si se cometen errores menores al aplicar las propiedades de la norma o el pro-
+ducto punto, se descuentan entre 0,5 y un punto.
+Si se hace una demostraci´ on correcta, usando alguno de los siguientes esquemas,
+se asigna puntaje completo (6 puntos), menos lo que se descuente por el ac´ apite
+anterior:
+• partir de uno de los lados de la igualdad y llegar al otro; o
+• partir de uno de ellos, llegar a una expresi´ on simpliﬁcada, y despu´ es llegar
+a la misma expresi´ on simpliﬁcada partiendo del otro lado; o
+• partir de la igualdad dada y reducirla a una igualdad evidenteusando expl´ ıci-
+tamente pasos reversibles, o sea de la forma . . . si y solo si . . ..
+Si la demostraci´ on parte de la igualdad dada y la transforma en una igualdad
+evidente (pero no usando expl´ ıcitamente pasos reversibles), se asignan 2 puntos,
+menos lo que se descuente por el primer ac´ apite.
+A lo anterior se le suma el punto base.4. [Texto, 5.1.26]
+Sea A una matriz de n×n tal que A2 es la matriz 0.
+a) Demuestre que 0 es un valor propio de A.
+b) Demuestre que A no tiene otros valores propios.
+Soluci´ on:
+a) Sea x∈ Rn, x⁄= 0. Si Ax = 0 entonces x es un vector propio con valor propio
+0.
+Si no, y =Ax⁄= 0 es tal que Ay =A(Ax) = A2x = 0, por lo que en este caso
+y es un vector propio con valor propio 0.
+b) Supongamos que A tiene un valor propio λ⁄= 0. As´ ı, existeu∈ Rn, u⁄= 0 tal
+que Au = λu. Pero entonces A2u = A(Au) = A(λu) = λ(Au) = λ2u⁄= 0, lo
+que contradice la hip´ otesis de queA2 es la matriz 0.
+Puntaje:
+a) Por una demostraci´ on correcta, 3 puntos.
+Si no consideran el caso en que x⁄= 0 y y =Ax = 0 (o sea, si dicen queo y es
+un vector propio sin discriminar si es 0 o no, 2 puntos.
+b) Por una demostraci´ on correcta, 3 puntos.
+A lo anterior se le suma el punto base.5. a) [Texto, 5.3.13]
+La siguiente matriz tiene a 1 como valor propio. De ser posible, diagonal´ ıcela;
+en caso contrario indique por qu´ e no es diagonalizable:
+A =
+
+
+2 2 −1
+1 3 −1
+−1 −2 2
+
+.
+b) [Texto, 5.4.16]
+Sea A =
+[ 2 3
+3 2
+]
+, y deﬁna T : R2→ R2 por T (x) =Ax.
+Determine una baseB para R2 con la propiedad de que [ T ]B es diagonal.
+Soluci´ on:
+a) El polinomio caracter´ ıstico deA es
+det(A−λI) =
+⏐⏐⏐⏐⏐⏐ 2−λ 2 −11 3 −λ −1−1 −2 2 −λ ⏐⏐⏐⏐⏐⏐ = 5−11λ+7λ2−λ3 = (5−λ)(1−λ)2.
+As´ ı,λ = 1 (con multiplicidad 2) y λ = 5 (con multiplicidad 1) son los valores
+propios de A.
+Para saber siA es o no diagonalizable, debemos veriﬁcar si la dimensi´ on de cada
+espacio propio es igual a la multiplicidad algebraica del valor propio correspon-
+diente.
+Como la multiplicidad del valor propio λ = 5 es 1, la ´ unica posibilidad de que
+A no sea diagonalizable es que la dimensi´ on del espacio propio correspondiente
+a λ = 1 sea 1.
+As´ ı, buscamos los vectores propios correspondientes aλ = 1. Para ello, resolve-
+mos la ecuaci´ onAx = x o —equivalentemente—
+
+
+1 2 −1
+1 2 −1
+−1 −2 1
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.
+La matriz ampliada escalonada es
+
+
+1 2 −1 0
+0 0 0 0
+0 0 0 0
+
+, por lo que el sistema queda
+equivalente ax1 =x3− 2x2.
+As´ ı, una base para este espacio propio est´ a dado por las elecciones (x2,x 3) =
+(1, 0) y ( x2,x 3) = (0 , 1), que corresponde a los vectores propios ( −2, 1, 0) y
+(1, 0, 1). As´ ı, la dimensi´ on de este espacio propio es 2, por lo que la matrizA es
+diagonalizable.
+Para el valor propio λ = 5, debemos resolver el sistema
+
+
+−3 2 −1
+1 −2 −1
+−1 −2 −3
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+
+.La matriz ampliada escalonada es
+
+
+1 0 1 0
+0 1 1 0
+0 0 0 0
+
+, por lo que el sistema queda
+equivalente ax1 =x2 =−x3.
+As´ ı, un vector propio correspondiente aλ = 5 es (−1,−1, 1).
+De todo lo anterior llegamos a que la matriz A puede ser diagonalizada como
+sigue:
+A =
+
+
+−2 1 −1
+1 0 −1
+0 1 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 5
+
+
+
+
+−2 1 −1
+1 0 −1
+0 1 1
+
+
+−1
+.
+b) Buscamos una base de R2 formada por vectores propios de A. El polinomio
+caracter´ ıstico deA es
+det(A−λI) =
+⏐⏐⏐⏐ 2−λ 33 2 −λ ⏐⏐⏐⏐ = (2−λ)2− 9 =λ2− 4λ− 5 = (λ− 5)(λ + 1).
+As´ ı. los valores propios son−1 y 5, por lo que buscamos vectores propios corres-
+pondientes a estos valores propios:
+Paraλ =−1, [ 3 3
+3 3
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+tiene por soluci´ on
+[ x1
+x2
+]
+=
+[ 1
+−1
+]
+.
+Paraλ = 5, [−3 3
+3 −3
+][ x1
+x2
+]
+=
+[ 0
+0
+]
+tiene por soluci´ on
+[ x1
+x2
+]
+=
+[ 1
+1
+]
+.
+As´ ı, una posible base que cumple con las condiciones pedidas esB =
+{[ 1
+−1
+]
+,
+[ 1
+1
+]}
+(y en realidad cualquier base formada por ponderados de estos vectores).
+Puntaje:
+a) Por calcular y factorizar correctamente el polinomio caracter´ ıstico: 0,5 pun-
+tos.
+Por indicar que la condici´ on para queA sea diagonalizable es que la dimen-
+si´ on del espacio propio correspondiente aλ = 1 sea 2 (o, equivalentemente,
+que haya dos vectores propios l.i. correspondientes a λ = 1): 0,5 puntos.
+Por encontrar dos vectores propios l.i. correspondientes a λ = 1 (que no
+necesariamente deben ser los aqu´ ı mostrados): 1 punto (0,5 por cada vector).
+Por encontrar un vector propio correspondiente a λ = 5: 0,5 puntos.
+Por escribir A correctamente en la forma A =PDP−1: 0,5 puntos.b) Por calcular y factorizar correctamente el polinomio caracter´ ıstico: 0,5 pun-
+tos.
+Por encontrar un vector propio correspondiente a λ = 5: 1 punto.
+Por encontrar un vector propio correspondiente a λ =−1: 1 punto.
+Por escribir la base encontrada (no es necesario diagonalizar la matriz): 0,5
+puntos.
+A lo anterior se le suma el punto base.6. [Texto, 4.5.33]
+Se sabe que todo conjunto linealmente independiente {v1, v2,..., vk} de Rn puede
+ser expandido a una base de Rn. Una forma de lograr esto es considerar la matriz
+A =
+[
+v1 v2 ... vk e1 e2 ... en
+]
+,
+donde e1 e2 ... en son (en orden) las columnas de la matriz identidad; las columnas
+pivote de A forman una base de Rn.
+a) Utilice el m´ etodo descrito para ampliar los siguientes vectores a una base para
+R4:
+v1 =
+
+
+3
+2
+3
+1
+
+, v2 =
+
+
+1
+2
+3
+1
+
+, v3 =
+
+
+5
+1
+3
+1
+
+.
+b) Explique por qu´ e funciona en general el m´ etodo: ¿por qu´ e est´ an los vectores
+originales v1,... vk incluidos en la base encontrada para Col A? ¿Por qu´ e es
+ColA = Rn?
+Soluci´ on:
+a) La matriz A construida como se indica es
+A =
+
+
+3 1 5 1 0 0 0
+2 2 1 0 1 0 0
+3 3 3 0 0 1 0
+1 1 1 0 0 0 1
+
+.
+Tras realizar eliminaci´ on Gaussiana sobre la matriz, obtenemos
+A∼
+
+
+1 1 /3 5 /3 1 /3 0 0 0
+0 1 −7/4 −1/2 3 /4 0 0
+0 0 1 0 −1 2 /3 0
+0 0 0 0 0 1 −3
+
+.
+Como las columnas pivote son la 1 a, la 2 a, la 3 a y la 6 a, la base que nos entrega
+el m´ etodo es
+B ={v1.v2, v3, e3} =
+
+
+
+
+
+3
+2
+3
+1
+
+,
+
+
+1
+2
+3
+1
+
+,
+
+
+5
+1
+3
+1
+
+,
+
+
+0
+0
+1
+0
+
+
+
+
+.b) Si alguno de los k vectores originales no fuera columna pivote de A, la matriz
+de n×k formada por esos vectores tendr´ ıa menos dek pivotes y por lo tanto
+los k vectores columna ser´ ıan linealmente dependientes. As´ ı, todos los vectores
+originales est´ an en el conjunto entregado por este m´ etodo.
+Por otra parte, Col A es el espacio generado por las columnas de A; como las
+columnas de A contienen a e1, e2,..., en, que forman un generador de Rn, se
+tiene que todo elemento de Rn es combinaci´ on lineal de las columnas deA.
+Puntaje:
+a) Por escribir correctamente la matriz A, 1 punto.
+Por escalonar correctamente la matriz (llegando a una forma escalonada o
+a la forma escalonada reducida), 1 punto.
+Por identiﬁcar correctamente las columnas pivote, 0,5 puntos.
+Por escribir correctamente la base que entrega el m´ etodo, 0,5 puntos.
+b) Por dar una buena explicaci´ on de por qu´ e est´ an los vectores originales
+incluidos en la base encontrada, 1,5 puntos.
+Por dar una buena explicaci´ on de por qu´ e ColA = Rn, 1,5 puntos.
+A lo anterior se le suma el punto base.7. Sean A y B dos matrices de n×n tales que AB =BA.
+a) Demuestre que, si Bv⁄= 0 y v es vector propio de A con valor propio asociado
+λ, entonces Bv tambi´ en es vector propio deA con valor propio asociado λ.
+b) Demuestre que si u es cualquier vector propio de A perteneciente a un espacio
+propio de dimensi´ on 1, entoncesu es vector propio de B.
+Soluci´ on:
+a) Si Bv⁄= 0 y v es vector propio de A con valor propio asociado λ, entonces
+A(Bv) =ABv =B(Av) =B(λv) =λ(Bv), por lo que Bv es vector propio de
+A con valor propio asociado λ.
+b) Sea u cualquier vector propio de A perteneciente a un espacio propio de dimen-
+si´ on 1, con valor propio asociadoλ.
+Analizamos dos casos:
+1) Bu = 0. De ser as´ ı,u es vector propio de B con valor propio asociado 0.
+2) Bu⁄= 0. En este caso, por (a), Bu tambi´ en es vector propio deA con valor
+propio asociado λ.
+Pero el espacio propio deA correspondiente al valor propioλ es uni-dimensional,
+por lo queBu =αu para alg´ unα⁄= 0, de donde se deduce queu es vector propio
+de B con valor propio asociado α.
+Puntaje:
+a) Por una demostraci´ on correcta, 3 puntos.
+b) Por una demostraci´ on correcta, 3 puntos.
+Si no consideran aparte el caso en que Bu = 0, 2 puntos.
+A lo anterior se le suma el punto base.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su
+respuesta (el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene
+puntos):
+a) Si W es un subespacio de Rn, entonces (W⊥)⊥ =W .
+b) Si v1 y v2 son dos vectores propios linealmente independientes de A, entonces
+corresponden a distintos valores propios.
+c) Si A es de m×n y A es uno a uno, entonces el rango de A es m.
+Soluci´ on:
+a) VERDADERO
+Si x∈W , x⊥ y para todo y∈W⊥, por lo que x∈ (W⊥)⊥.
+As´ ı, hemos probado queW⊆ (W⊥)⊥, por lo queW es un subespacio de (W⊥)⊥.
+Sea ahora dimW =k. Por ser W subespacio de Rn, podemos expresar W como
+FilaA (donde A es una matriz de k×n), y por lo tanto W⊥ = NulA.
+Pero entonces dim W⊥ = dim(Nul A) = n− dim(FilaA) = n−k. Aplicando
+nuevamente esta misma propiedad, esta vez a W⊥ en lugar de a W , obtenemos
+dim((W⊥)⊥) =n− (n−k) =k.
+De aqu´ ı concluimos queW es un subespacio de ( W⊥)⊥ que tiene su misma
+dimensi´ on, por lo que (ver por ejemplo el problema 4.5.26)W = (W⊥)⊥.
+b) FALSO
+SeaA la matriz identidad de n×n. Todo vector no nulo de Rn es vector propio
+deA con valor propio 1; en particular, si elegimos dos vectores l.i. cualesquiera,
+ambos ser´ an vectores propios l.i. correspondientes al mismo valor propio.
+Otra forma de justiﬁcar la aﬁrmaci´ on es dar un contraejemplo espec´ ıﬁco, por
+ejemploA =
+[ 1 0
+0 1
+]
+, v1 =
+[ 3
+2
+]
+y v2 =
+[
+−1 4
+]
+. Aqu´ ı tenemos dos vectores
+propios con valor propio 1 que son l.i.
+c) FALSO
+Consid´ erese la matrizA =
+[ 1
+0
+]
+. Al actuar sobre un vectorx =
+[
+c
+]
+, se obtiene
+como resultado Ax =
+[ c
+0
+]
+, por lo que A es uno a uno (A
+[
+c1
+]
+=A
+[
+c2
+]
+→
+c1 =c2). Pero el rango de A es 1 = n, no m = 2.
+Puntaje:
+a) Por probar que W es un subespacio de (W⊥)⊥, 1 punto.
+Por probar que en realidad ambos espacios son iguales, 1 punto.
+b) Por dar un buen contraejemplo (espec´ ıﬁco o gen´ erico, como los mostrados en la
+soluci´ on), 2 puntos.
+c) Por dar un buen contraejemplo, 2 puntos.
+A lo anterior se le suma el punto base.

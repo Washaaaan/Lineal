@@ -1,0 +1,528 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+FACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+I1 MAT1203 - Algebra Lineal
+Abril 17, 2013
+1. Determine condiciones sobre α,β de modo que
+
+
+α−β
+α +β
+2α−β
+
+ pertenezca a Gen
+
+
+
+
+
+−1
+−1
+1
+
+,
+
+
+1
+2
+1
+
+,
+
+
+1
+3
+3
+
+
+
+
+ .
+Soluci´ on:El problema es equivalente a determinar condiciones en α, β de modo
+que el sistema lineal A⃗ x=⃗b con matriz ampliada
+[A|b] =
+
+
+−1 1 1 α−β
+−1 2 3 α +β
+1 1 3 2α−β
+
+
+sea consistente. Realizando operaciones ﬁla llevamos [A|b] a una forma escalonada
+
+
+−1 1 1 α−β
+−1 2 3 α +β
+1 1 3 2α−β
+
+
+F2←F2−F1
+F 3←F3 +F1
+−→
+
+
+−1 1 1 α−β
+0 1 2 2β
+0 2 4 3α− 2β
+
+ F3←F3− 2F2
+−→
+
+
+−1 1 1 α−β
+0 1 2 2β
+0 0 0 3α− 6β
+
+
+El sistema es consistente sii 3α− 6β = 0
+Puntos:
+Por establecer la equivalencia del problema con la consistencia de un sistema
+de ecuaciones [ 2.5 pts.]
+Por reducir la matriz ampliada del sistema a una forma escalonada [ 2.5 pts.]
+Por determinar a partir de la escalonada la condici´ on de consistencia [ 1
+pts.]2. a) Si A = [⃗ v1 ⃗ v2 ⃗ v3] es una matriz de n× 3 con columnas ⃗ vi⁄=⃗0 y⃗ v2 =⃗ v1 + 3⃗ v3,
+determine inﬁnitas soluciones de A⃗ x=−⃗ v1 + 3⃗ v2. Justiﬁque.
+b) Sea S⊂ R3 el plano de ecuaci´ on cartesianax−y−z = 0. Determine justiﬁca-
+damente si A(S) ={A⃗ x: ⃗ x∈S} es un plano o una recta en R3, donde
+A =
+
+
+0 −1 1
+1 −2 0
+−1 1 1
+
+ .
+Soluci´ on:
+a) Puesto que Ax =x1⃗ v1+x2⃗ v2+x3⃗ v3 tenemos que⃗ v2 =⃗ v1+3⃗ v3⇔⃗ v1−⃗ v2+3⃗ v3 =
+⃗0⇔A
+
+
+1
+−1
+3
+
+ =⃗0. De la misma manera A
+
+
+−1
+3
+0
+
+ =−⃗ v1 + 3⃗ v2.
+Para la familia de vectores
+⃗ x(α) =α
+
+
+1
+−1
+3
+
+ +
+
+
+−1
+3
+0
+
+ α∈ R,
+tenemos
+A(⃗ x(α)) = A(α
+
+
+1
+−1
+3
+
+ +
+
+
+−1
+3
+0
+
+)
+= αA
+
+
+1
+−1
+3
+
+ +A
+
+
+−1
+3
+0
+
+
+= α⃗0 +−⃗ v1 + 3⃗ v2
+= −⃗ v1 + 3⃗ v2
+,
+y hemos encontrado inﬁnitas soluciones ⃗ x(α) con α∈ R. Puntos:
+• Por la idea de usar inﬁnitas soluciones de A⃗ x=⃗0 m´ as una soluci´ on parti-
+cular de A⃗ x=⃗b [ 1 pts.]
+• Por encontrar una soluci´ on deA⃗ x=⃗0, [ 1 pts.]
+• Por encontrar una soluci´ on particular deA⃗ x=−⃗ v1 + 3⃗ v2 [ 1 pts.]Otra alternativa de soluci´ ones la siguiente: Ax = x1⃗ v1 +x2⃗ v2 +x3⃗ v3 =
+−⃗ v1 + 3⃗ v2 es equivalente a (usando la relaci´ on⃗ v2 =⃗ v1 + 3⃗ v3) a (x1 +x2)⃗ v1 +
+(3x2 +x3)⃗ v3 = 2⃗ v1 + 9⃗ v3 [ 1 pts.] . Puesto que el sistema
+x1 +x2 = 2
+3x2 +x3 = 9 [ 1pts.]
+tiene inﬁnitas soluciones, x1 = 2−x2,x3 = 9− 3x2 [ 1 pts.] obtenemos que
+A⃗ x=−⃗ v1 +⃗ v2 tiene inﬁnitas soluciones
+⃗ x=
+
+
+2−x2
+x2
+9− 3x2
+
+ x2∈ R
+.
+b) Los vectores del plano x−y−z = 0 son de la forma
+
+
+x
+y
+z
+
+ =
+
+
+y +z
+y
+z
+
+ =y
+
+
+1
+1
+0
+
+ +z
+
+
+1
+0
+1
+
+ , y,z ∈ R
+Entonces
+A
+
+
+x
+y
+z
+
+ = yA
+
+
+1
+1
+0
+
+ +zA
+
+
+1
+0
+1
+
+
+= y
+
+
+−1
+−1
+0
+
+ +z
+
+
+1
+1
+0
+
+
+= ( z−y)
+
+
+1
+1
+0
+
+ , y,z ∈ R
+Entonces la imagen del plano bajo A es la recta por el origen generada por el
+vector
+
+
+1
+1
+0
+
+.
+Puntos:
+• Por escribir en forma param´ etrica vectorial el plano [ 1 pts.]
+• Por aplicar la linealidad de A y por realizar las multplicaciones de A por
+vector [ 1.5 pts.]
+• Por concluir que es una recta [ 0.5 pts.]3. a) Sea F : R3→ R3 una transformaci´ on lineal tal que
+F (ˆe1) =
+
+
+1
+2
+3
+
+ , F (ˆe2) =
+
+
+1
+2
+2
+
+ , F (ˆe3) =
+
+
+α
+−1
+α
+
+ ,
+donde ˆe1, ˆe2, ˆe3 son los vectores can´ onicos de R3. Determine los valores de α
+para los cu´ ales la transformaci´ onF tiene inversa y determine F −1.
+b) Si PA =LU donde
+P =
+
+
+0 0 1
+0 1 0
+1 0 0
+
+, L =
+
+
+1 0 0
+−1 1 0
+0 1 1
+
+, U =
+
+
+2 1 0
+0 1 1
+0 0 −1
+
+ ,
+determine usando directamente esta factorizaci´ on ( sin calcular A ni AT ) la
+tercera ﬁla de A−1.
+a) Puesto que F es una transformaci´ on lineal
+F (⃗ x) = [F (ˆe1)F (ˆe2)F (ˆe3)]⃗ x=A⃗ x=
+
+
+1 1 α
+2 2 −1
+3 2 α
+
+
+
+
+x1
+x2
+x3
+
+
+F tiene inversa siiA tiene inversa yF −1(⃗ x) =A−1⃗ x. Se calcula la inversa de A
+por medio de operaciones elementales ﬁla llevando [A|I] a su forma escalonada
+reducida. Obtenemos que para 1 + 2α⁄= 0
+
+
+1 1 α 1 0 0
+2 2 −1 0 1 0
+3 2 α 0 0 1
+
+ rref()−→
+
+
+1 0 0 −2 1+α1+2α − α1+2α 1
+0 1 0 3+2α1+2α 2 α1+2α −1
+0 0 1 21+2α − 11+2α 0
+
+
+Entonces
+A−1 =
+
+
+−2 1+α1+2α − α1+2α 1
+3+2α
+1+2α 2 α1+2α −1
+2
+1+2α − 11+2α 0
+
+
+Puntos:
+• Por establecer que F (⃗ x) =A⃗ x[ 0.5 pts.]
+• Por establecer que F −1(⃗ x) =A−1⃗ x[ 0.5 pts.]
+• Por calcular la inversa de A [ 1.5 pts.]
+• Por la condici´ on 1 + 2α⁄= 0 [ 0.5 pts.]b) La tercera ﬁla de A−1 es la tercera columna transpuesta de ( AT )−1, que es la
+soluci´ on deAT⃗ x= ˆe3, con ˆe3 el tercer vector can´ onico enR3. Pero PA =LU
+implica ATPT = UTLT y entonces AT = UTLTP . De esta manera el sistema
+AT⃗ x= ˆe3 es equivalente a UTLTP⃗ x= ˆe3. Resolvemos
+i) UT⃗ y= ˆe3⇔
+
+
+2 0 0
+1 1 0
+0 1 −1
+
+⃗ y=
+
+
+0
+0
+1
+
+, cuya soluci´ on es⃗ y=
+
+
+0
+0
+−1
+
+
+ii) LT⃗ z=⃗ y⇔
+
+
+1 −1 0
+0 1 1
+0 0 1
+
+⃗ z=
+
+
+0
+0
+−1
+
+ cuya soluci´ on es⃗ z=
+
+
+1
+1
+−1
+
+
+iii) P⃗ x=⃗ z⇔
+
+
+0 0 1
+0 1 0
+1 0 0
+
+⃗ x=
+
+
+1
+1
+−1
+
+ cuya soluci´ on es⃗ x=
+
+
+−1
+1
+1
+
+
+Entonces la tercera ﬁla de A−1 es el vector ﬁla [−1, 1, 1]. Puntos:
+• Por el m´ etodo correcto [ 1 pts.]
+• Por i) [ 0.5 pts.]
+• Por ii) [ 0.5 pts.]
+• Por iii) [ 0.5 pts.]
+• Por la tercera ﬁla de A−1 [ 0,5 pts.]4. Determine si la aﬁrmaci´ on es VERDADERA o FALSA y justiﬁque demostrando su
+respuesta.
+a) Si A es una matriz de 4 × 3 entonces la transformaci´ on⃗ x→A⃗ xno puede ser
+1-1.
+b) Si A es matriz de n×n y⃗ u, ⃗ v, ⃗ wson vectores en Rn linealmente dependientes
+entoncesA⃗ u, A⃗ v, A⃗ wson linealmente dependientes.
+c) Si A,B son matrices den×n yA es la inversa deB3 entoncesAB es la inversa
+de B2 y AB =BA.
+d) Si ⃗ u1,⃗ u2 son vectores linealmente independientes en Rn entonces
+⃗ v1 = a1,1⃗ u1 +a2,1⃗ u2
+⃗ v2 = a1,2⃗ u1 +a2,2⃗ u2
+son linealmente independientes si y s´ olo si la matrizA =
+[ a1,1 a1,2
+a2,1 a2,2
+]
+de 2×2
+tiene inversa.
+Soluci´ on:
+a) FALSA: Un contraejemplo es la matriz
+A =
+
+
+1 0 0
+0 1 0
+0 0 1
+0 0 0
+
+
+de 4× 3, tiene columnas que son linealmente independientes en R4 y entonces
+A es 1-1.
+Puntos:
+• [ 1 pts.] por el matriz contraejemplo
+• [ 0.5 pts.] por la justiﬁcaci´ on
+b) VERDADERA: Si ⃗ u, ⃗ v, ⃗ wson vectores en Rn linealmente dependientes enton-
+ces existen x1,x 2,x 3 no todos nulos tal que x1⃗ u+x2⃗ v+x3⃗ w,=⃗0. Multiplicado
+por A esta igualdad, y usando que ⃗ x→ A⃗ xes una transformaci´ on lineal, ob-
+tenemos que A(x1⃗ u+x2⃗ v+x3⃗ w) = x1A(⃗ u) +x2A(⃗ v) +x3A(⃗ w) = A(⃗0) = ⃗0.
+Por lo tanto una combinaci´ on no trivial de los vectoresA⃗ u,A⃗ v,A⃗ wes igual al
+vector nulo y entonces ellos son linealmente dependientes.
+Puntos:
+• Por establecer correctamente la condici´ on de dependencia lineal para los
+vectoresvu,⃗ v.⃗ w[ 0.5 pts.] [ pts.]• Pos multiplicar por A esta condici´ on y justiﬁcadamente llegar a la condi-
+ci´ on de linealidad deA⃗ u,A⃗ v,A⃗ w[ 1 pts.]
+c) VERDADERA: Si A es la inversa de B3, entonces A(B3) = I. Por la asocia-
+tividad de la multiplicaci´ onAB3 = A(BBB ) = ( AB)(B2) = I y como las
+matrices son cuadradas, AB = (B2)−1. Similarmente, A es la inversa de B3
+implicaI =B3A =B2(BA); y por lo tanto BA es tambi´ en la inversa deB2, y
+entoncesBA =AB.
+Puntos:
+• [ 0.5 pts.] por usar que para matrices cuadradas A,X la matriz X es la
+inversa de A sii AX =I o XA =I
+• [ 0.5 pts.] por demostrar que AB es la inversa de B2
+• [ 0.5 pts.] por demostrar que BA es la inversa de B2
+d) Notamos primero que
+⃗0 = x1⃗ v1 +x2⃗ v2
+= x1(a1,1⃗ u1 +a2,1⃗ u2) +x2(a1,2⃗ u1 +a2,2⃗ u2)
+= ( a1,1x1 +a1,2x2)⃗ u1 + (a2,1x1 +a2,2x2)⃗ u2 (∗)
+= y1⃗ u1 +y2⃗ u2
+donde
+y1 =a1,1x1 +a1,2x2
+y2 =a2,1x1 +a2,2x2
+⇔
+[ y1
+y2
+]
+=
+[ a1,1 a1,2
+a2,1 a2,2
+][ x1
+x2
+]
+⇔A⃗ x=⃗ y
+Sean⃗ u1,⃗ u2 vectores linealmente independientes yA invertible. Entoncesx1⃗ v1+
+x2⃗ v2 =⃗0 implica (por(*))y1⃗ u1 +x2⃗ v2 =⃗0. Por la independencia lineal de⃗ u1,⃗ u2
+se tiene que y1 = y2 = 0. Como A tiene inversa, ⃗ x= A−1⃗ y= A−1⃗0 =⃗0 y por
+lo tanto x1 =x2 = 0 y ⃗ v1,⃗ v2 son LI.
+De la misma manera, si ⃗ v1,⃗ v2 son linealmente independientes, y ⃗ y= A⃗ x=⃗0,
+entonces por (*) y la independencia lineal de ⃗ v1,⃗ v2 se tiene x1 = x2 = 0 y
+entonces⃗ y=A⃗ x=⃗0⇒⃗ x=⃗0 y por lo tanto A tiene inversa.
+Puntos:
+• [ 0.5 pts.] por establecer la relaci´ on entre las combinaciones lineales de
+los⃗ v1 con lo ⃗ uj.
+• [ 0.5 pts.] por demostrar que si A es invertible y ⃗ u1,⃗ u2 son LI entonces
+⃗ v1,⃗ v2 son L
+• [ 0.5 pts.] por demostrar que si y ⃗ u1,⃗ u2 son LI y ⃗ v1,⃗ v2 son LI entonces
+A es invertible

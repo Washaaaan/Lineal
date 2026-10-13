@@ -1,0 +1,155 @@
+
+----- pagina 1 -----
+Clase 25 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 9
+----- pagina 2 -----
+Recordatorio
+Un espacio vectorial es un conjunto de objetos (llamados vectores)
+que se pueden sumar y multiplicar por escalar de forma ”razonable” .
+Dado un subespacio H, una base de H es un conjunto B LI que
+genera H.
+El espacio nulo de una matriz A el el espacio de soluciones de
+Ax = b. Una base se obtiene resolviendo el sistema.
+El espacio columna de una matriz A es el espacio generado por las
+columnas de A. Una base se obtiene encontrando las columnas
+pivotes.
+2 / 9
+----- pagina 3 -----
+Sistemas de coordenadas
+Una razón importante para especificar una base B para un espacio
+vectorial V es imponer un ”sistema de coordenadas” en V.
+Teorema: Teorema de la representación única
+Sea B = {b1, . . . ,bn} una base para un espacio vectorial V. Así, para cada
+x en V, existe un conjunto único de escalares c1, . . . ,cn tal que
+x = c1b1 + · · · + cnbn
+3 / 9
+----- pagina 4 -----
+Sistemas de coordenadas
+Definición: Coordenadas
+Suponga que B = {b1, . . . ,bn} es una base para V y x está en V. Las
+coordenadas de x respecto de la base B (o las B-coordenadas de x)
+son los pesos c1, . . . ,cn tales que x = c1b1 + · · · + cnbn.
+Si c1, . . . ,cn son las B-coordenadas de x, entonces el vector en Rn
+[x]B =
+
+
+c1
+...
+cn
+
+
+es el vector de coordenadas de x (relativo a B), o el B-vector de
+coordenadas de x.
+4 / 9
+----- pagina 5 -----
+Sistemas de coordenadas
+Ejemplo: Considere la base B = {b1, b2} para R2, donde b1 =
+[ 1
+0
+]
+y
+b2 =
+[ 1
+2
+]
+. Si [x]B =
+[ −2
+3
+]
+, determine x.
+Ejemplo: Para la base B = {b1, b2} del ejemplo anterior, encuentre el
+vector de coordenadas [x]B de x =
+[ 3
+2
+]
+.
+5 / 9
+----- pagina 6 -----
+Sistemas de coordenadas
+Ejemplo: Sean
+v1 =
+
+
+3
+6
+2
+
+ , v2 =
+
+
+−1
+0
+1
+
+ , x =
+
+
+3
+12
+7
+
+
+y B = {v1, v2}. Determine si x se encuentra en H = Gen {v1, v2} y, en tal
+caso, encuentre [x]B.
+Nota: La matriz
+
+
+3 −1 3
+6 0 12
+2 1 7
+
+ es equivalente por filas a
+
+
+1 0 2
+0 1 3
+0 0 0
+
+
+6 / 9
+----- pagina 7 -----
+Sistemas de coordenadas
+Aunque los ejemplos anteriores utilizan vectores en R2, la interpretación
+gráfica de las coordenadas es válida para cualquier espacio vectorial de
+dimensión 2.
+Ejemplo: Sea B = {1, t, t2, t3} la base estándar del espacio P3 Encuentre
+las coordenadas del vector P(t) = 3t2 − 2t − 2.
+7 / 9
+----- pagina 8 -----
+Sistemas de coordenadas
+La transformación x ↦→ [x]B es importante por sus propiedades lineales.
+Teorema: Isomorfismo de coordenadas
+Sea B = {b1, . . . ,bn} una base para un espacio vectorial V. Entonces, el
+mapeo de coordenadas x ↦→ [x]B es una transformación lineal uno a uno de
+V sobre Rn.
+La linealidad del mapeo de coordenadas significa que:
+[u + v]B = [u]B + [v]B
+[cu]B = c[u]B
+8 / 9
+----- pagina 9 -----
+Ejemplo: Determine si el conjunto de polinomios
+{1 + 2t2, 4 + t + 5t2, 3 + 2t} en P2 es linealmente independiente.
+Nota: La matriz
+
+
+1 4 3
+0 1 2
+2 5 0
+
+, la es equivalente por fila a
+
+
+1 4 3
+0 1 2
+0 0 0
+
+.
+Ejemplo: Sean
+p1(t) = 3 + 6t + t2, p2(t) = t2 − 1, q(t) = 3 + 12t + 7t2
+Determine si q(t) pertenece a Gen {p1, p2}.
+9 / 9

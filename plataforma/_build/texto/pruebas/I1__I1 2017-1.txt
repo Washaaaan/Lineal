@@ -1,0 +1,845 @@
+Pontificia Universidad Cat´olica de Chile
+Facultad de Matem´aticas
+Departamento de Matem´aticas
+Primer semestre de 2017
+MAT1203⋆ ´Algebra Lineal
+Soluci´ on a la Interrogaci´ on N◦ 1
+1. a) Escriba la ecuaci´ on cartesiana del plano que pasa por los puntos (1, 1, 1), (−1, 2, 3) y (0, 1, 3).
+Primera Soluci´ on:
+Sea Ax +By +Cz +D = 0 la ecuaci´ on buscada.
+Ya que el plano pasa por los puntos (1 , 1, 1), (−1, 2, 3) y (0, 1, 3), debe tenerse:
+A + B + C +D = 0
+−A + 2B + 3C +D = 0
+B + 3C +D = 0
+⏐⏐⏐⏐⏐⏐⏐
+Resolviendo el sistema (por ejemplo, escalonando, o por alg´ un otro m´ etodo), llegamos a
+A =−25D, B =−25D, C =−15D.
+Escogiendo D =−5 (para simpliﬁcar los c´ alculos), llegamos aA = 2, B = 2, C = 1; o sea,
+la ecuaci´ on cartesiana del plano dado es
+2x + 2y +z− 5 = 0
+(o cualquier m´ ultiplo no nulo de ella).
+Segunda Soluci´ on:
+Dado que los puntos (1, 1, 1), (−1, 2, 3) y (0, 1, 3) est´ an en el plano, dos vectores contenidos
+en el plano son (−1, 2, 3)− (1, 1, 1) = (−2, 1, 2) y (0, 1, 3)− (1, 1, 1) = (−1, 0, 2).
+As´ ı, un vector normal al plano est´ a dado por
+(−2, 1, 2)× (−1, 0, 2) = (2, 2, 1),
+por lo que la ecuaci´ on param´ etrica de este plano es de la forma
+((x,y,z )− (x0,y 0,z 0))· (2, 2, 1) = 0, o (x,y,z )· (2, 2, 1)− (x0,y 0,z 0)· (2, 2, 1) = 0,
+lo que es equivalente a 2x + 2y +z− (2x0 + 2y0 +z0) = 0.
+Reemplazando cualquiera de los puntos por los que pasa el plano (por ejemplo, (1 , 1, 1)) en
+esta ecuaci´ on, obtenemosD =−5, con lo que ﬁnalmente la ecuaci´ on buscada es
+2x + 2y +z− 5 = 0 (o, como se dijo antes, cualquier m´ ultiplo no nulo de esta).
+b) Escriba la ecuaci´ on param´ etrica de la recta que es perpendicular a este plano y pasa por el
+punto (1, 1, 1),
+Soluci´ on:
+Si una recta es perpendicular a este plano, su vector director d→ debe ser un m´ ultiplo no nulo de
+(A,B,C ) = (2, 2, 1). As´ ı, podemos tomard→ = (2, 2, 1) como vector director.Como la recta pasa por p→ = (1, 1, 1), su ecuaci´ on param´ etrica es
+x→ = p→ +t v→ = (1, 1, 1) +t(2, 2, 1).
+Como en esta ecuaci´ onx→ representa a (x,y,z ), podemos escribir esta ecuaci´ on como (x,y,z ) =
+(1, 1, 1) +t(2, 2, 1), como (x,y,z ) = (1 + 2t, 1 + 2t, 1 +t) o incluso como el sistema de ecuaciones
+x = 1 + 2t
+y = 1 + 2t
+z = 1 +t
+⏐⏐⏐⏐⏐⏐⏐
+Puntaje:
+a) Por plantear correctamente una forma de resolver el problema (por ejemplo, un sistema
+de ecuaciones como el mostrado), 1 pto.
+Por resolver la o las ecuaciones necesarias para llegar a la ecuaci´ on buscada, 1 pto.
+Por llegar a la ecuaci´ on 2x + 2y +z− 5 = 0 (o cualquier m´ ultiplo no nulo de ella), 1
+pto.
+Por ejemplo:
+En la primera soluci´ on planteada, se da un punto por plantear el sistema cuyas inc´ ognitas
+son los coeﬁcientes de la ecuaci´ on buscada; 1 punto por resolver el sistema; y 1 punto por
+llegar a la ecuaci´ on.
+En la segunda soluci´ on presentada, se da 1 punto por hallar los dos vectores y plantear que
+se necesita encontrar el producto cruz; 1 punto por calcular el producto cruz y plantear la
+ecuaci´ on de la forma (x→− x→0)· n→ = 0→; y 1 punto por llegar a la ecuaci´ on ﬁnal.
+b) Por identiﬁcar correctamente el vector director de la recta, 1 pto.
+Por escribir la ecuaci´ on de la recta en cualquiera de las formas indicadas (u otra co-
+rrecta), 2 ptos.
+A lo anterior se le suma el punto base.2. Dado el sistema de ecuaciones lineales
+x1 + 3x2 + 7x3 = 0
+x1 + 9x2 + 4x3 =−1
+2x1 + x2 + x3 = 1
+⏐⏐⏐⏐⏐⏐⏐
+a) [1 pto.] Exprese el sistema como una matriz aumentada.
+b) [3 pts.] Exprese la matriz en su forma escalonada reducida por ﬁlas.
+c) [2 pts.] Determine si el sistema es consistente o inconsistente
+Soluci´ on:
+a) La matriz aumentada del sistema es
+˜A =
+
+
+1 3 7 0
+1 9 4 −1
+2 1 1 1
+
+.
+b) Al llevar la matriz a su forma escalonada reducida por ﬁlas, obtenemos
+˜A∼
+
+ 1 0 0 55930 1 0 −1693
+0 0 1 − 193
+
+.
+c) Ya que la ´ ultima ﬁla no nula de la matriz aumentada no tiene el pivote en la ´ ultima
+columna (todos los pivotes est´ an en la zona correspondiente a la matriz A, no en la parte
+correspondiente a b→ en la ecuaci´ onA x→ = b→), el sistema es consistente.
+Puntaje:
+a) Si la matriz est´ a correcta, 1 punto. Si no, 0.
+b) Si la matriz ha sido llevada correctamente a su forma escalonada reducida por ﬁlas, 3 puntos.
+Si la forma escalonada reducida por ﬁlas est´ a incorrecta, pero la matriz ha sido llevada
+correctamente a una forma escalonada, por ejemplo
+˜A =
+
+
+1 3 7 0
+1 9 4 −1
+2 1 1 1
+
+∼
+
+
+1 3 7 0
+0 6 −3 −1
+0 0 −312 16
+
+ o ˜A = 1 3 7 01 9 4 −12 1 1 1 ∼
+
+
+1 3 7 0
+0 6 −3 −1
+0 0 −312 16
+
+,
+se dan 2 puntos.
+c) Por decir que el sistema es consistente, 1 punto.
+Por una justiﬁcaci´ on adecuada, 1 punto.
+A lo anterior se le suma el punto base.3. a) [4 pts.] Encuentre todos los valores deh para los que el vector u→ = (−2, 5,h ) se encuentra
+en el plano generado por
+{
+v→, w→}, donde v→ = (h,−1, 4) y w→ = (2,−3, 1).
+Primera Soluci´ on:
+Que el vector u→ est´ e en el plano generado por{ v→, w→} es equivalente a que[ u→, v→, w→] =
+( u→× v→)· w→ = 0.
+Como
+( u→× v→)· w→ = ((−2, 5,h )×(h,−1, 4))·(2,−3, 1) = (20+h,h 2+8, 2−5h)·(2,−3, 1) = 18−3h−3h2,
+los valores buscados son aquellos que satisfacen 18 − 3h− 3h2 = 0, o equivalentemente
+h2 +h− 6 = 0, de donde h = 2 o h =−3.
+Segunda Soluci´ on:
+Para que el vector u→ se encuentre en el plano generado por { v→, w→}, u→ debe ser combi-
+naci´ on lineal dev→ y w→.
+En otras palabras, deben existir x e y tales que
+x
+
+
+h
+−1
+4
+
+ +y
+
+
+2
+−3
+1
+
+ =
+
+
+−2
+5
+h
+
+,
+o sea
+xh + 2y =−2
+−x− 3y = 5
+4x + y =h
+⏐⏐⏐⏐⏐⏐⏐
+Note que este NO ES UN SISTEMA LINEAL, por lo que debemos resolverlo en forma ad
+hoc. Por ejemplo, podemos despejar y en la ´ ultima ecuaci´ on, obteniendoy =h− 4x, lo que
+al reemplazarlo en las dos primeras ecuaciones da
+xh + 2(h− 4x) =−2
+−x− 3(h− 4x) = 5
+⏐⏐⏐⏐⏐
+Reduciendo t´ erminos semejantes, obtenemos
+xh + 2h− 8x =−2
+11x− 3h = 5
+⏐⏐⏐⏐⏐
+Despejando x en la segunda ecuaci´ on, tenemosx = 3h + 511 ; reemplazando en la primera
+llegamos a 3h2 + 3h− 18 = 0, o equivalentemente, h2 +h− 6 = 0, que tiene por soluciones
+a h = 2 y h =−3. As´ ı, los valores deh para los que u→ se encuentre en el plano generado
+por
+{
+v→, w→} son h = 2 y h =−3.
+Tercera Soluci´ on:
+Considerando el sistema
+xh + 2y =−2
+−x− 3y = 5
+4x + y =h
+⏐⏐⏐⏐⏐⏐⏐(mencionado en la soluci´ on anterior) como un sistema lineal con inc´ ognitasx ey, en que h
+es un par´ ametro, su matriz ampliada ser´ ıa
+
+
+h 2 −2
+−1 −3 5
+4 1 h
+
+.
+Aplicando eliminaci´ on Gaussiana (escalonando), obtenemos
+
+
+h 2 −2
+−1 −3 5
+4 1 h
+
+∼
+
+
+−1 −3 5
+h 2 −2
+4 1 h
+
+∼
+
+
+1 3 −5
+h 2 −2
+4 1 h
+
+∼
+
+
+1 3 −5
+0 2 − 3h −2 + 5h
+0 −11 h + 20
+
+
+∼
+
+
+1 3 −5
+0 −11 h + 20
+0 2 − 3h −2 + 5h
+
+∼
+
+
+1 3 −5
+0 1 −h + 2011
+0 2 − 3h −2 + 5h
+
+
+∼
+
+
+1 3 −5
+0 1 −h + 2011
+0 0 −3h2 + 3h− 1811
+
+
+Este sistema es consistente si y solo si 3h2 + 3h− 18, o equivalentemente,h2 +h− 6 = 0, o
+sea, si y solo si h = 2 o h =−3, que son los valores buscados.
+b) [2 pts.] Para los valores de h hallados en la parte anterior, ¿es
+{
+u→, v→, w→} un conjunto
+linealmente dependiente o linealmente independiente? Justiﬁque su respuesta.
+Soluci´ on:
+Para los valores deh que satisfacen la condici´ on mencionada en (a),u→ debe ser combinaci´ on lineal
+de v→ y w→, por lo que deben existirx ey tales que u→ =x v→+y w→, por lo que u→−x v→−y w→ = 0→.
+Como el coeﬁciente de u→ es⁄= 0,{ u→, v→, w→} es linealmente dependiente.
+Puntaje:
+a) Por plantear correctamente una forma de resolver el problema (por ejemplo, un sistema
+de ecuaciones como alguno de los mostrados), 1 pto.
+Por simpliﬁcar el sistema anterior, y llegar a una ecuaci´ on que solo involucre a h, 2
+ptos.
+Si quedan a medio camino en esto, reciben 1 pto.
+Por llegar a los valores h = 2 y h =−3, 1 pto.
+b) Por indicar que
+{
+u→, v→, w→} es linealmente dependiente CON UNA BUENA JUSTIFICA-
+CI ´ON, 2 ptos.
+Se puede dar puntaje parcial (1 punto) si la justiﬁcaci´ on es insuﬁciente, pero solo decir que
+son l.d. (sin justiﬁcar) recibe 0 ptos.4. Sea A =
+
+
+0 0 0 1 0
+1 1 −1 2 0
+2 −1 1 1 0
+3 0 0 3 0
+
+.
+a) ¿Existe un vector b→∈ R4 tal que A x→ = b→ no tiene soluci´ on? De ser as´ ı, encuentre al
+menos uno.
+b) Determine b→∈ R4, b→⁄= 0→ tal que A x→ = b→ posee soluci´ on, y determine la soluci´ on
+general en dicho caso.
+Soluci´ on:
+a) Sea b→ = (b1,b 2,b 3,b 4). Consideremos la matriz ampliada ˜A del sistema A x→ = b→, y —
+aplicando operaciones elementales— escalon´ emosla:
+˜A =
+
+
+0 0 0 1 0 b1
+1 1 −1 2 0 b2
+2 −1 1 1 0 b3
+3 0 0 3 0 b4
+
+ ∼f1←→f2
+
+
+1 1 −1 2 0 b2
+0 0 0 1 0 b1
+2 −1 1 1 0 b3
+3 0 0 3 0 b4
+
+
+∼
+f3−2f1
+f4−3f1
+
+
+1 1 −1 2 0 b2
+0 0 0 1 0 b1
+0 −3 3 −3 0 b3− 2b2
+0 −3 3 −3 0 b4− 3b2
+
+ ∼f2←→f3
+
+
+1 1 −1 2 0 b2
+0 −3 3 −3 0 b3− 2b2
+0 0 0 1 0 b1
+0 −3 3 −3 0 b4− 3b2
+
+
+∼
+f4+(−1)f2
+
+
+1 1 −1 2 0 b2
+0 −3 3 −3 0 b3− 2b2
+0 0 0 1 0 b1
+0 0 0 0 0 b4−b2−b3
+
+
+Observamos que, si b4−b2−b3 = 0, la ´ ultima ﬁla de esta matriz escalonada es nula, por lo
+que en ese caso el sistema es consistente; por otra parte, si b4−b2−b3⁄= 0, la ´ ultima ﬁla
+tiene un pivote en la ´ ultima columna, por lo que el sistema es inconsistente.
+As´ ı, es claro que existe un vectorb→ = (b1,b 2,b 3,b 4) para el cual el sistema no tiene soluci´ on;
+basta escoger los valores de b1,b 2,b 3,b 4 de modo que b4−b2−b3⁄= 0, por ejemplo, tomando
+b→ = (0, 0, 0, 1).
+b) En esta parte, basta elegir b→ = (b1,b 2,b 3,b 4) de modo que b4−b2−b3 = 0, por ejemplo,
+b→ = (0, 0, 1, 1). Para hallar la soluci´ on general en este caso, debemos llevar la matriz a su
+forma escalonada reducida por ﬁlas, por ejemplo, partiendo de la forma escalonda de (a) y
+continuando el proceso:˜A =
+
+
+0 0 0 1 0 b1
+1 1 −1 2 0 b2
+2 −1 1 1 0 b3
+3 0 0 3 0 b4
+
+∼
+
+
+1 1 −1 2 0 b2
+0 −3 3 −3 0 b3− 2b2
+0 0 0 1 0 b1
+0 0 0 0 0 b4−b2−b3
+
+
+=
+
+
+1 1 −1 2 0 0
+0 −3 3 −3 0 1
+0 0 0 1 0 0
+0 0 0 0 0 0
+
+ ∼− 13·f2
+
+
+1 1 −1 2 0 0
+0 1 −1 1 0 − 13
+0 0 0 1 0 0
+0 0 0 0 0 0
+
+
+∼
+f1+(−1)f2
+
+
+1 0 0 1 0 0
+0 1 −1 1 0 − 13
+0 0 0 1 0 0
+0 0 0 0 0 0
+
+
+∼
+f1−f3
+f2−f3
+
+
+1 0 0 0 0 13
+0 1 −1 0 0 − 13
+0 0 0 1 0 0
+0 0 0 0 0 0
+
+
+por lo que —en el caso en que b→ = (0, 0, 1, 1)— la soluci´ on general est´ a dada por
+x1 = 13
+x2 =−13 +x3
+x4 = 0
+Puntaje:
+a) Por llegar a la condici´ onb4−b2−b3 = 0 para que el sistema tenga soluci´ on, 2 puntos.
+Por mostrar un b→ para el cual el sistema no tiene soluci´ on, 1 punto.
+b) Por mostrar un b→ para el cual el sistema tiene soluci´ on, 1 punto.
+Por llegar a la matriz escalonada reducida del sistema, 1 punto.
+Por dar correctamente la soluci´ on general del sistema para el valor escogido de b→, 1
+punto.
+A lo anterior se le suma el punto base.5. Sea T : R2→ R3 una transformaci´ on lineal conT (x1,x 2) = (2x1−x2,−3x1 +x2, 2x1− 3x2).
+Encuentre, si es que existe, x→ = (x1,x 2) tal que T ( x→) = (0,−1,−4).
+Soluci´ on:
+Buscamos x→ = (x1,x 2) tal que (2x1−x2,−3x1 +x2, 2x1− 3x2) = (0,−1,−4), o sea, tal que
+2x1− x2 = 0
+−3x1 + x2 =−1
+2x1− 3x2 =−4
+⏐⏐⏐⏐⏐⏐⏐
+Para resolver el sistema, escribimos su matriz aumentada, y la llevamos a su forma escalonada
+reducida por ﬁlas: 
+
+2 −1 0
+−3 1 −1
+2 −3 −4
+
+∼
+
+
+1 0 1
+0 1 1
+0 0 0
+
+
+El que la ´ ultima ﬁla no nula de esta matriz tenga un pivote en una columna anterior a la ´ ultima
+nos dice que el sistema es consistente, y de paso nos muestra una soluci´ on:x→ = (x1,x 2) = (1, 2)
+(de hecho, esta es la ´ unica soluci´ on).
+Puntaje:
+Por plantear el sistema que deben satisfacer x1 y x2, 2 puntos.
+Por llegar a que el sistema es consistente, 2 puntos.
+Por encontrar x→ = (1, 2) que satisface la condici´ on pedida, 2 puntos.
+A lo anterior se le suma el punto base.6. Encuentre el patr´ on de ﬂujo general de la red que se ilustra en la ﬁgura. Suponiendo que todos
+los ﬂujos son no negativos, ¿cu´ al es el valor m´ as peque˜ no posible parax4?
+1.7 Independencia lineal 55
+12. Encuentre el patrón de flujo general de la red que se ilustra en la 
+figura. Suponiendo que todos los flujos son no negativos, ¿cuál 
+es el valor más pequeño posible para x4?    
+80
+100
+A
+B
+C
+x1
+x2
+x4
+x3
+13. a)  Encuentre el patrón de flujo general de la red que se ilustra 
+en la figura.    
+b) Suponiendo que los flujos deben ser en los sentidos indica-
+dos, encuentre los flujos mínimos en las ramas denotadas 
+como x2, x3, x4 y x5.   
+60
+80
+90
+100
+x1 x6
+x2
+x3
+x5
+x4
+20 40
+30 40
+A
+E
+C
+D
+B
+14. a)  Encuentre el patrón de tráfico general de la red de autopistas 
+que se representa en la figura. (Las tasas de flujo están en 
+vehículos/minuto). 
+b) Describa el patrón de tráfico general cuando está cerrada la 
+ruta cuyo flujo es x5.   
+c) Cuando x5 /H11005 0, ¿cuál es el valor mínimo de x4? 
+x1
+x3
+x4 x2x5
+100
+90
+80
+90
+BA
+CD
+15. En Inglaterra las intersecciones con frecuencia se construyen 
+como circuitos en forma de glorieta de un solo sentido, como el 
+que se ilustra en la figura. Suponga que el tráfico debe circular 
+en los sentidos indicados. Encuentre la solución general del flu-
+jo de red. Determine el valor más pequeño posible para x6.
+x1
+x4
+x6 x2
+x3x5
+70
+100
+60
+80
+80 90
+DE
+AB
+FC
+SOLUCIONES A LOS PROBLEMAS DE PRÁCTICA 
+1. Escriba los porcentajes como decimales. Como todas las salidas deben tomarse en cuenta, 
+cada columna debe sumar 1. Este hecho ayuda a llenar cualquier entrada faltante.
+Las ecuaciones homogéneas de la sección 1.5 se pueden estudiar desde una perspectiva dife-
+rente si las escribimos como ecuaciones vectoriales. De esta manera, la atención se transfiere 
+de las soluciones desconocidas de Ax /H11005 0 a los vectores que aparecen en las ecuaciones 
+vectoriales.
+1.7 INDEPENDENCIA LINEAL
+Distribución de la producción por sectores:
+Agricultura Minería Manufactura Comprada por:
+.65 .20 .20 Agricultura
+.05 .10 .30 Minería
+.30 .70 .50 Manufactura
+2. Como x5 /H11349 500, las ecuaciones D y A para x 1 y x2 implican que x 1 /H11350 100 y x 2 /H11349 700. 
+El hecho de que x 5 /H11350 0 implica que x 1 /H11349 600 y x 2 /H11350 200. Así, 100 /H11349 x1 /H11349 600, y 
+200 /H11349 x2 /H11349 700.
+Soluci´ on:
+En la red, cada nodo ( A, B, C) da lugar a una ecuaci´ on, en que la suma de los ﬂujos entrantes
+es igual a la suma de los ﬂujos salientes:
+x1 +x4 =x2 (A)
+x2 =x3 + 100 (B)
+x3 + 80 =x4 (C)
+En otras palabras, tenemos el sistema
+x1−x2 +x4 = 0
+x2−x3 = 100
+x3−x4 =−80
+⏐⏐⏐⏐⏐⏐⏐
+La matriz aumentada de este sistema es
+˜A =
+
+
+1 −1 0 1 0
+0 1 −1 0 100
+0 0 1 −1 −80
+
+.
+Al llevarla a la forma escalonada reducida por ﬁlas, obtenemos
+˜A∼
+
+
+1 0 0 0 20
+0 1 0 −1 20
+0 0 1 −1 −80
+
+,
+o sea: la soluci´ on general del sistema, y por ende el patr´ on de ﬂujo general de la red es
+x1 = 20
+x2 =x4 + 20
+x3 =x4− 80
+La ´ ultima ecuaci´ on nos dice que, para quex3≥ 0, debe tenerse x4≥ 80, De hecho, si x4 = 80,
+obtenemos x1 = 20, x2 = 100 y x3 = 0, valores todos que cumplen con la restricci´ on de ser≥ 0.
+As´ ı, el valor m´ as peque˜ no posible parax4 es 80.Puntaje:
+Por plantear correctamente el sistema de ecuaciones de la red, 1 pto.
+Por llegar a la soluci´ on general del sistema, 2 ptos.
+Por deducir que x4 no puede ser < 80, 1 pto.
+Por mostrar quex4 = 80 efectivamente da lugar a una soluci´ on factible (o sea, en que todos
+los xi son≥ 0), 1 pto.
+Por concluir que el valor m´ ınimo posible parax4 es 80, 1 pto.
+A lo anterior se le suma el punto base.7. Sea P⊆ R3 el plano de ecuaci´ onx1−x2 + 1 = 0, y seaT : R3→ R4 la transformaci´ on dada por
+T ( x→) =A x→, donde A =
+
+
+1 0 3
+−1 1 0
+0 1 3
+0 −2 −6
+
+,
+Demuestre que la imagen del plano P bajo la transformaci´ onT es una recta en R4.
+Primera Soluci´ on:
+Despejando x2 en la ecuaci´ on del plano, obtenemosx2 =x1 + 1. Reemplazando, tenemos
+T ( x→) =T (x1,x 2,x 3) =T (x1,x 1+1,x 3) =
+
+
+1 0 3
+−1 1 0
+0 1 3
+0 −2 −6
+
+
+
+
+x1
+x1 + 1
+x3
+
+ =
+
+
+x1 + 3x3
+1
+1 +x1 + 3x3
+−2− 2x1− 6x3
+
+.
+Esto puede ser escrito como
+T ( x→) =
+
+
+x1 + 3x3
+1
+1 +x1 + 3x3
+−2− 2x1− 6x3
+
+ =
+
+
+0
+1
+1
+−2
+
+ +x1
+
+
+1
+0
+1
+−2
+
+ +x3
+
+
+3
+0
+3
+−6
+
+.
+Pero (3, 0, 3,−6) = 3(1, 0, 1,−2), por lo que
+T ( x→) =
+
+
+0
+1
+1
+−2
+
+ +x1
+
+
+1
+0
+1
+−2
+
+ +x3
+
+
+3
+0
+3
+−6
+
+ =
+
+
+0
+1
+1
+−2
+
+ +x1
+
+
+1
+0
+1
+−2
+
+ + 3x3
+
+
+1
+0
+1
+−2
+
+
+=
+
+
+0
+1
+1
+−2
+
+ + (x1 + 3x3)
+
+
+1
+0
+1
+−2
+
+,
+que es la ecuaci´ on de una recta con direcci´ on (1, 0, 1,−2) que pasa por (0, 1, 1,−2).
+Segunda Soluci´ on:
+Comenzamos buscando 3 puntos no colineales en P,
+Tomandox1 = 0, obtenemos x2 = 1, y x3 puede tomar cualquier valor.
+As´ ı, dos puntos deP son A(0, 1, 0) y B(0, 1, 1).
+Un tercer punto deP est´ a dado porC(1, 2, 0).
+Para demostrar que A, B y C no son colineales, debemos probar que
+−→
+AB y
+−→
+AC son l.i.
+Se ve f´ acilmente que
+−→
+AB= (0, 0, 1) y
+−→
+AC= (1, 1, 0) son l.i., ya que ninguno de ellos es m´ ultiplo
+del otro.
+As´ ı, todo punto de este plano puede ser expresado comoA+α
+−→
+AB +β
+−→
+AC, y las im´ agenes de los
+puntos del plano son de la formaT (A)+αT (
+−→
+AB)+βT (
+−→
+AC). Mostraremos queT (
+−→
+AB) yT (
+−→
+AC)son l.d., por lo que toda combinaci´ on linealαT (
+−→
+AB) +βT (
+−→
+AC) es en realidad un ponderado de
+T (
+−→
+AB), de donde la imagen deP bajo T es la recta que pasa por T (A) y tiene la direcci´ on dada
+por T (
+−→
+AB).
+En efecto: las im´ agenes deA, B y C son, respectivamente,
+T (A) = (0, 1, 1,−2),T (B) = (3, 1, 4,−8) yT (C) = (1, 1, 2,−4),
+por lo que
+T (
+−→
+AB) =T (B)−T (A) = (3, 1, 4,−8)− (0, 1, 1,−2) = (3, 0, 3,−6)
+y
+T (
+−→
+AC) =T (C)−T (A) = (1, 1, 2,−4)− (0, 1, 1,−2) = (1, 0, 1,−2),
+por lo que T (
+−→
+AB) = 3T (
+−→
+AC), lo que muestra que ambos vectores son l.d.
+Puntaje:
+Una demostraci´ on correcta (completa, bien argumentada, y que no se da vueltas innecesa-
+rias) recibe 6 puntos.
+Una demostraci´ on esencialmente correcta, pero que no est´ a completa (va bien encaminada,
+pero no llega a establecer la propiedad pedida), o no est´ a totalmente bien argumentada (por
+ejemplo, se salta la justiﬁcaci´ on de partes importantes), o que pierde tiempo en detalles
+irrelevantes) recibe 4 puntos.
+Una demostraci´ on que tiene indicios de ir en la direcci´ on correcta, pero no llega signiﬁcati-
+vamente cerca de lo que se desea; o a la que no le falta tanto para terminar, pero est´ a muy
+mal argumentada (por ejemplo, se justiﬁcan aﬁrmaciones con argumentos err´ oneos) recibe
+2 puntos.
+Una demostraci´ on que ni siquiera da indicios de ir bien encaminada, recibe 0 puntos.
+De ser necesario (una respuesta no calza exactamente en una de estas cuatro categor´ ıas)
+se le da el promedio de puntaje correspondiente a las dos categor´ ıas m´ as cercanas dadas
+arriba.8. En cada caso, determine si la aﬁrmaci´ on es VERDADERA o FALSA, y justiﬁque su respuesta
+(el indicar correctamente si es V o F sin una justiﬁcaci´ on adecuada no tiene puntos):
+a) Si S es un conjunto linealmente dependiente, entonces cada vector es una combinaci´ on lineal
+de los otros vectores en S.
+Soluci´ on:
+FALSO
+Es posible que uno de los vectores no sea combinaci´ on lineal de los otros, por ejemplo: en
+S ={(1, 0), (2, 0), (1, 1)}
+el vector (1, 1) no es c. l. de (1 , 0) y (2, 0), sin embargo
+2(1, 0)− 1(2, 0) + 0· (1, 1) = (0, 0)
+por lo que S ={(1, 0), (2, 0), (1, 1)} es linealmente dependiente.
+b) Si la matriz de coeﬁcientes A tiene posici´ on pivote en cada ﬁla, entonces el sistemaAx =b
+es inconsistente.
+Primera Soluci´ on:
+FALSO
+Si A tiene una posici´ on pivote en cada ﬁla, entonces dado cualquier vector b→ la matriz
+ampliada del sistema A x→ = b→ tendr´ a todos sus pivotes en columnas que pertenecen aA.
+Pero un sistema es inconsistente si y solo si la ´ ultima posici´ on pivote de su matriz ampliada
+est´ a en la columna correspondiente ab→, lo que evidentemente no ocurre en este caso.
+Segunda Soluci´ on:
+Tambi´ en es posible mostrar que esto es falso mostrando un contraejemplo.
+Por ejemplo, la matrizA =
+[ 1 2
+0 1
+]
+tiene una posici´ on pivote en cada ﬁla, y dado cualquier
+b→∈ R2, por ejemplo, b→ =[ 52 ], se tiene que el sistema A x→ = b→ es consistente; en el
+caso mostrado, el sistema tiene soluci´ onx→ =
+[ 1
+2
+]
+.
+c) Si A es una matriz de 4×3, entonces la transformaci´ onx→→A x→ mapea R3 sobre R4, (o,
+dicho de otra forma, mapea R3 sobreyectivamente en R4).
+Primera Soluci´ on:
+FALSO
+Claramente,A es la matriz est´ andar de la transformaci´ on lineal dada.
+Sabemos (Teorema 12, p. 77) que una transformaci´ on mapeaR3 sobrereals4 si y solo si las
+columnas de A generan a R4. Por otro lado (Teorema 4, p. 37) las columnas de A generan
+a R4 si y solo si A tiene una posici´ on pivote en cada ﬁla. Pero esto es imposible, ya queA
+tiene 4 ﬁlas y solo 3 columnas (y por lo tanto puede tener a lo m´ as 3 posiciones pivote).
+Segunda Soluci´ on:
+En este caso tambi´ en es posible usar un contraejemplo.Por ejemplo, dada la matriz A =
+
+
+1 0 0
+0 1 0
+0 0 1
+0 0 0
+
+, no existe ning´ unx→ =
+
+
+x1
+x2
+x3
+
+∈ R3 tal que
+A x→ =
+
+
+0
+0
+0
+1
+
+, ya que A x→ =
+
+
+x1
+x2
+x3
+0
+
+.
+Puntaje:
+En cada parte, se dan los dos puntos si se da una justiﬁcaci´ on correcta.
+En la parte (a), una buena justiﬁcaci´ on es un contraejemplo; en las partes (b) y (c) puede
+ser un contraejemplo o un argumento que pruebe que pasa lo contrario (como los aqu´ ı
+exhibidos).
+A lo anterior se le suma el punto base.

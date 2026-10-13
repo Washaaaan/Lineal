@@ -1,0 +1,574 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer Semestre 2019
+MAT 1203 – ´Algebra lineal
+Soluci´ on Examen
+1. Considere el siguiente sistema de ecuaciones, donde k es una constante.
+x1 + x2 + x3 = 1
+x1 + x2 + kx3 = k2
+k2x1 + k2x2 + x3 = 1
+a) Determine todos los valores de k para los cuales el sistema tenga como soluci´ on un plano,
+describa este plano.
+b) Determine todos valores de k para los cuales el sistema tenga como soluci´ on una recta,
+describa esta recta.
+Soluci´ on.
+Observe que la matriz ampliada asociada al sistema es:
+
+
+1 1 1 | 1
+1 1 k | k2
+k2 k2 1 | 1
+
+
+Al escalonar la matriz obtenemos, con k ̸= 0:
+
+
+1 1 1 | 1
+0 0 k − 1 | k2 − 1
+0 0 1 − k2 | 1 − k2
+
+
+a) La cual si y solo si k = 1 representa un sistema que posee inﬁnitas soluciones descritas
+por un plano. Este plano esta descrito por de ecuaci´ on x1 + x2 + x3 = 1 o
+
+
+
+
+1
+0
+0
+
+ + x2
+
+
+−1
+1
+0
+
+ + x3
+
+
+−1
+0
+1
+
+ | x2, x3 ∈ R
+
+
+
+b) La cual si y solo si k = −1 representa un sistema que posee inﬁnitas soluciones descritas
+por una recta. Esta recta esta descrita por
+
+
+
+
+
+1
+0
+0
+
+ + x2
+
+
+−1
+1
+0
+
+ | x2 ∈ R
+
+
+.
+Al escalonar la matriz con k = 0 obtenemos :
+
+
+1 1 1 | 1
+1 1 0 | 0
+0 0 1 | 1
+
+ ∼
+
+
+1 1 1 | 1
+0 0 1 | 1
+0 0 0 | 0
+
+representa un sistema que posee inﬁnitas soluciones descritas por una recta. Esta recta
+esta descrita por
+
+
+
+
+
+0
+0
+1
+
+ + x2
+
+
+−1
+1
+0
+
+ | x2 ∈ R
+
+
+.
+Puntaje:
+0.5 pto por mostrar la matriz ampliada.
+0.5 ptos llegar a la matriz escalonada
+1 pto por concluir que el sistema posee inﬁnitas soluciones descritas por un plano si y solo
+si k = 1
+1 pto por describir la soluci´ on del sistema con k = 1
+2 pto por concluir que el sistema posee inﬁnitas soluciones descritas por una recta si y
+solo si k = −1 o k = 0 (1 pto por cada condici´ on).
+0.5 pto por describir la soluci´ on del sistema con k = −1
+0.5 pto por describir la soluci´ on del sistema con k = 02. a) Si A y B son matrices de 3 × 3 tal que det(A) = 3 y det(B) = 2 determine el valor de
+det
+(1
+3 ABT A3B−1
+)
+b) Demuestre que el rango de la matriz
+
+
+1 1 1
+1 x 3
+x 3 1
+
+ es 3 para todo x ∈ R.
+Soluci´ on.
+a) Aplicando propiedades del determinante, tenemos que:
+det
+(1
+3 A
+)
+det
+(
+BT ) det (A)3 det (B−1)
+( 1
+3
+)3
+det (A) det
+(
+BT ) det (A)3 det (B−1)
+( 1
+3
+)3
+det (A) det (B) det (A)3 det (B−1)
+( 1
+3
+)3
+det (A) det (B) det (A)3 det (B)−1
+(1
+3
+)3
+· 3 · 2 · 33 12 = 3
+b) Notamos que el determinante de la matriz es −x2 + 4x − 7. Como −x2 + 4x − 7 ̸= 0 para
+todo x ∈ R, entonces la matriz es invertible para todo valor de x, lo que implica que el
+rango de la matriz es 3 para todo valor de x.
+Puntaje:
+0.5 ptos por aplicar correctamente cada propiedad de determinante. (2 ptos)
+1 ptos por llegar al resultado correcto en a)
+3 ptos por justiﬁcar correctamente b)3. Sean V subespacio de M2 deﬁnido por V =
+{( a b
+c d
+)
+| a + b + c = 0
+}
+y T : M2 → P2 una
+transformaci´ on lineal deﬁnida por
+T
+( a b
+c d
+)
+= −ax2 + (d − b)x + (c + d)
+a) Determine una base para V .
+b) Determine la dimensi´ on de la Imagen de V , es decir T (V ) = {T (v) | v ∈ V }.
+Soluci´ on.
+a) V =
+{( a b
+c d
+)
+| a + b + c = 0
+}
+=
+{( a b
+c d
+)
+| a = −b − c
+}
+=
+{( −b − c b
+c d
+)}
+.
+Luego
+V = Gen
+{( −1 1
+0 0
+)
+,
+( −1 0
+1 0
+)
+,
+( 0 0
+0 1
+)}
+y estos tres vectores son linealmente independientes, entonces
+{( −1 1
+0 0
+)
+,
+( −1 0
+1 0
+)
+,
+( 0 0
+0 1
+)}
+es una base para V .
+b) T (V ) = {T (v) | v ∈ V } =
+{
+T (v) | v = b
+( −1 1
+0 0
+)
++ c
+( −1 0
+1 0
+)
++ d
+( 0 0
+0 1
+)}
+=
+{
+T
+(
+b
+( −1 1
+0 0
+)
++ c
+( −1 0
+1 0
+)
++ d
+( 0 0
+0 1
+))}
+=
+{
+bT
+( −1 1
+0 0
+)
++ cT
+( −1 0
+1 0
+)
++ dT
+( 0 0
+0 1
+)}
+=
+{
+b(x2 − x) + c(x2 + 1) + d(x + 1)} .
+Luego T (V ) = Gen {(x2 − x), (x2 + 1), (x + 1)}, falta analizar si estos vectores son li, para
+eso analizamos sus vectores coordenadas en la base canonica {x2, x, 1}
+
+
+1 1 0
+−1 0 1
+0 1 1
+
+ ∼
+
+
+1 1 0
+0 1 1
+0 0 0
+
+
+luego los dos primeros vectores son linealmente independientes, entonces {(x2 − x), (x2 + 1)}
+es una base para T (V ) y as ´ ı la dimensi´ on deT (V )es 2.Puntaje:
+1 pto por mostrar vectores que generen al subespacio V .
+1 pto por argumentar que los vectores escogidos para formar la base deben ser li.
+1 pto mostrar tres vectores que formen una base para V .
+3 pto por determinar justiﬁcadamente que la dimensi´ on de T (V ) es 2.(1.5 ptos si solo
+muestra vectores que generen T (V ))
+4. Demuestre que si v1 y v2 son vectores propios correspondientes a distintos valores propios de
+una matriz sim´ etrica, entonces
+∥v1 + v2∥2 = ∥v1∥2 + ∥v2∥2.
+Soluci´ on.
+∥v1 + v2∥2 = (v1 + v2) · (v1 + v2) = ( v1 · v1) + (v1 · v2) + (v2 · v1) + (v2 · v2)
+Luego como v1, v2 son vectores propios correspondientes a distintos valores propios de una
+matriz simetrica, estos vectores son ortogonales lo que implica que el producto punto entre
+ellos es cero . As ´ ı
+∥v1 + v2∥2 = (v1 · v1) + (v2 · v2) = ∥v1∥2 + ∥v2∥2
+Puntaje:
+1 pto por aplicar ∥v∥2 = v · v
+1 pto por aplicar que el producto punto es distributivo.
+2 ptos por argumentar que vectores propios correspondientes a distintos valores propios
+de una matriz simetrica son ortogonales.
+1 ptos por aplicar que vectores ortogonales su producto punto es cero.
+1 pto por concluir la igualdad.
+Contin´ ua en la siguiente p´ agina.5. Considere la forma cuadr´ atica.
+Q(x, y, z) = x2 + 2axy + y2 + 2yz + z2.
+a) Determine todos los valores de a ∈ R de modo que Q es deﬁnida positiva.
+b) Sea a = 12 . Utilice la descomposici´ on de Cholesky ( LDLT ) de la matriz A asociada a laforma cuadr´ atica para eliminar los productos cruzados de Q.
+Soluci´ on.
+a) La matriz que representa a la forma cuadr´ atica Q es A =
+
+
+1 a 0
+a 1 1
+0 1 1
+
+. Luego para que
+la forma cuadratica Q sea deﬁnida positiva se necesita que los vectores propios de A sean
+positivos.
+PA(λ) =| A − λI |=
+
+
+1 − λ a 0
+a 1 − λ 1
+0 1 1 − λ
+
+ = (1 − λ)(λ2 − 2λ − a2)
+Luego los valores propios son 1 , 1 +
+√
+1 + a2, 1 − √1 + a2 como el tercer valor propio para
+cualquier valor de a es menor o igual que cero tenemos que no existe valor de a tal que Q
+sea deﬁnida positiva.
+b) Sea Q(x, y, z) = x2 + xy + y2 + 2yz + z2, la matriz que representa a la forma cuadr´ atica
+Q es A =
+
+
+1 12 0
+1
+2 1 1
+0 1 1
+
+, cuya descomposici´ on de Cholesky es:
+A =
+
+
+1 0 0
+1
+2 1 0
+0 43 1
+
+
+
+
+1 0 0
+0 34 0
+0 0 − 13
+
+
+
+
+1 12 0
+0 1 43
+0 0 1
+
+
+Luego si tomamos el cambio de variable ⃗ y= LT ⃗ xAs ´ ı
+Q(x, y, z) = x2 + xy + y2 + 2yz + z2 = x2 + 34 ( 12 x + y)2 − 13 (43 y + z)2
+Puntaje:
+0.5 ptos por determinar la matriz A.
+0.5 ptos por argumentar que los valores propios deben ser positivos.
+1 pto determinar correctamente los 3 valores propios.
+1 pto por concluir que no existe valor de a.
+1 ptos por determinar correctamente la matriz L.1 ptos por determinar correctamente la matriz D.
+1 ptos por mostrar la forma Q sin productos cruzados (utilizando la factorizaci´ on).
+6. Considere la matriz
+A =
+
+
+1 −2 −2
+−2 1 −2
+−2 −2 1
+
+
+Diagonalice la matriz A y determine una matriz P ortogonal tal que P AP T sea diagonal.
+(Ayuda: PA(λ) = −(λ − 3)2(λ + 3) )
+Soluci´ on.
+La matriz A es real sim´ etrica entonces es diagonalizable. Su polinomio caract´ eristico es
+PA(λ) = −(λ − 3)2(λ + 3) de manera que −3 y 3 son los valores propios de A.
+Determinamos los espacios propios asociados
+E−3 = Nul(A + 3I) = Gen
+
+
+
+
+
+1
+1
+1
+
+
+
+
+
+E3 = Nul(A − 3I) = Gen
+
+
+
+
+
+1
+−1
+0
+
+ ,
+
+
+1
+0
+−1
+
+
+
+
+
+una base ortononormal es
+
+
+
+
+
+1√
+3
+1√
+3
+1√
+3
+
+ ,
+
+
+1√
+2
+− 1√2
+0
+
+ ,
+
+
+1√
+6
+1√
+6
+− 2√6
+
+
+
+
+.
+Luego obtenemos A = P DP t donde
+P =
+
+
+1√
+3
+1√
+2
+1√
+6
+1√
+3 − 1√2 1√6
+1√
+3 0 − 2√6
+
+ y D =
+
+
+−3 0 0
+0 3 0
+0 0 3
+
+ .
+Puntaje:
+1.5 pto por determinar el espacio propio asociado a 3.
+1.5 pto por determinar el espacio propio asociado a -3.
+2 ptos por aplicar gram-scmidt y encontrar una base de vectores propios ortonormal.
+0.5 por mostrar D.
+0.5 por mostrar P .7. Dada la descomposici´ on en valores singulares de la matriz
+A = ( ⃗ u1 ⃗ u2 ⃗ u3 ⃗ u4)
+
+
+3 0
+0 2
+0 0
+0 0
+
+ ( ⃗ v1 ⃗ v2)T .
+Determine
+a) Una base ortogonal para Col(A).
+b) Una base ortogonal para N ul
+(
+AT ).
+c) (AT A) ⃗ v1, A ⃗ v2.
+Soluci´ on.
+a) { ⃗ u1, ⃗ u2}.
+b) { ⃗ u3, ⃗ u4}.
+c) (AT A) ⃗ v1 = 9 ⃗ v1, A ⃗ v2 = 2 ⃗ u2
+Puntaje:
+2 ptos por cada item.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. Justiﬁque sus respuestas.
+a) Sea T : R3 → R3 es una transformaci´ on lineal tal que T (1, 2, 3) = T (0, 0, 1) − T (0, 2, 1).
+Si A es la matriz asociada a T entonces existen soluciones no triviales del sistema Ax = 0.
+b) La recta de ecuaci´ on y = x es la recta de m ´ ınimos cuadrados que mejor se ajusta a los
+puntos (0 , 1), (1 , 1), (2 , 2)
+c) Si A es una matriz arbitraria y P una matriz ortogonal entonces P (AAT )P −1 es ortogo-
+nalmente diagonalizable.
+Soluci´ on.
+a) Verdadero.
+Ya que
+T (1, 2, 3) − T (0, 0, 1) + T (0, 2, 1) = T ((1, 2, 3) − (0, 0, 1) + (0, 2, 1)) = T (1, 4, 3) = ⃗0
+Luego (1 , 4, 3) es una soluci´ on no trivial.
+b) Falso.
+Debemos encontrar la soluci´ on de m ´ ınimos cuadrados del sistema inconsistenteXβ = y
+y =
+
+
+1
+1
+2
+
+ , X =
+
+
+1 0
+1 1
+1 2
+
+ , β =
+[ β0
+β1
+]
+Para la soluci´ on de m ´ ınimos cuadrados deXβ = y, obtenga las ecuaciones normales:
+X T Xβ = X T y.
+Calculamos
+X T X =
+[ 3 3
+3 5
+]
+, X T y =
+[ 4
+5
+]
+.
+Entonces,
+β = (X T X)−1(X T y) = 16 [ 5−3 ]
+As ´ ı la recta de m ´ ınimos cuadrados que mejor se ajusta a los puntos es −524 + 324 x = y
+c) Verdadero.
+Sabemos que toda matriz sim´ etrica es ortogonalmente diagonalizable, y como
+(
+P (AAT )P −1)T = (P (AAT )P T )T = (P T )T (AT )T AT P T = P AAT P T
+es una matriz sim´ etrica es ortogonalmente diagonalizable.
+Puntaje:
+2 ptos por cada item contestado correctamente y justiﬁcado.

@@ -1,0 +1,155 @@
+
+----- pagina 1 -----
+Clase 08 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 7
+----- pagina 2 -----
+Recordatorio
+Dado un SEL, podemos tomar la matriz de coeficientes A, el
+vector de resultados b y la matriz ampliada
+[
+A b
+]
+Dadas dos filas Fi y Fj de una matriz, las operaciones elementales
+permitidas son:
+(1) Intercambio de filas: Fi←→ Fj
+(2) Multiplicar una fila por un escalar no nulo:
+Fi−→ c Fi, c̸= 0
+(3) Sumar a una fila un múltiplo de otra fila: Fi−→ Fi + c Fj
+Estas operaciones corresponden a reemplazar una ecuación del
+sistema por una ecuación equivalente. No alteran el conjunto solución
+del SEL.
+¿Cómo usamos estas operaciones? ¿Hasta donde llegar?
+2 / 7
+----- pagina 3 -----
+Operaciones por fila y formas escalonadas
+Inversas de las operaciones de filas
+Cada una de las operaciones de filas son reversibles. En efecto,
+La inversa del intercambio Fi←→ Fj es el mismo intercambio.
+La inversa de la multiplicación Fi−→ c Fi es Fi−→ 1c Fi.
+La inversa del reemplazo Fi−→ Fi + c Fj es Fi−→ Fi− c Fj
+Ejemplo: Realice una operación de filas de cada tipo a la matriz
+
+
+0 3 −6 6 4 −5
+3 −7 8 −5 8 9
+3 −9 12 −9 6 15
+
+
+Y luego reviértala con otra operación de filas.
+3 / 7
+----- pagina 4 -----
+Formas escalonadas
+Comentarios
+Si una matriz A se puede transformar a una matriz B con operaciones
+de filas, decimos que A y B son equivalentes por filas .
+En el caso de SEL, si dos matrices ampliadas son equivalentes por
+fila, entonces tienen el mismo conjunto solución.
+El recíproco es falso: Pueden existir ecuaciones extra o no existir
+solución.
+Ejemplo: Considere las matrices ampliadas
+[ 2 −3 5 1
+0 0 4 −2
+]
+y
+
+
+2 −3 5 1
+0 0 4 −2
+0 0 0 0
+
+
+Justifique por qué no pueden ser equivalentes por fila aún teniendo el
+mismo conjunto solución.
+4 / 7
+----- pagina 5 -----
+Formas escalonadas
+¿Cómo sabemos hasta donde hacer operaciones de fila? Llamaremos
+entrada principal a la primera entrada no 0 de una fila.
+Matriz escalonada (forma escalonada por filas)
+Una matriz está en forma escalonada si cumple:
+1) Todas las filas no nulas están arriba de las filas nulas.
+2) La entrada principal de cada fila aparece a la derecha de la entrada
+principal de la fila superior.
+3) Todas las entradas debajo de cada entrada principal son ceros.
+
+
+⋆ ∗ ∗ ∗
+0 0 ⋆ ∗
+0 0 0 0
+
+
+Toda matriz es equivalente a matrices escalonadas.
+5 / 7
+----- pagina 6 -----
+Formas escalonadas
+Ejemplo: Determine cuál o cuáles de las siguientes matrices están en
+forma escalonada.
+
+
+2 −3 5 1
+0 0 4 −2
+0 0 0 0
+
+
+
+
+1 −2 5
+0 0 0
+0 3 −4
+
+
+
+
+0 5
+2 3
+0 0
+
+
+
+
+1 4 0 2 0
+0 0 1 −3 0
+0 0 0 0 1
+
+
+
+
+2 4 −1 6
+0 3 2 0
+0 1 5 −2
+0 0 0 0
+
+
+
+
+3 1 −2
+0 −5 4
+0 0 7
+0 0 0
+
+
+6 / 7
+----- pagina 7 -----
+Formas escalonadas
+Matriz escalonada reducida
+Una matriz está en forma escalonada reducida si, además:
+4) Cada entrada principal es 1.
+5) Cada entrada principal es el único número distinto de cero en su
+columna.
+
+
+1 ∗ 0 ∗
+0 0 1 ∗
+0 0 0 0
+
+
+Toda matriz es equivalente por filas a una única matriz en forma
+escalonada reducida.
+Ejemplo: ¿Cuál o cuáles de las matrices del ejemplo anterior están en
+forma escalonada reducida?
+7 / 7

@@ -1,0 +1,244 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Segundo semestre 2025
+Pauta Interrogaci´ on 2 - MAT1203
+1. Sea T la transformaci´ on lineal deR2 a R3 deﬁnida por:
+T
+([
+x
+y
+])
+=
+
+
+x + y
+x − y
+2x
+
+
+a) Encuentre la matriz de la transformaci´ on.
+b) Determine si la transformaci´ on es inyectiva.
+c) ¿Es cierto que T transforma rectas en rectas? Justiﬁque su respuesta.
+Soluci´ on:
+a) La matriz asociada a la transformaci´ on se obtiene aplicando T a los vectores can´ onicos de
+R2.
+T (e1) = T
+([1
+0
+])
+=
+
+
+1
+1
+2
+
+ , T (e2) = T
+([0
+1
+])
+=
+
+
+1
+−1
+0
+
+ .
+Por lo tanto,
+[T ] =
+
+
+1 1
+1 −1
+2 0
+
+ .
+b) Para determinar si T es inyectiva, calculamos el n´ ucleo de T :
+[T ]
+[
+x
+y
+]
+=
+
+
+0
+0
+0
+
+ ⇒
+
+
+
+x + y = 0
+x − y = 0
+2x = 0
+⇒ x = 0, y = 0.
+Por lo tanto, ker( T ) = {0} y por lo tanto T es inyectiva.
+c) Toda transformaci´ on lineal de R2 en R3 transforma rectas en rectas, ya que si una recta
+se parametriza como x = tv + u con u ⁄= 0, entonces la imagen es T (x) = tT (v) + T (u)
+con T (u) ⁄= 0 ya que T es inyectiva y por lo tanto la imagen tambi´ en es una recta en R3.
+Criterio de evaluaci´ on:
+Criterio Puntaje Indicador
+C1 1 pto Determina T (e1) y T (e2).
+C2 1 pto Construye correctamente la matriz asociada.
+C3 1 pto Determina correctamente el n´ ucleo de T .
+C4 1 pto Concluye que T es inyectiva.
+C5 1 pto Justiﬁca la linealidad del argumento.
+C6 1 pto Explica por qu´ eT transforma rectas en rectas.2. Considere la matriz
+A =
+
+
+1 2 t
+0 t 1
+1 0 1
+
+ .
+a) Determine todos los valores de t ∈ R para los que la matriz A es invertible.
+b) Para t = 1 encuentre la tercera columna de A−1 sin encontrar las otras columnas de
+la inversa.
+Soluci´ on:
+a) Para determinar cu´ ando A es invertible, calculamos su determinante:
+det(A) = 1( t · 1 − 1 · 0) − 2(0 · 1 − 1 · 1) + t(0 · 0 − t · 1) = t + 2 − t2 = −t2 + t + 2.
+Por lo tanto, A es invertible si y solo si det( A) ⁄= 0, es decir, para t ⁄= 2 y t ⁄= −1.
+b) Para t = 1, queremos la tercera columna de A−1 sin calcular toda la inversa. Recordemos
+que la tercera columna de A−1 corresponde a la soluci´ on del sistema Ax = e3.
+Para t = 1,
+A =
+
+
+1 2 1
+0 1 1
+1 0 1
+
+ , e 3 =
+
+
+0
+0
+1
+
+ .
+Resolviendo Ax = e3: 
+
+1 2 1
+0 1 1
+1 0 1
+
+
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+1
+
+ .
+Aplicamos F3 → F3 - F1 obtenemos:
+
+
+1 2 1 0
+0 1 1 0
+0 −2 0 1
+
+ .
+ahora relaizamos F3 → F3+2F2, obtenemos:
+
+
+1 2 1 0
+0 1 1 0
+0 0 2 1
+
+ .
+De la ´ ultima ﬁla: 2x3 = 1 ⇒ x3 = 12, luego de la segunda x2 + x3 = 0 ⇒ x2 = − 12 , y de la
+primera x1 + 2x2 + x3 = 0 ⇒ x1 + 2(− 12) + 12 = 0 ⇒ x1 = 12 .
+As ´ ı, la tercera columna deA−1 es
+
+
+1
+2
+− 121
+2
+
+.Criterio de evaluaci´ on:
+Criterio Puntaje Indicador
+C1 1 pto Calcula correctamente el determinante de A.
+C2 2 pto Determina los valores de t que hacen a A invertible.
+C3 1 pto Plantea el sistema Ax = e3.
+C4 1 pto Resuelve correctamente el sistema.
+C5 1 pto Obtiene correctamente la tercera columna de A−1.
+3. a) Usando el determinante, encuentre el ´ area del paralelogr amo con v´ ertices (1, 3), (−2, 6), (1, 11)
+y (4 , 8).
+b) Use la regla de Cramer para resolver el sistema
+{
+4x + y = 6
+5x + 2y = 7
+Soluci´ on:
+a) El ´ area del paralelogramo con v´ ertices (1 , 3), ( −2, 6), (1 , 11) y (4 , 8) se calcula como el
+valor absoluto del determinante de los vectores que deﬁnen sus lad os.
+Tomemos v1 = (−2, 6) − (1, 3) = ( −3, 3) y v2 = (1, 11) − (1, 3) = (0 , 8).
+A = | det(v1, v2)| = |(−3)(8) − (3)(0)| = |−24| = 24.
+b) Para el sistema {
+4x + y = 6
+5x + 2y = 7
+usamos la regla de Cramer:
+det(A) =
+⏐⏐⏐⏐4 15 2 ⏐⏐⏐⏐ = 8−5 = 3 , det(Ax) = ⏐⏐⏐⏐6 17 2 ⏐⏐⏐⏐ = 12−7 = 5 , det(Ay) = ⏐⏐⏐⏐4 65 7 ⏐⏐⏐⏐ = 28−30 = −2.
+Entonces,
+x = 53 , y = −23 .
+Criterio de evaluaci´ on:
+Criterio Puntaje Indicador
+C1 1 pto Determina correctamente los vectores que deﬁnen el paralelogra mo.
+C2 1 pto Calcula correctamente el determinante para el ´ area.
+C3 1 pto Plantea correctamente las matrices del sistema.
+C4 1 pto Aplica correctamente la regla de Cramer.
+C5 1 pto Obtiene los valores correctos de x y y.
+C6 1 pto Interpreta correctamente los resultados.4. Considere el espacio vectorial P2 de polinomios de grado menor o igual que 2, y sea
+H = {p(x) ∈ P2 : p(1) = p(−1)}
+a) Demuestre que H es subespacio de P2.
+b) Escriba H como conjunto generado.
+c) ¿Los polinomios 1 + x − x2, 1 + x, 1 − x2 son linealmente independientes o linealmente
+dependientes?
+Soluci´ on:
+a) Para veriﬁcar que H es subespacio debemos mostrar que:
+i) 0 ∈ H. Observe que el 0 del espacio vectorial es la funci´ on constante cero, por lo que
+pertenece a H ya que al evaluar en 1 y en -1 obtenemos cero.
+ii) Suponga que p y q pertenecen a H, es decir que p(1) = p(−1) y que q(1) = q(−1),
+entonces
+p + q(1) = p(1) + q(1) = p(−1) + q(−1) = p + q(−1)
+por lo tanto p + q ∈ H, es decir H es cerrado bajo la suma.
+ii) Suponga que p pertenece a H, es decir que p(1) = p(−1) y α ∈ R, entonces
+αp(1) = αp(−1)
+por lo tanto αp ∈ H, es decir H es cerrado bajo la ponderaci´ on escalar.
+Como se cumple i), ii) y ii) tenemso que H es subespacio.
+b) Sea p(x) = ax2 + bx + c. La condici´ onp(1) = p(−1) implica
+a + b + c = a − b + c ⇒ b = 0.
+Por lo tanto,
+H = {ax2 + c : a, c ∈ R} = Gen{x2, 1}.
+c) Los polinomios 1 + x − x2, 1 + x, 1 − x2 son linealmente independientes ya que si
+α(1 + x − x2) + β(1 + x) + γ(1 − x2) = 0
+entonces el sistema
+
+
+
+α + β + γ = 0
+α + β = 0
+−α − γ = 0
+tiene ´ unica soluci´ onα = β = γ = 0
+Criterio de evaluaci´ on:Criterio Puntaje Indicador
+C1 0.5 pto Veriﬁca que 0 ∈ H.
+C2 0.5 pto Veriﬁca correctamente la clausura bajo suma.
+C3 0.5 pto Veriﬁca correctamente la clausura bajo multiplicaci´ on escalar.
+C4 0.5 pto Concluye que H es subespacio.
+C5 1 pto Plantea la condici´ onp(1) = p(−1).
+C6 1 pto Escribe H como conjunto generado.
+C7 1 pto Dice que los polinomios son l.i
+C8 1 pto Justiﬁca que los polinomios son l.i.

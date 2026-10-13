@@ -1,0 +1,124 @@
+
+----- pagina 1 -----
+Clase 28 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Motivación
+En ocasiones queremos multiplicar por una misma matriz A repetidas
+veces.
+Equivalentemente, queremos calcular potencias grandes de A (como
+A100).
+Un caso sencillo es cuando A es una matriz diagonal. ¿Qué pasa
+geométricamente?
+2 / 11
+----- pagina 3 -----
+Valores propios y vectores propios
+Definición: Vector propio y valor propio
+Un vector propio de una matriz A de n × n es un vector x diferente de
+cero tal que Ax = λx para algún escalar λ.
+Un escalar λ se llama valor propio de A si existe una solución no
+trivial x para Ax = λx.
+Una x tal se llama vector propio correspondiente a λ.
+3 / 11
+----- pagina 4 -----
+Valores propios y vectores propios
+Ejemplo: Sean
+A =
+[ 1 6
+5 2
+]
+, u =
+[ 6
+−5
+]
+, v =
+[ 3
+−2
+]
+¿Son u y v vectores propios de A?
+4 / 11
+----- pagina 5 -----
+Valores propios y vectores propios
+Dado un vector x ̸= 0, es fácil verificar si es vector propio.
+Sin embargo, ¿cómo encontramos qué vectores son vectores propios?
+Estrategia: Buscaremos primero los valores propios .
+5 / 11
+----- pagina 6 -----
+Valores propios y vectores propios
+Ejemplo: Demuestre que 7 es un valor propio de la matriz A del ejemplo
+anterior y encuentre los vectores propios correspondientes.
+A =
+[ 1 6
+5 2
+]
+Importante
+λ es valor propio de A si y solo si (A − λI)x = 0 tiene soluciones no
+triviales.
+Definición: Espacio propio
+El conjunto de todas las soluciones de (A − λI)x = 0 se llama espacio
+propio de A correspondiente a λ.
+El espacio propio consiste en el vector cero y todos los vectores propios
+correspondientes a λ.
+6 / 11
+----- pagina 7 -----
+Valores propios y vectores propios
+Ejemplo: Un valor propio de A =
+
+
+4 −1 6
+2 1 6
+2 −1 8
+
+ es λ = 2. Determine
+una base del espacio propio correspondientes.
+7 / 11
+----- pagina 8 -----
+Valores propios y vectores propios
+¿Qué pasa si A es diagonal? ¿Y si es triangular?
+Teorema
+Los valores propios de una matriz triangular son las entradas de su
+diagonal principal.
+Ejemplo: Encuentre los valores propios de las matrices
+A =
+
+
+3 6 −8
+0 0 6
+0 0 2
+
+ y B =
+
+
+4 0 0
+−2 1 0
+5 3 4
+
+
+8 / 11
+----- pagina 9 -----
+Valores propios y vectores propios
+Una conexión importante entre la invertibilidad de una matriz y sus valores
+propios se establece considerando el caso λ = 0.
+Teorema
+Sea A una matriz de n × n. A es invertible si y solo si el número 0 no es
+un valor propio de A.
+Ejercicio: Demuestre el teorema.
+9 / 11
+----- pagina 10 -----
+Valores propios y vectores propios
+Teorema
+Si v1, . . . ,vr son vectores propios que corresponden a distintos valores
+propios λ1, . . . , λr de una matriz A de n × n, entonces el conjunto
+{v1, . . . ,vr} es linealmente independiente.
+10 / 11
+----- pagina 11 -----
+Valores propios y vectores propios
+Ejemplo: Sea λ un valor propio de una matriz invertible A. Demuestre
+que λ−1 es un valor propio de A−1.
+Ejemplo: Demuestre que A y AT tienen los mismos valores propios.
+11 / 11

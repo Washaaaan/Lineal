@@ -1,0 +1,622 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Primer semestre 2024
+Pauta Interrogaci´ on 1 - MAT1203
+1. Considere el sistema de ecuaciones en variables x, y, z
+x + ay + 2z = 1
+y + 2z = 2
+x + y + az = b
+Determine para qu´ e valores dea, b∈ R el sistema:
+a) Tiene infinitas soluciones.
+b) Tiene soluci´ on ´ unica.
+c) No tiene soluci´ on.
+Soluci´ on:
+Observe que la matriz ampliada asociada al sistema es:
+
+
+1 a 2 | 1
+0 1 2 | 2
+1 1 a | b
+
+, realizando la op-
+eraci´ onF3 → F3 − F1 obtenemos la matriz
+
+
+1 a 2 | 1
+0 1 2 | 2
+0 1 − a a − 2 | b − 1
+
+ (1)
+Observe que si a = 1 la matriz queda
+
+
+1 1 2 | 1
+0 1 2 | 2
+0 0 −1 | b − 1
+
+
+que, independiente del valor de b corresponde a un sistema que tiene soluci´ on ´ unica ya que
+todas las filas y columnas de la matriz de coeficientes tienen pivotes.
+Si a ̸= 1 tenemos que realizar una nueva operaci´ on de filas paar escalonar la matriz (1). Al
+realizar la operaci´ onF3 → F3 + (a − 1)F2, obtenemos la matriz
+
+
+1 1 2 | 1
+0 1 2 | 2
+0 0 3 a − 4 | 2a + b − 3
+
+Si a = 43 , la matriz queda 
+
+1 1 2 | 1
+0 1 2 | 2
+0 0 0 | b − 1/3
+
+
+por lo tanto es inconsistente si b ̸= 13 y tiene infinitas soluciones si b = 13 .
+Si a ̸= 43 todas las filas y columnas de la matriz de coeficientes tienen pivotes y por lo tanto el
+sistema tiene soluci´ on ´ unica, en resumen, el sistema tiene soluci´ on ´ unica sia ̸= 43 e independi-
+ente de lo que valga b, tiene infinitas soluciones si a = 43 y b = 13 y es inconsistente si a = 43 y
+b ̸= 13 .
+Distribuci´ on de puntajes:
+• (1 punto) por plantear la matriz ampliada.
+• (1 punto) por escalonar correctamente la matriz.
+• (1 punto) por la separaci´ on adecuada en casos
+• (1 punto) Por determinar, justificadamente, los valores para los que el sistema tiene
+soluci´ on ´ unica.
+• (1 punto) Por determinar, justificadamente, los valores para los que el sistema no tiene
+soluci´ on.
+• (1 punto) Por determinar, justificadamente, los valores para los que el sistema tienen
+infinitas soluciones.2. Suponga que el sistema Ax = b tiene como soluci´ on el conjunto
+
+
+x =
+
+
+1
+0
+2
+0
+
+ + t
+
+
+−3
+1
+2
+0
+
+ + s
+
+
+0
+0
+−1
+1
+
+ ; t, s∈ R
+
+
+
+a) ¿Es
+
+
+−5
+2
+7
+−1
+
+ soluci´ on del sistemaAx = b?
+Soluci´ on:
+Observe que el vector
+
+
+−5
+2
+7
+−1
+
+ es soluci´ on del sistema si y s´ olo si existent y s ∈ R tales
+que 
+
+−5
+2
+7
+−1
+
+ =
+
+
+1
+0
+2
+0
+
+ + t
+
+
+−3
+1
+2
+0
+
+ + s
+
+
+0
+0
+−1
+1
+
+
+observe que para t = 2 y s = −1 se cumple la igualdad, por lo tanto el vector s ´ ı pertenece
+al conjunto soluci´ on.
+Distribuci´ on de puntajes:
+– (1 punto) por plantear la ecuaci´ on.
+– (0.5 punto) por determinar el valor de s.
+– (0.5 punto) por determinar el valor de t.
+– (1 punto) por concluir.
+b) ¿Existe un vector c de modo que el sistema Ax = c tenga como soluci´ on exactamente el
+conjunto 
+
+x =
+
+
+1
+1
+−1
+0
+
+ + t
+
+
+−3
+1
+2
+0
+
+ ; t ∈ R
+
+
+?
+Soluci´ on:
+No es posible porque si Ax = c es consistente, por teorema sabemos que el conjunto soluci´ on
+es el conjunto soluci´ on del sistema homog´ eneoAx = 0 m´ as una soluci´ on particular, pero del
+enuncaido tenemos que la soluci´ on del sistemaAx = 0 es el conjunto
+
+
+x = t
+
+
+−3
+1
+2
+0
+
+ + s
+
+
+0
+0
+−1
+1
+
+ ; t, s∈ R
+
+
+que no coincide con el descrito.
+Distribuci´ on de puntaje:
+• (1 punto) por afirmar que no.
+• (2 puntos) por justificar correctamente.
+3. a) Demuestre que si el conjunto {u, v} es linealmente independiente, entonces el
+conjunto {u+v, u-v} tambi´ en lo es.
+Soluci´ on:
+Observe que α(u + v) = β(u − v) = 0 si y s´ olo si (α + β)u + (α − β)v = 0, por hip´ otesis,
+tenemos que {u, v} es li, por lo tanto necesariamente α + β = 0 y α − β = 0, lo que
+implica que α = β = 0, luego {u + v, u − v} es linealmente independiente.
+– (1 punto) por plantear loa definici´ on (puede ser de manera impl ´ ıcita)
+– (1 punto) por el desarrollo de la demostraci´ on.
+– (1 punto) por la conclusi´ on.
+b) Demuestre que si A es una matriz de 3 × 5 y D una matriz de 5 × 3 tales que AD = I3,
+entonces las columnas de A generan todo R3.(I3 es la matriz identidad de tama˜ no 3× 3).
+Soluci´ on:
+Observe que las columnas de A generan R3 si y s´ olo siAx = b es consistente para todo
+b ∈ R3. Dado b ∈ R3 considere x = Db y observe que
+Ax = A(Db) = (AD)b = Ib = b
+por lo tanto Ax = b es consistente, y de esta forma podemos concluir que las columnas
+de la matriz A generan todo R3.
+– (1 punto) por plantear alguna equivalencia ´ util para demostrar lo pedido.
+– (1 punto) por el desarrollo de la demostraci´ on.
+– (1 punto) por la conclusi´ on.4. Sea T : R2 → R3 una transformaci´ on lineal tal que:
+T
+ 0
+−2
+
+=
+
+
+−8
+6
+−2
+
+ , T
+ 1
+1
+
+=
+
+
+5
+4
+2
+
+
+a) Determine la matriz de la transformaci´ on.
+Soluci´ on:
+Sabemos que la matriz de la transformaci´ on es [T (e1), T(e2)], para esto observamos primero
+que e2 = − 12  0−2 , por lo tanto
+T (e2) = − 12 T  0−2  =  4−31 
+por otra parte, e2 =
+ 1
+1
+
+− e2, luego
+T (e1) = T
+ 1
+1
+
+− T (e2) =
+
+
+5
+4
+2
+
+ −
+
+
+4
+−3
+1
+
+ =
+
+
+1
+7
+1
+
+
+por lo tanto la matriz de la transformaci´ on es
+[T ] =
+
+
+1 4
+7 −3
+1 1
+
+
+b) ¿Es T uno a uno?
+Soluci´ on:
+Una forma escalonada de la matriz [ T ] es
+
+
+1 4
+0 1
+0 0
+
+
+luego podemos concluir que T es uno a uno ya que la matriz de la transformaci´ on tiene
+dos pivotes, es decir, todas las columnas tiene pivotes.
+c) ¿Es T sobre?
+Soluci´ on:
+La transformaci´ on no es sobre ya que no todas las filas de la FE tienen pivotes.
+Distribuci´ on de puntajes:• (1 punto) por determinar T (e1)
+• (1 punto) por determinar T (e2)
+• (1 punto) por determinar la matriz
+• (1 punto) Por escalonar la matriz
+• (1 punto) Por justificar porque es uno a uno.
+• (1 punto) Por justificar porque no es sobre.
+5. Sea A =
+
+
+1 0 6
+−1 2 0
+0 5 k
+
+
+a) Determine para qu´ e valores dek ∈ R la matriz A es invertible.
+Soluci´ on:
+Sabemos que A es invertible si y s´ olo siA tiene 3 pivotes, para determinar esta condici´ on
+escalonamos la matriz obteniendo que
+A ∼F2→F2+F1
+
+
+1 0 6
+0 2 6
+0 5 k
+
+ ∼F2→ 12 F2
+
+
+1 0 6
+0 1 3
+0 5 k
+
+ ∼F3→F3−5F2
+
+
+1 0 6
+0 1 3
+0 0 k − 15
+
+
+por lo tanto A es invertible si y s´ olo sik ̸= 15.
+b) Para k = −1 escriba A como producto de matrices elementales y calcule A−1.
+Soluci´ on:
+Del inciso anterior tenemos que
+
+
+1 0 0
+0 1 0
+0 −5 1
+
+
+
+
+1 0 0
+0 1 /2 0
+0 0 1
+
+
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ A =
+
+
+1 0 6
+0 1 3
+0 0 −16
+
+
+si seguimos escalonando tenemos que
+
+
+1 0 0
+0 1 0
+0 0 −1/16
+
+
+
+
+1 0 0
+0 1 0
+0 −5 1
+
+
+
+
+1 0 0
+0 1 /2 0
+0 0 1
+
+
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ A =
+
+
+1 0 6
+0 1 3
+0 0 1
+
+
+restando tres veces la tercera fila a la segunda obtenemos
+
+
+1 0 0
+0 1 −3
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −1/16
+
+
+
+
+1 0 0
+0 1 0
+0 −5 1
+
+
+
+
+1 0 0
+0 1 /2 0
+0 0 1
+
+
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ A =
+
+
+1 0 6
+0 1 0
+0 0 1
+
+
+finalemnte
+
+
+1 0 −6
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 −3
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −116
+
+
+
+
+1 0 0
+0 1 0
+0 −5 1
+
+
+
+
+1 0 0
+0 12 0
+0 0 1
+
+
+
+
+1 0 0
+1 1 0
+0 0 1
+
+ A = I3por lo tanto
+A−1 =
+
+
+1 0 −6
+0 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 −3
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −116
+
+
+
+
+1 0 0
+0 1 0
+0 −5 1
+
+
+
+
+1 0 0
+0 12 0
+0 0 1
+
+
+
+
+1 0 0
+1 1 0
+0 0 1
+
+
+=
+
+
+1
+16
+−15
+16
+3
+81
+32
+1
+32
+3
+165
+32
+5
+32
+−1
+16
+
+
+por otra parte, al despejar A, invirtiendo las matrices elementales, tenemos que
+A =
+
+
+1 0 0
+−1 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 2 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 0
+0 5 1
+
+
+
+
+1 0 0
+0 1 0
+0 0 −16
+
+
+
+
+1 0 0
+0 1 3
+0 0 1
+
+
+
+
+1 0 6
+0 1 0
+0 0 1
+
+
+Distribuci´ on de puntajes:
+• (1 punto) por establecer una equivalencia para determinar condiciones que determinan
+que A es invertible.
+• (1 punto) por determinar valores de k.
+• (1 punto) por determinar las elementales que llevan A a la identidad.
+• (1 punto) Por determinar A−1.
+• (2 punto) Por describir A como producto de elemntales

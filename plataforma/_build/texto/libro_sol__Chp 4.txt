@@ -1,0 +1,4702 @@
+
+----- pagina 1 -----
+ Copyright © 2012 Pear
+ 
+ 
+4.1 SOLUTIONS 
+Notes: This section is designed to avoi
+axioms on an array of sets. Theorem 1 p
+set is a subspace. Students should be tau
+(and the next few sections) emphasize 
+vectors do appear later in the chapter: t h
+polynomials are used in many sections o
+ 1. a. If u and v are in V, then their ent
+nonnegative, the vector u + v ha
+b. Example: If 22⎡⎤= ⎢⎥⎣⎦u  and c = –1
+ 2. a. If xy⎡⎤= ⎢⎥⎣⎦u  is in W, then the vect
+since xy ≥ 0. 
+b. Example: If 17−⎡⎤= ⎢⎥−⎣⎦u  and ⎡= ⎢⎣v
+ 3. Example: If .5.5⎡⎤= ⎢⎥⎣⎦u  and c = 4, then
+multiplication, H is not a subspace o
+ 4. Note that u and v are on the line L, 
+u
+v
+L
+u+v
+rson Education, Inc. Publishing as Addison-Wesley. 
+ 
+ 
+d the standard exercises in which a student is asked 
+provides the main homework tool in this section for sh
+ught how to check the closure axioms. The exercises in
+n, to give students time to absorb the abstract co n
+he space  of signals is used in Section 4.8, and the 
+of Chapters 4 and 6.  
+tries are nonnegative. Since a sum of nonnegative num
+as nonnegative entries. Thus u + v is in V. 
+, then u is in V but cu is not in V. 
+tor xc xcc yc y⎡⎤ ⎡ ⎤== ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦u  is in W because 2() () (cx cy c x y=
+2
+3
+⎡ ⎤
+⎥⎣ ⎦ , then u and v are in W but u + v is not in W. 
+n u is in H but cu is not in H. Since H is not closed un
+of 2. 
+but u + v is not. 
+197 
+to check ten 
+howing that a 
+n this section 
+ncepts. Other 
+spaces n of 
+mbers is 
+)0y ≥   
+nder scalar 
+
+----- pagina 2 -----
+198    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. Yes. Since the set is 2Span{ }t , the set is a subspace by Theorem 1. 
+ 6. No. The zero vector is not in the set. 
+ 7. No. The set is not closed under multiplication by scalars which are not integers. 
+ 8. Yes. The zero vector is in the set H. If p and q are in H, then (p + q)(0) = p(0) + q(0) = 0 + 0 = 0,  
+so p + q is in H. For any scalar c, (cp)(0) = c ⋅ p(0) = c ⋅ 0 = 0, so cp is in H. Thus H is a subspace by 
+Theorem 1. 
+ 9. The set H = Span {v}, where 
+2
+5
+3
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v . Thus H is a subspace of 3 by Theorem 1. 
+ 10. The set H = Span {v}, where 
+3
+0
+7
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−⎣⎦
+v . Thus H is a subspace of 3 by Theorem 1. 
+ 11. The set W = Span {u, v}, where 
+2
+1
+0
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+u  and 
+3
+0
+2
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v . Thus W is a subspace of 3 by Theorem 1. 
+ 12. The set W = Span {u, v}, where 
+2
+2
+2
+0
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+u  and 
+4
+0
+3
+5
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+v . Thus W is a subspace of 4 by Theorem 1. 
+ 13. a. The vector w is not in the set 123{, , }vv v . There are 3 vectors in the set 123{, , } .vv v  
+b. The set 123Span{ , , }vvv  contains infinitely many vectors. 
+c. The vector w is in the subspace spanned by 123{, , }vv v  if and only if the equation 
+11 2 2 3 3xx x ++=vvv w  has a solution. Row reducing the augmented matrix for this system of 
+linear equations gives  
+   
+1243 100 1
+01 21 01 21 ,
+1362 0000
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+  so the equation has a solution and w is in the subspace spanned by 123{, , }vv v . 
+ 14. The augmented matrix is found as in Exercise 13c. Since  
+   
+12 41 1 0 0 5
+01 23 0 1 2 3 ,
+1361 4 000 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+----- pagina 3 -----
+4.1  Solutions   199  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  the equation 11 2 2 3 3xx x ++=vvv w  has a solution, the vector w is in the subspace spanned by 
+123{, , } .vv v  
+ 15. Since the zero vector is not in W, W is not a vector space. 
+ 16. Since the zero vector is not in W, W is not a vector space. 
+ 17. Since a vector w in W may be written as  
+   
+21 0
+031
+103
+030
+abc
+−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥ ⎢⎥=++⎢⎥ ⎢⎥ ⎢⎥−
+⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦ ⎣⎦
+w  
+   
+21 0
+031,,103
+030
+S
+⎧⎫ −⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥ −⎪⎪⎢⎥ ⎢⎥ ⎢⎥= ⎨⎬⎢⎥ ⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+  is a set that spans W. 
+ 18. Since a vector w in W may be written as  
+   
+43 0
+00 0
+13 1
+03 2
+abc
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥=++⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ −⎣⎦ ⎣⎦ ⎣ ⎦
+w  
+   
+43 0
+00 0,,13 1
+03 2
+S
+⎧⎫⎡⎤ ⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥= ⎨⎬⎢⎥ ⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥⎪⎪ −⎣⎦ ⎣⎦ ⎣ ⎦⎩⎭  
+  is a set that spans W. 
+ 19. Let H be the set of all functions described by 12() c o s s i n .yt c t c t ωω=+  Then H is a subset of the 
+vector space V of all real-valued functions, and may be written as H = Span {cos ωt, sin ωt}. By 
+Theorem 1, H is a subspace of V and is hence a vector space. 
+ 20. a. The following facts about continuous functions must be shown.  
+   1 . The constant function f(t) = 0 is continuous.  
+   2 . The sum of two continuous functions is continuous.  
+   3 . A constant multiple of a continuous function is continuous.  
+b. Let H = {f in C[a, b]: f(a) = f(b)}.  
+   1 . Let g(t) = 0 for all t in [a, b]. Then g(a) = g(b) = 0, so g is in H.  
+   2 . Let g and h be in H. Then g(a) = g(b) and h(a) = h(b), and (g + h)(a) = g(a) + h(a) =  
+    g (b) + h(b) = (g + h)(b), so g + h is in H.  
+   3 . Let g be in H. Then g(a) = g(b), and (cg)(a) = cg(a) = cg(b) = (cg)(b), so cg is in H.  
+----- pagina 4 -----
+200    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus H is a subspace of C[a, b].  
+ 21. The set H is a subspace of 22 .M ×  The zero matrix is in H, the sum of two upper triangular matrices is 
+upper triangular, and a scalar multiple of an upper triangular matrix is upper triangular. 
+ 22. The set H is a subspace of 24 .M ×  The 2 × 4 zero matrix 0 is in H because F0 = 0. If A and B are 
+matrices in H, then F(A + B) = FA + FB = 0 + 0 = 0, so A + B is in H. If A is in H and c is a scalar, 
+then F(cA) = c(FA) = c0 = 0, so cA is in H. 
+ 23. a. False. The zero vector in V is the function f whose values f(t) are zero for all t in .  
+ b. False. An arrow in three-dimensional space is an example of a vector, but not every arrow is a 
+vector.  
+ c. False. See Exercises 1, 2, and 3 for examples of subsets which contain the zero vector but are not 
+subspaces.  
+ d. True. See the paragraph before Example 6.  
+ e. False. Digital signals are used. See Example 3.  
+ 24. a. True. See the definition of a vector space.  
+ b. True. See statement (3) in the box before Example 1.  
+ c. True. See the paragraph before Example 6.  
+ d. False. See Example 8.  
+ e. False. The second and third parts of the conditions are stated incorrectly. For example, part (ii) 
+does not state that u and v represent all possible elements of H.  
+ 25. 2, 4 
+ 26. a. 3  
+ b. 5  
+ c. 4  
+ 27. a. 8  
+ b. 3  
+ c. 5  
+ d. 4  
+ 28. a. 4  
+ b. 7  
+ c. 3  
+ d. 5  
+ e. 4  
+ 29. Consider u + (–1)u. By Axiom 10, u + (–1)u = 1u + (–1)u. By Axiom 8, 1u + (–1)u = (1 + (–1))u = 
+0u. By Exercise 27, 0u = 0. Thus u + (–1)u = 0, and by Exercise 26 (–1)u = –u. 
+ 30. By Axiom 10 u = 1u. Since c is nonzero, 1 1cc− = , and 1()cc−=uu . By Axiom 9, 
+11 1() ( )cc c c c−− − ==uu 0  since cu = 0. Thus 1c−==u0 0  by Property (2), proven in Exercise 28. 
+----- pagina 5 -----
+4.1  Solutions   201  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 31. Any subspace H that contains u and v must also contain all scalar multiples of u and v, and hence 
+must also contain all sums of scalar multiples of u and v. Thus H must contain all linear 
+combinations of u and v, or Span {u, v}. 
+Note: Exercises 32–34 provide good practice for mathematics majors because these arguments involve 
+simple symbol manipulation typical of mathematical proofs. Most students outside mathematics might 
+profit more from other types of exercises. 
+ 32. Both H and K contain the zero vector of V because they are subspaces of V. Thus the zero vector of V 
+is in H ∩ K. Let u and v be in H ∩ K. Then u and v are in H. Since H is a subspace u + v is in H. 
+Likewise u and v are in K. Since K is a subspace u + v is in K. Thus u + v is in H ∩ K. Let u be in H 
+∩ K. Then u is in H. Since H is a subspace cu is in H. Likewise u is in K. Since K is a subspace cu is 
+in K. Thus cu is in H ∩ K for any scalar c, and H ∩ K is a subspace of V. 
+  The union of two subspaces is not in general a subspace. For an example in 2 let H be the x-axis and 
+let K be the y-axis. Then both H and K are subspaces of 2, but H ∪ K is not closed under vector 
+addition. The subset H ∪ K is thus not a subspace of 2. 
+ 33. a. Given subspaces H and K of a vector space V, the zero vector of V belongs to H + K, because 0 is 
+in both H and K (since they are subspaces) and 0 = 0 + 0. Next, take two vectors in H + K, say 
+111=+wuv  and 222=+wuv  where 1u  and 2u  are in H, and 1v  and 2v  are in K. Then  
+   12 1 1 2 2 1 2 1 2 () ()+ =+++ = + + +ww uvu v uu vv  
+  because vector addition in V is commutative and associative. Now 12+uu  is in H and 12+vv  is 
+in K because H and K are subspaces. This shows that 12+ww  is in H + K. Thus H + K is closed 
+under addition of vectors. Finally, for any scalar c,  
+   11 11 1()cc c c=+ = +wu vu v  
+  The vector 1cu  belongs to H and 1cv  belongs to K, because H and K are subspaces. Thus, 1cw  
+belongs to H + K, so H + K is closed under multiplication by scalars. These arguments show that 
+H + K satisfies all three conditions necessary to be a subspace of V. 
+b. Certainly H is a subset of H + K because every vector u in H may be written as u + 0, where the 
+zero vector 0 is in K (and also in H, of course). Since H contains the zero vector of H + K, and H 
+is closed under vector addition and multiplication by scalars (because H is a subspace of V ), H is 
+a subspace of H + K. The same argument applies when H is replaced by K, so K is also a 
+subspace of H + K. 
+ 34. A proof that 11Span{ , , , , , }pqHK+= … … uu vv  has two parts. First, one must show that H + K is a 
+subset of 11Span{ , , , , , }.pq……uu vv  Second, one must show that 11Span{ , , , , , }pq……uu vv  is a 
+subset of H + K. 
+(1) A typical vector in H has the form 11 ppcc +…+uu  and a typical vector in K has the form 
+11 .qqdd +…+vv  The sum of these two vectors is a linear combination of 11,, ,,, pq……uu vv  
+and so belongs to 11Span{ , , , , , }.pq……uu vv  Thus H + K is a subset of 
+11Span{ , , , , , }.pq……uu vv  
+(2) Each of the vectors 11,, ,,, pq……uu vv  belongs to H + K, by Exercise 33(b), and so any linear 
+combination of these vectors belongs to H + K, since H + K is a subspace, by Exercise 33(a). 
+Thus, 11Span{ , , , , , }pq……uu vv  is a subset of H + K. 
+----- pagina 6 -----
+202    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 35. [M] Since  
+   
+84 79 1 0 01
+43 64 0 1 02 ,32 54 0 0 11
+9 8 1 8 7 000 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥−− −−
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  w is in the subspace spanned by 123{, , } .vv v  
+ 
+ 
+ 36. [M] Since  
+   []
+3594 1 0 01 / 5
+8768 0 1 02 / 5 ,5836 0 0 13 / 5
+2295 0 0 0 0
+A
+−−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −− −⎢⎥ ⎢ ⎥=∼⎢⎥ ⎢ ⎥−−
+⎢⎥ ⎢ ⎥ −−−⎣⎦ ⎣ ⎦
+y  
+  y is in the subspace spanned by the columns of A. 
+ 37. [M] The graph of f(t) is given below. A conjecture is that f(t) = cos 4t. 
+ 
+  The graph of g(t) is given below. A conjecture is that g(t) = cos 6t. 
+ 
+  
+ 
+1 2 3 4 5 6
+–1
+–0.5
+0.5
+1
+1 2 3 4 5 6
+–1
+–0.5
+0.5
+1
+----- pagina 7 -----
+4.2  Solutions   203  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+38. [M] The graph of f(t) is given below. A conjecture is that f(t) = sin 3t. 
+ 
+  The graph of g(t) is given below. A conjecture is that g(t) = cos 4t. 
+ 
+The graph of h(t) is given below. A conjecture is that h(t) = sin 5t. 
+ 
+4.2 SOLUTIONS 
+Notes: This section provides a review of Chapter 1 using the new terminology. Linear tranformations are 
+introduced quickly since students are already comfortable with the idea from n. The key exercises are 
+17–26, which are straightforward but help to solidify the notions of null spaces and column spaces. 
+Exercises 30–36 deal with the kernel and range of a linear transformation and are progressively more 
+advanced theoretically. The idea in Exercises 7–14 is for the student to use Theorems 1, 2, or 3 to 
+determine whether a given set is a subspace. 
+ 1. One calculates that  
+   
+3531 0
+6203 0 ,
+841 4 0
+A
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+w  
+  so w is in Nul A. 
+ 2. One calculates that  
+   
+26 4 10
+32 51 0 ,
+54 1 1 0
+A
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥=− − =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+w  
+1 2 3 4 5 6
+–1
+–0.5
+0.5
+1
+1 2 3 4 5 6
+–1
+–0.5
+0.5
+1
+1 2 3 4 5 6
+–1
+–0.5
+0.5
+1
+----- pagina 8 -----
+204    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  so w is in Nul A. 
+ 3. First find the general solution of Ax = 0 in terms of the free variables. Since  
+   [] 10 2 40 ,01 3 20A −⎡⎤∼ ⎢⎥ −⎣⎦0  
+  the general solution is 134 24xxx=− , 23 4 32xx x=− + , with 3x  and 4x  free. So  
+   
+1
+2
+34
+3
+4
+24
+32 ,10
+01
+x
+x xxx
+x
+−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥−⎢⎥ ⎢⎥ ⎢⎥== +⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦⎣⎦
+x  
+  and a spanning set for Nul A is  
+   
+24
+32,.10
+01
+⎧⎫ −⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦⎩⎭  
+ 4. First find the general solution of Ax = 0 in terms of the free variables. Since  
+   [] 13 0 0 0 ,00 1 0 0A −⎡⎤∼ ⎢⎥⎣⎦0  
+  the general solution is 12 3xx= , 3 0x = , with 2x  and 4x  free. So  
+   
+1
+2
+24
+3
+4
+30
+10 ,00
+01
+x
+x xxx
+x
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥== +⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎣⎦ ⎣⎦⎣⎦
+x  
+  and a spanning set for Nul A is  
+   
+30
+10,.00
+01
+⎧⎫⎡⎤⎡⎤
+⎪⎪⎢⎥⎢⎥⎪⎪⎢⎥⎢⎥⎨⎬⎢⎥⎢⎥⎪⎪⎢⎥⎢⎥⎪⎪⎣⎦⎣⎦⎩⎭  
+ 5. First find the general solution of Ax = 0 in terms of the free variables. Since  
+   []
+14 02 0 0
+00 15 0 0 ,
+00 00 1 0
+A
+−⎡⎤
+⎢⎥∼−⎢⎥
+⎢⎥⎣⎦
+0  
+  the general solution is 124 42xxx=− , 34 5xx = , 5 0x = , with 2x  and 4x  free. So  
+----- pagina 9 -----
+4.2  Solutions   205  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1
+2
+32 4
+4
+5
+42
+10
+,05
+01
+00
+x
+x
+xx x
+x
+x
+−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥== +
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎣⎦
+x  
+  and a spanning set for Nul A is  
+   
+42
+10
+,.05
+01
+00
+⎧⎫ −⎡⎤⎡ ⎤
+⎪⎪⎢⎥⎢ ⎥
+⎪⎪⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥⎨⎬⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥⎪⎪⎣⎦⎣ ⎦⎩⎭  
+ 6. First find the general solution of Ax = 0 in terms of the free variables. Since  
+   []
+10 5 6 10
+01 3 1 00 ,
+00 0 000
+A
+−⎡⎤
+⎢⎥∼−⎢⎥
+⎢⎥⎣⎦
+0  
+  the general solution is 13 4 5 56xx x x=− + − , 23 4 3xx x=− , with 3x , 4x , and 5x  free. So  
+   
+1
+2
+33 4 5
+4
+5
+561
+31 0
+,100
+01 0
+001
+x
+x
+xx x x
+x
+x
+−−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥== + +
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦⎣⎦
+x  
+  and a spanning set for Nul A is  
+   
+561
+31 0
+,, .100
+01 0
+001
+⎧⎫ −−⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥−⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 7. The set W is a subset of 3. If W were a vector space (under the standard operations in 3), then it 
+would be a subspace of 3. But W is not a subspace of 3 since the zero vector is not in W. Thus W is 
+not a vector space. 
+ 8. The set W is a subset of 3. If W were a vector space (under the standard operations in 3), then it 
+would be a subspace of 3. But W is not a subspace of 3 since the zero vector is not in W. Thus W is 
+not a vector space. 
+ 9. The set W is the set of all solutions to the homogeneous system of equations p – 3q – 4s = 0,  
+2p – s – 5r = 0. Thus W = Nul A, where 13402015A −−⎡ ⎤= ⎢ ⎥−−⎣ ⎦ . Thus W is a subspace of 4 by 
+Theorem 2, and is a vector space. 
+----- pagina 10 -----
+206    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 10. The set W is the set of all solutions to the homogeneous system of equations 3a + b – c = 0,  
+a + b + 2c – 2d = 0. Thus W = Nul A, where 31 1 011 2 2A −⎡ ⎤= ⎢ ⎥−⎣ ⎦ . Thus W is a subspace of 4 by 
+Theorem 2, and is a vector space. 
+ 11. The set W is a subset of 4. If W were a vector space (under the standard operations in 4), then it 
+would be a subspace of 4. But W is not a subspace of 4 since the zero vector is not in W. Thus W is 
+not a vector space. 
+ 12. The set W is a subset of 4. If W were a vector space (under the standard operations in 4), then it 
+would be a subspace of 4. But W is not a subspace of 4 since the zero vector is not in W. Thus W is 
+not a vector space. 
+ 13. An element w on W may be written as  
+   
+16 1 6
+01 0 1
+10 1 0
+ccd d−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡⎤⎢⎥ ⎢ ⎥ ⎢ ⎥=+ = ⎢⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎣⎦⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦w  
+  where c and d are any real numbers. So W = Col A where 
+16
+01
+10
+A
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+. Thus W is a subspace of 3 
+by Theorem 3, and is a vector space. 
+ 14. An element w on W may be written as  
+   
+13 1 3
+12 1 2
+51 5 1
+sst t−−⎡⎤ ⎡⎤⎡ ⎤ ⎡⎤⎢⎥ ⎢⎥⎢ ⎥=+ − =− ⎢⎥⎢⎥ ⎢⎥⎢ ⎥ ⎣⎦⎢⎥ ⎢⎥⎢ ⎥ −−⎣⎦ ⎣⎦⎣ ⎦w  
+  where a and b are any real numbers. So W = Col A where 
+13
+12
+51
+A
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+. Thus W is a subspace of 
+3 by Theorem 3, and is a vector space. 
+ 15. An element in this set may be written as  
+   
+021 0 2 1
+11 2 1 1 2
+31 0 3 1 0
+21 1 2 1 1
+r
+rs t s
+t
+⎡ ⎤ ⎡⎤ ⎡⎤⎡ ⎤ ⎡ ⎤⎢ ⎥ ⎢⎥ ⎢⎥⎢ ⎥−− ⎢ ⎥⎢ ⎥ ⎢⎥ ⎢⎥⎢ ⎥++= ⎢ ⎥⎢ ⎥ ⎢⎥ ⎢⎥⎢ ⎥ ⎢ ⎥⎢ ⎥ ⎢⎥ ⎢⎥⎢ ⎥ ⎣ ⎦−− − −⎣ ⎦ ⎣⎦ ⎣⎦⎣ ⎦  
+  where r, s and t are any real numbers. So the set is Col A where 
+021
+112
+31 0
+211
+A
+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥−−⎣ ⎦
+. 
+ 16. An element in this set may be written as  
+----- pagina 11 -----
+4.2  Solutions   207  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+110 1 1 0
+20 3 2 0 3
+13 3 1 3 3
+01 1 0 1 1
+b
+bc d c
+d
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥++ = ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ −− ⎢ ⎥⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥ ⎣ ⎦⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦  
+  where b, c and d are any real numbers. So the set is Col A where 
+110
+203
+133
+011
+A
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+. 
+ 17. The matrix A is a 4 × 2 matrix. Thus  
+(a)  Nul A is a subspace of 2, and  
+(b)  Col A is a subspace of 4. 
+ 18. The matrix A is a 4 × 3 matrix. Thus  
+(a)  Nul  A is a subspace of 3, and  
+(b)  Col  A is a subspace of 4.  
+ 19. The matrix A is a 2 × 5 matrix. Thus  
+(a)  Nul  A is a subspace of 5, and  
+(b)  Col  A is a subspace of 2.  
+ 20. The matrix A is a 1 × 5 matrix. Thus  
+(a)  Nul  A is a subspace of 5, and  
+(b)  Col  A is a subspace of 1 = .  
+ 21. Either column of A is a nonzero vector in Col A. To find a nonzero vector in Nul A, find the general 
+solution of Ax = 0 in terms of the free variables. Since  
+   []
+12 / 3 0
+00 0 ,00 0
+00 0
+A
+−⎡⎤
+⎢⎥
+⎢⎥∼ ⎢⎥
+⎢⎥
+⎣⎦
+0 the general solution is 12 (2 / 3)xx= , with 2x  free. Letting 2x  be a 
+nonzero value (say 2 3x = ) gives the nonzero vector  
+   1
+2
+2
+3
+x
+x
+⎡⎤ ⎡⎤==⎢⎥ ⎢⎥⎣⎦⎣⎦x  
+  which is in Nul A. 
+ 22. Any column of A is a nonzero vector in Col A. To find a nonzero vector in Nul A, find the general 
+solution of Ax = 0 in terms of the free variables. Since  
+   []
+10 10
+011 0 ,0000
+0000
+A
+⎡⎤
+⎢⎥
+⎢⎥∼ ⎢⎥
+⎢⎥
+⎣⎦
+0  
+----- pagina 12 -----
+208    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  the general solution is 13xx=− , 23xx =− , with 3x  free. Letting 3x  be a nonzero value (say 3 1x =− ) 
+gives the nonzero vector  
+   
+1
+2
+3
+1
+1
+1
+x
+x
+x
+⎡⎤ ⎡⎤
+⎢⎥⎢⎥==⎢⎥ ⎢⎥
+⎢⎥⎢⎥ −⎣⎦⎣⎦
+x  
+  which is in Nul A. 
+ 23. Consider the system with augmented matrix []A w . Since  
+   [] 121 ,000A −−⎡⎤∼ ⎢⎥⎣⎦w  
+  the system is consistent and w is in Col A. Also, since  
+   24 2 0121 0A −⎡⎤ ⎡ ⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦ ⎣ ⎦w  
+  w is in Nul A. 
+ 24. Consider the system with augmented matrix []A w . Since  
+   []
+100 11
+01 0 11 ,001 00
+000 00
+A
+−⎡⎤
+⎢⎥ −⎢⎥∼ ⎢⎥
+⎢⎥
+⎣⎦
+w  
+  the system is consistent and w is in Col A. Also, since  
+   
+10 8 2 2 2 0
+0222 2 0
+1160 0 0
+1102 2 0
+A
+−−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦
+w  
+  w is in Nul A. 
+ 25. a. True. See the definition before Example 1.  
+ b. False. See Theorem 2.  
+ c. True. See the remark just before Example 4.  
+ d. False. The equation Ax = b must be consistent for every b. See #7 in the table on page 204.  
+ e. True. See Figure 2.  
+ f. True. See the remark after Theorem 3.  
+ 26. a. True. See Theorem 2.  
+ b. True. See Theorem 3.  
+ c. False. See the box after Theorem 3.  
+ d. True. See the paragraph after the definition of a linear transformation.  
+ e. True. See Figure 2.  
+ f. True. See the paragraph before Example 8. 
+----- pagina 13 -----
+4.2  Solutions   209  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 27. Let A be the coefficient matrix of the given homogeneous system of equations. Since Ax = 0 for 
+3
+2
+1
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−⎣⎦
+x , x is in Nul A. Since Nul A is a subspace of 3, it is closed under scalar multiplication. Thus 
+30
+10 20
+10
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−⎣⎦
+x  is also in Nul A, and 1 30x = , 2 20x = , 3 10x =−  is also a solution to the system of 
+equations. 
+ 28. Let A be the coefficient matrix of the given systems of equations. Since the first system has a 
+solution, the constant vector 
+0
+1
+9
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+b  is in Col A. Since Col A is a subspace of 3, it is closed under 
+scalar multiplication. Thus 
+0
+55
+45
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+b  is also in Col A, and the second system of equations must thus 
+have a solution. 
+ 29.  a. Since ,A =00  the zero vector is in Col A. 
+ b. Since () ,AA A AA+=+ +xw x w xw  is in Col A. 
+ c. Since () ( ) ,cA A c c A=xx x  is in Col A.  
+ 30. Since () VWT =00 , the zero vector W0  of W is in the range of T. Let T(x) and T(w) be typical 
+elements in the range of T. Then since () ( ) ( ) , () ( )TT T TT+= + +xwx w xw  is in the range of T and 
+the range of T is closed under vector addition. Let c be any scalar. Then since () ( ) , ()cT T c cT=xx x  
+is in the range of T and the range of T is closed under scalar multiplication. Hence the range of T is a 
+subspace of W. 
+ 31. a . Let p and q be arbitary polynomials in 2, and let c be any scalar. Then 
+   ( )(0) (0) (0) (0) (0)() ( ) ( ) ( )(1) (1) (1) (1) (1)TT T ++⎡⎤ ⎡ ⎤ ⎡ ⎤ ⎡ ⎤+= = = + = +⎢⎥ ⎢ ⎥ ⎢ ⎥ ⎢ ⎥++⎣⎦ ⎣ ⎦ ⎣ ⎦ ⎣ ⎦pq p q p qpq p q pq p q p q  
+  and 
+   () ( 0 ) ( 0 )() ( ) () ( 1 ) ( 1 )cTc c c T c⎡⎤ ⎡ ⎤== =⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦pppp pp  
+  so T is a linear transformation. 
+b. Any quadratic polynomial q for which (0) 0=q  and (1) 0=q  will be in the kernel of T. The 
+polynomial q must then be a multiple of () ( 1 ) .tt t=−p  Given any vector 1
+2
+x
+x
+⎡⎤
+⎢⎥⎣⎦  in 2, the 
+polynomial 12 1 ()xx x t=+ −p  has 1(0) x=p  and 2(1) . x=p  Thus the range of T is all of 2. 
+----- pagina 14 -----
+210    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 32. Any quadratic polynomial q for which (0) 0=q  will be in the kernel of T. The polynomial q must 
+then be 2.at bt=+q  Thus the polynomials 1()tt =p  and 22 ()tt =p  span the kernel of T. If a vector 
+is in the range of T, it must be of the form .aa⎡ ⎤⎢ ⎥⎣ ⎦  If a vector is of this form, it is the image of the 
+polynomial ()ta=p  in 2. Thus the range of T is :r e a l .a aa⎧ ⎫⎡⎤⎪ ⎪⎨ ⎬⎢⎥⎪ ⎪⎣⎦⎩⎭  
+ 33. a . For any A and B in 22M ×  and for any scalar c,  
+   () () () ( ) ( ) ( ) ( ) TT T T TT A B A B A BA B A BA A B B T A T B+=+++ = + + + =+ ++ = +  
+  and 
+   ()() ( ) ( ) TTT c A c Ac Ac T A== =  
+  so T is a linear transformation. 
+b. Let B be an element of 22M ×  with ,TBB =  and let 12 .AB=  Then  
+   11 1 1 1 1() ( ) 2 2 22 22TT TT A A A B B BB BB B= + =+ =+ =+=  
+c. Part b. showed that the range of T contains the set of all B in 22M ×  with .TBB =  It must also be 
+shown that any B in the range of T has this property. Let B be in the range of T. Then B = T(A) for 
+some A in 22 .M ×  Then ,TBAA=+  and  
+   () ( )TT T T T T T TB A AA AA A A A B= + =+ =+ = +=  
+  so B has the property that .TBB =  
+d. Let abA cd⎡⎤= ⎢⎥⎣⎦  be in the kernel of T. Then () 0 TTA A A=+ = , so  
+   20 0 20 0T ab ac a c bAA cd bd b c d +⎡⎤ ⎡⎤ ⎡ ⎤ ⎡ ⎤+= + = =⎢⎥ ⎢⎥ ⎢ ⎥ ⎢ ⎥ +⎣⎦ ⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  Solving it is found that 0ad==  and cb=− . Thus the kernel of T is 0 : real .0b bb⎧ ⎫⎡⎤⎪ ⎪⎨ ⎬⎢⎥−⎪ ⎪⎣⎦⎩⎭  
+ 34. Let f and g be any elements in C[0, 1] and let c be any scalar. Then T(f) is the antiderivative F of f 
+with F(0) = 0 and T(g) is the antiderivative G of g with G(0) = 0. By the rules for antidifferentiation 
++FG  will be an antiderivative of ,+fg  and () ( 0 ) ( 0 ) ( 0 ) 0 0 0 .+= + = + =FG F G Thus 
+() ( ) ( ) .TT T+= +fg f g  Likewise cF will be an antiderivative of cf, and () ( 0 ) ( 0 ) 0 0 .cc c == =FF  
+Thus () ( ) ,Tc c T=ff  and T is a linear transformation. To find the kernel of T, we must find all 
+functions f in C[0,1] with antiderivative equal to the zero function. The only function with this 
+property is the zero function 0, so the kernel of T is {0}. 
+ 35. Since U is a subspace of V, V0  is in U. Since T is linear, () .VWT =00  So W0  is in T(U). Let T(x) and 
+T(y) be typical elements in T(U). Then x and y are in U, and since U is a subspace of V, +xy  is also 
+in U. Since T is linear, () () ( ) .TTT += +xyx y  So () ()TT +xy  is in T(U), and T(U) is closed under 
+vector addition. Let c be any scalar. Then since x is in U and U is a subspace of V, cx is in U. Since T 
+----- pagina 15 -----
+4.2  Solutions   211  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+is linear, () ( )Tc c T=xx  and cT(x) is in T(U ). Thus T(U) is closed under scalar multiplication, and 
+T(U) is a subspace of W. 
+ 36. Since Z is a subspace of W, W0  is in Z. Since T is linear, () .VWT =00  So V0  is in U. Let x and y be 
+typical elements in U. Then T(x) and T(y) are in Z, and since Z is a subspace of W, () ()TT +xy  is 
+also in Z. Since T is linear, () () ( ) .TTT += +xyx y  So ()T +xy  is in Z, and +xy  is in U. Thus U is 
+closed under vector addition. Let c be any scalar. Then since x is in U, T(x) is in Z. Since Z is a 
+subspace of W, cT(x) is also in Z. Since T is linear, () ( )cT T c=xx  and T(cx) is in T(U). Thus cx is in 
+U and U is closed under scalar multiplication. Hence U is a subspace of V. 
+ 37. [M] Consider the system with augmented matrix [] .A w  Since  
+   []
+1 0 0 1/9 5 1/9 5
+0 1 0 39 /19 20 /19 ,0 0 1 267 / 95 172 / 95
+000 0 0
+A
+−⎡⎤
+⎢⎥ −⎢⎥∼ ⎢⎥ −
+⎢⎥⎢⎥⎣⎦
+w  
+  the system is consistent and w is in Col A. Also, since  
+   
+76 4 1 1 1 4
+51 0 2 10
+91 173 1 0
+19 9 7 1 3 0
+A
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+w  
+  w is not in Nul A. 
+ 38. [M] Consider the system with augmented matrix []A w . Since  
+   []
+10 10 2
+01 20 3 ,00 01 1
+00 00 0
+A
+−−⎡⎤
+⎢⎥ −−⎢⎥∼ ⎢⎥
+⎢⎥⎢⎥⎣⎦
+w  
+  the system is consistent and w is in Col A. Also, since  
+   
+8520 1 0
+5212 2 0
+10 8 6 3 1 0
+32 10 0 0
+A
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥ ⎢ ⎥−−
+⎢⎥ ⎢ ⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+w  
+  w  is in Nul A. 
+ 
+ 39. [M]  
+a. To show that 3a  and 5a  are in the column space of B, we can row reduce the matrices [] 3B a  
+and [] 3B a :  
+----- pagina 16 -----
+212    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   [] 3
+1001 / 3
+0101 / 3
+001 0
+000 0
+B
+⎡⎤
+⎢⎥
+⎢⎥∼ ⎢⎥
+⎢⎥⎢⎥⎣⎦
+a  
+   [] 5
+100 1 0 / 3
+01 0 2 6 / 3
+001 4
+000 0
+B
+⎡ ⎤
+⎢ ⎥−⎢ ⎥∼ ⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+a  
+  Since both these systems are consistent, 3a  and 5a  are in the column space of B. Notice that the 
+same conclusions can be drawn by observing the reduced row echelon form for A:  
+   
+101 / 30 1 0 / 3
+01 1 / 30 2 6 / 3
+00 01 4
+00 00 0
+A
+⎡⎤
+⎢⎥ −⎢⎥∼ ⎢⎥ −
+⎢⎥⎢⎥⎣⎦
+ 
+b. We find the general solution of Ax = 0 in terms of the free variables by using the reduced row 
+echelon form of A given above: 13 5 (1 / 3 ) ( 1 0 / 3 )xxx=− − , 235 (1 / 3 ) ( 2 6 / 3 )xxx=− + , 45 4xx =  
+with 3x  and 5x  free. So  
+   
+1
+2
+353
+4
+5
+1/3 10/3
+1/3 26/3
+,10
+04
+01
+x
+x
+xxx
+x
+x
+−−⎡⎤ ⎡ ⎤⎡ ⎤
+⎢⎥ ⎢ ⎥⎢ ⎥−⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥ ⎢ ⎥⎢ ⎥== +
+⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥ ⎢ ⎥⎢ ⎥
+⎢⎥ ⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣⎦
+x  
+  and a spanning set for Nul  A is  
+   
+1/3 10/3
+1/3 26/3
+,.10
+04
+01
+⎧⎫ −−⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥−⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎣⎦ ⎣ ⎦⎩⎭  
+c. The reduced row echelon form of A shows that the columns of A are linearly dependent and do 
+not span 4. Thus by Theorem 12 in Section 1.9, T is neither one-to-one nor onto.
+----- pagina 17 -----
+4.3  Solutions   213  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+40. [M] Since the line lies both in 12Span{ , }H = vv  and in 34Span{ , }K = vv , w can be written both as 
+11 2 2cc +vv  and 33 44cc +vv . To find w we must find the cj’s which solve 
+1 1 22 33 44cc c c+−−=vvvv 0 . Row reduction of [] 1 234 −−vv v v0  yields  
+   
+51 2 00 1 00 1 0 / 3 0
+33 11 20 010 2 6 / 30 ,
+84 52 80 001 40
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦  
+  so the vector of c j’s must be a multiple of (10/3, –26/3, 4, 1). One simple choice is (10, –26, 12, 3), 
+which gives 123 410 26 12 3 (24, 48, 24)= − = +=− −wv v vv . Another choice for w is (1, –2, –1). 
+4.3 SOLUTIONS 
+Notes: The definition for basis is given initially for subspaces because this emphasizes that the basis 
+elements must be in the subspace. Students often overlook this point when the definition is given for a 
+vector space (see Exercise 25). The subsection on bases for Nul  A and Col A is essential for Sections 4.5 
+and 4.6. The subsection on “Two Views of a Basis” is also fundamental to understanding the interplay 
+between linearly independent sets, spanning sets, and bases. Key exercises in this section are Exercises 
+21–25, which help to deepen students’ understanding of these different subsets of a vector space. 
+ 1. Consider the matrix whose columns are the given set of vectors. This 3 × 3 matrix is in echelon form, 
+and has 3 pivot positions. Thus by the Invertible Matrix Theorem, its columns are linearly 
+independent and span 3. So the given set of vectors is a basis for 3. 
+ 2. Since the zero vector is a member of the given set of vectors, the set cannot be linearly independent 
+and thus cannot be a basis for 3. Now consider the matrix whose columns are the given set of 
+vectors. This 3 × 3 matrix has only 2 pivot positions. Thus by the Invertible Matrix Theorem, its 
+columns do not span 3.  
+ 3. Consider the matrix whose columns are the given set of vectors. The reduced echelon form of this 
+matrix is  
+   
+132 1 01
+011 0 1 1
+341 0 00
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −∼ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+  so the matrix has only two pivot positions. Thus its columns do not form a basis for 3; the set of 
+vectors is linearly independent and does not span 3. 
+ 4. Consider the matrix whose columns are the given set of vectors. The reduced echelon form of this 
+matrix is  
+   
+228 1 0 0
+135 0 1 0
+124 0 0 1
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  so the matrix has three pivot positions. Thus its columns form a basis for 3. 
+----- pagina 18 -----
+214    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. Since the zero vector is a member of the given set of vectors, the set cannot be linearly independent 
+and thus cannot be a basis for 3. Now consider the matrix whose columns are the given set of 
+vectors. The reduced echelon form of this matrix is  
+   
+33 00 1 0 0 0
+37 03 0 1 0 0
+0 00 5 0001
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  so the matrix has a pivot in each row. Thus the given set of vectors spans 3. 
+ 6. Consider the matrix whose columns are the given set of vectors. Since the matrix cannot have a pivot 
+in each row, its columns cannot span 3; thus the given set of vectors is not a basis for 3. The 
+reduced echelon form of the matrix is  
+   
+14 1 0
+230 1
+46 0 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+  so the matrix has a pivot in each column. Thus the given set of vectors is linearly independent. 
+ 7. Consider the matrix whose columns are the given set of vectors. Since the matrix cannot have a pivot 
+in each row, its columns cannot span 3; thus the given set of vectors is not a basis for 3. The 
+reduced echelon form of the matrix is  
+   
+26 1 0
+310 1
+05 0 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  so the matrix has a pivot in each column. Thus the given set of vectors is linearly independent. 
+ 8. Consider the matrix whose columns are the given set of vectors. Since the matrix cannot have a pivot 
+in each column, the set cannot be linearly independent and thus cannot be a basis for 3. The reduced 
+echelon form of this matrix is  
+   
+1020 1 0 2 0
+2310 0 1 1 0
+3151 0 0 0 1
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  so the matrix has a pivot in each row. Thus the given set of vectors spans 3. 
+ 9. We find the general solution of Ax = 0 in terms of the free variables by using the reduced echelon  
+form of A: 
+   
+10 2 2 1 0 2 0
+0114 0 11 0 .
+3173 0 00 1
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+  So 13 2xx= , 23xx =− , 4 0x = , with 3x  free. So  
+----- pagina 19 -----
+4.3  Solutions   215  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1
+2
+3
+3
+4
+2
+1 ,1
+0
+x
+x xx
+x
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥−⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥
+⎣⎦⎣⎦
+x  
+  and a basis for Nul A is  
+   
+2
+1 .1
+0
+⎧⎫ ⎡⎤
+⎪⎪ ⎢⎥−⎪⎪ ⎢⎥⎨⎬ ⎢⎥⎪⎪ ⎢⎥⎪⎪ ⎣⎦⎩⎭  
+  
+10. We find the general solution of Ax = 0 in terms of the free variables by using the reduced echelon  
+form of A: 
+   
+11 2 1 5 100 2 9
+01 6 1 2 01 0 11 0 .
+00 8 01 6 001 0 2
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −− ∼ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  So 14 5 29xx x=− + , 24 5 10xx x=− , 35 2xx = , with 4x  and 5x  free. So  
+   
+1
+2
+34 5
+4
+5
+29
+11 0
+,02
+10
+01
+x
+x
+xx x
+x
+x
+−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥ −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥== +
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎣⎦
+x  
+  and a basis for Nul A is  
+   
+29
+11 0
+,.02
+10
+01
+⎧⎫ −⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥ −⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎣⎦ ⎣ ⎦⎩⎭  
+ 11. Let []13 2A =− . Then we wish to find a basis for Nul A. We find the general solution of Ax = 0 
+in terms of the free variables: x = 3y – 2z with y and z free. So  
+   
+32
+10 ,
+01
+x
+yy z
+z
+−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥== +⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+x  
+  and a basis for Nul A is  
+   
+32
+1, 0 .
+01
+⎧⎫ −⎡⎤⎡ ⎤
+⎪⎪⎢⎥⎢ ⎥⎨⎬⎢⎥⎢ ⎥⎪⎪⎢⎥⎢ ⎥⎣⎦⎣ ⎦⎩⎭  
+----- pagina 20 -----
+216    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. We want to find a basis for the set of vectors in 2 in the line 3x + y = 0. Let []31A = . Then we 
+wish to find a basis for Nul A. We find the general solution of Ax = 0 in terms of the free variables: y 
+= – 3x with x free. So  
+   1 ,3x xy⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦x  
+  and a basis for Nul A is  
+   1 .3⎧⎫⎡⎤⎪⎪⎨⎬⎢⎥−⎪⎪⎣⎦⎩⎭  
+  
+13. Since B is a row echelon form of A, we see that the first and second columns of A are its pivot 
+columns. Thus a basis for Col A is  
+   
+24
+2, 6 .
+38
+⎧⎫ −⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ −⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥−⎣⎦ ⎣⎦⎩⎭  
+  To find a basis for Nul A, we find the general solution of Ax = 0 in terms of the free variables: 
+13 4 65 ,xx x=− −  23 4 (5 / 2 ) ( 3 / 2 ) ,xx x=− −  with 3x  and 4x  free. So  
+   
+1
+2
+34
+3
+4
+65
+5/2 3/2 ,10
+01
+x
+x xxx
+x
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢⎥−−⎢⎥ ⎢⎥ ⎢⎥== +⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎢⎥ ⎣⎦ ⎣⎦⎣⎦
+x  
+  and a basis for Nul A is  
+   
+65
+5/2 3/2,.10
+01
+⎧⎫ −−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥−−⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎩⎭  
+ 14. Since B is a row echelon form of A, we see that the first, third, and fifth columns of A are its pivot 
+columns. Thus a basis for Col A is  
+   
+13 8
+10 8,,.23 9
+30 9
+⎧⎫⎡⎤ ⎡ ⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢ ⎥ ⎢⎥⎪⎪⎢⎥ ⎢ ⎥ ⎢⎥⎨⎬⎢⎥ ⎢ ⎥ ⎢⎥−⎪⎪⎢⎥ ⎢ ⎥ ⎢⎥⎪⎪⎣⎦ ⎣ ⎦ ⎣⎦⎩⎭  
+  To find a basis for Nul A, we find the general solution of Ax = 0 in terms of the free variables, 
+mentally completing the row reduction of B to get: 12 4 22 ,xx x=− −  34 2,xx =  5 0,x =  with 2x  and 
+4x  free. So  
+----- pagina 21 -----
+4.3  Solutions   217  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1
+2
+32 4
+4
+5
+22
+10
+,02
+01
+00
+x
+x
+xx x
+x
+x
+−−⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥== +
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦⎣⎦
+x  
+  and a basis for Nul A is  
+   
+22
+10
+,.02
+01
+00
+⎧⎫−−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥
+⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦⎩⎭  
+ 15. This problem is equivalent to finding a basis for Col A, where [] 12345A = vv vv v . Since 
+the reduced echelon form of A is  
+   
+10 2 2 3 10 200
+01 2 1 1 01 200 ,22 81 0 6 00 010
+33 0 3 9 00 001
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−− −⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥
+⎣⎦ ⎣ ⎦
+ 
+  we see that the first, second, fourth and fifth columns of A are its pivot columns. Thus a basis for the 
+space spanned by the given vectors is  
+   
+10 2 3
+01 1 1,, , .221 0 6
+33 3 9
+⎧⎫⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥ −−⎪⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥−−⎪⎪⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 16. This problem is equivalent to finding a basis for Col A, where [] 12345A = vv vv v . Since 
+the reduced echelon form of A is  
+   
+12352 1 0 05 / 2 0
+001310 1 03 / 4 1 / 2 ,001310 0 1 3 1
+12140 0 0 0 0 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−−⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+ 
+  we see that the first, second, and third columns of A are its pivot columns. Thus a basis for the space 
+spanned by the given vectors is  
+   
+123
+001,, .001
+121
+⎧⎫ −⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥⎨⎬⎢⎥ ⎢ ⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥ ⎢ ⎥⎪⎪ −⎣⎦ ⎣ ⎦ ⎣ ⎦⎩⎭  
+ 17. [M] This problem is equivalent to finding a basis for Col A, where [] 12345A = vv vv v . 
+Since the reduced echelon form of A is  
+----- pagina 22 -----
+218    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+24288 1 0 01 0
+00444 0 1 02 0
+,42080 0 0 11 0
+64130 0 0 00 1
+047 1 510 0 00 0
+−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ∼−−
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  we see that the first, second, third, and fifth columns of A are its pivot columns. Thus a basis for the 
+space spanned by the given vectors is  
+   
+2428
+0044
+,,, .4200
+6410
+0471
+⎧⎫ −−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−⎨⎬⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪ −−⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥ −⎪⎪⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 18. [M] This problem is equivalent to finding a basis for Col A, where [] 12345 .A = vv vv v  
+Since the reduced echelon form of A is  
+   
+3 3 0 6 6 100 00
+202 23 0 1 02 0
+,6941 40 0 0 11 0
+000 010 0 00 1
+7 6 1 1 3 0 000 00
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ∼−−− −
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+ 
+  we see that the first, second, third, and fifth columns of A are its pivot columns. Thus a basis for the 
+space spanned by the given vectors is  
+   
+3306
+2023
+,,, .6940
+0001
+761 0
+⎧⎫ −−⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−−⎨⎬⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪ −⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−−⎪⎪⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+ 19. Since 123453 ,+−=vvv 0  we see that each of the vectors is a linear combination of the others. Thus 
+the sets 12{, } ,vv  13{, } ,vv  and 23{,}vv  all span H. Since we may confirm that none of the three 
+vectors is a multiple of any of the others, the sets 12{, } ,vv  13{, } ,vv  and 23{,}vv  are linearly 
+independent and thus each forms a basis for H. 
+ 20. Since 1232, −−=vv v0  we see that each of the vectors is a linear combination of the others. Thus 
+the sets 12{, } ,vv  13{, } ,vv  and 23{,}vv  all span H. Since we may confirm that none of the three 
+vectors is a multiple of any of the others, the sets 12{, } ,vv  13{, } ,vv  and 23{,}vv  are linearly 
+independent and thus each forms a basis for H. 
+ 21. a. False. The zero vector by itself is linearly dependent. See the paragraph preceding Theorem 4.  
+ b. False. The set 1{, , } p…bb  must also be linearly independent. See the definition of a basis.  
+ c. True. See Example 3.  
+----- pagina 23 -----
+4.3  Solutions   219  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ d. False. See the subsection “Two Views of a Basis.”  
+ e. False. See the box before Example 9.  
+ 22. a. False. The subspace spanned by the set must also coincide with H. See the definition of a basis.  
+ b. True. Apply the Spanning Set Theorem to V instead of H. The space V is nonzero because the 
+spanning set uses nonzero vectors.  
+ c. True. See the subsection “Two Views of a Basis.”  
+ d. False. See the two paragraphs before Example 8.  
+ e. False. See the warning after Theorem 6.  
+ 23. Let [] 1234 .A = vvvv  Then A is square and its columns span 4 since 4
+1234Span{ , , , }.= vv vv  So its columns are linearly independent by the Invertible Matrix Theorem, 
+and 1234{, , , }vv vv  is a basis for 4. 
+ 24. Let [ ]1 .nA =…vv  Then A is square and its columns are linearly independent, so its columns 
+span n by the Invertible Matrix Theorem. Thus 1{, , } n…vv  is a basis for n. 
+ 25. In order for the set to be a basis for H, 123{, , }vv v  must be a spanning set for H; that is, 
+123Span{ , , }.H = vv v  The exercise shows that H is a subset of 123Span{ , , }.vv v  but there are vectors 
+in 123Span{ , , }vvv  which are not in H ( 1v and 3 ,v  for example). So 123Span{ , , },H ≠ vv v  and 
+123{, , }vv v  is not a basis for H. 
+ 26. Since sin t cos t = (1/2) sin 2t, the set {sin t, sin 2t} spans the subspace. By inspection we note that 
+this set is linearly independent, so {sin t, sin 2t} is a basis for the subspace. 
+ 27. The set {cos ωt, sin ωt} spans the subspace. By inspection we note that this set is linearly 
+independent, so {cos ωt, sin ωt} is a basis for the subspace. 
+ 28. The set {, }bt btet e−−  spans the subspace. By inspection we note that this set is linearly independent, 
+so {, }bt btet e−−  is a basis for the subspace. 
+ 29. Let A be the n × k matrix [] 1 k…vv . Since A has fewer columns than rows, there cannot be a 
+pivot position in each row of A. By Theorem 4 in Section 1.4, the columns of A do not span n and 
+thus are not a basis for n. 
+ 30. Let A be the n × k matrix [] 1 k…vv . Since A has fewer rows than columns, there cannot be a 
+pivot position in each column of A. By Theorem 8 in Section 1.7, the columns of A are not linearly 
+independent and thus are not a basis for n. 
+ 31. Suppose that 1{, , } p…vv  is linearly dependent. Then there exist scalars 1,, pcc…  not all zero with  
+   11 .ppcc +…+ =vv 0  
+  Since T is linear,  
+   11 1 1() ( ) ( ) pp p pTc c c T cT+…+ = +…+vv v v  
+  and  
+----- pagina 24 -----
+220    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   11() ( ) . ppTc c T +…+ = =vv 0 0  
+  Thus  
+   11 () ( ) ppcT c T +…+ =vv 0  
+  and since not all of the ic  are zero, 1{ ( ), , ( )} pTT …vv  is linearly dependent. 
+ 32. Suppose that 1{ ( ), , ( )} pTT …vv  is linearly dependent. Then there exist scalars 1,, pcc…  not all zero 
+with  
+   11 () ( ) . ppcT c T +…+ =vv 0  
+  Since T is linear,  
+   11 1 1() ( ) ( ) ( ) pp p pTc c c T cT T+…+ = +…+ = =vv v v 0 0  
+  Since T is one-to-one  
+   11() ( ) ppTc c T +…+ =vv 0  
+  implies that  
+   11 .ppcc +…+ =vv 0  
+  Since not all of the ic  are zero, 1{, , } p…vv  is linearly dependent. 
+ 33. Neither polynomial is a multiple of the other polynomial. So 12{, }pp  is a linearly independent set in 
+3. Note: 12{, }pp  is also a linearly independent set in 2 since 1p  and 2p  both happen to be in 2. 
+ 34. By inspection, 312=+pp p , or 123+−=ppp 0 . By the Spanning Set Theorem, 
+123 12Span{ , , } Span{ , }=pp p pp . Since neither 1p  nor 2p  is a multiple of the other, they are linearly 
+independent and hence 12{, }pp  is a basis for 123Span{ , , }.pp p  
+ 35. Let 13{, }vv  be any linearly independent set in a vector space V, and let 2v  and 4v  each be linear 
+combinations of 1v  and 3.v  For instance, let 21 5=vv  and 413 .=+vv v  Then 13{, }vv  is a basis for 
+1234Span{ , , , }.vvvv  
+ 36. [M] Row reduce the following matrices to identify their pivot columns:  
+  [] 123
+10 3 1 03
+224 0 11 ,0110 00
+114 0 00
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥=∼⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦
+uu u  so 12{, }uu  is a basis for H. 
+  [] 123
+221 1 0 0
+234 0 1 0 ,126 0 0 1
+362 0 0 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥=∼⎢⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦
+vv v  so 123{, , }vv v  is a basis for K. 
+----- pagina 25 -----
+4.3  Solutions   221  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  [] 123123
+10 3 2 2 1
+224234
+011126
+114 362
+−−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥ −−
+⎢⎥−− − −⎣⎦
+uu u vv v  
+   
+10 3 200
+01 1 1 00 ,00 0 010
+00 0 001
+−⎡⎤
+⎢⎥ −⎢⎥∼ ⎢⎥
+⎢⎥
+⎣⎦
+ so 1223{, , , }uu v v  is a basis for H + K. 
+ 37. [M] For example, writing  
+   12 3 4 sin cos 2 sin cos 0ct c t c t c t t⋅+ ⋅ + + =  
+  with t = 0, .1, .2, .3 gives the following coefficent matrix A for the homogeneous system Ac = 0 (to 
+four decimal places): 
+   
+0 sin 0 cos 0 sin 0 cos 0 0 0 1 0
+.1 sin .1 cos .2 sin .1cos .1 .1 .0998 .9801 .0993 ..2 sin .2 cos .4 sin .2 cos .2 .2 .1987 .9211 .1947
+.3 sin .3 cos .6 sin .3 cos .3 .3 .2955 .8253 .2823
+A
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  This matrix is invertible, so the system Ac = 0 has only the trivial solution and {t, sin t, cos 2t,  
+sin t cos t} is a linearly independent set of functions. 
+ 38. [M] For example, writing  
+   234561 2 345671 cos cos cos cos cos cos 0c c tc tc tc tc tc t⋅ + ⋅ + ⋅+ ⋅+ ⋅+ ⋅+ ⋅=  
+  with t = 0, .1, .2, .3, .4, .5, .6 gives the following coefficent matrix A for the homogeneous system Ac 
+= 0 (to four decimal places): 
+   
+23456
+23456
+23456
+23456
+23456
+234
+1 cos0 cos 0 cos 0 cos 0 cos 0 cos 0
+1 cos.1 cos .1 cos .1 cos .1 cos .1 cos .1
+1 cos.2 cos .2 cos .2 cos .2 cos .2 cos .2
+1 cos.3 cos .3 cos .3 cos .3 cos .3 cos .3
+1 cos.4 cos .4 cos .4 cos .4 cos .4 cos .4
+1 cos.5 cos .5 cos .5 cos .5
+A =
+56
+23456
+cos .5 cos .5
+1 cos.6 cos .6 cos .6 cos .6 cos .6 cos .6
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+   
+1 111111
+1 .9950 .9900 .9851 .9802 .9753 .9704
+1 .9801 .9605 .9414 .9226 .9042 .8862
+1 .9553 .9127 .8719 .8330 .7958 .7602
+1 .9211 .8484 .7814 .7197 .6629 .6106
+1 .8776 .7702 .6759 .5931 .5205 .4568
+1 .8253 .6812 .5622 .4640 .3830 .3161
+⎡
+⎢
+⎢
+⎢
+⎢=
+⎣
+⎤
+⎥
+⎥
+⎥
+⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥ ⎦
+----- pagina 26 -----
+222    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  This matrix is invertible, so the system Ac = 0 has only the trivial solution and {1, cos t, cos2t, cos3t, 
+cos4t, cos5t, cos6t} is a linearly independent set of functions. 
+4.4 SOLUTIONS 
+Notes: Section 4.7 depends heavily on this section, as does Section 5.4. It is possible to cover the n parts 
+of the two later sections, however, if the first half of Section 4.4 (and perhaps Example 7) is covered. The 
+linearity of the coordinate mapping is used in Section 5.4 to find the matrix of a transformation relative to 
+two bases. The change-of-coordinates matrix appears in Section 5.4, Theorem 8 and Exercise 27. The 
+concept of an isomorphism is needed in the proof of Theorem 17 in Section 4.8. Exercise 25 is used in 
+Section 4.7 to show that the change-of-coordinates matrix is invertible. 
+ 1. We calculate that  
+   34 353 .56 7 −⎡⎤ ⎡⎤⎡⎤=+=⎢⎥ ⎢⎥⎢⎥−−⎣⎦ ⎣⎦⎣⎦x  
+ 2. We calculate that 
+   34 2 6(2 ) 5 .211 −−⎡⎤ ⎡ ⎤ ⎡ ⎤=− + =⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦x  
+ 3. We calculate that  
+   
+15 4 7
+12 00 ( 2 )3 4 .
+32 0 3
+−⎡⎤ ⎡⎤ ⎡⎤⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥⎢⎥=−+ + − −=⎢⎥ ⎢⎥ ⎢⎥⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥⎢⎥ −⎣⎦ ⎣⎦ ⎣⎦⎣⎦
+x  
+ 4 . We calculate that  
+   
+23 48
+(3 ) 2 20 (1 ) 1 5.
+02 31
+−⎡⎤ ⎡ ⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥=− + +− − =−⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦ ⎣⎦
+x  
+ 5. The matrix [] 12bb x  row reduces to 10 2 ,01 1⎡ ⎤⎢ ⎥−⎣ ⎦  so 2[] . 1B ⎡ ⎤= ⎢ ⎥−⎣ ⎦x  
+ 6. The matrix [] 12bb x  row reduces to 10 3 ,01 2⎡ ⎤⎢ ⎥−⎣ ⎦  so 3[] . 2B ⎡ ⎤= ⎢ ⎥−⎣ ⎦x  
+ 7. The matrix [] 123bb bx  row reduces to 
+100 1
+01 0 1 ,
+001 3
+−⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ so 
+1
+[] 1.
+3
+B
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+x  
+----- pagina 27 -----
+4.4  Solutions   223  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 8. The matrix [] 123bb bx  row reduces to 
+100 1
+01 0 1 ,
+001 1
+⎡ ⎤
+⎢ ⎥−⎢ ⎥
+⎢ ⎥⎣ ⎦
+ so 
+1
+[] 1.
+1
+B
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+x  
+ 9. The change-of-coordinates matrix from B to the standard basis in 2 is  
+[] 12
+12 .35BP ⎡⎤== ⎢⎥−−⎣⎦bb  
+ 10. The change-of-coordinates matrix from B to the standard basis in 3 is  
+[] 123
+321
+022 .
+643
+BP
+⎡ ⎤
+⎢ ⎥== − ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+bbb  
+ 11. Since 
+1
+BP
+−
+ converts x into its B-coordinate vector, we find that  
+   
+1
+1 13 2 532 5[] . 25 5 21 5 1BB P
+−
+− −− −⎡ ⎤ ⎡⎤⎡ ⎤ ⎡⎤⎡ ⎤== = = ⎢ ⎥ ⎢⎥⎢ ⎥ ⎢⎥⎢ ⎥−− − − −⎣ ⎦ ⎣⎦⎣ ⎦ ⎣⎦⎣ ⎦xx  
+ 12. Since 
+1
+BP
+−
+ converts x into its B-coordinate vector, we find that  
+   
+1
+1 12 2 12 2 8[] . 113 11 3 5BB P
+−
+− −− −⎡ ⎤ ⎡⎤ ⎡ ⎤ ⎡⎤ ⎡ ⎤== = = ⎢ ⎥ ⎢⎥ ⎢ ⎥ ⎢⎥ ⎢ ⎥−−⎣ ⎦ ⎣⎦ ⎣ ⎦ ⎣⎦ ⎣ ⎦xx  
+ 13. We must find 1c , 2c , and 3c  such that  
+   22 2 2123(1 ) ( ) (1 2 ) ( ) 1 4 7 .ctc t tc t t t t t+ + + + ++ = = ++ p  
+  Equating the coefficients of the two polynomials produces the system of equations  
+   
+13
+23
+12 3
+1
+24
+7
+cc
+cc
+cc c
++=
++=
+++ =
+ 
+  We row reduce the augmented matrix for the system of equations to find  
+   
+1011 100 2 2
+0124 010 6 , s o [ ] 6 .
+1117 001 1 1
+B
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ∼=⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −−⎣⎦ ⎣ ⎦ ⎣ ⎦
+p  
+  One may also solve this problem using the coordinate vectors of the given polynomials relative to the 
+standard basis 2{1, , } ;tt  the same system of linear equations results. 
+ 14. We must find 1c , 2c , and 3c  such that  
+   22 2 2123(1 ) ( ) (1 ) ( ) 2 3 6 .ctc t tct t t t t−+ −+ − += = + − p  
+  Equating the coefficients of the two polynomials produces the system of equations  
+----- pagina 28 -----
+224    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+13
+23
+123
+2
+3
+6
+cc
+cc
+cc c
++=
+−=
+−− + = −
+ 
+  We row reduce the augmented matrix for the system of equations to find  
+   
+10 12 1 0 03 3
+0113 0 1 02 , s o [ ] 2 .
+1116 0 0 11 1
+B
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ −∼ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− − − −⎣⎦ ⎣ ⎦ ⎣ ⎦
+p  
+  One may also solve this problem using the coordinate vectors of the given polynomials relative to the 
+standard basis 2{1, , } ;tt  the same system of linear equations results. 
+ 15. a. True. See the definition of the B-coordinate vector.  
+ b. False. See Equation (4).  
+ c. False. 3 is isomorphic to 4. See Example 5.  
+ 16. a. True. See Example 2.  
+ b. False. By definition, the coordinate mapping goes in the opposite direction.  
+ c. True. If the plane passes through the origin, as in Example 7, the plane is isomorphic to 2.  
+ 17. We must solve the vector equation 123
+123 1
+387 1xx x −⎡ ⎤⎡ ⎤⎡ ⎤ ⎡ ⎤++=⎢ ⎥⎢ ⎥⎢ ⎥ ⎢ ⎥−−⎣ ⎦⎣ ⎦⎣ ⎦ ⎣ ⎦ . We row reduce the augmented 
+matrix for the system of equations to find  
+   123 1 1 055 .387 1 0 112−−⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦  
+  Thus we can let 13 55xx=+  and 23 2xx =− − , where 3x  can be any real number. Letting 3 0x =  and 
+3 1x =  produces two different ways to express 11⎡ ⎤⎢ ⎥⎣ ⎦  as a linear combination of the other vectors: 
+1252 −vv  and 2310 3 −+1vv v . There are infintely many correct answers to this problem. 
+ 18. For each k, 101 0kk n= ⋅ +⋅⋅⋅+ ⋅ +⋅⋅⋅+ ⋅bb b b , so [] ( 0 ,, 1 ,, 0 ) .kB k =… …=be  
+ 19. The set S spans V because every x in V has a representation as a (unique) linear combination of 
+elements in S. To show linear independence, suppose that 1{, , } nS =…vv  and that 
+11 nncc +⋅⋅⋅+ =vv 0  for some scalars 1c , …, .nc  The case when 1 0ncc=⋅⋅⋅= =  is one possibility. 
+By hypothesis, this is the unique (and thus the only) possible representation of the zero vector as a 
+linear combination of the elements in S. So S is linearly independent and is thus a basis for V. 
+ 20. For w in V there exist scalars 1k , 2k , 3k , and 4k  such that  
+   1 1 22 33 44kk k k=+ + +w vvvv  (1) 
+  because 1234{, , , }vv vv  spans V. Because the set is linearly dependent, there exist scalars 1c , 2c , 3c , 
+and 4c  not all zero, such that  
+   11 2 2 3 3 4 4cc c c=+ + +0 vvvv  (2) 
+  Adding (1) and (2) gives  
+----- pagina 29 -----
+4.4  Solutions   225  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1 1 1 2 22 3 33 4 44( ) () () ()k c kc kc kc= + =+ ++ ++ ++ww0 v v v v  (3) 
+  At least one of the weights in (3) differs from the corresponding weight in (1) because at least one of 
+the ic  is nonzero. So w is expressed in more than one way as a linear combination of 1v , 2v , 3v , 
+and 4.v  
+ 21. The matrix of the transformation will be 
+1
+1 12 9 2
+49 4 1BP
+−
+− −⎡ ⎤⎡ ⎤==⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦ . 
+ 22. The matrix of the transformation will be []
+11
+1 .BnP
+−−
+=⋅ ⋅ ⋅bb  
+ 23. Suppose that  
+   [] [ ]BB
+n
+c
+c
+1⎡⎤⎢⎥== . ⎢⎥
+⎢⎥⎣⎦
+uw #  
+  By definition of coordinate vectors,  
+   11 .nncc= = +⋅⋅⋅+uw b b  
+  Since u and w were arbitrary elements of V, the coordinate mapping is one-to-one. 
+ 24. Given 1(, , ) nyy=…y  in n, let 11 nnyy=+ ⋅ ⋅ ⋅ +ub b . Then, by definition, [] B =uy . Since y was 
+arbitrary, the coordinate mapping is onto n. 
+ 25. Since the coordinate mapping is one-to-one, the following equations have the same solutions 
+1,, pcc… :  
+   11 ppcc +⋅⋅⋅+ =uu 0  (the zero vector in V ) (4) 
+   []11 pp BBcc⎡⎤ +⋅⋅⋅+ =⎣⎦ uu 0  (the zero vector in n) (5) 
+  Since the coordinate mapping is linear, (5) is equivalent to  
+   11
+0
+[] [ ]
+0
+Bp p Bcc
+⎡⎤
+⎢⎥+⋅⋅⋅+ = ⎢⎥
+⎢⎥⎣⎦
+uu #  (6) 
+  Thus (4) has only the trivial solution if and only if (6) has only the trivial solution. It follows that 
+1{, , } p…uu  is linearly independent if and only if 1{[ ] , ,[ ] }Bp B…uu  is linearly independent. This 
+result also follows directly from Exercises 31 and 32 in Section 4.3. 
+ 26. By definition, w is a linear combination of 1,, p…uu  if and only if there exist scalars 1,, pcc…  such 
+that  
+   11 ppcc= +⋅⋅⋅+wu u  (7) 
+  Since the coordinate mapping is linear,  
+   11[] [ ] [ ]BBp p Bcc=+ ⋅ ⋅ ⋅ +wu u  (8) 
+  Conversely, (8) implies (7) because the coordinate mapping is one-to-one. Thus w is a linear 
+combination of 1,, p…uu  if and only if [] Bw  is a linear combination of 1[] ,, [ ] .Bp B…uu  
+----- pagina 30 -----
+226    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+Note: Students need to be urged to write not just to compute in Exercises 27–34. The language in the 
+Study Guide solution of Exercise 31 provides a model for the students. In Exercise 32, students may have 
+difficulty distinguishing between the two isomorphic vector spaces, sometimes giving a vector in 3 as an 
+answer for part (b). 
+ 27. The coordinate mapping produces the coordinate vectors (1, 0, 0, 2), (2, 1, –3, 0), and (0, –1, 2, –1) 
+respectively. We test for linear independence of these vectors by writing them as columns of a matrix 
+and row reducing: 
+   
+120 1 0 0
+01 10 1 0 .032 0 0 1
+2 0 1 000
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥−
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  Since the matrix has a pivot in each column, its columns (and thus the given polynomials) are 
+linearly independent. 
+ 28. The coordinate mapping produces the coordinate vectors (1, 0, –2, –1), (0, 1, 0, 2), and (1, 1, –2, 0) 
+respectively. We test for linear independence of these vectors by writing them as columns of a matrix 
+and row reducing: 
+   
+10 1 100
+01 1 01 0 .20 2 001
+12 0 000
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥−−
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+  Since the matrix has a pivot in each column, its columns (and thus the given polynomials) are 
+linearly independent. 
+ 29. The coordinate mapping produces the coordinate vectors (1, –2, 1, 0), (0, 1, –2, 1), and (1, –3, 3, –1) 
+respectively. We test for linear independence of these vectors by writing them as columns of a matrix 
+and row reducing:  
+   
+101 1 01
+21 30 1 1 .123 0 00
+01 10 0 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  Since the matrix does not have a pivot in each column, its columns (and thus the given polynomials) 
+are linearly dependent. 
+ 30. The coordinate mapping produces the coordinate vectors (8, –12, 6, –1), (9, –6, 1, 0), and (1, 6, –5,1) 
+respectively. We test for linear independence of these vectors by writing them as columns of a matrix 
+and row reducing: 
+   
+891 1 01
+1 266 0 11 .61 50 0 0
+10 1 0 00
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+  Since the matrix does not have a pivot in each column, its columns (and thus the given polynomials) 
+are linearly dependent. 
+----- pagina 31 -----
+4.4  Solutions   227  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 31. In each part, place the coordinate vectors of the polynomials into the columns of a matrix and reduce 
+the matrix to echelon form. 
+a. 
+1341 134 1
+3550 047 3
+5761000 0
+−− −−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−∼ − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −−−⎣⎦ ⎣ ⎦
+ 
+  Since there is not a pivot in each row, the original four column vectors do not span 3. By the 
+isomorphism between 3 and 2, the given set of polynomials does not span 2. 
+b. 
+01 3 2 1 22 0
+5843 026 3
+1220 000 7 / 2
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− ∼ − −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦
+ 
+  Since there is a pivot in each row, the original four column vectors span 3. By the isomorphism 
+between 3 and 2, the given set of polynomials spans 2. 
+ 32. a. Place the coordinate vectors of the polynomials into the columns of a matrix and reduce the 
+matrix to echelon form: 
+10 1 1 01
+011 0 1 1
+133 0 01
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦
+ 
+  The resulting matrix is invert ible since it row equivalent to 3.I  The original three column vectors 
+form a basis for 3 by the Invertible Matrix Theorem. By the isomorphism between 3 and 2, the 
+corresponding polynomials form a basis for 2. 
+b. Since [] (1 , 1 , 2 ) ,B =−q  12 3 2.=− + +qp p p  One might do the algebra in 2 or choose to compute 
+10 11 1
+0111 3 .
+1332 1 0
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ =⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+ This combination of the columns of the matrix corresponds to the 
+same combination of 1,p  2 ,p  and 3.p  So 2() 1 3 1 0 .tt t=+ −q  
+ 33. The coordinate mapping produces the coordinate vectors (3, 7, 0, 0), (5, 1, 0, –2), (0, 1, –2, 0) and  
+(1, 16, –6, 2) respectively. To determine whether the set of polynomials is a basis for 3, we 
+investigate whether the coordinate vectors form a basis for 4. Writing the vectors as the columns of 
+a matrix and row reducing  
+   
+3501 1 0 02
+711 1 6 0 1 01 ,0026 0 0 1 3
+0202 0 0 00
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥ −−
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  we find that the matrix is not row equivalent to 4.I  Thus the coordinate vectors do not form a basis 
+for 4. By the isomorphism between 4 and 3, the given set of polynomials does not form a basis for 
+3. 
+ 34. The coordinate mapping produces the coordinate vectors (5, –3, 4, 2), (9, 1, 8, –6), (6, –2, 5, 0), and  
+(0, 0, 0, 1) respectively. To determine whether the set of polynomials is a basis for 3, we investigate 
+whether the coordinate vectors form a basis for 4. Writing the vectors as the columns of a matrix, 
+and row reducing
+----- pagina 32 -----
+228    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+5 9 60 103 / 40
+3 1 20 011 / 40
+485 0 0 0 0 1
+260 10 0 0 0
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  we find that the matrix is not row equivalent to I4. Thus the coordinate vectors do not form a basis for 
+4. By the isomorphism between 4 and 3, the given set of polynomials does not form a basis for 3. 
+ 35. To show that x is in 12Span{ , },H = vv  we must show that the vector equation 11 2 2xx +=vv x  has a 
+solution. The augmented matrix [] 12vvx  may be row reduced to show  
+   
+11 14 19 1 0 5/ 3
+581 3 0 18 / 3 .10 13 18 0 0 0
+71 0 1 5 00 0
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−−−⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  Since this system has a solution, x is in H. The solution allows us to find the B-coordinate vector for 
+x: since 11 2 2 1 2 (5 / 3 ) ( 8 / 3 )xx=+ = − +xv v v v , 5/3[] 8/3B −⎡ ⎤= ⎢ ⎥⎣ ⎦x . 
+ 36. To show that x is in 123Span{ , , }H = vv v , we must show that the vector equation 
+11 2 2 3 3xx x ++=vvv x  has a solution. The augmented matrix [] 123vvvx  may be row 
+reduced to show  
+   
+6894 1 0 0 3
+4357 0 1 0 5 .9788 0 0 1 2
+4333 0 0 0 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥ ∼⎢⎥ ⎢ ⎥−− −
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  The first three columns show that B is a basis for H. Moreover, since this system has a solution, x is 
+in H. The solution allows us to find the B-coordinate vector for x: since 
+11 2 2 3 3 1 2 3 35 2xx x=+ + = + +xv v v vv v , 
+3
+[] 5.
+2
+B
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+x  
+ 37. We are given that 
+1/2
+[] 1 / 4,
+1/6
+B
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+x  where 
+2.6 0 0
+1.5 , 3 , 0 .
+004 . 8
+B
+⎧ ⎫⎡ ⎤⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥=−⎨ ⎬⎢ ⎥⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦⎩⎭  To find the coordinates of x 
+relative to the standard basis in 3, we must find x. We compute that  
+   
+2.6 0 0 1/ 2 1.3
+[] 1 . 5 3 0 1 / 4 0 .
+0 0 4.8 1/ 6 0.8
+BBP
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+xx  
+----- pagina 33 -----
+4.5  Solutions   229  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 38. We are given that 
+1/2
+[] 1 / 2,
+1/3
+B
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+x  where 
+2.6 0 0
+1.5 , 3 , 0 .
+004 . 8
+B
+⎧ ⎫⎡ ⎤⎡ ⎤⎡ ⎤
+⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥=−⎨ ⎬⎢ ⎥⎢ ⎥⎢ ⎥⎪ ⎪⎢ ⎥⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦⎣ ⎦⎩⎭  To find the coordinates of x 
+relative to the standard basis in 3, we must find x. We compute that  
+   
+2.6 0 0 1/ 2 1.3
+[ ] 1.5 3 0 1/ 2 0.75 .
+0 0 4.8 1/ 3 1.6
+BBP
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥== − = ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+xx  
+4.5 SOLUTIONS 
+Notes: Theorem 9 is true because a vector space isomorphic to n has the same algebraic properties as 
+n; a proof of this result may not be needed to convince the class. The proof of Theorem 9 relies upon the 
+fact that the coordinate mapping is a linear transformation (which is Theorem 8 in Section 4.4). If you 
+have skipped this result, you can prove Theorem 9 as is done in Introduction to Linear Algebra by Serge 
+Lang (Springer-Verlag, New York, 1986). There are two separate groups of true-false questions in this 
+section; the second batch is more theoretical in nature. Example 4 is useful to get students to visualize 
+subspaces of different dimensions, and to see the relationships between subspaces of different 
+dimensions. Exercises 31 and 32 investigate the relationship between the dimensions of the domain and 
+the range of a linear transformation; Exercise 32 is mentioned in the proof of Theorem 17 in Section 4.8. 
+ 1. This subspace is 12Span{ , },H = vv  where 1
+1
+1
+0
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  and 2
+2
+1.
+3
+−⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  Since 1v  and 2v  are not 
+multiples of each other, 12{, }vv  is linearly independent and is thus a basis for H. Hence the 
+dimension of H is 2. 
+ 2. This subspace is 12Span{ , },H = vv  where 1
+2
+0
+2
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+v  and 2
+0
+4.
+0
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  Since 1v  and 2v  are not 
+multiples of each other, 12{, }vv  is linearly independent and is thus a basis for H. Hence the 
+dimension of H is 2. 
+ 3. This subspace is 123Span{ , , },H = vv v  where 1
+0
+1 ,0
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+v  2
+0
+1 ,1
+2
+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦
+v  and 3
+2
+0 .3
+0
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥−
+⎢⎥⎢⎥⎣⎦
+v  Theorem 4 in 
+Section 4.3 can be used to show that this set is linearly independent: 1 ,≠v0  2v  is not a multiple of 
+1,v  and (since its first entry is not zero) 3v  is not a linear combination of 1v  and 2.v  Thus 
+123{, , }vv v  is linearly independent and is thus a basis for H. Alternatively, one can show that this set 
+is linearly independent by row reducing the matrix [] 123 .vv v0  Hence the dimension of the 
+subspace is 3. 
+----- pagina 34 -----
+230    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 4. This subspace is 12Span{ , },H = vv  where 1
+1
+1
+3
+1
+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+v  and 2
+2
+0 .1
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+v  Since 1v  and 2v  are not 
+multiples of each other, 12{, }vv  is linearly independent and is thus a basis for H. Hence the 
+dimension of H is 2. 
+ 5. This subspace is 123Span{ , , },H = vv v  where 1
+1
+2 ,0
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+v  2
+2
+0 ,2
+0
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥
+⎣ ⎦
+v  and 3
+0
+5 .2
+6
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+v  The matrix A 
+with these vectors as its columns row reduces to  
+12 0 1 0 0
+20 5 0 1 0 .02 2 0 0 1
+3 06 000
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥∼⎢ ⎥⎢ ⎥−
+⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦
+  There is a pivot in 
+each column, so 123{, , }vv v  is linearly independent and is thus a basis for H. Hence the dimension 
+of H is 3. 
+ 6. This subspace is 123Span{ , , },H = vv v  where 1
+3
+0 ,7
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥−
+⎢ ⎥−⎣ ⎦
+v  2
+0
+1 ,6
+0
+⎡ ⎤
+⎢ ⎥−⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+v  and 3
+1
+3 .5
+1
+−⎡⎤
+⎢⎥−⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+v  The matrix A 
+with these vectors as its columns row reduces to  
+30 1 1 0 0
+013 0 1 0 .765 0 0 1
+30 1 0 0 0
+−⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥−−⎢ ⎥⎢ ⎥∼⎢ ⎥⎢ ⎥−
+⎢ ⎥⎢ ⎥−⎣ ⎦⎣ ⎦
+  There is a pivot in 
+each column, so 123{, , }vv v  is linearly independent and is thus a basis for H. Hence the dimension 
+of H is 3. 
+ 7. This subspace is H = Nul A, where 
+131
+01 2 .
+021
+A
+−⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ Since []
+1000
+0100 ,
+0010
+A
+⎡ ⎤
+⎢ ⎥∼ ⎢ ⎥
+⎢ ⎥⎣ ⎦
+0  the 
+homogeneous system has only the trivial solution. Thus H = Nul A = {0}, and the dimension of H is 
+0. 
+ 8. From the equation a – 3b + c = 0, it is seen that (a, b, c, d) = b(3, 1, 0, 0) + c(–1, 0, 1, 0) + d(0, 0, 0, 
+1). Thus the subspace is 123Span{ , , },H = vv v  where 1 (3 ,1 ,0,0),=v  2 (1 , 0 , 1 , 0 ) ,=−v  and 
+3 (0,0,0,1).=v  It is easily checked that this set of vectors is linearly independent, either by appealing 
+to Theorem 4 in Section 4.3, or by row reducing [] 123 .vv v0  Hence the dimension of the 
+subspace is 3. 
+----- pagina 35 -----
+4.5  Solutions   231  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. This subspace is :, i n
+a
+Hb a b
+a
+⎧ ⎡⎤
+⎪ ⎢⎥= ⎨ ⎢⎥⎪ ⎢⎥⎣⎦⎩   12Span{ , },
+⎫
+⎪ =⎬
+⎪⎭
+vv  where 1
+1
+0
+1
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  and 2
+0
+1.
+0
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  Since 1v  
+and 2v  are not multiples of each other, 12{, }vv  is linearly independent and is thus a basis for H. 
+Hence the dimension of H is 2.  
+ 10. The matrix A with these vectors as its columns row reduces to  
+   123 123 .51 01 5 0 0 0−− −−⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦  
+  There is one pivot column, so the dimension of Col  A (which is the dimension of H) is 1. 
+ 11. The matrix A with these vectors as its columns row reduces to  
+   
+13 2 5 10 10
+01 12 01 1 0 .
+21 12 00 01
+−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −∼ −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+  There are three pivot columns, so the dimension of Col  A (which is the dimension of the subspace 
+spanned by the vectors) is 3. 
+ 12. The matrix A with these vectors as its columns row reduces to  
+   
+1323 1 0 01
+2635 0 1 00 .
+0655 0 0 11
+−−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−− ∼⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  There are three pivot columns, so the dimension of Col  A (which is the dimension of the subspace 
+spanned by the vectors) is 3. 
+ 13. The matrix A is in echelon form. There are three pivot columns, so the dimension of Col A is 3. 
+There are two columns without pivots, so the equation Ax = 0 has two free variables. Thus the 
+dimension of Nul A is 2. 
+ 14. The matrix A is in echelon form. There are four pivot columns, so the dimension of Col A is 4. There 
+are three columns without pivots, so the equation Ax = 0 has three free variables. Thus the dimension 
+of Nul A is 3. 
+ 15. The matrix A is in echelon form. There are three pivot columns, so the dimension of Col A is 3. 
+There are two columns without pivots, so the equation Ax = 0 has two free variables. Thus the 
+dimension of Nul A is 2. 
+ 16. The matrix A row reduces to  
+   32 10 .65 01⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥−⎣⎦ ⎣ ⎦  
+  There are two pivot columns, so the dimension of Col  A is 2. There are no columns without pivots, 
+so the equation Ax = 0 has only the trivial solution 0. Thus Nul A = {0}, and the dimension of Nul A 
+is 0. 
+----- pagina 36 -----
+232    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 17. The matrix A is in echelon form. There are three pivot columns, so the dimension of Col A is 3. 
+There are no columns without pivots, so the equation Ax = 0 has only the trivial solution 0. Thus Nul 
+A = {0}, and the dimension of Nul A is 0. 
+ 18. The matrix A is in echelon form. There are two pivot columns, so the dimension of Col A is 2. There 
+is one column without a pivot, so the equation Ax = 0 has one free variable. Thus the dimension of 
+Nul A is 1. 
+ 19. a. True. See the box before Example 5.  
+ b. False. The plane must pass through the origin; see Example 4.  
+ c. False. The dimension of n is n + 1; see Example 1.  
+ d. False. The set S must also have n elements; see Theorem 12.  
+ e. True. See Theorem 9.  
+ 20. a. False. The set 2 is not even a subset of 3.  
+ b. False. The number of free variables is equal to the dimension of Nul A; see the box before 
+Example 5.  
+ c. False. A basis could still have only finitely many elements, which would make the vector space 
+finite-dimensional.  
+ d. False. The set S must also have n elements; see Theorem 12.  
+ e. True. See Example 4.  
+ 
+ 21.  The matrix whose columns are the coordinate vectors of the Hermite polynomials relative to the 
+standard basis 23{1, , , }tt t  of 3 is  
+   
+10 2 0
+0 201 2 .00 4 0
+00 0 8
+A
+−⎡⎤
+⎢⎥ −⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+  This matrix has 4 pivots, so its columns are linearly independent. Since their coordinate vectors form 
+a linearly independent set, the Hermite polynomials themselves are linearly independent in 3. Since 
+there are four Hermite polynomials and dim 3 = 4, the Basis Theorem states that the Hermite 
+polynomials form a basis for 3. 
+ 22. The matrix whose columns are the coordinate vectors of the Laguerre polynomials relative to the 
+standard basis 23{1, , , }tt t  of 3 is  
+   
+112 6
+0141 8 .00 1 9
+000 1
+A
+⎡⎤
+⎢⎥ −−−⎢⎥= ⎢⎥
+⎢⎥ −⎢⎥⎣⎦
+ 
+  This matrix has 4 pivots, so its columns are linearly independent. Since their coordinate vectors form 
+a linearly independent set, the Laguerre polynomials themselves are linearly independent in 3. Since 
+there are four Laguerre polynomials and dim 3 = 4, the Basis Theorem states that the Laguerre 
+polynomials form a basis for 3. 
+----- pagina 37 -----
+4.5  Solutions   233  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 23. The coordinates of 23() 1 8 8tt t=− + +p  with respect to B satisfy  
+   23 2 312 3 4( 1 ) ( 2 ) (2 4 ) (1 2 8 ) 1 8 8cc t c t ct t t t++ − + + − + = − + +  
+  Equating coefficients of like powers of t produces the system of equations  
+   
+13
+24
+3
+4
+21
+21 2 0
+48
+88
+cc
+cc
+c
+c
+−= −
+−=
+=
+=
+ 
+  Solving this system gives 1 3,c =  2 6,c =  3 2,c =  4 1,c =  and 
+3
+6[] . 2
+1
+B
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎣ ⎦
+p  
+ 24. The coordinates of 2() 5 5 2tt t=+ −p  with respect to B satisfy  
+   2212 3(1) (1 ) (2 4 ) 5 5 2cc t c t t t t+− + − + = + −  
+  Equating coefficients of like powers of t produces the system of equations  
+   
+123
+23
+3
+25
+45
+2
+ccc
+cc
+c
+++=
+−− =
+=−
+ 
+  Solving this system gives 1 6,c =  2 3,c =  3 2,c =−  and 
+6
+[] 3.
+2
+B
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+p  
+ 25. Note first that n ≥ 1 since S cannot have fewer than 1 vector. Since n ≥ 1, V ≠ 0. Suppose that S spans 
+V and that S contains fewer than n vectors. By the Spanning Set Theorem, some subset S′  of S is a 
+basis for V. Since S contains fewer than n vectors, and S′  is a subset of S, S′  also contains fewer 
+than n vectors. Thus there is a basis S′  for V with fewer than n vectors, but this is impossible by 
+Theorem 10 since dimV = n. Thus S cannot span V. 
+ 26. If dim V = dim H = 0, then V = {0} and H = {0}, so H = V. Suppose that dim V = dim H > 0. Then H 
+contains a basis S consisting of n vectors. But applying the Basis Theorem to V, S is also a basis for 
+V. Thus H = V = SpanS. 
+ 27. Suppose that dim  = k < ∞. Now n is a subspace of  for all n, and dim k–1 = k, so dim k–1 = dim 
+.  This would imply that k–1 = , which is clearly untrue: for example, () ktt =p  is in  but not in 
+k–1. Thus the dimension of  cannot be finite. 
+ 28. The space C( ) contains  as a subspace. If C( ) were finite-dimensional, then  would also be 
+finite-dimensional by Theorem 11. But  is infinite-dimensional by Exercise 27, so C( ) must also 
+be infinite-dimensional. 
+ 29. a. True. Apply the Spanning Set Theorem to the set 1{, , } p…vv  and produce a basis for V. This 
+basis will not have more than p elements in it, so dimV ≤ p.  
+----- pagina 38 -----
+234    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ b. True. By Theorem 11, 1{, , } p…vv  can be expanded to find a basis for V. This basis will have at 
+least p elements in it, so dimV ≥ p.  
+ c. True. Take any basis (which will contain p vectors) for V and adjoin the zero vector to it.  
+ 30. a. False. For a counterexample, let v be a non-zero vector in 3, and consider the set {v, 2v}. This is 
+a linearly dependent set in 3, but dim 3 32=> .  
+ b. True. If dim V ≤ p, there is a basis for V with p or fewer vectors. This basis would be a spanning 
+set for V with p or fewer vectors. If necessary, vectors in V could be added to this spanning set to 
+give a spanning set for V with exactly p vectors, which contradicts the assumption.  
+ c. False. For a counterexample, let v be a non-zero vector in 3, and consider the set {v, 2v}. This is 
+a linearly dependent set in 3 with 3 – 1 = 2 vectors, and dim 3 3= .  
+ 31. Since H is a nonzero subspace of a finite-dimensional vector space V, H is finite-dimensional and has 
+a basis. Let 1{, , } p…uu  be a basis for H. We show that the set 1{ ( ), , ( )} pTT …uu  spans T(H). Let y 
+be in T(H). Then there is a vector x in H with T(x) = y. Since x is in H and 1{, , } p…uu  is a basis for 
+H, x may be written as 11 ppcc=+ … +xu u  for some scalars 1,,. pcc…  Since the transformation T is 
+linear,  
+   11 1 1() ( ) ( ) ( ) pp p pTT c c c T c T= = +…+ = +…+yx u u u u  
+  Thus y is a linear combination of 1() ,, ( ) pTT …uu , and 1{ ( ), , ( )} pTT …uu  spans T(H). By the 
+Spanning Set Theorem, this set contains a basis for T(H). This basis then has not more than p vectors, 
+and dimT(H) ≤ p = dim H. 
+ 32. Since H is a nonzero subspace of a finite-dimensional vector space V, H is finite-dimensional and has 
+a basis. Let 1{, } p…uu  be a basis for H. In Exercise 31 above it was shown that 1{ ( ), , ( )} pTT …uu  
+spans T(H). In Exercise 32 in Section 4.3, it was shown that 1{ ( ), , ( )} pTT …uu  is linearly 
+independent. Thus 1{ ( ), , ( )} pTT …uu  is a basis for T(H), and dimT(H) = p = dim H. 
+ 33. [M]  
+  a . To find a basis for 5 which contains the given vectors, we row reduce  
+   
+9 9 610000 100 1 / 300 1 3 / 7
+7 4 701000 010 000 1 5 / 7
+.8 1 800100 001 1 / 300 0 3 / 7
+5 6 500010 000 010 3 2 2 / 7
+7 7 700001 000 001 9 5 3 / 7
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ∼−− −
+⎢⎥ ⎢ ⎥−⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −− −−⎣⎦ ⎣ ⎦
+ 
+  The first, second, third, fifth, and sixth columns are pivot columns, so these columns of the 
+original matrix ( 1 2 323{, , , ,}vv vee ) form a basis for 5: 
+----- pagina 39 -----
+4.6  Solutions   235  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. The original vectors are the first k columns of A. Since the set of original vectors is assumed 
+to be linearly independent, these columns of A will be pivot columns and the original set of 
+vectors will be included in the basis. Since the columns of A include all the columns of the 
+identity matrix, Col A = n. 
+ 34. [M]  
+   a. The B-coordinate vectors of the vectors in C are the columns of the matrix  
+   
+10 1 0 1 0 1
+01 0 3 0 5 0
+00 2 0 8 0 1 8
+.00 0 4 0 2 0 0
+00 0 0 8 0 4 8
+00 0 0 0 1 6 0
+00 0 0 0 0 3 2
+P
+−−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥ −
+⎢⎥= −⎢⎥
+⎢⎥ −⎢⎥
+⎢⎥
+⎢⎥⎣⎦  
+The matrix P is invertible because it is triangular with nonzero entries along its main 
+diagonal. Thus its columns are linearly independent. Since the coordinate mapping is an 
+isomorphism, this shows that the vectors in C are linearly independent. 
+b. We know that dim H = 7 because B is a basis for H. Now C is a linearly independent set, and 
+the vectors in C lie in H by the trigonometric identities. Thus by the Basis Theorem, C is a 
+basis for H. 
+4.6 SOLUTIONS 
+Notes: This section puts together most of the ideas from Chapter 4. The Rank Theorem is the main result 
+in this section. Many students have difficulty with the difference in finding bases for the row space and 
+the column space of a matrix. The first process uses the nonzero rows of an echelon form of the matrix. 
+The second process uses the pivots columns of the original matrix, which are usually found through row 
+reduction. Students may also have problems with the varied effects of row operations on the linear 
+dependence relations among the rows and columns of a matrix. Problems of the type found in Exercises 
+19–26 make excellent test questions. Figure 1 and Example 4 prepare the way for Theorem 3 in Section 
+6.1; Exercises 27–29 anticipate Example 6 in Section 7.4. 
+ 1. The matrix B is in echelon form. There are two pivot columns, so the dimension of Col A is 2. There 
+are two pivot rows, so the dimension of Row A is 2. There are two columns without pivots, so the 
+equation Ax = 0 has two free variables. Thus the dimension of Nul A is 2. A basis for Col A is the 
+pivot columns of A: 
+   
+14
+1, 2 .
+56
+⎧⎫ −⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥−⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦⎩⎭  
+  A basis for Row A is the pivot rows of B: { }( 1 , 0 ,1 , 5 ) , ( 0 ,2 , 5 ,6 ) .−− −  To find a basis for Nul A row 
+reduce to reduced echelon form:  
+----- pagina 40 -----
+236    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   10 1 5 .01 5 / 23A −⎡⎤∼ ⎢⎥ −⎣⎦  
+  The solution to A =x0  in terms of free variables is 13 4 5xx x=− , 23 4 (5/ 2) 3xx x=−  with 3x  and 4x  
+free. Thus a basis for Nul A is  
+   
+15
+5/2 3 ,.10
+01
+⎧⎫ −⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥ −⎪⎪⎢⎥ ⎢ ⎥⎨⎬⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦⎩⎭  
+ 2. The matrix B is in echelon form. There are three pivot columns, so the dimension of Col A is 3. 
+There are three pivot rows, so the dimension of Row A is 3. There are two columns without pivots, 
+so the equation A =x0  has two free variables. Thus the dimension of Nul A is 2. A basis for Col A is 
+the pivot columns  
+of A:  
+   
+14 2
+26 3,, .33 3
+30 0
+⎧⎫⎡⎤ ⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥ −⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥⎨⎬⎢⎥ ⎢⎥ ⎢ ⎥ −⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥⎪⎪⎣⎦ ⎣⎦ ⎣ ⎦⎩⎭  
+  A basis for Row A is the pivot rows of B: { }( 1 , 3 , 4 ,1 , 2 ) , ( 0 , 0 , 1 ,1 , 1 ) , ( 0 , 0 , 0 , 0 ,5 ) .−− −  To find a basis 
+for Nul A row reduce to reduced echelon form:  
+   
+130 30
+001 10 .000 01
+000 00
+A
+⎡⎤
+⎢⎥ −⎢⎥∼ ⎢⎥
+⎢⎥
+⎣⎦
+ 
+  The solution to A =x0  in terms of free variables is 12 4 33xx x=− − , 34xx = , 5 0x = , with 2x  and 4x  
+free. Thus a basis for Nul A is  
+   
+33
+10
+,.01
+01
+00
+⎧⎫ −−⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥
+⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎨⎬⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥⎪⎪⎣⎦ ⎣⎦⎩⎭  
+ 3. The matrix B is in echelon form. There are three pivot columns, so the dimension of Col A is 3. 
+There are three pivot rows, so the dimension of Row A is 3. There are three columns without pivots, 
+so the equation A =x0  has three free variables. Thus the dimension of Nul A is 3. A basis for Col A 
+is the pivot columns of A:  
+   
+26 3
+23 0,, .49 3
+23 3
+⎧⎫⎡⎤ ⎡⎤ ⎡ ⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥−−⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥⎨⎬⎢⎥ ⎢⎥ ⎢ ⎥⎪⎪⎢⎥ ⎢⎥ ⎢ ⎥⎪⎪ −⎣⎦ ⎣⎦ ⎣ ⎦⎩⎭  
+----- pagina 41 -----
+4.6  Solutions   237  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  A basis for Row A is the pivot rows of B: { }(2,6, 6,6,3 ,6),(0,3 ,0,3 ,3 ,0),(0,0,0,0,3 ,0) .−  To find a 
+basis for Nul A row reduce to reduced echelon form:  
+   
+10 3003
+01 01 00 .00 0010
+00 0000
+A
+−⎡⎤
+⎢⎥
+⎢⎥∼ ⎢⎥
+⎢⎥
+⎣⎦
+ 
+  The solution to A =x0  in terms of free variables is 136 33 ,xxx=−  24 ,xx =−  5 0,x =  with 3x , 4x , 
+and 6x  free. Thus a basis for Nul A is  
+   
+303
+01 0
+100,, .01 0
+000
+001
+⎧⎫ −⎡⎤ ⎡ ⎤⎡ ⎤
+⎪⎪⎢⎥ ⎢ ⎥⎢ ⎥−⎪⎪⎢⎥ ⎢ ⎥⎢ ⎥
+⎪⎪⎢⎥ ⎢ ⎥⎢ ⎥⎪⎪⎢⎥ ⎢ ⎥⎢ ⎥⎨⎬
+⎢⎥ ⎢ ⎥⎢ ⎥⎪⎪
+⎢⎥ ⎢ ⎥⎢ ⎥⎪⎪
+⎢⎥ ⎢ ⎥⎢ ⎥⎪⎪
+⎢⎥ ⎢ ⎥⎢ ⎥⎪⎪⎣⎦ ⎣ ⎦⎣ ⎦⎩⎭
+ 
+ 4. The matrix B is in echelon form. There are five pivot columns, so the dimension of Col A is 5. There 
+are five pivot rows, so the dimension of Row A is 5. There is one column without a pivot, so the 
+equation A =x0  has one free variable. Thus the dimension of Nul A is 1. A basis for Col A is the 
+pivot columns of A:  
+   
+11212
+12323
+,,,, .11016
+12230
+12 12 1
+⎧⎫ −−⎡ ⎤ ⎡⎤ ⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−−−⎪⎪⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−⎨⎬⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪ −−⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢ ⎥ ⎢⎥ ⎢⎥ ⎢⎥ ⎢⎥−−⎪⎪⎣ ⎦ ⎣⎦ ⎣⎦ ⎣⎦ ⎣⎦⎩⎭  
+  A basis for Row A is the pivot rows of B:  
+   { }( 1 ,1 , 2,0,1 , 2),(0,1 , 1 ,0, 3 , 1 ),(0,0,1 ,1 , 13 , 1 ),(0,0,0,0,1 , 1 ),(0,0,0,0,0,1 ) .−− − − − − − −  
+  To find a basis for Nul A row reduce to reduced echelon form:  
+   
+100 100
+01 01 00
+.001100
+000010
+000001
+A
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥∼
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+The solution to A =x0  in terms of free variables is 14xx=− , 24xx =− , 34xx =− , 5 0x = , 6 0x = , 
+with 4x free. Thus a basis for Nul A is  
+----- pagina 42 -----
+238    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+1
+1
+1 .1
+0
+0
+⎧⎫ −⎡⎤
+⎪⎪⎢⎥−⎪⎪⎢⎥
+⎪⎪⎢⎥−⎪⎪⎢⎥⎨⎬
+⎢⎥⎪⎪
+⎢⎥⎪⎪
+⎢⎥⎪⎪
+⎢⎥⎪⎪⎣⎦⎩⎭
+ 
+ 5. By the Rank Theorem, dimNul 7 rank 7 3 4.AA=− =−=  Since 
+dimRow rank ,dimRow 3.AA A==  Since rank dimCol dimRow ,TTAA A==  rank 3.TA =  
+ 6. By the Rank Theorem, dimNul 5 rank 5 2 3.AA=− =−=  Since 
+dimRow rank , dimRow 2.AA A==  Since rank dimCol dimRow , rank 2.TT TAA A A== =  
+ 7. Yes, Col A = 4. Since A has four pivot columns, dimCol 4.A = Thus Col A is a four-dimensional 
+subspace of 4, and Col A = 4. 
+  No, Nul A ≠ 3. It is true that dimNul 3A = , but Nul A is a subspace of 7. 
+ 8. Since A has four pivot columns, rank 4,A =  and dimNul 8 rank 8 4 4.AA=− =−=  
+No. Col A ≠ 4. It is true that dimCol rank 4,AA==  but Col A is a subspace of 6. 
+ 9. Since dimNul 3, rank 6 dimNul 6 3 3.AA A== − = − =  So dimCol rank 3.AA==   
+No. Col A ≠ 3. It is true that dimCol rank 3,AA==  but Col A is a subspace of 4. 
+ 10. Since dimNul 5, rank 7 dimNul 7 5 2.AA A== − = − =  So dimCol rank 2.AA==  
+ 11. Since dimNul 3, rank 5 dimNul 5 3 2.AA A== − = − =  So dimRow dimCol rank 2.AA A== =  
+ 12. Since dimNul 2, rank 4 dimNul 4 2 2.AA A== − = − =  So dimRow dimCol rank 2.AA A== =  
+ 13. The rank of a matrix A equals the number of pivot positions which the matrix has. If A is either a 
+75×  matrix or a 57×  matrix, the largest number of pivot positions that A could have is 5. Thus the 
+largest possible value for rank A is 5. 
+ 14. The dimension of the row space of a matrix A is equal to rank A, which equals the number of pivot 
+positions which the matrix has. If A is either a 54×  matrix or a 45×  matrix, the largest number of 
+pivot positions that A could have is 4. Thus the largest possible value for dimRow A is 4. 
+ 15. Since the rank of A equals the number of pivot positions which the matrix has, and A could have at 
+most 3 pivot positions, rank 3.A ≤  Thus dimNul 7 rank 7 3 4.AA=− ≥−=  
+ 16. Since the rank of A equals the number of pivot positions which the matrix has, and A could have at 
+most 5 pivot positions, rank 5.A ≤  Thus dimNul 5 rank 5 5 0.AA=− ≥−=  
+ 17. a . True. The rows of A are identified with the columns of .TA  See the paragraph before Example 1.  
+ b. False. See the warning after Example 2.  
+ c. True. See the Rank Theorem.  
+ d. False. See the Rank Theorem.  
+----- pagina 43 -----
+4.6  Solutions   239  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ e. True. See the Numerical Note before the Practice Problem.  
+ 18. a. False. Review the warning after Theorem 6 in Section 4.3.  
+ b. False. See the warning after Example 2.  
+ c. True. See the remark in the proof of the Rank Theorem.  
+ d. True. This fact was noted in the paragraph before Example 4. It also follows from the fact that the 
+rows of TA  are the columns of () .TTAA =  
+ e. True. See Theorem 13.  
+ 19. Yes. Consider the system as ,A =x0  where A is a 56×  matrix. The problem states that 
+dimNul 1A = . By the Rank Theorem, rank 6 dimNul 5.AA=− =  Thus dimCol rank 5,AA==  and 
+since Col A is a subspace of 5, Col A = 5 So every vector b in 5 is also in Col A, and ,A =xb  has 
+a solution for all b. 
+ 20. No. Consider the system as ,A =xb  where A is a 68×  matrix. The problem states that 
+dimNul 2.A =  By the Rank Theorem, rank 8 dimNul 6.AA=− =  Thus dimCol rank 6,AA==  and 
+since Col A is a subspace of 6, Col A = 6 So every vector b in 6 is also in Col A, and A =xb  has 
+a solution for all b. Thus it is impossible to change the entries in b to make A =xb  into an 
+inconsistent system. 
+ 21. No. Consider the system as ,A =xb  where A is a 91 0×  matrix. Since the system has a solution for 
+all b in 9, A must have a pivot in each row, and so rank 9.A =  By the Rank Theorem, 
+dimNul 10 9 1.A =− =  Thus it is impossible to find two linearly independent vectors in Nul A. 
+ 22. No. Consider the system as ,A =x0  where A is a 10 12×  matrix. Since A has at most 10 pivot 
+positions, rank 10.A ≤  By the Rank Theorem, dimNul 12 rank 2.AA=− ≥  Thus it is impossible to 
+find a single vector in Nul A which spans Nul A. 
+ 23. Yes, six equations are sufficient. Consider the system as ,A =x0  where A is a 12 8×  matrix. The 
+problem states that dimNul 2.A =  By the Rank Theorem, rank 8 dimNul 6.AA=− =  Thus 
+dimCol rank 6.AA==  So the system A =x0  is equivalent to the system ,B =x0  where B is an 
+echelon form of A with 6 nonzero rows. So the six equations in this system are sufficient to describe 
+the solution set of .A =x0  
+ 24. Yes, No. Consider the system as ,A =xb  where A is a 76×  matrix. Since A has at most 6 pivot 
+positions, rank 6.A ≤  By the Rank Theorem, dim Nul 6 rank 0.AA=− ≥  If dimNul 0,A =  then the 
+system A =xb  will have no free variables. The solution to ,A =xb  if it exists, would thus have to be 
+unique. Since rank 6,A ≤  Col A will be a proper subspace of 7. Thus there exists a b in 7 for 
+which the system A =xb  is inconsistent, and the system A =xb  cannot have a unique solution for 
+all b. 
+ 25. No. Consider the system as ,A =xb  where A is a 10 12×  matrix. The problem states that 
+dim Nul 3.A =  By the Rank Theorem, dimCol rank 12 dimNul 9.AA A== − =  Thus Col A will be a 
+proper subspace of 10 Thus there exists a b in 10 for which the system A =xb  is inconsistent, and 
+the system A =xb  cannot have a solution for all b.  
+----- pagina 44 -----
+240    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 26. Consider the system ,A =x0  where A is a mn×  matrix with .mn>  Since the rank of A is the 
+number of pivot positions that A has and A is assumed to have full rank, rank .An=  By the Rank 
+Theorem, dimNul rank 0.An A=− =  So Nul { },A = 0  and the system A =x0  has only the trivial 
+solution. This happens if and only if the columns of A are linearly independent. 
+ 27. Since A is an m × n matrix, Row A is a subspace of n, Col A is a subspace of m, and Nul A is a 
+subspace of n. Likewise since TA  is an n × m matrix, Row TA  is a subspace of m, Col TA  is a 
+subspace of n, and Nul TA  is a subspace of m. Since Row Col TAA=  and Col Row , TAA=  there 
+are four dinstict subspaces in the list: Row A, Col A, Nul A, and Nul . TA  
+ 28. a . Since A is an m × n matrix and dimRow A = rank A,  
+   dimRow A + dimNul A = rank A + dimNul A = n. 
+b. Since TA  is an n × m matrix and dimCol dimRow dimCol rank , TTAA A A===  
+   dimCol dimNul rank dimNul .TT TAA A A m+= +=  
+ 29. Let A be an m × n matrix. The system Ax = b will have a solution for all b in m if and only if A has a 
+pivot position in each row, which happens if and only if dimCol A = m. By Exercise 28 b., dimCol A 
+= m if and only if dimNul 0TAm m=−= , or Nul { }.TA = 0  Finally, Nul { }TA = 0  if and only if the 
+equation TA =x0  has only the trivial solution. 
+ 30. The equation Ax = b is consistent if and only if []rank rankAA =b  because the two ranks will be 
+equal if and only if b is not a pivot column of [] .A b  The result then follows from Theorem 2 in 
+Section 1.2. 
+ 31. Compute that []
+22 2 2
+33 3 3 .
+55 5 5
+T
+abc
+abc a b c
+abc
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥=− =− − −⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+uv  Each column of Tuv  is a multiple of u, 
+so dimCol 1 T =uv , unless a = b = c = 0, in which case Tuv  is the 3 × 3 zero matrix and 
+dimCol 0. T =uv  In any case, rank dimCol 1TT=≤uv uv  
+ 32. Note that the second row of the matrix is twice the first row. Thus if v = (1, –3, 4), which is the first 
+row of the matrix,  
+   []11 3 413 4 .22 6 8T −⎡⎤ ⎡ ⎤=− =⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦uv  
+ 33. Let [] 123 ,A = uu u  and assume that rank A = 1. Suppose that 1 ≠u0 . Then 1{}u  is basis for Col 
+A, since Col A is assumed to be one-dimensional. Thus there are scalars x and y with 21 x=uu  and 
+31 y=uu , and 1 ,TA = uv  where 
+1
+.x
+y
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+----- pagina 45 -----
+4.6  Solutions   241  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  If 1 =u0  but 2 ≠u0 , then similarly 2{}u  is basis for Col A, since Col A is assumed to be one-
+dimensional. Thus there is a scalar x with 32 x=uu , and 2 ,TA = uv  where 
+0
+1.
+x
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+v  
+  If 12==uu 0  but 3 ,≠u0  then 3 ,TA = uv  where 
+0
+0.
+1
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+v  
+ 34. Let A be an m × n matrix with of rank r > 0, and let U be an echelon form of A. Since A can be 
+reduced to U by row operations, there exist invertible elementary matrices 1,, pEE…  with 
+1() .pEE A U⋅⋅⋅ =  Thus 11() ,pAE EU −=⋅ ⋅ ⋅  since the product of invertible matrices is invertible. Let 
+1
+1() pEE E −=⋅ ⋅ ⋅ ; then A = EU. Let the columns of E be denoted by 1,, . m…cc  Since the rank of A is 
+r, U has r nonzero rows, which can be denoted 1 ,, .TT r…dd  By the column-row expansion of A 
+(Theorem 10 in Section 2.4):  
+   []
+1
+11 1 ,
+T
+T
+TTr
+mr rAE U
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥== … = + … +
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+d
+dcc c d c d
+0
+0
+#
+#
+ 
+  which is the sum of r rank 1 matrices. 
+ 35. [M]  
+  a . Begin by reducing A to reduced echelon form:  
+   
+101 3 / 20 50 3
+0 1 1 1/2 0 1/2 0 2
+.00 01 1 1 / 20 7
+00 00 01 1
+00 00 00 0
+A
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥∼ −
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+   A basis for Col A is the pivot columns of A, so matrix C contains these columns:  
+   
+7953
+4625
+.5752
+3514
+6849
+C
+−−⎡⎤
+⎢⎥−− −⎢⎥
+⎢⎥= −
+⎢⎥−− −⎢⎥
+⎢⎥ −⎣⎦
+ 
+  A basis for Row A is the pivot rows of the reduced echelon form of A, so matrix R contains 
+these rows:  
+----- pagina 46 -----
+242    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   
+101 3 / 20 50 3
+01 1 1 / 20 1 / 20 2 .00 01 1 1 / 20 7
+00 00 01 1
+R
+−⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥ −
+⎢⎥⎢⎥⎣⎦
+ 
+  To find a basis for Nul A row reduce to reduced echelon form, note that the solution to Ax = 0 
+in terms of free variables is 13 5 7 (13 / 2) 5 3 ,xx x x=− − +  23 5 7 (11 / 2) (1 / 2) 2 ,xx x x=− − −  
+45 7 (11 / 2) 7 ,xx x=−  67 ,xx =−  with 3,x  5 ,x  and 7x  free. Thus matrix N is  
+   
+13/ 2 5 3
+11/ 2 1/ 2 2
+10 0
+.01 1 / 2 7
+01 0
+00 1
+00 1
+N
+−−⎡⎤
+⎢⎥−− −⎢⎥
+⎢⎥
+⎢⎥= −⎢⎥
+⎢⎥
+⎢⎥ −⎢⎥
+⎢⎥⎣⎦
+ 
+  b . The reduced echelon form of TA  is  
+   
+1000 2 / 1 1
+01 00 4 1 / 1 1
+0010 0
+,0001 2 8 / 1 1
+0000 0
+0000 0
+0000 0
+TA
+−⎡⎤
+⎢⎥ −⎢⎥
+⎢⎥
+⎢⎥∼ ⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ 
+  so the solution to TA =x0  in terms of free variables is 15 (2/11) ,xx=  25 (41/11) ,xx =  3 0,x =  
+45 (28/11) ,xx =−  with 5x  free. Thus matrix M is  
+   
+2/1 1
+41/11
+.0
+28/11
+1
+M
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥=
+⎢⎥−⎢⎥
+⎢⎥⎣⎦
+ 
+   The matrix TSR N⎡ ⎤= ⎣ ⎦  is 7 × 7 because the columns of TR  and N are in 7 and dimRow A 
++ dimNul A = 7. The matrix []TC M=  is 5 × 5 because the columns of C and M are in 5 
+and dimCol dimNul 5. TAA+=  Both S and T are invertible because their columns are linearly 
+independent. This fact will be proven in general in Theorem 3 of Section 6.1. 
+ 36. [M] Answers will vary, but in most cases C will be 6 × 4, and will be constructed from the first 4 
+columns of A. In most cases R will be 4 × 7, N will be 7 × 3, and M will be 6 × 2. 
+ 37. [M] The C and R from Exercise 35 work here, and A = CR.
+----- pagina 47 -----
+4.7  Solutions   243  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 38. [M] If A is nonzero, then A = CR. Note that [] 12 nCR C C C=… rr r , where 1r , …, nr  are the 
+columns of R. The columns of R are either pivot columns of R or are not pivot columns of R. 
+   Consider first the pivot columns of R. The thi  pivot column of R is ie , the thi  column in the 
+identity matrix, so iCe  is the thi  pivot column of A. Since A and R have pivot columns in the same 
+locations, when C multiplies a pivot column of R, the result is the corresponding pivot column of A 
+in its proper location. 
+   Now suppose jr  is a nonpivot column of R. Then jr  contains the weights needed to construct 
+the thj  column of A from the pivot columns of A, as is discussed in Example 9 of Section 4.3 and in 
+the paragraph preceding that example. Thus jr  contains the weights needed to construct the thj
+column of A from the columns of C, and .jjC =ra  
+4.7 SOLUTIONS 
+Notes: This section depends heavily on the coordinate systems introduced in Section 4.4. The row 
+reduction algorithm that produces 
+cB
+P
+←
+ can also be deduced from Exercise 15 in Section 2.2, by row 
+reducing .CBPP⎡⎤⎣⎦  to 
+1
+CBIPP
+−⎡⎤⎣⎦ . The change-of-coordinates matrix here is interpreted in Section 5.4 
+as the matrix of the identity transformation relative to two bases. 
+ 1. a. Since 112 62=−bcc  and 212 94 ,=−bc c  1
+6[] , 2C ⎡ ⎤= ⎢ ⎥−⎣ ⎦b  2 9[] , 4C ⎡ ⎤= ⎢ ⎥−⎣ ⎦b  and 69 .24CBP← ⎡⎤= ⎢⎥−−⎣⎦  
+b. Since 1232 ,=− +xb b  3[] 2B −⎡⎤= ⎢⎥⎣⎦x  and  
+  69 3 0[] [] 24 2 2CB CBP← −⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥−− −⎣ ⎦⎣ ⎦ ⎣ ⎦xx  
+ 2. a. Since 11 2 24=− +bc c  and 212 36 ,=−bc c  1
+2[] , 4C −⎡ ⎤= ⎢ ⎥⎣ ⎦b  2 3[] , 6C ⎡ ⎤= ⎢ ⎥−⎣ ⎦b  and 23 .46CBP← −⎡⎤= ⎢⎥ −⎣⎦  
+b. Since 1223 ,=+xb b  2[] 3B ⎡⎤= ⎢⎥⎣⎦x  and  
+   23 2 5[] [] 46 3 1 0CB CBP← −⎡⎤ ⎡ ⎤ ⎡ ⎤== = ⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦xx  
+ 3. Equation (ii) is satisfied by P for all x in V. 
+ 4. Equation (i) is satisfied by P for all x in V. 
+----- pagina 48 -----
+244    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 5. a. Since 11 2 4,=−ab b  21 2 3 ,=− + +ab b b  and 32 3 2,=−ab b  1
+4
+[] 1 ,
+0
+B
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+a  2
+1
+[] 1 ,
+1
+B
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+a  
+3
+0
+[] 1 ,
+2
+B
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−⎣⎦
+a  and 
+410
+111 .
+012
+BA
+P
+←
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥ −⎣⎦
+ 
+b. Since 12 334 ,=+ +xa aa  
+3
+[] 4
+1
+A
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+x  and  
+   
+410 3 8
+[] 1 1 1 4 2
+012 1 2
+B BAP←
+−⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== − = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥−⎣ ⎦⎣ ⎦ ⎣ ⎦
+x  
+ 6. a. Since 11 2 32,=− +fd d d  22 3 3,=+fd d and 31 3 32=− +fd d , 1
+2
+[] 1 ,
+1
+D
+⎡ ⎤
+⎢ ⎥=−⎢ ⎥
+⎢ ⎥⎣ ⎦
+f  2
+0
+[] 3 ,
+1
+D
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+f  
+3
+3
+[] 0 ,
+2
+D
+−⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+f  and 
+20 3
+13 0 .
+11 2
+DF
+P
+←
+−⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+ 
+b. Since 123 22 ,=− +xf f f  
+1
+[] 2
+2
+F
+⎡⎤
+⎢⎥=−⎢⎥
+⎢⎥⎣⎦
+x  and  
+   
+20 3 1 4
+[] [] 1 3 0 2 7
+11 2 2 3
+DF DFP←
+−−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥== − − = − ⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+xx  
+ 7. To find ,
+CB
+P
+←
+ row reduce the matrix []12 1 2cc bb :  
+   []12 1 2
+10 3 1 .01 52 −⎡⎤∼ ⎢⎥ −⎣⎦cc bb  
+  Thus 31 ,52CBP← −⎡⎤= ⎢⎥−⎣⎦  and 1 21 .53BC CBPP −←← −⎡ ⎤== ⎢ ⎥−⎣ ⎦  
+ 8. To find 
+CB
+P
+←
+, row reduce the matrix []12 1 2cc bb :  
+   []12 1 2
+10 9 8 .01 1 0 9 −⎡⎤∼ ⎢⎥ −⎣⎦cc bb  
+  Thus 98 ,10 9CBP← −⎡⎤= ⎢⎥−⎣⎦  and 1 98 .10 9BC CBPP −←← ⎡ ⎤== ⎢ ⎥⎣ ⎦  
+----- pagina 49 -----
+4.7  Solutions   245  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. To find 
+CB
+P
+←
+, row reduce the matrix []12 1 2cc bb :  
+   []12 1 2
+102 3 .01 0 1⎡⎤∼ ⎢⎥ −⎣⎦cc bb  
+  Thus 23 ,01CBP← ⎡⎤= ⎢⎥ −⎣⎦  and 1 1/ 2 3/ 2 .01BC CBPP −←← ⎡ ⎤== ⎢ ⎥−⎣ ⎦  
+ 10. To find 
+CB
+P
+←
+, row reduce the matrix []12 1 2cc bb :  
+   []12 1 2
+10 3 1 .01 20⎡⎤∼ ⎢⎥ −⎣⎦cc bb  
+  Thus 31 ,20CBP← ⎡⎤= ⎢⎥−⎣⎦  and 1 01 / 2 .13 / 2BC CBPP −←← −⎡ ⎤== ⎢ ⎥⎣ ⎦  
+ 11. a. False. See Theorem 15.  
+b. True. See the first paragraph in the subsection “Change of Basis in n.”  
+ 12. a. True. The columns of 
+CB
+P
+←
+ are coordinate vectors of the linearly independent set B. See the 
+second paragraph after Theorem 15.  
+b. False. The row reduction is discussed after Example 2. The matrix P obtained there satisfies 
+[] []CB P=xx   
+ 13. Let 22 2123{, , }{ 12 , 35 4 , 2 3 }Bt t t t t t== − + − + +bb b  and let 2123{, , }{ 1 , , } .Ct t==cc c  The  
+C-coordinate vectors of 1,b  2 ,b  and 3b  are  
+   123
+13 0
+[] 2 , [] 5 , [] 2
+14 3
+CCC
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥=− =− =⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥⎣⎦ ⎣⎦ ⎣ ⎦
+bbb  
+  So  
+   
+13 0
+25 2
+14 3
+CB
+P
+←
+⎡⎤
+⎢⎥=− −⎢⎥
+⎢⎥⎣⎦
+ 
+  Let x = –1 + 2t. Then the coordinate vector [] Bx  satisfies  
+   
+1
+[] [] 2
+0
+BCCBP←
+−⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+xx  
+  This system may be solved by row reducing its augmented matrix:  
+   
+13 01 1 0 05 5
+25 22 0 1 02 , s o [ ] 2
+1 43 0 000 1 1
+B
+−⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥−− ∼ − = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥⎣⎦ ⎣ ⎦ ⎣ ⎦
+x  
+----- pagina 50 -----
+246    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 14. Let 22123{, , }{ 13, 2 5, 12 }Bt t t t== − + − +bbb  and let 2123{, , }{ 1 , , } .Ct t==cc c  The C-coordinate 
+vectors of 1b , 2b , and 3b  are  
+   123
+12 1
+[] 0 , [] 1 , [] 2
+35 0
+CCC
+⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥===⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥−−⎣⎦ ⎣⎦ ⎣ ⎦
+bb b  
+  So  
+   
+12 1
+01 2
+35 0
+CB
+P
+←
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥−−⎣⎦
+ 
+  Let 2.t=x  Then the coordinate vector [] Bx  satisfies  
+   
+0
+[] [] 0
+1
+BCCBP←
+⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+xx  
+  This system may be solved by row reducing its augmented matrix:  
+   
+1 2 10 100 3 3
+01 2 00 1 02 , s o [ ] 2
+35 0 10 0 01 1
+B
+⎡⎤ ⎡ ⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ⎢ ⎥ ∼− = −⎢⎥ ⎢ ⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ ⎢ ⎥−−⎣⎦ ⎣ ⎦ ⎣ ⎦
+x  
+  and 22 2 3(1 3 ) 2(2 5 ) (1 2 ).ttt tt=− − + − + +  
+ 15. (a)  B is a basis for V  
+(b)  the coordinate mapping is a linear transformation  
+(c)  of the product of a matrix and a vector  
+(d)  the coordinate vector of v relative to B  
+ 16. (a) 11[] []CB QQ Q 1
+1⎡⎤
+⎢⎥0⎢⎥== = ⎢⎥
+⎢⎥0⎢⎥⎣⎦
+bb e #   
+(b)  [] kCb   
+(c)  [] []kC kB k QQ==bb e   
+ 17. [M]  
+  a . Since we found P in Exercise 34 of Section 4.5, we can calculate that  
+----- pagina 51 -----
+4.7  Solutions   247  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   1
+32 0 16 0 12 0 10
+0 3 20 2 40 2 00
+0 0 16 0 16 0 15
+1 .00080 1 0032 0000 406
+0000 020
+0000 001
+P−
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+b. Since P is the change-of-coordinates matrix from C to B, 1P−  will be the change-of-
+coordinates matrix from B to C. By Theorem 15, the columns of 1P−  will be the C-coordinate 
+vectors of the basis vectors in B. Thus  
+   2 1cos (1 cos 2 )2tt=+  
+   3 1cos (3cos cos 3 )4tt t=+  
+   4 1cos (3 4cos 2 cos 4 )8tt t=+ +  
+   5 1cos (10cos 5cos 3 cos 5 )16tt t t=+ +  
+   6 1cos (10 15cos 2 6cos 4 cos 6 )32tt t t=+ + +  
+ 18. [M] The C-coordinate vector of the integrand is (0, 0, 0, 5, –6, 5, –12). Using 1P−  from the previous 
+exercise, the B- coordinate vector of the integrand will be  
+   1( 0 ,0 ,0 ,5 , 6 ,5 , 1 2 ) ( 6 ,5 5/8 , 6 9/8 ,4 5/ 1 6 , 3 ,5/ 1 6 , 3/8 )P− −− = − − − −  
+  Thus the integral may be rewritten as  
+   55 69 45 5 36 cos cos 2 cos 3 3cos 4 cos 5 cos 6 ,88 1 6 1 68ttt tt t d t−+ − + − + −∫  
+  which equals  
+   55 69 15 3 1 16 sin sin 2 sin 3 sin 4 sin 5 sin 6 .8 1 61 641 61 6tt t tt t t C− + −+− +−+  
+ 19. [M]  
+a. If C is the basis 123{, , } ,vvv  then the columns of P are 1[] , Cu  2[] , Cu  and 3[] . Cu  So 
+[] 123 1 [] ,jC=uv v v u  and [] []123 123 .P=uu u vv v  In the current exercise,  
+   [] 123
+287121 665
+252350 590 .
+326461 2 1 3 23
+−−− − −−−⎡⎤ ⎡ ⎤ ⎡⎤
+⎢⎥ ⎢ ⎥ ⎢⎥=− − = − −⎢⎥ ⎢ ⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎢⎥⎣⎦ ⎣ ⎦ ⎣⎦
+uu u  
+----- pagina 52 -----
+248    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. Analogously to part a., [] [ ]123 1 2 3 ,P=vv v www  so [] 123 =ww w  
+[]
+1
+123 .P−vv v  In the current exercise,   
+ []
+1
+123
+287121
+252 350
+326 461
+−
+−−− −⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=− −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ww w  
+   
+2 8 7 5 8 5 28 38 21
+252353 91 37 .
+326221 3 23
+−−−⎡⎤ ⎡⎤ ⎡ ⎤
+⎢⎥ ⎢⎥ ⎢ ⎥=− − − = − − −⎢⎥ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢⎥ ⎢ ⎥ −−− −⎣⎦ ⎣⎦ ⎣ ⎦
+ 
+ 20. a. 
+DB DC CB
+PP P
+←← ←
+=  
+  Let x be any vector in the two-dimensional vector space. Since 
+CB
+P
+←
+ is the change-of-coordinates 
+matrix from B to C and 
+DC
+P
+←
+ is the change-of-coordinates matrix from C to D,  
+   [] [] a n d [] [] []CB DC BCB DC DC CBPP P P←← ← ←== =xx x x x  
+  But since 
+DB
+P
+←
+ is the change-of-coordinates matrix from B to D,  
+   [] []DB DBP←=xx  
+  Thus  
+   [] []BBDB DC CBPP P←← ← =xx  
+  for any vector [] Bx  in 2, and DB DC CBPP P←← ←=  
+b. [M] For example, let 73 ,,51B ⎧⎫ −⎡⎤ ⎡ ⎤⎪⎪= ⎨⎬⎢⎥ ⎢ ⎥ −⎪⎪⎣⎦ ⎣ ⎦⎩⎭  12,,52C ⎧ ⎫−⎡ ⎤⎡ ⎤⎪ ⎪= ⎨ ⎬⎢ ⎥⎢ ⎥−⎪ ⎪⎣ ⎦⎣ ⎦⎩⎭  and 11,.85D ⎧ ⎫−⎡⎤ ⎡⎤⎪ ⎪= ⎨ ⎬⎢⎥ ⎢⎥ −⎪ ⎪⎣⎦ ⎣⎦⎩⎭  Then we 
+can calculate the change-of-coordinates matrices:  
+   1 27 3 1 0 31 315 25 1 01 52 52 CBP←−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ∼ ⇒ =⎢⎥ ⎢ ⎥ ⎢ ⎥−−− −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+   1 1 1 2 1 0 0 8/3 0 8/38552 0 1 11 4 / 3 11 4 / 3 DCP←−− − −⎡⎤ ⎡⎤ ⎡ ⎤ ∼ ⇒ =⎢⎥ ⎢⎥ ⎢ ⎥−− − −⎣⎦ ⎣⎦ ⎣ ⎦  
+   1 1 7 3 1 0 40 / 3 16 / 3 40 / 3 16 / 38 5 5 1 0 1 6 1/3 2 5/3 6 1/3 2 5/3 DBP←−− − −⎡⎤ ⎡ ⎤ ⎡ ⎤ ∼ ⇒ =⎢⎥ ⎢ ⎥ ⎢ ⎥−− − −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  One confirms easily that  
+   40 / 3 16 / 3 0 8/ 3 3 161/ 3 25/ 3 1 14 / 3 5 2DB DC CBPP P←← ← −− −⎡⎤ ⎡ ⎤ ⎡ ⎤== =⎢⎥ ⎢ ⎥ ⎢ ⎥ −− −⎣⎦ ⎣ ⎦ ⎣ ⎦
+----- pagina 53 -----
+4.8  Solutions   249  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+4.8 SOLUTIONS 
+Notes: This is an important section for engineering students and worth extra class time. To spend only 
+one lecture on this section, you could cover through Example 5, but assign the somewhat lengthy 
+Example 3 for reading. Finding a spanning set for the solution space of a difference equation uses the 
+Basis Theorem (Section 4.5) and Theorem 17 in this section, and demonstrates the power of the theory of 
+Chapter 4 in helping to solve applied problems. This section anticipates Section 5.7 on differential 
+equations. The reduction of an thn  order difference equation to a linear system of first order difference 
+equations was introduced in Section 1.10, and is revisited in Sections 4.9 and 5.6. Example 3 is the 
+background for Exercise 26 in Section 6.5. 
+ 1. Let 2.kky =  Then  
+   2121 2 8 2 2(2 ) 8(2 )kk kkk kyy y ++++ +− = + −  
+   222( 2 2 8 )k=+ −  
+   2 (0) 0 for allk k==  
+  Since the difference equation holds for all k, 2k  is a solution. 
+  Let (4 ) kky =− . Then  
+   2121 2 8 (4 ) 2 (4 ) 8 (4 )kk kkk kyy y ++++ +− = − + − − −  
+   2(4 )( (4 ) 2 (4 ) 8 )k=− − + − −  
+   ( 4) (0) 0 for allk k=− =  
+  Since the difference equation holds for all k, (4 ) k−  is a solution. 
+ 2. Let 5.kky =  Then  
+   22 25 5 25(5 )kkkkyy ++ −= −  
+   25( 5 2 5 )k=−  
+   5 (0) 0 for allk k==  
+  Since the difference equation holds for all k, 5k  is a solution. 
+  Let (5 ) .kky =−  Then  
+   22 25 ( 5) 25( 5)kkkkyy ++ −= − − −  
+   2(5 )( (5 ) 2 5 )k=− − −  
+   ( 5) (0) 0 for allk k=− =  
+  Since the difference equation holds for all k, (5 ) k−  is a solution. 
+  
+----- pagina 54 -----
+250    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 3. The signals 2k  and (4 ) k−  are linearly independent because neither is a multiple of the other; that is, 
+there is no scalar c such that 2( 4 )kk c=−  for all k. By Theorem 17, the solution set H of the 
+difference equation 21 28 0kk kyy y++ +− =  is two-dimensional. By the Basis Theorem, the two 
+linearly independent signals 2k  and (4 ) k−  form a basis for H. 
+ 4. The signals 5k  and (5 ) k−  are linearly independent because neither is a multiple of the other; that is, 
+there is no scalar c such that 5( 5 )kk c=−  for all k. By Theorem 17, the solution set H of the 
+difference equation 2 25 0kkyy+ −=  is two-dimensional. By the Basis Theorem, the two linearly 
+independent signals 5k  and (5 ) k−  form a basis for H. 
+ 5. Let (2 ) .kky =−  Then  
+   2121 4 4 (2 ) 4 (2 ) 4 (2 )kk kkk kyy y ++++ + + = − +− +−  
+   2(2 )( (2 ) 4 (2 ) 4 )k=− − + − +  
+   ( 2) (0) 0 for allk k=− =  
+  Since the difference equation holds for all k, (2 ) k−  is in the solution set H. 
+  Let (2 ) .kkyk =−  Then  
+   2121 4 4 ( 2 ) (2 ) 4 ( 1 ) (2 ) 4(2 )kk kkk kyy y k k k ++++ ++ = + − + + − + −  
+   2( 2) (( 2)( 2) 4( 1)( 2) 4 )k kk k=− + − + + − +  
+   (2 )( 4 8 8 8 4)k kkk=− + − − +  
+   ( 2) (0) 0 for allk k=− =  
+  Since the difference equation holds for all k, (2 ) kk −  is in the solution set H. 
+  The signals (2 ) k−  and (2 ) kk −  are linearly independent because neither is a multiple of the other; 
+that is, there is no scalar c such that (2 ) (2 )kk ck−=−  for all k and there is no scalar c such that 
+(2 ) (2 )kkck−= −  for all k . By Theorem 17, dim H = 2, so the two linearly independent signals (2 ) k−
+and (2 ) kk −  form a basis for H by the Basis Theorem. 
+ 6. Let 24c o s .k kky π=  Then  
+   22 (2 )16 4 cos 16 4 cos 22kkkk kkyy ππ++ + ⎛⎞+= + ⎜⎟⎝⎠  
+   2 (2 )44 c o s 1 6 c o s22k kk ππ+⎛⎞=+ ⎜⎟⎝⎠  
+   16 4 cos cos 22k kkππ π⎛⎞ ⎛⎞=⋅ + + ⎜⎟ ⎜⎟⎝⎠⎝⎠  
+   16 4 (0) 0 for allk k=⋅ =  
+  since cos( t + π) = –cos t for all t. Since the difference equation holds for all k, 24c o sk kπ  is in the 
+solution set H. 
+----- pagina 55 -----
+4.8  Solutions   251  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Let 24s i n .k kky π=  Then  
+   22 (2 )16 4 sin 16 4 sin 22kkkk kkyy ππ++ + ⎛⎞+= + ⎜⎟⎝⎠  
+   2 (2 )44 s i n 1 6 s i n22k kk ππ+⎛⎞=+ ⎜⎟⎝⎠  
+   16 4 sin sin 22k kkππ π⎛⎞ ⎛⎞=⋅ + + ⎜⎟ ⎜⎟⎝⎠⎝⎠  
+   16 4 (0) 0 for allk k=⋅ =  
+  since sin( t + π) = –sin t for all t. Since the difference equation holds for all k, 24s i nk kπ  is in the 
+solution set H. 
+  The signals 24c o sk kπ  and 24s i nk kπ  are linearly independent because neither is a multiple of the 
+other. By Theorem 17, dim H = 2, so the two linearly independent signals 24c o sk kπ  and 24s i nk kπ  
+form a basis for H by the Basis Theorem. 
+ 7. Compute and row reduce the Casorati matrix for the signals 1,k  2,k  and (2 ) k− , setting k = 0 for 
+convenience: 
+   
+00 0
+11 1
+22 2
+12( 2 ) 100
+12( 2 ) 0 1 0
+00112( 2 )
+⎡⎤ − ⎡⎤⎢⎥ ⎢⎥−∼⎢⎥ ⎢⎥⎢⎥ ⎢⎥− ⎣⎦⎢⎥⎣⎦  
+  This Casorati matrix is row equivalent to the iden tity matrix, thus is invertible by the IMT. Hence the 
+set of signals {1 , 2 , ( 2 ) }kk k −  is linearly independent in . The exercise states that these signals are in 
+the solution set H of a third-order difference equation. By Theorem 17, dim H = 3, so the three 
+linearly independent signals 1,k  2,k  (2 ) k−  form a basis for H by the Basis Theorem. 
+ 8. Compute and row reduce the Casorati matrix for the signals (1 ),k−  2,k  and 3,k  setting k = 0 for 
+convenience:  
+   
+000
+111
+222
+(1 ) 2 3 100
+(1 ) 2 3 0 1 0
+001(1 ) 2 3
+⎡⎤− ⎡⎤⎢⎥ ⎢⎥−∼⎢⎥ ⎢⎥⎢⎥ ⎢⎥− ⎣⎦⎢⎥⎣⎦  
+  This Casorati matrix is row equivalent to the iden tity matrix, thus is invertible by the IMT. Hence the 
+set of signals {( 1) ,2 ,3 }kkk−  is linearly independent in . The exercise states that these signals are in 
+the solution set H of a third-order difference equation. By Theorem 17, dim H = 3, so the three 
+linearly independent signals (1 ),k−  2,k  and 3k  form a basis for H by the Basis Theorem. 
+  
+----- pagina 56 -----
+252    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 9. Compute and row reduce the Casorati matrix for the signals 2,k  π25c o s ,k k  and π25s i nk k  setting k = 0 
+for convenience:  
+   
+00 0
+11 1
+22
+22 2
+25 c o s 0 5 s i n 0 100
+2 5 c o s 5 s i n 010
+00125 c o s 5 s i n
+ππ
+ππ
+⎡⎤ ⎡⎤⎢⎥ ⎢⎥∼⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎣⎦⎢⎥⎣⎦  
+  This Casorati matrix is row equivalent to the iden tity matrix, thus is invertible by the IMT. Hence the 
+set of signals 22{2 ,5 cos ,5 sin }kk k kkππ  is linearly independent in . The exercise states that these 
+signals are in the solution set H of a third-order difference equation. By Theorem 17, dim H = 3, so 
+the three linearly independent signals 2,k π25c o s ,k k  and π25s i nk k  form a basis for H by the Basis 
+Theorem. 
+ 10. Compute and row reduce the Casorati matrix for the signals (2 ) ,k−  (2 ), kk −  and 3k  setting k = 0 for 
+convenience:  
+   
+00 0
+11 1
+22 2
+(2 ) 0 (2 ) 3 100
+(2 ) 1 (2 ) 3 0 1 0
+001(2 ) 2 (2 ) 3
+⎡⎤−− ⎡⎤⎢⎥ ⎢⎥−− ∼⎢⎥ ⎢⎥⎢⎥ ⎢⎥−− ⎣⎦⎢⎥⎣⎦  
+  This Casorati matrix is row equivalent to the iden tity matrix, thus is invertible by the IMT. Hence the 
+set of signals {( 2) , ( 2) , 3 }kk kk−−  is linearly independent in . The exercise states that these signals 
+are in the solution set H of a third-order difference equation. By Theorem 17, dim H = 3, so the three 
+linearly independent signals (2 ) ,k−  (2 ), kk −  and 3k  form a basis for H by the Basis Theorem. 
+ 11. The solution set H of this third-order difference equation has dim H = 3 by Theorem 17. The two 
+signals (1 ) k−  and 2k  cannot possibly span a three-dimensional space, and so cannot be a basis for 
+H. 
+ 12. The solution set H of this fourth-order difference equation has dim H = 4 by Theorem 17. The two 
+signals 3k  and (2 ) k−  cannot possibly span a four-dimensional space, and so cannot be a basis for H. 
+ 13. The auxiliary equation for this difference equation is 2 2/9 0 .rr −+ =  By the quadratic formula 
+(or factoring), r = 2/3 or r = 1/3, so two solutions of the difference equation are (2/3) k  and (1 / 3)k . 
+The signals (2/3) k  and (1 / 3)k  are linearly independent because neither is a multiple of the other. 
+By Theorem 17, the solution space is two-dimensional, so the two linearly independent signals 
+(2/3) k  and (1 / 3)k  form a basis for the solution space by the Basis Theorem. 
+ 14. The auxiliary equation for this difference equation is 2 56 0 .rr −+ =  By the quadratic formula (or 
+factoring), r = 2 or r = 3, so two solutions of the difference equation are 2k  and 3.k  The signals 2k
+and 3k  are linearly independent because neither is a multiple of the other. By Theorem 17, the 
+solution space is two-dimensional, so the two linearly independent signals 2k  and 3k form a basis for 
+the solution space by the Basis Theorem. 
+----- pagina 57 -----
+4.8  Solutions   253  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 15. The auxiliary equation for this difference equation is 262 0 .rr +−=  By the quadratic formula (or 
+factoring), r = 1/2 or r = –2/3, so two solutions of the difference equation are (1 / 2)k  and (2 / 3 ) .k−  
+The signals (1 / 2)k  and (2 / 3 ) k−  are linearly independent because neither is a multiple of the other. 
+By Theorem 17, the solution space is two-dimensional, so the two linearly independent signals 
+(1 / 2)k  and (2 / 3 ) k−  form a basis for the solution space by the Basis Theorem. 
+ 16. The auxiliary equation for this difference equation is 2 25 0.r −=  By the quadratic formula (or 
+factoring), r = 5 or r = –5, so two solutions of the difference equation are 5k  and (5 ) .k−  The signals 
+5k  and (5 ) k−  are linearly independent because neither is a multiple of the other. By Theorem 17, the 
+solution space is two-dimensional, so the two linearly independent signals 5k  and (5 ) k−  form a basis 
+for the solution space by the Basis Theorem. 
+ 17. Letting a = .9 and b = 4/9 gives the difference equation 21 1.3 .4 1.kk kYY Y++ −+ =  First we find a 
+particular solution kYT=  of this equation, where T is a constant. The solution of the equation T – 
+1.3T + .4T  = 1 is T = 10, so 10 is a particular solution to 21 1.3 .4 1kk kYY Y++ −+ = . Next we solve the 
+homogeneous difference equation 21 1.3 .4 0.kk kYY Y++ −+ =  The auxiliary equation for this difference 
+equation is 2 1.3 .4 0.rr −+ =  By the quadratic formula (or factoring), r = .8 or r = .5, so two 
+solutions of the homogeneous difference equation are .8k  and .5 .k  The signals (.8)k  and (.5)k  are 
+linearly independent because neither is a multiple of the other. By Theorem 17, the solution space is 
+two-dimensional, so the two linearly independent signals (.8)k  and (.5)k  form a basis for the 
+solution space of the homogeneous difference equation by the Basis Theorem. Translating the 
+solution space of the homogeneous difference equation by the particular solution 10 of the 
+nonhomogeneous difference equation gives us the general solution of 21 1.3 .4 1kk kYY Y++ −+ = : 
+12(.8) (.5) 10.kkkYc c=+ +  As k increases the first two terms in the solution approach 0, so kY  
+approaches 10. 
+ 18. Letting a = .9 and b = .5 gives the difference equation 21 1.35 .45 1.kk kYY Y++ −+ =  First we find a 
+particular solution kYT=  of this equation, where T is a constant. The solution of the equation  
+T – 1.35T + .45T = 1 is T = 10, so 10 is a particular solution to 21 1.35 .45 1kk kYY Y++ −+ = . Next we 
+solve the homogeneous difference equation 21 1.35 .45 0.kk kYY Y++ −+ =  The auxiliary equation for 
+this difference equation is 2 1.35 .45 0.rr −+ =  By the quadratic formula (or factoring), r = .6 or 
+r = .75, so two solutions of the homogeneous difference equation are .6k  and .75 .k  The signals (.6)k  
+and (.75)k  are linearly independent because neither is a multiple of the other. By Theorem 17, the 
+solution space is two-dimensional, so the two linearly independent signals (.6)k  and (.75)k  form a 
+basis for the solution space of the homogeneous difference equation by the Basis Theorem. 
+Translating the solution space of the homogeneous difference equation by the particular solution 10 
+of the nonhomogeneous difference equation gives us the general solution of 
+21 1.35 .45 1kk kYY Y++ −+ = : 12(.6) (.75) 10.kkkYc c=+ +   
+ 19. The auxiliary equation for this difference equation is 2 41 0 .rr ++ =  By the quadratic formula, 
+23r =− +  or 23 ,r =− −  so two solutions of the difference equation are (2 3 ) k−+  and 
+----- pagina 58 -----
+254    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+(2 3 ) . k−−  The signals (2 3 ) k−+  and (2 3 ) k−−  are linearly independent because neither is a 
+multiple of the other. By Theorem 17, the solution space is two-dimensional, so the two linearly 
+independent signals (2 3 ) k−+  and (2 3 ) k−−  form a basis for the solution space by the Basis 
+Theorem. Thus a general solution to this difference equation is 12(2 3 ) (2 3 ) .kkkyc c=− + +− −  
+ 20. Let 23a =− +  and 23b =− − . Using the solution from the previous exercise, we find that 
+11 2 5000yc a c b=+=  and 12 0.NNNyc ac b=+=  This is a system of linear equations with variables 
+1c  and 2c  whose augmented matrix may be row reduced:  
+   
+5000105000
+0 500001
+N
+NN
+NN N
+NN
+b
+ab ba ab
+ab a
+ba ab
+⎡⎤
+⎢⎥⎡⎤ −⎢⎥∼⎢⎥ ⎢⎥ −⎣⎦ ⎢⎥ −⎣⎦  
+  so  
+   12
+5000 5000,NNNN NNbacc ba ab ba ab −== −−  
+  (Alternatively, Cramer’s Rule may be applied to get the same solution). Thus  
+   12 kkkyc ac b=+  
+   5000( )kN NkNNab a bba ab −= −  
+ 21. The smoothed signal kz  has the following values: 1 ( 957 ) / 37 ,z =+ + =  2 ( 573 ) / 35 ,z =+ + =  
+3 (7 3 2) / 3 4,z =+ + =  4 ( 324 ) / 33 ,z =+ + =  5 ( 246 ) / 34 ,z =+ + =  6 (4 6 5)/3 5,z =+ + =  
+7 (6 5 7) /3 6,z =+ + =  8 (5 7 6) / 3 6,z =+ + =  9 (7 6 8) / 3 7,z =+ + =  10 (6 8 10) / 3 8,z =+ + =  
+11 (8 10 9) / 3 9,z =++ =  12 (10 9 5) / 3 8,z =+ + =  13 ( 957 ) / 37 .z =+ + =  
+ 
+ 22. a. The smoothed signal kz  has the following values:  
+   02 1 0.35 .5 .35 .35(0) .5(.7) .35(3) 1.4,zy y y=+ += ++ =  
+   13 21.35 .5 .35 .35( .7) .5(0) .35(.7) 0,zy yy=+ += − + + =  
+   24 32.35 .5 .35 .35( .3) .5( .7) .35(0) 1.4,zy yy=+ += − + − + = −  
+   35 43.35 .5 .35 .35( .7) .5( .3) .35( .7) 2,zy yy=+ += − + − + − = −  
+   46 54.35 .5 .35 .35(0) .5( .7) .35( .3) 1.4,zy yy=+ += + − + − = −  
+   57 65.35 .5 .35 .35(.7) .5(0) .35( .7) 0,zy yy=+ += + + − =  
+2 4 6 8 10 12 14
+2
+4
+6
+8
+10
+original data
+smoothed data
+----- pagina 59 -----
+4.8  Solutions   255  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   68 76.35 .5 .35 .35(3) .5(.7) .35(0) 1.4,zy yy=+ += ++ =  
+   79 87.35 .5 .35 .35(.7) .5(3) .35(.7) 2,zy yy=+ += + + =  
+   81 0 98.35 .5 .35 .35(0) .5(.7) .35(3) 1.4,zy yy=+ + =+ += …  
+b. This signal is two times the signal output by the filter when the input (in Example 3) was 
+y = cos(πt/4). This is expected because the filter is linear. The output from the input  
+2cos(πt/4) + cos(3πt/4) should be two times the output from cos(πt/4) plus the output from 
+cos(3πt/4) (which is zero).  
+ 23. a. 1 1.01 450,kkyy+ −= −  0 10,000.y =   
+b. [M] MATLAB code to create the table:  
+  pay = 450, y = 10000, m = 0, table = [0;y] 
+  while y>450 
+   y = 1.01*y-pay 
+   m  = m+1 
+   table  = [table [m;y]] 
+  end 
+  m,y 
+  Mathematica code to create the table:  
+  pay  =  450; y  =  10000; m  =  0; balancetable  =  {{0, y}}; 
+  While[y > 450, {y  =  1.01*y - pay; m  =  m + 1, 
+   AppendTo[balancetable, {m, y}]}]; 
+  m 
+  y 
+c. [M] At the start of month 26, the balance due is $114.88. At the end of this month the unpaid 
+balance will be (1.01)($114.88)=$116.03. The final payment will thus be $116.03. The total paid 
+by the borrower is (25)($450.00)+$116.03=$11,366.03.  
+ 24.  a. 1 1.005 200,kkyy+ −=  0 1,000.y =   
+b. [M] MATLAB code to create the table:  
+  pay = 200, y = 1000, m = 0, table = [0;y] 
+  for m = 1: 60 
+   y  = 1.005*y+pay 
+   table  = [table [m;y]] 
+  end 
+  interest = y-60*pay-1000 
+  Mathematica code to create the table:  
+  pay  =  200; y  =  1000; amounttable  =  {{0, y}}; 
+  Do[{y  =  1.005*y + pay; 
+   AppendTo[amounttable, {m, y}]},{m,1,60}]; 
+  interest = y-60*pay-1000 
+ 
+----- pagina 60 -----
+256    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+c. [M] The total is $6213.55 at k = 24, $12,090.06 at k = 48, and $15,302.86 at k = 60. When k = 60, 
+the interest earned is $2302.86.  
+ 25. To show that 2kyk =  is a solution of 21 3 4 10 7,kkkyyy k++ +− = +  substitute 2 ,kyk =  
+2
+1 (1 ) ,kyk+ =+  and 22 (2 ) :kyk+ =+  
+   22 221 3 4 ( 2 )3 (1 )4kk kyy k k k++ +−= + + + −  
+   22 2(4 4 ) 3 (2 1 ) 4kk kk k=+ + + + + −  
+   222 44 3 63 4kk kk k=++ + ++ −  
+   10 7 for allkk=+  
+  The auxiliary equation for the homogeneous difference equation 21 34 0kk kyyy++ +− =  is 
+2 34 0 .rr +− =  By the quadratic formula (or factoring), r = –4 or r = 1, so two solutions of the 
+difference equation are (4 ) k−  and 1.k  The signals (4 ) k−  and 1k  are linearly independent because 
+neither is a multiple of the other. By Theorem 17, the solution space is two-dimensional, so the two 
+linearly independent signals (4 ) k−  and 1k  form a basis for the solution space of the homogeneous 
+difference equation by the Basis Theorem. The general solution to the homogeneous difference 
+equation is thus 12 12(4 ) 1 (4 ) .kk kcc cc−+ ⋅ = −+  Adding the particular solution 2k  of the 
+nonhomogeneous difference equation, we find that the general solution of the difference equation 
+21 34 1 0 7kk kyyy k++ +− = +  is 2 12(4 ) .kkykc c=+−+  
+ 26. To show that 1kyk =+  is a solution of 21 654 ,kk kyy y++ −+ = −  substitute 1kyk =+ , 
+1 1( 1 ) 2 ,kyk k+ =+ + = +  and 2 1( 2 ) 3kyk k+ = ++= + :  
+   21 6 5 ( 3 )6 ( 2 )5 ( 1 )kk kyy y k k k++ −+ = + − + + +  
+   31 2 6 5 5kk k=+− − ++  
+   4f o ra l lk=−  
+  The auxiliary equation for the homogeneous difference equation 21 65 0kk kyy y++ −+ =  is 
+2 65 0 .rr −+ =  By the quadratic formula (or factoring), r = 1 or r = 5, so two solutions of the 
+difference equation are 1k  and 5.k  The signals 1k  and 5k  are linearly independent because neither 
+is a multiple of the other. By Theorem 17, the solution space is two-dimensional, so the two linearly 
+independent signals 1k  and 5k  form a basis for the solution space of the homogeneous difference 
+equation by the Basis Theorem. The general solution to the homogeneous difference equation is thus 
+12 15 .kkcc⋅+⋅  Adding the particular solution 1 k+  of the nonhomogeneous difference equation, we 
+find that the general solution of the difference equation 21 654kk kyy y++ −+ = −  is 
+1211 5 . kkkyk c c=+ + ⋅ + ⋅  
+ 27. To show that 2kyk =−  is a solution of 2 48 3kkyy k+ −= − , substitute 2kyk =−  and 
+2 (2 ) 2kyk k+ =+− = :  
+   2 44 ( 2 ) 4 8 8 3 f o r a l lkkyy k kk k k k+ −= − − = − + = −  
+The auxiliary equation for the homogeneous difference equation 2 40kkyy+ −=  is 2 40 .r −=  By the 
+quadratic formula (or factoring), r = 2 or r = − 2, so two solutions of the difference equation are 2k  
+and (2 ) .k−  The signals 2k  and (2 ) k−  are linearly independent because neither is a multiple of the 
+----- pagina 61 -----
+4.8  Solutions   257  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+other. By Theorem 17, the solution space is two-dimensional, so the two linearly independent signals 
+2k  and (2 ) k−  form a basis for the solution space of the homogeneous difference equation by the 
+Basis Theorem. The general solution to the homogeneous difference equation is thus 
+12 2( 2 ) .kkcc⋅+⋅ −  Adding the particular solution 2k −  of the nonhomogeneous difference equation, 
+we find that the general solution of the difference equation 2 48 3kkyy k+ −= −  is 
+1222 ( 2 ) .kkkyk c c=−+ ⋅ + ⋅ −  
+ 28. To show that 12kyk =+  is a solution of 2 25 30 52 ,kkyy k+ += +  substitute 12kyk =+  and 
+2 12 ( 2 )52kyk k+ =+ + = + :  
+   2 25 5 2 25(1 2 ) 5 2 25 50 30 52 for allkkyyk kk k k k+ + = ++ + = +++ =+  
+  The auxiliary equation for the homogeneous difference equation 2 25 0kkyy+ +=  is 2 25 0.r +=  By 
+the quadratic formula (or factoring), r = 5i or r = –5i, so two solutions of the difference equation are 
+ππ
+225 cos   and 5 sinkk kk . The signals ππ225 cos   and 5 sinkk kk  are linearly independent because neither is 
+a multiple of the other. By Theorem 17, the solution space is two-dimensional, so the two linearly 
+independent signals ππ225 cos   and 5 sinkk kk  form a basis for the solution space of the homogeneous 
+difference equation by the Basis Theorem. The general solution to the homogeneous difference 
+equation is thus ππ12 225c o s  5s i n  .kk kkcc⋅+ ⋅  Adding the particular solution 12 k+ of the 
+nonhomogeneous difference equation, we find that the general solution of the difference equation 
+2 25 30 52kkyy k+ += +  is ππ12 2212 5 c o s 5 s i n  .kk kkkyk c c=+ + ⋅ + ⋅  
+ 29. Let 1
+2
+3
+k
+k
+k
+k
+k
+y
+y
+y
+y
++
++
++
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥
+⎣⎦
+x . Then 
+1
+21
+1
+32
+43
+01 00
+00 10 .00 01
+26 83
+kk
+kk
+kk
+kk
+kk
+yy
+yy Ayy
+yy
++
+++
++
+++
+++
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥== =⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥ −−⎣⎦⎣⎦ ⎣⎦
+xx  
+ 30. Let 1
+2
+k
+kk
+k
+y
+y
+y
++
++
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+x . Then 
+1
+12 1
+32
+01 0
+001 .
+805
+kk
+kk k k
+kk
+yy
+yy A
+yy
++
+++ +
+++
+⎡⎤ ⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ ⎢⎥== =⎢⎥ ⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ ⎢⎥−⎣⎦⎣⎦ ⎣⎦
+xx  
+ 31. The difference equation is of order 2. Since the equation 321 560kkkyyy+++++=  holds for all k, 
+it holds if k is replaced by k − 1. Performing this replacement transforms the equation into 
+21 56 0 ,kk kyyy++ ++ =  which is also true for all k. The transformed equation has order 2. 
+ 32. The order of the difference equation depends on the values of 1,a  2 ,a  and 3.a  If 3 0,a ≠  then the  
+order is 3. If 3 0a =  and 2 0,a ≠  then the order is 2. If 32 0aa ==  and 1 0,a ≠  then the order is 1.  
+If 321 0,aaa== =  then the order is 0, and the equation has only the zero signal for a solution. 
+ 33. The Casorati matrix C(k) is  
+   
+2
+211
+2| |()
+(1 ) 2 (1 ) | 1 |
+kk
+kk
+yz kk kCk yz kk k++ ⎡⎤⎡⎤== ⎢⎥⎢⎥ ++ +⎢⎥⎣⎦ ⎣⎦  
+  In particular,  
+----- pagina 62 -----
+258    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   00 1 2 4 8(0) , ( 1) , and ( 2)12 0 0 1 2CC C −−⎡⎤ ⎡ ⎤ ⎡ ⎤=− = − =⎢⎥ ⎢ ⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦ ⎣ ⎦  
+  none of which are invertible. In fact, C(k) is not invertible for all k, since  
+   ()22det ( ) 2 ( 1) | 1 | 2( 1) | | 2 ( 1) | 1 | ( 1) | |C k k k k k kk k k kk k k=+ + − + = + + − +  
+  If k = 0 or k = –1, det C(k) = 0. If k > 0, then k + 1 > 0 and k| k + 1 | – (k + 1)| k | = k(k + 1) – (k + 1)k 
+= 0, so det C(k) = 0. If k < –1, then k + 1 < 0 and k| k + 1 | – (k + 1)| k | = –k(k + 1) + (k + 1)k = 0, so  
+det C(k) = 0. Thus detC(k)=0 for all k, and C(k) is not invertible for all k. Since C(k) is not invertible  
+for all k, it provides no information about whether the signals {}ky  and {}kz  are linearly dependent 
+or linearly independent. In fact, neither signal is a multiple of the other, so the signals {}ky  and {}kz  
+are linearly independent. 
+ 34. No, the signals could be linearly dependent, since the vector space V of functions considered on the 
+entire real line is not the vector space  of signals. For example, consider the functions f (t) = sinπt, 
+g(t) = sin 2πt, and h(t) = sin 3πt. The functions f, g, and h are linearly independent in V since they 
+have different periods and thus no function could be a linear combination of the other two. However, 
+sampling the functions at any integer n gives f (n) = g(n) = h(n) = 0, so the signals are linearly 
+dependent in . 
+ 35. Let {}ky  and {}kz  be in , and let r be any scalar. The thk  term of {} {}kkyz +  is ,kkyz +  while the 
+thk  term of {}kry  is .kry  Thus  
+   ({ } { }) { }kk k kTy z T y z+=+  
+   22 1 1() ( ) ( )kk k k k kyz a yz b y z++ + +=++ + + +  
+   21 21() ( )kk k kk kya y b yza z b z++ ++=++ ++ +  
+   {} {} , a n dkkTy Tz=+  
+   ({ } ) { }kkTry Tr y =  
+   21 () ( )kk kry a ry b ry++=+ +  
+   21() kk kr y ay by++=+ +  
+   {}krT y=  
+  so T has the two properties that define a linear transformation. 
+ 36. Let z be in V, and suppose that px  in V satisfies () .pT =xz  Let u be in the kernel of T; then T(u) = 
+0. Since T is a linear transformation, () ( ) ( ) ,ppTT T+= + = + =ux u x 0zz  so the vector p=+xux  
+satisfies the nonhomogeneous equation T(x) = z. 
+ 37. We compute that 012 012 012 012( ) (, ,, ) ( (, ,, ) ) ( 0 ,, ,, )(, ,, )T Dyy y T D yyy T yy y yyy…= … = …= …  
+  while 012 012 123 123( ) (, ,, ) ( (, ,, ) ) ( ,,, )( 0 , ,,, )DT y y y D T y y y D y y y y y y…= … = …= …  
+  Thus TD = I (the identity transformation on 0), while DT ≠ I. 
+----- pagina 63 -----
+4.9  Solutions   259  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+4.9 SOLUTIONS 
+Notes: This section builds on the population movement example in Section 1.10. The migration matrix is 
+examined again in Section 5.2, where an eigenvector decomposition shows explicitly why the sequence of 
+state vectors kx  tends to a steady state vector. The discussion in Section 5.2 does not depend on prior 
+knowledge of this section. 
+ 1. a. Let N stand for “News” and M stand for “Music.” Then the listeners’ behavior is given by the 
+table 
+   From: 
+   N M To: 
+   .7 .6 N 
+   .3 .4 M 
+  so the stochastic matrix is .7 .6 ..3 .4P ⎡⎤= ⎢⎥⎣⎦  
+b. Since 100% of the listeners are listening to news at 8: 15, the initial state vector is 0
+1
+0
+⎡⎤= ⎢⎥⎣⎦x . 
+c. There are two breaks between 8: 15 and 9: 25, so we calculate 2x :  
+   10
+.7 .6 1 .7
+.3 .4 0 .3P ⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦xx  
+   21
+.7 .6 .7 .67
+.3 .4 .3 .33P ⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦xx  
+  Thus 33% of the listeners are listening to music at 9:25. 
+ 2. a. Let the foods be labelled “1,” “2,” and “3.” Then the animals’ behavior is given by the table 
+    From: 
+   1 2 3 To: 
+   .6 .2 .2 1 
+   .2 .6 .2 2 
+   .2 .2 .6 3 
+  so the stochastic matrix is 
+.6 .2 .2
+.2 .6 .2
+.2 .2 .6
+P
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+. 
+b. There are two trials after the initial trial, so we calculate 2x . The initial state vector is 
+1
+0.
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+  
+   10
+.6 .2 .2 1 .6
+.2 .6 .2 0 .2
+.2 .2 .6 0 .2
+P
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+xx  
+----- pagina 64 -----
+260    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   21
+.6 .2 .2 .6 .44
+.2 .6 .2 .2 .28
+.2 .2 .6 .2 .28
+P
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+xx  
+  Thus the probability that the animal will choose food #2 is .28.  
+ 3. a. Let H stand for “Healthy” and I stand for “Ill.” Then the students’ conditions are given by the 
+table 
+   From: 
+   H I To: 
+   .95 .45 H 
+   .05 .55 I 
+  so the stochastic matrix is .95 .45.05 .55P ⎡⎤= ⎢⎥⎣⎦ . 
+b. Since 20% of the students are ill on Monday, the initial state vector is 0
+.8
+.2
+⎡⎤= ⎢⎥⎣⎦x . For Tuesday’s 
+percentages, we calculate 1x ; for Wednesday’s percentages, we calculate 2x :  
+   10
+.95 .45 .8 .85
+.05 .55 .2 .15P ⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦xx  
+   21
+.95 .45 .85 .875
+.05 .55 .15 .125P ⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦xx  
+  Thus 15% of the students are ill on Tuesday, and 12.5% are ill on Wednesday. 
+c. Since the student is well today, the initial state vector is 0
+1 .0⎡ ⎤= ⎢ ⎥⎣ ⎦x  We calculate 2x :  
+   10
+.95 .45 1 .95
+.05 .55 0 .05P ⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦xx  
+   21
+.95 .45 .95 .925
+.05 .55 .05 .075P ⎡ ⎤⎡ ⎤ ⎡ ⎤== = ⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦xx  
+  Thus the probability that the student is well two days from now is .925. 
+ 4. a. Let G stand for good weather, I for indifferent weather, and B for bad weather. Then the change 
+in the weather is given by the table 
+    From: 
+   G I B To: 
+   .4 .5 .3 G 
+   .3 .2 .4 I 
+   .3 .3 .3 B 
+  so the stochastic matrix is 
+.4 .5 .3
+.3 .2 .4 .
+.3 .3 .3
+P
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ 
+----- pagina 65 -----
+4.9  Solutions   261  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+b. The initial state vector is 
+.5
+.5 .
+0
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ We calculate 1x :  
+   10
+.4 .5 .3 .5 .45
+.3 .2 .4 .5 .25
+.3 .3 .3 0 .30
+P
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+xx  
+  Thus the chance of bad weather tomorrow is 30%. 
+c. The initial state vector is 0
+0
+.6 .
+.4
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+x  We calculate 2x :  
+   10
+.4 .5 .3 0 .42
+.3 .2 .4 .6 .28
+.3 .3 .3 .4 .30
+P
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+xx  
+   21
+.4 .5 .3 .42 .398
+.3 .2 .4 .28 .302
+.3 .3 .3 .30 .300
+P
+⎡ ⎤⎡ ⎤ ⎡ ⎤
+⎢ ⎥⎢ ⎥ ⎢ ⎥== = ⎢ ⎥⎢ ⎥ ⎢ ⎥
+⎢ ⎥⎢ ⎥ ⎢ ⎥⎣ ⎦⎣ ⎦ ⎣ ⎦
+xx  
+  Thus the chance of good weather on Wednesday is 39.8%, or approximately 40%. 
+ 5. We solve Px = x by rewriting the equation as (P – I )x = 0, where .9 .5 ..9 .5PI −⎡ ⎤−= ⎢ ⎥−⎣ ⎦  Row reducing 
+the augmented matrix for the homogeneous system (P – I )x = 0 gives  
+   .9 .5 0 1 5 / 9 0.9 .5 0 0 0 0−−⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+  Thus 1 2
+2
+5/9 ,1x xx⎡⎤ ⎡⎤==⎢⎥ ⎢⎥⎣⎦⎣⎦x  and one solution is 5 .9⎡ ⎤⎢ ⎥⎣ ⎦  Since the entries in 59⎡ ⎤⎢ ⎥⎣ ⎦  sum to 14, multiply by 
+1/14 to obtain the steady-state vector 5/1 4 .9/1 4⎡ ⎤= ⎢ ⎥⎣ ⎦q  
+ 6. We solve Px = x by rewriting the equation as (P – I )x = 0, where .6 .8 ..6 .8PI −⎡ ⎤−= ⎢ ⎥−⎣ ⎦  Row reducing 
+the augmented matrix for the homogeneous system (P – I )x = 0 gives  
+   .6 .8 0 1 4 / 3 0.6 .8 0 0 0 0−−⎡⎤ ⎡⎤ ∼⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦  
+  Thus 1 2
+2
+4/3 ,1x xx⎡⎤ ⎡⎤==⎢⎥ ⎢⎥⎣⎦⎣⎦x  and one solution is 4 .3⎡ ⎤⎢ ⎥⎣ ⎦  Since the entries in 43⎡ ⎤⎢ ⎥⎣ ⎦  sum to 7, multiply by 
+1/7 to obtain the steady-state vector 4/7 . 5 7 1 .3 / 7 .429⎡ ⎤⎡ ⎤=≈⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦q  
+----- pagina 66 -----
+262    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 7. We solve Px = x by rewriting the equation as (P – I )x = 0, where 
+.3 .1 .1
+.2 .2 .2 .
+.1 .1 .3
+PI
+−⎡ ⎤
+⎢ ⎥−= − ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ Row 
+reducing the augmented matrix for the homogeneous system (P – I )x = 0 gives  
+   
+.3 .1 .1 0 1 0 1 0
+.2 .2 .2 0 0 1 2 0
+.1 .1 .3 0 0 0 0 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −∼ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  Thus 
+1
+23
+3
+1
+2,
+1
+x
+xx
+x
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+x  and one solution is 
+1
+2.
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Since the entries in 
+1
+2
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ sum to 4, multiply by 1/4 
+to obtain the steady-state vector 
+1/ 4 .25
+1/ 2 .5 .
+1/ 4 .25
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+q  
+ 8. We solve Px = x by rewriting the equation as (P – I )x = 0, where 
+.6 .5 .8
+0. 5. 1 .
+.6 0 .9
+PI
+−⎡ ⎤
+⎢ ⎥−= − ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ Row 
+reducing the augmented matrix for the homogeneous system (P – I )x = 0 gives  
+   
+.6 .5 .8 0 1 0 3 / 2 0
+0. 5. 1 0 0 11 / 5 0
+. 6 0 . 90 00 00
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −∼ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  Thus 
+1
+23
+3
+3/2
+1/5 ,
+1
+x
+xx
+x
+⎡⎤ ⎡⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎣⎦⎣⎦
+x  and one solution is 
+15
+2.
+10
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Since the entries in 
+15
+2
+10
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ sum to 27, multiply 
+by 1/27 to obtain the steady-state vector 
+15 / 27 .556
+2 / 27 .074 .
+10 / 27 .370
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥=≈⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+q  
+ 9. Since 2 .84 .2.16 .8P ⎡⎤= ⎢⎥⎣⎦  has all positive entries, P is a regular stochastic matrix. 
+ 10. Since 11 . 7
+0. 7
+k
+k
+kP
+⎡⎤ −= ⎢⎥
+⎢⎥⎣⎦
+ will have a zero as its (2,1) entry for all k,  P is not a regular stochastic 
+matrix. 
+ 11. a. From Exercise 1, .7 .6 ,.3 .4P ⎡⎤= ⎢⎥⎣⎦  so .3 .6 ..3 .6PI −⎡ ⎤−= ⎢ ⎥−⎣ ⎦  Solving (P – I )x = 0 by row reducing the 
+augmented matrix gives  
+----- pagina 67 -----
+4.9  Solutions   263  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   .3 .6 0 1 2 0.3 .6 0 0 0 0−−⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+  Thus 1 2
+2
+2 ,1x xx⎡⎤ ⎡⎤==⎢⎥ ⎢⎥⎣⎦⎣⎦x  and one solution is 2 .1⎡ ⎤⎢ ⎥⎣ ⎦  Since the entries in 21⎡ ⎤⎢ ⎥⎣ ⎦  sum to 3, multiply by 1/3 
+to obtain the steady-state vector 2 / 3 .667 .1/3 .333⎡⎤ ⎡ ⎤=≈⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦q  
+b.  Since 2/3 ,1/3⎡⎤= ⎢⎥⎣⎦q 2/3 of the listeners will be listening to the news at some time late in the day. 
+ 12. From Exercise 2, 
+.6 .2 .2
+.2 .6 .2 ,
+.2 .2 .6
+P
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ so 
+.4 .2 .2
+.2 .4 .2 .
+.2 .2 .4
+PI
+−⎡ ⎤
+⎢ ⎥−= − ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ Solving (P – I )x = 0 by row 
+reducing the augmented matrix gives  
+   
+.4 .2 .2 0 1 0 1 0
+.2 .4 .2 0 0 1 1 0
+.2 .2 .4 0 0 0 0 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −∼ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  Thus 
+1
+23
+3
+1
+1,
+1
+x
+xx
+x
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+x  and one solution is 
+1
+1.
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Since the entries in 
+1
+1
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ sum to 3, multiply by 1/3 to 
+obtain the steady-state vector 
+1/3 .333
+1/3 .333 .
+1/3 .333
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥=≈⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+q  Thus in the long run each food will be preferred 
+equally. 
+ 13. a. From Exercise 3, .95 .45 ,.05 .55P ⎡⎤= ⎢⎥⎣⎦  so .05 .45 ..05 .45PI −⎡ ⎤−= ⎢ ⎥−⎣ ⎦  Solving (P – I )x = 0 by row 
+reducing the augmented matrix gives  
+   .05 .45 0 1 9 0.05 .45 0 0 0 0−−⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+  Thus 1 2
+2
+9 ,1x xx⎡⎤ ⎡ ⎤==⎢⎥ ⎢ ⎥⎣ ⎦⎣⎦x  and one solution is 9 .1⎡ ⎤⎢ ⎥⎣ ⎦  Since the entries in 91⎡ ⎤⎢ ⎥⎣ ⎦  sum to 10, multiply by 
+1/10 to obtain the steady-state vector 9/1 0 . 9 .1/10 .1⎡ ⎤⎡ ⎤==⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦q  
+b. After many days, a specific student is ill with probability .1, and it does not matter whether that 
+student is ill today or not.  
+----- pagina 68 -----
+264    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 14. From Exercise 4, 
+.4 .5 .3
+.3 .2 .4 ,
+.3 .3 .3
+P
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ so 
+.6 .5 .3
+.3 .8 .4 .
+.3 .3 .7
+PI
+−⎡ ⎤
+⎢ ⎥−= − ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ Solving (P – I )x = 0 by row 
+reducing the augmented matrix gives  
+   
+.6 .5 .3 0 1 0 4 / 3 0
+.3 .8 .4 0 0 1 1 0
+.3 .3 .7 0 0 0 0 0
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −∼ −⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦
+ 
+  Thus 
+1
+23
+3
+4/3
+1,
+1
+x
+xx
+x
+⎡⎤ ⎡⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢ ⎥ ⎣⎦⎣⎦
+x  and one solution is 
+4
+3.
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Since the entries in 
+4
+3
+3
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ sum to 10, multiply by 
+1/10 to obtain the steady-state vector 
+4/1 0 . 4
+3/1 0 . 3 .
+3/1 0 . 3
+⎡ ⎤⎡ ⎤
+⎢ ⎥⎢ ⎥==⎢ ⎥⎢ ⎥
+⎢ ⎥⎢ ⎥⎣ ⎦⎣ ⎦
+q  Thus in the long run the chance that a day 
+has good weather is 40%. 
+ 15. [M] Let .9821 .0029 ,.0179 .9971P ⎡⎤= ⎢⎥⎣⎦  so .0179 .0029 ..0179 .0029PI −⎡ ⎤−= ⎢ ⎥−⎣ ⎦  Solving (P – I )x = 0 by row reducing 
+the augmented matrix gives  
+   .0179 .0029 0 1 .162011 0.0179 .0029 0 0 0 0−−⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+  Thus 1 2
+2
+.162011 ,1x xx⎡⎤ ⎡⎤==⎢⎥ ⎢⎥⎣⎦⎣⎦x  and one solution is .162011 .1⎡ ⎤⎢ ⎥⎣ ⎦  Since the entries in .1620111⎡⎤⎢⎥⎣⎦  sum to 
+1.162011, multiply by 1/1.162011 to obtain the steady-state vector .139423 ..860577⎡ ⎤= ⎢ ⎥⎣ ⎦q  Thus about 
+13.9% of the total U.S. population would eventually live in California. 
+ 16. [M] Let 
+.90 .01 .09
+.01 .90 .01 ,
+.09 .09 .90
+P
+⎡⎤
+⎢⎥= ⎢⎥
+⎢⎥⎣⎦
+ so 
+.10 .01 .09
+.01 .10 .01 .
+.09 .09 .1
+PI
+−⎡ ⎤
+⎢ ⎥−= − ⎢ ⎥
+⎢ ⎥−⎣ ⎦
+ Solving (P – I )x = 0 by row 
+reducing the augmented matrix gives  
+   
+.10 .01 .09 0 1 0 .919192 0
+.01 .10 .01 0 0 1 .191919 0
+.09 .09 .1 0 0 0 0 0
+−−⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥ −∼ −⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥ −⎣⎦ ⎣⎦
+ 
+----- pagina 69 -----
+4.9  Solutions   265  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  Thus 
+1
+23
+3
+.919192
+.191919 ,
+1
+x
+xx
+x
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥==⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+x  and one solution is 
+.919192
+.191919 .
+1
+⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥⎣ ⎦
+ Since the entries in 
+.919192
+.191919
+1
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+ sum 
+to 2.111111, multiply by 1/2.111111 to obtain the steady-state vector 
+.435407
+.090909 .
+.473684
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+q  Thus on a 
+typical day, about (.090909)(2000) = 182 cars will be rented or available from the downtown 
+location. 
+ 17. a. The entries in each column of P sum to 1. Each column in the matrix P – I has the same entries as 
+in P except one of the entries is decreased by 1. Thus the entries in each column of P – I sum to 0, 
+and adding all of the other rows of P – I to its bottom row produces a row of zeros.  
+ b. By part a., the bottom row of P – I is the negative of the sum of the other rows, so the rows of  
+P – I are linearly dependent.  
+ c. By part b. and the Spanning Set Theorem, the bottom row of P – I can be removed and the 
+remaining (n – 1) rows will still span the row space of P – I. Thus the dimension of the row space 
+of P – I is less than n. Alternatively, let A be the matrix obtained from P – I by adding to the 
+bottom row all the other rows. These row operations did not change the row space, so the row 
+space of P – I is spanned by the nonzero rows of A. By part a., the bottom row of A is a zero row, 
+so the row space of P – I is spanned by the first (n – 1) rows of A.  
+ d. By part c., the rank of P – I is less than n, so the Rank Theorem may be used to show that 
+dimNul(P – I ) = n – rank(P – I ) > 0. Alternatively the Invertible Martix Theorem may be used 
+since P – I is a square matrix.  
+ 18. If α = β = 0 then 10 .01P ⎡ ⎤= ⎢ ⎥⎣ ⎦  Notice that Px = x for any vector x in 2, and that 10⎡⎤⎢⎥⎣⎦  and 01⎡⎤⎢⎥⎣⎦  are 
+two linearly independent steady-state vectors in this case.  
+  If α ≠ 0 or β ≠ 0, we solve (P – I )x = 0 where .PI α βα β−⎡ ⎤−= ⎢ ⎥−⎣ ⎦  Row reducing the augmented 
+matrix gives  
+   0000 0 0αβ α βαβ−−⎡⎤ ⎡ ⎤ ∼⎢⎥ ⎢ ⎥ −⎣⎦ ⎣ ⎦  
+  So 12 ,xxα β=  and one possible solution is to let 1 ,x β=  2x α= . Thus 1
+2
+.xx βα⎡⎤ ⎡⎤==⎢⎥ ⎢⎥⎣⎦⎣⎦x  Since the 
+entries in βα⎡⎤⎢⎥⎣⎦  sum to α + β, multiply by 1/(α + β ) to obtain the steady-state vector 1 .βααβ ⎡ ⎤= ⎢ ⎥+ ⎣ ⎦q  
+ 19. a. The product Sx equals the sum of the entries in x. Thus x is a probability vector if and only if its 
+entries are nonnegative and Sx = 1.  
+ b. Let [] 12 ,nP =…pp p  where 1p , 2p , …, np  are probability vectors. By part a.,  
+   [] [ ]12 11 1nSP S S S S=… = … =pp p  
+----- pagina 70 -----
+266    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ c. By part b., S(Px) = (SP)x = Sx = 1. The entries in Px are nonnegative since P and x have only 
+nonnegative entries. By part a., the condition S(Px) = 1 shows that Px is a probability vector.  
+ 20. Let [] 12 ,nP =…pp p  so []2 12 .nPP P P P P== … pp p  By Exercise 19c., the columns 
+of 2P  are probability vectors, so 2P  is a stochastic matrix. 
+  Alternatively, SP = S by Exercise 19b., since P is a stochastic matrix. Right multiplication by P gives 
+2 ,SP SP=  so SP = S implies that 2 .SP S=  Since the entries in P are nonnegative, so are the entries 
+in 2 ,P  and 2P  is stochastic matrix. 
+ 21. [M]  
+a. To four decimal places,  
+23
+.2779 .2780 .2803 .2941 .2817 .2817 .2817 .2814
+.3368 .3355 .3357 .3335 .3356 .3356 .3355 .3352,,.1847 .1861 .1833 .1697 .1817 .1817 .1819 .1825
+.2005 .2004 .2007 .2027 .2010 .2010 .2010 .2009
+PP
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+   45
+.2816 .2816 .2816 .2816
+.3355 .3355 .3355 .3355
+.1819 .1819 .1819 .1819
+.2009 .2009 .2009 .2009
+PP
+⎡⎤
+⎢⎥
+⎢⎥== ⎢⎥
+⎢⎥⎢⎥⎣⎦
+ 
+  The columns of kP  are converging to a common vector as k increases. The steady state vector q 
+for P is 
+.2816
+.3355 ,.1819
+.2009
+⎡⎤
+⎢⎥
+⎢⎥= ⎢⎥
+⎢⎥⎢⎥⎣⎦
+q  which is the vector to which the columns of kP  are converging.  
+b. To four decimal places,  
+   10 20
+.8222 .4044 .5385 .7674 .6000 .6690
+.0324 .3966 .1666 , .0637 .2036 .1326 ,
+.1453 .1990 .2949 .1688 .1964 .1984
+QQ
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+   30 40
+.7477 .6815 .7105 .7401 .7140 .7257
+.0783 .1329 .1074 , .0843 .1057 .0960 ,
+.1740 .1856 .1821 .1756 .1802 .1783
+QQ
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+   50 60
+.7372 .7269 .7315 .7360 .7320 .7338
+.0867 .0951 .0913 , .0876 .0909 .0894 ,
+.1761 .1780 .1772 .1763 .1771 .1767
+QQ
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+ 
+   70 80
+.7356 .7340 .7347 .7354 .7348 .7351
+.0880 .0893 .0887 , .0881 .0887 .0884 ,
+.1764 .1767 .1766 .1764 .1766 .1765
+QQ
+⎡⎤ ⎡⎤
+⎢⎥ ⎢⎥==⎢⎥ ⎢⎥
+⎢⎥ ⎢⎥⎣⎦ ⎣⎦
+----- pagina 71 -----
+Chapter 4  Supplementary Exercises   267  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   116 117
+.7353 .7353 .7353
+.0882 .0882 .0882
+.1765 .1765 .1765
+QQ
+⎡ ⎤
+⎢ ⎥== ⎢ ⎥
+⎢ ⎥⎣ ⎦
+ 
+  The steady state vector q for Q is 
+.7353
+.0882
+.1765
+⎡ ⎤
+⎢ ⎥= ⎢ ⎥
+⎢ ⎥⎣ ⎦
+q  Conjecture: the columns of ,kP  where P is a 
+regular stochastic matrix, converge to the steady state vector for P as k increases.  
+c. Let P be an n × n regular stochastic matrix, q the steady state vector of P, and je  the thj  column 
+of the n × n identity matrix. Consider the Markov chain {}kx  where 1kk P+ =xx  and 0 .je=x  By 
+Theorem 18, 0kk P=xx  converges to q as k → ∞. But 0kk jPP =xe , which is the thj  column of 
+.kP  Thus the thj  column of kP  converges to q as k → ∞; that is, []kP →…qq q .  
+ 22. [M] Answers will vary. 
+  MATLAB Student Version 4.0 code for Method (1):  
+  A=randstoc(32); flops(0); 
+  tic, x=nulbasis(A-eye(32)); 
+  q=x/sum(x); toc, flops 
+  MATLAB Student Version 4.0 code for Method (2):  
+  A=randstoc(32); flops(0); 
+  tic, B=A^100; q=B(: ,1); toc, flops 
+ 
+ 
+Chapter 4 SUPPLEMENTARY EXERCISES 
+ 1. a. True. This set is 1Span { ,... } pvv , and every subspace is itself a vector space.  
+ b. True. Any linear combination of 1v , …, 1p−v  is also a linear combination of 1v , …, 1p−v , pv  
+using the zero weight on .pv  
+ c . False. Counterexample: Take 12p =vv . Then 1{, . . . } pvv  is linearly dependent.  
+ d. False. Counterexample: Let 123{, , }ee e  be the standard basis for 3. Then 12{, }ee  is a linearly 
+independent set but is not a basis for 3.  
+ e . True. See the Spanning Set Theorem (Section 4.3).  
+ f . True. By the Basis Theorem, S is a basis for V because S spans V and has exactly p elements. So 
+S must be linearly independent.  
+ g. False. The plane must pass through the origin to be a subspace.  
+ h. False. Counterexample: 
+25 20
+00 73
+00 00
+−⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥⎣⎦
+.  
+----- pagina 72 -----
+268    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ i . True. This statement appears before Theorem 13 in Section 4.6.  
+ j . False. Row operations on A do not change the solutions of Ax = 0.  
+ k. False. Counterexample: 1236A ⎡⎤= ⎢⎥⎣⎦ ; A has two nonzero rows but the rank of A is 1.  
+ l . False. If U has k nonzero rows, then rank A = k and dimNul A = n – k by the Rank Theorem.  
+m. True. Row equivalent matrices have the same number of pivot columns.  
+ n. False. The nonzero rows of A span Row A but they may not be linearly independent.  
+ o. True. The nonzero rows of the reduced echelon form E form a basis for the row space of each 
+matrix that is row equivalent to E.  
+ p. True. If H is the zero subspace, let A be the 3 × 3 zero matrix. If dim H = 1, let {v} be a basis 
+for H and set []A = vvv . If dim H = 2, let {u,v} be a basis for H and set []A = uvv , 
+for example. If dim H = 3, then H = 3, so A can be any 3 × 3 invertible matrix. Or, let {u, v, 
+w} be a basis for H and set []A = uvw . 
+ q. False. Counterexample: 100010A ⎡⎤= ⎢⎥⎣⎦ . If rank A = n (the number of columns in A), then the 
+transformation x 6 Ax is one-to-one.  
+ r . True. If x 6 Ax is onto, then Col A = m and rank A = m. See Theorem 12(a) in Section 1.9.  
+ s . True. See the second paragraph after Theorem 15 in Section 4.7.  
+ t . False. The thj  column of 
+CB
+P
+←
+ is .j C⎡ ⎤⎣ ⎦b  
+ 2. The set is Span S, where 
+125
+258,, .147
+311
+S
+⎧⎫ −⎡⎤ ⎡⎤ ⎡⎤
+⎪⎪⎢⎥ ⎢⎥ ⎢⎥ −⎪⎪⎢⎥ ⎢⎥ ⎢⎥= ⎨⎬⎢⎥ ⎢⎥ ⎢⎥−−⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎪⎪⎢⎥ ⎢⎥ ⎢⎥⎣⎦ ⎣⎦ ⎣⎦⎩⎭  Note that S is a linearly dependent set, but each 
+pair of vectors in S forms a linearly independent set. Thus any two of the three vectors 
+1
+2 ,1
+3
+⎡⎤
+⎢⎥
+⎢⎥
+⎢⎥−
+⎢⎥⎢⎥⎣⎦
+ 
+2
+5 ,4
+1
+−⎡ ⎤
+⎢ ⎥
+⎢ ⎥
+⎢ ⎥−
+⎢ ⎥⎢ ⎥⎣ ⎦
+ 
+5
+8
+7
+1
+⎡⎤
+⎢⎥−⎢⎥
+⎢⎥
+⎢⎥⎢⎥⎣⎦
+ will be a basis for SpanS. 
+ 3. The vector b will be in 12Span{ , }W = uu  if and only if there exist constants 1c  and 2c  with 
+11 2 2 .cc +=uu b  Row reducing the augmented matrix gives  
+   
+11
+21 2
+31 2 3
+21 2 1
+42 0 4 2
+65 0 0 2
+bb
+bb b
+bb b b
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ ∼+⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥−− + +⎣⎦ ⎣ ⎦
+ 
+----- pagina 73 -----
+Chapter 4  Supplementary Exercises   269  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+  so 12Span{ , }W = uu  is the set of all 123(, , )bb b  satisfying 12 3 20 .bb b++ =  
+ 4. The vector g is not a scalar multiple of the vector f, and f is not a scalar multiple of g, so the set  
+{f, g} is linearly independent. Even though the number g(t) is a scalar multiple of f(t) for each t, the 
+scalar depends on t. 
+ 5. The vector 1p  is not zero, and 2p  is not a multiple of 1.p  However, 3p  is 1222 +pp , so 3p  is 
+discarded. The vector 4p  cannot be a linear combination of 1p  and 2p  since 4p  involves 2t  but 1p  
+and 2p  do not involve 2 .t  The vector 5p  is 12 4(3/ 2) (1/ 2)−+pp p  (which may not be so easy to see 
+at first.) Thus 5p  is a linear combination of 1,p  2 ,p  and 4 ,p  so 5p  is discarded. So the resulting 
+basis is 124{, , } .pp p  
+ 6. Find two polynomials from the set 14{, . . . , }pp  that are not multiples of one another. This is easy, 
+because one compares only two polynomials at a time. Since these two polynomials form a linearly 
+independent set in a two-dimensional space, they form a basis for H by the Basis Theorem.  
+ 7. You would have to know that the solution set of the homogeneous system is spanned by two 
+solutions. In this case, the null space of the 18 × 20 coefficient matrix A is at most two-dimensional. 
+By the Rank Theorem, dimCol A = 20 – dimNul A ≥ 20 – 2 = 18. Since Col A is a subspace of 18, 
+Col A = 18. Thus Ax = b has a solution for every b in 18. 
+ 8. If n = 0, then H and V are both the zero subspace, and H = V. If n > 0, then a basis for H consists of n 
+linearly independent vectors 1,..., . nuu  These vectors are also linearly independent as elements of V. 
+But since dimV = n, any set of n linearly independent vectors in V must be a basis for V by the Basis 
+Theorem. So 1,..., nuu  span V, and 1Span{ , ... , } .nHV== uu  
+ 9. Let T: n ⎯→ m be a linear transformation, and let A be the m × n standard matrix of T.  
+a. If T is one-to-one, then the columns of A are linearly independent by Theorem 12 in Section 1.9, 
+so dimNul A = 0. By the Rank Theorem, dimCol A = n – 0 = n, which is the number of columns 
+of A. As noted in Section 4.2, the range of T is Col A, so the dimension of the range of T is n.  
+b. If T maps n onto m, then the columns of A span m by Theoerm 12 in Section 1.9, so dimCol A 
+= m. By the Rank Theorem, dimNul A = n – m. As noted in Section 4.2, the kernel of T is Nul A, 
+so the dimension of the kernel of T is n – m. Note that n – m must be nonnegative in this case: 
+since A must have a pivot in each row, n ≥ m.  
+ 10. Let 1{, . . . , } .pS = vv  If S were linearly independent and not a basis for V, then S would not span V. 
+In this case, there would be a vector 1p+v  in V that is not in 1Span { ,..., }. pvv  Let 
+11{ ,..., , }. ppS +′ = vv v  Then S′  is linearly independent since none of the vectors in S′  is a linear 
+combination of vectors that precede it. Since S′  has more elements than S, this would contradict the 
+maximality of S. Hence S must be a basis for V. 
+ 11. If S is a finite spanning set for V, then a subset of S is a basis for V. Denote this subset of S by .S′  
+Since S′  is a basis for V, S′  must span V. Since S is a minimal spanning set, S′  cannot be a proper 
+subset of S. Thus S′ = S, and S is a basis for V. 
+----- pagina 74 -----
+270    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+ 12. a. Let y be in Col AB. Then y = ABx for some x. But ABx = A(Bx), so y = A(Bx), and y is in Col A.  
+Thus Col AB is a subspace of Col A, so rank AB = dimCol AB ≤ dimCol A = rank A by Theorem 
+11 in Section 4.5.  
+b. By the Rank Theorem and part a.:  
+   rank rank( ) rank rank rankTT TTAB AB B A B B==≤ =  
+ 13. By Exercise 12, rank PA ≤ rank A, and 11rank rank( ) rank ( ) rankAP P A P P AP A−−== ≤ , so  
+rank PA = rank A. 
+ 14. Note that () . TT TAQ Q A=  Since TQ  is invertible, we can use Exercise 13 to conclude that 
+rank( ) rank rank .TT T TAQ Q A A==  Since the ranks of a matrix and its transpose are equal (by the 
+Rank Theorem), rank AQ = rank A. 
+ 15. The equation AB = O shows that each column of B is in Nul A. Since Nul A is a subspace of n, all 
+linear combinations of the columns of B are in Nul A. That is, Col B is a subspace of Nul A. By 
+Theorem 11 in Section 4.5, rank B = dimCol B ≤ dimNul A. By this inequality and the Rank 
+Theorem applied to A,  
+   n = rank A + dimNul A ≥ rank A + rank B 
+ 16. Suppose that 1rank Ar=  and 2rank Br= . Then there are rank factorizations 11AC R=  and 22BC R=  
+of A and B, where 1C  is 1mr×  with rank 1r , 2C  is 2mr×  with rank 2r , 1R  is 1rn×  with rank 1r , and 
+2R  is 2rn×  with rank 2 .r  Create an 12()mrr×+  matrix [] 12CCC=  and an 12()rr n+×  matrix R 
+by stacking 1R  over 2.R  Then  
+   [] 111 2 2 1 2
+2
+RABC R C R C C C R R⎡⎤+= + = = ⎢⎥⎣⎦  
+  Since the matrix CR is a product, its rank cannot exceed the rank of either of its factors by Exercise 
+12. Since C has 12rr+  columns, the rank of C cannot exceed 12 .rr+  Likewise R has 12rr+  rows, so 
+the rank of R cannot exceed 12 .rr+  Thus the rank of A + B cannot exceed 12 rank rank ,rr A B+= +  
+or rank (A + B) ≤ rank A + rank B. 
+ 17. Let A be an m × n matrix with rank r.  
+(a) Let 1A  consist of the r pivot columns of A. The columns of 1A  are linearly independent, so 1A  
+is an m × r matrix with rank r.  
+(b) By the Rank Theorem applied to 1,A  the dimension of 1RowA  is r, so 1A  has r linearly 
+independent rows. Let 2A  consist of the r linearly independent rows of 1.A  Then 2A  is an r × r 
+matrix with linearly independent rows. By the Invertible Matrix Theorem, 2A  is invertible.  
+ 18. Let A be a 4 × 4 matrix and B be a 4 × 2 matrix, and let 03,...,uu  be a sequence of input vectors in 
+2.  
+a. Use the equation 1kk k AB+ =+xx u  for 0 ,...,4 ,k =  with 0 .=x0   
+   1000 ABB=+=xxuu  
+   21 1 01AB A B B=+= +xx u uu  
+----- pagina 75 -----
+Chapter 4  Supplementary Exercises   271  
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   2322 0 1 2 0 12 ()AB A A BB B A BA BB=+= + += + +xxu uu u u u u  
+   2433 0 12 3 ()A B AAB A B B B=+= + + +xx u u u u u  
+   32 01 2 3AB AB A B B=++ +uu u u  
+   
+3
+223
+1
+0
+BA BA BA B M
+⎡⎤
+⎢⎥
+⎢⎥⎡⎤==⎣⎦ ⎢⎥
+⎢⎥⎢⎥⎣⎦
+u
+u uu
+u
+ 
+  Note that M has 4 rows because B does, and that M has 8 columns because B and each of the 
+matrices kAB  have 2 columns. The vector u in the final equation is in 8, because each ku  is in 
+2. 
+b. If ( A, B) is controllable, then the controllability matrix has rank 4, with a pivot in each row, and 
+the columns of M span 4. Therefore, for any vector v in 4, there is a vector u in 8 such that  
+v = Mu. However, from part a. we know that 4 M=xu  when u is partitioned into a control 
+sequence 03,,…uu . This particular control sequence makes 4 .=xv  
+ 19. To determine if the matrix pair (A, B) is controllable, we compute the rank of the matrix 
+2 .BA BA B⎡⎤⎣⎦  To find the rank, we row reduce:  
+   2
+01 01 0 0
+1. 9 . 8 1 0 1 0 .
+1. 5 . 2 5 0 0 1
+BA BA B
+⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥⎡⎤ =− ∼⎣⎦ ⎢⎥ ⎢ ⎥
+⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  The rank of the matrix is 3, and the pair ( A, B) is controllable. 
+ 20. To determine if the matrix pair (A, B) is controllable, we compute the rank of the matrix 
+2 .BA BA B⎡⎤⎣⎦  To find the rank, we note that :  
+   2
+1. 5. 1 9
+1. 7. 4 5 .
+00 0
+BA BA B
+⎡⎤
+⎢⎥⎡⎤ =⎣⎦ ⎢⎥
+⎢⎥⎣⎦
+ 
+  The rank of the matrix must be less than 3, and the pair ( A, B) is not controllable. 
+ 21. [M] To determine if the matrix pair (A, B) is controllable, we compute the rank of the matrix 
+23 .BA BA BA B⎡⎤⎣⎦  To find the rank, we row reduce:  
+   23
+10 0 1 1 0 0 1
+0 0 1 1.6 0 1 0 1.6 .0 1 1.6 .96 0 0 1 1.6
+1 1.6 .96 .024 0 0 0 0
+BA BA BA B
+−−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −−⎢⎥ ⎢ ⎥⎡⎤ =∼⎣⎦ ⎢⎥ ⎢ ⎥ −− −
+⎢⎥ ⎢ ⎥−− −⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  The rank of the matrix is 3, and the pair ( A, B) is not controllable. 
+ 22. [M] To determine if the matrix pair (A, B) is controllable, we compute the rank of the matrix 
+23 .BA BA BA B⎡⎤⎣⎦  To find the rank, we row reduce:  
+----- pagina 76 -----
+272    CHAPTER 4  Vector Spaces 
+Copyright © 2012 Pearson Education, Inc. Publishing as Addison-Wesley. 
+   23
+10 0 1 1 0 0 0
+0 0 1 . 5 0100 .0 1 . 5 1 1 . 4 5 0010
+1 .5 11.45 10.275 0 0 0 1
+BA BA BA B
+−⎡⎤ ⎡ ⎤
+⎢⎥ ⎢ ⎥ −⎢⎥ ⎢ ⎥⎡⎤ =∼⎣⎦ ⎢⎥ ⎢ ⎥ −
+⎢⎥ ⎢ ⎥−−⎢⎥ ⎢ ⎥⎣⎦ ⎣ ⎦
+ 
+  The rank of the matrix is 4, and the pair ( A, B) is controllable. 

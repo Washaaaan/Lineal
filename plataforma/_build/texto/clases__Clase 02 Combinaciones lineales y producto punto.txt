@@ -1,0 +1,142 @@
+
+----- pagina 1 -----
+Clase 02 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 13
+----- pagina 2 -----
+Recordatorio
+Un vector en Rn es una n-tupla de números reales:
+v = ⟨v1, v2, . . . ,vn⟩.
+Si
+u = ⟨u1, . . . ,un⟩, v = ⟨v1, . . . ,vn⟩,
+la suma se define por componentes:
+u + v = ⟨u1 + v1, . . . , un + vn⟩.
+Si c ∈ R y
+v = ⟨v1, . . . ,vn⟩,
+entonces
+cv = ⟨cv1, . . . ,cvn⟩.
+2 / 13
+----- pagina 3 -----
+Geometría y álgebra de vectores
+Combinaciones lineales
+Un vector v es combinación lineal de u1, . . . ,uk si existen escalares
+c1, . . . ,ck tales que
+v = c1u1 + · · · + ckuk.
+Ejemplo: Considere los vectores v = ⟨2, 3, 0⟩ y u = ⟨−3, 1, 0⟩.
+Encuentre una combinación lineal de v y u.
+¿Es ⟨5, −3, 2⟩ combinación lineal de v y u?
+3 / 13
+----- pagina 4 -----
+Geometría y álgebra de vectores
+Conjunto generado
+Dado un conjunto de vectores S = {u1, . . . ,uk}, el conjunto generado por
+S es
+Gen(S) = {c1u1 + · · · + ckuk | c1, . . . ,ck ∈ R}.
+Es el conjunto de todas las combinaciones lineales de los vectores de S.
+Ejemplo: ¿A qué corresponde el conjunto generado por un solo vector?,
+¿y por dos vectores?
+4 / 13
+----- pagina 5 -----
+Geometría y álgebra de vectores
+Ejemplo: Determine si el vector ⟨3, 1⟩ pertenece al conjunto generado por
+{⟨1, 0⟩, ⟨1, 2⟩}.
+5 / 13
+----- pagina 6 -----
+Producto punto, norma y ortogonalidad
+Definición (Producto punto)
+Sea
+u = ⟨u1, . . . ,un⟩, v = ⟨v1, . . . ,vn⟩.
+El producto punto se define por
+u · v = u1v1 + · · · + unvn.
+Observaciones
+El producto punto sólo está definido si ambos vectores tienen la
+misma dimensión.
+El resultado es un número (producto escalar), no un vector.
+6 / 13
+----- pagina 7 -----
+Producto punto, norma y ortogonalidad
+Ejemplo: Calcule u · v cuando
+u = ⟨1, 2, 3⟩, v = ⟨−3, 5, 2⟩.
+7 / 13
+----- pagina 8 -----
+Producto punto, norma y ortogonalidad
+Propiedades del producto punto
+Para vectores u, v, w ∈ Rn y c ∈ R:
+(Conmutatividad) u · v = v · u
+(Distributividad) u · (v + w) = u · v + u · w
+c(u · v) = ( cu) · v = u · (cv)
+u · u ≥ 0, y u · u = 0 si y sólo si u = 0
+8 / 13
+----- pagina 9 -----
+Producto punto, norma y ortogonalidad
+Definición (Norma o longitud)
+La longitud de un vector v ∈ Rn se define como:
+∥v∥ = √v · v = √v21 + · · · + v2n.
+Propiedades
+∥v∥ = 0 si y sólo si v = 0
+∥cv∥ = |c| ∥v∥
+9 / 13
+----- pagina 10 -----
+Producto punto, norma y ortogonalidad
+Ejemplo: Normalice el vector
+v = ⟨2, −1, 3⟩ .
+Observación: En este contexto, normalizar significa encontrar un vector de
+longitud 1 que apunte en la misma dirección que v.
+10 / 13
+----- pagina 11 -----
+Producto punto, norma y ortogonalidad
+Vectores unitarios
+Un vector es unitario si ∥u∥ = 1. Todo vector distinto de cero tiene un
+vector unitario en su misma dirección:
+u = 1∥v∥ v.
+11 / 13
+----- pagina 12 -----
+Producto punto, norma y ortogonalidad
+Ejemplo: En R2, los vectores
+e1 =
+[1
+0
+]
+y e2 =
+[0
+1
+]
+son unitarios.
+Ejemplo: En R3, los vectores
+e1 =
+
+
+1
+0
+0
+
+ , e2 =
+
+
+0
+1
+0
+
+ y e3 =
+
+
+0
+0
+1
+
+
+son unitarios.
+Estos vectores e1, e2, . . . ,en son llamados vectores unitarios estándar
+12 / 13
+----- pagina 13 -----
+Producto punto, norma y ortogonalidad
+Definición (Distancia)
+La distancia entre dos vectores es
+d(u, v) = ∥u − v∥.
+Ejemplo: Encuentre la distancia entre
+u = ⟨2, 1, −1⟩, v = ⟨0, 2, −2⟩.
+13 / 13

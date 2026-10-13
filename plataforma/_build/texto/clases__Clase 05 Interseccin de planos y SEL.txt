@@ -1,0 +1,122 @@
+
+----- pagina 1 -----
+Clase 05 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Rcordatorio
+Un vector en Rn es una n-tupla de números reales:
+v =
+
+
+v1
+v2
+...
+vn
+
+ .
+El producto punto entre u =
+
+
+u1
+...
+un
+
+ y v =
+
+
+v1
+...
+vn
+
+ define por
+u · v = u1v1 + · · · + unvn.
+La ecuación vectorial de una recta en Rn es x = p + td.
+Una ecuación lineal corresponde a una recta en R2, o a un plano en
+R3.
+2 / 11
+----- pagina 3 -----
+Intersección de planos y SEL
+Si una ecuación lineal en R3 corresponde a un plano, un Sistema de
+Ecuaciones Lineales (SEL) corresponde a intersectar planos .
+3 / 11
+----- pagina 4 -----
+Intersección de planos y SEL
+Ejemplo: Queremos describir la intersección de los planos:
+{
+3x − 2y + z = 1,
+x + y − 3z = 2.
+Cada ecuación representa un plano en R3. Su intersección corresponde a
+los puntos (x, y, z) que satisfacen ambas ecuaciones.
+4 / 11
+----- pagina 5 -----
+Intersección de planos y SEL
+Ejemplo: Interprete en GeoGebra 3D la intersección de:
+{
+3x − 2y + z = 1,
+x + y − 3z = 2.
+Observe:
+La línea donde ambos planos se cortan.
+Los vectores normales y su papel en la geometría.
+Resuelva el sistema de ecuaciones
+5 / 11
+----- pagina 6 -----
+Intersección de planos y SEL
+¿Qué ocurre con los planos y su intersección al resolver el sistema de
+ecuaciones?
+Relación entre álgebra y geometría
+Resolver el SEL mediante eliminación produce ecuaciones equivalentes
+que:
+no modifican la intersección geométrica;
+pueden cambiar cada plano, pero no su recta común;
+revelan la recta de soluciones en forma paramétrica.
+6 / 11
+----- pagina 7 -----
+Intersección de planos y SEL
+Ecuaciones y planos
+Multiplicar una ecuación por un escalar: no modifica el plano.
+Reemplazar una ecuación por combinación lineal de otras: cambia la
+ecuación del plano, pero no la recta de intersección.
+7 / 11
+----- pagina 8 -----
+Intersección de planos y SEL
+Posición relativa de dos planos
+En R3, dos planos pueden:
+cortarse en una recta (1 solución libre → infinitas soluciones),
+ser paralelos y distintos (no hay soluciones),
+coincidir (infinitas soluciones: todo un plano).
+8 / 11
+----- pagina 9 -----
+Intersección de planos y SEL
+Posición relativa de tres planos
+Tres planos pueden:
+cortarse en un único punto (una única solución),
+tener recta de intersección común (infinitas soluciones),
+ser paralelos dos a dos (sin solución),
+ser paralelos entre sí (sin solución),
+formar un prisma sin punto común (sin solución).
+9 / 11
+----- pagina 10 -----
+Intersección de planos y SEL
+Posición relativa de tres planos
+Tres planos pueden:
+cortarse en un único punto (una única solución),
+tener recta de intersección común (infinitas soluciones),
+ser paralelos cada par (sin solución),
+ser 2 de ellos paralelos (sin solución),
+formar un prisma sin punto común (sin solución).
+10 / 11
+----- pagina 11 -----
+Intersección de planos y SEL
+Preguntas de reflexión
+¿Qué significa que en la ecuación de un plano no aparezca la variable
+x?
+¿Qué ocurre si se elimina y o z en el proceso de eliminación?
+¿Cómo se obtiene la ecuación paramétrica de la recta de intersección?
+¿Es posible que dos planos tengan exactamente dos soluciones? ¿Por
+qué?
+11 / 11

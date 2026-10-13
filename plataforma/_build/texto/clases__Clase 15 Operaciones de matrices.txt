@@ -1,0 +1,238 @@
+
+----- pagina 1 -----
+Clase 15 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 17
+----- pagina 2 -----
+Recordatorio
+Definición (Matriz)
+Una matriz es un arreglo rectangular de números reales,
+A = [aij]
+con m filas (horizontales) y n columnas (verticales).
+Se dice que el tamaño de A es m × n, y se escribe A ∈ Mm×n(R).
+En esta unidad trabajaremos con álgebra de matrices.
+2 / 17
+----- pagina 3 -----
+Operaciones de matrices
+Definiciones
+Las entradas diagonales en una matriz A = [aij] de m × n son
+a11, a22, a33, . . ., y forman la diagonal principal de A.
+Una matriz diagonal es una matriz cuadrada de n × n cuyas entradas
+no diagonales son cero.
+La matriz identidad de n × n, In, es la matriz diagonal de n × n con
+1 en todas sus entradas diagonales.
+Una matriz de m × n cuyas entradas son todas cero es una matriz
+cero o matriz nula y se escribe como 0.
+Una matriz de m × n que todas las entradas bajo su diagonal
+principal son cero, se llama matriz triangular superior .
+Una matriz de m × n que todas las entradas sobre su diagonal
+principal son cero, se llama matriz triangular inferior .
+3 / 17
+----- pagina 4 -----
+Operaciones de matrices
+Definición: Suma
+Si A y B son matrices de m × n, entonces la suma A + B se obtiene
+sumando las entradas en la misma posición.
+La suma A + B está definida solo cuando A y B son del mismo tamaño.
+Ejemplo: Sean
+A =
+[ 4 0 5
+−1 3 2
+]
+, B =
+[ 1 1 1
+3 5 7
+]
+, C =
+[ 2 −3
+0 1
+]
+Calcule A + B y A + C (si están definidas).
+4 / 17
+----- pagina 5 -----
+Operaciones de matrices
+Definición: Múltiplo escalar
+Si r es un escalar y A es una matriz, entonces el múltiplo escalar rA es la
+matriz que se obtiene multiplicando cada entrada de A por r.
+Al igual que sucede con los vectores, −A significa (−1)A, y A − B es igual
+que A + (−1)B.
+Ejemplo: Si A y B son las matrices del ejemplo anterior:
+A =
+[ 4 0 5
+−1 3 2
+]
+, B =
+[ 1 1 1
+3 5 7
+]
+Calcule 2 B y A − 2B.
+5 / 17
+----- pagina 6 -----
+Operaciones de matrices
+Propiedades de la suma y multiplicación por escalar
+Sean A, B y C matrices del mismo tamaño, y sean r y s escalares.
+A + B = B + A
+(A + B) + C = A + (B + C)
+A + 0 = A
+A + (−A) = 0
+r(A + B) = rA + rB
+(r + s)A = rA + sA
+r(sA) = ( rs)A
+1 · A = A
+6 / 17
+----- pagina 7 -----
+Operaciones de matrices
+¿Cómo definir la multiplicación de matrices? Idea: Buscamos que
+A(Bx) = ( AB)x
+7 / 17
+----- pagina 8 -----
+Operaciones de matrices
+Definición: Multiplicación de matrices
+Si A es una matriz de m × n, y si B es una matriz de n × p con columnas
+b1, . . . ,bp, entonces el producto AB es la matriz de m × p cuyas columnas
+son Ab1, . . . ,Abp. Es decir:
+AB = A
+[
+b1 b2 . . . bp
+]
+=
+[
+Ab1 Ab2 . . . Abp
+]
+8 / 17
+----- pagina 9 -----
+Operaciones de matrices
+Ejemplo: Calcule AB, donde:
+A =
+[ 2 3
+1 −5
+]
+y B =
+[ 4 3 6
+1 −2 3
+]
+Ejemplo: Si A es una matriz de 3 × 5 y B una matriz de 5 × 2, ¿cuáles
+son los tamaños de AB y de BA, si tales productos están definidos?
+9 / 17
+----- pagina 10 -----
+Operaciones de matrices
+Regla fila-columna para calcular AB
+Si el producto AB está definido, entonces la entrada en la fila i y la
+columna j de AB es el producto punto entre la fila i de A y la
+columna j de B
+Ejemplo: Use la regla fila-columna para calcular dos de las entradas de
+AB para las matrices del ejemplo anterior:
+A =
+[ 2 3
+1 −5
+]
+y B =
+[ 4 3 6
+1 −2 3
+]
+Específicamente, calcule la entrada (1, 3) y la entrada (2, 2).
+10 / 17
+----- pagina 11 -----
+Operaciones de matrices
+Ejemplo: Encuentre las entradas de la segunda fila de AB, donde:
+A =
+
+
+2 −5 0
+−1 3 −4
+6 −8 −7
+−3 0 9
+
+ , B =
+
+
+4 −6
+7 1
+3 2
+
+
+11 / 17
+----- pagina 12 -----
+Operaciones de matrices
+Propiedades de la multiplicación
+Sea A una matriz de m × n, y sean B y C matrices con tamaños para los
+que las sumas y los productos indicados están definidos.
+A(BC) = ( AB)C (ley asociativa de la multiplicación)
+A(B + C) = AB + AC (ley distributiva izquierda)
+(B + C)A = BA + CA (ley distributiva derecha)
+r(AB) = ( rA)B = A(rB) para cualquier escalar r
+InA = A = AIn (identidad para la multiplicación)
+12 / 17
+----- pagina 13 -----
+Operaciones de matrices
+El orden de izquierda a derecha en productos es importante porque, en
+general, AB y BA no son iguales.
+Ejemplo: Sea
+A =
+[ 5 1
+3 −2
+]
+y B =
+[ 2 0
+4 3
+]
+Muestre que estas matrices no conmutan. Es decir, compruebe que
+AB ̸= BA.
+13 / 17
+----- pagina 14 -----
+Operaciones de matrices
+Advertencias
+En general, AB ̸= BA.
+Las leyes de la cancelación no se aplican en la multiplicación de
+matrices. Es decir, si AB = AC, en general no es cierto que B = C.
+Si un producto AB es la matriz cero, en general, no se puede concluir
+que A = 0 o B = 0.
+14 / 17
+----- pagina 15 -----
+Operaciones de matrices
+Si A es una matriz de n × n y k es un entero positivo, entonces Ak denota
+el producto de k copias de A:
+Ak = A . . . A| {z }
+k
+A0 se interpreta como la matriz identidad.
+Definición: Transpuesta
+Dada una matriz A de m × n, la transpuesta de A es la matriz de n × m,
+que se denota con AT, cuyas columnas se forman a partir de las filas
+correspondientes de A.
+15 / 17
+----- pagina 16 -----
+Operaciones de matrices
+Ejemplo: Sean
+A =
+[ a b
+c d
+]
+, B =
+
+
+−5 2
+1 −3
+0 4
+
+ , C =
+[ 1 1 1 1
+−3 5 −2 7
+]
+Encuentre AT, BT y CT.
+16 / 17
+----- pagina 17 -----
+Operaciones de matrices
+Propiedades de la transpuesta
+Sean A y B matrices cuyos tamaños son adecuados para las siguientes
+sumas y productos.
+(AT)T = A
+(A + B)T = AT + BT
+Para cualquier escalar r, (rA)T = rAT
+(AB)T = BTAT
+Nota: La transpuesta de un producto de matrices es igual al producto de
+sus transpuestas en orden inverso .
+17 / 17

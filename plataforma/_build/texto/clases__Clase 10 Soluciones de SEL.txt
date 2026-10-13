@@ -1,0 +1,155 @@
+
+----- pagina 1 -----
+Clase 10 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Dado un SEL, podemos tomar la matriz de coeficientes A, el
+vector de resultados b y la matriz ampliada
+[
+A b
+]
+Usando operaciones de fila, podemos llegar a la forma escalonada
+(reducida).
+¿Cómo esta forma nos permite describir las soluciones de un sistema?
+2 / 11
+----- pagina 3 -----
+Soluciones de sistemas y variables libres
+Ejemplo: Resuelva el sistema
+
+
+
+x − 2y + z = 0
+2y − 8z = 8
+−4x + 5y + 9z = −9
+Nota: La matriz
+
+
+1 −2 1 0
+0 2 −8 8
+−4 5 9 −9
+
+ es equivalente por filas a
+
+
+1 0 0 29
+0 1 0 16
+0 0 1 3
+
+
+3 / 11
+----- pagina 4 -----
+Soluciones de sistemas y variables libres
+Ejemplo: Suponga que la matriz aumentada de un sistema se redujo a
+
+
+1 0 −5 1
+0 1 1 4
+0 0 0 0
+
+ .
+Describa la solución del sistema. ¿Qué representa geométricamente?
+4 / 11
+----- pagina 5 -----
+Soluciones de sistemas y variables libres
+En el ejemplo anterior, quedó una variable libre .
+Variables básicas y variables libres
+Variables básicas: Variables cuyas columnas son pivote.
+Variable libre: Variable cuya columna no es pivote. Funcionan como
+parámetros, su valor puede elegirse arbitrariamente, y determina todas las
+demás variables.
+5 / 11
+----- pagina 6 -----
+Soluciones de sistemas y variables libres
+Ejemplo: La matriz aumentada de un sistema se redujo a
+
+
+1 6 2 −5 −2 −4
+0 0 2 −8 −1 3
+0 0 0 0 1 7
+
+ .
+Describa la solución del sistema
+Nota: La matriz ampliada es equivalente a:
+
+
+1 6 0 3 0 0
+0 0 1 −4 0 5
+0 0 0 0 1 7
+
+ .
+6 / 11
+----- pagina 7 -----
+Soluciones de sistemas y variables libres
+Ejemplo: Determine si el sistema
+
+
+
+3x2 − 6x3 + 6x4 + 4x5 = −5
+3x1 − 7x2 + 8x3 − 5x4 + 8x5 = 9
+3x1 − 9x2 + 12x3 − 9x4 + 6x5 = 15
+tiene solución y cuántas.
+Nota: La matriz ampliada es equivalente a:
+
+
+3 9 12 9 6 15
+0 2 4 4 2 6
+0 0 0 0 1 4
+
+ .
+7 / 11
+----- pagina 8 -----
+Soluciones de sistemas y variables libres
+Ejemplo: Determine si el sistema
+
+
+
+x2 − 4x3 = 8
+2x1 − 3x2 + 2x3 = 1
+5x1 − 8x2 + 7x3 = 1
+tiene solución y cuántas.
+Nota: La matriz ampliada es equivalente a:
+
+
+2 −3 3 1
+0 1 −4 8
+0 0 0 5/2
+
+ .
+8 / 11
+----- pagina 9 -----
+Soluciones de sistemas y variables libres
+Criterio de consistencia
+Un sistema lineal es consistente si y solo si una forma escalonada de la
+matriz aumentada NO contiene una fila del tipo
+[ 0 · · · 0 | b ] , b ̸= 0.
+Número de soluciones
+Si el sistema es consistente, entonces tiene:
+única solución si no hay variables libres,
+infinitas soluciones si hay al menos una variable libre.
+9 / 11
+----- pagina 10 -----
+Soluciones de sistemas y variables libres
+FE de [A | b]
+¿Existe fila [0 · · · 0 | b], b ̸= 0?
+Sí: (inconsistente) No: (consistente)
+0 soluciones ¿Hay variables libres?
+Sí: infinitas soluciones No: solución única
+10 / 11
+----- pagina 11 -----
+Soluciones de sistemas y variables libres
+Ejemplo: Determine para qué valores de a ∈ R, el siguiente sistema tiene
+solución única, ninguna solución o infinitas soluciones:
+
+
+
+ax + y + z = 1
+x + ay + z = 1
+x + y + az = 1
+x + y + z = a
+11 / 11

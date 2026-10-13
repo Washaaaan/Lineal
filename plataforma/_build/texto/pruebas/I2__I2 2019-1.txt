@@ -1,0 +1,541 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Primer Semestre 2019
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 2
+1. Sea A una matriz invertible tal que una descomposici´ on en matrices elementales de A−1 es
+A−1 =
+
+
+1 0 0
+0 1 1
+0 0 1
+
+
+
+
+1 0 0
+0 −2 0
+0 0 1
+
+
+
+
+1 0 0
+−2 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+Sin calcular A ni A−1.
+a) [4 ptos] Encuentre una factorizaci´ onP A = LU .
+b) [2 ptos] Usando la factorizaci´ on anterior, resuelva el sistema
+Ax =
+
+
+1
+0
+1
+
+ .
+Soluci´ on.
+a) De la descomposici´ on deA−1, haciendo A = (A−1)−1, tenemos que
+A =
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+
+
+1 0 0
+2 1 0
+0 0 1
+
+
+
+
+1 0 0
+0 −1/2 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 −1
+0 0 1
+
+
+entonces,
+
+
+1 0 0
+0 0 1
+0 1 0
+
+
+| {z }
+P
+A =
+
+
+1 0 0
+2 1 0
+0 0 1
+
+
+| {z }
+L
+
+
+1 0 0
+0 −1/2 0
+0 0 1
+
+
+
+
+1 0 0
+0 1 −1
+0 0 1
+
+
+| {z }
+U
+U =
+
+
+1 0 0
+0 −1/2 1 /2
+0 0 1
+
+.b) El sistema Ax =
+
+
+1
+0
+1
+
+ es equivalente al sistema
+P Ax = L(U x) =
+
+
+1
+1
+0
+
+
+si denotamos por y = U x, entonces debemos resolver el sistema Ly =
+
+
+1
+1
+0
+
+ cuya soluci´ on
+es y =
+
+
+1
+−1
+0
+
+ luego, para resolver el sistema inicial debemos resolver U x =
+
+
+1
+−1
+0
+
+
+cuya soluci´ on esx =
+
+
+1
+2
+0
+
+.
+Puntaje:
+0.25 ptos por determinar cada inversa de las matrices elementales (1 pto).
+1 pto por determinar correctamente P .
+1 pto por determinar correctamente L.
+1 pto por determinar correctamente U .
+0.5 por plantear la equivalencia P Ax = L(U x) =
+
+
+1
+1
+0
+
+.
+0.5 por encontrar correctamente y.
+1 pto por encontrar correctamente x.2. Sea A una matriz de 3 × 3 con determinante 2 y sean B, C dos matrices de 3 × 3 tales que:
+B es la matriz que se obtiene al realizar la siguiente operaci´ on en A: A la ﬁla dos se le
+resta la ﬁla tres.
+C es la matriz que se obtiene al realizar la siguiente operaci´ on en A: Se intercambia la ﬁla
+dos por la ﬁla tres.
+Calcular el determinante de
+(
+3AT B−1C 3).
+Soluci´ on.
+Al realizar la operaci´ on elemental de restar a la ﬁla dos se le resta la ﬁla 3, el determinante de
+A no cambia, es decir
+det(B) = det( A) = 2 .
+Al realizar la operaci´ on elemental de intercambio de ﬁlas, el determinante de A cambia el signo,
+es decir
+det(C) = − det(A) = −2.
+Luego, usando propiedades del determinante tenemos
+det(3AT B−1C 3) = det(3 AT ) · det(B−1) · det(C 3)
+= 3 3 · det(AT ) · 1det(B) · [det(C)]3
+= 3 3 · det(A) · 1det(B) · [det(C)]3
+= 3 3 · 2 · 12 · (−2)3 = −63.
+Puntaje:
+1 pto por determinar det( B).
+1 pto por determinar det( C).
+0.5 pto por ocupar que det( A · B) = det( A) · det(B).
+1 pto por ocupar que si A ∈ Mn×n y t ∈ R entonces det( tA) = tn(A).
+1 pto por ocupar que det(A−1) = 1det(A) .
+1 pto por ocupar que det(At) = det( A).
+0.5 por llegar al resultado correcto.3. Sea
+A =
+
+
+α 2 1
+2α α + 5 4
+α 2 α
+
+
+a) Aplicando el desarrollo por cofactores, calcule el determinante de A.
+b) Determine todos los valores de α ∈ R para los que la matriz A es invertible.
+Soluci´ on.
+a) Observe que
+|A| = α
+ α + 5 42 α  − 2  2α 4α α  +  2α α + 5α 2  = α3 − α
+b) La matriz A es invertible si y s´ olo si|A| ̸= 0, por lo tanto, del inciso anterior tenemos que
+A es invertible si y s´ olo si α3 − α = α(α2 − 1) ̸= 0 y esto ocurre si y s´ olo si
+α ̸= 0, α ̸= 1 y α ̸= −1
+Puntaje:
+1 pto por aplicar correctamente el desarrollo en cofactores.
+2 ptos por determinar correctamente el determinante.
+1.5 ptos por argumentar que la matriz A es invertible si y s´ olo si |A| ̸= 0.
+0.5 ptos por encontrar cada valor que no debe tomar α.(1.5 ptos)4. Sean S el paralelep ´ ıpedo que tiene un v´ ertice en el origen y v´ ertices adyacentes en
+(1, 0, 2), (−1, 2, 4), (−1, 1, 0), y T (x1, x2, x3) = ( αx1 + x2, x1 + x2, x1 + x2 + x3) una transfor-
+maci´ on lineal. Encuentre el o los valor(es) deα tal que el volumen del paralelep ´ ıpedoT (S) sea 4.
+Soluci´ on.
+El volumen de T (S) esta dado por el valor absoltuto del producto entre, el determinante de la
+matriz de transformacion de T y el determinante de la matriz cuyas columnas son los vectores
+que forman el paralep ´ ıpedoS. Es decir
+det  1 −1 −10 2 12 4 0  · det  α 1 01 1 01 1 1  = |−2 · (α − 1)| = 4 ↔ α = −1 ∧ α = 3
+Puntaje:
+2 pto por ocupar que el volumen de T (S) esta dado por el valor absoltuto del producto,
+del determinante de la matriz de transformacion de T y el determinante de la matriz cuyas
+columnas son los vectores que forman el paralep ´ ıpedo S
+1 ptos por encontrar correctamente la matriz de transformaci´ on de T
+0.5 ptos por encontrar correctamente cada determinante.(1 pto)
+1 pto por concluir cada valor que debe tomar α. (2 ptos)
+Contin´ ua en la siguiente p´ agina.5. Utilizando el m´ etodo de Cramer determine la tercera columna de la inversa deA =
+
+
+3 1 2 −1
+0 2 0 1
+0 −2 1 1
+0 3 0 5
+
+.
+Soluci´ on.
+Para determinar la tercera columna de la inversa de A, se debe resolver el sistema matricial
+Ax = e3. Como el det
+
+
+3 1 2 −1
+0 2 0 1
+0 −2 1 1
+0 3 0 5
+
+ = 21 ̸= 0, este sistema tiene soluci´ on ´ unica. Luego
+aplicando la regla de cramer el vector
+
+
+x
+y
+z
+t
+
+ es soluci´ on de este sistema y sus componentes
+son:
+x =
+det
+
+
+0 1 2 −1
+0 2 0 1
+1 −2 1 1
+0 3 0 5
+
+
+det
+
+
+3 1 2 −1
+0 2 0 1
+0 −2 1 1
+0 3 0 5
+
+
+= −1421 = −23
+y =
+det
+
+
+3 0 2 −1
+0 0 0 1
+0 1 1 1
+0 0 0 5
+
+
+det
+
+
+3 1 2 −1
+0 2 0 1
+0 −2 1 1
+0 3 0 5
+
+
+= 0
+z =
+det
+
+
+3 1 0 −1
+0 2 0 1
+0 −2 1 1
+0 3 0 5
+
+
+det
+
+
+3 1 2 −1
+0 2 0 1
+0 −2 1 1
+0 3 0 5
+
+
+= 2121 = 1
+t =
+det
+
+
+3 1 2 0
+0 2 0 0
+0 −2 1 1
+0 3 0 0
+
+
+det
+
+
+3 1 2 −1
+0 2 0 1
+0 −2 1 1
+0 3 0 5
+
+
+= 0luego la tercera columna de la inversa de A es
+
+
+−2
+3
+0
+1
+0
+
+
+Puntaje:
+1 pto por por mostrar el sistema matricial que resuelve el problema.
+1 pto por enunciar que la soluci´ on de cada componente esta dada por det(Ai(e3))det(A) .
+1 pto por calcular correctamante cada componente del vector.(4 puntos)6. Dada la transformaci´ on linealT : R3 − →R4 deﬁnida por T
+
+
+x1
+x2
+x3
+
+ =
+
+
+x1 + x2 + 2x3
+x2 + x3
+x1 + x3
+x1 − x2
+
+.
+Encuentre el espacio nulo de esta transformaci´ on y determine si T es inyectiva.
+Soluci´ on.
+Para determinar el respectivo espacio nulo debemos resolver, T
+
+
+x1
+x2
+x3
+
+ =
+
+
+0
+0
+0
+0
+
+, es decir,
+resolver el sistema homog´ eneo
+x1 + x2 + 2x3 = 0
+x2 + x3 = 0
+x1 + x3 = 0
+x1 − x2 = 0
+Cuya soluci´ on se puede escribir como x = −z, y = −z o bien
+Si
+
+
+x
+y
+z
+
+ ∈ N ul(T ) entonces
+
+
+x
+y
+z
+
+ = z
+
+
+−1
+−1
+1
+
+ , z ∈ R.
+De donde se tiene que
+N ul(T ) = Gen
+
+
+
+
+
+−1
+−1
+1
+
+
+
+
+ .
+En particular la transformaci´ onT es no inyectiva, ya que N ul(T ) ̸= {0}.
+Puntaje:
+1 pto por argumentar que el espacio nulo consta de los vectores tal que T
+
+
+x
+y
+z
+
+ =
+
+
+0
+0
+0
+0
+
+.
+1 pto por argumentar que el espacio nulo consta de los vectores que satisfacen el sistema
+homog´ eneo.
+2 ptos por mostrar el espacio nulo correctamente. (se descuenta un punto 1 punto por
+error)
+2 ptos por concluir que la transformaci´ on no es inyectiva.(sino justiﬁca no se le asigna
+puntaje).7. Sea P3(R) el espacio de los polinomios de grado inferior o igual a 3 y
+E = {P ∈ P3(R) | P (−1) = 0 y P (1) = 0 }.
+Demuestre que E es un subespacio vectorial de P3(R).
+Soluci´ on.
+Una forma de demostrarlo:
+• El polinomio nulo Θ satisface Θ( −1) = Θ(1) = 0. Entonces Θ ∈ E.
+• Sean P1 y P2 dos polinomios de E y sea λ1 ∈ R . Entonces
+(λ1P1 + P2)(−1) = λ1P1(−1) + P2(−1) = λ1 · 0 + 0 = 0 ,
+porque P1(−1) = 0 y P2(−1) = 0, y tambi´ en
+(λ1P1 + P2)(1) = λ1P1(1) + P2(1) = λ1 · 0 + 0 = 0 ,
+porque P1(1) = 0 y P2(1) = 0. Entonces λ1P1 + λ2P2 ∈ E , por lo cual E es un
+subespacio vectorial de P3(R).
+Puntaje:
+• 2 ptos por enunciar que propiedades debe cumplir para ser subespacio.
+• 1 ptos por demostrar la primera propiedad.
+• 3 ptos por demostrar la segunda propiedad.
+Otra forma de demostrarlo:
+E ={P ∈ P3(R) | P (−1) = 0 y P (1) = 0 }
+E ={a3x3 + a2x2 + a1x + a0 | − a3 + a2 − a1 + a0 = 0 ∧ a3 + a2 + a1 + a0 = 0}
+E ={a3x3 + a2x2 + a1x + a0 | a3 = −a1 ∧ a2 = −a0}
+E ={−a1x3 − a0x2 + a1x + a0}
+E ={a1(−x3 + x) + a0(−x2 + 1)}
+E = Gen{(−x3 + x), (−x2 + 1)}
+entonces E es un espacio generado por elementos de P3(R), por lo cual es un subespacio
+vectorial de P3(R).
+Puntaje:
+2 ptos por encontra cada vector que genera a E.(4 puntos)
+2 ptos por argumentar que los conjuntos generados son subespacios.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. Justiﬁque sus respuestas.
+a) Si T : M2×2 − →R es la transformaci´ on deﬁnida por T (A) = det(A) entonces T es una
+transformaci´ on lineal.
+b) Si A es una matriz de 3 × 3 tal que A = −At entonces det(A) = 0.
+c) Si A =
+( 1 −1
+1 −1
+)
+entonces Col(A) = N ul(A).
+Soluci´ on.
+a) Falsa .
+El det(A + B) no siempre es igual al det(A) + det(B) o det(cA) = c2det(A)
+b) Verdadera
+det(A) = det(−At) ↔ det(A) = −det(A) ↔ det(A) = 0
+c) Verdadera
+Col(A) = Gen
+{( 1
+1
+)
+,
+( −1
+−1
+)}
+= Gen
+{( 1
+1
+)}
+y
+N ul(A) =
+{( x
+t
+)
+| A
+( x
+y
+)
+=
+( 0
+0
+)}
+= Gen
+{( 1
+1
+)}
+Puntaje:
+2 ptos por argumentar cada alternativa correctamente.

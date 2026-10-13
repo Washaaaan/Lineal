@@ -1,0 +1,132 @@
+
+----- pagina 1 -----
+Clase 03 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 13
+----- pagina 2 -----
+Recordatorio
+Un vector en Rn es una n-tupla de números reales:
+v =
+
+
+v1
+v2
+...
+vn
+
+ .
+El producto punto entre u =
+
+
+u1
+...
+un
+
+ y v =
+
+
+v1
+...
+vn
+
+ define por
+u · v = u1v1 + · · · + unvn.
+2 / 13
+----- pagina 3 -----
+Producto punto, norma y ortogonalidad
+Desigualdad de Cauchy-Schwarz
+Para vectores u, v en Rn,
+|u · v| ≤ ∥ u∥∥v∥.
+Ángulo entre vectores
+Para vectores no nulos,
+cos θ = u · v∥u∥∥v∥ .
+3 / 13
+----- pagina 4 -----
+Producto punto, norma y ortogonalidad
+Ejemplo: Calcule el ángulo entre
+u = ⟨1, 0, 1⟩, v = ⟨0, 1, 1⟩.
+4 / 13
+----- pagina 5 -----
+Producto punto, norma y ortogonalidad
+Definición (Ortogonalidad)
+Dos vectores u y v son ortogonales si
+u · v = 0.
+Ejemplo: Verifique si
+u = ⟨1, 1, −2⟩, v = ⟨3, 1, 2⟩
+son ortogonales.
+5 / 13
+----- pagina 6 -----
+Producto punto, norma y ortogonalidad
+Teorema (Pitágoras)
+Si u · v = 0, entonces
+∥u + v∥2 = ∥u∥2 + ∥v∥2.
+Ejemplo: Demuestre el teorema de Pitágoras.
+6 / 13
+----- pagina 7 -----
+Rectas en el espacio
+En R2, la forma general de la ecuación de una recta es:
+ax + by = c.
+Si b ̸= 0, puede escribirse como y = mx + k.
+¿Qué pasa con rectas en el espacio?. Trabajaremos con otras formas de
+escribir una recta.
+7 / 13
+----- pagina 8 -----
+Rectas en el espacio
+Ecuación normal normal
+Si n = ⟨a, b⟩, entonces la ecuación:
+n · x = 0
+corresponde a una recta que pasa por el origen. El vector n es
+perpendicular a la recta, y se llama vector normal .
+8 / 13
+----- pagina 9 -----
+Rectas en el espacio
+Ejemplo: Encuentre un vector normal a la recta 2 x − y = 0 y encuentre su
+ecuación normal.
+9 / 13
+----- pagina 10 -----
+Rectas en el espacio
+Otra forma de escribir una recta pasando por el origen es con un vector
+director
+Forma vectorial de la recta en Rn
+Si una recta que pasa por el origen tiene vector director d, entonces puede
+escribirse como
+x = td.
+Ejemplo: Encuentre un vector director de la recta 2 x − y = 0 y encuentre
+su ecuación vectorial.
+¿Qué pasa con rectas que no pasan por el origen?
+10 / 13
+----- pagina 11 -----
+Rectas en el espacio
+Definición: Forma normal de una recta en R2
+n · (x − p) = 0 o n · x = n · p,
+donde p determina un punto de la recta y n ̸= 0 es un vector normal.
+Forma vectorial y paramétrica
+x = p + td,
+donde d es un vector director. Las ecuaciones de cada componente se
+llaman ecuaciones paramétricas .
+IMPORTANTE: La ecuación normal sólo es válida en R2, mientras que
+la ecuación vectorial es válida tanto en R2 y en R3, y permite definir
+rectas en cualquier dimensión.
+11 / 13
+----- pagina 12 -----
+Rectas en el espacio
+Ejemplo: Encuentre las ecuaciones vectorial y paramétricas de la recta en
+R3 que pasa por
+P = (1, 2, −1)
+y es paralela al vector
+d = ⟨5, −1, 3⟩.
+12 / 13
+----- pagina 13 -----
+Rectas en el espacio
+Rectas paralelas
+Dos rectas distintas son paralelas si y solo si sus vectores directores son
+paralelos (es decir, uno es múltiplo del otro), y son perpendiculares si y
+solo si se intersectan y sus vectores directores son perpendiculares.
+Ejemplo: Encuentre una ecuación vectorial de la recta en R3 que pasa por
+el punto R(1, 1, 0) y es paralela a la recta determinada por los puntos
+P = (−1, 5, 0), Q = (2, 1, 1).
+13 / 13

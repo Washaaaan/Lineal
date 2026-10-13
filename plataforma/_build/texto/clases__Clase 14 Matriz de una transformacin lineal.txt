@@ -1,0 +1,146 @@
+
+----- pagina 1 -----
+Clase 14 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 10
+----- pagina 2 -----
+Recordatorio
+Sistemas de ecuaciones, ecuaciones vectoriales y ecuaciones
+matriciales se pueden resolver con la matriz ampliada
+[
+A b
+]
+La forma escalonada nos indica cuántas soluciones tiene el sistema.
+Una transformación es una regla que asigna a cada vector x en Rn
+un vector T(x) en Rm
+Una transformación es una transformación lineal si para todos los
+vectores u, v en Rn y todo escalar c, se cumple:
+T(u + v) = T(u) + T(v), T(c u) = c T(u)
+Las transformaciones matriciales son lineales. ¿Hay otras?
+2 / 10
+----- pagina 3 -----
+Matriz de una transformación lineal
+Ejemplo: Considere los vectores
+e1 =
+[1
+0
+]
+, e2 =
+[0
+1
+]
+.
+Suponga que T : R2 → R2 es lineal y que
+T(e1) =
+[2
+5
+]
+, T(e2) =
+[−1
+6
+]
+.
+Encuentre T
+([ 5
+−3
+])
+y una fórmula para T(x).
+3 / 10
+----- pagina 4 -----
+Matriz de una transformación lineal
+Teorema
+Sea T : Rn → Rm una transformación lineal. Entonces existe una única
+matriz A tal que
+T(x) = Ax para toda x ∈ Rn.
+Esa matriz es
+A = [T(e1) · · · T(en)]
+donde ej es el vector con un 1 en la posición j y 0 en las otras entradas.
+4 / 10
+----- pagina 5 -----
+Matriz de una transformación lineal
+Ejemplo: Encuentre la matriz estándar A para la transformación de
+dilatación
+T(x) = 3x, x ∈ R2.
+Ejemplo: Sea T : R2 → R2 la transformación que gira cada punto un
+ángulo φ en sentido antihorario alrededor del origen.
+Suponiendo que T es lineal, determine la matriz estándar de T.
+5 / 10
+----- pagina 6 -----
+Matriz de una transformación lineal
+Algunas transformaciones lineales típicas en R2:
+Dilatación (factor k):
+T(x) = k x, A =
+[ k 0
+0 k
+]
+.
+Reflexión respecto del eje x:
+T
+([x1
+x2
+])
+=
+[ x1
+−x2
+]
+, A =
+[ 1 0
+0 −1
+]
+.
+Rotación antihoraria de ángulo φ:
+A =
+[ cos φ − sin φ
+sin φ cos φ
+]
+.
+REVISAR PÁGINAS 73 - 75 DEL LIBRO DE LAY
+6 / 10
+----- pagina 7 -----
+Matriz de una transformación lineal
+Transformación sobre y uno a uno
+Sea T : Rn → Rm una transformación lineal.
+T mapea Rn sobre Rm (o es sobreyectiva) si para cada b en Rm
+existe al menos una x en Rn tal que
+T(x) = b.
+Es decir, el rango de T es todo Rm.
+T es uno a uno (inyectiva) si cada b en Rm es la imagen de a lo más
+un x en Rn.
+7 / 10
+----- pagina 8 -----
+Matriz de una transformación lineal
+Ejemplo: Sea T : Rn → Rm la transformación lineal dada por
+T(x) = Ax, A =
+
+
+1 −4 8 1
+0 2 −1 3
+0 0 0 5
+
+ .
+Determine los valores de m y n. ¿ T mapea Rn sobre Rm? ¿Es uno a uno?
+8 / 10
+----- pagina 9 -----
+Matriz de una transformación lineal
+Relación con la matriz A
+Sea T(x) = Ax, con columnas
+A =
+[
+a1 a2 · · · an
+]
+.
+T mapea Rn sobre Rm ⇐ ⇒El sistema Ax = b siempre tiene solución
+⇐ ⇒las columnas de A generan Rm ⇐ ⇒A tiene un pivote en cada
+fila.
+T es uno a uno ⇐ ⇒las columnas de A son linealmente
+independientes ⇐ ⇒la ecuación Ax = 0 sólo tiene la solución trivial
+⇐ ⇒A tiene un pivote en cada columna.
+9 / 10
+----- pagina 10 -----
+Matriz de una transformación lineal
+Ejemplo: Suponga que T : Rn → Rm. ¿Qué pasa si n > m? ¿Y si n < m?
+10 / 10

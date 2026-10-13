@@ -1,0 +1,162 @@
+
+----- pagina 1 -----
+Clase 34 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 8
+----- pagina 2 -----
+Recordatorio
+Dos vectores u y v son ortogonales si u · v = 0.
+Si W es un subespacio de Rn, el conjunto de todos los vectores z que
+son ortogonales a W se llama complemento ortogonal de W y se
+denota mediante W⊥.
+El complemento ortogonal del espacio fila de A es el espacio nulo de
+A, y el complemento ortogonal del espacio columna de A es el espacio
+nulo de AT.
+2 / 8
+----- pagina 3 -----
+Conjuntos ortogonales
+Definición: Conjunto Ortogonal
+Un conjunto de vectores {u1, . . . ,up} en Rn se denomina conjunto
+ortogonal si cada par de distintos vectores del conjunto es ortogonal, es
+decir, si ui · uj = 0 siempre que i ̸= j.
+Ejemplo: Determine si el siguiente conjunto de vectores es ortogonal:
+u1 =
+
+
+3
+1
+1
+
+ , u2 =
+
+
+−1
+2
+1
+
+ , u3 =
+
+
+−1/2
+−2
+7/2
+
+
+3 / 8
+----- pagina 4 -----
+Conjuntos ortogonales
+Teorema
+Si S = {u1, . . . ,up} es un conjunto ortogonal de vectores diferentes de
+cero en Rn, entonces S es linealmente independiente y, por lo tanto, es
+una base para el subespacio generado por S.
+Definición: Base Ortogonal
+Una base ortogonal para un subespacio W de Rn es una base para W que
+es también un conjunto ortogonal.
+4 / 8
+----- pagina 5 -----
+Conjuntos ortogonales
+Teorema
+Sea {u1, . . . ,up} una base ortogonal para un subespacio W de Rn. Para
+cada y en W, los pesos en la combinación lineal
+y = c1u1 + · · · + cpup
+están dados por
+cj = y · ujuj · uj (j = 1, . . . ,p)
+Ejemplo: El conjunto S = {u1, u2, u3} del ejemplo anterior es una base
+ortogonal para R3. Exprese el vector y =
+
+
+6
+1
+−8
+
+ como una combinación
+lineal de los vectores en S.
+5 / 8
+----- pagina 6 -----
+Conjuntos ortogonales
+Definición: Conjunto Ortonormal
+Un conjunto {u1, . . . ,up} es un conjunto ortonormal si es un conjunto
+ortogonal de vectores unitarios. Si W es el subespacio generado por dicho
+conjunto, entonces {u1, . . . ,up} es una base ortonormal para W.
+Ejemplo: Demuestre que el conjunto {v1, v2, v3} es un conjunto
+ortonormal, donde:
+v1 =
+
+
+3/
+√
+11
+1/
+√
+11
+1/
+√
+11
+
+ , v2 =
+
+
+−1/
+√
+6
+2/
+√
+6
+1/
+√
+6
+
+ , v3 =
+
+
+−1/
+√
+66
+−4/
+√
+66
+7/
+√
+66
+
+
+6 / 8
+----- pagina 7 -----
+Conjuntos ortogonales
+Teorema
+Una matriz U de m × n tiene columnas ortonormales si y solo si UTU = I.
+Teorema
+Sea U una matriz de m × n con columnas ortonormales, y sean x y y en
+Rn. Entonces:
+||Ux|| = ||x||
+(Ux) · (Uy) = x · y
+(Ux) · (Uy) = 0 si y solo si x · y = 0
+7 / 8
+----- pagina 8 -----
+Conjuntos ortogonales
+Ejemplo: Sea U =
+
+
+1/
+√
+2 2 /3
+1/
+√
+2 −2/3
+0 1 /3
+
+ y x =
+[ √
+2
+3
+]
+. Verifique que U
+tiene columnas ortonormales y luego calcule ||Ux||.
+Definición: Matriz Ortogonal
+Una matriz cuadrada con columnas ortonormales se llama matriz
+ortogonal. Si U es matriz ortogonal, entonces U−1 = UT.
+8 / 8

@@ -1,0 +1,160 @@
+
+----- pagina 1 -----
+Clase 18 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 12
+----- pagina 2 -----
+Recordatorio
+Una matriz de 2 ×2 A =
+[ a b
+c d
+]
+es invertible si y solo si
+ad − bc ̸= 0.
+En el caso anterior,
+A−1 = 1ad − bc [ d −b−c a ]
+¿Existirá algún criterio similar para matrices más grandes?
+2 / 12
+----- pagina 3 -----
+Introducción a los determinantes
+Ejemplo: Determine condiciones sobre las entradas de
+A =
+
+
+a b c
+d e f
+g h i
+
+
+para que A sea invertible. Solución: Para el caso 3 × 3, observando la
+reducción por filas, se llega a la siguiente fórmula:
+∆ = a(ei − fh) − b(di − fg) + c(dh − eh)
+A es invertible si y solo si ∆ ̸= 0.
+3 / 12
+----- pagina 4 -----
+Introducción a los determinantes
+Definición: Submatriz Aij
+Para cualquier matriz cuadrada A, sea Aij la submatriz formada al eliminar
+la i-ésima fila y la j-ésima columna de A.
+Ejemplo: Dada la matriz
+A =
+
+
+1 −2 5 0
+2 0 4 −1
+3 1 0 7
+0 4 −2 0
+
+
+Determine la submatriz A32.
+4 / 12
+----- pagina 5 -----
+Introducción a los determinantes
+Ahora se puede dar una definición recursiva de un determinante.
+Definición: Cofactores en la primera fila
+Para n ≥ 2, el determinante de una matriz A = [aij] de n × n es la suma de
+n términos de la forma ±a1j det A1j, con signos más y menos alternados,
+donde las entradas a11, a12, . . . ,a1n son de la primera fila de A.
+En símbolos:
+det A = a11 det A11 − a12 det A12 + · · · + (−1)1+na1n det A1n
+=
+n∑
+j=1
+(−1)1+ja1j det A1j
+5 / 12
+----- pagina 6 -----
+Introducción a los determinantes
+Ejemplo: Calcule el determinante de:
+A =
+
+
+1 5 0
+2 4 −1
+0 −2 0
+
+
+6 / 12
+----- pagina 7 -----
+Introducción a los determinantes
+Otra notación común para el determinante de una matriz utiliza un par de
+rectas verticales en lugar de corchetes.
+Definición: Cofactor
+Dada A = [aij], el cofactor (i, j) de A es el número Cij definido por:
+Cij = (−1)i+j det Aij
+Entonces:
+det A = a11C11 + a12C12 + · · · + a1nC1n
+Esta fórmula se conoce como desarrollo por cofactores a lo largo de la
+primera fila de A.
+7 / 12
+----- pagina 8 -----
+Introducción a los determinantes
+Teorema
+det A se puede calcular mediante un desarrollo por cofactores a lo largo de
+cualquier fila o columna.
+El desarrollo a lo largo de la i-ésima fila es:
+det A = ai1Ci1 + ai2Ci2 + · · · + ainCin
+El desarrollo por cofactores a lo largo de la j-ésima columna es:
+det A = a1jC1j + a2jC2j + · · · + anjCnj
+El factor (−1)i+j genera el siguiente
+patrón de signos:
+
+
++ − + . . .
+− + −
++ − +
+... . . .
+
+
+8 / 12
+----- pagina 9 -----
+Introducción a los determinantes
+Ejemplo: Utilice un desarrollo por cofactores a lo largo de la tercera fila
+para calcular el det A, donde:
+A =
+
+
+1 5 0
+2 4 −1
+0 −2 0
+
+
+9 / 12
+----- pagina 10 -----
+Introducción a los determinantes
+El teorema anterior es útil para calcular el determinante de una matriz que
+contiene muchos ceros. Si en una fila o columna hay una mayoría de ceros,
+no se necesita calcular los cofactores en estos términos.
+Ejemplo: Calcule det A, donde:
+A =
+
+
+3 −7 8 9 −6
+0 2 −5 7 3
+0 0 1 5 0
+0 0 2 4 −1
+0 0 0 −2 0
+
+
+10 / 12
+----- pagina 11 -----
+Introducción a los determinantes
+La matriz en el ejemplo anterior era casi triangular.
+Teorema
+Si A es una matriz triangular, entonces det A es el producto de las
+entradas sobre la diagonal principal de A.
+11 / 12
+----- pagina 12 -----
+Introducción a los determinantes
+Nota numérica
+En la actualidad, una matriz de 25 × 25 se considera pequeña. Sin
+embargo, sería imposible calcular un determinante de 25 × 25 con un
+desarrollo por cofactores.
+En general, un desarrollo por cofactores requiere alrededor de n!
+multiplicaciones. Si una computadora efectúa un billón de multiplicaciones
+por segundo, tendría que trabajar unos 500,000 años para calcular un
+determinante de 25 × 25 utilizando este método.
+12 / 12

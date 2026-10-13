@@ -1,0 +1,156 @@
+
+----- pagina 1 -----
+Clase 39 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 12
+----- pagina 2 -----
+Recordatorio
+Una matriz simétrica es una matriz A tal que AT = A
+Una matriz A de n × n es diagonalizable ortogonalmente si existe
+una matriz ortogonal P (con P−1 = PT) y una matriz diagonal D
+tales que
+A = PDPT = PDP−1
+Una matriz es diagonalizable ortogonalmente si y solo si es simétrica
+2 / 12
+----- pagina 3 -----
+Formas cuadráticas
+En este capítulo trabajaremos con formas cuadráticas . Polinomios en dos
+o más variables donde todos los términos tienen grado 2.
+Ejemplos:
+Q(x) = 5x21 + 3x22 + 2x23 − x1x2 + 8x2x3
+Q(x) = 2x21 − x1x2 + x22
+3 / 12
+----- pagina 4 -----
+Formas cuadráticas
+Teorema
+Toda forma cuadrática se puede calcular mediante una expresión de la
+forma Q(x) = xTAx, donde A es una matriz simétrica de n × n. La matriz
+A se denomina matriz de la forma cuadrática .
+Ejemplo: Sea x =
+[ x1
+x2
+]
+. Calcule xTAx para las siguientes matrices:
+A =
+[ 4 0
+0 3
+]
+, A =
+[ 3 −2
+−2 7
+]
+Ejemplo: Escriba la matriz de la forma cuadrática para
+Q(x) = 5x21 + 3x22 + 2x23 − x1x2 + 8x2x3.
+4 / 12
+----- pagina 5 -----
+Formas cuadráticas
+Cambio de variable
+Si x representa un vector de variables en Rn, un cambio de variable es una
+ecuación de la forma x = Py, o equivalentemente y = P−1x, donde P es
+una matriz invertible y y es un nuevo vector de variables en Rn.
+Ejemplo: Dada Q(x) = x21 − 8x1x2 − 5x22:
+Encuentre la matriz A de la forma cuadrática.
+Diagonalice ortogonalmente A = PDPT.
+Utilice el cambio de variable x = Py para encontrar una nueva forma
+cuadrática.
+Calcule y para x = (2, −2). Evalúe la forma original en x y la nueva
+forma cuadrática en y.
+5 / 12
+----- pagina 6 -----
+Formas cuadráticas
+Nota: La matriz de la forma cuadrática es A =
+[ 1 −4
+−4 −5
+]
+. Sus valores
+propios son 3 y −7, con vectores propios asociados v1 =
+[ 2
+−1
+]
+y
+v2 =
+[ 1
+2
+]
+.
+6 / 12
+----- pagina 7 -----
+Formas cuadráticas
+Teorema: El teorema de los ejes principales
+Sea A una matriz simétrica de n × n. Entonces existe un cambio de
+variable ortogonal, x = Py, que transforma la forma cuadrática xTAx en
+una forma cuadrática yTDy sin términos de producto cruzado.
+Las columnas de P se llaman ejes principales de la forma cuadrática.
+7 / 12
+----- pagina 8 -----
+Formas cuadráticas
+En el caso de dos variables, la ecuación Q(x) = c representa usualmente
+elipses o hipérbolas en R2.
+8 / 12
+----- pagina 9 -----
+Formas cuadráticas
+Ejemplo: Grafique la curva 5 x21 − 4x1x2 + 5x22 = 48.
+Nota:
+[ 5 −2
+−2 5
+]
+=
+[ 1/√2 −1/√2
+1/
+√
+2 1 /
+√
+2
+] [ 3 0
+0 7
+] [ 1/√2 1 /√2
+−1/
+√
+2 1 /
+√
+2
+]
+9 / 12
+----- pagina 10 -----
+Formas cuadráticas
+Definición: Clasificación de formas cuadráticas
+Una forma cuadrática Q es:
+Positiva definida si Q(x) > 0 para todo x ̸= 0.
+Negativa definida si Q(x) < 0 para todo x ̸= 0.
+Indefinida si Q(x) asume valores tanto positivos como negativos.
+También se dice que Q es positiva semidefinida si Q(x) ≥ 0 para todo x,
+y negativa semidefinida si Q(x) ≤ 0 para todo x.
+10 / 12
+----- pagina 11 -----
+Formas cuadráticas
+Teorema: Formas cuadráticas y valores propios
+Sea A una matriz simétrica de n × n. Entonces una forma cuadrática
+xTAx es:
+Positiva definida si y solo si todos los valores propios de A son
+positivos.
+Negativa definida si y solo si todos los valores propios de A son
+negativos.
+Indefinida si y solo si A tiene valores propios tanto positivos como
+negativos.
+La matriz simétrica A también recibe el nombre de positiva definida,
+negativa definida o indefinida.
+11 / 12
+----- pagina 12 -----
+Formas cuadráticas
+Ejemplo: Clasifique la forma cuadrática
+Q(x) = 3x21 + 2x22 + x23 + 4x1x2 + 4x2x3.
+Nota: Los valores propios de
+A =
+
+
+3 2 2
+2 2 2
+0 2 1
+
+
+son 5 , 2 y −1.
+12 / 12

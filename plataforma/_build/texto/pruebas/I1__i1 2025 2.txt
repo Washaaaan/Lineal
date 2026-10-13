@@ -1,0 +1,332 @@
+PONTIFICIA UNIVERSIDAD CATOLICA DE CHILE
+F ACULTAD DE MATEMATICAS
+DEPARTAMENTO DE MATEMATICA
+Segundo semestre 2025
+Interrogación 1 - MAT1203
+1. (a) Verifique que los puntos A(1, 1, −1) y B(1, 0, 0) pertenecen al plano de ecuación
+Π : 3 x + 2y + 2z = 3.
+Demuestre que la recta que pasa por A y B está contenida en el plano Π.
+(b) Demuestre que si dos puntos A y B está en un plano en R3, entonces la recta que pasa
+por A y B está contenida en dicho plano.
+Solución:
+(a) Reemplazando en el lado izquierdo de la ecuación del plano las coordenadas del punto A se
+obtiene 3(1)+2(1)+2( −1) = 3 y por las coordenadas de B se obtiene 3(1)+2(0)+2(0) = 3
+por lo tanto A y B pertenecen al plano Π.
+La ecuación paramétrica de la recta que pasa por A y B es x = 1 , y = t, z = −t,
+reemplazando en la ecuación del planos se tiene que 3(1) + 2( t) − 2(t) = 3 para todo
+t ∈ R, por lo tanto la recta está contenida en el plano.
+(b) Sea Π el plano en R3 definido por la ecuación general
+Π : ax + by + cz = d,
+con (a, b, c) ̸= (0, 0, 0).
+Supongamos que A = (x1, y1, z1) y B = (x2, y2, z2) son puntos que pertenecen al plano Π,
+es decir,
+ax1 + by1 + cz1 = d y ax2 + by2 + cz2 = d.
+La recta que pasa por A y B se puede parametrizar como
+⃗ r(t) = (1 − t)(x1, y1, z1) + t(x2, y2, z2), t ∈ R.
+Sea P (t) = ⃗ r(t) un punto cualquiera en la recta. Entonces
+P (t) = ( x(t), y(t), z(t)) = ((1 − t)x1 + tx2, (1 − t)y1 + ty2, (1 − t)z1 + tz2).
+Evaluamos P (t) en la ecuación del plano:
+ax(t) + by(t) + cz(t) = a[(1 − t)x1 + tx2] + b[(1 − t)y1 + ty2] + c[(1 − t)z1 + tz2]
+= (1 − t)(ax1 + by1 + cz1) + t(ax2 + by2 + cz2)
+= (1 − t)d + td = d.
+Por lo tanto, P (t) ∈ Π para todo t ∈ R, lo cual demuestra que la recta que pasa por A y
+B está contenida en el plano Π.Criterio de evaluación.
+Criterio Puntaje Indicador
+C1 0.5 pto Reconocer que A está en el plano.
+C2 0.5 pto Reconocer que A está en el plano.
+C3 1 pto Determinar la ecuación que pasa por A y B.
+C4 1 pto Reconocer que toda la recta está en el plano.
+C5 1 pto Por describir cuando una punto está en un plano dado.
+C6 1 pto Por determinar la ecuación de la recta que pasa por dos puntos.
+C7 1 pto Por determinar que la recta que une dos puntos de un plano
+está contenida en dicho plano.
+2. Sea A =
+
+
+1 0 1 0
+0 2 2 0
+1 1 2 0
+0 0 0 3
+
+.
+(a) ¿Es el vector b =
+
+
+−2
+4
+1
+6
+
+ combinación lineal de las columnas de A?
+(b) ¿Cuál columna de A podríamos eliminar para construir una matriz B de modo que el
+sistema Bx = 0 tenga solución única? Justifique su respuesta.
+Solución:
+(a) Para determinar si b es combinación lineal de las columnas de A, resolvemos el sistema
+Ax = b.
+La matriz aumentada es 
+
+1 0 1 0 −2
+0 2 2 0 4
+1 1 2 0 1
+0 0 0 3 6
+
+ .Aplicando eliminación gaussiana se obtiene
+
+
+1 0 1 0 −2
+0 1 1 0 2
+0 0 0 1 2
+0 0 0 0 1
+
+ .
+La última fila corresponde a la ecuación 0 = 1 , lo cual es una contradicción. Por lo tanto,
+el sistema no tiene solución, luego b no es combinación lineal de las columnas de A.
+(b) Para que el sistema Bx = 0 tenga solución, todas las columnas de la FE de la matriz B
+deben tener pivotes. Del escalonamiento anterior, los pivotes están en las columnas 1, 2
+y 4, por lo tanto podemos tomar
+B =
+
+
+1 0 0
+0 2 0
+1 1 0
+0 0 3
+
+ .
+cuya FE es 
+
+1 0 0
+0 1 0
+0 0 1
+0 0 0
+
+ .
+que por tener igual cantidad de pivotes que columnas se tiene que Bx = 0 tiene solución
+única.
+Criterio de evaluación.
+Criterio Puntaje Indicador
+C1 1 pto Por plantear que se necesita determinar si Ax=b es consistente
+o no o algo equivalente
+C2 1 pto Por escalonar la matriz ampliada.
+C3 1 pto Determinar que el sistema es inconsistente.
+C4 1 pto Por concluir que b no es combinación lineal de las columnas de A.
+C5 1 pto Por determinar que hay que eliminar la tercera columna.
+C6 1 pto Por justificar que Bx=0 tiene solución única.3. Considere los siguientes planos en R3, donde a es un número real.
+Π1 : x + y + z = 1 , Π2 : x + y + az = a2 , Π1 : a2x + a2y + z = 1
+(a) ¿Existe algún valor de a ∈ R para el cual los tres planos sean coincidentes?
+(b) ¿Para qué valores de a ∈ R la intersección de los tres planos es una recta?
+(c) ¿Existen valores de a ∈ R de forma que los tres planos se intersecten en un solo punto?
+Solución: Escribimos la matriz ampliada del SEL y realizamos el algoritmo de Gauss.
+
+
+1 1 1 1
+1 1 a a2
+a2 a2 1 1
+
+
+F2 → F2 − F1
+F3 → F3 − a2F1
+∼
+
+
+1 1 1 1
+0 0 a − 1 a2 − 1
+0 0 1 − a2 1 − a2
+
+
+Si a = 1, la matriz queda 
+
+1 1 1 1
+0 0 0 0
+0 0 0 0
+
+
+por lo tanto, la solución es un plano.
+Si a ̸= 1 , entonces realizamos las operaciones: F2 → 1a − 1 F2 y F3 → 11 − aF3, obteniendo la
+matriz 
+
+1 1 1 1
+0 0 1 a + 1
+0 0 1 + a 1 + a
+
+
+Si ahora, a = −1 se tiene la matriz
+
+
+1 1 1 1
+0 0 1 0
+0 0 0 0
+
+
+por lo tanto, la solución es una recta.
+En el caso de que a ̸= 1 y a ̸= −1, realizamos la operación F3 → 11 + a y la matriz queda
+
+
+1 1 1 1
+0 0 1 a + 1
+0 0 1 1
+
+ F3 → F3 − F2
+∼
+
+
+1 1 1 1
+0 0 1 a + 1
+0 0 0 −a
+
+ .
+En este caso, si a = 0, la solución del sistema es una recta y si a ̸= 0, el sistema no tiene solución.
+(a) Sí, para a = 1 los tres planos son coincidentes.
+(b) Para a = 0 y para a = −1.
+(c) No. El sistema nunca tiene solución única.Criterio de evaluación.
+Criterio Puntaje Indicador
+C1 0.5 pto Por realizar operaciones elementales para poner ceros bajo el pivote de la primera columna
+C2 1 pto Por estudiar matricialmente caso a=1.
+C3 1 pto Por estudiar matricialmente caso a=-1.
+C4 1 pto Por estudiar matricialmente a ̸= 1, a ̸= −1.
+C5 1 pto Por responder justificadamente (a).
+C6 1 pto Por responder justificadamente (b).
+C7 0.5 pto Por responder justificadamente (c)
+está contenida en dicho plano.
+4. El sistema de ecuaciones Ax = b tiene como conjunto solución
+
+
+
+
+
+1
+2
+1
+0
+
+ + t
+
+
+−1
+1
+1
+1
+
+ + s
+
+
+0
+0
+1
+2
+
+ : con t, s ∈ R
+
+
+ .
+(a) ¿Cuál es el conjunto solución del sistema de ecuaciones Ax = 0?
+(b) ¿Es el vector
+
+
+2
+4
+2
+0
+
+ solución del sistema Ax = b? Justifique.
+(c) ¿Existe un vector c tal que el sistema de ecuaciones Ax = c tenga como conjunto solución
+una recta? Justifique.
+Solución:
+(a) El conjunto solución del sistema de ecuaciones homogéneo Ax = 0 es
+
+
+t
+
+
+−1
+1
+1
+1
+
+ + s
+
+
+0
+0
+1
+2
+
+ : con t, s ∈ R
+
+
+ .(b) No, porque el vector
+
+
+1
+2
+1
+0
+
+, al ser solución particular del sistema de ecuaciones satisface
+A
+
+
+1
+2
+1
+0
+
+ = b. Además, como
+
+
+2
+4
+2
+0
+
+ = 2
+
+
+1
+2
+1
+0
+
+, se tiene que A
+
+
+2
+4
+2
+0
+
+ = 2 b ̸= b porque el
+sistema no es homogéneo.
+Otra solución:
+Observe que
+
+
+2
+4
+2
+0
+
+ es solución si y sólo si existen t, s ∈ R de modo que
+1 − t = 2
+2 + t = 4
+1 + t + s = 2
+t + 2s = 0
+de la primera ecuación se tiene que t = −1 pero de la segunda se tiene que t = 2 , por lo
+tanto no existen tales parámetros, por lo tanto el vector
+
+
+2
+4
+2
+0
+
+ no es solución del sistema.
+(c) No, porque si el sistema de ecuaciones Ax = c fuese consistente, su conjunto solución sería
+una traslación del conjunto solución de Ax = b, por lo tanto, siempre sería un plano.
+Criterio de evaluación.
+Criterio Puntaje Indicador
+C1 2 puntos Reconocer la parte de la solución homogénea.
+C2 1 pto Por responder que no a (b).
+C3 1 pto Por justificar la respuesta de (b).
+C4 1 pto Por responder que no a (c).
+C5 1 pto Por justificar la respuesta de (c).

@@ -1,0 +1,122 @@
+
+----- pagina 1 -----
+Clase 31 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 11
+----- pagina 2 -----
+Recordatorio
+Un vector propio de una matriz A de n × n es un vector x diferente
+de cero tal que Ax = λx para algún escalar λ, llamado valor propio .
+Podemos encontrar los valores propios con la ecuación
+característica det(A − λI) = 0.
+Si A y B son similares si hay una matriz invertible P tal que
+A = PBP−1.
+Una matriz es diagonalizable si es similar a una matriz diagonal.
+Una matriz A de n × n es diagonalizable si y solo si tiene n vectores
+propios linealmente independientes. En tal caso, P tiene como
+columnas los n vectores propios LI y D tiene en la diagonal los valores
+propios correspondientes.
+2 / 11
+----- pagina 3 -----
+Vectores propios y transformaciones lineales
+Podemos pensar en matrices similares como transformaciones lineales en
+distintas bases. Para eso, debemos entender cómo se ve una
+transformación en coordenadas
+3 / 11
+----- pagina 4 -----
+Vectores propios y transformaciones lineales
+Matriz de una transformación lineal
+Sean V y W espacios vectoriales con dimensiones n y m, respectivamente.
+Sean B y C bases para V y W. Dada cualquier transformación lineal
+T : V → W, existe una única matriz M de m × n tal que:
+[T(x)]C = M[x]B
+para toda x en V.
+La matriz M que satisface la ecuación anterior está dada por:
+M =
+[
+[T(b1)]C [T(b2)]C . . . [T(bn)]C
+]
+Esta matriz se denomina matriz de T respecto a las bases B y C.
+4 / 11
+----- pagina 5 -----
+Vectores propios y transformaciones lineales
+Ejemplo: Suponga que B = {b1, b2} es una base para V y
+C = {c1, c2, c3} es una base para W. Sea T : V → W una transformación
+lineal definida por:
+T(b1) = 3c1 − 2c2 + 5c3
+T(b2) = 4c1 + 7c2 − c3
+Encuentre la matriz para T respecto a las bases B y C.
+Ejemplo: Sean B = {b1, b2, b3} una base para un espacio vectorial V y
+T : V → R2 una transformación lineal con la propiedad:
+T(x1b1 + x2b2 + x3b3) =
+[ 2x1 − 3x2 + x3
+−2x1 + 5x3
+]
+Encuentre la matriz para T respecto a B y la base estándar para R2.
+5 / 11
+----- pagina 6 -----
+Vectores propios y transformaciones lineales
+Transformaciones lineales de V en V
+En el caso común donde W = V, y la base C es la misma que B, la matriz
+M se llama la B-matriz para T, denotada por [T]B.
+Definición: B-matriz
+[T]B =
+[
+[T(b1)]B [T(b2)]B . . . [T(bn)]B
+]
+Esta matriz satisface:
+[T(x)]B = [T]B[x]B
+6 / 11
+----- pagina 7 -----
+Vectores propios y transformaciones lineales
+Ejemplo: Sea T : P2 → P2 la transformación lineal definida por
+T(p) = p′, donde p′ es la derivada de p. Encuentre la matriz para T
+relativa a la base estándar B = {1, t, t2}.
+7 / 11
+----- pagina 8 -----
+Vectores propios y transformaciones lineales
+Transformaciones lineales en Rn
+Si T : Rn → Rn es una transformación lineal dada por T(x) = Ax,
+entonces la matriz de T respecto a la base estándar E es simplemente A.
+Sin embargo, si se utiliza una base diferente B, la matriz [T]B está
+relacionada con A mediante la matriz de cambio de coordenadas.
+Teorema
+Sea A = [T]E y sea B una base para Rn formada por los vectores
+b1, . . . ,bn. Sea P la matriz cuyas columnas son los vectores de B.
+Entonces:
+[T]B = P−1AP
+8 / 11
+----- pagina 9 -----
+Vectores propios y transformaciones lineales
+9 / 11
+----- pagina 10 -----
+Vectores propios y transformaciones lineales
+Teorema: Representación diagonal de una matriz
+Suponga que A = PDP−1, donde D es una matriz diagonal de n × n. Si B
+es la base para Rn formada por las columnas de P, entonces D es la
+B-matriz para la transformación T(x) = Ax.
+Esto significa que la transformación lineal se ”diagonaliza” si se elige la
+base correcta (la base de vectores propios).
+10 / 11
+----- pagina 11 -----
+Vectores propios y transformaciones lineales
+Ejemplo: Defina T : R2 → R2 mediante T(x) = Ax, donde
+A =
+[ 7 2
+−4 1
+]
+. Encuentre una base B para R2 con la propiedad de que
+la B-matriz para T sea una matriz diagonal.
+Nota: Los valores propios de la matriz son 5 y 3, con vectores propios[ 1
+−1
+]
+y
+[ 1
+−2
+]
+respectivamente.
+11 / 11

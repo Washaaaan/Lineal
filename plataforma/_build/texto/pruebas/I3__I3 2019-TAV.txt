@@ -1,0 +1,747 @@
+Pontificia Universidad Cat ´olica de Chile
+F acultad de Matem´aticas
+Departamento de Matem ´aticas
+Temporada Verano 2019
+MAT 1203 – ´Algebra lineal
+Soluci´ on Interrogaci´ on 3
+1. Sea T : P2(R) → R2 tal que
+T (h(x)) =
+( h(2)
+h(0)
+)
+a) Encuentre la matriz [ T ] de transformaci´ on respecto a las basesB1 = {1−t, 1 +t, t2} de P2(R)
+y B2 = {(1, 1), (0, 1)} de R2.
+b) Encuentre una base para el n´ ucleo de T .
+Soluci´ on.
+a) [T ] = [[ T (1 − t)]B2 [T (1 + t)]B2 [T (t2)]B2] =
+[[ −1
+1
+]
+B2
+[ 3
+1
+]
+B2
+[ 4
+0
+]
+B2
+]
+=
+( −1 3 4
+2 −2 −4
+)
+b) Para encontrar el n´ ucleo deT , primero buscaremos la N ul(A)
+( −1 3 4
+2 −2 −4
+)
+∼
+( −1 3 4
+0 1 1
+)
+→ N ul(A) = Gen
+
+
+
+
+
+1
+−1
+1
+
+
+
+
+
+Luego una base para n´ ucleo de T es {1(1 − t) − 1(1 + t) + 1(t2))} = {−2t + t2}
+Puntaje:
+1 pto argumentar que [ T ] = [[ T (1 − t)]B2 [T (1 + t)]B2 [T (t2)]B2]
+1 pto por determinar que [ T ] =
+[[ −1
+1
+]
+B2
+[ 3
+1
+]
+B2
+[ 4
+0
+]
+B2
+]
+.
+1 punto por encontrar correctamente [ T ].
+1 punto por encontrar el N ul(A).
+2 punto por encontrar una base para el n´ ucleo de T .2. Sea A =
+[ 1 −2
+1 3
+]
+.
+a) Encuentre una matriz P invertible y una matriz C de la forma
+[ x −y
+y x
+]
+tal que A =
+P CP −1.
+b) Describa geometricamente el actuar de la transformaci´ on asociada a la matriz C.
+Soluci´ on.
+a) Primero calculamos los valores propios de la matriz
+ 1 − λ −21 3 − λ  = λ2 − 4λ + 5 = 0 → λ = 2 ± i
+Ahora calculamos un vector propio asociado a λ = 2 − i
+( −1 + i −2
+1 1 + i
+)
+∼
+( −1 + i −2
+0 0
+)
+→
+( 2
+i − 1
+)
+Asi P =
+( 2 0
+−1 1
+)
+y C =
+( 2 −1
+1 2
+)
+b) La transformaci´ on asociada a C es la composici´ on de una rotaci´ on y de un escalamiento.
+Donde el ´ angulo de la rotaci´ on es el argumento de λ = 2 + i es decir tan( ϕ) = 12 y el factor
+de escala r = ∥λ∥ =
+√
+22 + 12 = √5.
+Puntaje:
+1 pto por calcular los valores propios de la matriz A.
+1 pto por calcular un vector propio de la matriz A.
+1 pto por calcular la matriz P .(existen muchas matrices que cumplen lo pedido y se encuen-
+tran de la misma forma que en la pauta)
+1 pto por calcular la matriz C.
+1 pto por encontrar tan( ϕ).
+1 pto por encontrar r.3. Sea W = {(x, y, z) ∈ R3 | 3x + y − z = 0 ∧ x − y = 0} subespacio vectorial de R3.
+a) [4ptos] Determine una base ortogonal para W ⊥.
+b) [2 ptos] Encuentre P royW ⊥
+
+
+0
+1
+1
+
+.
+Soluci´ on.
+a) Primero buscaremos una base para W , BW =
+
+
+
+
+
+1
+1
+4
+
+
+
+
+, luego
+W ⊥ = {(x, y, z) | (x, y, z) · c(1, 1, 4) = 0 } = Gen
+
+
+
+
+
+−1
+1
+0
+
+ ,
+
+
+−4
+0
+1
+
+
+
+
+
+Aplicamos el proceso de Gram-Schimdt al conjunto
+
+
+
+
+
+−1
+1
+0
+
+ ,
+
+
+−4
+0
+1
+
+
+
+
+.
+v2 =
+
+
+−4
+0
+1
+
+ −
+
+
+−1
+1
+0
+
+ ·
+
+
+−4
+0
+1
+
+
+∥
+
+
+−1
+1
+0
+
+ ∥2
+
+
+−1
+1
+0
+
+ =
+
+
+−2
+−2
+1
+
+
+Luego una base ortogonal para W ⊥ es
+
+
+
+
+
+−1
+1
+0
+
+ ,
+
+
+−2
+−2
+1
+
+
+
+
+
+b) P royW ⊥
+
+
+0
+1
+1
+
+ =
+
+
+−1
+1
+0
+
+ ·
+
+
+0
+1
+1
+
+
+∥
+
+
+−1
+1
+0
+
+ ∥2
+
+
+−1
+1
+0
+
+ +
+
+
+−2
+−2
+1
+
+ ·
+
+
+0
+1
+1
+
+
+∥
+
+
+−2
+−2
+1
+
+ ∥2
+
+
+−2
+−2
+1
+
+ =
+
+
+−5
+18
+13
+18
+−1
+9
+
+
+Puntaje:
+1 pto encontrar una base para W .
+1 pto por describir W ⊥.
+1 pto por encontar una base para W ⊥.
+1 pto por encontar una base ortogonal para W ⊥.1 pto por plantear la formula para determinar P royW ⊥
+
+
+0
+1
+1
+
+.
+1 pto por encontrar correctamente P royW ⊥
+
+
+0
+1
+1
+
+.4. Encuentre una matriz P ortogonal y una matriz D diagonal tal que la matriz A =
+
+
+5 −4 −2
+−4 5 2
+−2 2 2
+
+
+se pueda descomponer como A = P DP t.
+Soluci´ on.
+En primer lugar, calculamos los valores propios de A:
+ 5 − λ −4 −2−4 5 − λ 2−2 2 2 − λ  = 0
+−(λ − 1)2(λ − 10) = 0
+Para λ = 1: 
+
+4 −4 −2
+−4 4 2
+−2 2 1
+
+
+
+
+a
+b
+c
+
+ = 0
+, de lo cual c = 2a − 2b, por lo que E1 = Gen
+
+
+
+
+
+1
+0
+2
+
+ ,
+
+
+0
+1
+−2
+
+
+
+
+.
+Para λ = 10: 
+
+−5 −4 −2
+−4 −5 2
+−2 2 −8
+
+
+
+
+a
+b
+c
+
+ = 0,
+de lo cual E10 = Gen
+
+
+
+
+
+−2
+2
+1
+
+
+
+
+.
+Ahora, para formar la matriz P , las columnas deben ser ortonormales. Sabemos que valores
+propios distintos generan vectores propios ortogonales, pero no necesariamente si corresponden
+a un mismo valor propio. En este caso, los generadores de E1 no son ortogonales, por lo cual
+utilizamos Gram-Schmidt para obtener dos vectores ortogonales que generen el mismo espacio:
+w1 =
+
+
+1
+0
+2
+
+
+w2 =
+
+
+0
+1
+−2
+
+ −
+
+
+0
+1
+−2
+
+ ·
+
+
+1
+0
+2
+
+
+
+
+1
+0
+2
+
+ ·
+
+
+1
+0
+2
+
+
+
+
+1
+0
+2
+
+ =
+
+
+4/5
+1
+−2/5
+
+ .De este modo, normalizando cada vector obtenemos que P =
+
+
+1/
+√
+5 4 /3
+√
+5 −2/3
+0
+√
+5/3 2 /3
+−2/
+√
+5 −2/3
+√
+5 1 /3
+
+ y
+D =
+
+
+1 0 0
+0 1 0
+0 0 10
+
+.
+Puntaje:
+2 puntos por calcular correctamente los valores propios.
+2 puntos por calcular los vectores propios.
+1 punto por utilizar Gram-Schmidt (o proyecci´ on ortogonal) en E1.
+1 punto por escribir las matrices P y D.5. Dada la forma cuadr´ aticaQ(x) = x2 + y2 + z2 + 9xy + 12yz, determine si es deﬁnida positiva.
+Soluci´ on.
+Escribimos la forma cuadr´ atica de forma matricial:
+Q(x) = ( x y z )
+
+
+1 9 /2 0
+9/2 1 6
+0 6 1
+
+
+
+
+x
+y
+z
+
+
+Ahora calculamos los valores propios de la matriz sim´ etrica que deﬁne esta forma cuadr´ atica:
+ 1 − λ 9/2 09/2 1 − λ 60 6 1 − λ  = 0
+(1 − λ)(λ + 13/2)(λ − 17/2) = 0
+Como no todos los valores propios tienen el mismo signo, la matriz es indeﬁnida.
+Puntaje:
+2 pountos por escribir la forma cuadr´ atica de forma adecuada (con una matriz sim´ etrica).
+2 puntos por calcular correctamente sus valores propios.
+2 puntos por argumentar sobre los signos de los valores propios para concluir que la matriz
+no es deﬁnida positiva.6. Demuestre que el conjunto de todas las soluciones de m ´ ınimos cuadrados del sistema
+x − y + z = 1
+x − y + z = 2
+es el plano de ecuaci´ on x − y + z = 32 .
+Soluci´ on.
+En primer lugar escribimos el sistema en forma matricial:
+( 1 −1 1
+1 −1 1
+) 
+
+x
+y
+z
+
+ =
+( 1
+2
+)
+.
+Como el sistema es inconsistente, procedemos a calcular su soluci´ on de m ´ ınimos cuadrados resol-
+viendo las ecuaciones normales ( AT A)x = AT b, donde A es la matriz de los coeﬁcientes y b es el
+vector de resultados. As ´ ı, el sistema a resolver queda:
+
+
+2 −2 2
+−2 2 −2
+2 −2 2
+
+
+
+
+x
+y
+z
+
+ =
+
+
+3
+−3
+3
+
+ .
+Por ´ ultimo, la soluci´ on de este sistema viene dada por 2 x − 2y + 2z = 3, que es equivalente a
+x − y + z = 3/2.
+Puntaje:
+3 puntos por plantear el sistema (ecuaciones normales).
+3 puntos por dar la soluci´ on.7. Encuentre la descomposici´ on en valores singulares de la matriz A =
+
+
+1 1
+0 1
+−1 1
+
+.
+Soluci´ on.
+Para encontrar la DVS primero debemos calcular los valores propios de AT A =
+( 2 0
+0 3
+)
+, que
+por ser matriz diagonal sus valores propios son 2 y 3. As ´ ı, σ1 =
+√
+3 y σ2 =
+√
+2. La matriz V viene
+dada por los vectores propios de AT A normalizados.
+Para λ = 3, v1 = (0, 1)T y para λ = 2, v2 = (1, 0)T , de modo que
+V =
+( 0 1
+1 0
+)
+.
+La matriz U de la descomposici´ on la obtenemos calculando los vectores:
+u1 = 1σ1 Av1 =
+
+
+1/
+√
+3
+1/
+√
+3
+1/
+√
+3
+
+
+u2 = 1σ2 Av2 =
+
+
+1/
+√
+2
+0
+−1/
+√
+2
+
+
+Como U debe ser 3 × 3, debemos encontrar u3 de modo que las columnas de U formen una
+base ortonormal de R3. Cabe destacar que u3 podemos calcularlo usando producto cruz y luego
+normalizando o directamente resolviendo que u1 · u3 = u2 · u3 = 0 y u3 · u3 = 0. As ´ ı, se tiene que
+u3 =
+
+
+1/
+√
+6
+−2/
+√
+6
+1/
+√
+6
+
+. De este modo,
+U =
+
+
+1/
+√
+3 1 /
+√
+2 1 /
+√
+6
+1/
+√
+3 0 −2/
+√
+6
+1/
+√
+3 −1/
+√
+2 1 /
+√
+6
+
+ .
+Por ´ ultimo, la matriz Σ es una matriz 3× 2 que contiene a la matriz diagonal 2 × 2 con los valores
+singulares no nulos de A, es decir, Σ =
+
+
+√
+3 0
+0
+√
+2
+0 0
+
+. Por ´ ultimo, se tiene que A = U ΣV T .
+Puntaje:
+1 punto por plantear la matriz AT A y sus valores propios.
+1 punto por encontrar los vectores propios de AT A y 1 punto por encontrar la matriz V
+1 punto por encontrar los vectores u1 y u2.
+1 punto por completar la base y obtener u3.
+1 punto por encontrar la matriz Σ.8. Determine si las siguientes aﬁrmaciones son verdaderas o falsas. En caso de ser verdaderas dem´ ues-
+trelas y si son falsas de un contraejemplo.
+a) Sea A una matriz de m × n, si v ∈ (Col(AT ))⊥ entonces v ∈ N ul(A)
+b) Si A es una matriz ortogonal de orden n y {v1, v2} un conjunto linealmente independiente
+de Rn entonces {Av1, Av2} es un conjunto ortogonal de Rn.
+c) Sea A una matriz cuadrada. Entonces A + At es diagonalizable ortogonalmente.
+Soluci´ on.
+a) Verdadero.
+Si v ∈ (Col(AT ))⊥ entonces v ∈ (F il(A))⊥fi · v = 0 →
+
+
+f1
+·
+fn
+
+ v = Av =
+
+
+0
+·
+0
+
+ luego
+v ∈ N ul(A).
+b) Falso
+A =
+( 1 0
+0 1
+)
+es una matriz ortogonal, el conjunto {(1, 1), (0, 1)} es linealmente indepen-
+diente,pero {
+( 1 0
+0 1
+) ( 1
+1
+)
+,
+( 1 0
+0 1
+) ( 0
+1
+)
+} no es ortogonal.
+c) Verdadero.
+La matriz ( A + At)t = A + At es simetrica por lo cual es digonalizable ortogonalmente.
+Puntaje:
+2 ptos por cada ´ ıtem.

@@ -1,0 +1,146 @@
+
+----- pagina 1 -----
+Clase 32 - MAT1203
+Daniel Gajardo C.
+Pontificia Universidad Católica de Chile
+Facultad de Matemática
+Estas diapositivas no reemplazan la asistencia a clases. Pueden tener
+errores que serán corregidos durante la clase
+1 / 10
+----- pagina 2 -----
+Recordatorio
+Un vector propio de una matriz A de n × n es un vector x diferente
+de cero tal que Ax = λx para algún escalar λ, llamado valor propio .
+Podemos encontrar los valores propios con la ecuación
+característica det(A − λI) = 0.
+Una matriz es diagonalizable si es similar a una matriz diagonal, en
+cuyo caso la multiplicación por A se ve como multiplicar por D en
+otra base.
+¿Qué pasa si la ecuación característica tiene soluciones fuera de los
+reales?
+2 / 10
+----- pagina 3 -----
+Valores propios complejos
+Ejemplo: Si A =
+[ 0 −1
+1 0
+]
+, encuentre los valores propios y los vectores
+propios de A.
+3 / 10
+----- pagina 4 -----
+Valores propios complejos
+La unidad imaginaria i es un número (no real) que cumple que
+i2 = −1.
+Un número complejo es un número de la forma z = a + bi, donde a y
+b son números reales.
+a es la parte real, denotada por Re z.
+b es la parte imaginaria, denotada por Im z.
+Conjugado y Operaciones
+El conjugado de z = a + bi es ¯z = a − bi.
+Los complejos se pueden sumar, restar, multiplicar y dividir,
+obteniendo números complejos.
+Para multiplicar se debe usar que i2 = −1, y para dividir se debe
+racionalizar.
+4 / 10
+----- pagina 5 -----
+Valores propios complejos
+Los complejos se pueden graficar en un plano.
+Valor absoluto (Módulo)
+El valor absoluto (o módulo) de z = a + bi es el número real no negativo:
+|z| =
+√
+a2 + b2
+Geométricamente, es la distancia del origen al punto (a, b) en el plano
+complejo.
+Argumento
+El argumento de z, denotado como arg z, es el ángulo φ que forma el
+vector asociado a z con el eje real positivo.
+5 / 10
+----- pagina 6 -----
+Valores propios complejos
+Ejemplo: Sea A =
+[ .5 −.6
+.75 1 .1
+]
+. Encuentre los valores propios de A y
+determine una base para cada espacio propio.
+Nota: Los valores propios de la matriz son 0 .8 − 0.6i y 0 .8 + 0.6i. Los
+vectores propios son múltiplos de
+[ 2
+−1 + 2i
+]
+y
+[ 2
+−1 − 2i
+]
+respectivamente.
+6 / 10
+----- pagina 7 -----
+Valores propios complejos
+Propiedad de matrices reales
+Si A es una matriz de n × n con entradas reales, entonces cualquier valor
+propio complejo ocurre en pares conjugados.
+Si λ es un valor propio de A con vector propio asociado v, entonces ¯λ es
+un valor propio de A con vector propio asociado ¯v.
+7 / 10
+----- pagina 8 -----
+Valores propios complejos
+Ejemplo: Sea C =
+[ a −b
+b a
+]
+, donde a y b son reales y no ambos cero.
+Determine los valores propios de C.
+Teorema
+Los valores propios de la matriz
+C =
+[ a −b
+b a
+]
+son λ = a ± bi.
+Más aún, si r = |λ| y φ = arg(a + bi), entonces
+C = r
+[ cos(φ) −sen(φ)
+sen(φ) cos( φ)
+]
+Es decir, multiplicar por C es rotar en un ángulo de φ y luego ponderar por
+r
+8 / 10
+----- pagina 9 -----
+Valores propios complejos
+Teorema
+Sea A una matriz real de 2 × 2 con un valor propio complejo λ = a − bi
+(b ̸= 0) y un vector propio asociado v en C2. Entonces
+A = PCP−1
+donde P =
+[
+Re v Im v
+]
+y C =
+[ a −b
+b a
+]
+.
+Este teorema muestra que cualquier matriz de 2 × 2 con valores propios
+complejos es similar a una rotación escalada.
+9 / 10
+----- pagina 10 -----
+Valores propios complejos
+Ejemplo: Sea A =
+[ .5 −.6
+.75 1 .1
+]
+. Encuentre una matriz invertible P y
+una matriz C de la forma
+[ a −b
+b a
+]
+tales que A = PCP−1.
+Nota: Un valor propio de A es λ = 0.8 + 0.6i, con vector propio
+v =
+[ 2
+−1 − 2i
+]
+.
+10 / 10
